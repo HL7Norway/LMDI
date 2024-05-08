@@ -1,2 +1,2 @@
 # LMDI
-Legemiddeldata fra institusjon til reseptregisteret
+Legemiddeldata fra institusjon til Legemiddelregisteret
