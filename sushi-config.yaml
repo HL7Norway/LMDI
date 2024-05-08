@@ -1,0 +1,24 @@
+# ╭──────────────────────────────────────ImplementationGuide───────────────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+canonical: http://hl7.no/lmdi/ig
+name: LMDI
+fhirVersion: 4.0.1
+FSHOnly: false
+applyExtensionMetadataToRoot: false
+id: hl7.fhir.no.lmdi.ig
+status: draft
+version: 1.0.0
+dependencies: 
+    hl7.fhir.no.basis: 2.2.0
+releaseLabel: ci-build
+copyrightYear: 2024+
+jurisdiction: urn:iso:std:iso:3166#NO "Norway"
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+menu:
+  Home: index.html
+  Artifacts: artifacts.html
