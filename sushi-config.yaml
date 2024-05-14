@@ -7,7 +7,7 @@ name: LMDI
 fhirVersion: 4.0.1
 FSHOnly: false
 applyExtensionMetadataToRoot: false
-id: hl7.fhir.no.lmdi.ig
+id: hl7.fhir.no.lmdi
 status: draft
 version: 1.0.0
 # dependencies: 
