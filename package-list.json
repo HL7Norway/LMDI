@@ -1,0 +1,16 @@
+{
+  "package-id": "hl7.fhir.no.lmdi",
+  "title": "LMDI TMP",
+  "canonical": "http://hl7.no/fhir/lmdi/ImplementationGuide/hl7.fhir.no.lmdi",
+  "introduction": "Intro text",
+  "category": null,
+  "list": [
+    {
+      "version": "current",
+      "desc": "Continuous Integration Build",
+      "path": "http://localhost/",
+      "status": "ci-build",
+      "current": true
+    }
+  ]
+}
