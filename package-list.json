@@ -1,7 +1,7 @@
 {
-  "package-id": "hl7.fhir.no.lmdi",
-  "title": "LMDI TMP",
-  "canonical": "http://hl7.no/fhir/lmdi/ImplementationGuide/hl7.fhir.no.lmdi",
+  "package-id": "hl7.fhir.no.kodeverk",
+  "title": "HL7 FHIR Kodeverk",
+  "canonical": "http://hl7.no/fhir/kodeverk/ImplementationGuide/hl7.fhir.no.kodeverk",
   "introduction": "Intro text",
   "category": null,
   "list": [
