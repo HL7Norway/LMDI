@@ -5,7 +5,7 @@
 canonical: http://hl7.no/fhir
 name: NoKodeverk
 fhirVersion: 4.0.1
-FSHOnly: false
+FSHOnly: true
 applyExtensionMetadataToRoot: false
 id: hl7.fhir.no.kodeverk
 status: draft
