@@ -2,10 +2,10 @@
 # │  The properties below are used to create the ImplementationGuide resource. For a list of       │
 # │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-canonical: http://hl7.no/fhir
+canonical: http://hl7.no/fhir/lmdi
 name: LMDI
 fhirVersion: 4.0.1
-FSHOnly: false
+FSHOnly: true
 applyExtensionMetadataToRoot: false
 id: hl7.fhir.no.lmdi
 status: draft
