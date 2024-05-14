@@ -2,19 +2,19 @@
 # │  The properties below are used to create the ImplementationGuide resource. For a list of       │
 # │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-canonical: http://hl7.no/lmdi/ig
+canonical: http://hl7.no/fhir
 name: LMDI
 fhirVersion: 4.0.1
 FSHOnly: true
 applyExtensionMetadataToRoot: false
 id: hl7.fhir.no.lmdi
 status: draft
-version: 1.0.0
+version: 0.1.0
 # dependencies: 
 #     hl7.fhir.no.basis: 2.2.0
 releaseLabel: ci-build
 copyrightYear: 2024+
-jurisdiction: urn:iso:std:iso:3166#NO "Norway"
+
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
