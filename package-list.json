@@ -1,7 +1,7 @@
 {
   "package-id": "hl7.fhir.no.lmdi",
   "title": "HL7 FHIR LMDI",
-  "canonical": "http://hl7.no/fhir/lmdi/ImplementationGuide/hl7.lmdi.no.kodeverk",
+  "canonical": "http://hl7.no/fhir/ig/lmdi",
   "introduction": "Intro text",
   "category": null,
   "list": [
