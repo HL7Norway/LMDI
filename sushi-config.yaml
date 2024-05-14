@@ -3,15 +3,15 @@
 # │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 canonical: http://hl7.no/fhir
-name: NoKodeverk
+name: LMDI
 fhirVersion: 4.0.1
 FSHOnly: true
 applyExtensionMetadataToRoot: false
-id: hl7.fhir.no.kodeverk
+id: hl7.fhir.no.lmdi
 status: draft
 version: 0.4.4
 releaseLabel: ci-build
-copyrightYear: 2022+
+copyrightYear: 2024+
 jurisdiction: urn:iso:std:iso:3166#NO "Norway"
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
@@ -19,16 +19,3 @@ jurisdiction: urn:iso:std:iso:3166#NO "Norway"
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-
-  Guidance:
-     Mapping: mapping.html
-     Kodeverk i NILAR: nilar.html
-  Artifacts: 
-#    Value Sets: artifacts.html#4
-    Code Systems: artifacts.html
-#    Naming Systems: artifacts.html#6
-#    Examples: artifacts.html#7
-#  Changelog: 
-#    R4 Changelog: https://raw.githubusercontent.com/HL7Norway/basisprofiler-r4/master/Changelog-21.md
-#    STU3 Changelog: Changelog-STU3.html
-  Download: download.html
