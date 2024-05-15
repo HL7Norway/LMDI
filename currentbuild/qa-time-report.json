@@ -1,60 +1,65 @@
 {
-  "date" : "Wed, 15 May, 2024 19:26:52 +0000",
+  "date" : "Wed, 15 May, 2024 20:04:43 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
       "name" : "/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi.json",
-      "size" : 1095,
+      "size" : 1460,
       "processes" : [
         {
           "activity" : "load",
-          "start" : 41,
-          "length" : 26
+          "start" : 54,
+          "length" : 27
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 42,
-          "length" : 4
+          "start" : 54,
+          "length" : 5
         },
         {
           "activity" : "generateNarratives",
-          "start" : 42,
-          "length" : 69
+          "start" : 54,
+          "length" : 81
         },
         {
           "activity" : "validate",
-          "start" : 42,
-          "length" : 878
+          "start" : 55,
+          "length" : 375
         },
         {
           "activity" : "checkConformanceResources",
-          "start" : 43,
-          "length" : 2
+          "start" : 56,
+          "length" : 1
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 43,
+          "start" : 56,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 56,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 43,
-          "length" : 83
+          "start" : 56,
+          "length" : 92
         },
         {
           "activity" : "generate2",
-          "start" : 44,
-          "length" : 55
+          "start" : 57,
+          "length" : 59
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 50,
+          "start" : 66,
           "length" : 3
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 52,
-          "length" : 2
+          "start" : 69,
+          "length" : 1
         }
       ]
     },
@@ -64,42 +69,103 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 41,
-          "length" : 18
+          "start" : 54,
+          "length" : 15
         },
         {
-          "activity" : "loadInfo",
-          "start" : 41,
+          "activity" : "load-configure",
+          "start" : 54,
+          "length" : 1
+        },
+        {
+          "activity" : "loadDepInfo",
+          "start" : 54,
           "length" : 1
         },
         {
           "activity" : "load",
-          "start" : 41,
-          "length" : 14
+          "start" : 54,
+          "length" : 15
         },
         {
           "activity" : "generateNarratives",
-          "start" : 42,
-          "length" : 21
+          "start" : 54,
+          "length" : 29
         },
         {
           "activity" : "validate",
-          "start" : 42,
-          "length" : 54
+          "start" : 54,
+          "length" : 56
         },
         {
           "activity" : "generate1",
-          "start" : 43,
-          "length" : 13
+          "start" : 56,
+          "length" : 19
         },
         {
           "activity" : "generate2",
-          "start" : 44,
-          "length" : 1348
+          "start" : 58,
+          "length" : 1583
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 50,
+          "start" : 66,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-lmdi-patient-profile.json",
+      "size" : 999,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 54,
+          "length" : 15
+        },
+        {
+          "activity" : "load",
+          "start" : 54,
+          "length" : 14
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 54,
+          "length" : 96
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 54,
+          "length" : 82
+        },
+        {
+          "activity" : "validate",
+          "start" : 54,
+          "length" : 905
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 56,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 56,
+          "length" : 326
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 1289
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 66,
+          "length" : 14
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 69,
           "length" : 1
         }
       ]

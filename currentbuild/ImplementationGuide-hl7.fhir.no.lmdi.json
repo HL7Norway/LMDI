@@ -3,15 +3,15 @@
   "id" : "hl7.fhir.no.lmdi",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Lmdi</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi</pre><div><p>Debug test</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Lmdi</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi</pre><div><p>Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret</p>\n</div></div>"
   },
   "url" : "http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi",
   "version" : "0.1.0",
   "name" : "Lmdi",
-  "title" : "LMDI TEST",
+  "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-05-15T19:26:52+00:00",
-  "description" : "Debug test",
+  "date" : "2024-05-15T20:04:43+00:00",
+  "description" : "Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret",
   "packageId" : "hl7.fhir.no.lmdi",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
@@ -43,7 +43,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "2025+"
+        "valueString" : "2024+"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -322,7 +322,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "2025+"
+        "valueString" : "2024+"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -591,6 +591,18 @@
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     }],
     "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lmdi-patient-profile"
+      },
+      "name" : "LMDI Patient Profile",
+      "description" : "Kun et eksempel for å vise verktøy",
+      "exampleBoolean" : false
+    },
+    {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"

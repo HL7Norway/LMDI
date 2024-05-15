@@ -10,15 +10,15 @@
   fhir:id [ fhir:v "hl7.fhir.no.lmdi"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Lmdi</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi</pre><div><p>Debug test</p>\n</div></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Lmdi</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi</pre><div><p>Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret</p>\n</div></div>"
   ] ; # 
   fhir:url [ fhir:v "http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "Lmdi"] ; # 
-  fhir:title [ fhir:v "LMDI TEST"] ; # 
+  fhir:title [ fhir:v "Legemiddeldata fra institusjon til Legemiddelregisteret"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-15T19:26:52+00:00"^^xsd:dateTime] ; # 
-  fhir:description [ fhir:v "Debug test"] ; # 
+  fhir:date [ fhir:v "2024-05-15T20:04:43+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret"] ; # 
   fhir:packageId [ fhir:v "hl7.fhir.no.lmdi"] ; # 
   fhir:license [ fhir:v "CC0-1.0"] ; # 
   fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
@@ -54,7 +54,7 @@
          fhir:value [ fhir:v "copyrightyear" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "2025+" ]
+         fhir:value [ fhir:v "2024+" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -282,7 +282,7 @@
          fhir:value [ fhir:v "copyrightyear" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "2025+" ]
+         fhir:value [ fhir:v "2024+" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -503,6 +503,18 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] ) ;
      fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient-profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/lmdi-patient-profile" ]
+       ] ;
+       fhir:name [ fhir:v "LMDI Patient Profile" ] ;
+       fhir:description [ fhir:v "Kun et eksempel for å vise verktøy" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "CodeSystem" ]

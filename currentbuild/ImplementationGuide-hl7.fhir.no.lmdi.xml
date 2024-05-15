@@ -3,16 +3,16 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.no.lmdi"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Lmdi</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi</pre><div><p>Debug test</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Lmdi</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi</pre><div><p>Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret</p>
 </div></div>
   </text>
   <url value="http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi"/>
   <version value="0.1.0"/>
   <name value="Lmdi"/>
-  <title value="LMDI TEST"/>
+  <title value="Legemiddeldata fra institusjon til Legemiddelregisteret"/>
   <status value="draft"/>
-  <date value="2024-05-15T19:26:52+00:00"/>
-  <description value="Debug test"/>
+  <date value="2024-05-15T20:04:43+00:00"/>
+  <description value="Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret"/>
   <packageId value="hl7.fhir.no.lmdi"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -38,7 +38,7 @@
         <valueString value="copyrightyear"/>
       </extension>
       <extension url="value">
-        <valueString value="2025+"/>
+        <valueString value="2024+"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -241,7 +241,7 @@
         <valueCode value="copyrightyear"/>
       </extension>
       <extension url="value">
-        <valueString value="2025+"/>
+        <valueString value="2024+"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -436,6 +436,17 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lmdi-patient-profile"/>
+      </reference>
+      <name value="LMDI Patient Profile"/>
+      <description value="Kun et eksempel for å vise verktøy"/>
+      <exampleBoolean value="false"/>
+    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>

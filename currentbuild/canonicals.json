@@ -12,5 +12,12 @@
     "url" : "http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi",
     "version" : "0.1.0",
     "name" : "Lmdi"
+  },
+  {
+    "id" : "lmdi-patient-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient-profile",
+    "version" : "0.1.0",
+    "name" : "LmdiPatient"
   }
 ]
