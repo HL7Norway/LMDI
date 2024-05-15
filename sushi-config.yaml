@@ -3,8 +3,8 @@
 # │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 title: LMDI TEST
-# id: hl7.fhir.no.lmdi
-# canonical: 'http://hl7.no/fhir/ig/lmdi'
+id: fhi-lmdi
+canonical: 'http://hl7.no/fhir/ig/lmdi'
 name: LMDI
 # fhirVersion: 4.0.1
 fhirVersion: 5.0.0
@@ -13,7 +13,7 @@ applyExtensionMetadataToRoot: false
 status: draft
 version: '0.0.1'
 releaseLabel: ci-build
-copyrightYear: 2024+
+copyrightYear: 2024
 # jurisdiction: urn:iso:std:iso:3166#NO "Norway"
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
