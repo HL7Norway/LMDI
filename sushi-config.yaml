@@ -7,7 +7,8 @@ name: LMDI
 fhirVersion: 4.0.1
 FSHOnly: true
 applyExtensionMetadataToRoot: false
-id: hl7.fhir.no.lmdi
+# id: hl7.fhir.no.lmdi
+id: ImplementationGuide-hl7.fhir.no.lmdi
 status: draft
 version: 0.4.4
 releaseLabel: ci-build
