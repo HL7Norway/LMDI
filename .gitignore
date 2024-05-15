@@ -1,8 +1,8 @@
-# Created by https://www.toptal.com/developers/gitignore/api/macos
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos
-
-### macOS ###
-# General
 .DS_Store
-
-# End of https://www.toptal.com/developers/gitignore/api/macos
+Thumbs.db
+/fsh-generated
+/input-cache
+/output
+/temp
+/template
+/input/fsh/old
