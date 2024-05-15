@@ -2,6 +2,7 @@
   "package": "hl7.fhir.no.lmdi",
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
+  "jurisdiction": "NO",
   "extensions": [],
   "profiles": {
     "Patient": [

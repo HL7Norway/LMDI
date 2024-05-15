@@ -17,8 +17,16 @@
   fhir:name [ fhir:v "Lmdi"] ; # 
   fhir:title [ fhir:v "Legemiddeldata fra institusjon til Legemiddelregisteret"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-15T20:04:43+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-15T20:30:47+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:description [ fhir:v "Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NO" ] ;
+       fhir:display [ fhir:v "Norway" ]
+     ] )
+  ] ) ; # 
   fhir:packageId [ fhir:v "hl7.fhir.no.lmdi"] ; # 
   fhir:license [ fhir:v "CC0-1.0"] ; # 
   fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 

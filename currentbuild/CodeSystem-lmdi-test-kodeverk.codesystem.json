@@ -11,8 +11,15 @@
   "title" : "LMDI Test-kodeverk",
   "status" : "draft",
   "date" : "2024-05-15",
-  "publisher" : "Folkehelseinstituttet",
+  "publisher" : "Folkehelseinstituttet (FHI)",
   "description" : "Dette kodeverket inneholder noen rare koder.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
   "content" : "complete",
   "count" : 3,
   "concept" : [{

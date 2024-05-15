@@ -1,4 +1,4 @@
 Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi.json	1460	-	0	0	0	0	0	0	5	81	0	0	1	0	0	0	0	1	0	0	92	59	0	0	0	3	0	1
-fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem.json	600	15	1	0	1	0	0	0	0	29	0	0	0	0	0	0	0	0	0	0	19	1583	0	0	0	1	0	0
-fsh-generated/resources/StructureDefinition-lmdi-patient-profile.json	999	15	0	0	0	0	0	96	0	82	0	0	0	0	0	0	0	2	0	0	326	1289	0	0	0	14	0	1
+/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi.json	1687	-	0	0	0	0	0	0	5	63	0	0	0	0	0	0	0	0	0	0	81	67	0	0	0	2	0	2
+fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem.json	600	15	0	0	0	0	0	0	0	16	0	0	1	0	0	0	0	0	0	0	14	1301	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-lmdi-patient-profile.json	999	16	0	0	0	0	0	106	0	55	0	0	0	0	0	0	0	2	0	0	339	1236	0	1	0	10	0	2

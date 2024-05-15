@@ -18,8 +18,15 @@
   fhir:title [ fhir:v "LMDI Test-kodeverk"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:date [ fhir:v "2024-05-15"^^xsd:date] ; # 
-  fhir:publisher [ fhir:v "Folkehelseinstituttet"] ; # 
+  fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:description [ fhir:v "Dette kodeverket inneholder noen rare koder."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NO" ] ;
+       fhir:display [ fhir:v "Norway" ]
+     ] )
+  ] ) ; # 
   fhir:content [ fhir:v "complete"] ; # 
   fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
   fhir:concept ( [

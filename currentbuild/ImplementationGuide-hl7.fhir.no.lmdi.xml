@@ -11,8 +11,16 @@
   <name value="Lmdi"/>
   <title value="Legemiddeldata fra institusjon til Legemiddelregisteret"/>
   <status value="draft"/>
-  <date value="2024-05-15T20:04:43+00:00"/>
+  <date value="2024-05-15T20:30:47+00:00"/>
+  <publisher value="Folkehelseinstituttet (FHI)"/>
   <description value="Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NO"/>
+      <display value="Norway"/>
+    </coding>
+  </jurisdiction>
   <packageId value="hl7.fhir.no.lmdi"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>

@@ -17,8 +17,16 @@
   fhir:name [ fhir:v "LmdiPatient"] ; # 
   fhir:title [ fhir:v "LMDI Patient Profile"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-15T20:04:43+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-15T20:30:47+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:description [ fhir:v "Kun et eksempel for å vise verktøy"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NO" ] ;
+       fhir:display [ fhir:v "Norway" ]
+     ] )
+  ] ) ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "rim" ] ;

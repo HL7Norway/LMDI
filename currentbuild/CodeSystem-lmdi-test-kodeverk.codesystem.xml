@@ -11,8 +11,15 @@
   <title value="LMDI Test-kodeverk"/>
   <status value="draft"/>
   <date value="2024-05-15"/>
-  <publisher value="Folkehelseinstituttet"/>
+  <publisher value="Folkehelseinstituttet (FHI)"/>
   <description value="Dette kodeverket inneholder noen rare koder."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NO"/>
+      <display value="Norway"/>
+    </coding>
+  </jurisdiction>
   <content value="complete"/>
   <count value="3"/>
   <concept>
