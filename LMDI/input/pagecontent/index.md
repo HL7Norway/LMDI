@@ -1,3 +1,5 @@
-### LMDI
+### Legemiddeldata fra institusjon til Legemiddelregisteret (LMDI)
 
-Virker det?
+Velkommen!
+
+
