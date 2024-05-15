@@ -18,4 +18,6 @@ releaseLabel: ci-build
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Artifakter: artifacts.html
+  Artifacts: artifacts.html
+  TOC: toc.html
+  Download: download.html
