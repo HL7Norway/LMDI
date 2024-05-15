@@ -1,0 +1,109 @@
+# Script for building helseapi projects
+# Loads snapshot of no-basis manually (using install-no-basis-snapshots.sh script) into the virtual machine
+# Runs IG publisher using the manually installed no-basis package.
+name: lmdi-gh-pages-npm-docker-220
+
+on:
+  workflow_dispatch:
+
+env:
+  IG: lmdi
+
+# The following jobs are equal for all IGs and can be moved to a common composite-action if 'uses'-support is added, see:
+# https://github.com/actions/runner/blob/main/docs/adrs/1144-composite-actions.md
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      # Persist the FHIR Package Cache between runners.
+      # Doc: https://confluence.hl7.org/display/FHIR/FHIR+Package+Cache
+      - name: 🗂️ Cache FHIR Packages
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.fhir/packages
+          key: fhir-packages
+
+      # Persist the IG Publisher input-cache between runners.
+      # Doc: https://build.fhir.org/ig/FHIR/ig-guidance/using-templates.html#igroot-input-cache
+      - name: 🗂️ Cache IG Publisher input-cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            igs/${{ env.IG }}/input-cache
+          key: ig-publisher-input-cache    
+
+      # NPM and no-basis package
+      # - name: NPM install no-basis
+      #  run: npm --registry https://packages.simplifier.net install hl7.fhir.no.basis@2.1.1          
+
+      # Downloads the newest version of the IG Publisher, this could probable be cached.
+      #- name: 📥 Download IG Publisher
+      #  run: wget -q https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar
+
+      #- name: Get fhire core r4
+      #  uses: docker://hl7fhir/ig-publisher-base:latest
+      #  with:
+      #   args: npm install igs/snapshots/hl7.fhir.r4.core.tgz
+
+      #- name: Get no-basis
+      #  uses: docker://hl7fhir/ig-publisher-base:latest
+      #  with:
+      #   args: npm install igs/snapshots/hl7.fhir.no.basis-2.1.2-beta.tgz
+
+      #- name: Where am I
+      #  uses: docker://hl7fhir/ig-publisher-base:latest
+      #  with:
+      #    args: pwd
+
+      #- name: List directory ..
+      #  uses: docker://hl7fhir/ig-publisher-base:latest
+      #  with:
+      #    args: ls -al
+
+      - name: make script executable
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          args: chmod 774 install-no-basis-220-snapshot.sh
+
+      - name: run the docker script
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          args: ./install-no-basis-220-snapshot.sh ${{ env.IG }}
+
+      #- name: make directories .fhir/packages
+      #  uses: docker://hl7fhir/ig-publisher-base:latest
+      #  with:
+      #    args: mkdir -p /github/workspace/.fhir/packages
+      
+      #- name: copy snapshots
+      #  uses: docker://hl7fhir/ig-publisher-base:latest
+      #  with:
+      #    args: cp -r -v /github/workspace/igs/snapshots/*.* /github/workspace/.fhir/packages
+#      - name: copy node_modules
+#        uses: docker://hl7fhir/ig-publisher-base:latest
+#        with:
+#          args: cp -r -v /github/workspace/node_modules/* /home/publisher/.fhir/packages
+
+      #- name: List directory
+      #  uses: docker://hl7fhir/ig-publisher-base:latest
+      #  with:
+      #    args: ls -al
+
+      # Builds the HTML page for the IG.
+      #- name: 🏃‍♂️ Run IG Publisher
+      #  uses: docker://hl7fhir/ig-publisher-base:latest
+      #  with:
+      #    args: java -jar publisher.jar publisher -ig igs/${{ env.IG }}/ig.ini
+
+      # Publishes the HTML page to a seperate branch in order to host it using GitHub-Pages.
+      # This will overwrite the currently published HTML page.
+      - name: 🚀 Deploy to GitHub-Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: igs/${{ env.IG }}/output
+          destination_dir: igs/${{ env.IG }}/CurrentBuild
+          commit_message: '${{ env.IG }}: ${{ github.event.head_commit.message }}'
