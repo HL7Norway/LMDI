@@ -5,13 +5,12 @@
 id: hl7.fhir.no.lmdi
 canonical: http://hl7.no/fhir/ig/lmdi
 name: Lmdi
-title: "LMDI TEST"
-description: Debug test
+title: "Legemiddeldata fra institusjon til Legemiddelregisteret"
+description: Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret
 status: draft
-license: CC0-1.0
 version: 0.1.0
 fhirVersion: 4.0.1
-copyrightYear: 2025+
+copyrightYear: 2024+
 releaseLabel: ci-build
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
