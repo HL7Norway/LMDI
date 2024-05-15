@@ -11,8 +11,15 @@
   <name value="Lmdi"/>
   <title value="Legemiddeldata fra institusjon til Legemiddelregisteret"/>
   <status value="draft"/>
-  <date value="2024-05-15T20:30:47+00:00"/>
+  <date value="2024-05-15T21:00:51+00:00"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>
+  <contact>
+    <name value="Folkehelseinstituttet (FHI)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fhi.no"/>
+    </telecom>
+  </contact>
   <description value="Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret"/>
   <jurisdiction>
     <coding>

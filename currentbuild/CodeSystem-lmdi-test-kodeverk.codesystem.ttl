@@ -19,6 +19,13 @@
   fhir:status [ fhir:v "draft"] ; # 
   fhir:date [ fhir:v "2024-05-15"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.fhi.no" ]
+     ] )
+  ] ) ; # 
   fhir:description [ fhir:v "Dette kodeverket inneholder noen rare koder."] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [

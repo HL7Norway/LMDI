@@ -10,8 +10,15 @@
   "name" : "LmdiPatient",
   "title" : "LMDI Patient Profile",
   "status" : "draft",
-  "date" : "2024-05-15T20:30:47+00:00",
+  "date" : "2024-05-15T21:00:51+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
+  "contact" : [{
+    "name" : "Folkehelseinstituttet (FHI)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fhi.no"
+    }]
+  }],
   "description" : "Kun et eksempel for å vise verktøy",
   "jurisdiction" : [{
     "coding" : [{

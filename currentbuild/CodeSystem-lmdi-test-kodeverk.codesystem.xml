@@ -12,6 +12,13 @@
   <status value="draft"/>
   <date value="2024-05-15"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>
+  <contact>
+    <name value="Folkehelseinstituttet (FHI)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fhi.no"/>
+    </telecom>
+  </contact>
   <description value="Dette kodeverket inneholder noen rare koder."/>
   <jurisdiction>
     <coding>

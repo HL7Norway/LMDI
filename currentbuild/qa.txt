@@ -3,35 +3,17 @@ Lmdi : Validation Results
 
 err = 6, warn = 5, info = 1
 IG Publisher Version: 1.6.7
-Generated Wed May 15 20:33:25 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.1.0 (canonical = http://hl7.no/fhir/ig/lmdi)
- Build Errors : 22 / 4 / 0
+Generated Wed May 15 21:03:28 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.1.0 (canonical = http://hl7.no/fhir/ig/lmdi)
+ Build Errors : 4 / 4 / 0
  /github/workspace/LMDI/fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem : 2 / 0 / 2
  /github/workspace/LMDI/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-patient-profile : 0 / 1 / 1
 </table>
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[23].value: Supressed messages file not found
-ERROR: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/div/div/nav/div/div/ul/li/a at Line 110, column 6: The link 'download.html' for "Download" cannot be resolved
-ERROR: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 234, column 4: The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - put the script in a  .js file in a trusted template (also in 17 other files)
-ERROR: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 275, column 4: The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - put the script in a  .js file in a trusted template (also in 17 other files)
-ERROR: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 114, column 6: The link 'download.html' for "Download" cannot be resolved
-ERROR: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.change.history.html#/html/body/script at Line 201, column 4: The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - put the script in a  .js file in a trusted template (also in 9 other files)
-ERROR: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.html#/html/body/div/div/nav/div/div/ul/li/a at Line 110, column 6: The link 'download.html' for "Download" cannot be resolved
-ERROR: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 112, column 6: The link 'download.html' for "Download" cannot be resolved
-ERROR: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 112, column 6: The link 'download.html' for "Download" cannot be resolved
-ERROR: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 112, column 6: The link 'download.html' for "Download" cannot be resolved
-ERROR: /github/workspace/LMDI/output/StructureDefinition-lmdi-patient-profile-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 114, column 6: The link 'download.html' for "Download" cannot be resolved
-ERROR: /github/workspace/LMDI/output/StructureDefinition-lmdi-patient-profile-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 114, column 6: The link 'download.html' for "Download" cannot be resolved
-ERROR: /github/workspace/LMDI/output/StructureDefinition-lmdi-patient-profile-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 114, column 6: The link 'download.html' for "Download" cannot be resolved
-ERROR: /github/workspace/LMDI/output/StructureDefinition-lmdi-patient-profile-testing.html#/html/body/div/div/nav/div/div/ul/li/a at Line 114, column 6: The link 'download.html' for "Download" cannot be resolved
-ERROR: /github/workspace/LMDI/output/StructureDefinition-lmdi-patient-profile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 114, column 6: The link 'download.html' for "Download" cannot be resolved
-ERROR: /github/workspace/LMDI/output/StructureDefinition-lmdi-patient-profile.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 114, column 6: The link 'download.html' for "Download" cannot be resolved
-ERROR: /github/workspace/LMDI/output/StructureDefinition-lmdi-patient-profile.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 118, column 6: The link 'download.html' for "Download" cannot be resolved
-ERROR: /github/workspace/LMDI/output/StructureDefinition-lmdi-patient-profile.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 118, column 6: The link 'download.html' for "Download" cannot be resolved
-ERROR: /github/workspace/LMDI/output/StructureDefinition-lmdi-patient-profile.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 118, column 6: The link 'download.html' for "Download" cannot be resolved
-ERROR: /github/workspace/LMDI/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/a at Line 110, column 6: The link 'download.html' for "Download" cannot be resolved
-ERROR: /github/workspace/LMDI/output/index.html#/html/body/div/div/nav/div/div/ul/li/a at Line 110, column 6: The link 'download.html' for "Download" cannot be resolved
-ERROR: /github/workspace/LMDI/output/toc.html#/html/body/div/div/nav/div/div/ul/li/a at Line 110, column 6: The link 'download.html' for "Download" cannot be resolved
+ERROR: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 231, column 4: The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - put the script in a  .js file in a trusted template (also in 17 other files)
+ERROR: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 272, column 4: The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - put the script in a  .js file in a trusted template (also in 17 other files)
+ERROR: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.change.history.html#/html/body/script at Line 198, column 4: The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - put the script in a  .js file in a trusted template (also in 9 other files)
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide

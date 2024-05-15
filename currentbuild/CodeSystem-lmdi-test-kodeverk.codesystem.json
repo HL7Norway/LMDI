@@ -12,6 +12,13 @@
   "status" : "draft",
   "date" : "2024-05-15",
   "publisher" : "Folkehelseinstituttet (FHI)",
+  "contact" : [{
+    "name" : "Folkehelseinstituttet (FHI)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fhi.no"
+    }]
+  }],
   "description" : "Dette kodeverket inneholder noen rare koder.",
   "jurisdiction" : [{
     "coding" : [{

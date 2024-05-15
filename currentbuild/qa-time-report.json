@@ -1,76 +1,30 @@
 {
-  "date" : "Wed, 15 May, 2024 20:30:47 +0000",
+  "date" : "Wed, 15 May, 2024 21:00:51 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
       "name" : "/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi.json",
-      "size" : 1687,
+      "size" : 1878,
       "processes" : [
         {
           "activity" : "load",
-          "start" : 39,
-          "length" : 32
+          "start" : 38,
+          "length" : 25
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 39,
-          "length" : 5
+          "start" : 38,
+          "length" : 4
         },
         {
           "activity" : "generateNarratives",
-          "start" : 39,
-          "length" : 63
+          "start" : 38,
+          "length" : 62
         },
         {
           "activity" : "validate",
-          "start" : 42,
-          "length" : 545
-        },
-        {
-          "activity" : "generate1",
-          "start" : 42,
-          "length" : 81
-        },
-        {
-          "activity" : "generate2",
-          "start" : 44,
-          "length" : 67
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 186,
-          "length" : 2
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 196,
-          "length" : 2
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem.json",
-      "size" : 600,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 39,
-          "length" : 15
-        },
-        {
-          "activity" : "load",
-          "start" : 39,
-          "length" : 21
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 39,
-          "length" : 16
-        },
-        {
-          "activity" : "validate",
-          "start" : 39,
-          "length" : 1996
+          "start" : 41,
+          "length" : 691
         },
         {
           "activity" : "checkConformanceResources",
@@ -80,16 +34,72 @@
         {
           "activity" : "generate1",
           "start" : 42,
-          "length" : 14
+          "length" : 95
         },
         {
           "activity" : "generate2",
           "start" : 44,
-          "length" : 1301
+          "length" : 67
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 186,
+          "start" : 188,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 195,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem.json",
+      "size" : 600,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 38,
+          "length" : 15
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 38,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 38,
+          "length" : 19
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 38,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 38,
+          "length" : 23
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 2188
+        },
+        {
+          "activity" : "generate1",
+          "start" : 42,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 44,
+          "length" : 1437
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 188,
           "length" : 1
         }
       ]
@@ -100,58 +110,53 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 39,
-          "length" : 16
+          "start" : 38,
+          "length" : 15
         },
         {
           "activity" : "load",
-          "start" : 39,
-          "length" : 21
+          "start" : 38,
+          "length" : 23
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 39,
-          "length" : 106
+          "start" : 38,
+          "length" : 82
         },
         {
           "activity" : "generateNarratives",
-          "start" : 39,
-          "length" : 55
+          "start" : 38,
+          "length" : 74
         },
         {
           "activity" : "validate",
           "start" : 41,
-          "length" : 692
+          "length" : 872
         },
         {
           "activity" : "scanForUsageStats",
           "start" : 42,
-          "length" : 2
+          "length" : 3
         },
         {
           "activity" : "generate1",
           "start" : 42,
-          "length" : 339
+          "length" : 275
         },
         {
           "activity" : "generate2",
           "start" : 45,
-          "length" : 1236
-        },
-        {
-          "activity" : "makeDependencies",
-          "start" : 49,
-          "length" : 1
+          "length" : 1310
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 186,
+          "start" : 188,
           "length" : 10
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 196,
-          "length" : 2
+          "start" : 195,
+          "length" : 1
         }
       ]
     }
