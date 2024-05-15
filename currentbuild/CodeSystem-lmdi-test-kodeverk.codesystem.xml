@@ -3,13 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="lmdi-test-kodeverk.codesystem"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This  code system <code>http://hl7.no/fhir/ig/lmdi/CodeSystem/lmdi-test-kodeverk.codesystem</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="lmdi-test-kodeverk.codesystem-1"> </a></td><td>Litt</td></tr><tr><td style="white-space:nowrap">2<a name="lmdi-test-kodeverk.codesystem-2"> </a></td><td>Mye</td></tr><tr><td style="white-space:nowrap">3<a name="lmdi-test-kodeverk.codesystem-3"> </a></td><td>En hel del</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>http://hl7.no/fhir/ig/lmdi/CodeSystem/lmdi-test-kodeverk.codesystem</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="lmdi-test-kodeverk.codesystem-1"> </a></td><td>Litt</td></tr><tr><td style="white-space:nowrap">2<a name="lmdi-test-kodeverk.codesystem-2"> </a></td><td>Mye</td></tr><tr><td style="white-space:nowrap">3<a name="lmdi-test-kodeverk.codesystem-3"> </a></td><td>En hel del</td></tr></table></div>
   </text>
   <url value="http://hl7.no/fhir/ig/lmdi/CodeSystem/lmdi-test-kodeverk.codesystem"/>
   <version value="0.1.0"/>
   <name value="LmdiTestKodeverk"/>
   <title value="LMDI Test-kodeverk"/>
   <status value="draft"/>
+  <experimental value="true"/>
   <date value="2024-05-15"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>
   <contact>
@@ -27,6 +28,7 @@
       <display value="Norway"/>
     </coding>
   </jurisdiction>
+  <caseSensitive value="false"/>
   <content value="complete"/>
   <count value="3"/>
   <concept>
