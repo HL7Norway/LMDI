@@ -1,0 +1,26 @@
+Lmdi : Validation Results
+=========================================
+
+err = 6, warn = 6, info = 1
+IG Publisher Version: 1.6.7
+Generated Wed May 15 19:27:02 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.1.0 (canonical = http://hl7.no/fhir/ig/lmdi)
+ Build Errors : 4 / 4 / 0
+ /github/workspace/LMDI/fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem : 2 / 1 / 2
+ /github/workspace/LMDI/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi : 0 / 1 / 1
+</table>
+== n/a ==
+ERROR: ImplementationGuide.definition.parameter[23].value: Supressed messages file not found
+ERROR: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 221, column 4: The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - put the script in a  .js file in a trusted template (also in 8 other files)
+ERROR: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 262, column 4: The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - put the script in a  .js file in a trusted template (also in 8 other files)
+ERROR: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.change.history.html#/html/body/script at Line 188, column 4: The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - put the script in a  .js file in a trusted template
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem.json ==
+INFORMATION: CodeSystem/lmdi-test-kodeverk.codesystem: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/lmdi-test-kodeverk.codesystem: CodeSystem: Published code systems SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+ERROR: CodeSystem/lmdi-test-kodeverk.codesystem: CodeSystem: Published code systems SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.no.lmdi, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi.json ==
+WARNING: ImplementationGuide.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.no.lmdi, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
