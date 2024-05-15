@@ -8,7 +8,6 @@
     {
       "version": "current",
       "desc": "Continuous Integration Build",
-      "path": "http://localhost/",
       "status": "ci-build",
       "current": true
     }
