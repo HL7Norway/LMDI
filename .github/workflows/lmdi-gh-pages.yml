@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 env:
-  IG: fhi-lmdi
+  IG: LMDI
 
 # The following jobs are equal for all IGs and can be moved to a common composite-action if 'uses'-support is added, see:
 # https://github.com/actions/runner/blob/main/docs/adrs/1144-composite-actions.md
