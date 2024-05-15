@@ -4,7 +4,8 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 canonical: http://hl7.no/fhir/ig/lmdi
 name: LMDI
-fhirVersion: 4.0.1
+# fhirVersion: 4.0.1
+fhirVersion: 5.0.0
 FSHOnly: true
 applyExtensionMetadataToRoot: false
 # id: hl7.fhir.no.lmdi
