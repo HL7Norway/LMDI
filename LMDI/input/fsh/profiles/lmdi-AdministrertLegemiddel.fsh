@@ -10,3 +10,6 @@ Description: "Identifisering av legemiddel administrert til pasient på institus
 // HSØ Lukket legemiddelsløyfe - H-resept
 // IDMP/UNICOM
 // "https://hl7.org/fhir/R4/medicationadministration.html" <- R4
+
+// Subject kan bare være pasient
+// * subject.reference only Patient // sjekk syntaks
