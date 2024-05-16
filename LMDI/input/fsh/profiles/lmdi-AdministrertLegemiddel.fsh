@@ -4,6 +4,9 @@ Parent:   MedicationAdministration
 Id:       lmdi-administrert-legemiddel
 Title:    "Administrert legemiddel"
 Description: "Identifisering av legemiddel administrert til pasient på institusjon."
+* ^status = #draft
+* ^date = "2024-05-16"
+
 // Se på følgende kilder:
 // eResept
 // Pasientens legemiddelliste / sentral forskrivningsmodul (eResept)
@@ -12,4 +15,6 @@ Description: "Identifisering av legemiddel administrert til pasient på institus
 // "https://hl7.org/fhir/R4/medicationadministration.html" <- R4
 
 // Subject kan bare være pasient
-// * subject.reference only Patient // sjekk syntaks
+// Legge til støtte for no-basies-Patient senere
+// * subject only Reference(Patient or $no-basis-Patient)
+* subject only Reference(Patient)
