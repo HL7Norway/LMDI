@@ -37,6 +37,70 @@
       "http://hl7.org/fhir/R4/valueset-name-use.html" : "NameUse"
     },
     {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
+      "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
+      "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes",
+      "http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html" : "SNOMED CT Reason Medication Not Given Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/med-admin-perform-function",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "MedicationAdministrationPerformerFunctionCodes",
+      "title" : "MedicationAdministration Performer Function Codes",
+      "description" : "MedicationAdministration Performer Function Codes",
+      "oids" : ["2.16.840.1.113883.4.642.1.1112"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-med-admin-perform-function.html" : "Medication administration  performer  function  codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medication-admin-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationAdministration Category Codes",
+      "title" : "Medication administration  category  codes",
+      "description" : "MedicationAdministration Category Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1111"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medication-admin-category.html" : "Medication administration  category  codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medication-admin-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationAdministration Status Codes",
+      "title" : "Medication administration  status  codes",
+      "description" : "MedicationAdministration Status Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1311"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medication-admin-status.html" : "Medication administration  status  codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/reason-medication-given",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ReasonMedicationGivenCodes",
+      "title" : "Reason Medication Given Codes",
+      "description" : "This value set is provided as an example. The value set to instantiate this attribute should be drawn from a robust terminology code system that consists of or contains concepts to support the medication process.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1110"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-reason-medication-given-codes.html" : "Reason Medication Given Codes"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
       "version" : "2.0.0",
       "status" : "active",

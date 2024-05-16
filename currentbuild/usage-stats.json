@@ -5,6 +5,12 @@
   "jurisdiction": "NO",
   "extensions": [],
   "profiles": {
+    "MedicationAdministration": [
+      {
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-administrert-legemiddel",
+        "title": "Administrert legemiddel"
+      }
+    ],
     "Patient": [
       {
         "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient-profile",

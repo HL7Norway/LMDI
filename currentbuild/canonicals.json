@@ -14,6 +14,13 @@
     "name" : "Lmdi"
   },
   {
+    "id" : "lmdi-administrert-legemiddel",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-administrert-legemiddel",
+    "version" : "0.1.0",
+    "name" : "AdministrertLegemiddel"
+  },
+  {
     "id" : "lmdi-patient-profile",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient-profile",

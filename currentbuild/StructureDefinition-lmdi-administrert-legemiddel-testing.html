@@ -1,9 +1,13 @@
+<!-- get modelType -->
+
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Home - Legemiddeldata fra institusjon til Legemiddelregisteret v0.1.0</title>
+    <title>Administrert legemiddel - Testing - Legemiddeldata fra institusjon til Legemiddelregisteret v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +45,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"1"}
-    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.1"}
+    h3,h4,h5,h6{--heading-prefix:"2.1"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -118,7 +122,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Administrert legemiddel</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -130,16 +134,8 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<style type="text/css">
-h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
-h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
-h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
-h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
-h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
-</style>
-<div class="col-12">
+<div style="counter-reset: section 6" class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Legemiddeldata fra institusjon til Legemiddelregisteret - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7.no/fhir/ig/lmdi/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Home</h2>
   
 
 
@@ -147,25 +143,68 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="StructureDefinition-lmdi-administrert-legemiddel.html">Content</a>
+  </li>
+
+
+
+  <li>
+    <a href="StructureDefinition-lmdi-administrert-legemiddel-definitions.html">Detailed Descriptions</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="StructureDefinition-lmdi-administrert-legemiddel-mappings.html">Mappings</a>
+    </li>
+  
+
+
+
+
+
+
+
+  
+    <li>
+      <a href="StructureDefinition-lmdi-administrert-legemiddel.profile.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureDefinition-lmdi-administrert-legemiddel.profile.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureDefinition-lmdi-administrert-legemiddel.profile.ttl.html">TTL</a>
+    </li>
+  
+
+
+</ul>
+
+
+  <a name="root"> </a>
+  <h2 id="root">Resource Profile: AdministrertLegemiddel - Testing</h2>
+
   <table class="colsd">
-
-    <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi"/></span>
-      </td>
-      <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi|0.1.0"/></span>
-      </td>
-    </tr>
-
     <tr>
 
-
-
-
-
-
-
-      <td colspan="4">
+      <td colspan="2">
         
           Draft
           
@@ -174,50 +213,34 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
       </td>
 
-
-
-      <td><i>Computable Name</i>: <span style="font-family: monospace;">Lmdi</span></td>
     </tr>
-
-
-
-
   </table>
 
 
 
 
+<!-- insert intro if present -->
 
 
 
 
+<h3>Test Plans</h3>
 
-    <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
-<h3 id="legemiddeldata-fra-institusjon-til-legemiddelregisteret-lmdi">Legemiddeldata fra institusjon til Legemiddelregisteret (LMDI)</h3>
+  <p><b>No test plans are currently available for the  Profile.</b></p>
 
-<p>Komplette og oppdaterte helsedata på legemidler er tilgjengelig for analyse og forskning med tanke på å forbedre kvalitet, styring, helseovervåking, beredskap og kunnskapsforvaltning i helsetjenesten</p>
 
-<h4 id="mål">Mål</h4>
+<h3>Test Scripts</h3>
 
-<p>Samle inn legemiddeldata på individnivå fra polikliniske og innlagte pasienter i institusjon til Legemiddelregisteret (LMR). Som et ledd i dette utvikles det en implementasjonsguide (IG) basert på en felles informasjonsmodell og HL7 FHIR (dette dokumentet). Dette skal benyttes for innsending av data fra institusjon til LMR ved hjelp av datadeling (sikret REST API).</p>
+  <p><b>No test scripts are currently available for the  Profile.</b></p>
 
-<h2 id="plan">Plan</h2>
 
-<p>Versjon 0.9 sommer 2024.</p>
-
-<p>Denne IGen blir utviklet på <a href="https://github.com/HL7Norway/LMDI">HL7 Norge sin GitHub</a> - alle er velkommen!</p>
-
-<h4 id="kontaktpersoner">Kontaktpersoner</h4>
-
-<p>Yngve, Line, Espen</p>
+<!-- insert notes if present -->
 
 
 
 
 </div>
+
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -225,6 +248,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    try {
+      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
+    } catch(exception) {
+    }
+
+    if (!currentTabIndex)
+      currentTabIndex = '0';
+
+    $( '#tabs' ).tabs({
+      active: currentTabIndex,
+      activate: function( event, ui ) {
+        var active = $('.selector').tabs('option', 'active');
+        currentTabIndex = ui.newTab.index();
+        document.activeElement.blur();
+        try {
+          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
+        } catch(exception) {
+        }
+      }
+    });
+  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
