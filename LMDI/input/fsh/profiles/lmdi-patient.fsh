@@ -1,6 +1,6 @@
-Profile:     Lmdi-Patient
-Id:          Lmdi-Patient
-Parent:      no-basis-Patient
+Profile:     LmdiPatient
+Id:          LmdiPatient
+Parent:      Patient
 Title:       "LMDI Patient Profile"
 Description: "Kun et eksempel for å vise verktøy"
 * ^status = #draft

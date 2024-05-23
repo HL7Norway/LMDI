@@ -1,6 +1,6 @@
-Profile: Lmdi-Indikasjon
+Profile: LmdiIndikasjon
 Parent: Condition
-Id: Lmdi-Indikasjon
+Id: lmdi-indikasjon
 Title: "Lmdi-Indikasjon TMP"
 Description: "Indikasjon/diagnose TMP"
 * ^status = #draft

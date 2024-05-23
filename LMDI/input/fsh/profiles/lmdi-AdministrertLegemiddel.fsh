@@ -18,5 +18,4 @@ Description: "Identifisering av legemiddel administrert til pasient på institus
 // Legge til støtte for no-basies-Patient senere
 // * subject only Reference(Patient or $no-basis-Patient)
 * subject only Reference(Patient)
-* occurence MS // Allerede 1..1
 * dosage MS

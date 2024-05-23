@@ -1,6 +1,6 @@
-Profile: Lmdi-Organization
+Profile: LmdiOrganization
 Parent: Organization
-Id: Lmdi-Organization
+Id: lmdi-organization
 Title: "Lmdi-Organization"
 Description: ""
 * ^status = #draft

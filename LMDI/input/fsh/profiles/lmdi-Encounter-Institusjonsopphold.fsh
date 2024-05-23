@@ -1,8 +1,8 @@
 // Institusjonsopphold
 // Encounter
-Profile: Lmdi-Institusjonsopphold
+Profile: LmdiEncounterInstitusjonsopphold
 Parent: Encounter
-Id: Lmdi-Institusjonsopphold
+Id: lmdi-encounter-institusjonsopphold
 Title: "Lmdi-Institusjonsopphold"
 Description: ""
 * ^status = #draft
