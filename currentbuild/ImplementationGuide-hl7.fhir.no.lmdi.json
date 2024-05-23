@@ -10,7 +10,7 @@
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-05-23T07:33:05+00:00",
+  "date" : "2024-05-23T10:50:46+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -623,7 +623,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/lmdi-practitioner"
+        "reference" : "StructureDefinition/LmdiPractitioner"
       },
       "name" : "LMDI Helsepersonell",
       "description" : "Helsepersonell som har foreskrevet eller administrert legemiddelet",
@@ -635,7 +635,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/lmdi-patient-profile"
+        "reference" : "StructureDefinition/LmdiPatient"
       },
       "name" : "LMDI Patient Profile",
       "description" : "Kun et eksempel for å vise verktøy",
@@ -651,6 +651,40 @@
       },
       "name" : "LMDI Test-kodeverk",
       "description" : "Dette kodeverket inneholder noen rare koder.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lmdi-indikasjon"
+      },
+      "name" : "Lmdi-Indikasjon TMP",
+      "description" : "Indikasjon/diagnose TMP",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lmdi-encounter-institusjonsopphold"
+      },
+      "name" : "Lmdi-Institusjonsopphold",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lmdi-organization"
+      },
+      "name" : "Lmdi-Organization",
       "exampleBoolean" : false
     }],
     "page" : {

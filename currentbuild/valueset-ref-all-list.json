@@ -26,8 +26,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-practitioner.html" : "LMDI Helsepersonell",
-      "StructureDefinition-lmdi-patient-profile.html" : "LMDI Patient Profile"
+      "StructureDefinition-LmdiPatient.html" : "LMDI Patient Profile",
+      "StructureDefinition-LmdiPractitioner.html" : "LMDI Helsepersonell"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/approach-site-codes",
@@ -44,6 +44,296 @@
       "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-indikasjon.html" : "Lmdi-Indikasjon TMP"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionCategoryCodes",
+      "title" : "Condition Category Codes",
+      "description" : "Preferred value set for Condition Categories.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.162"],
+      "sources" : ["2.16.840.1.113883.4.642.3.162"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-indikasjon.html" : "Lmdi-Indikasjon TMP"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionClinicalStatusCodes",
+      "title" : "Condition Clinical Status Codes",
+      "description" : "Preferred value set for Condition Clinical Status.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical"],
+      "oids" : ["2.16.840.1.113883.4.642.3.164"],
+      "sources" : ["2.16.840.1.113883.4.642.3.164"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-indikasjon.html" : "Lmdi-Indikasjon TMP"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/Problem/DiagnosisCodes",
+      "title" : "Condition/Problem/Diagnosis Codes",
+      "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.161"],
+      "sources" : ["2.16.840.1.113883.4.642.3.161"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-indikasjon.html" : "Lmdi-Indikasjon TMP"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/DiagnosisSeverity",
+      "title" : "Condition/Diagnosis Severity",
+      "description" : "Preferred value set for Condition/Diagnosis severity grading.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.168"],
+      "sources" : ["2.16.840.1.113883.4.642.3.168"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-indikasjon.html" : "Lmdi-Indikasjon TMP"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStage",
+      "title" : "Condition Stage",
+      "description" : "Example value set for stages of cancer and other conditions.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.170"],
+      "sources" : ["2.16.840.1.113883.4.642.3.170"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-indikasjon.html" : "Lmdi-Indikasjon TMP"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStageType",
+      "title" : "Condition Stage Type",
+      "description" : "Example value set for the type of stages of cancer and other conditions",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.171"],
+      "sources" : ["2.16.840.1.113883.4.642.3.171"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-indikasjon.html" : "Lmdi-Indikasjon TMP"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionVerificationStatus",
+      "title" : "ConditionVerificationStatus",
+      "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-ver-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.166"],
+      "sources" : ["2.16.840.1.113883.4.642.3.166"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-indikasjon.html" : "Lmdi-Indikasjon TMP"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ContactEntityType",
+      "title" : "Contact entity type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/contactentity-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.416"],
+      "sources" : ["2.16.840.1.113883.4.642.3.416"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-organization.html" : "Lmdi-Organization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosisRole",
+      "title" : "DiagnosisRole",
+      "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diagnosis-role"],
+      "oids" : ["2.16.840.1.113883.4.642.3.49"],
+      "sources" : ["2.16.840.1.113883.4.642.3.49"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Lmdi-Institusjonsopphold"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-admit-source",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdmitSource",
+      "title" : "Admit source",
+      "description" : "This value set defines a set of codes that can be used to indicate from where the patient came in.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/admit-source"],
+      "oids" : ["2.16.840.1.113883.4.642.3.257"],
+      "sources" : ["2.16.840.1.113883.4.642.3.257"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Lmdi-Institusjonsopphold"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Diet",
+      "title" : "Diet",
+      "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diet"],
+      "oids" : ["2.16.840.1.113883.4.642.3.255"],
+      "sources" : ["2.16.840.1.113883.4.642.3.255"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Lmdi-Institusjonsopphold"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DischargeDisposition",
+      "title" : "Discharge disposition",
+      "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/discharge-disposition"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.259"],
+      "sources" : ["2.16.840.1.113883.4.642.3.259"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Lmdi-Institusjonsopphold"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-location-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterLocationStatus",
+      "title" : "EncounterLocationStatus",
+      "description" : "The status of the location.",
+      "systems" : ["http://hl7.org/fhir/encounter-location-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.262"],
+      "sources" : ["2.16.840.1.113883.4.642.3.262"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Lmdi-Institusjonsopphold"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantType",
+      "title" : "Participant type",
+      "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/participant-type",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.250"],
+      "sources" : ["2.16.840.1.113883.4.642.3.250"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Lmdi-Institusjonsopphold"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterReasonCodes",
+      "title" : "Encounter Reason Codes",
+      "description" : "This examples value set defines the set of codes that can be used to indicate reasons for an encounter.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.261"],
+      "sources" : ["2.16.840.1.113883.4.642.3.261"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Lmdi-Institusjonsopphold"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecialArrangements",
+      "title" : "Special arrangements",
+      "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.253"],
+      "sources" : ["2.16.840.1.113883.4.642.3.253"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Lmdi-Institusjonsopphold"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecialCourtesy",
+      "title" : "Special courtesy",
+      "description" : "This value set defines a set of codes that can be used to indicate special courtesies provided to the patient.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.252"],
+      "sources" : ["2.16.840.1.113883.4.642.3.252"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Lmdi-Institusjonsopphold"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterStatus",
+      "title" : "EncounterStatus",
+      "description" : "Current state of the encounter.",
+      "systems" : ["http://hl7.org/fhir/encounter-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.246"],
+      "sources" : ["2.16.840.1.113883.4.642.3.246"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Lmdi-Institusjonsopphold"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterType",
+      "title" : "Encounter type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/encounter-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.248"],
+      "sources" : ["2.16.840.1.113883.4.642.3.248"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Lmdi-Institusjonsopphold"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
       "version" : "4.0.1",
       "status" : "draft",
@@ -56,8 +346,11 @@
       "uses" : {
       },
       "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel",
-      "StructureDefinition-lmdi-practitioner.html" : "LMDI Helsepersonell",
-      "StructureDefinition-lmdi-patient-profile.html" : "LMDI Patient Profile"
+      "StructureDefinition-lmdi-organization.html" : "Lmdi-Organization",
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Lmdi-Institusjonsopphold",
+      "StructureDefinition-LmdiPatient.html" : "LMDI Patient Profile",
+      "StructureDefinition-lmdi-indikasjon.html" : "Lmdi-Indikasjon TMP",
+      "StructureDefinition-LmdiPractitioner.html" : "LMDI Helsepersonell"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -71,7 +364,37 @@
       "sources" : ["2.16.840.1.113883.4.642.3.423"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-patient-profile.html" : "LMDI Patient Profile"
+      "StructureDefinition-LmdiPatient.html" : "LMDI Patient Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationType",
+      "title" : "Location type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/location-physical-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.328"],
+      "sources" : ["2.16.840.1.113883.4.642.3.328"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Lmdi-Institusjonsopphold"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/manifestation-or-symptom",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ManifestationAndSymptomCodes",
+      "title" : "Manifestation and Symptom Codes",
+      "description" : "Example value set for Manifestation and Symptom codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.169"],
+      "sources" : ["2.16.840.1.113883.4.642.3.169"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-indikasjon.html" : "Lmdi-Indikasjon TMP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/marital-status",
@@ -88,7 +411,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.29"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-patient-profile.html" : "LMDI Patient Profile"
+      "StructureDefinition-LmdiPatient.html" : "LMDI Patient Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/med-admin-perform-function",
@@ -153,18 +476,18 @@
       "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/name-use",
+      "url" : "http://hl7.org/fhir/ValueSet/organization-type",
       "version" : "4.0.1",
-      "status" : "active",
-      "name" : "NameUse",
-      "title" : "NameUse",
-      "description" : "The use of a human name.",
-      "systems" : ["http://hl7.org/fhir/name-use"],
-      "oids" : ["2.16.840.1.113883.4.642.3.65"],
-      "sources" : ["2.16.840.1.113883.4.642.3.65"],
+      "status" : "draft",
+      "name" : "OrganizationType",
+      "title" : "Organization type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/organization-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.414"],
+      "sources" : ["2.16.840.1.113883.4.642.3.414"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-patient-profile.html" : "LMDI Patient Profile"
+      "StructureDefinition-lmdi-organization.html" : "Lmdi-Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -178,7 +501,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1130"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-patient-profile.html" : "LMDI Patient Profile"
+      "StructureDefinition-LmdiPatient.html" : "LMDI Patient Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/reason-medication-given-codes",
@@ -225,6 +548,34 @@
       "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/service-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceType",
+      "title" : "Service type",
+      "description" : "This value set defines an example set of codes of service-types.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/service-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.518"],
+      "sources" : ["2.16.840.1.113883.4.642.3.518"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Lmdi-Institusjonsopphold"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSReAdmissionIndicator",
+      "title" : "hl7VS-re-admissionIndicator",
+      "description" : "Value Set of codes which are used to specify that a patient is being re-admitted to a healthcare facility from which they were discharged, and indicates the circumstances around such re-admission.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0092"],
+      "oids" : ["2.16.840.1.113883.21.40"],
+      "sources" : ["2.16.840.1.113883.21.40"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Lmdi-Institusjonsopphold"
+    },
+    {
       "url" : "http://terminology.hl7.org/ValueSet/v2-2.7-0360",
       "version" : "0360",
       "status" : "active",
@@ -234,7 +585,35 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0360|2.7"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-practitioner.html" : "LMDI Helsepersonell"
+      "StructureDefinition-LmdiPractitioner.html" : "LMDI Helsepersonell"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActEncounterCode",
+      "title" : "ActEncounterCode",
+      "description" : "Domain provides codes that qualify the ActEncounterClass (ENC)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "oids" : ["2.16.840.1.113883.1.11.13955"],
+      "sources" : ["2.16.840.1.113883.1.11.13955"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Lmdi-Institusjonsopphold"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActPriority",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActPriority",
+      "title" : "ActPriority",
+      "description" : "A code or set of codes (e.g., for routine, emergency,) specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen.\r\n\r\n*Discussion:* This attribute is used in orders to indicate the ordered priority, and in event documentation it indicates the actual priority used to perform the act. In definition mood it indicates the available priorities.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActPriority"],
+      "oids" : ["2.16.840.1.113883.1.11.16866"],
+      "sources" : ["2.16.840.1.113883.1.11.16866"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Lmdi-Institusjonsopphold"
     }
   ]
 }

@@ -14,6 +14,20 @@
     "name" : "Lmdi"
   },
   {
+    "id" : "LmdiPatient",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/LmdiPatient",
+    "version" : "0.1.0",
+    "name" : "LmdiPatient"
+  },
+  {
+    "id" : "LmdiPractitioner",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/LmdiPractitioner",
+    "version" : "0.1.0",
+    "name" : "LmdiPractitioner"
+  },
+  {
     "id" : "lmdi-administrert-legemiddel",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-administrert-legemiddel",
@@ -21,17 +35,24 @@
     "name" : "AdministrertLegemiddel"
   },
   {
-    "id" : "lmdi-patient-profile",
+    "id" : "lmdi-encounter-institusjonsopphold",
     "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient-profile",
+    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter-institusjonsopphold",
     "version" : "0.1.0",
-    "name" : "LmdiPatient"
+    "name" : "LmdiEncounterInstitusjonsopphold"
   },
   {
-    "id" : "lmdi-practitioner",
+    "id" : "lmdi-indikasjon",
     "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner",
+    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-indikasjon",
     "version" : "0.1.0",
-    "name" : "LmdiPractitioner"
+    "name" : "LmdiIndikasjon"
+  },
+  {
+    "id" : "lmdi-organization",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization",
+    "version" : "0.1.0",
+    "name" : "LmdiOrganization"
   }
 ]

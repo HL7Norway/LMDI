@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Lmdi"] ; # 
   fhir:title [ fhir:v "Legemiddeldata fra institusjon til Legemiddelregisteret"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-23T07:33:05+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-23T10:50:46+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;
@@ -535,8 +535,8 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner> ;
-         fhir:reference [ fhir:v "StructureDefinition/lmdi-practitioner" ]
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/LmdiPractitioner> ;
+         fhir:reference [ fhir:v "StructureDefinition/LmdiPractitioner" ]
        ] ;
        fhir:name [ fhir:v "LMDI Helsepersonell" ] ;
        fhir:description [ fhir:v "Helsepersonell som har foreskrevet eller administrert legemiddelet" ] ;
@@ -547,8 +547,8 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient-profile> ;
-         fhir:reference [ fhir:v "StructureDefinition/lmdi-patient-profile" ]
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/LmdiPatient> ;
+         fhir:reference [ fhir:v "StructureDefinition/LmdiPatient" ]
        ] ;
        fhir:name [ fhir:v "LMDI Patient Profile" ] ;
        fhir:description [ fhir:v "Kun et eksempel for å vise verktøy" ] ;
@@ -564,6 +564,40 @@
        ] ;
        fhir:name [ fhir:v "LMDI Test-kodeverk" ] ;
        fhir:description [ fhir:v "Dette kodeverket inneholder noen rare koder." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-indikasjon> ;
+         fhir:reference [ fhir:v "StructureDefinition/lmdi-indikasjon" ]
+       ] ;
+       fhir:name [ fhir:v "Lmdi-Indikasjon TMP" ] ;
+       fhir:description [ fhir:v "Indikasjon/diagnose TMP" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter-institusjonsopphold> ;
+         fhir:reference [ fhir:v "StructureDefinition/lmdi-encounter-institusjonsopphold" ]
+       ] ;
+       fhir:name [ fhir:v "Lmdi-Institusjonsopphold" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization> ;
+         fhir:reference [ fhir:v "StructureDefinition/lmdi-organization" ]
+       ] ;
+       fhir:name [ fhir:v "Lmdi-Organization" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [

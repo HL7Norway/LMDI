@@ -11,7 +11,7 @@
   <name value="Lmdi"/>
   <title value="Legemiddeldata fra institusjon til Legemiddelregisteret"/>
   <status value="draft"/>
-  <date value="2024-05-23T07:33:05+00:00"/>
+  <date value="2024-05-23T10:50:46+00:00"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>
   <contact>
     <name value="Folkehelseinstituttet (FHI)"/>
@@ -467,7 +467,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/lmdi-practitioner"/>
+        <reference value="StructureDefinition/LmdiPractitioner"/>
       </reference>
       <name value="LMDI Helsepersonell"/>
       <description value="Helsepersonell som har foreskrevet eller administrert legemiddelet"/>
@@ -478,7 +478,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/lmdi-patient-profile"/>
+        <reference value="StructureDefinition/LmdiPatient"/>
       </reference>
       <name value="LMDI Patient Profile"/>
       <description value="Kun et eksempel for å vise verktøy"/>
@@ -493,6 +493,37 @@
       </reference>
       <name value="LMDI Test-kodeverk"/>
       <description value="Dette kodeverket inneholder noen rare koder."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lmdi-indikasjon"/>
+      </reference>
+      <name value="Lmdi-Indikasjon TMP"/>
+      <description value="Indikasjon/diagnose TMP"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lmdi-encounter-institusjonsopphold"/>
+      </reference>
+      <name value="Lmdi-Institusjonsopphold"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lmdi-organization"/>
+      </reference>
+      <name value="Lmdi-Organization"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

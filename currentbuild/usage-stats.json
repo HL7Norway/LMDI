@@ -5,22 +5,40 @@
   "jurisdiction": "NO",
   "extensions": [],
   "profiles": {
+    "Patient": [
+      {
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/LmdiPatient",
+        "title": "LMDI Patient Profile"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/LmdiPractitioner",
+        "title": "LMDI Helsepersonell"
+      }
+    ],
     "MedicationAdministration": [
       {
         "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-administrert-legemiddel",
         "title": "Administrert legemiddel"
       }
     ],
-    "Patient": [
+    "Encounter": [
       {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient-profile",
-        "title": "LMDI Patient Profile"
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter-institusjonsopphold",
+        "title": "Lmdi-Institusjonsopphold"
       }
     ],
-    "Practitioner": [
+    "Condition": [
       {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner",
-        "title": "LMDI Helsepersonell"
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-indikasjon",
+        "title": "Lmdi-Indikasjon TMP"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization",
+        "title": "Lmdi-Organization"
       }
     ]
   },

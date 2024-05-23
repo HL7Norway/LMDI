@@ -1,30 +1,41 @@
 Lmdi : Validation Results
 =========================================
 
-err = 1, warn = 10, info = 0
+err = 1, warn = 15, info = 0
 IG Publisher Version: 1.6.9
-Generated Thu May 23 07:35:48 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.1.0 (canonical = http://hl7.no/fhir/ig/lmdi)
- Build Errors : 1 / 7 / 0
+Generated Thu May 23 10:53:29 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.1.0 (canonical = http://hl7.no/fhir/ig/lmdi)
+ Build Errors : 1 / 9 / 0
  /github/workspace/LMDI/fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi : 0 / 0 / 1
+ /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-LmdiPatient : 0 / 1 / 1
+ /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-LmdiPractitioner : 0 / 1 / 1
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-administrert-legemiddel : 0 / 1 / 1
- /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-patient-profile : 0 / 1 / 1
- /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-practitioner : 0 / 1 / 1
+ /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-encounter-institusjonsopphold : 0 / 1 / 1
+ /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-indikasjon : 0 / 1 / 1
+ /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-organization : 0 / 1 / 1
 </table>
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[23].value: Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)
-WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 231, column 4: The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 35 other files)
-WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 272, column 4: The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 35 other files)
-WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.change.history.html#/html/body/script at Line 198, column 4: The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 27 other files)
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/lmdi-encounter-institusjonsopphold.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/lmdi-organization.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 231, column 4: The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 62 other files)
+WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 272, column 4: The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 62 other files)
+WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.change.history.html#/html/body/script at Line 198, column 4: The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 54 other files)
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem.json ==
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi.json ==
+== fsh-generated/resources/StructureDefinition-LmdiPatient.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/LmdiPatient'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-LmdiPractitioner.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/LmdiPractitioner'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-lmdi-administrert-legemiddel.json ==
 WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-administrert-legemiddel'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-lmdi-patient-profile.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient-profile'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-lmdi-practitioner.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-lmdi-encounter-institusjonsopphold.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter-institusjonsopphold'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-lmdi-indikasjon.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-indikasjon'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-lmdi-organization.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization'): The Implementation Guide contains no examples for this profile

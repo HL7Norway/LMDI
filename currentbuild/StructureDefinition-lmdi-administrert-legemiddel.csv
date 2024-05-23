@@ -99,7 +99,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MedicationAdministration.note","MedicationAdministration.note","","","",0,*,"","","","Annotation {[]} {[]}
 ","Information about the administration","Extra information about the medication administration that is not conveyed by the other attributes.","","","","","","","","","",,,,,"",,,,"MedicationAdministration.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.note",".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=""annotation""].value"
-"MedicationAdministration.dosage","MedicationAdministration.dosage","","","",0,1,"","","","BackboneElement {[]} {[]}
+"MedicationAdministration.dosage","MedicationAdministration.dosage","","","",0,1,"Y","","","BackboneElement {[]} {[]}
 ","Details of how medication was taken","Describes the medication dosage information details e.g. dose, rate, site, route, etc.","","","","","","","","","",,,,,"",,,,"MedicationAdministration.dosage",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 mad-1:SHALL have at least one of dosage.dose or dosage.rate[x] {dose.exists() or rate.exists()}","component->SubstanceAdministrationEvent"
 "MedicationAdministration.dosage.id","MedicationAdministration.dosage.id","","","",0,1,"","","","string {[]} {[]}
