@@ -4,7 +4,7 @@ Profile: LmdiEncounterInstitusjonsopphold
 Parent: Encounter
 Id: lmdi-encounter-institusjonsopphold
 Title: "Lmdi-Institusjonsopphold"
-Description: ""
+Description: "TODO"
 * ^status = #draft
 * ^date = "2024-05-23"
 

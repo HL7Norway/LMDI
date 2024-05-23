@@ -7,7 +7,7 @@ Description: "Kun et eksempel for å vise verktøy"
 * ^date = "2024-05-23"
 
 // Krav til profil:
-// Skal baseres på no-basis-patient <- profileres
+// Krav (nasjonalt): Baseres på no-basis-patient <- profileres
 // Parent: no-basis-Patient
 
 // Krav: MÅ være FNR eller DNR <- profileres
