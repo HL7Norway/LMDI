@@ -7,3 +7,4 @@ Description: "Indikasjon/diagnose TMP"
 * ^date = "2024-05-23"
 
 // Riktig begrep i LMR: Indikasjon vs diagnose
+// Krav x

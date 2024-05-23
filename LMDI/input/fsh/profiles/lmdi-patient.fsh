@@ -1,20 +1,19 @@
 Profile:     Lmdi-Patient
 Id:          Lmdi-Patient
-Parent:      Patient
+Parent:      no-basis-Patient
 Title:       "LMDI Patient Profile"
 Description: "Kun et eksempel for å vise verktøy"
 * ^status = #draft
 * ^date = "2024-05-23"
 
 // Krav til profil:
-// Skal baseres på no-basis-patient
+// Skal baseres på no-basis-patient <- profileres
+// Parent: no-basis-Patient
 
-// Eksempler under inntil videre
-// Require at least one value inside the `name` element
-* name 1..*
-
-// Mark elements as MustSupport
-* name and name.given and name.family MS
-
-// Do not allow `gender` to be included.
-* gender 0..0
+// Krav: MÅ være FNR eller DNR <- profileres
+// Krav: Hvis ikke ID, bruk kjønn+fødselsdato <- dokumentasjon
+// Krav: Må STØTTE ha navn! <- eksempel
+* name MS
+// Krav: Kommunenummer <- kan være del av tjeneste eller adresse?
+// no-basis-Address/district - extention - municipalitycode
+// Spør FHI: Er kommunenummer for bosted eller tjeneste? Yngve sier begge. 
