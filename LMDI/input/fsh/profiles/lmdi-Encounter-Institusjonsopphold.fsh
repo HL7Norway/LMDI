@@ -1,5 +1,4 @@
-// Institusjonsopphold
-// Encounter
+// Institusjonsopphold basert på Encounter
 Profile: LmdiEncounterInstitusjonsopphold
 Parent: Encounter
 Id: lmdi-encounter-institusjonsopphold

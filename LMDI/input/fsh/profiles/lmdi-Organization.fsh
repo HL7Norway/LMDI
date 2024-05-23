@@ -8,3 +8,10 @@ Description: "TODO"
 
 // Krav (nasjonalt): Basere på no-basis-Organization
 // Krav (LMDI): TODO
+
+* identifier 1..*
+* name MS
+
+// Krav (LMDI): Address/Kommunenummer ?
+
+* address MS

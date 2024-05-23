@@ -1,5 +1,5 @@
 Profile:     LmdiPractitioner
-Id:          LmdiPractitioner
+Id:          lmdi-practitioner
 Parent:      Practitioner
 Title:       "LMDI Helsepersonell"
 Description: "Helsepersonell som har foreskrevet eller administrert legemiddelet"

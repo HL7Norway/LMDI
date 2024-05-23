@@ -14,6 +14,8 @@ Description: "Identifisering av legemiddel administrert til pasient på institus
 // IDMP/UNICOM
 // "https://hl7.org/fhir/R4/medicationadministration.html" <- R4
 
+// TODO Se på navngivning iht. "Best Practice / HL7 Norge"
+
 // Subject kan bare være pasient
 // Legge til støtte for no-basies-Patient senere
 // * subject only Reference(Patient or $no-basis-Patient)

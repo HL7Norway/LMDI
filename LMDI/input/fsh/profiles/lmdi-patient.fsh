@@ -1,5 +1,5 @@
 Profile:     LmdiPatient
-Id:          LmdiPatient
+Id:          lmdi-patient
 Parent:      Patient
 Title:       "LMDI Patient Profile"
 Description: "Kun et eksempel for å vise verktøy"
