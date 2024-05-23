@@ -1,59 +1,59 @@
 {
-  "date" : "Thu, 16 May, 2024 15:58:29 +0000",
+  "date" : "Thu, 23 May, 2024 07:33:05 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
       "name" : "/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi.json",
-      "size" : 2175,
+      "size" : 2453,
       "processes" : [
         {
+          "activity" : "scan",
+          "start" : 49,
+          "length" : 1
+        },
+        {
           "activity" : "load",
-          "start" : 38,
-          "length" : 27
+          "start" : 49,
+          "length" : 25
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 38,
-          "length" : 5
+          "start" : 49,
+          "length" : 4
         },
         {
           "activity" : "generateNarratives",
-          "start" : 38,
-          "length" : 73
+          "start" : 49,
+          "length" : 48
         },
         {
           "activity" : "validate",
-          "start" : 41,
-          "length" : 528
+          "start" : 53,
+          "length" : 368
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 41,
+          "start" : 53,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 42,
-          "length" : 94
+          "start" : 53,
+          "length" : 85
         },
         {
           "activity" : "generate2",
-          "start" : 43,
-          "length" : 139
-        },
-        {
-          "activity" : "generateExampleZip",
-          "start" : 187,
-          "length" : 1
+          "start" : 55,
+          "length" : 66
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 187,
-          "length" : 8
+          "start" : 199,
+          "length" : 3
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 191,
+          "start" : 207,
           "length" : 1
         }
       ]
@@ -64,43 +64,53 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 37,
+          "start" : 44,
           "length" : 19
         },
         {
-          "activity" : "loadDepInfo",
-          "start" : 37,
+          "activity" : "loadInfo",
+          "start" : 49,
           "length" : 1
         },
         {
           "activity" : "load",
-          "start" : 37,
-          "length" : 24
+          "start" : 49,
+          "length" : 15
+        },
+        {
+          "activity" : "load",
+          "start" : 49,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 49,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 38,
-          "length" : 26
+          "start" : 49,
+          "length" : 18
         },
         {
           "activity" : "validate",
-          "start" : 38,
-          "length" : 2107
+          "start" : 50,
+          "length" : 2412
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 53,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 42,
-          "length" : 13
+          "start" : 53,
+          "length" : 17
         },
         {
           "activity" : "generate2",
-          "start" : 43,
-          "length" : 1527
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 187,
-          "length" : 1
+          "start" : 55,
+          "length" : 1615
         }
       ]
     },
@@ -110,119 +120,160 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 37,
-          "length" : 15
+          "start" : 44,
+          "length" : 11
         },
         {
           "activity" : "load",
-          "start" : 37,
-          "length" : 22
+          "start" : 49,
+          "length" : 19
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 38,
-          "length" : 68
+          "start" : 49,
+          "length" : 58
         },
         {
           "activity" : "generateNarratives",
-          "start" : 38,
-          "length" : 70
+          "start" : 49,
+          "length" : 64
         },
         {
           "activity" : "validate",
-          "start" : 40,
-          "length" : 593
-        },
-        {
-          "activity" : "checkConformanceResources",
-          "start" : 41,
-          "length" : 1
+          "start" : 52,
+          "length" : 509
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 41,
+          "start" : 53,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 42,
-          "length" : 235
+          "start" : 53,
+          "length" : 278
         },
         {
           "activity" : "generate2",
-          "start" : 45,
-          "length" : 1125
+          "start" : 57,
+          "length" : 974
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 61,
+          "length" : 1
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 187,
-          "length" : 9
+          "start" : 199,
+          "length" : 7
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 191,
+          "start" : 207,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-lmdi-patient-profile.json",
-      "size" : 999,
+      "size" : 1023,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 37,
-          "length" : 19
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 37,
-          "length" : 1
+          "start" : 44,
+          "length" : 11
         },
         {
           "activity" : "load",
-          "start" : 37,
-          "length" : 20
+          "start" : 49,
+          "length" : 19
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 38,
-          "length" : 78
+          "start" : 49,
+          "length" : 72
         },
         {
           "activity" : "generateNarratives",
-          "start" : 38,
-          "length" : 54
+          "start" : 49,
+          "length" : 45
         },
         {
           "activity" : "validate",
-          "start" : 41,
-          "length" : 262
+          "start" : 52,
+          "length" : 277
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 41,
+          "start" : 53,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 42,
-          "length" : 262
+          "start" : 54,
+          "length" : 258
         },
         {
           "activity" : "generate2",
-          "start" : 46,
-          "length" : 715
+          "start" : 58,
+          "length" : 566
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 187,
+          "start" : 199,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-lmdi-practitioner.json",
+      "size" : 672,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
           "length" : 11
         },
         {
-          "activity" : "scanExamplesForR5",
-          "start" : 191,
+          "activity" : "load-configure",
+          "start" : 49,
           "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 49,
+          "length" : 11
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 49,
+          "length" : 28
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 49,
+          "length" : 30
+        },
+        {
+          "activity" : "validate",
+          "start" : 53,
+          "length" : 114
+        },
+        {
+          "activity" : "generate1",
+          "start" : 54,
+          "length" : 163
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 315
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 199,
+          "length" : 4
         }
       ]
     }

@@ -16,6 +16,12 @@
         "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient-profile",
         "title": "LMDI Patient Profile"
       }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner",
+        "title": "LMDI Helsepersonell"
+      }
     ]
   },
   "usage": {

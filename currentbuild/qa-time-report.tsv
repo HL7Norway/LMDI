@@ -1,5 +1,6 @@
 Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi.json	2175	-	0	0	0	0	0	0	5	73	0	0	0	0	0	0	0	1	0	0	94	139	0	0	0	8	0	1
-fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem.json	650	19	0	0	1	0	0	0	0	26	0	0	0	0	0	0	0	0	0	0	13	1527	0	0	0	1	0	0
-fsh-generated/resources/StructureDefinition-lmdi-administrert-legemiddel.json	967	15	0	0	0	0	0	68	0	70	0	0	1	0	0	0	0	1	0	0	235	1125	0	0	0	9	0	1
-fsh-generated/resources/StructureDefinition-lmdi-patient-profile.json	999	19	1	0	0	0	0	78	0	54	0	0	0	0	0	0	0	1	0	0	262	715	0	0	0	11	0	1
+/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi.json	2453	-	0	0	0	0	0	0	4	48	0	0	0	0	0	0	0	1	0	0	85	66	0	0	0	3	0	1
+fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem.json	650	19	0	0	0	1	0	0	1	18	0	0	1	0	0	0	0	0	0	0	17	1615	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-lmdi-administrert-legemiddel.json	967	11	0	0	0	0	0	58	0	64	0	0	0	0	0	0	0	1	0	0	278	974	0	1	0	7	0	1
+fsh-generated/resources/StructureDefinition-lmdi-patient-profile.json	1023	11	0	0	0	0	0	72	0	45	0	0	0	0	0	0	0	1	0	0	258	566	0	0	0	9	0	0
+fsh-generated/resources/StructureDefinition-lmdi-practitioner.json	672	11	1	0	0	0	0	28	0	30	0	0	0	0	0	0	0	0	0	0	163	315	0	0	0	4	0	0

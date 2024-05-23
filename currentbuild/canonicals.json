@@ -26,5 +26,12 @@
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient-profile",
     "version" : "0.1.0",
     "name" : "LmdiPatient"
+  },
+  {
+    "id" : "lmdi-practitioner",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner",
+    "version" : "0.1.0",
+    "name" : "LmdiPractitioner"
   }
 ]

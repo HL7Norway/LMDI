@@ -2,15 +2,16 @@ Lmdi
 =========================================
 
 Generic: line 0, col 0, Error - Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters) (NOTFOUND)
-Generic: line 0, col 0, Error - The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - put the script in a  .js file in a trusted template (also in 26 other files) (INVALID)
-Generic: line 0, col 0, Error - The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - put the script in a  .js file in a trusted template (also in 26 other files) (INVALID)
-Generic: line 0, col 0, Error - The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - put the script in a  .js file in a trusted template (also in 18 other files) (INVALID)
+Generic: line 0, col 0, Warning - The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 35 other files) (INVALID)
+Generic: line 0, col 0, Warning - The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 35 other files) (INVALID)
+Generic: line 0, col 0, Warning - The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 27 other files) (INVALID)
 Generic: line 0, col 0, Warning - The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
 /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-administrert-legemiddel.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-patient-profile.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
+/github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-practitioner.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 
-err = 4, warn = 6, info = 0
-IG Publisher Version: 1.6.7
+err = 1, warn = 10, info = 0
+IG Publisher Version: 1.6.9

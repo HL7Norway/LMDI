@@ -26,6 +26,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
+      "StructureDefinition-lmdi-practitioner.html" : "LMDI Helsepersonell",
       "StructureDefinition-lmdi-patient-profile.html" : "LMDI Patient Profile"
     },
     {
@@ -55,6 +56,7 @@
       "uses" : {
       },
       "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel",
+      "StructureDefinition-lmdi-practitioner.html" : "LMDI Helsepersonell",
       "StructureDefinition-lmdi-patient-profile.html" : "LMDI Patient Profile"
     },
     {
@@ -221,6 +223,18 @@
       "uses" : {
       },
       "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-2.7-0360",
+      "version" : "0360",
+      "status" : "active",
+      "name" : "v2.0360.2.7",
+      "title" : "v2 table 0360, Version 2.7",
+      "description" : "FHIR Value set/code system definition for HL7 v2 table 0360 ver 2.9 ( Degree/License/Certificate)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0360|2.7"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-practitioner.html" : "LMDI Helsepersonell"
     }
   ]
 }
