@@ -1,0 +1,43 @@
+{
+    "resourceType": "MedicationAdministration",
+    "id": "Administrering-1",
+    "meta": {
+      "profile": [
+        "http://example.org/StructureDefinition/lmdi-administrert-legemiddel"
+      ]
+    },
+    "status": "completed",
+    "medicationReference": {
+      "reference": "https://fhir.legemidler.example.com/legemidler/123456780"
+    },
+    "subject": {
+      "reference": "https://fhi.no/fhir/lmdi/pasient/12345678"
+    },
+    "performer": [
+      {
+        "actor": {
+          "reference": "https://fhir.npr.no/helsepersonell/1234567890"
+        }
+      }
+    ],
+    "effectiveDateTime": "2024-05-28",
+    "dosage": {
+      "text": "Svelge to spiseskjéer",
+      "route": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "421521009",
+            "display": "Swallow"
+          }
+        ],
+        "text": "oralt"
+      },
+      "dose": {
+        "value": 2,
+        "unit": "metric tablespoon",
+        "system": "http://unitsofmeasure.org",
+        "code": "tsp_m"
+      }
+    }
+  }

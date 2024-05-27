@@ -74,8 +74,9 @@ Instance: Administrering-1
 InstanceOf: AdministrertLegemiddel
 Description: "Eksempel på administrering av legemiddel"
 * status = #completed
-* medicationReference.reference = "Medisin-1"
-* subject.reference = "Pasient-1"
+* medicationReference = Reference(https://fhir.legemidler.example.com/legemidler/123456780)
+* subject = Reference(https://fhi.no/fhir/lmdi/pasient/12345678)
+* performer.actor = Reference(https://fhir.npr.no/helsepersonell/1234567890)
 * effectiveDateTime = "2024-05-28"
 * dosage.text = "Svelge to spiseskjéer"
 * dosage.route.coding.system = "http://snomed.info/sct"
