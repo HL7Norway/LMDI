@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Lmdi"] ; # 
   fhir:title [ fhir:v "Legemiddeldata fra institusjon til Legemiddelregisteret"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-27T21:37:59+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-27T22:22:02+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;
@@ -542,6 +542,19 @@
          fhir:reference [ fhir:v "MedicationAdministration/Administrering-10" ]
        ] ;
        fhir:name [ fhir:v "Administrering-10" ] ;
+       fhir:description [ fhir:v "Utfyllende eksempel" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationAdministration" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.no/fhir/ig/lmdi/MedicationAdministration/Administrering-20> ;
+         fhir:reference [ fhir:v "MedicationAdministration/Administrering-20" ]
+       ] ;
+       fhir:name [ fhir:v "Administrering-20" ] ;
+       fhir:description [ fhir:v "Utfyllende eksempel - andre referanser" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
