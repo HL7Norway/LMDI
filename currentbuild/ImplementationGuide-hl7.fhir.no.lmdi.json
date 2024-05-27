@@ -10,7 +10,7 @@
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-05-27T19:35:40+00:00",
+  "date" : "2024-05-27T20:54:16+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -49,12 +49,6 @@
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
     "version" : "5.1.0"
-  },
-  {
-    "id" : "hl7_fhir_no_basis",
-    "uri" : "http://fhir.org/packages/hl7.fhir.no.basis/ImplementationGuide/hl7.fhir.no.basis",
-    "packageId" : "hl7.fhir.no.basis",
-    "version" : "2.2.0"
   }],
   "definition" : {
     "extension" : [{
@@ -626,6 +620,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationAdministration"
+      }],
+      "reference" : {
+        "reference" : "MedicationAdministration/Administrering-10"
+      },
+      "name" : "Administrering-10",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -658,6 +663,18 @@
       "name" : "Helsepersonell",
       "description" : "Helsepersonell som har foreskrevet eller administrert legemiddelet",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/Helsepersonell-1"
+      },
+      "name" : "Helsepersonell-1",
+      "description" : "Eksempel på helsepersonell med HPR-nummer",
+      "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner"
     },
     {
       "extension" : [{

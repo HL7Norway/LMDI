@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.no/fhir/ig/lmdi/MedicationAdministration/Administrering-10> a fhir:MedicationAdministration ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Administrering-10"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationAdministration </b><a name=\"Administrering-10\"> </a><a name=\"hcAdministrering-10\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceMedicationAdministration &quot;Administrering-10&quot; </p></div><p><b>status</b>: completed</p><p><b>medication</b>: <a name=\"hcMedisin-10\"> </a></p><blockquote><p/><p><a name=\"Medisin-10\"> </a></p><p><a name=\"hcMedisin-10\"> </a></p><p><b>identifier</b>: FEST-XXX-9e6c620b-5d09-4f27-9ee1-b108e7f338ab</p><p><b>code</b>: Oxycodone <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#430127000 &quot;Oxycodone-containing product in oral dose form&quot;)</span></p></blockquote><p><b>subject</b>: <a name=\"hcPasient-20\"> </a></p><blockquote><p/><p><a name=\"Pasient-20\"> </a></p><p><a name=\"hcPasient-20\"> </a></p><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.1</code>/13031353453</p><p><b>name</b>: Rosa Eli Kopter </p></blockquote><p><b>effective</b>: 2024-05-28</p><hr/><blockquote><p><b>Generated Narrative: Medication  #Medisin-10</b><a name=\"Medisin-10\"> </a><a name=\"hcMedisin-10\"> </a></p><p><b>identifier</b>: FEST-XXX-9e6c620b-5d09-4f27-9ee1-b108e7f338ab</p><p><b>code</b>: Oxycodone <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#430127000 &quot;Oxycodone-containing product in oral dose form&quot;)</span></p></blockquote><hr/><blockquote><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Rosa Eli Kopter </b> (no stated gender), DoB Unknown ( <code>urn:oid:2.16.578.1.12.4.1.4.1</code>/13031353453)</p><hr/></blockquote></div>"
+  ] ; # 
+  fhir:contained ( [
+     a fhir:Medication ;
+     fhir:id [ fhir:v "Medisin-10" ] ;
+     fhir:identifier ( [
+       fhir:value [ fhir:v "FEST-XXX-9e6c620b-5d09-4f27-9ee1-b108e7f338ab" ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:430127000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "430127000" ] ;
+         fhir:display [ fhir:v "Oxycodone-containing product in oral dose form" ]
+       ] ) ;
+       fhir:text [ fhir:v "Oxycodone" ]
+     ]
+  ] [
+     a fhir:Patient ;
+     fhir:id [ fhir:v "Pasient-20" ] ;
+     fhir:identifier ( [
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.1"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "13031353453" ]
+     ] ) ;
+     fhir:name ( [
+       fhir:family [ fhir:v "Kopter" ] ;
+       fhir:given ( [ fhir:v "Rosa Eli" ] )
+     ] )
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:reference [ fhir:v "#Medisin-10" ]
+  ] ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "#Pasient-20" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2024-05-28"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

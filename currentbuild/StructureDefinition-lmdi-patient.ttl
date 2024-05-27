@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "LmdiPatient"] ; # 
   fhir:title [ fhir:v "Pasient"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-23"^^xsd:date] ; # 
+  fhir:date [ fhir:v "2024-05-27"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;

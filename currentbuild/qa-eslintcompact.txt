@@ -1,18 +1,22 @@
 Lmdi
 =========================================
 
-Generic: line 0, col 0, Warning - The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 100 other files) (INVALID)
-Generic: line 0, col 0, Warning - The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 100 other files) (INVALID)
-Generic: line 0, col 0, Warning - The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 76 other files) (INVALID)
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource MedicationAdministration/Administrering-10.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Warning - The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 110 other files) (INVALID)
+Generic: line 0, col 0, Warning - The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 110 other files) (INVALID)
+Generic: line 0, col 0, Warning - The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 78 other files) (INVALID)
+Generic: line 0, col 0, Error - The link 'Medisin-1' for "Medisin-1" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'Pasient-1' for "Pasient-1" cannot be resolved (NOTFOUND)
 /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-1.json: line 10, col 4, Error - Unable to resolve resource with reference 'Medisin-1' (STRUCTURE)
 /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-1.json: line 13, col 4, Error - Unable to resolve resource with reference 'Pasient-1' (STRUCTURE)
+/github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-1.json: line 0, col 0, Error - Hyperlink 'Medisin-1' at 'div/p/a' for 'Medisin-1' does not resolve (INVALID)
+/github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-1.json: line 0, col 0, Error - Hyperlink 'Pasient-1' at 'div/p/a' for 'Pasient-1' does not resolve (INVALID)
 /github/workspace/LMDI/fsh-generated/resources/Patient-Pasient-2.json: line 10, col 6, Error - Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient on element Patient.identifier:FNR, looking in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient (@char 1) (PROCESSING)
 /github/workspace/LMDI/fsh-generated/resources/Patient-Pasient-2.json: line 10, col 6, Error - Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient on element Patient.identifier:DNR, looking in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient (@char 1) (PROCESSING)
 /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-Legemiddelrekvirering.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-condition-diagnose.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-encounter-institusjonsopphold.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-organization.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
-/github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-practitioner.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 
-err = 4, warn = 8, info = 0
+err = 6, warn = 8, info = 0
 IG Publisher Version: 1.6.10
