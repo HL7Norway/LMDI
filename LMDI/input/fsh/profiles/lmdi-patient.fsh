@@ -44,10 +44,18 @@ Description: "Informasjon om pasienten"
 // no-basis-Address/district - extention - municipalitycode
 // Spør FHI: Er kommunenummer for bosted eller tjeneste? Yngve sier begge. 
 
-Instance: PatientExample
+Instance: Pasient-1
 InstanceOf: LmdiPatient
-Description: "Eksempel på pasient"
-* name.family = "Seland"
-* name.given = "Espen"
-* gender = #male
-* birthDate = "1977-03-12"
+Description: "Eksempel på pasient med kjønn og fødselsdato"
+* name.family = "Nobar"
+* name.given = "Pia"
+* gender = #female
+* birthDate = "1958-09-19"
+
+Instance: Pasient-2
+InstanceOf: LmdiPatient
+Description: "Eksempel på pasient med fødselsnummer"
+* identifier[FNR].system = "urn:oid:2.16.578.1.12.4.1.4.1"
+* identifier[FNR].value = "13031353453"
+* name.family = "Kopter"
+* name.given = "Rosa Eli"
