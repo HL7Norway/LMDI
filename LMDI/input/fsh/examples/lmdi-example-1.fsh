@@ -7,6 +7,7 @@ InstanceOf: MedicationAdministration
 * status = #completed
 * medicationReference = Reference(Medisin-10)
 * subject = Reference(Pasient-20)
+* performer.actor = Reference(Helsepersonell-10)
 * effectiveDateTime = "2024-05-28"
 * contained[+] = Medisin-10
 * contained[+] = Pasient-20
@@ -28,3 +29,11 @@ Usage: #inline
 * identifier.value = "13031353453"
 * name.family = "Kopter"
 * name.given = "Rosa Eli"
+
+Instance: Helsepersonell-10
+InstanceOf: Practitioner
+Usage: #inline
+* identifier.system = "urn:oid:2.16.578.1.12.4.1.4.4"
+* identifier.value = "9144900"
+* name.family = "Lin"
+* name.given = "Rita"

@@ -26,3 +26,12 @@ Description: "TODO #4"
 
 // Krav: Del av organisasjon (ref:organization)
 // * partOf MS <- NB! kan bare peke oppover
+
+Instance: Organisasjon-1
+InstanceOf: LmdiOrganization
+Description: "Eksempel på organisasjon"
+* identifier.system = "urn:oid:2.16.578.1.12.4.1.4.101"
+* identifier.value = "1234567890"
+* name = "Lykkedalen eldrehjem"
+* address.district = "Lykkedalen kommune"
+// Kommunen blir kodet med no-basis-Address
