@@ -1,15 +1,16 @@
 Lmdi : Validation Results
 =========================================
 
-err = 6, warn = 8, info = 0
+err = 8, warn = 7, info = 0
 $--
 Generated $--. FHIR version $-- for hl7.fhir.no.lmdi#$-- (canonical = http://hl7.no/fhir/ig/lmdi)
- Build Errors : 2 / 4 / 0
+ Build Errors : 3 / 4 / 0
  /github/workspace/LMDI/fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Medication-Medisin-1 : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-1 : 4 / 0 / 1
- /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-10 : 0 / 0 / 3
+ /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-10 : 2 / 0 / 3
+ /github/workspace/LMDI/fsh-generated/resources/Organization-Organisasjon-1 : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Patient-Pasient-1 : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Patient-Pasient-2 : 2 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Practitioner-Helsepersonell-1 : 0 / 0 / 1
@@ -18,17 +19,18 @@ Generated $--. FHIR version $-- for hl7.fhir.no.lmdi#$-- (canonical = http://hl7
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-condition-diagnose : 0 / 1 / 1
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-encounter-institusjonsopphold : 0 / 1 / 1
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-legemiddel : 0 / 0 / 1
- /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-organization : 0 / 1 / 1
+ /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-organization : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-patient : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-practitioner : 0 / 0 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationAdministration/Administrering-10.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 231, column 4: The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 110 other files)
-WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 272, column 4: The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 110 other files)
-WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.change.history.html#/html/body/script at Line 198, column 4: The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 78 other files)
+WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 231, column 4: The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 115 other files)
+WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 272, column 4: The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 115 other files)
+WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.change.history.html#/html/body/script at Line 198, column 4: The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 79 other files)
 ERROR: /github/workspace/LMDI/output/MedicationAdministration-Administrering-1.html#/html/body/div/div/div/div/div/div/p/a at Line 191, column 615: The link 'Medisin-1' for "Medisin-1" cannot be resolved
 ERROR: /github/workspace/LMDI/output/MedicationAdministration-Administrering-1.html#/html/body/div/div/div/div/div/div/p/a at Line 191, column 671: The link 'Pasient-1' for "Pasient-1" cannot be resolved
+ERROR: /github/workspace/LMDI/output/MedicationAdministration-Administrering-10.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 191, column 1374: The link 'Practitioner/Helsepersonell-10' for "Practitioner/Helsepersonell-10" cannot be resolved
 == fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem.json ==
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi.json ==
 == fsh-generated/resources/Medication-Medisin-1.json ==
@@ -38,6 +40,9 @@ ERROR: MedicationAdministration/Administrering-1: MedicationAdministration.subje
 ERROR: MedicationAdministration.text.div: Hyperlink 'Medisin-1' at 'div/p/a' for 'Medisin-1' does not resolve
 ERROR: MedicationAdministration.text.div: Hyperlink 'Pasient-1' at 'div/p/a' for 'Pasient-1' does not resolve
 == fsh-generated/resources/MedicationAdministration-Administrering-10.json ==
+ERROR: MedicationAdministration/Administrering-10: MedicationAdministration.performer[0].actor: Unable to resolve resource with reference 'Practitioner/Helsepersonell-10'
+ERROR: MedicationAdministration.text.div: Hyperlink 'Practitioner/Helsepersonell-10' at 'div/table/tr/td/a' for 'Practitioner/Helsepersonell-10' does not resolve
+== fsh-generated/resources/Organization-Organisasjon-1.json ==
 == fsh-generated/resources/Patient-Pasient-1.json ==
 == fsh-generated/resources/Patient-Pasient-2.json ==
 ERROR: Patient/Pasient-2: Patient.identifier[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient on element Patient.identifier:FNR, looking in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient (@char 1)
@@ -52,6 +57,5 @@ WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/lmdi/StructureDe
 WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter-institusjonsopphold'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-lmdi-legemiddel.json ==
 == fsh-generated/resources/StructureDefinition-lmdi-organization.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-lmdi-patient.json ==
 == fsh-generated/resources/StructureDefinition-lmdi-practitioner.json ==
