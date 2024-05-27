@@ -4,6 +4,7 @@ Alias: $SCT = http://snomed.info/sct
 
 Instance: Administrering-10
 InstanceOf: MedicationAdministration
+Description: "Utfyllende eksempel"
 * status = #completed
 * medicationReference = Reference(Medisin-10)
 * subject = Reference(Pasient-20)
@@ -11,6 +12,7 @@ InstanceOf: MedicationAdministration
 * effectiveDateTime = "2024-05-28"
 * contained[+] = Medisin-10
 * contained[+] = Pasient-20
+* contained[+] = Helsepersonell-10
 
 Instance: Medisin-10
 InstanceOf: Medication

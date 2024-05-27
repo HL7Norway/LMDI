@@ -77,3 +77,12 @@ Description: "Eksempel på administrering av legemiddel"
 * medicationReference.reference = "Medisin-1"
 * subject.reference = "Pasient-1"
 * effectiveDateTime = "2024-05-28"
+* dosage.text = "Svelge to spiseskjéer"
+* dosage.route.coding.system = "http://snomed.info/sct"
+* dosage.route.coding.code = #421521009
+* dosage.route.coding.display = "Swallow"
+* dosage.route.text = "oralt"
+* dosage.dose.value = 2.0
+* dosage.dose.unit = "metric tablespoon"
+* dosage.dose.system = "http://unitsofmeasure.org"
+* dosage.dose.code = #tsp_m
