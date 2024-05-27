@@ -21,7 +21,7 @@ Description: "Identifisering av legemiddel administrert til pasient på institus
 
 // Krav: Status administrering = completeded, påkrevd
 * status 1..1 
-* status = #completeded
+* status = #completed
 
 // Krav: Legemiddel, påkrevd
 // * medication 1..1 (allerede 1..1 i ressursen)
