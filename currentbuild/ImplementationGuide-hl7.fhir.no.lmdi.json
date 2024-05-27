@@ -10,7 +10,7 @@
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-05-27T22:22:02+00:00",
+  "date" : "2024-05-27T23:37:29+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -639,6 +639,18 @@
       },
       "name" : "Administrering-20",
       "description" : "Utfyllende eksempel - andre referanser",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationAdministration"
+      }],
+      "reference" : {
+        "reference" : "MedicationAdministration/Administrering-30"
+      },
+      "name" : "Administrering-30",
+      "description" : "Utfyllende eksempel - minimalt, logiske referanser",
       "exampleBoolean" : true
     },
     {

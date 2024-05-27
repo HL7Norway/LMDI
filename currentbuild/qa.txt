@@ -1,16 +1,17 @@
 Lmdi : Validation Results
 =========================================
 
-err = 9, warn = 6, info = 1
+err = 10, warn = 6, info = 1
 IG Publisher Version: 1.6.10
-Generated Mon May 27 22:25:04 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.2.0 (canonical = http://hl7.no/fhir/ig/lmdi)
- Build Errors : 2 / 3 / 0
+Generated Mon May 27 23:40:16 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.2.0 (canonical = http://hl7.no/fhir/ig/lmdi)
+ Build Errors : 0 / 3 / 0
  /github/workspace/LMDI/fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Medication-Medisin-1 : 0 / 0 / 1
- /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-1 : 5 / 0 / 2
+ /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-1 : 4 / 0 / 2
  /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-10 : 0 / 0 / 4
  /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-20 : 2 / 0 / 2
+ /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-30 : 2 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Organization-Organisasjon-1 : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Patient-Pasient-1 : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Patient-Pasient-2 : 2 / 0 / 1
@@ -25,25 +26,25 @@ Generated Mon May 27 22:25:04 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-practitioner : 0 / 0 / 1
 </table>
 == n/a ==
-WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 231, column 4: The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 120 other files)
-WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 272, column 4: The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 120 other files)
-WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.change.history.html#/html/body/script at Line 198, column 4: The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 80 other files)
-ERROR: /github/workspace/LMDI/output/MedicationAdministration-Administrering-1.html#/html/body/div/div/div/div/div/div/p/a at Line 191, column 615: The link 'Medisin-1' for "Medisin-1" cannot be resolved
-ERROR: /github/workspace/LMDI/output/MedicationAdministration-Administrering-1.html#/html/body/div/div/div/div/div/div/p/a at Line 191, column 671: The link 'Pasient-1' for "Pasient-1" cannot be resolved
+WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 231, column 4: The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 125 other files)
+WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 272, column 4: The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 125 other files)
+WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.change.history.html#/html/body/script at Line 198, column 4: The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 81 other files)
 == fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem.json ==
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi.json ==
 == fsh-generated/resources/Medication-Medisin-1.json ==
 == fsh-generated/resources/MedicationAdministration-Administrering-1.json ==
-ERROR: MedicationAdministration/Administrering-1: MedicationAdministration.medication.ofType(Reference): Unable to resolve resource with reference 'Medisin-1'
-ERROR: MedicationAdministration/Administrering-1: MedicationAdministration.subject: Unable to resolve resource with reference 'Pasient-1'
+ERROR: MedicationAdministration/Administrering-1: MedicationAdministration.medication.ofType(Reference): Unable to resolve resource with reference 'https://fhir.legemidler.example.com/legemidler/123456780'
+ERROR: MedicationAdministration/Administrering-1: MedicationAdministration.subject: Unable to resolve resource with reference 'https://fhi.no/fhir/lmdi/pasient/12345678'
+ERROR: MedicationAdministration/Administrering-1: MedicationAdministration.performer[0].actor: Unable to resolve resource with reference 'https://fhir.npr.no/helsepersonell/1234567890'
 ERROR: MedicationAdministration/Administrering-1: MedicationAdministration.dosage.dose.code: Unknown code 'tsp_m' in the CodeSystem 'http://unitsofmeasure.org' version '2.0.1'
 INFORMATION: MedicationAdministration/Administrering-1: MedicationAdministration.dosage.dose.code: Error processing Unit: 'tsp_m': The unit "tsp_m" is unknown at character 1
-ERROR: MedicationAdministration.text.div: Hyperlink 'Medisin-1' at 'div/p/a' for 'Medisin-1' does not resolve
-ERROR: MedicationAdministration.text.div: Hyperlink 'Pasient-1' at 'div/p/a' for 'Pasient-1' does not resolve
 == fsh-generated/resources/MedicationAdministration-Administrering-10.json ==
 == fsh-generated/resources/MedicationAdministration-Administrering-20.json ==
 ERROR: MedicationAdministration/Administrering-20: MedicationAdministration.subject: Unable to resolve resource with reference 'https://fhi.no/fhir/lmdi/pasient/12345678'
 ERROR: MedicationAdministration/Administrering-20: MedicationAdministration.performer[0].actor: Unable to resolve resource with reference 'https://fhir.npr.no/helsepersonell/1234567890'
+== fsh-generated/resources/MedicationAdministration-Administrering-30.json ==
+ERROR: MedicationAdministration/Administrering-30: MedicationAdministration.medication.ofType(Reference).identifier: Identifier.system must be an absolute reference, not a local reference
+ERROR: MedicationAdministration/Administrering-30: MedicationAdministration.subject: Unable to resolve resource with reference 'https://fhi.no/fhir/lmdi/pasient/12345678'
 == fsh-generated/resources/Organization-Organisasjon-1.json ==
 == fsh-generated/resources/Patient-Pasient-1.json ==
 == fsh-generated/resources/Patient-Pasient-2.json ==
