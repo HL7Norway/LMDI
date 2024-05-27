@@ -12,3 +12,6 @@ Description: "TODO"
 * period MS
 
 // TODO #7 Vurdere Encounter opp mot EpisodeOfCare
+
+// EKSEMPLER
+// Kommer...

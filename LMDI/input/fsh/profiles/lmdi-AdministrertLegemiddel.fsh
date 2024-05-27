@@ -67,6 +67,9 @@ Description: "Beskriver administrasjon av legemiddel til pasient på institusjon
 // Krav: Infusjon
 // ESS: Er vel del av administrasjonsvei? 
 
+
+// EKSEMPLER
+
 Instance: Administrering-1
 InstanceOf: AdministrertLegemiddel
 Description: "Eksempel på administrering av legemiddel"

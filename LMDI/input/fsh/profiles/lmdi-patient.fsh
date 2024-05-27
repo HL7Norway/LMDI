@@ -49,6 +49,9 @@ Description: "Informasjon om pasienten"
 // no-basis-Address/district - extention - municipalitycode
 // Spør FHI: Er kommunenummer for bosted eller tjeneste? Yngve sier begge. 
 
+
+// EKSEMPLER
+
 Instance: Pasient-1
 InstanceOf: LmdiPatient
 Description: "Eksempel på pasient med kjønn og fødselsdato"

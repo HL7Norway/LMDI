@@ -23,6 +23,8 @@ Description: "Helsepersonell som har foreskrevet eller administrert legemiddelet
 // Se Volven https://volven.no/produkt.asp?id=521762&catID=3&subID=8
 * qualification.code.coding.system = "urn:oid:2.16.578.1.12.4.1.1.7426" 
 
+
+// EKSEMPLER
 Instance: Helsepersonell-1
 InstanceOf: LmdiPractitioner
 Description: "Eksempel på helsepersonell med HPR-nummer"

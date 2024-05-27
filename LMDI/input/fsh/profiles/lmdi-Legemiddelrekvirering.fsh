@@ -36,3 +36,6 @@ Description: "Legemiddelrekvirering - ordinering, resept eller annen rekvirering
 // Krav: Seponeringsårsak 
 // Krav: Tid seponering
 // Krav: Type legemiddelbruk
+
+// EKSEMPLER
+// Kommer...

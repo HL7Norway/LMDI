@@ -25,6 +25,9 @@ Description: "Beskrivelse av legemiddel."
 // Krav: Merkevarenavn, handelsnavn
 // Krav: Definerte døgnsoder (DDD) <- bør refereres til
 
+
+// EKSEMPLER
+
 Instance: Medisin-1
 InstanceOf: Legemiddel
 Description: "Eksempel på legemiddel"

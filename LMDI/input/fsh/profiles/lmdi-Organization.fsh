@@ -4,7 +4,7 @@ Id: lmdi-organization
 Title: "Organisasjon"
 Description: "TODO #4"
 * ^status = #draft
-* ^date = "2024-05-23"
+* ^date = "2024-05-27"
 
 // Krav (nasjonalt): Basere på no-basis-Organization
 // Krav: Organisasjons-ID som ENH eller RESH (identifier)
@@ -26,6 +26,9 @@ Description: "TODO #4"
 
 // Krav: Del av organisasjon (ref:organization)
 // * partOf MS <- NB! kan bare peke oppover
+
+
+// EKSEMPLER
 
 Instance: Organisasjon-1
 InstanceOf: LmdiOrganization
