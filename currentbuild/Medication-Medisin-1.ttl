@@ -17,7 +17,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication </b><a name=\"Medisin-1\"> </a><a name=\"hcMedisin-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceMedication &quot;Medisin-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-lmdi-legemiddel.html\">Legemiddel</a></p></div><p><b>identifier</b>: FEST-XXX-9e6c620b-5d09-4f27-9ee1-b108e7f338ab</p><p><b>code</b>: Oxycodone <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#430127000 &quot;Oral Form Oxycodone (product)&quot;)</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication </b><a name=\"Medisin-1\"> </a><a name=\"hcMedisin-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceMedication &quot;Medisin-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-lmdi-legemiddel.html\">Legemiddel</a></p></div><p><b>identifier</b>: FEST-XXX-9e6c620b-5d09-4f27-9ee1-b108e7f338ab</p><p><b>code</b>: Oxycodone <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#430127000 &quot;Oxycodone-containing product in oral dose form&quot;)</span></p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:value [ fhir:v "FEST-XXX-9e6c620b-5d09-4f27-9ee1-b108e7f338ab" ]
@@ -27,7 +27,7 @@
        a sct:430127000 ;
        fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "430127000" ] ;
-       fhir:display [ fhir:v "Oral Form Oxycodone (product)" ]
+       fhir:display [ fhir:v "Oxycodone-containing product in oral dose form" ]
      ] ) ;
      fhir:text [ fhir:v "Oxycodone" ]
   ] . # 

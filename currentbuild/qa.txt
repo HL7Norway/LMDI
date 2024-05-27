@@ -1,13 +1,13 @@
 Lmdi : Validation Results
 =========================================
 
-err = 6, warn = 8, info = 0
+err = 4, warn = 8, info = 0
 IG Publisher Version: 1.6.10
-Generated Mon May 27 19:28:38 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.2 (canonical = http://hl7.no/fhir/ig/lmdi)
+Generated Mon May 27 19:38:24 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.2.0 (canonical = http://hl7.no/fhir/ig/lmdi)
  Build Errors : 0 / 3 / 0
  /github/workspace/LMDI/fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem : 0 / 0 / 1
- /github/workspace/LMDI/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi : 1 / 0 / 1
- /github/workspace/LMDI/fsh-generated/resources/Medication-Medisin-1 : 1 / 0 / 1
+ /github/workspace/LMDI/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi : 0 / 0 / 1
+ /github/workspace/LMDI/fsh-generated/resources/Medication-Medisin-1 : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-1 : 2 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Patient-Pasient-1 : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Patient-Pasient-2 : 2 / 0 / 1
@@ -26,9 +26,7 @@ WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-
 WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.change.history.html#/html/body/script at Line 198, column 4: The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 76 other files)
 == fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem.json ==
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi.json ==
-ERROR: ImplementationGuide.version: The version 0.2 is not a valid semantic version and will not be acceptible to the ci-build
 == fsh-generated/resources/Medication-Medisin-1.json ==
-ERROR: Medication/Medisin-1: Medication.code.coding[0].display: Wrong Display Name 'Oral Form Oxycodone (product)' for http://snomed.info/sct#430127000. Valid display is one of 2 choices: 'Oxycodone-containing product in oral dose form' or 'Product containing oxycodone in oral dose form (medicinal product form)' (for the language(s) '--')
 == fsh-generated/resources/MedicationAdministration-Administrering-1.json ==
 ERROR: MedicationAdministration/Administrering-1: MedicationAdministration.medication.ofType(Reference): Unable to resolve resource with reference 'Medisin-1'
 ERROR: MedicationAdministration/Administrering-1: MedicationAdministration.subject: Unable to resolve resource with reference 'Pasient-1'

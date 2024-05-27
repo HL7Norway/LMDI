@@ -4,8 +4,6 @@ Lmdi
 Generic: line 0, col 0, Warning - The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 100 other files) (INVALID)
 Generic: line 0, col 0, Warning - The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 100 other files) (INVALID)
 Generic: line 0, col 0, Warning - The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 76 other files) (INVALID)
-/github/workspace/LMDI/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi.json: line 0, col 0, Error - The version 0.2 is not a valid semantic version and will not be acceptible to the ci-build (EXCEPTION)
-/github/workspace/LMDI/fsh-generated/resources/Medication-Medisin-1.json: line 14, col 4, Error - Wrong Display Name 'Oral Form Oxycodone (product)' for http://snomed.info/sct#430127000. Valid display is one of 2 choices: 'Oxycodone-containing product in oral dose form' or 'Product containing oxycodone in oral dose form (medicinal product form)' (for the language(s) '--') (INVALID)
 /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-1.json: line 10, col 4, Error - Unable to resolve resource with reference 'Medisin-1' (STRUCTURE)
 /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-1.json: line 13, col 4, Error - Unable to resolve resource with reference 'Pasient-1' (STRUCTURE)
 /github/workspace/LMDI/fsh-generated/resources/Patient-Pasient-2.json: line 10, col 6, Error - Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient on element Patient.identifier:FNR, looking in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient (@char 1) (PROCESSING)
@@ -16,5 +14,5 @@ Generic: line 0, col 0, Warning - The <script> containing the javascript 'try { 
 /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-organization.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-practitioner.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 
-err = 6, warn = 8, info = 0
+err = 4, warn = 8, info = 0
 IG Publisher Version: 1.6.10
