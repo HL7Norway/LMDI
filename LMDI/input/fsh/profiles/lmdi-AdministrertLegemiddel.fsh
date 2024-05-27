@@ -29,5 +29,27 @@ Description: "Identifisering av legemiddel administrert til pasient på institus
 
 // * subject only Reference(Patient or $no-basis-Patient)
 * subject only Reference(Patient)
+
+// Krav: Opphold, må støtte
+* context MS 
+
+// Krav: Tidspunkt for administrasjon, påkrevd dateTime
+// occurence
+// effective
+
+// Krav: Helsepersonell, må støtte
+// performer AND performer.actor MS
+
+// Krav: Referanse til rekvisisjon, må støtte
+* request MS
+
+// Krav: Administrasjonsvei
+// * dosage.route MS
+
+// Krav: Administrert mengde
+// * dosage.dose MS
 * dosage MS
+
+// Krav: Infusjon
+// ESS: Er vel del av administrasjonsvei? 
 
