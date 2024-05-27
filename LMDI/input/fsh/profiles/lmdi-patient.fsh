@@ -25,6 +25,7 @@ Description: "Informasjon om pasienten"
 * identifier[FNR].system = "urn:oid:2.16.578.1.12.4.1.4.1" 
 * identifier[DNR].system = "urn:oid:2.16.578.1.12.4.1.4.2" 
 * identifier[DNR].system ^short = "The identification of the D-nummer"
+* identifier[FNR].system ^short = "The identification of the Fødselsnummer"
 * identifier[FNR].value 1..1
 * identifier[DNR].value 1..1
 
@@ -32,12 +33,12 @@ Description: "Informasjon om pasienten"
 // - kjønn
 * gender MS
 * gender ^short = "Kjønn"
-* gender ^definition = "Pasientens kjønn skal oppgis sammen med fødselsdato hvis det ikke finnes pasient-ID."
+* gender ^definition = "Pasientens kjønn. Skal oppgis sammen med fødselsdato hvis det ikke finnes pasient-ID."
 
 // - fødselsdato <- dokumentasjon
 * birthDate MS
 * birthDate ^short = "Fødselsdato"
-* birthDate ^definition = "Pasientens fødselsdato skal oppgis sammen med kjønn hvis det ikke finnes pasient-ID."
+* birthDate ^definition = "Pasientens fødselsdato. Skal oppgis sammen med kjønn hvis det ikke finnes pasient-ID."
 
 // Krav: Kommunenummer <- kan være del av tjeneste eller adresse?
 // no-basis-Address/district - extention - municipalitycode

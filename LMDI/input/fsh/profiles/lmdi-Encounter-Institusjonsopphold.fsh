@@ -10,3 +10,5 @@ Description: "TODO"
 // Krav: identifier ESS: Finnes ingen nasjonal business-identifier for Encounter
 // Krav: actualPeriod
 * period MS
+
+// TODO #7 Vurdere Encounter opp mot EpisodeOfCare

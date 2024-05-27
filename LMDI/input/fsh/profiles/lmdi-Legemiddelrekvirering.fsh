@@ -14,7 +14,7 @@ Description: "Legemiddelrekvirering - ordinering, resept eller annen rekvirering
 * status ^short = "Status rekvisisjon"
 
 // Krav: Hensikt (intent), allerede 1..1
-* intent ^short = "Hensikt med forskrivningen"
+* intent ^short = "Hensikten med forskrivningen"
 
 // Krav: Legemiddel (medication), allerede 1..1
 * medication[x] ^short = "Referanse til legemiddel"

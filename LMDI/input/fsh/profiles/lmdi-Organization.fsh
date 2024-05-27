@@ -7,11 +7,22 @@ Description: "TODO #4"
 * ^date = "2024-05-23"
 
 // Krav (nasjonalt): Basere på no-basis-Organization
-// Krav (LMDI): TODO
+// Krav: Organisasjons-ID som ENH eller RESH (identifier)
+* identifier 1..* 
+* identifier ^short = "Unik identifikasjon av behandlingsenhet / avdeling / intitusjon"
 
-* identifier 1..*
+// Krav: Type organisasjon / organisatorisk nivå / betegnelse
+* type MS
+* type ^short = "Organisatorisk nivå / betegnelse"
+
+// Krav: Navn (name)
 * name MS
+* name ^short = "Navn på organisasjonsenhet"
+* name ^definition = "Eks. avdelingsnavn / institsjonsnavn / org navn"
 
-// Krav (LMDI): Address/Kommunenummer ?
-
+// Krav: Kommune (.district.extension:municipalitycode, fra no-basis)
+// TODO #8 Utvide Organisasjon med utvidelse for kommunenummer fra no-basis
 * address MS
+
+// Krav: Del av organisasjon (ref:organization)
+// * partOf MS <- NB! kan bare peke oppover

@@ -9,3 +9,4 @@ Description: "Diagnosen som pasienten har fått rekvirert og administrert legemi
 // Krav: 
 // MVP: ICPC-2 eller ICD-10
 * code 1..1
+* code ^short = "Diagnosekode"
