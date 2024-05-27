@@ -1,10 +1,10 @@
 Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi.json	3404	-	0	0	0	0	0	0	4	73	0	0	0	0	0	0	0	1	0	0	139	86	0	0	0	4	0	0
-fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem.json	650	13	0	0	0	0	0	0	0	22	0	0	0	0	0	0	0	0	0	0	18	1313	0	0	0	0	0	0
-fsh-generated/resources/StructureDefinition-lmdi-administrert-legemiddel.json	2226	11	0	0	0	0	0	56	0	63	0	0	0	0	0	0	0	2	0	0	282	1074	0	0	0	7	1	1
-fsh-generated/resources/StructureDefinition-lmdi-condition-diagnose.json	667	11	0	0	0	0	0	46	0	31	0	0	1	0	0	0	0	1	0	0	176	526	0	0	0	5	0	1
-fsh-generated/resources/StructureDefinition-lmdi-encounter-institusjonsopphold.json	696	11	0	0	0	0	0	74	0	40	0	0	0	0	0	0	0	1	0	0	288	753	0	0	0	11	0	1
-fsh-generated/resources/StructureDefinition-lmdi-legemiddel.json	986	11	1	0	0	0	0	39	0	22	0	0	0	0	0	0	0	1	0	0	153	353	0	0	0	4	0	0
-fsh-generated/resources/StructureDefinition-lmdi-organization.json	888	10	0	0	0	0	0	37	0	25	0	0	0	0	0	0	0	0	0	0	136	305	0	0	0	4	0	0
-fsh-generated/resources/StructureDefinition-lmdi-patient.json	2377	12	0	0	0	0	0	92	0	57	0	0	0	0	0	0	0	1	0	0	329	860	0	0	0	8	0	1
-fsh-generated/resources/StructureDefinition-lmdi-practitioner.json	672	10	0	0	0	0	0	37	0	12	0	0	0	0	0	0	0	1	0	0	115	170	0	0	0	3	0	1
+/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi.json	3367	-	0	0	0	0	0	0	5	67	0	0	0	0	0	0	0	1	0	0	98	80	0	0	0	3	0	1
+fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem.json	650	10	0	0	0	0	0	0	1	17	0	0	0	0	0	0	0	0	0	0	19	1821	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-lmdi-administrert-legemiddel.json	2226	10	0	0	0	0	0	44	0	55	0	0	0	0	0	0	0	1	0	0	320	1234	0	0	0	7	1	0
+fsh-generated/resources/StructureDefinition-lmdi-condition-diagnose.json	695	16	1	0	0	0	0	44	0	30	0	0	1	0	0	0	0	1	0	0	257	520	0	0	0	5	0	1
+fsh-generated/resources/StructureDefinition-lmdi-encounter-institusjonsopphold.json	691	16	0	0	0	0	0	52	0	33	0	0	0	0	0	0	0	1	0	0	308	701	0	0	0	11	0	2
+fsh-generated/resources/StructureDefinition-lmdi-legemiddel.json	986	17	0	0	0	0	0	27	0	19	0	0	0	0	0	0	0	1	0	0	164	291	0	0	0	5	0	0
+fsh-generated/resources/StructureDefinition-lmdi-organization.json	886	12	0	0	0	0	0	62	0	27	0	0	0	0	0	0	0	0	0	0	151	256	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-lmdi-patient.json	2444	10	0	0	0	1	0	59	0	53	0	0	0	0	0	0	0	1	0	0	320	577	0	0	0	8	0	1
+fsh-generated/resources/StructureDefinition-lmdi-practitioner.json	1161	11	0	0	0	0	0	51	0	8	0	0	0	0	0	0	0	1	0	0	180	293	0	0	0	6	0	0

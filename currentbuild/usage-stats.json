@@ -20,7 +20,7 @@
     "Encounter": [
       {
         "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter-institusjonsopphold",
-        "title": "Lmdi-Institusjonsopphold"
+        "title": "Institusjonsopphold"
       }
     ],
     "Medication": [
@@ -32,19 +32,19 @@
     "Organization": [
       {
         "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization",
-        "title": "Lmdi-Organization"
+        "title": "Organisasjon"
       }
     ],
     "Patient": [
       {
         "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient",
-        "title": "LMDI Patient Profile"
+        "title": "Pasient"
       }
     ],
     "Practitioner": [
       {
         "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner",
-        "title": "LMDI Helsepersonell"
+        "title": "Helsepersonell"
       }
     ]
   },

@@ -8,7 +8,7 @@
   "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter-institusjonsopphold",
   "version" : "0.1.1",
   "name" : "LmdiEncounterInstitusjonsopphold",
-  "title" : "Lmdi-Institusjonsopphold",
+  "title" : "Institusjonsopphold",
   "status" : "draft",
   "date" : "2024-05-23",
   "publisher" : "Folkehelseinstituttet (FHI)",

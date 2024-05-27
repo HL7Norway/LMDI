@@ -12,7 +12,7 @@
   <url value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization"/>
   <version value="0.1.1"/>
   <name value="LmdiOrganization"/>
-  <title value="Lmdi-Organization"/>
+  <title value="Organisasjon"/>
   <status value="draft"/>
   <date value="2024-05-23"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>
@@ -23,7 +23,7 @@
       <value value="https://www.fhi.no"/>
     </telecom>
   </contact>
-  <description value="TODO"/>
+  <description value="TODO #4"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

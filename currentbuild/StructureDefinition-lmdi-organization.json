@@ -8,7 +8,7 @@
   "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization",
   "version" : "0.1.1",
   "name" : "LmdiOrganization",
-  "title" : "Lmdi-Organization",
+  "title" : "Organisasjon",
   "status" : "draft",
   "date" : "2024-05-23",
   "publisher" : "Folkehelseinstituttet (FHI)",
@@ -19,7 +19,7 @@
       "value" : "https://www.fhi.no"
     }]
   }],
-  "description" : "TODO",
+  "description" : "TODO #4",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

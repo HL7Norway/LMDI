@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Lmdi"] ; # 
   fhir:title [ fhir:v "Legemiddeldata fra institusjon til Legemiddelregisteret"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-27T15:07:33+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-27T15:31:29+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;
@@ -547,22 +547,10 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddel> ;
-         fhir:reference [ fhir:v "StructureDefinition/lmdi-legemiddel" ]
-       ] ;
-       fhir:name [ fhir:v "Legemiddel" ] ;
-       fhir:description [ fhir:v "Beskrivelse av legemiddel." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner> ;
          fhir:reference [ fhir:v "StructureDefinition/lmdi-practitioner" ]
        ] ;
-       fhir:name [ fhir:v "LMDI Helsepersonell" ] ;
+       fhir:name [ fhir:v "Helsepersonell" ] ;
        fhir:description [ fhir:v "Helsepersonell som har foreskrevet eller administrert legemiddelet" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -571,11 +559,23 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient> ;
-         fhir:reference [ fhir:v "StructureDefinition/lmdi-patient" ]
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter-institusjonsopphold> ;
+         fhir:reference [ fhir:v "StructureDefinition/lmdi-encounter-institusjonsopphold" ]
        ] ;
-       fhir:name [ fhir:v "LMDI Patient Profile" ] ;
-       fhir:description [ fhir:v "Kun et eksempel for å vise verktøy" ] ;
+       fhir:name [ fhir:v "Institusjonsopphold" ] ;
+       fhir:description [ fhir:v "TODO" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddel> ;
+         fhir:reference [ fhir:v "StructureDefinition/lmdi-legemiddel" ]
+       ] ;
+       fhir:name [ fhir:v "Legemiddel" ] ;
+       fhir:description [ fhir:v "Beskrivelse av legemiddel." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -595,11 +595,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter-institusjonsopphold> ;
-         fhir:reference [ fhir:v "StructureDefinition/lmdi-encounter-institusjonsopphold" ]
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization> ;
+         fhir:reference [ fhir:v "StructureDefinition/lmdi-organization" ]
        ] ;
-       fhir:name [ fhir:v "Lmdi-Institusjonsopphold" ] ;
-       fhir:description [ fhir:v "TODO" ] ;
+       fhir:name [ fhir:v "Organisasjon" ] ;
+       fhir:description [ fhir:v "TODO #4" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -607,11 +607,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization> ;
-         fhir:reference [ fhir:v "StructureDefinition/lmdi-organization" ]
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/lmdi-patient" ]
        ] ;
-       fhir:name [ fhir:v "Lmdi-Organization" ] ;
-       fhir:description [ fhir:v "TODO" ] ;
+       fhir:name [ fhir:v "Pasient" ] ;
+       fhir:description [ fhir:v "Informasjon om pasienten" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [

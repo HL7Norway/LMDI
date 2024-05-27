@@ -11,7 +11,7 @@
   <name value="Lmdi"/>
   <title value="Legemiddeldata fra institusjon til Legemiddelregisteret"/>
   <status value="draft"/>
-  <date value="2024-05-27T15:07:33+00:00"/>
+  <date value="2024-05-27T15:31:29+00:00"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>
   <contact>
     <name value="Folkehelseinstituttet (FHI)"/>
@@ -478,20 +478,9 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/lmdi-legemiddel"/>
-      </reference>
-      <name value="Legemiddel"/>
-      <description value="Beskrivelse av legemiddel."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/lmdi-practitioner"/>
       </reference>
-      <name value="LMDI Helsepersonell"/>
+      <name value="Helsepersonell"/>
       <description value="Helsepersonell som har foreskrevet eller administrert legemiddelet"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -500,10 +489,21 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/lmdi-patient"/>
+        <reference value="StructureDefinition/lmdi-encounter-institusjonsopphold"/>
       </reference>
-      <name value="LMDI Patient Profile"/>
-      <description value="Kun et eksempel for å vise verktøy"/>
+      <name value="Institusjonsopphold"/>
+      <description value="TODO"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lmdi-legemiddel"/>
+      </reference>
+      <name value="Legemiddel"/>
+      <description value="Beskrivelse av legemiddel."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -522,10 +522,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/lmdi-encounter-institusjonsopphold"/>
+        <reference value="StructureDefinition/lmdi-organization"/>
       </reference>
-      <name value="Lmdi-Institusjonsopphold"/>
-      <description value="TODO"/>
+      <name value="Organisasjon"/>
+      <description value="TODO #4"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -533,10 +533,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/lmdi-organization"/>
+        <reference value="StructureDefinition/lmdi-patient"/>
       </reference>
-      <name value="Lmdi-Organization"/>
-      <description value="TODO"/>
+      <name value="Pasient"/>
+      <description value="Informasjon om pasienten"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

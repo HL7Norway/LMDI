@@ -10,7 +10,7 @@
   <url value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter-institusjonsopphold"/>
   <version value="0.1.1"/>
   <name value="LmdiEncounterInstitusjonsopphold"/>
-  <title value="Lmdi-Institusjonsopphold"/>
+  <title value="Institusjonsopphold"/>
   <status value="draft"/>
   <date value="2024-05-23"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>

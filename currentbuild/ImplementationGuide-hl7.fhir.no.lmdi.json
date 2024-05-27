@@ -10,7 +10,7 @@
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-05-27T15:07:33+00:00",
+  "date" : "2024-05-27T15:31:29+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -635,21 +635,9 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/lmdi-legemiddel"
-      },
-      "name" : "Legemiddel",
-      "description" : "Beskrivelse av legemiddel.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/lmdi-practitioner"
       },
-      "name" : "LMDI Helsepersonell",
+      "name" : "Helsepersonell",
       "description" : "Helsepersonell som har foreskrevet eller administrert legemiddelet",
       "exampleBoolean" : false
     },
@@ -659,10 +647,22 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/lmdi-patient"
+        "reference" : "StructureDefinition/lmdi-encounter-institusjonsopphold"
       },
-      "name" : "LMDI Patient Profile",
-      "description" : "Kun et eksempel for å vise verktøy",
+      "name" : "Institusjonsopphold",
+      "description" : "TODO",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lmdi-legemiddel"
+      },
+      "name" : "Legemiddel",
+      "description" : "Beskrivelse av legemiddel.",
       "exampleBoolean" : false
     },
     {
@@ -683,10 +683,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/lmdi-encounter-institusjonsopphold"
+        "reference" : "StructureDefinition/lmdi-organization"
       },
-      "name" : "Lmdi-Institusjonsopphold",
-      "description" : "TODO",
+      "name" : "Organisasjon",
+      "description" : "TODO #4",
       "exampleBoolean" : false
     },
     {
@@ -695,10 +695,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/lmdi-organization"
+        "reference" : "StructureDefinition/lmdi-patient"
       },
-      "name" : "Lmdi-Organization",
-      "description" : "TODO",
+      "name" : "Pasient",
+      "description" : "Informasjon om pasienten",
       "exampleBoolean" : false
     }],
     "page" : {
