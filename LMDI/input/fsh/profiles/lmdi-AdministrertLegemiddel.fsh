@@ -66,3 +66,11 @@ Description: "Beskriver administrasjon av legemiddel til pasient på institusjon
 
 // Krav: Infusjon
 // ESS: Er vel del av administrasjonsvei? 
+
+Instance: Administrering-1
+InstanceOf: AdministrertLegemiddel
+Description: "Eksempel på administrering av legemiddel"
+* status = #completed
+* medicationReference.reference = "Medisin-1"
+* subject.reference = "Pasient-1"
+* effectiveDateTime = "2024-05-28"

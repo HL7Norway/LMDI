@@ -24,3 +24,12 @@ Description: "Beskrivelse av legemiddel."
 * batch ^short = "Batch-nummer for legemiddelet"
 // Krav: Merkevarenavn, handelsnavn
 // Krav: Definerte døgnsoder (DDD) <- bør refereres til
+
+Instance: Medisin-1
+InstanceOf: Legemiddel
+Description: "Eksempel på legemiddel"
+* identifier.value = "FEST-XXX-9e6c620b-5d09-4f27-9ee1-b108e7f338ab"
+* code.coding.system = "http://snomed.info/sct"
+* code.coding = #430127000
+* code.coding.display = "Oral Form Oxycodone (product)"
+* code.text = "Oxycodone"
