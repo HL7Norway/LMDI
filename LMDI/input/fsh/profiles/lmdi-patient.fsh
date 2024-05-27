@@ -4,7 +4,7 @@ Parent:      Patient
 Title:       "Pasient"
 Description: "Informasjon om pasienten"
 * ^status = #draft
-* ^date = "2024-05-23"
+* ^date = "2024-05-27"
 
 // Krav til profil:
 // TODO #6 "Pasient" skal baseres på no-basis-Patient
@@ -28,6 +28,11 @@ Description: "Informasjon om pasienten"
 * identifier[FNR].system ^short = "The identification of the Fødselsnummer"
 * identifier[FNR].value 1..1
 * identifier[DNR].value 1..1
+
+// Litt å fikle med, men løser seg når no-basis-Patient tas i bruk
+// error	Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient on element Patient.identifier:FNR, looking in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient (@char 1)
+// error	Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient on element Patient.identifier:DNR, looking in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient (@char 1)
+
 
 // Krav: Hvis ikke ID, bruk 
 // - kjønn
