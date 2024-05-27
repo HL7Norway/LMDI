@@ -31,7 +31,7 @@ Description: "Identifisering av legemiddel administrert til pasient på institus
 * subject only Reference(Patient)
 
 // Krav: Opphold, må støtte
-* context MS 
+* context MS // peke på encounter
 
 // Krav: Tidspunkt for administrasjon, påkrevd dateTime
 // occurence
