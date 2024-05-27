@@ -35,6 +35,13 @@
     "name" : "LmdiEncounterInstitusjonsopphold"
   },
   {
+    "id" : "lmdi-legemiddel",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddel",
+    "version" : "0.1.1",
+    "name" : "Legemiddel"
+  },
+  {
     "id" : "lmdi-organization",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization",

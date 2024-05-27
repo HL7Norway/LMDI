@@ -23,6 +23,12 @@
         "title": "Lmdi-Institusjonsopphold"
       }
     ],
+    "Medication": [
+      {
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddel",
+        "title": "Legemiddel"
+      }
+    ],
     "Organization": [
       {
         "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization",

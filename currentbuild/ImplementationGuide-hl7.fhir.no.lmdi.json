@@ -10,7 +10,7 @@
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-05-27T11:03:36+00:00",
+  "date" : "2024-05-27T13:29:30+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -614,7 +614,7 @@
         "reference" : "StructureDefinition/lmdi-administrert-legemiddel"
       },
       "name" : "Administrert legemiddel",
-      "description" : "Identifisering av legemiddel administrert til pasient på institusjon.",
+      "description" : "Beskriver administrasjon av legemiddel til pasient på institusjon.",
       "exampleBoolean" : false
     },
     {
@@ -627,6 +627,18 @@
       },
       "name" : "Diagnose",
       "description" : "Diagnosen som pasienten har fått rekvirert og administrert legemiddelet for",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lmdi-legemiddel"
+      },
+      "name" : "Legemiddel",
+      "description" : "Beskrivelse av legemiddel.",
       "exampleBoolean" : false
     },
     {

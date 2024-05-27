@@ -11,7 +11,7 @@
   <name value="Lmdi"/>
   <title value="Legemiddeldata fra institusjon til Legemiddelregisteret"/>
   <status value="draft"/>
-  <date value="2024-05-27T11:03:36+00:00"/>
+  <date value="2024-05-27T13:29:30+00:00"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>
   <contact>
     <name value="Folkehelseinstituttet (FHI)"/>
@@ -459,7 +459,7 @@
         <reference value="StructureDefinition/lmdi-administrert-legemiddel"/>
       </reference>
       <name value="Administrert legemiddel"/>
-      <description value="Identifisering av legemiddel administrert til pasient på institusjon."/>
+      <description value="Beskriver administrasjon av legemiddel til pasient på institusjon."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -471,6 +471,17 @@
       </reference>
       <name value="Diagnose"/>
       <description value="Diagnosen som pasienten har fått rekvirert og administrert legemiddelet for"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lmdi-legemiddel"/>
+      </reference>
+      <name value="Legemiddel"/>
+      <description value="Beskrivelse av legemiddel."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
