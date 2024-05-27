@@ -43,3 +43,11 @@ Description: "Informasjon om pasienten"
 // Krav: Kommunenummer <- kan være del av tjeneste eller adresse?
 // no-basis-Address/district - extention - municipalitycode
 // Spør FHI: Er kommunenummer for bosted eller tjeneste? Yngve sier begge. 
+
+Instance: PatientExample
+InstanceOf: LmdiPatient
+Description: "Eksempel på pasient
+* name.family = "Seland"
+* name.given[0] = "Espen"
+* gender = #male
+* birthDate = "1977-03-12"

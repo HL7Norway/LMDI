@@ -16,6 +16,8 @@ jurisdiction: urn:iso:std:iso:3166#NO "Norway"
 publisher:
   name: Folkehelseinstituttet (FHI)
   url: https://www.fhi.no
+dependencies:
+  hl7.fhir.no.basis: 2.2.0
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
