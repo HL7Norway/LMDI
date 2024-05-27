@@ -46,8 +46,8 @@ Description: "Informasjon om pasienten"
 
 Instance: PatientExample
 InstanceOf: LmdiPatient
-Description: "Eksempel på pasient
+Description: "Eksempel på pasient"
 * name.family = "Seland"
-* name.given[0] = "Espen"
+* name.given = "Espen"
 * gender = #male
 * birthDate = "1977-03-12"
