@@ -1,4 +1,3 @@
-// UTKAST - PLACEHOLDER
 Profile: AdministrertLegemiddel
 Parent:   MedicationAdministration
 Id:       lmdi-administrert-legemiddel

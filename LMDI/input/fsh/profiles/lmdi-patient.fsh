@@ -1,19 +1,21 @@
 Profile:     LmdiPatient
 Id:          lmdi-patient
 Parent:      Patient
-Title:       "LMDI Patient Profile"
-Description: "Kun et eksempel for å vise verktøy"
+Title:       "Pasient"
+Description: "Informasjon om pasienten"
 * ^status = #draft
 * ^date = "2024-05-23"
 
 // Krav til profil:
-// Krav (nasjonalt): Baseres på no-basis-patient <- profileres
+// TODO #6 "Pasient" skal baseres på no-basis-Patient
 // Parent: no-basis-Patient
 
 // Krav: MÅ være FNR eller DNR <- profileres
 // ESS: Må kanskje være MS hvis det er mulighet for kjønn+fdato
 // Slice med FNR + DNR, TODO usikker på mutual excl.
 * identifier MS
+* identifier ^short = "Identifikator for pasienten."
+* identifier ^definition = "Identifikator for pasienten. Skal være fødselsnummer (FNR) eller D-nummer (DNR)."
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "code"
 * identifier ^slicing.rules = #closed
@@ -22,7 +24,9 @@ Description: "Kun et eksempel for å vise verktøy"
     DNR 0..1
 * identifier[FNR].system = "urn:oid:2.16.578.1.12.4.1.4.1" 
 * identifier[DNR].system = "urn:oid:2.16.578.1.12.4.1.4.2" 
-* identifier.value 1..1
+* identifier[DNR].system ^short = "The identification of the D-nummer"
+* identifier[FNR].value 1..1
+* identifier[DNR].value 1..1
 
 // Krav: Hvis ikke ID, bruk 
 // - kjønn

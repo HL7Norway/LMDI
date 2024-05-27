@@ -1,8 +1,8 @@
 Profile: LmdiOrganization
 Parent: Organization
 Id: lmdi-organization
-Title: "Lmdi-Organization"
-Description: "TODO"
+Title: "Organisasjon"
+Description: "TODO #4"
 * ^status = #draft
 * ^date = "2024-05-23"
 
