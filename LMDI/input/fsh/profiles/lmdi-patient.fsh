@@ -12,7 +12,17 @@ Description: "Kun et eksempel for å vise verktøy"
 
 // Krav: MÅ være FNR eller DNR <- profileres
 // ESS: Må kanskje være MS hvis det er mulighet for kjønn+fdato
-* identifier 1..1 // TODO arv fra no-basis-Patient
+// Slice med FNR + DNR, TODO usikker på mutual excl.
+* identifier MS
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "code"
+* identifier ^slicing.rules = #closed
+* identifier contains
+    FNR 0..1 and
+    DNR 0..1
+* identifier[FNR].system = "urn:oid:2.16.578.1.12.4.1.4.1" 
+* identifier[DNR].system = "urn:oid:2.16.578.1.12.4.1.4.2" 
+* identifier.value 1..1
 
 // Krav: Hvis ikke ID, bruk 
 // - kjønn
