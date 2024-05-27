@@ -20,7 +20,8 @@ Description: "Identifisering av legemiddel administrert til pasient på institus
 // Legge til støtte for no-basies-Patient senere
 
 // Krav: Status administrering = completeded, påkrevd
-* status 1..1 
+// Allerede 1..1
+// * status = http://terminology.hl7.org/CodeSystem/medication-admin-status#completed
 * status = #completed
 
 // Krav: Legemiddel, påkrevd
@@ -50,4 +51,3 @@ Description: "Identifisering av legemiddel administrert til pasient på institus
 
 // Krav: Infusjon
 // ESS: Er vel del av administrasjonsvei? 
-
