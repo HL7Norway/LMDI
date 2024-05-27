@@ -16,10 +16,9 @@ jurisdiction: urn:iso:std:iso:3166#NO "Norway"
 publisher:
   name: Folkehelseinstituttet (FHI)
   url: https://www.fhi.no
-dependencies:
-  hl7.fhir.no.basis: 2.1.1
+# dependencies:
+# hl7.fhir.no.basis: 2.1.1
 # hl7.fhir.no.basis: 2.2.0
-
 # TODO #10 Sushi: error Structure Definition http://hl7.no/fhir/StructureDefinition/no-basis-Patient is missing a snapshot. Snapshot is required for import. (00:00.378 / 00:19.121, 21Mb)
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
