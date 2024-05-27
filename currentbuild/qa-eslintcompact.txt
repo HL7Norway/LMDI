@@ -1,17 +1,17 @@
 Lmdi
 =========================================
 
-Generic: line 0, col 0, Warning - The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 80 other files) (INVALID)
-Generic: line 0, col 0, Warning - The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 80 other files) (INVALID)
-Generic: line 0, col 0, Warning - The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 72 other files) (INVALID)
+Generic: line 0, col 0, Warning - The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 85 other files) (INVALID)
+Generic: line 0, col 0, Warning - The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 85 other files) (INVALID)
+Generic: line 0, col 0, Warning - The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 73 other files) (INVALID)
+/github/workspace/LMDI/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi.json: line 0, col 0, Error - The version 0.2 is not a valid semantic version and will not be acceptible to the ci-build (EXCEPTION)
 /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-Legemiddelrekvirering.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-administrert-legemiddel.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-condition-diagnose.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-encounter-institusjonsopphold.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-legemiddel.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-organization.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
-/github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-patient.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-practitioner.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 
-err = 0, warn = 11, info = 0
+err = 1, warn = 10, info = 0
 IG Publisher Version: 1.6.10
