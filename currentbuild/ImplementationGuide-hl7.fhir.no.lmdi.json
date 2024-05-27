@@ -10,7 +10,7 @@
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-05-27T15:31:29+00:00",
+  "date" : "2024-05-27T16:56:47+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -663,6 +663,18 @@
       },
       "name" : "Legemiddel",
       "description" : "Beskrivelse av legemiddel.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Legemiddelrekvirering"
+      },
+      "name" : "Legemiddelrekvirering",
+      "description" : "Legemiddelrekvirering - ordinering, resept eller annen rekvirering av legemiddel",
       "exampleBoolean" : false
     },
     {

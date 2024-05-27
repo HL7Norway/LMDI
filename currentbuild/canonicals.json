@@ -14,6 +14,13 @@
     "name" : "Lmdi"
   },
   {
+    "id" : "Legemiddelrekvirering",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/Legemiddelrekvirering",
+    "version" : "0.1.1",
+    "name" : "Legemiddelrekvirering"
+  },
+  {
     "id" : "lmdi-administrert-legemiddel",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-administrert-legemiddel",

@@ -13,6 +13,30 @@
       "http://hl7.org/fhir/R4/valueset-medication-status.html" : "Medication  status  codes"
     },
     {
+      "url" : "http://hl7.org/fhir/CodeSystem/medicationrequest-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Intent",
+      "title" : "Medication request  intent",
+      "description" : "MedicationRequest Intent Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1378"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medicationrequest-intent.html" : "Medication request  intent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/CodeSystem/medicationrequest-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationrequest Status",
+      "title" : "Medicationrequest  status",
+      "description" : "MedicationRequest Status Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1377"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medicationrequest-status.html" : "Medicationrequest  status"
+    },
+    {
       "url" : "http://hl7.org/fhir/administrative-gender",
       "version" : "4.0.1",
       "status" : "active",
@@ -73,6 +97,18 @@
       "http://hl7.org/fhir/R4/valueset-link-type.html" : "LinkType"
     },
     {
+      "url" : "http://hl7.org/fhir/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "RequestPriority",
+      "description" : "Identifies the level of importance to be assigned to actioning the request.",
+      "oids" : ["2.16.840.1.113883.4.642.4.116"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-request-priority.html" : "Request priority"
+    },
+    {
       "url" : "http://snomed.info/sct",
       "version" : null,
       "status" : "active",
@@ -82,19 +118,20 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
-      "http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html" : "SNOMED CT Reason Medication Not Given Codes",
-      "http://hl7.org/fhir/R4/valueset-medication-form-codes.html" : "SNOMED CT Form Codes",
-      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
-      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
-      "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
-      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
       "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures"
+      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+      "http://hl7.org/fhir/R4/valueset-medication-form-codes.html" : "SNOMED CT Form Codes",
+      "http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html" : "SNOMED CT Reason Medication Not Given Codes",
+      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
@@ -265,6 +302,42 @@
       "http://hl7.org/fhir/R4/valueset-medication-admin-status.html" : "Medication administration  status  codes"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "MedicationRequestCategoryCodes",
+      "title" : "MedicationRequest Category Codes",
+      "description" : "MedicationRequest Category Codes",
+      "oids" : ["2.16.840.1.113883.4.642.1.1323"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medicationrequest-category.html" : "Medication request  category  codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "MedicationRequestCourseOfTherapyCodes",
+      "title" : "MedicationRequest Course of Therapy Codes",
+      "description" : "MedicationRequest Course of Therapy Codes",
+      "oids" : ["2.16.840.1.113883.4.642.1.1327"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medicationrequest-course-of-therapy.html" : "Medication request  course of  therapy  codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "MedicationRequestStatusReasonCodes",
+      "title" : "MedicationRequest Status Reason Codes",
+      "description" : "MedicationRequest Status Reason Codes",
+      "oids" : ["2.16.840.1.113883.4.642.1.1325"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medicationrequest-status-reason.html" : "Medication request  status  reason  codes"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/organization-type",
       "version" : "2.0.0",
       "status" : "draft",
@@ -373,6 +446,18 @@
       "http://terminology.hl7.org/5.5.0/ValueSet-v3-ActPriority.html" : "ActPriority"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActReason",
+      "title" : "ActReason",
+      "description" : "A set of codes specifying the motivation, cause, or rationale of an Act, when such rationale is not reasonably represented as an ActRelationship of type \"has reason\" linking to another Act.\r\n\r\n*Examples:* Example reasons that might qualify for being coded in this field might be: \"routine requirement\", \"infectious disease reporting requirement\", \"on patient request\", \"required by law\".",
+      "oids" : ["2.16.840.1.113883.5.8"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
       "version" : "3.0.0",
       "status" : "active",
@@ -420,6 +505,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "SubstanceAdminSubstitution",
+      "title" : "Substance Admin Substitution",
+      "description" : "Identifies what sort of change is permitted or has occurred between the therapy that was ordered and the therapy that was/will be provided.",
+      "oids" : ["2.16.840.1.113883.5.1070"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ActSubstanceAdminSubstitutionCode.html" : "ActSubstanceAdminSubstitutionCode"
     },
     {
       "url" : "urn:ietf:bcp:47",

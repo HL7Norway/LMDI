@@ -97,6 +97,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.161"],
       "uses" : {
       },
+      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering",
       "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose"
     },
     {
@@ -375,13 +376,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel",
-      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
-      "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose",
-      "StructureDefinition-lmdi-patient.html" : "Pasient",
       "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold",
       "StructureDefinition-lmdi-organization.html" : "Organisasjon",
-      "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel"
+      "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel",
+      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
+      "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel",
+      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering",
+      "StructureDefinition-lmdi-patient.html" : "Pasient",
+      "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -504,8 +506,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.375"],
       "uses" : {
       },
+      "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel",
       "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel",
-      "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel"
+      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-form-codes",
@@ -536,6 +539,82 @@
       "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Category Codes",
+      "title" : "Medication request  category  codes",
+      "description" : "MedicationRequest Category Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1322"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1322"],
+      "uses" : {
+      },
+      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-course-of-therapy",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Course of Therapy Codes",
+      "title" : "Medication request  course of  therapy  codes",
+      "description" : "MedicationRequest Course of Therapy Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1326"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1326"],
+      "uses" : {
+      },
+      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Intent",
+      "title" : "Medication request  intent",
+      "description" : "MedicationRequest Intent Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1321"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1321"],
+      "uses" : {
+      },
+      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationrequest Status",
+      "title" : "Medicationrequest  status",
+      "description" : "MedicationRequest Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1320"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1320"],
+      "uses" : {
+      },
+      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Status Reason Codes",
+      "title" : "Medication request  status  reason  codes",
+      "description" : "MedicationRequest Status Reason Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1324"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1324"],
+      "uses" : {
+      },
+      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/organization-type",
       "version" : "4.0.1",
       "status" : "draft",
@@ -562,6 +641,20 @@
       "uses" : {
       },
       "StructureDefinition-lmdi-patient.html" : "Pasient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/performer-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedurePerformerRoleCodes",
+      "title" : "Procedure Performer Role Codes",
+      "description" : "This example value set defines the set of codes that can be used to indicate a role of a procedure performer.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.433"],
+      "sources" : ["2.16.840.1.113883.4.642.3.433"],
+      "uses" : {
+      },
+      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/reason-medication-given-codes",
@@ -592,6 +685,20 @@
       "uses" : {
       },
       "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "Request priority",
+      "description" : "The clinical priority of a diagnostic order.",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.115"],
+      "sources" : ["2.16.840.1.113883.4.642.3.115"],
+      "uses" : {
+      },
+      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/route-codes",
@@ -674,6 +781,36 @@
       "uses" : {
       },
       "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActSubstanceAdminSubstitutionCode",
+      "title" : "ActSubstanceAdminSubstitutionCode",
+      "description" : "***No description***",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"
+      ],
+      "oids" : ["2.16.840.1.113883.1.11.16621"],
+      "sources" : ["2.16.840.1.113883.1.11.16621"],
+      "uses" : {
+      },
+      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "SubstanceAdminSubstitutionReason",
+      "title" : "SubstanceAdminSubstitutionReason",
+      "description" : "***No description***",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActReason"],
+      "oids" : ["2.16.840.1.113883.1.11.19377"],
+      "sources" : ["2.16.840.1.113883.1.11.19377"],
+      "uses" : {
+      },
+      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering"
     }
   ]
 }
