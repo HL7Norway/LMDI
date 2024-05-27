@@ -26,8 +26,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-patient.html" : "LMDI Patient Profile",
-      "StructureDefinition-lmdi-practitioner.html" : "LMDI Helsepersonell"
+      "StructureDefinition-lmdi-practitioner.html" : "LMDI Helsepersonell",
+      "StructureDefinition-lmdi-patient.html" : "LMDI Patient Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/approach-site-codes",
@@ -334,6 +334,34 @@
       "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Lmdi-Institusjonsopphold"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Identifier Type Codes",
+      "title" : "IdentifierType",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-patient.html" : "LMDI Patient Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-patient.html" : "LMDI Patient Profile"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
       "version" : "4.0.1",
       "status" : "draft",
@@ -345,13 +373,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel",
       "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Lmdi-Institusjonsopphold",
-      "StructureDefinition-lmdi-patient.html" : "LMDI Patient Profile",
-      "StructureDefinition-lmdi-organization.html" : "Lmdi-Organization",
-      "StructureDefinition-lmdi-practitioner.html" : "LMDI Helsepersonell",
       "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose",
-      "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel"
+      "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel",
+      "StructureDefinition-lmdi-practitioner.html" : "LMDI Helsepersonell",
+      "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel",
+      "StructureDefinition-lmdi-organization.html" : "Lmdi-Organization",
+      "StructureDefinition-lmdi-patient.html" : "LMDI Patient Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -474,8 +502,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.375"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel",
-      "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel"
+      "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel",
+      "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-form-codes",
