@@ -1,6 +1,7 @@
 Profile:     LmdiPatientTest
-Id:          lmdi-patient-test
-Parent:      http://hl7.no/fhir/StructureDefinition/no-basis-Patient
+Id:          lmdi-patient-test-ignore
+Parent:      Patient
+// Parent:      http://hl7.no/fhir/StructureDefinition/no-basis-Patient
 Title:       "LMDI Patient Profile TEST"
 Description: "TEST"
 * ^status = #draft
