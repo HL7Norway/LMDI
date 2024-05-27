@@ -18,6 +18,15 @@ Description: "Identifisering av legemiddel administrert til pasient på institus
 
 // Subject kan bare være pasient
 // Legge til støtte for no-basies-Patient senere
+
+// Krav: Status administrering = completeded, påkrevd
+* status 1..1 = completeded
+
+// Krav: Legemiddel, påkrevd
+// * medication 1..1 (allerede 1..1 i ressursen)
+
+
 // * subject only Reference(Patient or $no-basis-Patient)
 * subject only Reference(Patient)
 * dosage MS
+
