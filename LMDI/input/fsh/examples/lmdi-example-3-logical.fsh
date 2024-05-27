@@ -1,6 +1,6 @@
 // Eksempel inline/contained, minimalt, logiske referanser
 
-Instance: Administrering-20
+Instance: Administrering-30
 InstanceOf: MedicationAdministration
 Description: "Utfyllende eksempel - minimalt, logiske referanser"
 * status = #completed
