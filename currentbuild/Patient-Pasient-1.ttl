@@ -1,0 +1,29 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.no/fhir/ig/lmdi/Patient/Pasient-1> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Pasient-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient"^^xsd:anyURI ;
+       fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Pia Nobar </b> female, DoB: 1958-09-19</p><hr/></div>"
+  ] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Nobar" ] ;
+     fhir:given ( [ fhir:v "Pia" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1958-09-19"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

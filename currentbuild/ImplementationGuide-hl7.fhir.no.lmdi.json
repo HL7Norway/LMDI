@@ -10,7 +10,7 @@
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-05-27T18:44:02+00:00",
+  "date" : "2024-05-27T19:25:50+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -614,6 +614,18 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationAdministration"
+      }],
+      "reference" : {
+        "reference" : "MedicationAdministration/Administrering-1"
+      },
+      "name" : "Administrering-1",
+      "description" : "Eksempel på administrering av legemiddel",
+      "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-administrert-legemiddel"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -698,6 +710,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/Medisin-1"
+      },
+      "name" : "Medisin-1",
+      "description" : "Eksempel på legemiddel",
+      "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddel"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -725,10 +749,22 @@
         "valueString" : "Patient"
       }],
       "reference" : {
-        "reference" : "Patient/PatientExample"
+        "reference" : "Patient/Pasient-1"
       },
-      "name" : "PatientExample",
-      "description" : "Eksempel på pasient",
+      "name" : "Pasient-1",
+      "description" : "Eksempel på pasient med kjønn og fødselsdato",
+      "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Pasient-2"
+      },
+      "name" : "Pasient-2",
+      "description" : "Eksempel på pasient med fødselsnummer",
       "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient"
     }],
     "page" : {

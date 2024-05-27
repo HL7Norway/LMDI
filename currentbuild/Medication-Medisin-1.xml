@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="Medisin-1"/>
+  <meta>
+    <profile value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddel"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Medication </b><a name="Medisin-1"> </a><a name="hcMedisin-1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceMedication &quot;Medisin-1&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-lmdi-legemiddel.html">Legemiddel</a></p></div><p><b>identifier</b>: FEST-XXX-9e6c620b-5d09-4f27-9ee1-b108e7f338ab</p><p><b>code</b>: Oxycodone <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#430127000 &quot;Oral Form Oxycodone (product)&quot;)</span></p></div>
+  </text>
+  <identifier>
+    <value value="FEST-XXX-9e6c620b-5d09-4f27-9ee1-b108e7f338ab"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="430127000"/>
+      <display value="Oral Form Oxycodone (product)"/>
+    </coding>
+    <text value="Oxycodone"/>
+  </code>
+</Medication>

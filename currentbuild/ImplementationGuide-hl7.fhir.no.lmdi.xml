@@ -11,7 +11,7 @@
   <name value="Lmdi"/>
   <title value="Legemiddeldata fra institusjon til Legemiddelregisteret"/>
   <status value="draft"/>
-  <date value="2024-05-27T18:44:02+00:00"/>
+  <date value="2024-05-27T19:25:50+00:00"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>
   <contact>
     <name value="Folkehelseinstituttet (FHI)"/>
@@ -458,6 +458,17 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/Administrering-1"/>
+      </reference>
+      <name value="Administrering-1"/>
+      <description value="Eksempel på administrering av legemiddel"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-administrert-legemiddel"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -535,6 +546,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/Medisin-1"/>
+      </reference>
+      <name value="Medisin-1"/>
+      <description value="Eksempel på legemiddel"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddel"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -560,10 +582,21 @@
         <valueString value="Patient"/>
       </extension>
       <reference>
-        <reference value="Patient/PatientExample"/>
+        <reference value="Patient/Pasient-1"/>
       </reference>
-      <name value="PatientExample"/>
-      <description value="Eksempel på pasient"/>
+      <name value="Pasient-1"/>
+      <description value="Eksempel på pasient med kjønn og fødselsdato"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Pasient-2"/>
+      </reference>
+      <name value="Pasient-2"/>
+      <description value="Eksempel på pasient med fødselsnummer"/>
       <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient"/>
     </resource>
     <page>
