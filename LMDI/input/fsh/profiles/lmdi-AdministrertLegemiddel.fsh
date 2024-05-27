@@ -3,9 +3,9 @@ Profile: AdministrertLegemiddel
 Parent:   MedicationAdministration
 Id:       lmdi-administrert-legemiddel
 Title:    "Administrert legemiddel"
-Description: "Identifisering av legemiddel administrert til pasient på institusjon."
+Description: "Beskriver administrasjon av legemiddel til pasient på institusjon."
 * ^status = #draft
-* ^date = "2024-05-16"
+* ^date = "2024-05-27"
 
 // Se på følgende kilder:
 // eResept
@@ -15,6 +15,7 @@ Description: "Identifisering av legemiddel administrert til pasient på institus
 // "https://hl7.org/fhir/R4/medicationadministration.html" <- R4
 
 // TODO Se på navngivning iht. "Best Practice / HL7 Norge"
+// YFS: Hva med LegemiddelAdministrasjon ?
 
 // Subject kan bare være pasient
 // Legge til støtte for no-basies-Patient senere
@@ -26,6 +27,7 @@ Description: "Identifisering av legemiddel administrert til pasient på institus
 
 // Krav: Legemiddel, påkrevd
 // * medication 1..1 (allerede 1..1 i ressursen)
+// YFS: legg til no-basis-Medication
 
 // * subject only Reference(Patient or $no-basis-Patient)
 * subject only Reference(Patient)
