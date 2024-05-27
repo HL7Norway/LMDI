@@ -35,6 +35,7 @@ Description: "Beskriver administrasjon av legemiddel til pasient på institusjon
 * context MS // peke på encounter
 
 // Krav: Tidspunkt for administrasjon, påkrevd dateTime
+// NB! R5 bruker "occurence"
 * effective[x] only dateTime
 
 // Krav: Helsepersonell, må støtte
