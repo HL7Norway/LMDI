@@ -26,7 +26,6 @@ Description: "Identifisering av legemiddel administrert til pasient på institus
 // Krav: Legemiddel, påkrevd
 // * medication 1..1 (allerede 1..1 i ressursen)
 
-
 // * subject only Reference(Patient or $no-basis-Patient)
 * subject only Reference(Patient)
 
@@ -34,21 +33,20 @@ Description: "Identifisering av legemiddel administrert til pasient på institus
 * context MS // peke på encounter
 
 // Krav: Tidspunkt for administrasjon, påkrevd dateTime
-// occurence
-// effective
+* effective[x] only dateTime
 
 // Krav: Helsepersonell, må støtte
-// performer AND performer.actor MS
+* performer and performer.actor MS
 
 // Krav: Referanse til rekvisisjon, må støtte
 * request MS
 
 // Krav: Administrasjonsvei
-// * dosage.route MS
+// ESS: Diskuter om det bør være 0..1 MS
+* dosage.route 1..1
 
 // Krav: Administrert mengde
-// * dosage.dose MS
-* dosage MS
+* dosage.dose 1..1
 
 // Krav: Infusjon
 // ESS: Er vel del av administrasjonsvei? 
