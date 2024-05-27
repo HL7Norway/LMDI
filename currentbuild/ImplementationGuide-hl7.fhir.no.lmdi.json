@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Lmdi</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi</pre><div><p>Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret</p>\n</div></div>"
   },
   "url" : "http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi",
-  "version" : "0.1.0",
+  "version" : "0.1.1",
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-05-23T10:50:46+00:00",
+  "date" : "2024-05-27T11:03:36+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -623,7 +623,19 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/LmdiPractitioner"
+        "reference" : "StructureDefinition/lmdi-condition-diagnose"
+      },
+      "name" : "Diagnose",
+      "description" : "Diagnosen som pasienten har fått rekvirert og administrert legemiddelet for",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lmdi-practitioner"
       },
       "name" : "LMDI Helsepersonell",
       "description" : "Helsepersonell som har foreskrevet eller administrert legemiddelet",
@@ -635,7 +647,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/LmdiPatient"
+        "reference" : "StructureDefinition/lmdi-patient"
       },
       "name" : "LMDI Patient Profile",
       "description" : "Kun et eksempel for å vise verktøy",
@@ -659,21 +671,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/lmdi-indikasjon"
-      },
-      "name" : "Lmdi-Indikasjon TMP",
-      "description" : "Indikasjon/diagnose TMP",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/lmdi-encounter-institusjonsopphold"
       },
       "name" : "Lmdi-Institusjonsopphold",
+      "description" : "TODO",
       "exampleBoolean" : false
     },
     {
@@ -685,6 +686,7 @@
         "reference" : "StructureDefinition/lmdi-organization"
       },
       "name" : "Lmdi-Organization",
+      "description" : "TODO",
       "exampleBoolean" : false
     }],
     "page" : {

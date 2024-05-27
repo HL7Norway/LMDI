@@ -1,6 +1,6 @@
 {
-  "version" : "0.1.0",
-  "date" : "20240523105008",
+  "version" : "0.1.1",
+  "date" : "20240527110258",
   "notForPublication" : true,
   "name" : "hl7.fhir.no.lmdi.r4b"
 }

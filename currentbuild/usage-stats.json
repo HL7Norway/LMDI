@@ -1,26 +1,20 @@
 {
   "package": "hl7.fhir.no.lmdi",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "fhirVersion": "4.0.1",
   "jurisdiction": "NO",
   "extensions": [],
   "profiles": {
-    "Patient": [
-      {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/LmdiPatient",
-        "title": "LMDI Patient Profile"
-      }
-    ],
-    "Practitioner": [
-      {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/LmdiPractitioner",
-        "title": "LMDI Helsepersonell"
-      }
-    ],
     "MedicationAdministration": [
       {
         "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-administrert-legemiddel",
         "title": "Administrert legemiddel"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose",
+        "title": "Diagnose"
       }
     ],
     "Encounter": [
@@ -29,16 +23,22 @@
         "title": "Lmdi-Institusjonsopphold"
       }
     ],
-    "Condition": [
-      {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-indikasjon",
-        "title": "Lmdi-Indikasjon TMP"
-      }
-    ],
     "Organization": [
       {
         "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization",
         "title": "Lmdi-Organization"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient",
+        "title": "LMDI Patient Profile"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner",
+        "title": "LMDI Helsepersonell"
       }
     ]
   },
