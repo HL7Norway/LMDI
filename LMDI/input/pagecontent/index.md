@@ -43,6 +43,6 @@ Versjon 0.9 sommer 2024.
 - Line A. Sæle ([FHI](https://www.fhi.no/))
 - [Espen Stranger Seland](https://github.com/rockphotog) ([Vali](https://www.vali.no/))
 
-<img src="logo-norsk-hele-navnet.svg" height="120px" />
-<img src="logo-vali-crop.svg" height="120px" />
-<br clear="all" />
+---
+
+{% include footer.md %}
