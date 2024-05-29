@@ -26,6 +26,7 @@ publisher:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  Informasjonsmodell: informasjonsmodell.html
   Artifacts: artifacts.html
   TOC: toc.html
-  Informasjonsmodell: informasjonsmodell.html
+
