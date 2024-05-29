@@ -34,11 +34,34 @@ Versjon 0.9 sommer 2024.
 - Line A. Sæle ([FHI](https://www.fhi.no/))
 - [Espen Stranger Seland](https://github.com/rockphotog) ([Vali](https://www.vali.no/))
 
-## TEST
+## TEST 1
 
 <figure>
-  {% include models/test.svg %}
-  <figcaption>Simple diagram</figcaption>
+  {% include ../images/test.svg %}
+  <figcaption>Test 1</figcaption>
 </figure>
 
-<img src="models/test.svg" width="50%" />
+## TEST 2
+
+<figure>
+  {% include images/test.svg %}
+  <figcaption>Test 2</figcaption>
+</figure>
+
+## TEST 3
+
+<figure>
+  {% include ../images/lmdi-1.png %}
+  <figcaption>Test 3</figcaption>
+</figure>
+
+## TEST 4
+
+<figure>
+  {% include images/lmdi-1.png %}
+  <figcaption>Test 4</figcaption>
+</figure>
+
+
+
+
