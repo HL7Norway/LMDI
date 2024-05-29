@@ -3,7 +3,7 @@ Lmdi : Validation Results
 
 err = 10, warn = 6, info = 1
 IG Publisher Version: 1.6.10
-Generated Wed May 29 21:52:58 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.5.0 (canonical = http://hl7.no/fhir/ig/lmdi)
+Generated Wed May 29 22:09:47 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.5.0 (canonical = http://hl7.no/fhir/ig/lmdi)
  Build Errors : 0 / 3 / 0
  /github/workspace/LMDI/fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi : 0 / 0 / 1
@@ -36,8 +36,8 @@ WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.
 ERROR: MedicationAdministration/Administrering-1: MedicationAdministration.medication.ofType(Reference): Unable to resolve resource with reference 'https://fhir.legemidler.example.com/legemidler/123456780'
 ERROR: MedicationAdministration/Administrering-1: MedicationAdministration.subject: Unable to resolve resource with reference 'https://fhi.no/fhir/lmdi/pasient/12345678'
 ERROR: MedicationAdministration/Administrering-1: MedicationAdministration.performer[0].actor: Unable to resolve resource with reference 'https://fhir.npr.no/helsepersonell/1234567890'
-ERROR: MedicationAdministration/Administrering-1: MedicationAdministration.dosage.dose.code: Unknown code 'tsp_m' in the CodeSystem 'http://unitsofmeasure.org' version '2.0.1'
-INFORMATION: MedicationAdministration/Administrering-1: MedicationAdministration.dosage.dose.code: Error processing Unit: 'tsp_m': The unit "tsp_m" is unknown at character 1
+ERROR: MedicationAdministration/Administrering-1: MedicationAdministration.dosage.dose.code: Unknown code 'tsp_us' in the CodeSystem 'http://unitsofmeasure.org' version '2.0.1'
+INFORMATION: MedicationAdministration/Administrering-1: MedicationAdministration.dosage.dose.code: Error processing Unit: 'tsp_us': The unit "tsp_us" is unknown at character 1
 == fsh-generated/resources/MedicationAdministration-Administrering-10.json ==
 == fsh-generated/resources/MedicationAdministration-Administrering-20.json ==
 ERROR: MedicationAdministration/Administrering-20: MedicationAdministration.subject: Unable to resolve resource with reference 'https://fhi.no/fhir/lmdi/pasient/12345678'
