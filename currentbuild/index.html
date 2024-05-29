@@ -169,7 +169,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2024-05-27
+            as of 2024-05-29
           
         
       </td>
@@ -196,23 +196,47 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
-<h3 id="legemiddeldata-fra-institusjon-til-legemiddelregisteret-lmdi">Legemiddeldata fra institusjon til Legemiddelregisteret (LMDI)</h3>
+<h1 id="legemiddeldata-fra-institusjon-til-legemiddelregisteret-lmdi">Legemiddeldata fra institusjon til Legemiddelregisteret (LMDI)</h1>
 
 <p>Komplette og oppdaterte helsedata på legemidler er tilgjengelig for analyse og forskning med tanke på å forbedre kvalitet, styring, helseovervåking, beredskap og kunnskapsforvaltning i helsetjenesten</p>
 
-<h4 id="mål">Mål</h4>
+<h2 id="mål">Mål</h2>
 
 <p>Samle inn legemiddeldata på individnivå fra polikliniske og innlagte pasienter i institusjon til Legemiddelregisteret (LMR). Som et ledd i dette utvikles det en implementasjonsguide (IG) basert på en felles informasjonsmodell og HL7 FHIR (dette dokumentet). Dette skal benyttes for innsending av data fra institusjon til LMR ved hjelp av datadeling (sikret REST API).</p>
 
-<h4 id="plan">Plan</h4>
+<h2 id="utvikling">Utvikling</h2>
+
+<ul>
+  <li>All koding av profiler skjer med <a href="https://www.hl7.org/fhir/uv/shorthand/">FHIR Shorthand</a> (FSH)</li>
+  <li>Dokumentasjon genereres med <a href="https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation">IG Publisher</a></li>
+</ul>
+
+<p>I første omgang utvikles implementasjonsguiden for <a href="https://www.hl7.org/fhir/R4/">FHIR R4</a>, da dette er anbefalingen fra Helsedirektoratet og HL7 Norge. Tilrettelegging for R4B eller R5 må vurderes på et senere tidspunkt.</p>
+
+<h2 id="samhandlingsarkitektur">Samhandlingsarkitektur</h2>
+
+<p>Hovedmålet er datadeling ved hjelp av RESTful API i henhold til <a href="https://hl7.org/fhir/R4/http.html">HL7 FHIR sin spesifikasjon</a>, og etter <a href="https://www.ehelse.no/standardisering/standarder/anbefaling-om-bruk-av-hl7-fhir-for-datadeling">anbefaling fra Helsedirektoratet</a>.</p>
+
+<p>Inntil videre er profilene og implementasjonsguiden (<a href="https://hl7norway.github.io/LMDI/currentbuild/">se siste build</a>) agnostiske til om det skal genereres dokumenter eller forskjellig mønster for REST API (f.eks. <em>reference</em> vs <em>logical id</em>).</p>
+
+<h2 id="plan">Plan</h2>
 
 <p>Versjon 0.9 sommer 2024.</p>
 
-<p>Denne IGen blir utviklet på <a href="https://github.com/HL7Norway/LMDI">HL7 Norge sin GitHub</a> - alle er velkommen!</p>
+<h2 id="status-og-historikk">Status og historikk</h2>
 
-<h4 id="kontaktpersoner">Kontaktpersoner</h4>
+<ul>
+  <li>2024-05-28: Versjon 0.5 klar for teknisk gjennomgang og kommentering fra torsdag 29.5.2025</li>
+  <li>2024-05-23: Versjon 0.2</li>
+</ul>
 
-<p>Yngve, Line, Espen</p>
+<h2 id="kontaktpersoner">Kontaktpersoner</h2>
+
+<ul>
+  <li>Yngve Flater-Sandberg (<a href="https://www.vali.no/">Vali</a>)</li>
+  <li>Line A. Sæle (<a href="https://www.fhi.no/">FHI</a>)</li>
+  <li><a href="https://github.com/rockphotog">Espen Stranger Seland</a> (<a href="https://www.vali.no/">Vali</a>)</li>
+</ul>
 
 
 
@@ -239,7 +263,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no">Folkehelseinstituttet (FHI)</a>.  Package hl7.fhir.no.lmdi#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 27, 2024 23:37+0000">2024-05-27</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no">Folkehelseinstituttet (FHI)</a>.  Package hl7.fhir.no.lmdi#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 29, 2024 17:14+0000">2024-05-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
