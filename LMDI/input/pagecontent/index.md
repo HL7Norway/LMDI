@@ -10,11 +10,7 @@ Samle inn legemiddeldata på individnivå fra polikliniske og innlagte pasienter
 
 ### Spesifikasjon
 
-#### Modell
-
-Utkast, under stadig forandring! Stereotypen sier hvilken FHIR-ressurs som benyttes, f.eks. ```<<Patient>>```
-
-<img src="informasjonsmodell-test.svg" width="100%" />
+Se [informasjonsmodell](informasjonsmodell.md). 
 
 ### Utvikling
 
@@ -31,7 +27,7 @@ Hovedmålet er datadeling ved hjelp av RESTful API i henhold til [HL7 FHIR sin s
 
 Inntil videre er profilene og implementasjonsguiden ([se siste build](https://hl7norway.github.io/LMDI/currentbuild/)) agnostiske til om det skal genereres dokumenter eller forskjellig mønster for REST API (f.eks. *reference* vs *logical id*). 
 
-<img src="flyt-enkel-1.svg" width="60%" />
+![Enkelt flytdiagram](flyt-enkel-1.svg)
 
 ### Plan
 
