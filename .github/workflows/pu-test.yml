@@ -1,20 +1,20 @@
-# This is a basic workflow to help you get started with Actions
-
-name: plantUML
-
-# Controls when the workflow will run
-on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-  # A workflow run is made up of one or more jobs that can run sequentially or in parallel
+name: generate plantuml
+on: push
 jobs:
-  - name: PlantUML CLI
-    uses: lokkju/github-action-plantuml@v0.0.1
+  generate_plantuml:
+    runs-on: ubuntu-latest
+    name: plantuml
+    steps:
+    - name: checkout
+      uses: actions/checkout@v1
+      with:
+        fetch-depth: 1
+    - name: plantuml
+      id: plantuml
+      uses: grassedge/generate-plantuml-action@v1.5
+      with:
+        path: example
+        message: "Render PlantUML files"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             
