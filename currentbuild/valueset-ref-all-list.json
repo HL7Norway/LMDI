@@ -376,13 +376,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-patient.html" : "Pasient",
-      "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel",
-      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering",
-      "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose",
-      "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel",
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold",
       "StructureDefinition-lmdi-organization.html" : "Organisasjon",
+      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering",
+      "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel",
+      "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel",
+      "StructureDefinition-lmdi-patient.html" : "Pasient",
+      "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose",
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold",
       "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell"
     },
     {
@@ -506,9 +506,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.375"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel",
       "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering",
-      "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel"
+      "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel",
+      "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-form-codes",
