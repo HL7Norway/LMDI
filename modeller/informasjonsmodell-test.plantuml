@@ -1,19 +1,54 @@
 @startuml
 
-class Pasient
-class Legemiddeladministrasjon
-class Legemiddel 
-class Helsepersonell
-class Organisasjon
-class Opphold
+class Pasient <<Patient>> {
+   identifikator
+}
+class Legemiddeladministrasjon <<MedicationAdministration>> {
+   status: kodet = komplett
+   administrasjonsvei : kodet
+   mengde/dosering : kvantitet
+   tidspunkt : dateTime
+}
+class Legemiddel <<Medication>> {
+   identifikator
+   kode : kodet
+   form : kodet
+   batch-nummer : tekst
+
+}
+
+class Helsepersonell <<Practitioner>> {
+   identifikator
+}
+class Organisasjon <<Organization>> {
+   identifikator
+}
+
+class Institusjonsopphold <<Encounter>> {
+   periode
+}
+
+class Diagnose <<Condtition>> {
+   diagnose : kodet
+}
+
+class Rekvisisjon <<MedicationRequest>> {
+   status : kodet
+   hensikten med rekvireringen
+
+}
 
 Pasient <-- Legemiddeladministrasjon
-Legemiddeladministrasjon --> Legemiddel 
+Legemiddeladministrasjon -> Legemiddel 
 Legemiddeladministrasjon --> Helsepersonell
 Legemiddeladministrasjon --> Organisasjon
-Opphold --> Pasient
-Opphold --> Organisasjon
+Legemiddeladministrasjon -> Rekvisisjon
+Rekvisisjon --> Pasient
+Institusjonsopphold --> Pasient
+Institusjonsopphold --> Organisasjon
 Legemiddeladministrasjon --> Opphold : kontekst
+Rekvisisjon --> Diagnose
+Rekvisisjon --> Legemiddel
 
 @enduml
 
