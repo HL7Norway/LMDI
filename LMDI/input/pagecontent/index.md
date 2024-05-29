@@ -42,3 +42,6 @@ Versjon 0.9 sommer 2024.
 - Yngve Flater-Sandberg ([Vali](https://www.vali.no/))
 - Line A. Sæle ([FHI](https://www.fhi.no/))
 - [Espen Stranger Seland](https://github.com/rockphotog) ([Vali](https://www.vali.no/))
+
+<img src="logo-norsk-forkortelse" width="200px" />
+<br clear="all"/>
