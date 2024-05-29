@@ -49,5 +49,5 @@ Versjon 0.9 sommer 2024.
 - [Espen Stranger Seland](https://github.com/rockphotog) ([Vali](https://www.vali.no/))
 
 <img src="LMDI/input/images/logo-norsk-hele-navnet.svg" height="120px" />
-<img src="LMDI/input/images/logo-vali.png" height="120px />
+<img src="LMDI/input/images/logo-vali-crop.svg" height="120px" />
 <br clear="all"/>
