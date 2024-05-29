@@ -85,9 +85,10 @@ class Rekvisisjon <<MedicationRequest>> {
 Rekvisisjon --> Diagnose
 Rekvisisjon --> Legemiddel
 Rekvisisjon --> Pasient
+Rekvisisjon --> Helsepersonell
 
 class "Legemiddel klargjøring" <<MedicationDispense>> {
-    administrasjon: referanse[Administrasjon]
+    administrasjon: referanse[Legemiddeladministrasjon]
     årsak bytte: kodet
 } 
 
