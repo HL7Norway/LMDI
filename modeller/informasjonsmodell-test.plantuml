@@ -92,14 +92,14 @@ class "Legemiddel klargjøring" <<MedicationDispense>> {
     årsak bytte: kodet
 } 
 
-"Legemiddel klargjøring" --> Legemiddeladministrasjon
+"Legemiddel klargjøring" -> Legemiddeladministrasjon
 
 class "Rolle helsepersonell" <<PractitionerRole>> {
     helsepersonell: referanse[Helsepersonell]
     spesialitet[???]: kodet
 }
 
-"Rolle helsepersonell" --> Helsepersonell
+"Rolle helsepersonell" -> Helsepersonell
 
 
 @enduml
