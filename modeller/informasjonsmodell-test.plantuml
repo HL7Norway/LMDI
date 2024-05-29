@@ -1,0 +1,19 @@
+@startuml
+
+class Pasient
+class Legemiddeladministrasjon
+class Legemiddel 
+class Helsepersonell
+class Organisasjon
+class Opphold
+
+Pasient <-- Legemiddeladministrasjon
+Legemiddeladministrasjon --> Legemiddel 
+Legemiddeladministrasjon --> Helsepersonell
+Legemiddeladministrasjon --> Organisasjon
+Opphold --> Pasient
+Opphold --> Organisasjon
+Legemiddeladministrasjon --> Opphold : kontekst
+
+@enduml
+
