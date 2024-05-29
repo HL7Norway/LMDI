@@ -50,11 +50,15 @@ class Organisasjon <<Organization>> {
 Organisasjon --> Organisasjon
 
 class Institusjonsopphold <<Encounter>> {
-   periode
+    pasient: referanse[Pasient]
+    organisasjon: referanse[Organisasjon]
+    periode
+    diagnose: referanse[Diagnose]
 }
 
 Institusjonsopphold --> Pasient
 Institusjonsopphold --> Organisasjon
+Institusjonsopphold --> Diagnose
 
 class Diagnose <<Condtition>> {
    diagnose : kodet
