@@ -1,9 +1,10 @@
 Lmdi
 =========================================
 
-Generic: line 0, col 0, Warning - The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 125 other files) (INVALID)
-Generic: line 0, col 0, Warning - The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 125 other files) (INVALID)
+Generic: line 0, col 0, Warning - The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 126 other files) (INVALID)
+Generic: line 0, col 0, Warning - The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 126 other files) (INVALID)
 Generic: line 0, col 0, Warning - The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 81 other files) (INVALID)
+Generic: line 0, col 0, Error - The link 'informasjonsmodell.md' for "informasjonsmodell" cannot be resolved (NOTFOUND)
 /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-1.json: line 10, col 4, Error - Unable to resolve resource with reference 'https://fhir.legemidler.example.com/legemidler/123456780' (STRUCTURE)
 /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-1.json: line 13, col 4, Error - Unable to resolve resource with reference 'https://fhi.no/fhir/lmdi/pasient/12345678' (STRUCTURE)
 /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-1.json: line 18, col 8, Error - Unable to resolve resource with reference 'https://fhir.npr.no/helsepersonell/1234567890' (STRUCTURE)
