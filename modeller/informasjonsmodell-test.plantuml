@@ -12,10 +12,10 @@ class Legemiddeladministrasjon <<MedicationAdministration>> {
    pasient: referanse[Pasient]
    opphold: refereanse[Opphold]
    tidspunkt : dato og klokkeslett
-   helsepersonell: referanse
-   rekvisisjon: refersanse
-   administrasjonsvei : kodet
-   mengde/dosering : kvantitet
+   helsepersonell: referanse[Helsepersonell]
+   rekvisisjon: referanse[Rekvisisjon]
+   administrasjonsvei: kodet
+   mengde/dosering: kvantitet
 }
 
 Legemiddeladministrasjon -> Legemiddel 
