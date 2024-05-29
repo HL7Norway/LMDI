@@ -1,5 +1,3 @@
-## Informasjonsmodell
-
 ### Arbeidsutkast
 
 Utkast, under stadig forandring! Stereotypen sier hvilken FHIR-ressurs som benyttes, f.eks. ```<<Patient>>```
