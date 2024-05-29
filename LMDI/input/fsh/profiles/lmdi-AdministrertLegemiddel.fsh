@@ -86,4 +86,4 @@ Description: "Eksempel på administrering av legemiddel"
 * dosage.dose.value = 2.0
 * dosage.dose.unit = "metric tablespoon"
 * dosage.dose.system = "http://unitsofmeasure.org"
-* dosage.dose.code = #tsp_m
+* dosage.dose.code = #tsp_us
