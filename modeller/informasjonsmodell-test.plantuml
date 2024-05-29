@@ -1,54 +1,101 @@
 @startuml
 
 class Pasient <<Patient>> {
-   identifikator
+   identifikator: FNR|DNR
+   kjønn: kodet
+   fødselsdato: dato
+   kommunenummer: tekst 
 }
 class Legemiddeladministrasjon <<MedicationAdministration>> {
    status: kodet = komplett
+   legemiddel: referanse[Legemiddel]
+   pasient: referanse[Pasient]
+   opphold: refereanse[Opphold]
+   tidspunkt : dato og klokkeslett
+   helsepersonell: referanse
+   rekvisisjon: refersanse
    administrasjonsvei : kodet
    mengde/dosering : kvantitet
-   tidspunkt : dateTime
 }
+
+Legemiddeladministrasjon -> Legemiddel 
+Legemiddeladministrasjon --> Pasient
+Legemiddeladministrasjon --> Helsepersonell
+Legemiddeladministrasjon --> Organisasjon
+Legemiddeladministrasjon -> Rekvisisjon
+Legemiddeladministrasjon --> Institusjonsopphold : kontekst
+
 class Legemiddel <<Medication>> {
    identifikator
    kode : kodet
    form : kodet
+   ingredienser: kodet
+   styrke: kodet
    batch-nummer : tekst
-
+   merkevarenavn: tekst
+   definerte døgndoser [DDD]: dosering
 }
 
 class Helsepersonell <<Practitioner>> {
    identifikator
 }
 class Organisasjon <<Organization>> {
-   identifikator
+   identifikator: identifikator[ENH|RESH]
+   type: kodet
+   navn: tekst
+   kommune: tekst|kodet
+   "del av organisasjon": referanse[Organisasjon]
 }
+
+Organisasjon --> Organisasjon
 
 class Institusjonsopphold <<Encounter>> {
    periode
 }
+
+Institusjonsopphold --> Pasient
+Institusjonsopphold --> Organisasjon
 
 class Diagnose <<Condtition>> {
    diagnose : kodet
 }
 
 class Rekvisisjon <<MedicationRequest>> {
-   status : kodet
-   hensikten med rekvireringen
-
+    id
+    status : kodet
+    hensikten med rekvireringen: kodet
+    legemiddel: referanse
+    pasient: referanse
+    rekvirent: referanse
+    diagnose: referanse[???]
+    dosering
+    indikasjon: kodet[ICD-10|ICPC-2]
+    legemiddel forordnet før opphold[???]: referanse
+    tid oppstart: periode
+    seponeringsårsal: kodet
+    tid seponering: dato og tid
+    type legemiddelbruk 1: kodet
+    type legemiddelbruk 2: kodet
 }
 
-Pasient <-- Legemiddeladministrasjon
-Legemiddeladministrasjon -> Legemiddel 
-Legemiddeladministrasjon --> Helsepersonell
-Legemiddeladministrasjon --> Organisasjon
-Legemiddeladministrasjon -> Rekvisisjon
-Rekvisisjon --> Pasient
-Institusjonsopphold --> Pasient
-Institusjonsopphold --> Organisasjon
-Legemiddeladministrasjon --> Opphold : kontekst
 Rekvisisjon --> Diagnose
 Rekvisisjon --> Legemiddel
+Rekvisisjon --> Pasient
+
+class "Legemiddel klargjøring" <<MedicationDispense>> {
+    administrasjon: referanse[Administrasjon]
+    "årsak bytte": kodet
+} 
+
+"Legemiddel klargjøring" --> Legemiddeladministrasjon
+
+class "Rolle helsepersonell" <<PractitionerRole>> {
+    helsepersonell: referanse[Helsepersonell]
+    spesialitet[???]: kodet
+}
+
+"Rolle helsepersonell" --> Helsepersonell
+
 
 @enduml
 
