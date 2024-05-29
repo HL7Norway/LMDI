@@ -15,14 +15,7 @@ on:
 
   # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-
-
-workflow "Generate PlantUML Images" {
-  resolves = ["Generate UML"]
-  on = "push"
-}
-
-action "Generate UML" {
-  uses = "lokkju/github-action-plantuml@master"
-  args = ["modeller/informasjonsmodell-test.plantuml"]
-}
+  uses: 
+    lokkju/github-action-plantuml@master
+    
+  
