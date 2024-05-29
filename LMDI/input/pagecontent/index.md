@@ -33,3 +33,12 @@ Versjon 0.9 sommer 2024.
 - Yngve Flater-Sandberg ([Vali](https://www.vali.no/))
 - Line A. Sæle ([FHI](https://www.fhi.no/))
 - [Espen Stranger Seland](https://github.com/rockphotog) ([Vali](https://www.vali.no/))
+
+## TEST
+
+<figure>
+  {% include models/test.svg %}
+  <figcaption>Simple diagram</figcaption>
+</figure>
+
+<img src="models/test.svg" width="50%" />
