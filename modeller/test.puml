@@ -2,8 +2,10 @@
 
 class Espen
 class Datamaskin
+class Sykkel
 
 Espen <-- Datamaskin
+Espen <-- Sykkel
 
 @enduml
 
