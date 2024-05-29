@@ -34,11 +34,11 @@ Versjon 0.9 sommer 2024.
 - Line A. Sæle ([FHI](https://www.fhi.no/))
 - [Espen Stranger Seland](https://github.com/rockphotog) ([Vali](https://www.vali.no/))
 
-## TEST 4
+## TEST 5
 
 <figure>
-  {% include test.svg %}
-  <figcaption>Test 4</figcaption>
+  {% include flyt-1.plantuml %}
+  <figcaption>Test 5</figcaption>
 </figure>
 
 
