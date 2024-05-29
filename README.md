@@ -29,6 +29,8 @@ Hovedmålet er datadeling ved hjelp av RESTful API i henhold til [HL7 FHIR sin s
 
 Inntil videre er profilene og implementasjonsguiden ([se siste build](https://hl7norway.github.io/LMDI/currentbuild/)) agnostiske til om det skal genereres dokumenter eller forskjellig mønster for REST API (f.eks. *reference* vs *logical id*). 
 
+<img src="modeller/flyt-enkel-1.svg" width="60%" />
+
 ## Plan
 
 Versjon 0.9 sommer 2024. 
