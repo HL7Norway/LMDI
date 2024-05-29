@@ -1,7 +1,7 @@
 {
   "version" : "0.5.0",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20240529220624",
+  "date" : "20240529222634",
   "name" : "hl7.fhir.no.lmdi",
   "jurisdiction" : "urn:iso:std:iso:3166#NO"
 }
