@@ -29,7 +29,7 @@ Inntil videre er profilene og implementasjonsguiden ([se siste build](https://hl
 
 <br />
 
-![Enkelt flytdiagram](flyt-enkel-1.svg)
+<img src="flyt-enkel-1.svg" width="75%" style="float" align="right" alt="Enkelt flytdiagram" />
 
 <br />
 
