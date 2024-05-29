@@ -1,0 +1,9 @@
+@startuml
+
+class Espen
+class Datamaskin
+
+Espen <-- Datamaskin
+
+@enduml
+
