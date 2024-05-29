@@ -34,15 +34,6 @@ Versjon 0.9 sommer 2024.
 - Line A. Sæle ([FHI](https://www.fhi.no/))
 - [Espen Stranger Seland](https://github.com/rockphotog) ([Vali](https://www.vali.no/))
 
-
-## TEST 2
-
-<figure>
-  {% include images/test.svg %}
-  <figcaption>Test 2</figcaption>
-</figure>
-
-
 ## TEST 4
 
 <figure>
