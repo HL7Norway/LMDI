@@ -42,7 +42,7 @@ Versjon 0.9 sommer 2024.
 - 2024-05-28: Versjon 0.5 klar for teknisk gjennomgang og kommentering fra torsdag 29.5.2025
 - 2024-05-23: Versjon 0.2
 
-#### Kontaktpersoner
+### Kontaktpersoner
 
 - Yngve Flater-Sandberg ([Vali](https://www.vali.no/))
 - Line A. Sæle ([FHI](https://www.fhi.no/))
