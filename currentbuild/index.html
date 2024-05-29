@@ -195,36 +195,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p>  <!-- white space is critical inside of capture --></p>
-<div class="markdown-toc">
-<ul id="markdown-toc">
-  <li><a href="#legemiddeldata-fra-institusjon-til-legemiddelregisteret-lmdi" id="markdown-toc-legemiddeldata-fra-institusjon-til-legemiddelregisteret-lmdi">Legemiddeldata fra institusjon til Legemiddelregisteret (LMDI)</a>    <ul>
-      <li><a href="#mål" id="markdown-toc-mål">Mål</a></li>
-      <li><a href="#spesifikasjon" id="markdown-toc-spesifikasjon">Spesifikasjon</a></li>
-      <li><a href="#utvikling" id="markdown-toc-utvikling">Utvikling</a></li>
-      <li><a href="#samhandlingsarkitektur" id="markdown-toc-samhandlingsarkitektur">Samhandlingsarkitektur</a></li>
-      <li><a href="#plan" id="markdown-toc-plan">Plan</a></li>
-      <li><a href="#status-og-historikk" id="markdown-toc-status-og-historikk">Status og historikk</a></li>
-      <li><a href="#kontaktpersoner" id="markdown-toc-kontaktpersoner">Kontaktpersoner</a></li>
-    </ul>
-  </li>
-</ul>
-
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
 </div>
-<h2 id="legemiddeldata-fra-institusjon-til-legemiddelregisteret-lmdi">Legemiddeldata fra institusjon til Legemiddelregisteret (LMDI)</h2>
+<h3 id="legemiddeldata-fra-institusjon-til-legemiddelregisteret-lmdi">Legemiddeldata fra institusjon til Legemiddelregisteret (LMDI)</h3>
 
 <p>Komplette og oppdaterte helsedata på legemidler er tilgjengelig for analyse og forskning med tanke på å forbedre kvalitet, styring, helseovervåking, beredskap og kunnskapsforvaltning i helsetjenesten</p>
 
-<h3 id="mål">Mål</h3>
+<h4 id="mål">Mål</h4>
 
 <p>Samle inn legemiddeldata på individnivå fra polikliniske og innlagte pasienter i institusjon til Legemiddelregisteret (LMR). Som et ledd i dette utvikles det en implementasjonsguide (IG) basert på en felles informasjonsmodell og HL7 FHIR (dette dokumentet). Dette skal benyttes for innsending av data fra institusjon til LMR ved hjelp av datadeling (sikret REST API).</p>
 
 <p><img src="lmdi-1.png" width="75%"/></p>
 
-<h3 id="spesifikasjon">Spesifikasjon</h3>
+<h4 id="spesifikasjon">Spesifikasjon</h4>
 
-<p><a name="l352">​</a>Se <a href="informasjonsmodell.md">informasjonsmodell</a>.</p>
+<p><a name="l315">​</a>Se <a href="informasjonsmodell.md">informasjonsmodell</a>.</p>
 
-<h3 id="utvikling">Utvikling</h3>
+<h4 id="utvikling">Utvikling</h4>
 
 <ul>
   <li>All koding av profiler skjer med <a href="https://www.hl7.org/fhir/uv/shorthand/">FHIR Shorthand</a> (FSH)</li>
@@ -235,26 +223,30 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Er HL7 FHIR nytt for deg anbefaler vi å ta en titt på <a href="https://hl7norway.github.io/best-practice/docs/resources.html">HL7 Norge sin side med ressurser</a>, f.eks. introduksjon for henholdsvis <a href="https://www.hl7.org/fhir/overview-clinical.html">klinikere</a>, <a href="https://www.hl7.org/fhir/overview-arch.html">arkitekter</a> og <a href="https://www.hl7.org/fhir/overview-dev.html">utviklere</a>.</p>
 
-<h3 id="samhandlingsarkitektur">Samhandlingsarkitektur</h3>
+<h4 id="samhandlingsarkitektur">Samhandlingsarkitektur</h4>
 
 <p>Hovedmålet er datadeling ved hjelp av RESTful API i henhold til <a href="https://hl7.org/fhir/R4/http.html">HL7 FHIR sin spesifikasjon</a>, og etter <a href="https://www.ehelse.no/standardisering/standarder/anbefaling-om-bruk-av-hl7-fhir-for-datadeling">anbefaling fra Helsedirektoratet</a>.</p>
 
 <p>Inntil videre er profilene og implementasjonsguiden (<a href="https://hl7norway.github.io/LMDI/currentbuild/">se siste build</a>) agnostiske til om det skal genereres dokumenter eller forskjellig mønster for REST API (f.eks. <em>reference</em> vs <em>logical id</em>).</p>
 
+<p><br/></p>
+
 <p><img src="flyt-enkel-1.svg" alt="Enkelt flytdiagram"/></p>
 
-<h3 id="plan">Plan</h3>
+<p><br/></p>
+
+<h4 id="plan">Plan</h4>
 
 <p>Versjon 0.9 sommer 2024.</p>
 
-<h3 id="status-og-historikk">Status og historikk</h3>
+<h4 id="status-og-historikk">Status og historikk</h4>
 
 <ul>
   <li>2024-05-28: Versjon 0.5 klar for teknisk gjennomgang og kommentering fra torsdag 29.5.2025</li>
   <li>2024-05-23: Versjon 0.2</li>
 </ul>
 
-<h3 id="kontaktpersoner">Kontaktpersoner</h3>
+<h4 id="kontaktpersoner">Kontaktpersoner</h4>
 
 <ul>
   <li>Yngve Flater-Sandberg (<a href="https://www.vali.no/">Vali</a>)</li>
@@ -286,7 +278,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no">Folkehelseinstituttet (FHI)</a>.  Package hl7.fhir.no.lmdi#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 29, 2024 20:43+0000">2024-05-29</span>
+          IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no">Folkehelseinstituttet (FHI)</a>.  Package hl7.fhir.no.lmdi#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 29, 2024 20:53+0000">2024-05-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
