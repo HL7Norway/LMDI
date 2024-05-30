@@ -1,6 +1,6 @@
 // Eksempel inline/contained
 
-// Alias: $SCT = http://snomed.info/sct
+Alias: $SCT = http://snomed.info/sct
 
 Instance: Administrering-10
 InstanceOf: MedicationAdministration
