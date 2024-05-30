@@ -10,6 +10,7 @@ Description: "Adresse som inneholder utvidelse for kommune"
 * extension(no-basis-municipalitycode)
 
 // Kopiert fra Thomas sin fsh-no-basis
+Alias: $kommunenummer-alle = https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle
 Extension: NoBasisMunicipalitycode
 Id: no-basis-municipalitycode
 Title: "no-basis-municipalitycode"
@@ -25,7 +26,7 @@ Description: "Coded value for municipality/county Norwegian kommune"
 
 // EKSEMPLER
 // FSH genererer ikke eksempler for datatyper, ergo Usage=inline for å unngå feilmeldinger. 
-Instance: Adresse-1
-InstanceOf: LmdiAdresse
-Description: "Eksempel på adresse med kun kommunenummer"
-Usage: #inline
+// Instance: Adresse-1
+// InstanceOf: LmdiAdresse
+// Description: "Eksempel på adresse med kun kommunenummer"
+// Usage: #inline
