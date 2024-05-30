@@ -3,70 +3,77 @@
     "id" : "lmdi-test-kodeverk.codesystem",
     "type" : "CodeSystem",
     "url" : "http://hl7.no/fhir/ig/lmdi/CodeSystem/lmdi-test-kodeverk.codesystem",
-    "version" : "0.5.0",
+    "version" : "0.5.1",
     "name" : "LmdiTestKodeverk"
   },
   {
     "id" : "hl7.fhir.no.lmdi",
     "type" : "ImplementationGuide",
     "url" : "http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi",
-    "version" : "0.5.0",
+    "version" : "0.5.1",
     "name" : "Lmdi"
   },
   {
     "id" : "Legemiddelrekvirering",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/Legemiddelrekvirering",
-    "version" : "0.5.0",
+    "version" : "0.5.1",
     "name" : "Legemiddelrekvirering"
+  },
+  {
+    "id" : "lmdi-address",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-address",
+    "version" : "0.5.1",
+    "name" : "LmdiAdresse"
   },
   {
     "id" : "lmdi-administrert-legemiddel",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-administrert-legemiddel",
-    "version" : "0.5.0",
+    "version" : "0.5.1",
     "name" : "AdministrertLegemiddel"
   },
   {
     "id" : "lmdi-condition-diagnose",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose",
-    "version" : "0.5.0",
+    "version" : "0.5.1",
     "name" : "LmdiDiagnose"
   },
   {
     "id" : "lmdi-encounter-institusjonsopphold",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter-institusjonsopphold",
-    "version" : "0.5.0",
+    "version" : "0.5.1",
     "name" : "LmdiEncounterInstitusjonsopphold"
   },
   {
     "id" : "lmdi-legemiddel",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddel",
-    "version" : "0.5.0",
+    "version" : "0.5.1",
     "name" : "Legemiddel"
   },
   {
     "id" : "lmdi-organization",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization",
-    "version" : "0.5.0",
+    "version" : "0.5.1",
     "name" : "LmdiOrganization"
   },
   {
     "id" : "lmdi-patient",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient",
-    "version" : "0.5.0",
+    "version" : "0.5.1",
     "name" : "LmdiPatient"
   },
   {
     "id" : "lmdi-practitioner",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner",
-    "version" : "0.5.0",
+    "version" : "0.5.1",
     "name" : "LmdiPractitioner"
   }
 ]

@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Lmdi</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi</pre><div><p>Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret</p>\n</div></div>"
   },
   "url" : "http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-05-29T22:38:39+00:00",
+  "date" : "2024-05-30T10:14:26+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -668,6 +668,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lmdi-address"
+      },
+      "name" : "Adresse",
+      "description" : "TODO",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -710,7 +722,7 @@
         "reference" : "StructureDefinition/lmdi-encounter-institusjonsopphold"
       },
       "name" : "Institusjonsopphold",
-      "description" : "TODO",
+      "description" : "Beskrivelse av pasientens opphold i institusjon.",
       "exampleBoolean" : false
     },
     {
@@ -759,6 +771,18 @@
       },
       "name" : "Medisin-1",
       "description" : "Eksempel på legemiddel",
+      "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddel"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/Medisin-2"
+      },
+      "name" : "Medisin-2",
+      "description" : "Eksempel på legemiddel - Paracetamol - UTKAST",
       "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddel"
     },
     {
