@@ -13,12 +13,13 @@ Description: "Beskrivelse av legemiddel."
 * identifier ^short = "Legemiddelets identifikasjon"
 * identifier ^definition = "Legemiddelets identifikasjon i henhold til TODO"
 // Krav: Kode, som FEST-id, SNOMED-CT etc., obligatorisk
+// Slicing? Hva kan LMR ta i mot? Hvilket nivå skal man rapportere på? Hva med "ukurrante" legemidler? 
 * code 1..1
 // Krav: Legemiddelform, obligatorisk? HL7 Form vs FEST-form. IDMP/SAFEST?
 * form MS
 * form ^short = "Legemiddelform"
-// Krav: Ingredienser/virkestoff navn (ingredienth)
-// Krav: Styrke (ingredient.strength[x])
+// Krav: Ingredienser/virkestoff navn (ingredienth) // Bør finnes indirekte for de flest
+// Krav: Styrke (ingredient.strength[x]) // Bør finnes indirekte for de fleste
 // Krav: Batchnummer
 * batch MS
 * batch ^short = "Batch-nummer for legemiddelet"
