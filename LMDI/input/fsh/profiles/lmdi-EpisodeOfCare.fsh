@@ -1,8 +1,8 @@
-// Institusjonsopphold basert på Encounter
-Profile: LmdiEncounterInstitusjonsopphold
-Parent: Encounter
-Id: lmdi-encounter-institusjonsopphold
-Title: "Institusjonsopphold A"
+// Institusjonsopphold basert på EpisodeOfCare
+Profile: LmdiEpisodeOfCareInstitusjonsopphold
+Parent: EpisodeOfCare
+Id: lmdi-episodeofcare-institusjonsopphold
+Title: "Institusjonsopphold B"
 Description: "Beskrivelse av pasientens opphold i institusjon."
 * ^status = #draft
 * ^date = "2024-05-30"
