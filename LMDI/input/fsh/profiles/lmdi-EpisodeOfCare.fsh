@@ -3,14 +3,17 @@ Profile: LmdiEpisodeOfCareInstitusjonsopphold
 Parent: EpisodeOfCare
 Id: lmdi-episodeofcare-institusjonsopphold
 Title: "Institusjonsopphold B"
-Description: "Beskrivelse av pasientens opphold i institusjon."
+Description: "Beskrivelse av pasientens opphold i institusjon - bruker EpisodeOfCare."
 * ^status = #draft
 * ^date = "2024-05-30"
 
+// Krav: Må referere til organisasjon (f.eks. sykehjem)
+* managingOrganization 1..1
+* managingOrganization ^short = "Organisasjonen som har ansvar for oppholdet"
+
 // Krav: actualPeriod
-* managingOrganization MS
 * period MS
-* period ^short = "Periode for pasientens opphold i institusjon."
+* period ^short = "Periode for pasientens (antatte) opphold i institusjon."
 
 // TODO #7 Vurdere Encounter opp mot Encounter
 

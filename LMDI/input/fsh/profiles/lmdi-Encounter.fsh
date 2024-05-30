@@ -3,7 +3,7 @@ Profile: LmdiEncounterInstitusjonsopphold
 Parent: Encounter
 Id: lmdi-encounter-institusjonsopphold
 Title: "Institusjonsopphold A"
-Description: "Beskrivelse av pasientens opphold i institusjon."
+Description: "Beskrivelse av pasientens opphold i institusjon - bruker Encounter."
 * ^status = #draft
 * ^date = "2024-05-30"
 
