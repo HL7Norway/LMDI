@@ -1,0 +1,111 @@
+@startuml
+
+header "Legemiddeldata fra institusjon til Legemiddelregisteret"
+title "Informasjonsmodell: UML klassediagam (arbeidsversjon)"
+footer "Folkehelseinstituttet / Vali AS"
+
+class Pasient <<Patient>> {
+   identifikator: FNR|DNR
+   kjønn: kodet
+   fødselsdato: dato
+   kommunenummer: tekst 
+}
+class Legemiddeladministrasjon <<MedicationAdministration>> {
+   status: kodet = komplett
+   legemiddel: referanse[Legemiddel]
+   pasient: referanse[Pasient]
+   opphold: refereanse[Opphold]
+   tidspunkt : dato og klokkeslett
+   helsepersonell: referanse[Helsepersonell]
+   rekvisisjon: referanse[Rekvisisjon]
+   administrasjonsvei: kodet
+   mengde/dosering: kvantitet
+}
+
+Legemiddeladministrasjon -> Legemiddel 
+Legemiddeladministrasjon --> Pasient
+Legemiddeladministrasjon --> Helsepersonell
+Legemiddeladministrasjon --> Organisasjon
+Legemiddeladministrasjon -> Rekvisisjon
+Legemiddeladministrasjon --> Institusjonsopphold : kontekst
+
+class Legemiddel <<Medication>> {
+   identifikator
+   kode : kodet
+   form : kodet
+   ingredienser: kodet
+   styrke: kodet
+   batch-nummer : tekst
+   merkevarenavn: tekst
+   definerte døgndoser [DDD]: dosering
+}
+
+class Helsepersonell <<Practitioner>> {
+   identifikator
+}
+class Organisasjon <<Organization>> {
+   identifikator: identifikator[ENH|RESH]
+   type: kodet
+   navn: tekst
+   kommune: tekst|kodet
+   "del av organisasjon": referanse[Organisasjon]
+}
+
+Organisasjon --> Organisasjon
+
+class Institusjonsopphold <<EpisodeOfCate>> {
+    pasient: referanse[Pasient]
+    organisasjon: referanse[Organisasjon]
+    periode
+    diagnose: referanse[Diagnose]
+}
+
+Institusjonsopphold --> Pasient
+Institusjonsopphold --> Organisasjon
+Institusjonsopphold --> Diagnose
+
+class Diagnose <<Condtition>> {
+   diagnose : kodet
+}
+
+class Rekvisisjon <<MedicationRequest>> {
+    identifikator[?]
+    status : kodet
+    hensikten med rekvireringen: kodet
+    legemiddel: referanse
+    pasient: referanse
+    rekvirent: referanse
+    diagnose: referanse[Diagnose]
+    dosering
+    indikasjon: kodet[ICD-10|ICPC-2]
+    legemiddel forordnet før opphold: referanse[Rekvisisjon]
+    tid oppstart: periode
+    seponeringsårsal: kodet
+    tid seponering: dato og tid
+    type legemiddelbruk 1: kodet
+    type legemiddelbruk 2: kodet
+}
+
+Rekvisisjon --> Diagnose
+Rekvisisjon --> Legemiddel
+Rekvisisjon --> Pasient
+Rekvisisjon --> Helsepersonell
+Rekvisisjon -> Rekvisisjon
+
+class "Legemiddel klargjøring" <<MedicationDispense>> {
+    administrasjon: referanse[Legemiddeladministrasjon]
+    årsak bytte: kodet
+} 
+
+"Legemiddel klargjøring" -> Legemiddeladministrasjon
+
+class "Rolle helsepersonell" <<PractitionerRole>> {
+    helsepersonell: referanse[Helsepersonell]
+    spesialitet[???]: kodet
+}
+
+"Rolle helsepersonell" -> Helsepersonell
+
+
+@enduml
+

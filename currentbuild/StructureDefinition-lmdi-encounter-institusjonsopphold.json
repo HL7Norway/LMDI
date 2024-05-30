@@ -19,7 +19,7 @@
       "value" : "https://www.fhi.no"
     }]
   }],
-  "description" : "Beskrivelse av pasientens opphold i institusjon.",
+  "description" : "Beskrivelse av pasientens opphold i institusjon - bruker Encounter.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

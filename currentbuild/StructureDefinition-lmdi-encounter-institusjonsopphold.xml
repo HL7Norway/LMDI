@@ -21,7 +21,7 @@
       <value value="https://www.fhi.no"/>
     </telecom>
   </contact>
-  <description value="Beskrivelse av pasientens opphold i institusjon."/>
+  <description value="Beskrivelse av pasientens opphold i institusjon - bruker Encounter."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Lmdi"] ; # 
   fhir:title [ fhir:v "Legemiddeldata fra institusjon til Legemiddelregisteret"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-30T11:05:24+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-30T13:11:25+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;
@@ -641,7 +641,7 @@
          fhir:reference [ fhir:v "StructureDefinition/lmdi-encounter-institusjonsopphold" ]
        ] ;
        fhir:name [ fhir:v "Institusjonsopphold A" ] ;
-       fhir:description [ fhir:v "Beskrivelse av pasientens opphold i institusjon." ] ;
+       fhir:description [ fhir:v "Beskrivelse av pasientens opphold i institusjon - bruker Encounter." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -653,7 +653,7 @@
          fhir:reference [ fhir:v "StructureDefinition/lmdi-episodeofcare-institusjonsopphold" ]
        ] ;
        fhir:name [ fhir:v "Institusjonsopphold B" ] ;
-       fhir:description [ fhir:v "Beskrivelse av pasientens opphold i institusjon." ] ;
+       fhir:description [ fhir:v "Beskrivelse av pasientens opphold i institusjon - bruker EpisodeOfCare." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

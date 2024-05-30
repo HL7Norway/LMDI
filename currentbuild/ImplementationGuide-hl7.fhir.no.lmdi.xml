@@ -11,7 +11,7 @@
   <name value="Lmdi"/>
   <title value="Legemiddeldata fra institusjon til Legemiddelregisteret"/>
   <status value="draft"/>
-  <date value="2024-05-30T11:05:24+00:00"/>
+  <date value="2024-05-30T13:11:25+00:00"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>
   <contact>
     <name value="Folkehelseinstituttet (FHI)"/>
@@ -558,7 +558,7 @@
         <reference value="StructureDefinition/lmdi-encounter-institusjonsopphold"/>
       </reference>
       <name value="Institusjonsopphold A"/>
-      <description value="Beskrivelse av pasientens opphold i institusjon."/>
+      <description value="Beskrivelse av pasientens opphold i institusjon - bruker Encounter."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -569,7 +569,7 @@
         <reference value="StructureDefinition/lmdi-episodeofcare-institusjonsopphold"/>
       </reference>
       <name value="Institusjonsopphold B"/>
-      <description value="Beskrivelse av pasientens opphold i institusjon."/>
+      <description value="Beskrivelse av pasientens opphold i institusjon - bruker EpisodeOfCare."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

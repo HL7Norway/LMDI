@@ -10,7 +10,7 @@
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-05-30T11:05:24+00:00",
+  "date" : "2024-05-30T13:11:25+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -722,7 +722,7 @@
         "reference" : "StructureDefinition/lmdi-encounter-institusjonsopphold"
       },
       "name" : "Institusjonsopphold A",
-      "description" : "Beskrivelse av pasientens opphold i institusjon.",
+      "description" : "Beskrivelse av pasientens opphold i institusjon - bruker Encounter.",
       "exampleBoolean" : false
     },
     {
@@ -734,7 +734,7 @@
         "reference" : "StructureDefinition/lmdi-episodeofcare-institusjonsopphold"
       },
       "name" : "Institusjonsopphold B",
-      "description" : "Beskrivelse av pasientens opphold i institusjon.",
+      "description" : "Beskrivelse av pasientens opphold i institusjon - bruker EpisodeOfCare.",
       "exampleBoolean" : false
     },
     {
