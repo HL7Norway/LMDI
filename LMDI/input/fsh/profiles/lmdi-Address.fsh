@@ -1,4 +1,4 @@
-// PLACEHOLDER ADDRESS
+// Adresse med kommunenummer. Skal baseres på no-basis-adress. 
 Profile: LmdiAdresse
 Parent: Address
 Id: lmdi-address
@@ -7,7 +7,9 @@ Description: "Adresse som inneholder utvidelse for kommune"
 * ^status = #draft
 * ^date = "2024-05-30"
 // Extension: Kommunenummer
-* extension(no-basis-municipalitycode)
+* district.extension contains NoBasisMunicipalitycode named municipalitycode 0..1
+* district.extension[municipalitycode] ^short = "Coded value for municipality/county Norwegian kommune"
+* district.extension[municipalitycode] ^definition = "Coded value for municipality/county Norwegian kommune"
 
 // Kopiert fra Thomas sin fsh-no-basis
 Alias: $kommunenummer-alle = https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle
@@ -20,6 +22,7 @@ Description: "Coded value for municipality/county Norwegian kommune"
 * ^context.type = #element
 * ^context.expression = "Address.district"
 * value[x] only Coding
+* value[x] from $kommunenummer-alle (required)
 * value[x].system ^definition = "All Norwegian kommunenummer/municipalitycodes are published by SSB"
 * value[x].code ^short = "Actual kommunenummer"
 * value[x].code ^definition = "Norwegian kommunenummer/municipalitycode"
