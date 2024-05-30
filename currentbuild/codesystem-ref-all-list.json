@@ -97,6 +97,18 @@
       "http://hl7.org/fhir/R4/valueset-encounter-status.html" : "EncounterStatus"
     },
     {
+      "url" : "http://hl7.org/fhir/episode-of-care-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EpisodeOfCareStatus",
+      "title" : "EpisodeOfCareStatus",
+      "description" : "The status of the episode of care.",
+      "oids" : ["2.16.840.1.113883.4.642.4.665"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-episode-of-care-status.html" : "EpisodeOfCareStatus"
+    },
+    {
       "url" : "http://hl7.org/fhir/identifier-use",
       "version" : "4.0.1",
       "status" : "active",
@@ -142,20 +154,20 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-      "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
-      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-      "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
-      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
       "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
       "http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html" : "SNOMED CT Reason Medication Not Given Codes",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
+      "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes",
+      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
       "http://hl7.org/fhir/R4/valueset-medication-form-codes.html" : "SNOMED CT Form Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes"
+      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+      "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
@@ -276,6 +288,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-encounter-type.html" : "Encounter type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/episodeofcare-type",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EpisodeOfCareType",
+      "title" : "Episode of care type",
+      "description" : "This example value set defines a set of codes that can be used to express the usage type of an EpisodeOfCare record.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1189"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-episodeofcare-type.html" : "Episode of care type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",

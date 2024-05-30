@@ -49,6 +49,13 @@
     "name" : "LmdiEncounterInstitusjonsopphold"
   },
   {
+    "id" : "lmdi-episodeofcare-institusjonsopphold",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-episodeofcare-institusjonsopphold",
+    "version" : "0.5.1",
+    "name" : "LmdiEpisodeOfCareInstitusjonsopphold"
+  },
+  {
     "id" : "lmdi-legemiddel",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddel",

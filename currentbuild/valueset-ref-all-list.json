@@ -54,8 +54,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-patient.html" : "Pasient",
-      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell"
+      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
+      "StructureDefinition-lmdi-patient.html" : "Pasient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/approach-site-codes",
@@ -125,8 +125,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.161"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose",
-      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering"
+      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering",
+      "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
@@ -210,7 +210,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.49"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold"
+      "StructureDefinition-lmdi-episodeofcare-institusjonsopphold.html" : "Institusjonsopphold B",
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-admit-source",
@@ -224,7 +225,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.257"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
@@ -238,7 +239,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.255"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition",
@@ -254,7 +255,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.259"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-location-status",
@@ -268,7 +269,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.262"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
@@ -285,7 +286,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.250"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
@@ -299,7 +300,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.261"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
@@ -315,7 +316,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.253"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy",
@@ -332,7 +333,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.252"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-status",
@@ -346,7 +347,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.246"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-type",
@@ -360,7 +361,35 @@
       "sources" : ["2.16.840.1.113883.4.642.3.248"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/episode-of-care-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EpisodeOfCareStatus",
+      "title" : "EpisodeOfCareStatus",
+      "description" : "The status of the episode of care.",
+      "systems" : ["http://hl7.org/fhir/episode-of-care-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.664"],
+      "sources" : ["2.16.840.1.113883.4.642.3.664"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-episodeofcare-institusjonsopphold.html" : "Institusjonsopphold B"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/episodeofcare-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EpisodeOfCareType",
+      "title" : "Episode of care type",
+      "description" : "This example value set defines a set of codes that can be used to express the usage type of an EpisodeOfCare record.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/episodeofcare-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.666"],
+      "sources" : ["2.16.840.1.113883.4.642.3.666"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-episodeofcare-institusjonsopphold.html" : "Institusjonsopphold B"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
@@ -374,8 +403,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-patient.html" : "Pasient",
-      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell"
+      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
+      "StructureDefinition-lmdi-patient.html" : "Pasient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -389,8 +418,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-patient.html" : "Pasient",
-      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell"
+      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
+      "StructureDefinition-lmdi-patient.html" : "Pasient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -405,13 +434,14 @@
       "uses" : {
       },
       "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel",
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold",
-      "StructureDefinition-lmdi-patient.html" : "Pasient",
+      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering",
+      "StructureDefinition-lmdi-episodeofcare-institusjonsopphold.html" : "Institusjonsopphold B",
+      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
       "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose",
       "StructureDefinition-lmdi-organization.html" : "Organisasjon",
-      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
-      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering",
-      "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel"
+      "StructureDefinition-lmdi-patient.html" : "Pasient",
+      "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel",
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -441,7 +471,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.328"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/manifestation-or-symptom",
@@ -754,7 +784,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.518"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
@@ -768,7 +798,7 @@
       "sources" : ["2.16.840.1.113883.21.40"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-2.7-0360",
@@ -794,7 +824,7 @@
       "sources" : ["2.16.840.1.113883.1.11.13955"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActPriority",
@@ -808,7 +838,7 @@
       "sources" : ["2.16.840.1.113883.1.11.16866"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode",

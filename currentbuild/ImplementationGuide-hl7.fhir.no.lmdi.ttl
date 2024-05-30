@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Lmdi"] ; # 
   fhir:title [ fhir:v "Legemiddeldata fra institusjon til Legemiddelregisteret"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-30T10:14:26+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-30T11:05:24+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;
@@ -640,9 +640,36 @@
          fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter-institusjonsopphold> ;
          fhir:reference [ fhir:v "StructureDefinition/lmdi-encounter-institusjonsopphold" ]
        ] ;
-       fhir:name [ fhir:v "Institusjonsopphold" ] ;
+       fhir:name [ fhir:v "Institusjonsopphold A" ] ;
        fhir:description [ fhir:v "Beskrivelse av pasientens opphold i institusjon." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-episodeofcare-institusjonsopphold> ;
+         fhir:reference [ fhir:v "StructureDefinition/lmdi-episodeofcare-institusjonsopphold" ]
+       ] ;
+       fhir:name [ fhir:v "Institusjonsopphold B" ] ;
+       fhir:description [ fhir:v "Beskrivelse av pasientens opphold i institusjon." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EpisodeOfCare" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.no/fhir/ig/lmdi/EpisodeOfCare/Institusjonsopphold-B-1> ;
+         fhir:reference [ fhir:v "EpisodeOfCare/Institusjonsopphold-B-1" ]
+       ] ;
+       fhir:name [ fhir:v "Institusjonsopphold-B-1" ] ;
+       fhir:description [ fhir:v "Eksempel på institusjonsopphold med EpisodeOfCare" ] ;
+       fhir:example [
+         fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-episodeofcare-institusjonsopphold"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-episodeofcare-institusjonsopphold>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

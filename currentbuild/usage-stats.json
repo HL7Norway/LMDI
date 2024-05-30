@@ -26,7 +26,13 @@
     "Encounter": [
       {
         "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter-institusjonsopphold",
-        "title": "Institusjonsopphold"
+        "title": "Institusjonsopphold A"
+      }
+    ],
+    "EpisodeOfCare": [
+      {
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-episodeofcare-institusjonsopphold",
+        "title": "Institusjonsopphold B"
       }
     ],
     "Medication": [

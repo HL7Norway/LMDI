@@ -15,7 +15,7 @@
   fhir:url [ fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter-institusjonsopphold"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.5.1"] ; # 
   fhir:name [ fhir:v "LmdiEncounterInstitusjonsopphold"] ; # 
-  fhir:title [ fhir:v "Institusjonsopphold"] ; # 
+  fhir:title [ fhir:v "Institusjonsopphold A"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:date [ fhir:v "2024-05-30"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
