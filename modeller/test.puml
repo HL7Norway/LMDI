@@ -3,6 +3,7 @@
 class Espen
 class Datamaskin
 class Sykkel
+class Yngve
 
 Espen <-- Datamaskin
 Espen <-- Sykkel
