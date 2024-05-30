@@ -1,5 +1,9 @@
 @startuml
 
+header "Legemiddeldata fra institusjon til Legemiddelregisteret"
+title "Informasjonsmodell: UML klassediagam (arbeidsversjon)"
+footer "Folkehelseinstituttet / Vali AS"
+
 class Pasient <<Patient>> {
    identifikator: FNR|DNR
    kjønn: kodet

@@ -2,9 +2,9 @@
 
 skinparam Shadowing false
 
-header Innrapportering
 title "Eksempel på enkel flyt"
-footer Folkehelseinstituttet / Vali AS
+header "Legemiddeldata fra institusjon til Legemiddelregisteret"
+footer "Folkehelseinstituttet / Vali AS"
 
 actor Klient
 boundary API
