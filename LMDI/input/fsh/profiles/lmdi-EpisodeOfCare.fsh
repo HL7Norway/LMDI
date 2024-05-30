@@ -7,7 +7,9 @@ Description: "Beskrivelse av pasientens opphold i institusjon - bruker EpisodeOf
 * ^status = #draft
 * ^date = "2024-05-30"
 
-// Krav: Må referere til organisasjon (f.eks. sykehjem)
+// Krav: Diagnose (referanse). Sjekke om dette faktisk skal/bør være med
+// Krav: Pasient. Allerede 1..1 i ressursen.
+// Krav: Må referere til organisasjon, f.eks. sykehjem
 * managingOrganization 1..1
 * managingOrganization ^short = "Organisasjonen som har ansvar for oppholdet"
 
