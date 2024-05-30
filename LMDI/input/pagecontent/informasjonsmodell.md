@@ -4,6 +4,10 @@ Utkast, under stadig forandring! Stereotypen sier hvilken FHIR-ressurs som benyt
 
 <img src="informasjonsmodell-test.svg" width="100%" />
 
+### Enkel
+
+<img src="informasjonsmodell-enkel.svg" width="100%" />
+
 ---
 
 {% include footer.md %}
