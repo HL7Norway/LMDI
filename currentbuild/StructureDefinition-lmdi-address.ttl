@@ -26,7 +26,7 @@
        fhir:value [ fhir:v "https://www.fhi.no" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "TODO"] ; # 
+  fhir:description [ fhir:v "Adresse som inneholder utvidelse for kommune"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
        fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;

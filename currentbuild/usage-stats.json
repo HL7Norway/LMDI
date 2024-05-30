@@ -3,7 +3,22 @@
   "version": "0.5.1",
   "fhirVersion": "4.0.1",
   "jurisdiction": "NO",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode",
+      "title": "no-basis-municipalitycode",
+      "types": [
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean"
+      ]
+    }
+  ],
   "profiles": {
     "MedicationRequest": [
       {

@@ -10,7 +10,7 @@
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-05-30T13:11:25+00:00",
+  "date" : "2024-05-30T13:55:42+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -674,7 +674,7 @@
         "reference" : "StructureDefinition/lmdi-address"
       },
       "name" : "Adresse",
-      "description" : "TODO",
+      "description" : "Adresse som inneholder utvidelse for kommune",
       "exampleBoolean" : false
     },
     {
@@ -808,6 +808,18 @@
       "name" : "Medisin-2",
       "description" : "Eksempel på legemiddel - Paracetamol - UTKAST",
       "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddel"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/no-basis-municipalitycode"
+      },
+      "name" : "no-basis-municipalitycode",
+      "description" : "Coded value for municipality/county Norwegian kommune",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{

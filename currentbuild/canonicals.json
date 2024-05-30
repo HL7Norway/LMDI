@@ -82,5 +82,12 @@
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner",
     "version" : "0.5.1",
     "name" : "LmdiPractitioner"
+  },
+  {
+    "id" : "no-basis-municipalitycode",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode",
+    "version" : "0.5.1",
+    "name" : "NoBasisMunicipalitycode"
   }
 ]

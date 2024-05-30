@@ -20,7 +20,7 @@
       <value value="https://www.fhi.no"/>
     </telecom>
   </contact>
-  <description value="TODO"/>
+  <description value="Adresse som inneholder utvidelse for kommune"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

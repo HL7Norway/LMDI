@@ -11,7 +11,7 @@
   <name value="Lmdi"/>
   <title value="Legemiddeldata fra institusjon til Legemiddelregisteret"/>
   <status value="draft"/>
-  <date value="2024-05-30T13:11:25+00:00"/>
+  <date value="2024-05-30T13:55:42+00:00"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>
   <contact>
     <name value="Folkehelseinstituttet (FHI)"/>
@@ -514,7 +514,7 @@
         <reference value="StructureDefinition/lmdi-address"/>
       </reference>
       <name value="Adresse"/>
-      <description value="TODO"/>
+      <description value="Adresse som inneholder utvidelse for kommune"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -637,6 +637,17 @@
       <name value="Medisin-2"/>
       <description value="Eksempel på legemiddel - Paracetamol - UTKAST"/>
       <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddel"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/no-basis-municipalitycode"/>
+      </reference>
+      <name value="no-basis-municipalitycode"/>
+      <description value="Coded value for municipality/county Norwegian kommune"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
