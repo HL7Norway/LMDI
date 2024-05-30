@@ -8,6 +8,7 @@ Description: "Beskrivelse av pasientens opphold i institusjon."
 * ^date = "2024-05-30"
 
 // Krav: actualPeriod
+* managingOrganization MS
 * period MS
 * period ^short = "Periode for pasientens opphold i institusjon."
 
