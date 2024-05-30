@@ -8,8 +8,11 @@ class Pasient <<Patient>> {
    identifikator: FNR|DNR
    kjønn: kodet
    fødselsdato: dato
-   kommunenummer: tekst 
+   kommunenummer: adresse
 }
+
+Pasient --> adresse
+
 class Legemiddeladministrasjon <<MedicationAdministration>> {
    status: kodet = komplett
    legemiddel: referanse[Legemiddel]
@@ -47,10 +50,11 @@ class Organisasjon <<Organization>> {
    identifikator: identifikator[ENH|RESH]
    type: kodet
    navn: tekst
-   kommune: tekst|kodet
+   kommunenummer: adresse
    "del av organisasjon": referanse[Organisasjon]
 }
 
+Organisasjon --> adresse
 Organisasjon --> Organisasjon
 
 class Institusjonsopphold <<EpisodeOfCate>> {
@@ -67,6 +71,8 @@ Institusjonsopphold --> Diagnose
 class Diagnose <<Condtition>> {
    diagnose : kodet
 }
+
+Diagnose ..> Pasient
 
 class Rekvisisjon <<MedicationRequest>> {
     identifikator[?]
@@ -105,6 +111,10 @@ class "Rolle helsepersonell" <<PractitionerRole>> {
 }
 
 "Rolle helsepersonell" -> Helsepersonell
+
+abstract class adresse <<Address>> {
+    kommunenummer: kodet
+}
 
 
 @enduml
