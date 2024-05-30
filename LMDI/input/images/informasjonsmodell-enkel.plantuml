@@ -1,0 +1,57 @@
+@startuml
+
+header "Legemiddeldata fra institusjon til Legemiddelregisteret"
+title "Informasjonsmodell: UML klassediagam (arbeidsversjon) - enkel"
+footer "Folkehelseinstituttet / Vali AS"
+
+class Pasient <<Patient>> {
+get()
+post()
+}
+
+class Legemiddeladministrasjon <<MedicationAdministration>> {
+get()
+post()
+delete()
+}
+
+Legemiddeladministrasjon --> Legemiddel 
+Legemiddeladministrasjon --> Pasient
+Legemiddeladministrasjon --> Helsepersonell
+Legemiddeladministrasjon --> Organisasjon
+Legemiddeladministrasjon --> Rekvisisjon
+Legemiddeladministrasjon --> Institusjonsopphold
+
+class Legemiddel <<Medication>> {
+}
+
+class Helsepersonell <<Practitioner>> {
+}
+class Organisasjon <<Organization>> {
+}
+
+Organisasjon --> Organisasjon
+
+class Institusjonsopphold <<EpisodeOfCate>> {
+}
+
+Institusjonsopphold --> Pasient
+Institusjonsopphold --> Organisasjon
+Institusjonsopphold --> Diagnose
+
+class Diagnose <<Condtition>> {
+}
+
+Diagnose ..> Pasient
+
+class Rekvisisjon <<MedicationRequest>> {
+}
+
+Rekvisisjon --> Diagnose
+Rekvisisjon --> Legemiddel
+Rekvisisjon --> Pasient
+Rekvisisjon --> Helsepersonell
+Rekvisisjon --> Rekvisisjon
+
+@enduml
+
