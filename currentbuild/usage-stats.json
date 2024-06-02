@@ -76,6 +76,9 @@
     ]
   },
   "usage": {
+    "http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode": [
+      "Address.district"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -90,6 +93,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"

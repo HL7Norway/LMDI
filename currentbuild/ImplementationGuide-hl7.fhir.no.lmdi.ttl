@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Lmdi"] ; # 
   fhir:title [ fhir:v "Legemiddeldata fra institusjon til Legemiddelregisteret"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-30T13:55:42+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-02T18:44:45+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;
