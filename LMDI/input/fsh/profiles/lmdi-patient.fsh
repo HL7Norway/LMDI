@@ -36,16 +36,19 @@ Description: "Informasjon om pasienten"
 
 // Krav: Hvis ikke ID, bruk 
 // - kjønn
+// Fylles ut hvis man har
 * gender MS
 * gender ^short = "Kjønn"
 * gender ^definition = "Pasientens kjønn. Skal oppgis sammen med fødselsdato hvis det ikke finnes pasient-ID."
 
 // - fødselsdato <- dokumentasjon
+// Fylles ut hvis man har
 * birthDate MS
 * birthDate ^short = "Fødselsdato"
 * birthDate ^definition = "Pasientens fødselsdato. Skal oppgis sammen med kjønn hvis det ikke finnes pasient-ID."
 
 // Krav: Kommunenummer <- kan være del av tjeneste eller adresse?
+// Fylles ut hvis man har
 // no-basis-Address/district - extention - municipalitycode
 // Spør FHI: Er kommunenummer for bosted eller tjeneste? Yngve sier begge. 
 
