@@ -22,6 +22,7 @@ Description: "Beskriver administrasjon av legemiddel til pasient på institusjon
 // Krav: Status administrering = completeded, påkrevd
 // Allerede 1..1
 // * status = http://terminology.hl7.org/CodeSystem/medication-admin-status#completed
+// Må nok også tillate #entered-in-error 
 * status = #completed
 * status ^short = "Status administrering."
 * status ^definition = "Status administrering. Skal alltid være satt til utført = completed. "
