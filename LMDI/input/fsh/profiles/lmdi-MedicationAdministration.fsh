@@ -47,6 +47,7 @@ Description: "Beskriver administrasjon av legemiddel til pasient på institusjon
 
 // Krav: Helsepersonell, må støtte
 // TODO #9 Spørsmål: Skal det (på sikt) være flere som administerer, f.eks pasient selv (dispenser), eller kun helsepersonell?
+// TODO #13 Legge inn støtte for at både Practitioner og PractitionerRole i MedicationAdministration
 * performer and performer.actor MS
 * performer ^short = "Helsepersonell som har administrert legemiddelet"
 
