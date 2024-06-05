@@ -15,7 +15,7 @@ Usage: #definition
 // Best om DMP/FEST/SAFEST har unike id/namespace som kan benyttes. 
 // Volven har ikke noe, da FEST-id egentlig ikke er kodeverk, men katalog(database)-nøkler.
 * uniqueId[=].value = "http://hl7.no/fhir/NamingSystem/festLegemiddelpakning"
-* uniqueId[=].preferred = false
-* uniqueId[+].type = #oid
-// * uniqueId[=].value = "2.16.578.1.12.4.1.4.102"
 * uniqueId[=].preferred = true
+//* uniqueId[+].type = #oid
+//* uniqueId[=].value = "2.16.578.1.12.4.1.4.102"
+//* uniqueId[=].preferred = true
