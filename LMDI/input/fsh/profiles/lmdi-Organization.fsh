@@ -24,9 +24,25 @@ Description: "Organisasjon eller organisasjonsenhet. "
 // TODO #8 Utvide Organisasjon med utvidelse for kommunenummer fra no-basis
 * address MS
 
+
 // Krav: Del av organisasjon (ref:organization)
 // * partOf MS <- NB! kan bare peke oppover
 
+// Kopiert fra Thomas sin fsh-no-basis
+Alias: $kommunenummer-alle = https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle
+Extension: NoBasisMunicipalitycode
+Id: no-basis-municipalitycode
+Title: "no-basis-municipalitycode"
+Description: "Coded value for municipality/county Norwegian kommune"
+* ^version = "2.0.16"
+* ^date = "2021-04-09"
+* ^context.type = #element
+* ^context.expression = "Address.district"
+* value[x] only Coding
+* value[x] from $kommunenummer-alle (required)
+* value[x].system ^definition = "All Norwegian kommunenummer/municipalitycodes are published by SSB"
+* value[x].code ^short = "Actual kommunenummer"
+* value[x].code ^definition = "Norwegian kommunenummer/municipalitycode"
 
 // EKSEMPLER
 
@@ -36,5 +52,6 @@ Description: "Eksempel på organisasjon"
 * identifier.system = "urn:oid:2.16.578.1.12.4.1.4.101"
 * identifier.value = "1234567890"
 * name = "Lykkedalen eldrehjem"
-* address.district = "Lykkedalen kommune"
-// Kommunen blir kodet med no-basis-Address
+* address.district = "Sigdal kommune"
+* address.district.extension.url = "http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode"
+* address.district.extension.valueCoding = $kommunenummer-alle#3332
