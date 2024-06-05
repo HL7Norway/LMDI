@@ -1,9 +1,9 @@
 Lmdi : Validation Results
 =========================================
 
-err = 14, warn = 8, info = 1
+err = 14, warn = 11, info = 1
 IG Publisher Version: 1.6.10
-Generated Sun Jun 02 19:06:31 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.5.2 (canonical = http://hl7.no/fhir/ig/lmdi)
+Generated Wed Jun 05 10:28:35 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.5.3 (canonical = http://hl7.no/fhir/ig/lmdi)
  Build Errors : 2 / 3 / 0
  /github/workspace/LMDI/fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/EpisodeOfCare-Institusjonsopphold-B-1 : 4 / 0 / 1
@@ -14,6 +14,9 @@ Generated Sun Jun 02 19:06:31 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#
  /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-10 : 0 / 0 / 4
  /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-20 : 2 / 0 / 2
  /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-30 : 2 / 0 / 1
+ /github/workspace/LMDI/fsh-generated/resources/NamingSystem-no-basis-fest-legemiddelmerkevare : 0 / 1 / 1
+ /github/workspace/LMDI/fsh-generated/resources/NamingSystem-no-basis-fest-legemiddelpakning : 0 / 1 / 1
+ /github/workspace/LMDI/fsh-generated/resources/NamingSystem-no-basis-fest-legemiddelvirkestoff : 0 / 1 / 1
  /github/workspace/LMDI/fsh-generated/resources/Organization-Organisasjon-1 : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Patient-Pasient-1 : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Patient-Pasient-2 : 2 / 0 / 1
@@ -31,9 +34,9 @@ Generated Sun Jun 02 19:06:31 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-no-basis-municipalitycode : 0 / 1 / 1
 </table>
 == n/a ==
-WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 234, column 4: The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 163 other files)
-WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 275, column 4: The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 163 other files)
-WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.change.history.html#/html/body/script at Line 201, column 4: The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 109 other files)
+WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 234, column 4: The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 181 other files)
+WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 275, column 4: The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 181 other files)
+WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.change.history.html#/html/body/script at Line 201, column 4: The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 112 other files)
 ERROR: /github/workspace/LMDI/output/EpisodeOfCare-Institusjonsopphold-B-1.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 616: The link 'pasientreferanse-1234567' for "pasientreferanse-1234567" cannot be resolved
 ERROR: /github/workspace/LMDI/output/EpisodeOfCare-Institusjonsopphold-B-1.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 715: The link 'sykehjemref-1234567' for "sykehjemref-1234567" cannot be resolved
 == fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem.json ==
@@ -58,6 +61,12 @@ ERROR: MedicationAdministration/Administrering-20: MedicationAdministration.perf
 == fsh-generated/resources/MedicationAdministration-Administrering-30.json ==
 ERROR: MedicationAdministration/Administrering-30: MedicationAdministration.medication.ofType(Reference).identifier: Identifier.system must be an absolute reference, not a local reference
 ERROR: MedicationAdministration/Administrering-30: MedicationAdministration.subject: Unable to resolve resource with reference 'https://fhi.no/fhir/lmdi/pasient/12345678'
+== fsh-generated/resources/NamingSystem-no-basis-fest-legemiddelmerkevare.json ==
+WARNING: NamingSystem/no-basis-fest-legemiddelmerkevare: NamingSystem: Constraint failed: nsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+== fsh-generated/resources/NamingSystem-no-basis-fest-legemiddelpakning.json ==
+WARNING: NamingSystem/no-basis-fest-legemiddelpakning: NamingSystem: Constraint failed: nsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+== fsh-generated/resources/NamingSystem-no-basis-fest-legemiddelvirkestoff.json ==
+WARNING: NamingSystem/no-basis-fest-legemiddelvirkestoff: NamingSystem: Constraint failed: nsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
 == fsh-generated/resources/Organization-Organisasjon-1.json ==
 == fsh-generated/resources/Patient-Pasient-1.json ==
 == fsh-generated/resources/Patient-Pasient-2.json ==

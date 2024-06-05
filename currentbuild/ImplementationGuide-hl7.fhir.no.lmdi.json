@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Lmdi</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi</pre><div><p>Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret</p>\n</div></div>"
   },
   "url" : "http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi",
-  "version" : "0.5.2",
+  "version" : "0.5.3",
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-06-02T19:03:43+00:00",
+  "date" : "2024-06-05T10:25:40+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -808,6 +808,42 @@
       "name" : "Medisin-2",
       "description" : "Eksempel på legemiddel - Paracetamol - UTKAST",
       "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddel"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/no-basis-fest-legemiddelmerkevare"
+      },
+      "name" : "no-basis-fest-legemiddelmerkevare",
+      "description" : "FEST-id for legemiddel merkevare",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/no-basis-fest-legemiddelpakning"
+      },
+      "name" : "no-basis-fest-legemiddelpakning",
+      "description" : "FEST-id for legemiddelpakninger",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/no-basis-fest-legemiddelvirkestoff"
+      },
+      "name" : "no-basis-fest-legemiddelvirkestoff",
+      "description" : "FEST-id for virkestoff",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
