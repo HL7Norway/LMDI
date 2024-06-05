@@ -24,7 +24,17 @@
   ] ) ; # 
   fhir:name [ fhir:v "Lykkedalen eldrehjem"] ; # 
   fhir:address ( [
-     fhir:district [ fhir:v "Lykkedalen kommune" ]
+     fhir:district [
+       fhir:v "Sigdal kommune" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Coding ;
+           fhir:system [ fhir:v "https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "3332" ]
+         ]
+       ] )
+     ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

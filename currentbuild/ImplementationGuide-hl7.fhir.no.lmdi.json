@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Lmdi</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi</pre><div><p>Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret</p>\n</div></div>"
   },
   "url" : "http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi",
-  "version" : "0.5.3",
+  "version" : "0.6.0",
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-06-05T10:25:40+00:00",
+  "date" : "2024-06-05T21:48:02+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -866,7 +866,7 @@
         "reference" : "StructureDefinition/lmdi-organization"
       },
       "name" : "Organisasjon",
-      "description" : "TODO #4",
+      "description" : "Organisasjon eller organisasjonsenhet.",
       "exampleBoolean" : false
     },
     {
@@ -916,6 +916,18 @@
       "name" : "Pasient-2",
       "description" : "Eksempel på pasient med fødselsnummer",
       "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lmdi-practitionerrole"
+      },
+      "name" : "Rolle helsepersonell",
+      "description" : "Rollen til helsepersonellet eller personen som har foreskrevet eller administrert legemiddelet",
+      "exampleBoolean" : false
     }],
     "page" : {
       "extension" : [{

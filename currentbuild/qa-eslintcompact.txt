@@ -1,9 +1,9 @@
 Lmdi
 =========================================
 
-Generic: line 0, col 0, Warning - The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 181 other files) (INVALID)
-Generic: line 0, col 0, Warning - The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 181 other files) (INVALID)
-Generic: line 0, col 0, Warning - The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 112 other files) (INVALID)
+Generic: line 0, col 0, Warning - The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 190 other files) (INVALID)
+Generic: line 0, col 0, Warning - The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 190 other files) (INVALID)
+Generic: line 0, col 0, Warning - The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 121 other files) (INVALID)
 Generic: line 0, col 0, Error - The link 'pasientreferanse-1234567' for "pasientreferanse-1234567" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'sykehjemref-1234567' for "sykehjemref-1234567" cannot be resolved (NOTFOUND)
 /github/workspace/LMDI/fsh-generated/resources/EpisodeOfCare-Institusjonsopphold-B-1.json: line 10, col 4, Error - Unable to resolve resource with reference 'pasientreferanse-1234567' (STRUCTURE)
@@ -22,13 +22,16 @@ Generic: line 0, col 0, Error - The link 'sykehjemref-1234567' for "sykehjemref-
 /github/workspace/LMDI/fsh-generated/resources/NamingSystem-no-basis-fest-legemiddelmerkevare.json: line 1, col 1665, Warning - Constraint failed: nsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (INVARIANT)
 /github/workspace/LMDI/fsh-generated/resources/NamingSystem-no-basis-fest-legemiddelpakning.json: line 1, col 1649, Warning - Constraint failed: nsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (INVARIANT)
 /github/workspace/LMDI/fsh-generated/resources/NamingSystem-no-basis-fest-legemiddelvirkestoff.json: line 1, col 1652, Warning - Constraint failed: nsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (INVARIANT)
+/github/workspace/LMDI/fsh-generated/resources/Organization-Organisasjon-1.json: line 21, col 12, Error - The extension http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode could not be found so is not allowed here (STRUCTURE)
+/github/workspace/LMDI/fsh-generated/resources/Organization-Organisasjon-1.json: line 23, col 14, Info - A definition for CodeSystem 'https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle' could not be found, so the code cannot be validated (UNKNOWN)
 /github/workspace/LMDI/fsh-generated/resources/Patient-Pasient-2.json: line 10, col 6, Error - Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient on element Patient.identifier:FNR, looking in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient (@char 1) (PROCESSING)
 /github/workspace/LMDI/fsh-generated/resources/Patient-Pasient-2.json: line 10, col 6, Error - Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient on element Patient.identifier:DNR, looking in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient (@char 1) (PROCESSING)
 /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-Legemiddelrekvirering.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-address.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this data type profile (BUSINESSRULE)
 /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-condition-diagnose.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-encounter-institusjonsopphold.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
+/github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-practitionerrole.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-no-basis-municipalitycode.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
 
-err = 14, warn = 11, info = 1
+err = 15, warn = 12, info = 2
 IG Publisher Version: 1.6.10

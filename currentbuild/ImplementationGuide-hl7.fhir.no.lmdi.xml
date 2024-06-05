@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi"/>
-  <version value="0.5.3"/>
+  <version value="0.6.0"/>
   <name value="Lmdi"/>
   <title value="Legemiddeldata fra institusjon til Legemiddelregisteret"/>
   <status value="draft"/>
-  <date value="2024-06-05T10:25:40+00:00"/>
+  <date value="2024-06-05T21:48:02+00:00"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>
   <contact>
     <name value="Folkehelseinstituttet (FHI)"/>
@@ -690,7 +690,7 @@
         <reference value="StructureDefinition/lmdi-organization"/>
       </reference>
       <name value="Organisasjon"/>
-      <description value="TODO #4"/>
+      <description value="Organisasjon eller organisasjonsenhet."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -736,6 +736,17 @@
       <name value="Pasient-2"/>
       <description value="Eksempel på pasient med fødselsnummer"/>
       <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lmdi-practitionerrole"/>
+      </reference>
+      <name value="Rolle helsepersonell"/>
+      <description value="Rollen til helsepersonellet eller personen som har foreskrevet eller administrert legemiddelet"/>
+      <exampleBoolean value="false"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

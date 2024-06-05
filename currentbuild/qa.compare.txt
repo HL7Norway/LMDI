@@ -1,7 +1,7 @@
 Lmdi : Validation Results
 =========================================
 
-err = 14, warn = 11, info = 1
+err = 15, warn = 12, info = 2
 $--
 Generated $--. FHIR version $-- for hl7.fhir.no.lmdi#$-- (canonical = http://hl7.no/fhir/ig/lmdi)
  Build Errors : 2 / 3 / 0
@@ -17,7 +17,7 @@ Generated $--. FHIR version $-- for hl7.fhir.no.lmdi#$-- (canonical = http://hl7
  /github/workspace/LMDI/fsh-generated/resources/NamingSystem-no-basis-fest-legemiddelmerkevare : 0 / 1 / 1
  /github/workspace/LMDI/fsh-generated/resources/NamingSystem-no-basis-fest-legemiddelpakning : 0 / 1 / 1
  /github/workspace/LMDI/fsh-generated/resources/NamingSystem-no-basis-fest-legemiddelvirkestoff : 0 / 1 / 1
- /github/workspace/LMDI/fsh-generated/resources/Organization-Organisasjon-1 : 0 / 0 / 1
+ /github/workspace/LMDI/fsh-generated/resources/Organization-Organisasjon-1 : 1 / 0 / 2
  /github/workspace/LMDI/fsh-generated/resources/Patient-Pasient-1 : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Patient-Pasient-2 : 2 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Practitioner-Helsepersonell-1 : 0 / 0 / 1
@@ -31,12 +31,13 @@ Generated $--. FHIR version $-- for hl7.fhir.no.lmdi#$-- (canonical = http://hl7
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-organization : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-patient : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-practitioner : 0 / 0 / 1
+ /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-practitionerrole : 0 / 1 / 1
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-no-basis-municipalitycode : 0 / 1 / 1
 </table>
 == n/a ==
-WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 234, column 4: The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 181 other files)
-WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 275, column 4: The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 181 other files)
-WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.change.history.html#/html/body/script at Line 201, column 4: The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 112 other files)
+WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 234, column 4: The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 190 other files)
+WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 275, column 4: The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 190 other files)
+WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.change.history.html#/html/body/script at Line 201, column 4: The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 121 other files)
 ERROR: /github/workspace/LMDI/output/EpisodeOfCare-Institusjonsopphold-B-1.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 616: The link 'pasientreferanse-1234567' for "pasientreferanse-1234567" cannot be resolved
 ERROR: /github/workspace/LMDI/output/EpisodeOfCare-Institusjonsopphold-B-1.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 715: The link 'sykehjemref-1234567' for "sykehjemref-1234567" cannot be resolved
 == fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem.json ==
@@ -68,6 +69,8 @@ WARNING: NamingSystem/no-basis-fest-legemiddelpakning: NamingSystem: Constraint 
 == fsh-generated/resources/NamingSystem-no-basis-fest-legemiddelvirkestoff.json ==
 WARNING: NamingSystem/no-basis-fest-legemiddelvirkestoff: NamingSystem: Constraint failed: nsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
 == fsh-generated/resources/Organization-Organisasjon-1.json ==
+ERROR: Organization/Organisasjon-1: Organization.address[0].district.extension[0]: The extension http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode could not be found so is not allowed here
+INFORMATION: Organization/Organisasjon-1: Organization.address[0].district.extension[0].value.ofType(Coding): A definition for CodeSystem 'https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle' could not be found, so the code cannot be validated
 == fsh-generated/resources/Patient-Pasient-1.json ==
 == fsh-generated/resources/Patient-Pasient-2.json ==
 ERROR: Patient/Pasient-2: Patient.identifier[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient on element Patient.identifier:FNR, looking in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient (@char 1)
@@ -87,5 +90,7 @@ WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/lmdi/StructureDe
 == fsh-generated/resources/StructureDefinition-lmdi-organization.json ==
 == fsh-generated/resources/StructureDefinition-lmdi-patient.json ==
 == fsh-generated/resources/StructureDefinition-lmdi-practitioner.json ==
+== fsh-generated/resources/StructureDefinition-lmdi-practitionerrole.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-no-basis-municipalitycode.json ==
 WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode'): The Implementation Guide contains no examples for this extension
