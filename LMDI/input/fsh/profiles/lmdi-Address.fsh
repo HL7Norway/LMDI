@@ -12,20 +12,7 @@ Description: "Adresse som inneholder utvidelse for kommune"
 * district.extension[municipalitycode] ^definition = "Coded value for municipality/county Norwegian kommune"
 
 // Kopiert fra Thomas sin fsh-no-basis
-Alias: $kommunenummer-alle = https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle
-Extension: NoBasisMunicipalitycode
-Id: no-basis-municipalitycode
-Title: "no-basis-municipalitycode"
-Description: "Coded value for municipality/county Norwegian kommune"
-* ^version = "2.0.16"
-* ^date = "2021-04-09"
-* ^context.type = #element
-* ^context.expression = "Address.district"
-* value[x] only Coding
-* value[x] from $kommunenummer-alle (required)
-* value[x].system ^definition = "All Norwegian kommunenummer/municipalitycodes are published by SSB"
-* value[x].code ^short = "Actual kommunenummer"
-* value[x].code ^definition = "Norwegian kommunenummer/municipalitycode"
+// Kommentert vekk og puttet i lmdi-Organization.fsh inntil videre. 
 
 // EKSEMPLER
 // FSH genererer ikke eksempler for datatyper, ergo Usage=inline for å unngå feilmeldinger. 
