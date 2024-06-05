@@ -13,6 +13,7 @@ Description: "Beskrivelse av legemiddel."
 * identifier ^short = "Legemiddelets identifikasjon"
 * identifier ^definition = "Legemiddelets identifikasjon i henhold til TODO"
 // Krav: Kode, som FEST-id, SNOMED-CT etc., obligatorisk
+// Opprette NamingSystem for FEST #12 <- issue
 // Slicing? Hva kan LMR ta i mot? Hvilket nivå skal man rapportere på? Hva med "ukurrante" legemidler? 
 * code 1..1
 // * code.system = etc. 
