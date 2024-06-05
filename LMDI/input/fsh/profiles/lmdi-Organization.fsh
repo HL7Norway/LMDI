@@ -2,7 +2,7 @@ Profile: LmdiOrganization
 Parent: Organization
 Id: lmdi-organization
 Title: "Organisasjon"
-Description: "TODO #4"
+Description: "Organisasjon eller organisasjonsenhet. "
 * ^status = #draft
 * ^date = "2024-05-27"
 
