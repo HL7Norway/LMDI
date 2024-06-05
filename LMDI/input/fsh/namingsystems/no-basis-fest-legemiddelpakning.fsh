@@ -12,6 +12,8 @@ Usage: #definition
 * description = "FEST-id for legemiddelpakninger"
 * jurisdiction = urn:iso:std:iso:3166#NO "Norway"
 * uniqueId[0].type = #uri
+// Best om DMP/FEST/SAFEST har unike id/namespace som kan benyttes. 
+// Volven har ikke noe, da FEST-id egentlig ikke er kodeverk, men katalog(database)-nøkler.
 * uniqueId[=].value = "http://hl7.no/fhir/NamingSystem/festLegemiddelpakning"
 * uniqueId[=].preferred = false
 * uniqueId[+].type = #oid
