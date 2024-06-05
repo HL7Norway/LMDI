@@ -7,6 +7,7 @@ Usage: #definition
 * status = #draft
 * kind = #identifier
 * date = "2024-06-05"
+// Publisher blir overkjørt og blir korrigert til FHI. Blir rettet når instansene flyttes til no-basis-IG. 
 * publisher = "Helsedirektoratet"
 * responsible = "Direktoratet for medisinske produkter"
 * description = "FEST-id for legemiddelpakninger"
