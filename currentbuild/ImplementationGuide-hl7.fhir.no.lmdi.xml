@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi"/>
-  <version value="0.6.1"/>
+  <version value="0.6.2"/>
   <name value="Lmdi"/>
   <title value="Legemiddeldata fra institusjon til Legemiddelregisteret"/>
   <status value="draft"/>
-  <date value="2024-06-06T19:17:34+00:00"/>
+  <date value="2024-06-06T21:51:46+00:00"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>
   <contact>
     <name value="Folkehelseinstituttet (FHI)"/>
@@ -555,21 +555,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/lmdi-encounter-institusjonsopphold"/>
-      </reference>
-      <name value="Institusjonsopphold A"/>
-      <description value="Beskrivelse av pasientens opphold i institusjon - bruker Encounter."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/lmdi-episodeofcare-institusjonsopphold"/>
       </reference>
-      <name value="Institusjonsopphold B"/>
-      <description value="Beskrivelse av pasientens opphold i institusjon - bruker EpisodeOfCare."/>
+      <name value="Institusjonsopphold"/>
+      <description value="Beskrivelse av pasientens opphold i institusjon."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -684,6 +673,27 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Observasjon-1"/>
+      </reference>
+      <name value="Observasjon-1"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-observation-tmp"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lmdi-observation-tmp"/>
+      </reference>
+      <name value="Observationtion TMP (Kun et eksempel med kroppsvekt)"/>
+      <description value="Observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -736,6 +746,17 @@
       <name value="Pasient-2"/>
       <description value="Eksempel på pasient med fødselsnummer"/>
       <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lmdi-encounter-institusjonsopphold"/>
+      </reference>
+      <name value="På vei ut (Institusjonsopphold A)"/>
+      <description value="Beskrivelse av pasientens opphold i institusjon - bruker Encounter (Mulig bruke denne for spesialisthelsetjenesten)"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

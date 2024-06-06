@@ -1,2 +1,2 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Used
-http://hl7.no/fhir/ig/lmdi/CodeSystem/lmdi-test-kodeverk.codesystem,0.6.1,draft,,LmdiTestKodeverk,LMDI Test-kodeverk,"Dette kodeverket inneholder noen rare koder.",
+http://hl7.no/fhir/ig/lmdi/CodeSystem/lmdi-test-kodeverk.codesystem,0.6.2,draft,,LmdiTestKodeverk,LMDI Test-kodeverk,"Dette kodeverket inneholder noen rare koder.",

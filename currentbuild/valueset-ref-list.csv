@@ -1,2 +1,2 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
-http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status,0.6.1,draft,,LegemiddeladministreringStatus,Status for legemiddeladministrasjon,"Verdisett som begrenses status til Legemiddeladministrasjon til henholdsvis 'Gjennomført' eller 'Feilregistrert'.","StructureDefinition/lmdi-administrert-legemiddel","FHIR"
+http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status,0.6.2,draft,,LegemiddeladministreringStatus,Status for legemiddeladministrasjon,"Verdisett som begrenses status til Legemiddeladministrasjon til henholdsvis 'Gjennomført' eller 'Feilregistrert'.","StructureDefinition/lmdi-administrert-legemiddel","FHIR"

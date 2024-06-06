@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status",
-      "version" : "0.6.1",
+      "version" : "0.6.2",
       "status" : "draft",
       "name" : "LegemiddeladministreringStatus",
       "title" : "Status for legemiddeladministrasjon",
@@ -97,6 +97,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
+      "StructureDefinition-lmdi-observation-tmp.html" : "Observationtion TMP (Kun et eksempel med kroppsvekt)",
       "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose"
     },
     {
@@ -153,8 +154,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.161"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose",
-      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering"
+      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering",
+      "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
@@ -227,6 +228,20 @@
       "StructureDefinition-lmdi-organization.html" : "Organisasjon"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "DataAbsentReason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.5"],
+      "sources" : ["2.16.840.1.113883.4.642.3.5"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-observation-tmp.html" : "Observationtion TMP (Kun et eksempel med kroppsvekt)"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
       "version" : "4.0.1",
       "status" : "active",
@@ -252,8 +267,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.49"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-episodeofcare-institusjonsopphold.html" : "Institusjonsopphold B",
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "På vei ut (Institusjonsopphold A)",
+      "StructureDefinition-lmdi-episodeofcare-institusjonsopphold.html" : "Institusjonsopphold"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-admit-source",
@@ -267,7 +282,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.257"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "På vei ut (Institusjonsopphold A)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
@@ -281,7 +296,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.255"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "På vei ut (Institusjonsopphold A)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition",
@@ -297,7 +312,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.259"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "På vei ut (Institusjonsopphold A)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-location-status",
@@ -311,7 +326,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.262"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "På vei ut (Institusjonsopphold A)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
@@ -328,7 +343,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.250"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "På vei ut (Institusjonsopphold A)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
@@ -342,7 +357,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.261"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "På vei ut (Institusjonsopphold A)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
@@ -358,7 +373,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.253"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "På vei ut (Institusjonsopphold A)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy",
@@ -375,7 +390,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.252"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "På vei ut (Institusjonsopphold A)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-status",
@@ -389,7 +404,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.246"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "På vei ut (Institusjonsopphold A)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-type",
@@ -403,7 +418,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.248"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "På vei ut (Institusjonsopphold A)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/episode-of-care-status",
@@ -417,7 +432,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.664"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-episodeofcare-institusjonsopphold.html" : "Institusjonsopphold B"
+      "StructureDefinition-lmdi-episodeofcare-institusjonsopphold.html" : "Institusjonsopphold"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/episodeofcare-type",
@@ -431,7 +446,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.666"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-episodeofcare-institusjonsopphold.html" : "Institusjonsopphold B"
+      "StructureDefinition-lmdi-episodeofcare-institusjonsopphold.html" : "Institusjonsopphold"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
@@ -475,16 +490,17 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel",
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "På vei ut (Institusjonsopphold A)",
+      "StructureDefinition-lmdi-observation-tmp.html" : "Observationtion TMP (Kun et eksempel med kroppsvekt)",
       "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
-      "StructureDefinition-lmdi-episodeofcare-institusjonsopphold.html" : "Institusjonsopphold B",
-      "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose",
       "StructureDefinition-lmdi-practitionerrole.html" : "Rolle helsepersonell",
-      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering",
-      "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel",
       "StructureDefinition-lmdi-patient.html" : "Pasient",
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A",
-      "StructureDefinition-lmdi-organization.html" : "Organisasjon"
+      "StructureDefinition-lmdi-episodeofcare-institusjonsopphold.html" : "Institusjonsopphold",
+      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering",
+      "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel",
+      "StructureDefinition-lmdi-organization.html" : "Organisasjon",
+      "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose",
+      "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -514,7 +530,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.328"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "På vei ut (Institusjonsopphold A)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/manifestation-or-symptom",
@@ -591,8 +607,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.375"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel",
       "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering",
+      "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel",
       "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel"
     },
     {
@@ -700,6 +716,78 @@
       "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.403"],
+      "sources" : ["2.16.840.1.113883.4.642.3.403"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-observation-tmp.html" : "Observationtion TMP (Kun et eksempel med kroppsvekt)"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LOINCCodes",
+      "title" : "LOINC Codes",
+      "description" : "This value set includes all LOINC codes",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.396"],
+      "sources" : ["2.16.840.1.113883.4.642.3.396"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-observation-tmp.html" : "Observationtion TMP (Kun et eksempel med kroppsvekt)"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationInterpretationCodes",
+      "title" : "Observation Interpretation Codes",
+      "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.399"],
+      "sources" : ["2.16.840.1.113883.4.642.3.399"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-observation-tmp.html" : "Observationtion TMP (Kun et eksempel med kroppsvekt)"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationMethods",
+      "title" : "Observation Methods",
+      "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.395"],
+      "sources" : ["2.16.840.1.113883.4.642.3.395"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-observation-tmp.html" : "Observationtion TMP (Kun et eksempel med kroppsvekt)"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "ObservationStatus",
+      "description" : "Codes providing the status of an observation.",
+      "systems" : ["http://hl7.org/fhir/observation-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.400"],
+      "sources" : ["2.16.840.1.113883.4.642.3.400"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-observation-tmp.html" : "Observationtion TMP (Kun et eksempel med kroppsvekt)"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/organization-type",
       "version" : "4.0.1",
       "status" : "draft",
@@ -759,6 +847,20 @@
       "StructureDefinition-lmdi-practitionerrole.html" : "Rolle helsepersonell"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "QuantityComparator",
+      "title" : "QuantityComparator",
+      "description" : "How the Quantity should be understood and represented.",
+      "systems" : ["http://hl7.org/fhir/quantity-comparator"],
+      "oids" : ["2.16.840.1.113883.4.642.3.59"],
+      "sources" : ["2.16.840.1.113883.4.642.3.59"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-observation-tmp.html" : "Observationtion TMP (Kun et eksempel med kroppsvekt)"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/reason-medication-given-codes",
       "version" : "4.0.1",
       "status" : "draft",
@@ -787,6 +889,39 @@
       "uses" : {
       },
       "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeAppliesToCodes",
+      "title" : "Observation Reference Range Applies To Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the particular target population the reference range applies to.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-Race",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.407"],
+      "sources" : ["2.16.840.1.113883.4.642.3.407"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-observation-tmp.html" : "Observationtion TMP (Kun et eksempel med kroppsvekt)"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeMeaningCodes",
+      "title" : "Observation Reference Range Meaning Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.397"],
+      "sources" : ["2.16.840.1.113883.4.642.3.397"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-observation-tmp.html" : "Observationtion TMP (Kun et eksempel med kroppsvekt)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/request-priority",
@@ -828,7 +963,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.518"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "På vei ut (Institusjonsopphold A)"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
@@ -842,7 +977,7 @@
       "sources" : ["2.16.840.1.113883.21.40"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "På vei ut (Institusjonsopphold A)"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-2.7-0360",
@@ -868,7 +1003,7 @@
       "sources" : ["2.16.840.1.113883.1.11.13955"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "På vei ut (Institusjonsopphold A)"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActPriority",
@@ -882,7 +1017,7 @@
       "sources" : ["2.16.840.1.113883.1.11.16866"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "Institusjonsopphold A"
+      "StructureDefinition-lmdi-encounter-institusjonsopphold.html" : "På vei ut (Institusjonsopphold A)"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode",

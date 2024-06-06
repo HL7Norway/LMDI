@@ -1,6 +1,6 @@
 {
   "package": "hl7.fhir.no.lmdi",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "fhirVersion": "4.0.1",
   "jurisdiction": "NO",
   "extensions": [
@@ -41,19 +41,25 @@
     "Encounter": [
       {
         "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter-institusjonsopphold",
-        "title": "Institusjonsopphold A"
+        "title": "På vei ut (Institusjonsopphold A)"
       }
     ],
     "EpisodeOfCare": [
       {
         "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-episodeofcare-institusjonsopphold",
-        "title": "Institusjonsopphold B"
+        "title": "Institusjonsopphold"
       }
     ],
     "Medication": [
       {
         "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddel",
         "title": "Legemiddel"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-observation-tmp",
+        "title": "Observationtion TMP (Kun et eksempel med kroppsvekt)"
       }
     ],
     "Organization": [
@@ -109,6 +115,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"

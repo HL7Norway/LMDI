@@ -17,10 +17,10 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication </b><a name=\"Medisin-1\"> </a><a name=\"hcMedisin-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceMedication &quot;Medisin-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-lmdi-legemiddel.html\">Legemiddel</a></p></div><p><b>identifier</b>: <code>http://ehelse.no/fhir/CodeSystem/FEST/LegemiddelMerkevare</code>/ID_9e6c620b-5d09-4f27-9ee1-b108e7f338ab</p><p><b>code</b>: Oxycodone <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#430127000 &quot;Oxycodone-containing product in oral dose form&quot;)</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication </b><a name=\"Medisin-1\"> </a><a name=\"hcMedisin-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceMedication &quot;Medisin-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-lmdi-legemiddel.html\">Legemiddel</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-no-basis-fest-legemiddelmerkevare.html\" title=\"FEST-id for legemiddel merkevare\">festLegemiddelmerkevare</a>/ID_9e6c620b-5d09-4f27-9ee1-b108e7f338ab</p><p><b>code</b>: Oxycodone <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#430127000 &quot;Oxycodone-containing product in oral dose form&quot;)</span></p></div>"
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://ehelse.no/fhir/CodeSystem/FEST/LegemiddelMerkevare"^^xsd:anyURI ] ;
+     fhir:system [ fhir:v "http://hl7.no/fhir/NamingSystem/festLegemiddelmerkevare"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "ID_9e6c620b-5d09-4f27-9ee1-b108e7f338ab" ]
   ] ) ; # 
   fhir:code [
