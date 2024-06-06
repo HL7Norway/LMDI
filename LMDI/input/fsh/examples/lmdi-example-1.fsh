@@ -8,6 +8,7 @@ Description: "Utfyllende eksempel"
 * status = #completed
 * medicationReference = Reference(Medisin-10)
 * subject = Reference(Pasient-20)
+* context = Reference(uuid:9b62d7e8-df64-47b7-9fe1-38bc45795d82)
 * performer.actor = Reference(Helsepersonell-10)
 * performer.actor = Reference(RolleHelsepersonell-10)
 * effectiveDateTime = "2024-05-28"
