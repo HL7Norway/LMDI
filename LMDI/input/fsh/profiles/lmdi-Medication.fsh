@@ -34,7 +34,7 @@ Description: "Beskrivelse av legemiddel."
 Instance: Medisin-1
 InstanceOf: Legemiddel
 Description: "Eksempel på legemiddel"
-* identifier.system = "http://ehelse.no/fhir/CodeSystem/FEST/LegemiddelMerkevare"
+* identifier.system = "http://hl7.no/fhir/NamingSystem/festLegemiddelmerkevare"
 * identifier.value = "ID_9e6c620b-5d09-4f27-9ee1-b108e7f338ab"
 * code.coding.system = "http://snomed.info/sct"
 * code.coding = #430127000
@@ -44,6 +44,6 @@ Description: "Eksempel på legemiddel"
 Instance: Medisin-2
 InstanceOf: Legemiddel
 Description: "Eksempel på legemiddel - Paracetamol - UTKAST"
-* identifier.system = "http://ehelse.no/fhir/CodeSystem/FEST/LegemiddelMerkevare"
+* identifier.system = "http://hl7.no/fhir/NamingSystem/festLegemiddelmerkevare"
 * identifier.value = "ID_2ABAC272-0BCF-43F0-84BE-984074D92E15"
 * code.text = "Paracetamol"
