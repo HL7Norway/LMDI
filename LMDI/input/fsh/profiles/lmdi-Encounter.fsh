@@ -1,4 +1,7 @@
 // Institusjonsopphold basert på Encounter
+// Encounter passer bedre for selve hendelsen/timen der legemiddeladministrering skjer,
+// men sistnevnte er en "encounter" i seg selv. 
+
 Profile: LmdiEncounterInstitusjonsopphold
 Parent: Encounter
 Id: lmdi-encounter-institusjonsopphold
@@ -10,9 +13,4 @@ Description: "Beskrivelse av pasientens opphold i institusjon - bruker Encounter
 // Krav: identifier ESS: Finnes ingen nasjonal business-identifier for Encounter
 // Krav: actualPeriod
 * period MS
-* period ^short = "Periode for pasientens opphold i institusjon."
-
-// TODO #7 Vurdere Encounter opp mot EpisodeOfCare
-
-// EKSEMPLER
-// Kommer...
+* period ^short = "Periode for pasientens opphold i institusjon." 
