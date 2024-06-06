@@ -15,6 +15,7 @@ Description: "Observation"
 * status = #final
 // SNOMED CT <- Eksempel
 * code.coding.system = "http://snomed.info/sct"
+* valueQuantity MS
 * valueQuantity.system = "http://unitsofmeasure.org"
 
 // EKSEMPLER
