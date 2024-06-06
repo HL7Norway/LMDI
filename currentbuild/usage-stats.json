@@ -82,11 +82,9 @@
     ]
   },
   "usage": {
-    "http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode": [
-      "Organization.address.district"
-    ],
     "http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode": [
-      "Address.district"
+      "Address.district",
+      "Organization.address.district"
     ],
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url": [
       "NamingSystem"

@@ -117,5 +117,12 @@
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode",
     "version" : "0.6.0",
     "name" : "NoBasisMunicipalitycode"
+  },
+  {
+    "id" : "lmdi-medicationadministration-status",
+    "type" : "ValueSet",
+    "url" : "http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status",
+    "version" : "0.6.0",
+    "name" : "LegemiddeladministreringStatus"
   }
 ]

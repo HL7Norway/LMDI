@@ -1,29 +1,29 @@
 Lmdi : Validation Results
 =========================================
 
-err = 15, warn = 12, info = 2
+err = 16, warn = 16, info = 2
 IG Publisher Version: 1.6.10
-Generated Wed Jun 05 21:50:55 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.6.0 (canonical = http://hl7.no/fhir/ig/lmdi)
+Generated Thu Jun 06 18:56:46 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.6.0 (canonical = http://hl7.no/fhir/ig/lmdi)
  Build Errors : 2 / 3 / 0
  /github/workspace/LMDI/fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/EpisodeOfCare-Institusjonsopphold-B-1 : 4 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Medication-Medisin-1 : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Medication-Medisin-2 : 0 / 0 / 1
- /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-1 : 4 / 0 / 2
- /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-10 : 0 / 0 / 4
+ /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-1 : 5 / 0 / 2
+ /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-10 : 1 / 0 / 5
  /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-20 : 2 / 0 / 2
  /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-30 : 2 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/NamingSystem-no-basis-fest-legemiddelmerkevare : 0 / 1 / 1
  /github/workspace/LMDI/fsh-generated/resources/NamingSystem-no-basis-fest-legemiddelpakning : 0 / 1 / 1
  /github/workspace/LMDI/fsh-generated/resources/NamingSystem-no-basis-fest-legemiddelvirkestoff : 0 / 1 / 1
- /github/workspace/LMDI/fsh-generated/resources/Organization-Organisasjon-1 : 1 / 0 / 2
+ /github/workspace/LMDI/fsh-generated/resources/Organization-Organisasjon-1 : 0 / 1 / 1
  /github/workspace/LMDI/fsh-generated/resources/Patient-Pasient-1 : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Patient-Pasient-2 : 2 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Practitioner-Helsepersonell-1 : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-Legemiddelrekvirering : 0 / 1 / 1
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-address : 0 / 1 / 1
- /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-administrert-legemiddel : 0 / 0 / 1
+ /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-administrert-legemiddel : 0 / 1 / 1
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-condition-diagnose : 0 / 1 / 1
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-encounter-institusjonsopphold : 0 / 1 / 1
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-episodeofcare-institusjonsopphold : 0 / 0 / 1
@@ -32,12 +32,13 @@ Generated Wed Jun 05 21:50:55 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-patient : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-practitioner : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-practitionerrole : 0 / 1 / 1
- /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-no-basis-municipalitycode : 0 / 1 / 1
+ /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-no-basis-municipalitycode : 0 / 0 / 1
+ /github/workspace/LMDI/fsh-generated/resources/ValueSet-lmdi-medicationadministration-status : 0 / 3 / 2
 </table>
 == n/a ==
-WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 234, column 4: The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 190 other files)
-WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 275, column 4: The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 190 other files)
-WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.change.history.html#/html/body/script at Line 201, column 4: The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 121 other files)
+WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 234, column 4: The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 196 other files)
+WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 275, column 4: The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 196 other files)
+WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.change.history.html#/html/body/script at Line 201, column 4: The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 122 other files)
 ERROR: /github/workspace/LMDI/output/EpisodeOfCare-Institusjonsopphold-B-1.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 616: The link 'pasientreferanse-1234567' for "pasientreferanse-1234567" cannot be resolved
 ERROR: /github/workspace/LMDI/output/EpisodeOfCare-Institusjonsopphold-B-1.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 715: The link 'sykehjemref-1234567' for "sykehjemref-1234567" cannot be resolved
 == fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem.json ==
@@ -50,12 +51,14 @@ ERROR: EpisodeOfCare.text.div: Hyperlink 'sykehjemref-1234567' at 'div/p/a' for 
 == fsh-generated/resources/Medication-Medisin-1.json ==
 == fsh-generated/resources/Medication-Medisin-2.json ==
 == fsh-generated/resources/MedicationAdministration-Administrering-1.json ==
+ERROR: MedicationAdministration/Administrering-1: MedicationAdministration.status: The value provided ('completed') was not found in the value set 'Status for legemiddeladministrasjon' (http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.0), and a code is required from this value set  (error message = The provided code '#completed' was not found in the value set 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.0'; The System URI could not be determined for the code 'completed' in the ValueSet 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.0')
 ERROR: MedicationAdministration/Administrering-1: MedicationAdministration.medication.ofType(Reference): Unable to resolve resource with reference 'https://fhir.legemidler.example.com/legemidler/123456780'
 ERROR: MedicationAdministration/Administrering-1: MedicationAdministration.subject: Unable to resolve resource with reference 'https://fhi.no/fhir/lmdi/pasient/12345678'
 ERROR: MedicationAdministration/Administrering-1: MedicationAdministration.performer[0].actor: Unable to resolve resource with reference 'https://fhir.npr.no/helsepersonell/1234567890'
 ERROR: MedicationAdministration/Administrering-1: MedicationAdministration.dosage.dose.code: Unknown code 'tsp_us' in the CodeSystem 'http://unitsofmeasure.org' version '2.0.1'
 INFORMATION: MedicationAdministration/Administrering-1: MedicationAdministration.dosage.dose.code: Error processing Unit: 'tsp_us': The unit "tsp_us" is unknown at character 1
 == fsh-generated/resources/MedicationAdministration-Administrering-10.json ==
+ERROR: MedicationAdministration/Administrering-10: MedicationAdministration.contained[2]: The contained resource 'Helsepersonell-10' is not referenced to from elsewhere in the containing resource nor does it refer to the containing resource (dom-3)
 == fsh-generated/resources/MedicationAdministration-Administrering-20.json ==
 ERROR: MedicationAdministration/Administrering-20: MedicationAdministration.subject: Unable to resolve resource with reference 'https://fhi.no/fhir/lmdi/pasient/12345678'
 ERROR: MedicationAdministration/Administrering-20: MedicationAdministration.performer[0].actor: Unable to resolve resource with reference 'https://fhir.npr.no/helsepersonell/1234567890'
@@ -69,8 +72,7 @@ WARNING: NamingSystem/no-basis-fest-legemiddelpakning: NamingSystem: Constraint 
 == fsh-generated/resources/NamingSystem-no-basis-fest-legemiddelvirkestoff.json ==
 WARNING: NamingSystem/no-basis-fest-legemiddelvirkestoff: NamingSystem: Constraint failed: nsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
 == fsh-generated/resources/Organization-Organisasjon-1.json ==
-ERROR: Organization/Organisasjon-1: Organization.address[0].district.extension[0]: The extension http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode could not be found so is not allowed here
-INFORMATION: Organization/Organisasjon-1: Organization.address[0].district.extension[0].value.ofType(Coding): A definition for CodeSystem 'https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle' could not be found, so the code cannot be validated
+WARNING: Organization/Organisasjon-1: Organization.address[0].district.extension[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/Patient-Pasient-1.json ==
 == fsh-generated/resources/Patient-Pasient-2.json ==
 ERROR: Patient/Pasient-2: Patient.identifier[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient on element Patient.identifier:FNR, looking in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient (@char 1)
@@ -81,6 +83,7 @@ WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/lmdi/StructureDe
 == fsh-generated/resources/StructureDefinition-lmdi-address.json ==
 WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-address'): The Implementation Guide contains no examples for this data type profile
 == fsh-generated/resources/StructureDefinition-lmdi-administrert-legemiddel.json ==
+WARNING: Administrert legemiddel.MedicationAdministration.status: Binding http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status could not be expanded
 == fsh-generated/resources/StructureDefinition-lmdi-condition-diagnose.json ==
 WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-lmdi-encounter-institusjonsopphold.json ==
@@ -93,4 +96,8 @@ WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/lmdi/StructureDe
 == fsh-generated/resources/StructureDefinition-lmdi-practitionerrole.json ==
 WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-no-basis-municipalitycode.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/ValueSet-lmdi-medicationadministration-status.json ==
+WARNING: ValueSet/lmdi-medicationadministration-status: ValueSet.compose.include[0].concept[0]: The code 'completed' is not valid in the system http://hl7.org/fhir/ValueSet/medication-admin-status (The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/medication-admin-status'))
+INFORMATION: ValueSet/lmdi-medicationadministration-status: ValueSet.compose.include[0].concept[0]: The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/medication-admin-status')
+WARNING: ValueSet/lmdi-medicationadministration-status: ValueSet.compose.include[0].concept[1]: The code 'entered-in-error' is not valid in the system http://hl7.org/fhir/ValueSet/medication-admin-status (The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/medication-admin-status'))
+WARNING: ValueSet.where(id = 'lmdi-medicationadministration-status'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/ValueSet/medication-admin-status

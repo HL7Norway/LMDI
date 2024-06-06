@@ -17,6 +17,7 @@
   fhir:name [ fhir:v "LmdiEncounterInstitusjonsopphold"] ; # 
   fhir:title [ fhir:v "Institusjonsopphold A"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:date [ fhir:v "2024-05-30"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:contact ( [

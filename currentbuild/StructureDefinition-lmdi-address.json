@@ -10,6 +10,7 @@
   "name" : "LmdiAdresse",
   "title" : "Adresse",
   "status" : "draft",
+  "experimental" : true,
   "date" : "2024-05-30",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{

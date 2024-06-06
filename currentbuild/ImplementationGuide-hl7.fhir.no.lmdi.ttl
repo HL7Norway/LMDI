@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Lmdi"] ; # 
   fhir:title [ fhir:v "Legemiddeldata fra institusjon til Legemiddelregisteret"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-05T21:48:02+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-06T18:53:54+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;
@@ -864,6 +864,18 @@
        ] ;
        fhir:name [ fhir:v "Rolle helsepersonell" ] ;
        fhir:description [ fhir:v "Rollen til helsepersonellet eller personen som har foreskrevet eller administrert legemiddelet" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status> ;
+         fhir:reference [ fhir:v "ValueSet/lmdi-medicationadministration-status" ]
+       ] ;
+       fhir:name [ fhir:v "Status for legemiddeladministrasjon" ] ;
+       fhir:description [ fhir:v "Verdisett som begrenses status til Legemiddeladministrasjon til henholdsvis 'Gjennomført' eller 'Feilregistrert'." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [

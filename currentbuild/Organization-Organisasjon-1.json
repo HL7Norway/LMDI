@@ -17,9 +17,8 @@
     "district" : "Sigdal kommune",
     "_district" : {
       "extension" : [{
-        "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode",
+        "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode",
         "valueCoding" : {
-          "system" : "https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle",
           "code" : "3332"
         }
       }]

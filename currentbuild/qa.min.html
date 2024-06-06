@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 2, errors = 15, warn = 12, info = 2-->
+<!-- broken links = 2, errors = 16, warn = 16, info = 2-->
 <head>
   <title>Lmdi : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for Lmdi</h1>
- <p>Generated Wed Jun 05 21:50:55 UTC 2024, FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.6.0 (canonical = <a href="http://hl7.no/fhir/ig/lmdi">http://hl7.no/fhir/ig/lmdi</a> (<a href="http://hl7.no/fhir/ig/lmdi/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Thu Jun 06 18:56:46 UTC 2024, FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.6.0 (canonical = <a href="http://hl7.no/fhir/ig/lmdi">http://hl7.no/fhir/ig/lmdi</a> (<a href="http://hl7.no/fhir/ig/lmdi/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.6.10</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.no.lmdi, Canonical = http://hl7.no/fhir/ig/lmdi</td></tr>
@@ -88,10 +88,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (1 uses),     <a href="http://hl7.org/fhir/R4/detectedissue.html">DetectedIssue</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/provenance.html">Provenance</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/extension-regex.html">regex</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>
  (3 uses),     <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
- (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-admin-status.html">MedicationAdministration Status Codes</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html">SNOMEDCTReasonMedicationNotGivenCodes</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html">SNOMEDCTReasonMedicationNotGivenCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-admin-category.html">MedicationAdministration Category Codes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/episodeofcare.html">EpisodeOfCare</a>
  (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-med-admin-perform-function.html">MedicationAdministration Performer Function Codes</a>
@@ -136,11 +135,12 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (1 uses),     <a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-practitioner-role.html">PractitionerRole</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-admin-status.html">MedicationAdministration Status Codes</a>
  (1 uses)
   </li>
   <li>
 hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
- (27 uses)
+ (28 uses)
   </li>
 </ul>
 </td></tr>
@@ -148,7 +148,7 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://hl7.no/fhir/ig/lmdi (Problem #1 with package-list.json at http://hl7.no/fhir/ig/lmdi: Not Found)</td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 15, warn = 12, info = 2, broken links = 2</td></tr>
+ <tr><td>Summary:</td><td> errors = 16, warn = 16, info = 2, broken links = 2</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -161,7 +161,10 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><a href="#_github_workspace_LMDI_fsh-generated_resources_EpisodeOfCare-Institusjonsopphold-B-1"><b>/github/workspace/LMDI/fsh-generated/resources/EpisodeOfCare-Institusjonsopphold-B-1</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_LMDI_fsh-generated_resources_MedicationAdministration-Administrering-1"><b>/github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-1</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>1</b></td>
+     <td><a href="#_github_workspace_LMDI_fsh-generated_resources_MedicationAdministration-Administrering-1"><b>/github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-1</b></a></td><td><b>5</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_LMDI_fsh-generated_resources_MedicationAdministration-Administrering-10"><b>/github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-10</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_LMDI_fsh-generated_resources_MedicationAdministration-Administrering-20"><b>/github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-20</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -178,8 +181,8 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_LMDI_fsh-generated_resources_NamingSystem-no-basis-fest-legemiddelvirkestoff"><b>/github/workspace/LMDI/fsh-generated/resources/NamingSystem-no-basis-fest-legemiddelvirkestoff</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_LMDI_fsh-generated_resources_Organization-Organisasjon-1"><b>/github/workspace/LMDI/fsh-generated/resources/Organization-Organisasjon-1</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_LMDI_fsh-generated_resources_Organization-Organisasjon-1"><b>/github/workspace/LMDI/fsh-generated/resources/Organization-Organisasjon-1</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_LMDI_fsh-generated_resources_Patient-Pasient-2"><b>/github/workspace/LMDI/fsh-generated/resources/Patient-Pasient-2</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -191,6 +194,9 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><a href="#_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-address"><b>/github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-address</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-administrert-legemiddel"><b>/github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-administrert-legemiddel</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-condition-diagnose"><b>/github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-condition-diagnose</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
@@ -200,7 +206,7 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><a href="#_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-practitionerrole"><b>/github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-practitionerrole</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-no-basis-municipalitycode"><b>/github/workspace/LMDI/fsh-generated/resources/StructureDefinition-no-basis-municipalitycode</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#_github_workspace_LMDI_fsh-generated_resources_ValueSet-lmdi-medicationadministration-status"><b>/github/workspace/LMDI/fsh-generated/resources/ValueSet-lmdi-medicationadministration-status</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>1</b></td>
    </tr>
 </table>
 <hr/>
@@ -209,13 +215,13 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
  <div style="border: 1px grey solid; display: none" id="v"></div>
  <table class="grid">
    <tr style="background-color: #ffebcc">
-     <td><b>output&#8203;/CodeSystem-lmdi-test-kodeverk&#8203;.codesystem-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/script at Line 234, column 4</b></td><td><b>warning</b></td><td title=""><b>The &lt;script&gt; containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 190 other files)</b></td>
+     <td><b>output&#8203;/CodeSystem-lmdi-test-kodeverk&#8203;.codesystem-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/script at Line 234, column 4</b></td><td><b>warning</b></td><td title=""><b>The &lt;script&gt; containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 196 other files)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>output&#8203;/CodeSystem-lmdi-test-kodeverk&#8203;.codesystem-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/script at Line 275, column 4</b></td><td><b>warning</b></td><td title=""><b>The &lt;script&gt; containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 190 other files)</b></td>
+     <td><b>output&#8203;/CodeSystem-lmdi-test-kodeverk&#8203;.codesystem-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/script at Line 275, column 4</b></td><td><b>warning</b></td><td title=""><b>The &lt;script&gt; containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 196 other files)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>output&#8203;/CodeSystem-lmdi-test-kodeverk&#8203;.codesystem&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/script at Line 201, column 4</b></td><td><b>warning</b></td><td title=""><b>The &lt;script&gt; containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 121 other files)</b></td>
+     <td><b>output&#8203;/CodeSystem-lmdi-test-kodeverk&#8203;.codesystem&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/script at Line 201, column 4</b></td><td><b>warning</b></td><td title=""><b>The &lt;script&gt; containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 122 other files)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="EpisodeOfCare-Institusjonsopphold-B-1.html#l304">output&#8203;/EpisodeOfCare-Institusjonsopphold-B-1&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 194, column 616</a></b></td><td><b>error</b></td><td><b>The link 'pasientreferanse-1234567' for &quot;pasientreferanse-1234567&quot; cannot be resolved</b></td>
@@ -256,6 +262,9 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
+     <td><b>MedicationAdministration&#8203;.status (l9&#8203;/c24)</b></td><td><b>error</b></td><td><b>The value provided ('completed') was not found in the value set 'Status for legemiddeladministrasjon' (http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.0), and a code is required from this value set  (error message = The provided code '#completed' was not found in the value set 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.0'; The System URI could not be determined for the code 'completed' in the ValueSet 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.0')</b> (from <a href="qa-txsrvr.html#"></ta>, see <a href="qa-tx.html#l14">log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
      <td><b>MedicationAdministration&#8203;.medication&#8203;.ofType(Reference) (l10&#8203;/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'https://fhir.legemidler.example.com/legemidler/123456780'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -265,16 +274,29 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b>MedicationAdministration&#8203;.performer[0]&#8203;.actor (l18&#8203;/c8)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'https://fhir.npr.no/helsepersonell/1234567890'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>MedicationAdministration&#8203;.dosage&#8203;.dose&#8203;.code (l36&#8203;/c6)</b></td><td><b>error</b></td><td><b>Unknown code 'tsp_us' in the CodeSystem 'http://unitsofmeasure.org' version '2.0.1'</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>, see <a href="qa-tx.html#l9">log</a>)</td>
+     <td><b>MedicationAdministration&#8203;.dosage&#8203;.dose&#8203;.code (l36&#8203;/c6)</b></td><td><b>error</b></td><td><b>Unknown code 'tsp_us' in the CodeSystem 'http://unitsofmeasure.org' version '2.0.1'</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>, see <a href="qa-tx.html#l16">log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>MedicationAdministration&#8203;.dosage&#8203;.dose&#8203;.code (l36&#8203;/c6)</b></td><td><b>information</b></td><td><b>Error processing Unit: 'tsp_us': The unit &quot;tsp_us&quot; is unknown at character 1</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>, see <a href="qa-tx.html#l9">log</a>)</td>
+     <td><b>MedicationAdministration&#8203;.dosage&#8203;.dose&#8203;.code (l36&#8203;/c6)</b></td><td><b>information</b></td><td><b>Error processing Unit: 'tsp_us': The unit &quot;tsp_us&quot; is unknown at character 1</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>, see <a href="qa-tx.html#l16">log</a>)</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_LMDI_fsh-generated_resources_MedicationAdministration-Administrering-10"> </a>
+<h2><a href="MedicationAdministration-Administrering-10.html">fsh-generated/resources/MedicationAdministration-Administrering-10.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(5)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>MedicationAdministration: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a></li><li>MedicationAdministration.contained[0]: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medication.html">Medication</a></li><li>MedicationAdministration.contained[1]: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a></li><li>MedicationAdministration.contained[2]: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></li><li>MedicationAdministration.contained[3]: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationAdministration&#8203;.contained[2] (l57&#8203;/c6)</b></td><td><b>error</b></td><td title="CONTAINED_ORPHAN_DOM3"><b>The contained resource 'Helsepersonell-10' is not referenced to from elsewhere in the containing resource nor does it refer to the containing resource (dom-3)</b></td>
    </tr>
 </table>
 <hr/>
 <a name="_github_workspace_LMDI_fsh-generated_resources_MedicationAdministration-Administrering-20"> </a>
-<h2><a href="MedicationAdministration-Administrering-20.html">fsh-generated/resources/MedicationAdministration-Administrering-20.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(2)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>MedicationAdministration: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a></li><li>MedicationAdministration.contained[0]: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medication.html">Medication</a></li></ul>
+<h2><a href="MedicationAdministration-Administrering-20.html">fsh-generated/resources/MedicationAdministration-Administrering-20.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>MedicationAdministration: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a></li><li>MedicationAdministration.contained[0]: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medication.html">Medication</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -289,8 +311,8 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 </table>
 <hr/>
 <a name="_github_workspace_LMDI_fsh-generated_resources_MedicationAdministration-Administrering-30"> </a>
-<h2><a href="MedicationAdministration-Administrering-30.html">fsh-generated/resources/MedicationAdministration-Administrering-30.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>MedicationAdministration: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a></li></ul>
+<h2><a href="MedicationAdministration-Administrering-30.html">fsh-generated/resources/MedicationAdministration-Administrering-30.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>MedicationAdministration: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -305,8 +327,8 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 </table>
 <hr/>
 <a name="_github_workspace_LMDI_fsh-generated_resources_NamingSystem-no-basis-fest-legemiddelmerkevare"> </a>
-<h2><a href="NamingSystem-no-basis-fest-legemiddelmerkevare.html">fsh-generated/resources/NamingSystem-no-basis-fest-legemiddelmerkevare.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>NamingSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/namingsystem.html">NamingSystem</a></li></ul>
+<h2><a href="NamingSystem-no-basis-fest-legemiddelmerkevare.html">fsh-generated/resources/NamingSystem-no-basis-fest-legemiddelmerkevare.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>NamingSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/namingsystem.html">NamingSystem</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -318,8 +340,8 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 </table>
 <hr/>
 <a name="_github_workspace_LMDI_fsh-generated_resources_NamingSystem-no-basis-fest-legemiddelpakning"> </a>
-<h2><a href="NamingSystem-no-basis-fest-legemiddelpakning.html">fsh-generated/resources/NamingSystem-no-basis-fest-legemiddelpakning.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>NamingSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/namingsystem.html">NamingSystem</a></li></ul>
+<h2><a href="NamingSystem-no-basis-fest-legemiddelpakning.html">fsh-generated/resources/NamingSystem-no-basis-fest-legemiddelpakning.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>NamingSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/namingsystem.html">NamingSystem</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -331,8 +353,8 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 </table>
 <hr/>
 <a name="_github_workspace_LMDI_fsh-generated_resources_NamingSystem-no-basis-fest-legemiddelvirkestoff"> </a>
-<h2><a href="NamingSystem-no-basis-fest-legemiddelvirkestoff.html">fsh-generated/resources/NamingSystem-no-basis-fest-legemiddelvirkestoff.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>NamingSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/namingsystem.html">NamingSystem</a></li></ul>
+<h2><a href="NamingSystem-no-basis-fest-legemiddelvirkestoff.html">fsh-generated/resources/NamingSystem-no-basis-fest-legemiddelvirkestoff.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>NamingSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/namingsystem.html">NamingSystem</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -344,24 +366,21 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 </table>
 <hr/>
 <a name="_github_workspace_LMDI_fsh-generated_resources_Organization-Organisasjon-1"> </a>
-<h2><a href="Organization-Organisasjon-1.html">fsh-generated/resources/Organization-Organisasjon-1.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>Organization: Validated against <i>this.</i><a href="StructureDefinition-lmdi-organization.html">Organisasjon</a></li></ul>
+<h2><a href="Organization-Organisasjon-1.html">fsh-generated/resources/Organization-Organisasjon-1.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>Organization: Validated against <i>this.</i><a href="StructureDefinition-lmdi-organization.html">Organisasjon</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Organization&#8203;.address[0]&#8203;.district&#8203;.extension[0] (l21&#8203;/c12)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode could not be found so is not allowed here</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Organization&#8203;.address[0]&#8203;.district&#8203;.extension[0]&#8203;.value&#8203;.ofType(Coding) (l23&#8203;/c14)</b></td><td><b>information</b></td><td title="UNKNOWN_CODESYSTEM"><b>A definition for CodeSystem 'https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle' could not be found, so the code cannot be validated</b></td>
+   <tr style="background-color: #ffebcc">
+     <td><b>Organization&#8203;.address[0]&#8203;.district&#8203;.extension[0]&#8203;.value&#8203;.ofType(Coding) (l16&#8203;/c14)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
    </tr>
 </table>
 <hr/>
 <a name="_github_workspace_LMDI_fsh-generated_resources_Patient-Pasient-2"> </a>
-<h2><a href="Patient-Pasient-2.html">fsh-generated/resources/Patient-Pasient-2.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-lmdi-patient.html">Pasient</a></li></ul>
+<h2><a href="Patient-Pasient-2.html">fsh-generated/resources/Patient-Pasient-2.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-lmdi-patient.html">Pasient</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -376,8 +395,8 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 </table>
 <hr/>
 <a name="_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-Legemiddelrekvirering"> </a>
-<h2><a href="StructureDefinition-Legemiddelrekvirering.html">fsh-generated/resources/StructureDefinition-Legemiddelrekvirering.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-Legemiddelrekvirering.html">fsh-generated/resources/StructureDefinition-Legemiddelrekvirering.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -389,8 +408,8 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 </table>
 <hr/>
 <a name="_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-address"> </a>
-<h2><a href="StructureDefinition-lmdi-address.html">fsh-generated/resources/StructureDefinition-lmdi-address.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-lmdi-address.html">fsh-generated/resources/StructureDefinition-lmdi-address.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -401,9 +420,22 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
    </tr>
 </table>
 <hr/>
+<a name="_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-administrert-legemiddel"> </a>
+<h2><a href="StructureDefinition-lmdi-administrert-legemiddel.html">fsh-generated/resources/StructureDefinition-lmdi-administrert-legemiddel.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Administrert legemiddel&#8203;.MedicationAdministration&#8203;.status</b></td><td><b>warning</b></td><td title=""><b>Binding http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status could not be expanded</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-condition-diagnose"> </a>
-<h2><a href="StructureDefinition-lmdi-condition-diagnose.html">fsh-generated/resources/StructureDefinition-lmdi-condition-diagnose.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-lmdi-condition-diagnose.html">fsh-generated/resources/StructureDefinition-lmdi-condition-diagnose.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -415,8 +447,8 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 </table>
 <hr/>
 <a name="_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-encounter-institusjonsopphold"> </a>
-<h2><a href="StructureDefinition-lmdi-encounter-institusjonsopphold.html">fsh-generated/resources/StructureDefinition-lmdi-encounter-institusjonsopphold.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-lmdi-encounter-institusjonsopphold.html">fsh-generated/resources/StructureDefinition-lmdi-encounter-institusjonsopphold.json</a> <span id="svi15" class="toggle" onclick="toggle('vi15')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi15')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi15"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -428,8 +460,8 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 </table>
 <hr/>
 <a name="_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-practitionerrole"> </a>
-<h2><a href="StructureDefinition-lmdi-practitionerrole.html">fsh-generated/resources/StructureDefinition-lmdi-practitionerrole.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-lmdi-practitionerrole.html">fsh-generated/resources/StructureDefinition-lmdi-practitionerrole.json</a> <span id="svi16" class="toggle" onclick="toggle('vi16')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi16')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi16"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -440,16 +472,25 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-no-basis-municipalitycode"> </a>
-<h2><a href="StructureDefinition-no-basis-municipalitycode.html">fsh-generated/resources/StructureDefinition-no-basis-municipalitycode.json</a> <span id="svi15" class="toggle" onclick="toggle('vi15')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi15')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi15"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<a name="_github_workspace_LMDI_fsh-generated_resources_ValueSet-lmdi-medicationadministration-status"> </a>
+<h2><a href="ValueSet-lmdi-medicationadministration-status.html">fsh-generated/resources/ValueSet-lmdi-medicationadministration-status.json</a> <span id="svi17" class="toggle" onclick="toggle('vi17')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi17')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi17"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.no&#8203;/fhir&#8203;/ig&#8203;/lmdi&#8203;/StructureDefinition&#8203;/no-basis-municipalitycode')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0] (l1&#8203;/c1253)</b></td><td><b>warning</b></td><td title=""><b>The code 'completed' is not valid in the system http://hl7.org/fhir/ValueSet/medication-admin-status (The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/medication-admin-status'))</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0] (l1&#8203;/c1253)</b></td><td><b>information</b></td><td title="The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/medication-admin-status')"><b>The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/medication-admin-status')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose.include[0].concept[1]</b></td><td><b>warning</b></td><td title=""><b>The code 'entered-in-error' is not valid in the system http://hl7.org/fhir/ValueSet/medication-admin-status (The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/medication-admin-status'))</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.where(id = 'lmdi-medicationadministration-status')</b></td><td><b>warning</b></td><td><b>Error from http://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/ValueSet/medication-admin-status</b> (from <a href="qa-txsrvr.html#"></ta>, see <a href="qa-tx.html#l19">log</a>)</td>
    </tr>
 </table>
 <a name="suppressed"> </a>
@@ -463,11 +504,11 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 <a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
 <hr/>
-<a name="Extension_EXT_Unknown_NotHere"> </a>
-<h2>Extension_EXT_Unknown_NotHere</h2>
+<a name="CONTAINED_ORPHAN_DOM3"> </a>
+<h2>CONTAINED_ORPHAN_DOM3</h2>
  <table class="grid">
    <tr style="background-color: #ffeeee">
-     <td><a href="Organization-Organisasjon-1.html">fsh-generated/resources/Organization-Organisasjon-1.json</a></td><td><b>The extension http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode could not be found so is not allowed here</b></td>
+     <td><a href="MedicationAdministration-Administrering-10.html">fsh-generated/resources/MedicationAdministration-Administrering-10.json</a></td><td><b>The contained resource 'Helsepersonell-10' is not referenced to from elsewhere in the containing resource nor does it refer to the containing resource (dom-3)</b></td>
    </tr>
 </table>
 <hr/>
@@ -511,19 +552,27 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
    </tr>
 </table>
 <hr/>
+<a name="TERMINOLOGY_TX_SYSTEM_NO_CODE"> </a>
+<h2>TERMINOLOGY_TX_SYSTEM_NO_CODE</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Organization-Organisasjon-1.html">fsh-generated/resources/Organization-Organisasjon-1.json</a></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_NoValid_16"> </a>
+<h2>Terminology_TX_NoValid_16</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationAdministration-Administrering-1.html">fsh-generated/resources/MedicationAdministration-Administrering-1.json</a></td><td><b>The value provided ('completed') was not found in the value set 'Status for legemiddeladministrasjon' (http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.0), and a code is required from this value set  (error message = The provided code '#completed' was not found in the value set 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.0'; The System URI could not be determined for the code 'completed' in the ValueSet 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.0')</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="Type_Specific_Checks_DT_Identifier_System"> </a>
 <h2>Type_Specific_Checks_DT_Identifier_System</h2>
  <table class="grid">
    <tr style="background-color: #ffeeee">
      <td><a href="MedicationAdministration-Administrering-30.html">fsh-generated/resources/MedicationAdministration-Administrering-30.json</a></td><td><b>Identifier.system must be an absolute reference, not a local reference</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="UNKNOWN_CODESYSTEM"> </a>
-<h2>UNKNOWN_CODESYSTEM</h2>
- <table class="grid">
-   <tr style="background-color: #fffff2">
-     <td><a href="Organization-Organisasjon-1.html">fsh-generated/resources/Organization-Organisasjon-1.json</a></td><td><b>A definition for CodeSystem 'https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle' could not be found, so the code cannot be validated</b></td>
    </tr>
 </table>
 </body>

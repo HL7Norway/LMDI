@@ -10,7 +10,7 @@
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-06-05T21:48:02+00:00",
+  "date" : "2024-06-06T18:53:54+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -927,6 +927,18 @@
       },
       "name" : "Rolle helsepersonell",
       "description" : "Rollen til helsepersonellet eller personen som har foreskrevet eller administrert legemiddelet",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/lmdi-medicationadministration-status"
+      },
+      "name" : "Status for legemiddeladministrasjon",
+      "description" : "Verdisett som begrenses status til Legemiddeladministrasjon til henholdsvis 'Gjennomført' eller 'Feilregistrert'.",
       "exampleBoolean" : false
     }],
     "page" : {

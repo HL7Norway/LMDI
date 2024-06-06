@@ -15,9 +15,8 @@
   <name value="Lykkedalen eldrehjem"/>
   <address>
     <district value="Sigdal kommune">
-      <extension url="http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode">
+      <extension url="http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode">
         <valueCoding>
-          <system value="https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle"/>
           <code value="3332"/>
         </valueCoding>
       </extension>

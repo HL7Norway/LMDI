@@ -12,6 +12,7 @@
   <name value="LmdiEncounterInstitusjonsopphold"/>
   <title value="Institusjonsopphold A"/>
   <status value="draft"/>
+  <experimental value="true"/>
   <date value="2024-05-30"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>
   <contact>
