@@ -9,7 +9,6 @@ Description: "Informasjon om pasienten"
 // Krav til profil:
 // TODO #6 "Pasient" skal baseres på no-basis-Patient
 // Parent: no-basis-Patient
-
 // Krav: MÅ være FNR eller DNR <- profileres
 // ESS: Må kanskje være MS hvis det er mulighet for kjønn+fdato
 // Slice med FNR + DNR, TODO usikker på mutual excl.
