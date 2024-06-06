@@ -23,7 +23,9 @@ Description: "Organisasjon eller organisasjonsenhet. "
 // Krav: Kommune (.district.extension:municipalitycode, fra no-basis)
 // TODO #8 Utvide Organisasjon med utvidelse for kommunenummer fra no-basis
 * address MS
-
+* address.district.extension contains NoBasisMunicipalitycode named municipalitycode 0..1
+* address.district.extension[municipalitycode] ^short = "Coded value for municipality/county Norwegian kommune"
+* address.district.extension[municipalitycode] ^definition = "Coded value for municipality/county Norwegian kommune"
 
 // Krav: Del av organisasjon (ref:organization)
 // * partOf MS <- NB! kan bare peke oppover
@@ -53,5 +55,4 @@ Description: "Eksempel på organisasjon"
 * identifier.value = "1234567890"
 * name = "Lykkedalen eldrehjem"
 * address.district = "Sigdal kommune"
-* address.district.extension.url = "http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode"
-* address.district.extension.valueCoding = $kommunenummer-alle#3332
+* address.district[0].extension[NoBasisMunicipalitycode].valueCoding = #3332
