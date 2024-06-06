@@ -9,10 +9,12 @@ Description: "Utfyllende eksempel"
 * medicationReference = Reference(Medisin-10)
 * subject = Reference(Pasient-20)
 * performer.actor = Reference(Helsepersonell-10)
+* performer.actor = Reference(RolleHelsepersonell-10)
 * effectiveDateTime = "2024-05-28"
 * contained[+] = Medisin-10
 * contained[+] = Pasient-20
 * contained[+] = Helsepersonell-10
+* contained[+] = RolleHelsepersonell-10
 
 Instance: Medisin-10
 InstanceOf: Medication
@@ -39,3 +41,10 @@ Usage: #inline
 * identifier.value = "9144900"
 * name.family = "Lin"
 * name.given = "Rita"
+
+Instance: RolleHelsepersonell-10
+InstanceOf: PractitionerRole
+Usage: #inline
+// TODO #14 Dårlig kodeverk for PractitionerRole fra no-basis-PractitionerRole
+* identifier.system = "urn:oid:2.16.578.1.12.4.1.1.9034"
+* identifier.value = #9
