@@ -4,7 +4,8 @@ Id: lmdi-organization
 Title: "Organisasjon"
 Description: "Organisasjon eller organisasjonsenhet. "
 * ^status = #draft
-* ^date = "2024-05-27"
+* ^date = "2024-06-05"
+* ^publisher = "Folkehelseinstituttet"
 
 // Krav (nasjonalt): Basere på no-basis-Organization
 // Krav: Organisasjons-ID som ENH eller RESH (identifier)

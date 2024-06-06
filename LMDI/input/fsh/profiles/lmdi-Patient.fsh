@@ -5,6 +5,7 @@ Title:       "Pasient"
 Description: "Informasjon om pasienten"
 * ^status = #draft
 * ^date = "2024-05-27"
+* ^publisher = "Folkehelseinstituttet"
 
 // Krav til profil:
 // TODO #6 "Pasient" skal baseres på no-basis-Patient

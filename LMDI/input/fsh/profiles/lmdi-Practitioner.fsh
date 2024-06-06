@@ -4,7 +4,8 @@ Parent:      Practitioner
 Title:       "Helsepersonell"
 Description: "Helsepersonell som har foreskrevet eller administrert legemiddelet"
 * ^status = #draft
-* ^date = "2024-05-27"
+* ^date = "2024-06-05"
+* ^publisher = "Folkehelseinstituttet"
 
 // TODO #5 "Helsepersonell" skal baseres på no-basis-practitioner
 // Se: https://simplifier.net/HL7Norwayno-basis/NoBasisPractitioner/~overview 

@@ -6,6 +6,7 @@ Title: "Institusjonsopphold B"
 Description: "Beskrivelse av pasientens opphold i institusjon - bruker EpisodeOfCare."
 * ^status = #draft
 * ^date = "2024-05-30"
+* ^publisher = "Folkehelseinstituttet"
 
 // Krav: Diagnose (referanse). Sjekke om dette faktisk skal/bør være med
 // Krav: Pasient. Allerede 1..1 i ressursen.

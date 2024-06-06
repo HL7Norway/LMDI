@@ -5,6 +5,7 @@ Title: "Diagnose"
 Description: "Diagnosen som pasienten har fått rekvirert og administrert legemiddelet for"
 * ^status = #draft
 * ^date = "2024-05-27"
+* ^publisher = "Folkehelseinstituttet"
 
 // Krav: 
 // MVP: ICPC-2 eller ICD-10

@@ -5,6 +5,7 @@ Title: "Legemiddelrekvirering"
 Description: "Legemiddelrekvirering - ordinering, resept eller annen rekvirering av legemiddel"
 * ^status = #draft
 * ^date = "2024-05-27"
+* ^publisher = "Folkehelseinstituttet"
 
 // Krav: ForskrivningsID
 // * identifier MS

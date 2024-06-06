@@ -5,6 +5,7 @@ Title:    "Legemiddel"
 Description: "Beskrivelse av legemiddel."
 * ^status = #draft
 * ^date = "2024-05-30"
+* ^publisher = "Folkehelseinstituttet"
 
 // Se basis-profiler og evt. eResept/PLL
 // MedicationKnowledge under utvikling, se R5 for status

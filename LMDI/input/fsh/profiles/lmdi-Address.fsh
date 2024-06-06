@@ -5,6 +5,7 @@ Id: lmdi-address
 Title: "Adresse"
 Description: "Adresse som inneholder utvidelse for kommune"
 * ^status = #draft
+* ^experimental = true
 * ^date = "2024-05-30"
 // Extension: Kommunenummer
 * district.extension contains NoBasisMunicipalitycode named municipalitycode 0..1

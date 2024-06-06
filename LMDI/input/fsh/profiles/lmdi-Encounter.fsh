@@ -8,7 +8,9 @@ Id: lmdi-encounter-institusjonsopphold
 Title: "Institusjonsopphold A"
 Description: "Beskrivelse av pasientens opphold i institusjon - bruker Encounter."
 * ^status = #draft
+* ^experimental = true
 * ^date = "2024-05-30"
+* ^publisher = "Folkehelseinstituttet"
 
 // Krav: identifier ESS: Finnes ingen nasjonal business-identifier for Encounter
 // Krav: actualPeriod
