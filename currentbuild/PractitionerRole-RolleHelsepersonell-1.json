@@ -1,0 +1,14 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "RolleHelsepersonell-1",
+  "meta" : {
+    "profile" : ["http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole </b><a name=\"RolleHelsepersonell-1\"> </a><a name=\"hcRolleHelsepersonell-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourcePractitionerRole &quot;RolleHelsepersonell-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-lmdi-practitionerrole.html\">Rolle helsepersonell</a></p></div><p><b>code</b>: Hjemmehjelp <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p></div>"
+  },
+  "code" : [{
+    "text" : "Hjemmehjelp"
+  }]
+}

@@ -312,7 +312,7 @@ Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medicatio
 "lmdi-administrert-legemiddel","MedicationAdministration.subject","MedicationAdministration.subject","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
 ","Referanse til pasient","The person or animal or group receiving the medication.","","","","","","","","","",,,,,"",,,,"MedicationAdministration.subject",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-administrert-legemiddel","MedicationAdministration.context","MedicationAdministration.context","","","",0,1,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter], CanonicalType[http://hl7.org/fhir/StructureDefinition/EpisodeOfCare]]}
+"lmdi-administrert-legemiddel","MedicationAdministration.context","MedicationAdministration.context","","","",0,1,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/EpisodeOfCare]]}
 ","Referanse til aktuelt opphold","Referanse til hvilket opphold eller avtale pasienten var på da legemiddelet ble administrert.","","","","","","","","","",,,,,"",,,,"MedicationAdministration.context",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "lmdi-administrert-legemiddel","MedicationAdministration.supportingInformation","MedicationAdministration.supportingInformation","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}

@@ -13,7 +13,7 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://hl7.no/fhir/ig/lmdi/CodeSystem/lmdi-test-kodeverk.codesystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"lmdi-test-kodeverk.codesystem-1\"> </a></td><td>Litt</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"lmdi-test-kodeverk.codesystem-2\"> </a></td><td>Mye</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"lmdi-test-kodeverk.codesystem-3\"> </a></td><td>En hel del</td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "http://hl7.no/fhir/ig/lmdi/CodeSystem/lmdi-test-kodeverk.codesystem"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:version [ fhir:v "0.6.1"] ; # 
   fhir:name [ fhir:v "LmdiTestKodeverk"] ; # 
   fhir:title [ fhir:v "LMDI Test-kodeverk"] ; # 
   fhir:status [ fhir:v "draft"] ; # 

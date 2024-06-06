@@ -5,15 +5,15 @@
   "description" : "Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret",
   "status" : "draft",
   "package-id" : "hl7.fhir.no.lmdi",
-  "ig-ver" : "0.6.0",
-  "date" : "Thu, 06 Jun, 2024 18:53:54 +0000",
-  "dateISO8601" : "2024-06-06T18:53:54+00:00",
-  "errs" : 16,
-  "warnings" : 16,
+  "ig-ver" : "0.6.1",
+  "date" : "Thu, 06 Jun, 2024 19:17:34 +0000",
+  "dateISO8601" : "2024-06-06T19:17:34+00:00",
+  "errs" : 23,
+  "warnings" : 15,
   "hints" : 2,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 4,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1704025120
+  "maxMemory" : 2057347856
 }
