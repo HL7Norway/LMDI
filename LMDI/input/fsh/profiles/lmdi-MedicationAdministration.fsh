@@ -5,6 +5,7 @@ Title:    "Administrert legemiddel"
 Description: "Beskriver administrasjon av legemiddel til pasient på institusjon."
 * ^status = #draft
 * ^date = "2024-05-27"
+* ^publisher = "Folkehelseinstituttet"
 
 // Se på følgende kilder:
 // eResept
@@ -14,16 +15,12 @@ Description: "Beskriver administrasjon av legemiddel til pasient på institusjon
 // "https://hl7.org/fhir/R4/medicationadministration.html" <- R4
 
 // TODO Se på navngivning iht. "Best Practice / HL7 Norge"
-// YFS: Hva med LegemiddelAdministrasjon ?
-
-// Subject kan bare være pasient
 // Legge til støtte for no-basies-Patient senere
 
-// Krav: Status administrering = completeded, påkrevd
-// Allerede 1..1
-// * status = http://terminology.hl7.org/CodeSystem/medication-admin-status#completed
+// Krav: Status administrering = completeded, påkrevd (allerede 1..1 i ressurs)
 // Må nok også tillate #entered-in-error 
-* status = #completed
+* status from LegemiddeladministreringStatus
+// * status = #entered-in-error
 * status ^short = "Status administrering."
 * status ^definition = "Status administrering. Skal alltid være satt til utført = completed. "
 
@@ -68,6 +65,20 @@ Description: "Beskriver administrasjon av legemiddel til pasient på institusjon
 
 // Krav: Infusjon
 // ESS: Er vel del av administrasjonsvei? 
+
+// VALUE SETS
+
+ValueSet: LegemiddeladministreringStatus
+Id: lmdi-medicationadministration-status
+Title: "Status for legemiddeladministrasjon"
+Description: "Verdisett som begrenses status til Legemiddeladministrasjon til henholdsvis 'Gjennomført' eller 'Feilregistrert'."
+* ^version = "0.1.0"
+* ^status = #draft
+* ^experimental = true
+* ^date = "2024-06-05"
+* ^publisher = "Folkehelseinstituttet"
+* http://hl7.org/fhir/ValueSet/medication-admin-status#completed "Gjennomført"
+* http://hl7.org/fhir/ValueSet/medication-admin-status#entered-in-error "Feilregistrert"
 
 
 // EKSEMPLER
