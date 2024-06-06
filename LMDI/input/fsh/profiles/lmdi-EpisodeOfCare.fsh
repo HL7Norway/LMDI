@@ -2,10 +2,10 @@
 Profile: LmdiEpisodeOfCareInstitusjonsopphold
 Parent: EpisodeOfCare
 Id: lmdi-episodeofcare-institusjonsopphold
-Title: "Institusjonsopphold B"
-Description: "Beskrivelse av pasientens opphold i institusjon - bruker EpisodeOfCare."
+Title: "Institusjonsopphold"
+Description: "Beskrivelse av pasientens opphold i institusjon."
 * ^status = #draft
-* ^date = "2024-05-30"
+* ^date = "2024-06-06"
 * ^publisher = "Folkehelseinstituttet"
 
 // Krav: Diagnose (referanse). Sjekke om dette faktisk skal/bør være med
