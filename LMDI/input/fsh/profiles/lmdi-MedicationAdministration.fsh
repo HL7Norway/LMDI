@@ -8,12 +8,8 @@ Description: "Beskriver administrasjon av legemiddel til pasient på institusjon
 * ^publisher = "Folkehelseinstituttet"
 
 // Se på følgende kilder:
-// eResept
-// Pasientens legemiddelliste / sentral forskrivningsmodul (eResept)
-// HSØ Lukket legemiddelsløyfe - H-resept
-// IDMP/UNICOM
-// "https://hl7.org/fhir/R4/medicationadministration.html" <- R4
-
+// eResept, Pasientens legemiddelliste / sentral forskrivningsmodul (eResept)
+// HSØ Lukket legemiddelsløyfe - H-resept, IDMP/UNICOM
 // TODO Se på navngivning iht. "Best Practice / HL7 Norge"
 // Legge til støtte for no-basies-Patient senere
 
@@ -33,7 +29,8 @@ Description: "Beskriver administrasjon av legemiddel til pasient på institusjon
 * subject ^short = "Referanse til pasient"
 
 // Krav: Opphold, må støtte
-* context MS // peke på encounter
+* context MS // peke på EpisodeOfCare
+* context only Reference(EpisodeOfCare)
 * context ^short = "Referanse til aktuelt opphold"
 * context ^definition = "Referanse til hvilket opphold eller avtale pasienten var på da legemiddelet ble administrert."
 
@@ -89,6 +86,7 @@ Description: "Eksempel på administrering av legemiddel"
 * status = #completed
 * medicationReference = Reference(https://fhir.legemidler.example.com/legemidler/123456780)
 * subject = Reference(https://fhi.no/fhir/lmdi/pasient/12345678)
+* context = Reference(https://fhi.no/fhir/lmdi/institusjonsopphold/428ff23d-7a65-4c67-8059-6a1d07d287e3)
 * performer.actor = Reference(https://fhir.npr.no/helsepersonell/1234567890)
 * effectiveDateTime = "2024-05-28"
 * dosage.text = "Svelge to spiseskjéer"
