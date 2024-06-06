@@ -7,4 +7,5 @@ Description: "Rollen til helsepersonellet eller personen som har foreskrevet ell
 * ^date = "2024-06-05"
 * ^publisher = "Folkehelseinstituttet"
 // Evt begrensninger på roller. 
-// Sjekk kodeverk, Volven etc. 
+// Utilstrekkelige kodeverk i no-basis-PractitionerRole. Meldt inn som issue hos no-basis-r4.
+// Se også issue #14 
