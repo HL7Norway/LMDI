@@ -4,15 +4,16 @@ Parent:      Patient
 Title:       "Pasient"
 Description: "Informasjon om pasienten"
 * ^status = #draft
-* ^date = "2024-05-27"
+* ^date = "2024-06-07"
 * ^publisher = "Folkehelseinstituttet"
 
-// Krav til profil:
 // TODO #6 "Pasient" skal baseres på no-basis-Patient
-// Parent: no-basis-Patient
 // Krav: MÅ være FNR eller DNR <- profileres
 // ESS: Må kanskje være MS hvis det er mulighet for kjønn+fdato
-// Slice med FNR + DNR, TODO usikker på mutual excl.
+// Spør FHI: Er kommunenummer for bosted eller tjeneste? Yngve sier begge. 
+// Slice med FNR + DNR, TODO usikker på mutual excl. 
+
+// Identifikator - Fødselsnummer eller D-nummer
 * identifier MS
 * identifier ^short = "Identifikator for pasienten."
 * identifier ^definition = "Identifikator for pasienten. Skal være fødselsnummer (FNR) eller D-nummer (DNR)."
@@ -29,28 +30,15 @@ Description: "Informasjon om pasienten"
 * identifier[FNR].value 1..1
 * identifier[DNR].value 1..1
 
-// Litt å fikle med, men løser seg når no-basis-Patient tas i bruk
-// error	Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient on element Patient.identifier:FNR, looking in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient (@char 1)
-// error	Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient on element Patient.identifier:DNR, looking in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient (@char 1)
-
-
-// Krav: Hvis ikke ID, bruk 
-// - kjønn
-// Fylles ut hvis man har
+// Kjønn
 * gender MS
 * gender ^short = "Kjønn"
 * gender ^definition = "Pasientens kjønn. Skal oppgis sammen med fødselsdato hvis det ikke finnes pasient-ID."
 
-// - fødselsdato <- dokumentasjon
-// Fylles ut hvis man har
+// Fødselsdato
 * birthDate MS
 * birthDate ^short = "Fødselsdato"
 * birthDate ^definition = "Pasientens fødselsdato. Skal oppgis sammen med kjønn hvis det ikke finnes pasient-ID."
-
-// Krav: Kommunenummer <- kan være del av tjeneste eller adresse?
-// Fylles ut hvis man har
-// no-basis-Address/district - extention - municipalitycode
-// Spør FHI: Er kommunenummer for bosted eller tjeneste? Yngve sier begge. 
 
 
 // EKSEMPLER
