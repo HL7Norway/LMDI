@@ -8,7 +8,7 @@ Description: "Beskrivelse av pasientens opphold i institusjon. Dette kan være b
 * ^date = "2024-06-06"
 * ^publisher = "Folkehelseinstituttet"
 
-// Krav: Diagnose (referanse). Sjekke om dette faktisk skal/bør være med
+// TODO #15 Krav: Diagnose (utskrivningsdiagnose) (referanse). Sjekke om dette faktisk skal/bør være med
 // Krav: Pasient. Allerede 1..1 i ressursen.
 // Krav: Må referere til organisasjon, f.eks. sykehjem
 * managingOrganization 1..1
@@ -17,8 +17,6 @@ Description: "Beskrivelse av pasientens opphold i institusjon. Dette kan være b
 // Krav: actualPeriod
 * period MS
 * period ^short = "Periode for pasientens (antatte) opphold i institusjon."
-
-// TODO #7 Vurdere Encounter opp mot Encounter
 
 // EKSEMPLER
 Instance: Institusjonsopphold-B-1
