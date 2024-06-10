@@ -27,6 +27,7 @@ Description: "Beskriver administrasjon av legemiddel til pasient på institusjon
 // * subject only Reference(Patient or $no-basis-Patient)
 * subject only Reference(Patient)
 * subject ^short = "Referanse til pasient"
+* subject ^definition = "Det skal alltid være en referanse til pasienten som har blitt administrert legemiddel."
 
 // Krav: Opphold, må støtte
 * context MS // peke på EpisodeOfCare
@@ -63,6 +64,7 @@ Description: "Beskriver administrasjon av legemiddel til pasient på institusjon
 
 // Krav: Infusjon
 // ESS: Er vel del av administrasjonsvei? 
+// Som f.eks. SCT#intravenøs administrasjonsvei 47625008, SCT#26643006 Oral route
 
 // VALUE SETS
 
