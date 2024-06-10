@@ -12,7 +12,7 @@ Utkast, under stadig forandring! Stereotypen sier hvilken FHIR-ressurs som benyt
 
 ### Flyt enkel 1
 
-<img src="flyt-enkel-1.svg" width="00%" />
+<img src="flyt-enkel-1.svg" width="50%" />
 <br clear="all"/>
 
 ### Flyt enkel 2
