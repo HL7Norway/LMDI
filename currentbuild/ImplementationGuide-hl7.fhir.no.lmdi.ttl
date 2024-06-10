@@ -13,11 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Lmdi</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi</pre><div><p>Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret</p>\n</div></div>"
   ] ; # 
   fhir:url [ fhir:v "http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.6.3"] ; # 
+  fhir:version [ fhir:v "0.6.4"] ; # 
   fhir:name [ fhir:v "Lmdi"] ; # 
   fhir:title [ fhir:v "Legemiddeldata fra institusjon til Legemiddelregisteret"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-10T12:15:39+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-10T12:38:24+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;
@@ -610,10 +610,25 @@
          fhir:value [ fhir:v "Condition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.no/fhir/ig/lmdi/Condition/Diagnose-1-ICD10> ;
-         fhir:reference [ fhir:v "Condition/Diagnose-1-ICD10" ]
+         fhir:link <http://hl7.no/fhir/ig/lmdi/Condition/Diagnose-1-ICD10-OID> ;
+         fhir:reference [ fhir:v "Condition/Diagnose-1-ICD10-OID" ]
        ] ;
-       fhir:name [ fhir:v "Diagnose-1-ICD10" ] ;
+       fhir:name [ fhir:v "Diagnose-1-ICD10-OID" ] ;
+       fhir:description [ fhir:v "Eksempel på diagnose" ] ;
+       fhir:example [
+         fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Condition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.no/fhir/ig/lmdi/Condition/Diagnose-2-ICD10-HL7> ;
+         fhir:reference [ fhir:v "Condition/Diagnose-2-ICD10-HL7" ]
+       ] ;
+       fhir:name [ fhir:v "Diagnose-2-ICD10-HL7" ] ;
        fhir:description [ fhir:v "Eksempel på diagnose" ] ;
        fhir:example [
          fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose"^^xsd:anyURI ;

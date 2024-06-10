@@ -1,12 +1,13 @@
 Lmdi : Validation Results
 =========================================
 
-err = 32, warn = 22, info = 3
+err = 35, warn = 23, info = 3
 $--
 Generated $--. FHIR version $-- for hl7.fhir.no.lmdi#$-- (canonical = http://hl7.no/fhir/ig/lmdi)
- Build Errors : 6 / 5 / 0
+ Build Errors : 7 / 5 / 0
  /github/workspace/LMDI/fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem : 0 / 0 / 1
- /github/workspace/LMDI/fsh-generated/resources/Condition-Diagnose-1-ICD10 : 2 / 1 / 2
+ /github/workspace/LMDI/fsh-generated/resources/Condition-Diagnose-1-ICD10-OID : 2 / 1 / 2
+ /github/workspace/LMDI/fsh-generated/resources/Condition-Diagnose-2-ICD10-HL7 : 3 / 1 / 1
  /github/workspace/LMDI/fsh-generated/resources/EpisodeOfCare-Institusjonsopphold-1-Sykehjem : 4 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Medication-Medisin-1-Oxycodone : 0 / 0 / 1
@@ -42,20 +43,26 @@ Generated $--. FHIR version $-- for hl7.fhir.no.lmdi#$-- (canonical = http://hl7
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/Observasjon-1-Kroppsvekt.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/Observasjon-2-Hoyde.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 234, column 4: The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 216 other files)
-WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 275, column 4: The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 216 other files)
-WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.change.history.html#/html/body/script at Line 201, column 4: The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 126 other files)
-ERROR: /github/workspace/LMDI/output/Condition-Diagnose-1-ICD10.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 705: The link 'eksempel-pasient-1234567890' for "eksempel-pasient-1234567890" cannot be resolved
+WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 234, column 4: The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 221 other files)
+WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 275, column 4: The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 221 other files)
+WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.change.history.html#/html/body/script at Line 201, column 4: The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 127 other files)
+ERROR: /github/workspace/LMDI/output/Condition-Diagnose-1-ICD10-OID.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 717: The link 'eksempel-pasient-1234567890' for "eksempel-pasient-1234567890" cannot be resolved
+ERROR: /github/workspace/LMDI/output/Condition-Diagnose-2-ICD10-HL7.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 716: The link 'eksempel-pasient-1234567890' for "eksempel-pasient-1234567890" cannot be resolved
 ERROR: /github/workspace/LMDI/output/EpisodeOfCare-Institusjonsopphold-1-Sykehjem.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 635: The link 'pasientreferanse-1234567' for "pasientreferanse-1234567" cannot be resolved
 ERROR: /github/workspace/LMDI/output/EpisodeOfCare-Institusjonsopphold-1-Sykehjem.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 734: The link 'sykehjemref-1234567' for "sykehjemref-1234567" cannot be resolved
 ERROR: /github/workspace/LMDI/output/MedicationAdministration-Administrering-10.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 1217: The link 'uuid:9b62d7e8-df64-47b7-9fe1-38bc45795d82' for "uuid:9b62d7e8-df64-47b7-9fe1-38bc45795d82" cannot be resolved
 ERROR: /github/workspace/LMDI/output/MedicationAdministration-Administrering-20.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 925: The link 'uuid:9b62d7e8-df64-47b7-9fe1-38bc45795d82' for "uuid:9b62d7e8-df64-47b7-9fe1-38bc45795d82" cannot be resolved
 ERROR: /github/workspace/LMDI/output/MedicationAdministration-Administrering-30.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 713: The link 'uuid:69fb46ff-8874-4cda-bc6a-53ea6933026a' for "uuid:69fb46ff-8874-4cda-bc6a-53ea6933026a" cannot be resolved
 == fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem.json ==
-== fsh-generated/resources/Condition-Diagnose-1-ICD10.json ==
-INFORMATION: Condition/Diagnose-1-ICD10: Condition.code.coding[0].system: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.7110' could not be found, so the code cannot be validated
-ERROR: Condition/Diagnose-1-ICD10: Condition.subject: Unable to resolve resource with reference 'eksempel-pasient-1234567890'
-WARNING: Condition/Diagnose-1-ICD10: Condition: Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
+== fsh-generated/resources/Condition-Diagnose-1-ICD10-OID.json ==
+INFORMATION: Condition/Diagnose-1-ICD10-OID: Condition.code.coding[0].system: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.7110' could not be found, so the code cannot be validated
+ERROR: Condition/Diagnose-1-ICD10-OID: Condition.subject: Unable to resolve resource with reference 'eksempel-pasient-1234567890'
+WARNING: Condition/Diagnose-1-ICD10-OID: Condition: Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
+ERROR: Condition.text.div: Hyperlink 'eksempel-pasient-1234567890' at 'div/p/a' for 'eksempel-pasient-1234567890' does not resolve
+== fsh-generated/resources/Condition-Diagnose-2-ICD10-HL7.json ==
+ERROR: Condition/Diagnose-2-ICD10-HL7: Condition.code.coding[0].system: The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/icd-10')
+ERROR: Condition/Diagnose-2-ICD10-HL7: Condition.subject: Unable to resolve resource with reference 'eksempel-pasient-1234567890'
+WARNING: Condition/Diagnose-2-ICD10-HL7: Condition: Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
 ERROR: Condition.text.div: Hyperlink 'eksempel-pasient-1234567890' at 'div/p/a' for 'eksempel-pasient-1234567890' does not resolve
 == fsh-generated/resources/EpisodeOfCare-Institusjonsopphold-1-Sykehjem.json ==
 ERROR: EpisodeOfCare/Institusjonsopphold-1-Sykehjem: EpisodeOfCare.patient: Unable to resolve resource with reference 'pasientreferanse-1234567'
@@ -66,7 +73,7 @@ ERROR: EpisodeOfCare.text.div: Hyperlink 'sykehjemref-1234567' at 'div/p/a' for 
 == fsh-generated/resources/Medication-Medisin-1-Oxycodone.json ==
 == fsh-generated/resources/Medication-Medisin-2-Paracetamol.json ==
 == fsh-generated/resources/MedicationAdministration-Administrering-1-Oralt.json ==
-ERROR: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.status: The value provided ('completed') was not found in the value set 'Status for legemiddeladministrasjon' (http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.3), and a code is required from this value set  (error message = The provided code '#completed' was not found in the value set 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.3'; The System URI could not be determined for the code 'completed' in the ValueSet 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.3')
+ERROR: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.status: The value provided ('completed') was not found in the value set 'Status for legemiddeladministrasjon' (http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.4), and a code is required from this value set  (error message = The provided code '#completed' was not found in the value set 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.4'; The System URI could not be determined for the code 'completed' in the ValueSet 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.4')
 ERROR: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.medication.ofType(Reference): Unable to resolve resource with reference 'https://fhir.legemidler.example.com/legemidler/123456780'
 ERROR: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.subject: Unable to resolve resource with reference 'https://fhi.no/fhir/lmdi/pasient/12345678'
 ERROR: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.context: Unable to resolve resource with reference 'https://fhi.no/fhir/lmdi/institusjonsopphold/428ff23d-7a65-4c67-8059-6a1d07d287e3'

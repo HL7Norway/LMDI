@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Lmdi</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi</pre><div><p>Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret</p>\n</div></div>"
   },
   "url" : "http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi",
-  "version" : "0.6.3",
+  "version" : "0.6.4",
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-06-10T12:15:39+00:00",
+  "date" : "2024-06-10T12:38:24+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -695,9 +695,21 @@
         "valueString" : "Condition"
       }],
       "reference" : {
-        "reference" : "Condition/Diagnose-1-ICD10"
+        "reference" : "Condition/Diagnose-1-ICD10-OID"
       },
-      "name" : "Diagnose-1-ICD10",
+      "name" : "Diagnose-1-ICD10-OID",
+      "description" : "Eksempel på diagnose",
+      "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/Diagnose-2-ICD10-HL7"
+      },
+      "name" : "Diagnose-2-ICD10-HL7",
       "description" : "Eksempel på diagnose",
       "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose"
     },

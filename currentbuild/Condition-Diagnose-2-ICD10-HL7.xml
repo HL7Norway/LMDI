@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="Diagnose-2-ICD10-HL7"/>
+  <meta>
+    <profile value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition </b><a name="Diagnose-2-ICD10-HL7"> </a><a name="hcDiagnose-2-ICD10-HL7"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceCondition &quot;Diagnose-2-ICD10-HL7&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-lmdi-condition-diagnose.html">Diagnose</a></p></div><p><b>code</b>: Vanskeligheter med inntak og tilførsel av mat <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (icd-10#R63.3)</span></p><p><b>subject</b>: <a href="eksempel-pasient-1234567890">eksempel-pasient-1234567890</a></p></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/ValueSet/icd-10"/>
+      <code value="R63.3"/>
+      <display value="Vanskeligheter med inntak og tilførsel av mat"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="eksempel-pasient-1234567890"/>
+  </subject>
+</Condition>

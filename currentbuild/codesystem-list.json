@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://hl7.no/fhir/ig/lmdi/CodeSystem/lmdi-test-kodeverk.codesystem",
-      "version" : "0.6.3",
+      "version" : "0.6.4",
       "status" : "draft",
       "name" : "LmdiTestKodeverk",
       "title" : "LMDI Test-kodeverk",

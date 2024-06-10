@@ -5,9 +5,9 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.no/fhir/ig/lmdi/Condition/Diagnose-1-ICD10> a fhir:Condition ;
+<http://hl7.no/fhir/ig/lmdi/Condition/Diagnose-1-ICD10-OID> a fhir:Condition ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "Diagnose-1-ICD10"] ; # 
+  fhir:id [ fhir:v "Diagnose-1-ICD10-OID"] ; # 
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose"^^xsd:anyURI ;
@@ -16,7 +16,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition </b><a name=\"Diagnose-1-ICD10\"> </a><a name=\"hcDiagnose-1-ICD10\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceCondition &quot;Diagnose-1-ICD10&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-lmdi-condition-diagnose.html\">Diagnose</a></p></div><p><b>code</b>: Vanskeligheter med inntak og tilførsel av mat <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#R63.3)</span></p><p><b>subject</b>: <a href=\"eksempel-pasient-1234567890\">eksempel-pasient-1234567890</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition </b><a name=\"Diagnose-1-ICD10-OID\"> </a><a name=\"hcDiagnose-1-ICD10-OID\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceCondition &quot;Diagnose-1-ICD10-OID&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-lmdi-condition-diagnose.html\">Diagnose</a></p></div><p><b>code</b>: Vanskeligheter med inntak og tilførsel av mat <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#R63.3)</span></p><p><b>subject</b>: <a href=\"eksempel-pasient-1234567890\">eksempel-pasient-1234567890</a></p></div>"
   ] ; # 
   fhir:code [
      fhir:coding ( [
