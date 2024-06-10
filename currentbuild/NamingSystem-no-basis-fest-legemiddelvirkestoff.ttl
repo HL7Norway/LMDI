@@ -10,19 +10,19 @@
   fhir:id [ fhir:v "no-basis-fest-legemiddelvirkestoff"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://hl7.no/fhir/ig/lmdi/NamingSystem/no-basis-fest-legemiddelvirkestoff</td></tr><tr><td>Version</td><td>0.6.4</td></tr><tr><td>Name</td><td>festLegemiddelvirkestoff</td></tr><tr><td>Status</td><td>draft</td></tr><tr><td>Definition</td><td><div><p>FEST-id for virkestoff</p>\n</div></td></tr><tr><td>Publisher</td><td>Folkehelseinstituttet (FHI)</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://hl7.no/fhir/NamingSystem/festLegemiddelvirkestoff</td><td>true</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://hl7.no/fhir/ig/lmdi/NamingSystem/no-basis-fest-legemiddelvirkestoff</td></tr><tr><td>Version</td><td>0.6.5</td></tr><tr><td>Name</td><td>festLegemiddelVirkestoff</td></tr><tr><td>Status</td><td>draft</td></tr><tr><td>Definition</td><td><div><p>FEST-id for virkestoff. Benyttes ved virkestoffrekvirering</p>\n</div></td></tr><tr><td>Publisher</td><td>Folkehelseinstituttet (FHI)</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://dmp.no/fhir/NamingSystem/festLegemiddelVirkestoff</td><td>true</td></tr></table></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "http://hl7.no/fhir/ig/lmdi/NamingSystem/no-basis-fest-legemiddelvirkestoff"^^xsd:anyURI ]
   ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "0.6.4" ]
+     fhir:value [ fhir:v "0.6.5" ]
   ] ) ; # 
-  fhir:name [ fhir:v "festLegemiddelvirkestoff"] ; # 
+  fhir:name [ fhir:v "festLegemiddelVirkestoff"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:kind [ fhir:v "identifier"] ; # 
-  fhir:date [ fhir:v "2024-06-05"^^xsd:date] ; # 
+  fhir:date [ fhir:v "2024-06-10"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;
@@ -32,7 +32,7 @@
      ] )
   ] ) ; # 
   fhir:responsible [ fhir:v "Direktoratet for medisinske produkter"] ; # 
-  fhir:description [ fhir:v "FEST-id for virkestoff"] ; # 
+  fhir:description [ fhir:v "FEST-id for virkestoff. Benyttes ved virkestoffrekvirering"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
        fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
@@ -42,7 +42,7 @@
   ] ) ; # 
   fhir:uniqueId ( [
      fhir:type [ fhir:v "uri" ] ;
-     fhir:value [ fhir:v "http://hl7.no/fhir/NamingSystem/festLegemiddelvirkestoff" ] ;
+     fhir:value [ fhir:v "http://dmp.no/fhir/NamingSystem/festLegemiddelVirkestoff" ] ;
      fhir:preferred [ fhir:v "true"^^xsd:boolean ]
   ] ) . # 
 

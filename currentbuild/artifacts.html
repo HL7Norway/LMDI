@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - Legemiddeldata fra institusjon til Legemiddelregisteret v0.6.4</title>
+    <title>Artifacts Summary - Legemiddeldata fra institusjon til Legemiddelregisteret v0.6.5</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -66,7 +66,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Legemiddeldata fra institusjon til Legemiddelregisteret</span>
             <br/>
-            <span style="display:inline-block;">0.6.4 - ci-build
+            <span style="display:inline-block;">0.6.5 - ci-build
 
 
 
@@ -141,7 +141,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Legemiddeldata fra institusjon til Legemiddelregisteret - Local Development build (v0.6.4) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7.no/fhir/ig/lmdi/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Legemiddeldata fra institusjon til Legemiddelregisteret - Local Development build (v0.6.5) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7.no/fhir/ig/lmdi/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -376,11 +376,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="NamingSystem-no-basis-fest-legemiddeldose.html"
+                     title="NamingSystem/no-basis-fest-legemiddeldose">no-basis-fest-legemiddeldose</a>
+               </td>
+               <td>
+<p>FEST-id for dose. Rekvirering av en bestemt merkevare med ID (LMR-nummer) som representerer minste plukkbare enhet, f.eks. 1 ampulle eller 1 tablett.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="NamingSystem-no-basis-fest-legemiddelmerkevare.html"
                      title="NamingSystem/no-basis-fest-legemiddelmerkevare">no-basis-fest-legemiddelmerkevare</a>
                </td>
                <td>
-<p>FEST-id for legemiddel merkevare</p>
+<p>FEST-id for legemiddel merkevare. Rekvirering av en styrke og form av en bestemt merkevare. Pr. 2024 er det ikke lenger ønskelig at det rekvireres på LegemiddelMerkevare.</p>
 </td>
             </tr>
             <tr>
@@ -389,7 +398,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="NamingSystem/no-basis-fest-legemiddelpakning">no-basis-fest-legemiddelpakning</a>
                </td>
                <td>
-<p>FEST-id for legemiddelpakninger</p>
+<p>FEST-id for legemiddelpakninger. Rekvirering av en bestemt pakning av en merkevare (varenummer)</p>
 </td>
             </tr>
             <tr>
@@ -398,7 +407,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="NamingSystem/no-basis-fest-legemiddelvirkestoff">no-basis-fest-legemiddelvirkestoff</a>
                </td>
                <td>
-<p>FEST-id for virkestoff</p>
+<p>FEST-id for virkestoff. Benyttes ved virkestoffrekvirering</p>
 </td>
             </tr>
          </tbody>
@@ -487,8 +496,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Medication-Medisin-1-Oxycodone.html"
-                     title="Medication/Medisin-1-Oxycodone">Medisin-1-Oxycodone</a>
+                  <a href="Medication-Medisin-1-LegemiddelDose-Oxycodone.html"
+                     title="Medication/Medisin-1-LegemiddelDose-Oxycodone">Medisin-1-LegemiddelDose-Oxycodone</a>
                </td>
                <td>
 <p>Eksempel på legemiddel</p>
@@ -501,6 +510,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Eksempel på legemiddel - Paracetamol - UTKAST</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Medication-Medisin-3-LegemiddelPakning-Monoket.html"
+                     title="Medication/Medisin-3-LegemiddelPakning-Monoket">Medisin-3-LegemiddelPakning-Monoket</a>
+               </td>
+               <td>
+<p>Eksempel på legemiddel - paking</p>
 </td>
             </tr>
             <tr>
@@ -527,7 +545,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="Organization/Organisasjon-1-Eldrehjem">Organisasjon-1-Eldrehjem</a>
                </td>
                <td>
-<p>Eksempel på organisasjon</p>
+<p>Eksempel på organisasjon - Primærhelsetjeneste</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-Organisasjon-2-Spesialist.html"
+                     title="Organization/Organisasjon-2-Spesialist">Organisasjon-2-Spesialist</a>
+               </td>
+               <td>
+<p>Eksempel på organisasjon - spesialisthelsetjenesten med RESH.</p>
 </td>
             </tr>
             <tr>
@@ -583,7 +610,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no">Folkehelseinstituttet (FHI)</a>.  Package hl7.fhir.no.lmdi#0.6.4 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 10, 2024 12:38+0000">2024-06-10</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no">Folkehelseinstituttet (FHI)</a>.  Package hl7.fhir.no.lmdi#0.6.5 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 10, 2024 20:55+0000">2024-06-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

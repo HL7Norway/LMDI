@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi"/>
-  <version value="0.6.4"/>
+  <version value="0.6.5"/>
   <name value="Lmdi"/>
   <title value="Legemiddeldata fra institusjon til Legemiddelregisteret"/>
   <status value="draft"/>
-  <date value="2024-06-10T12:38:24+00:00"/>
+  <date value="2024-06-10T20:55:07+00:00"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>
   <contact>
     <name value="Folkehelseinstituttet (FHI)"/>
@@ -632,9 +632,9 @@
         <valueString value="Medication"/>
       </extension>
       <reference>
-        <reference value="Medication/Medisin-1-Oxycodone"/>
+        <reference value="Medication/Medisin-1-LegemiddelDose-Oxycodone"/>
       </reference>
-      <name value="Medisin-1-Oxycodone"/>
+      <name value="Medisin-1-LegemiddelDose-Oxycodone"/>
       <description value="Eksempel på legemiddel"/>
       <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddel"/>
     </resource>
@@ -651,13 +651,35 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/Medisin-3-LegemiddelPakning-Monoket"/>
+      </reference>
+      <name value="Medisin-3-LegemiddelPakning-Monoket"/>
+      <description value="Eksempel på legemiddel - paking"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddel"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/no-basis-fest-legemiddeldose"/>
+      </reference>
+      <name value="no-basis-fest-legemiddeldose"/>
+      <description value="FEST-id for dose. Rekvirering av en bestemt merkevare med ID (LMR-nummer) som representerer minste plukkbare enhet, f.eks. 1 ampulle eller 1 tablett."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="NamingSystem"/>
       </extension>
       <reference>
         <reference value="NamingSystem/no-basis-fest-legemiddelmerkevare"/>
       </reference>
       <name value="no-basis-fest-legemiddelmerkevare"/>
-      <description value="FEST-id for legemiddel merkevare"/>
+      <description value="FEST-id for legemiddel merkevare. Rekvirering av en styrke og form av en bestemt merkevare. Pr. 2024 er det ikke lenger ønskelig at det rekvireres på LegemiddelMerkevare."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -668,7 +690,7 @@
         <reference value="NamingSystem/no-basis-fest-legemiddelpakning"/>
       </reference>
       <name value="no-basis-fest-legemiddelpakning"/>
-      <description value="FEST-id for legemiddelpakninger"/>
+      <description value="FEST-id for legemiddelpakninger. Rekvirering av en bestemt pakning av en merkevare (varenummer)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -679,7 +701,7 @@
         <reference value="NamingSystem/no-basis-fest-legemiddelvirkestoff"/>
       </reference>
       <name value="no-basis-fest-legemiddelvirkestoff"/>
-      <description value="FEST-id for virkestoff"/>
+      <description value="FEST-id for virkestoff. Benyttes ved virkestoffrekvirering"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -743,7 +765,18 @@
         <reference value="Organization/Organisasjon-1-Eldrehjem"/>
       </reference>
       <name value="Organisasjon-1-Eldrehjem"/>
-      <description value="Eksempel på organisasjon"/>
+      <description value="Eksempel på organisasjon - Primærhelsetjeneste"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/Organisasjon-2-Spesialist"/>
+      </reference>
+      <name value="Organisasjon-2-Spesialist"/>
+      <description value="Eksempel på organisasjon - spesialisthelsetjenesten med RESH."/>
       <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization"/>
     </resource>
     <resource>

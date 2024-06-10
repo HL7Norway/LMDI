@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Lmdi</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi</pre><div><p>Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret</p>\n</div></div>"
   },
   "url" : "http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi",
-  "version" : "0.6.4",
+  "version" : "0.6.5",
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-06-10T12:38:24+00:00",
+  "date" : "2024-06-10T20:55:07+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -803,9 +803,9 @@
         "valueString" : "Medication"
       }],
       "reference" : {
-        "reference" : "Medication/Medisin-1-Oxycodone"
+        "reference" : "Medication/Medisin-1-LegemiddelDose-Oxycodone"
       },
-      "name" : "Medisin-1-Oxycodone",
+      "name" : "Medisin-1-LegemiddelDose-Oxycodone",
       "description" : "Eksempel på legemiddel",
       "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddel"
     },
@@ -824,13 +824,37 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/Medisin-3-LegemiddelPakning-Monoket"
+      },
+      "name" : "Medisin-3-LegemiddelPakning-Monoket",
+      "description" : "Eksempel på legemiddel - paking",
+      "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddel"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/no-basis-fest-legemiddeldose"
+      },
+      "name" : "no-basis-fest-legemiddeldose",
+      "description" : "FEST-id for dose. Rekvirering av en bestemt merkevare med ID (LMR-nummer) som representerer minste plukkbare enhet, f.eks. 1 ampulle eller 1 tablett.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "NamingSystem"
       }],
       "reference" : {
         "reference" : "NamingSystem/no-basis-fest-legemiddelmerkevare"
       },
       "name" : "no-basis-fest-legemiddelmerkevare",
-      "description" : "FEST-id for legemiddel merkevare",
+      "description" : "FEST-id for legemiddel merkevare. Rekvirering av en styrke og form av en bestemt merkevare. Pr. 2024 er det ikke lenger ønskelig at det rekvireres på LegemiddelMerkevare.",
       "exampleBoolean" : false
     },
     {
@@ -842,7 +866,7 @@
         "reference" : "NamingSystem/no-basis-fest-legemiddelpakning"
       },
       "name" : "no-basis-fest-legemiddelpakning",
-      "description" : "FEST-id for legemiddelpakninger",
+      "description" : "FEST-id for legemiddelpakninger. Rekvirering av en bestemt pakning av en merkevare (varenummer)",
       "exampleBoolean" : false
     },
     {
@@ -854,7 +878,7 @@
         "reference" : "NamingSystem/no-basis-fest-legemiddelvirkestoff"
       },
       "name" : "no-basis-fest-legemiddelvirkestoff",
-      "description" : "FEST-id for virkestoff",
+      "description" : "FEST-id for virkestoff. Benyttes ved virkestoffrekvirering",
       "exampleBoolean" : false
     },
     {
@@ -924,7 +948,19 @@
         "reference" : "Organization/Organisasjon-1-Eldrehjem"
       },
       "name" : "Organisasjon-1-Eldrehjem",
-      "description" : "Eksempel på organisasjon",
+      "description" : "Eksempel på organisasjon - Primærhelsetjeneste",
+      "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/Organisasjon-2-Spesialist"
+      },
+      "name" : "Organisasjon-2-Spesialist",
+      "description" : "Eksempel på organisasjon - spesialisthelsetjenesten med RESH.",
       "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization"
     },
     {

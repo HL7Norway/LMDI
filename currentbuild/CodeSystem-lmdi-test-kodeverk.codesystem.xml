@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>http://hl7.no/fhir/ig/lmdi/CodeSystem/lmdi-test-kodeverk.codesystem</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="lmdi-test-kodeverk.codesystem-1"> </a></td><td>Litt</td></tr><tr><td style="white-space:nowrap">2<a name="lmdi-test-kodeverk.codesystem-2"> </a></td><td>Mye</td></tr><tr><td style="white-space:nowrap">3<a name="lmdi-test-kodeverk.codesystem-3"> </a></td><td>En hel del</td></tr></table></div>
   </text>
   <url value="http://hl7.no/fhir/ig/lmdi/CodeSystem/lmdi-test-kodeverk.codesystem"/>
-  <version value="0.6.4"/>
+  <version value="0.6.5"/>
   <name value="LmdiTestKodeverk"/>
   <title value="LMDI Test-kodeverk"/>
   <status value="draft"/>
