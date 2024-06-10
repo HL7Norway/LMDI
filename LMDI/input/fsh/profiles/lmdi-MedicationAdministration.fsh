@@ -83,7 +83,7 @@ Description: "Verdisett som begrenses status til Legemiddeladministrasjon til he
 
 // EKSEMPLER
 
-Instance: Administrering-1
+Instance: Administrering-1-Oralt
 InstanceOf: AdministrertLegemiddel
 Description: "Eksempel på administrering av legemiddel"
 * status = #completed

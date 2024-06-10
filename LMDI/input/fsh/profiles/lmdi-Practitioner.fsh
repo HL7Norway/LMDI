@@ -26,7 +26,7 @@ Description: "Helsepersonell som har foreskrevet eller administrert legemiddelet
 
 
 // EKSEMPLER
-Instance: Helsepersonell-1
+Instance: Helsepersonell-1-HPR-nummer
 InstanceOf: LmdiPractitioner
 Description: "Eksempel på helsepersonell med HPR-nummer"
 * identifier.system = "urn:oid:2.16.578.1.12.4.1.4.4"

@@ -49,7 +49,7 @@ Description: "Coded value for municipality/county Norwegian kommune"
 
 // EKSEMPLER
 
-Instance: Organisasjon-1
+Instance: Organisasjon-1-Eldrehjem
 InstanceOf: LmdiOrganization
 Description: "Eksempel på organisasjon"
 * identifier.system = "urn:oid:2.16.578.1.12.4.1.4.101"

@@ -43,20 +43,22 @@ Description: "Informasjon om pasienten"
 
 // EKSEMPLER
 
-Instance: Pasient-1
+Instance: Pasient-1-Uten-FNR
 InstanceOf: LmdiPatient
 Description: "Eksempel på pasient med kjønn og fødselsdato"
 * name.family = "Nobar"
 * name.given = "Pia"
 * gender = #female
 * birthDate = "1958-09-19"
+// (3024) Bærum. I mangel av no-basis extension (se Organization)
+* address.district = "Bærum"
 
-Instance: Pasient-2
+Instance: Pasient-2-FNR
 InstanceOf: LmdiPatient
 Description: "Eksempel på pasient med fødselsnummer"
 * identifier[FNR].system = "urn:oid:2.16.578.1.12.4.1.4.1"
 * identifier[FNR].value = "13031353453"
 * name.family = "Kopter"
 * name.given = "Rosa Eli"
-// 3024 Bærum
+// (3024) Bærum. I mangel av no-basis extension (se Organization)
 * address.district = "Bærum"

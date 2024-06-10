@@ -11,7 +11,7 @@ Description: "Rollen til helsepersonellet eller personen som har foreskrevet ell
 // Se også issue #14 
 
 // EKSEMPLER
-Instance: RolleHelsepersonell-1
+Instance: RolleHelsepersonell-1-Hjemmehjelp
 InstanceOf: LmdiPractitionerRole
 Description: "Eksempel på rolle (Hjemmehjelp), ikke komplett kodeverk"
 * code.text = "Hjemmehjelp"

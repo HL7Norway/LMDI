@@ -19,7 +19,7 @@ Description: "Beskrivelse av pasientens opphold i institusjon. Dette kan være b
 * period ^short = "Periode for pasientens (antatte) opphold i institusjon."
 
 // EKSEMPLER
-Instance: Institusjonsopphold-B-1
+Instance: Institusjonsopphold-1-Sykehjem
 InstanceOf: LmdiEpisodeOfCareInstitusjonsopphold
 Description: "Eksempel på institusjonsopphold med EpisodeOfCare"
 * status = #active

@@ -36,7 +36,7 @@ Description: "Beskrivelse av legemiddel."
 
 // EKSEMPLER
 
-Instance: Medisin-1
+Instance: Medisin-1-Oxycodone
 InstanceOf: Legemiddel
 Description: "Eksempel på legemiddel"
 * identifier.system = "http://hl7.no/fhir/NamingSystem/festLegemiddelmerkevare"
@@ -46,7 +46,7 @@ Description: "Eksempel på legemiddel"
 * code.coding.display = "Oxycodone-containing product in oral dose form"
 * code.text = "Oxycodone"
 
-Instance: Medisin-2
+Instance: Medisin-2-Paracetamol
 InstanceOf: Legemiddel
 Description: "Eksempel på legemiddel - Paracetamol - UTKAST"
 * identifier.system = "http://hl7.no/fhir/NamingSystem/festLegemiddelmerkevare"
