@@ -41,7 +41,7 @@ Description: "Beskrivelse av legemiddel."
 * batch ^short = "Batch-nummer for legemiddelet"
 
 // Krav: Merkevarenavn, handelsnavn
-// TODO #17 Krav: Definerte døgnsoder (DDD). Gjør det indirekte ved f.eks. festLegemiddelMerkevare
+// TODO #17 Krav: Definerte døgndoser (DDD). Gjør det indirekte ved f.eks. festLegemiddelPakning
 
 // EKSEMPLER
 
