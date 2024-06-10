@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Lmdi</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi</pre><div><p>Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret</p>\n</div></div>"
   },
   "url" : "http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi",
-  "version" : "0.6.2",
+  "version" : "0.6.3",
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-06-06T21:51:46+00:00",
+  "date" : "2024-06-10T06:14:09+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -722,7 +722,7 @@
         "reference" : "StructureDefinition/lmdi-episodeofcare-institusjonsopphold"
       },
       "name" : "Institusjonsopphold",
-      "description" : "Beskrivelse av pasientens opphold i institusjon.",
+      "description" : "Beskrivelse av pasientens opphold i institusjon. Dette kan være både av kortere og lengre karaktert, slik som døgnopphold, innleggelse hos spesialist, sykehjem og aldershjem.",
       "exampleBoolean" : false
     },
     {
@@ -864,7 +864,7 @@
       "reference" : {
         "reference" : "StructureDefinition/lmdi-observation-tmp"
       },
-      "name" : "Observationtion TMP (Kun et eksempel med kroppsvekt)",
+      "name" : "Observation TMP (Kun et eksempel med kroppsvekt)",
       "description" : "Observation",
       "exampleBoolean" : false
     },
@@ -927,18 +927,6 @@
       "name" : "Pasient-2",
       "description" : "Eksempel på pasient med fødselsnummer",
       "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/lmdi-encounter-institusjonsopphold"
-      },
-      "name" : "På vei ut (Institusjonsopphold A)",
-      "description" : "Beskrivelse av pasientens opphold i institusjon - bruker Encounter (Mulig bruke denne for spesialisthelsetjenesten)",
-      "exampleBoolean" : false
     },
     {
       "extension" : [{

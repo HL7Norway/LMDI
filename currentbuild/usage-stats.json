@@ -1,6 +1,6 @@
 {
   "package": "hl7.fhir.no.lmdi",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "fhirVersion": "4.0.1",
   "jurisdiction": "NO",
   "extensions": [
@@ -38,12 +38,6 @@
         "title": "Diagnose"
       }
     ],
-    "Encounter": [
-      {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter-institusjonsopphold",
-        "title": "På vei ut (Institusjonsopphold A)"
-      }
-    ],
     "EpisodeOfCare": [
       {
         "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-episodeofcare-institusjonsopphold",
@@ -59,7 +53,7 @@
     "Observation": [
       {
         "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-observation-tmp",
-        "title": "Observationtion TMP (Kun et eksempel med kroppsvekt)"
+        "title": "Observation TMP (Kun et eksempel med kroppsvekt)"
       }
     ],
     "Organization": [
