@@ -1,0 +1,32 @@
+<OppfLegemiddelpakning>
+      <Id>ID_91C3E898-C1C9-413E-90B5-B061727EA225</Id>
+      <Tidspunkt>2022-11-19T03:11:20</Tidspunkt>
+      <Status V="A" DN="Aktiv oppføring" />
+      <Legemiddelpakning xmlns="http://www.kith.no/xmlstds/eresept/forskrivning/2014-12-01">
+        <Atc V="C01DA14" S="2.16.578.1.12.4.1.1.7180" DN="Isosorbidmononitrat" />
+        <NavnFormStyrke>Monoket OD SySk depotkaps, hard 50 mg</NavnFormStyrke>
+        <Reseptgruppe V="C" DN="Reseptgruppe C" />
+        <LegemiddelformKort V="743" S="2.16.578.1.12.4.1.1.7448" DN="Depotkapsel, hard" />
+        <RefVilkar>ID_4F1C76F5-3E1D-44C8-A8FF-91681A4878CA</RefVilkar>
+        <Preparattype V="7" DN="Legemiddel" />
+        <TypeSoknadSlv V="1" DN="Skal ikke søkes" />
+        <Id>ID_0003602E-315E-4CDE-9EB0-6756BE9CD120</Id>
+        <Varenr>263580</Varenr>
+        <Ean>7072279014340</Ean>
+        <Oppbevaring V="R" DN="Rom (15-25 grader)" />
+        <Pakningsinfo>
+          <RefLegemiddelMerkevare>ID_77B973DC-024F-4532-B175-4C1E0DEA045C</RefLegemiddelMerkevare>
+          <Pakningsstr>20 x 1</Pakningsstr>
+          <EnhetPakning V="stk" S="2.16.578.1.12.4.1.1.7452" DN="stykk" />
+          <Pakningstype V="15" S="2.16.578.1.12.4.1.1.7449" DN="Endosebeholder" />
+          <Antall>20</Antall>
+          <Mengde>1</Mengde>
+          <DDD V="0.04" U="g" />
+          <Statistikkfaktor>1</Statistikkfaktor>
+        </Pakningsinfo>
+        <Markedsforingsinfo>
+          <Markedsforingsdato>2017-02-15</Markedsforingsdato>
+          <OmpakkerAvEndose>Sykehusapoteket Skien</OmpakkerAvEndose>
+        </Markedsforingsinfo>
+      </Legemiddelpakning>
+    </OppfLegemiddelpakning>
