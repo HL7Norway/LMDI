@@ -1,0 +1,19 @@
+<OppfLegemiddeldose>
+      <Id>ID_921B9637-16FE-48E6-BF54-8303007885F3</Id>
+      <Tidspunkt>2022-10-22T03:10:41</Tidspunkt>
+      <Status V="A" DN="Aktiv oppføring" />
+      <Legemiddeldose xmlns="http://www.kith.no/xmlstds/eresept/forskrivning/2014-12-01">
+        <Atc V="N02AA05" S="2.16.578.1.12.4.1.1.7180" DN="Oksykodon" />
+        <NavnFormStyrke>Oxycodone Orifarm mikst oppl 1 mg/ml</NavnFormStyrke>
+        <Reseptgruppe V="A" DN="Reseptgruppe A" />
+        <LegemiddelformKort V="842" S="2.16.578.1.12.4.1.1.7448" DN="Mikstur, oppløsning" />
+        <Preparattype V="7" DN="Legemiddel" />
+        <TypeSoknadSlv V="1" DN="Skal ikke søkes" />
+        <Opioidsoknad>true</Opioidsoknad>
+        <Id>ID_48BD33D2-2838-4B81-8225-02391B7A4516</Id>
+        <LmrLopenr>3347478</LmrLopenr>
+        <Mengde V="250" U="ml" />
+        <RefLegemiddelMerkevare>ID_65106C0F-CDBE-4B5E-944D-FC941CD64ED4</RefLegemiddelMerkevare>
+        <RefPakning>ID_662F988C-3376-44C9-9DFE-8A3E008F836A</RefPakning>
+      </Legemiddeldose>
+    </OppfLegemiddeldose>
