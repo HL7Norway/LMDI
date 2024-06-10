@@ -45,19 +45,28 @@ Description: "Beskrivelse av legemiddel."
 
 // EKSEMPLER
 
-Instance: Medisin-1-Oxycodone
+Instance: Medisin-1-LegemiddelDose-Oxycodone
 InstanceOf: Legemiddel
 Description: "Eksempel på legemiddel"
-* identifier.system = "http://hl7.no/fhir/NamingSystem/festLegemiddelmerkevare"
-* identifier.value = "ID_9e6c620b-5d09-4f27-9ee1-b108e7f338ab"
+// "Oxycodone Orifarm mikst oppl 1 mg/ml"
+* identifier.system = "http://dmp.no/fhir/NamingSystem/festLegemiddelDose"
+* identifier.value = "ID_48BD33D2-2838-4B81-8225-02391B7A4516"
 * code.coding.system = "http://snomed.info/sct"
-* code.coding = #430127000
-* code.coding.display = "Oxycodone-containing product in oral dose form"
+* code.coding = #414984009
+* code.coding.display = "Product containing oxycodone (medicinal product)"
 * code.text = "Oxycodone"
 
 Instance: Medisin-2-Paracetamol
 InstanceOf: Legemiddel
 Description: "Eksempel på legemiddel - Paracetamol - UTKAST"
-* identifier.system = "http://hl7.no/fhir/NamingSystem/festLegemiddelmerkevare"
+* identifier.system = "http://dmp.no/fhir/NamingSystem/festLegemiddelMerkevare"
 * identifier.value = "ID_2ABAC272-0BCF-43F0-84BE-984074D92E15"
 * code.text = "Paracetamol"
+
+Instance: Medisin-3-LegemiddelPakning-Monoket
+InstanceOf: Legemiddel
+Description: "Eksempel på legemiddel - paking"
+* identifier.system = "http://dmp.no/fhir/NamingSystem/festLegemiddelPakning"
+* identifier.value = "ID_0003602E-315E-4CDE-9EB0-6756BE9CD120"
+* code.text = "Monoket OD SySk depotkaps, hard 50 mg"
+// <DDD V="0.04" U="g" />

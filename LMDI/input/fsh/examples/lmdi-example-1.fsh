@@ -20,9 +20,9 @@ Description: "Utfyllende eksempel"
 Instance: Medisin-10
 InstanceOf: Medication
 Usage: #inline
+// "Oxycodone Orifarm mikst oppl 1 mg/ml"
 * identifier.system = "http://dmp.no/fhir/NamingSystem/festLegemiddelDose"
 * identifier.value = "ID_48BD33D2-2838-4B81-8225-02391B7A4516"
-* identifier.display = "Oxycodone Orifarm mikst oppl 1 mg/ml"
 * code.coding.system = $SCT
 * code.coding = #414984009
 * code.coding.display = "Product containing oxycodone (medicinal product)"
