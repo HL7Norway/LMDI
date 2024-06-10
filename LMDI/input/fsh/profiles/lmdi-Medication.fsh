@@ -17,6 +17,15 @@ Description: "Beskrivelse av legemiddel."
 // Krav: Kode, som FEST-id, SNOMED-CT etc., obligatorisk
 // Opprette NamingSystem for FEST #12 <- issue
 // Slicing? Hva kan LMR ta i mot? Hvilket nivå skal man rapportere på? Hva med "ukurrante" legemidler? 
+
+// Notater FEST:
+// - Katalog LegemiddelVirkestoff: benyttes ved virkestoffrekvirering
+// - Katalog LegemiddelMerkevare: rekvirering av en styrke og form av en bestemt merkevare. Pr. 2024 er det ikke lenger ønskelig at det rekvireres på LegemiddelMerkevare
+// - Katalog LegemiddelPakningMerkevare: rekvirering av en bestemt pakning av en merkevare (varenummer). I figuren er denne katalogen forkortet til LegemiddelPakning.
+// - Katalog LegemiddelDose: rekvirering av en bestemt merkevare med ID (LMR-nummer) som representerer minste plukkbare enhet, f.eks. 1 ampulle eller 1 tablett.
+// - Katalog Handelsvare: inneholder handelsvarer med refusjon, det vil si medisinsk forbruksmateriell, næringsmidler og brystproteser.
+
+
 * code 1..1
 // * code.system = etc. 
 
