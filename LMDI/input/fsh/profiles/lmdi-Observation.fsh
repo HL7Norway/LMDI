@@ -1,7 +1,7 @@
 Profile: LmdiObservation
 Parent: Observation
 Id: lmdi-observation-tmp
-Title: "Observation TMP (Kun et eksempel med kroppsvekt)"
+Title: "Observasjon (kladd)"
 Description: "Observation"
 * ^status = #draft
 * ^date = "2024-06-06"
