@@ -58,3 +58,5 @@ Description: "Eksempel på pasient med fødselsnummer"
 * identifier[FNR].value = "13031353453"
 * name.family = "Kopter"
 * name.given = "Rosa Eli"
+// 3024 Bærum
+* address.district = "Bærum"

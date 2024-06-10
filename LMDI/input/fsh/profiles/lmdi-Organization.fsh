@@ -55,5 +55,5 @@ Description: "Eksempel på organisasjon"
 * identifier.system = "urn:oid:2.16.578.1.12.4.1.4.101"
 * identifier.value = "1234567890"
 * name = "Lykkedalen eldrehjem"
-* address.district = "Sigdal kommune"
-* address.district[0].extension[NoBasisMunicipalitycode].valueCoding = #3332
+* address.district = "Sigdal"
+* address.district[0].extension[NoBasisMunicipalitycode].valueCoding = #3034
