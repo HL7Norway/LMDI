@@ -53,7 +53,7 @@
     "Observation": [
       {
         "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-observation-tmp",
-        "title": "Observation TMP (Kun et eksempel med kroppsvekt)"
+        "title": "Observasjon (kladd)"
       }
     ],
     "Organization": [

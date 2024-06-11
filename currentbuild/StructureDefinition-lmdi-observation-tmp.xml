@@ -16,7 +16,7 @@
   <url value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-observation-tmp"/>
   <version value="0.6.5"/>
   <name value="LmdiObservation"/>
-  <title value="Observation TMP (Kun et eksempel med kroppsvekt)"/>
+  <title value="Observasjon (kladd)"/>
   <status value="draft"/>
   <date value="2024-06-06"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>

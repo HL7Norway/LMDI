@@ -15,7 +15,7 @@
   fhir:url [ fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-observation-tmp"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.6.5"] ; # 
   fhir:name [ fhir:v "LmdiObservation"] ; # 
-  fhir:title [ fhir:v "Observation TMP (Kun et eksempel med kroppsvekt)"] ; # 
+  fhir:title [ fhir:v "Observasjon (kladd)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:date [ fhir:v "2024-06-06"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 

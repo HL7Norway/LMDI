@@ -449,6 +449,7 @@
       <short value="An identifier for this patient"/>
       <definition value="An identifier for this patient."/>
       <requirements value="Patients are almost always assigned specific numerical identifiers."/>
+      <alias value="fødselsnummer"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -814,6 +815,7 @@
       <short value="An identifier for this patient"/>
       <definition value="An identifier for this patient."/>
       <requirements value="Patients are almost always assigned specific numerical identifiers."/>
+      <alias value="D-nummer"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -2583,6 +2585,7 @@
     <element id="Patient.identifier:FNR">
       <path value="Patient.identifier"/>
       <sliceName value="FNR"/>
+      <alias value="fødselsnummer"/>
       <min value="0"/>
       <max value="1"/>
     </element>
@@ -2598,6 +2601,7 @@
     <element id="Patient.identifier:DNR">
       <path value="Patient.identifier"/>
       <sliceName value="DNR"/>
+      <alias value="D-nummer"/>
       <min value="0"/>
       <max value="1"/>
     </element>

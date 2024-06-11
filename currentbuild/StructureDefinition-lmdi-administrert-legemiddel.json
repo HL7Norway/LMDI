@@ -19,7 +19,7 @@
       "value" : "https://www.fhi.no"
     }]
   }],
-  "description" : "Beskriver administrasjon av legemiddel til pasient på institusjon.",
+  "description" : "Beskriver administrasjon av legemiddel til pasient på institusjon.\n\n{% include administrasjon.md %}",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

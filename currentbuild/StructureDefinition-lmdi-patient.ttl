@@ -479,6 +479,7 @@
        fhir:short [ fhir:v "An identifier for this patient" ] ;
        fhir:definition [ fhir:v "An identifier for this patient." ] ;
        fhir:requirements [ fhir:v "Patients are almost always assigned specific numerical identifiers." ] ;
+       fhir:alias ( [ fhir:v "fødselsnummer" ] ) ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -868,6 +869,7 @@
        fhir:short [ fhir:v "An identifier for this patient" ] ;
        fhir:definition [ fhir:v "An identifier for this patient." ] ;
        fhir:requirements [ fhir:v "Patients are almost always assigned specific numerical identifiers." ] ;
+       fhir:alias ( [ fhir:v "D-nummer" ] ) ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -2763,6 +2765,7 @@
        fhir:id [ fhir:v "Patient.identifier:FNR" ] ;
        fhir:path [ fhir:v "Patient.identifier" ] ;
        fhir:sliceName [ fhir:v "FNR" ] ;
+       fhir:alias ( [ fhir:v "fødselsnummer" ] ) ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ]
      ] [
@@ -2778,6 +2781,7 @@
        fhir:id [ fhir:v "Patient.identifier:DNR" ] ;
        fhir:path [ fhir:v "Patient.identifier" ] ;
        fhir:sliceName [ fhir:v "DNR" ] ;
+       fhir:alias ( [ fhir:v "D-nummer" ] ) ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ]
      ] [

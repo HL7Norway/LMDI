@@ -10,7 +10,7 @@
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-06-10T20:55:07+00:00",
+  "date" : "2024-06-11T06:32:24+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -662,7 +662,7 @@
         "reference" : "StructureDefinition/lmdi-administrert-legemiddel"
       },
       "name" : "Administrert legemiddel",
-      "description" : "Beskriver administrasjon av legemiddel til pasient på institusjon.",
+      "description" : "Beskriver administrasjon av legemiddel til pasient på institusjon.\n\n{% include administrasjon.md %}",
       "exampleBoolean" : false
     },
     {
@@ -896,6 +896,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lmdi-observation-tmp"
+      },
+      "name" : "Observasjon (kladd)",
+      "description" : "Observation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
@@ -914,18 +926,6 @@
       },
       "name" : "Observasjon-2-Hoyde",
       "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-observation-tmp"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/lmdi-observation-tmp"
-      },
-      "name" : "Observation TMP (Kun et eksempel med kroppsvekt)",
-      "description" : "Observation",
-      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1050,6 +1050,15 @@
         }],
         "nameUrl" : "index.html",
         "title" : "Home",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "administrasjon.html"
+        }],
+        "nameUrl" : "administrasjon.html",
+        "title" : "Administrasjon",
         "generation" : "markdown"
       },
       {

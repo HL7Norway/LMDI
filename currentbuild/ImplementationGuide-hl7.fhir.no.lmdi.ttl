@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Lmdi"] ; # 
   fhir:title [ fhir:v "Legemiddeldata fra institusjon til Legemiddelregisteret"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-10T20:55:07+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-11T06:32:24+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;
@@ -578,7 +578,7 @@
          fhir:reference [ fhir:v "StructureDefinition/lmdi-administrert-legemiddel" ]
        ] ;
        fhir:name [ fhir:v "Administrert legemiddel" ] ;
-       fhir:description [ fhir:v "Beskriver administrasjon av legemiddel til pasient på institusjon." ] ;
+       fhir:description [ fhir:v "Beskriver administrasjon av legemiddel til pasient på institusjon.\n\n{% include administrasjon.md %}" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -832,6 +832,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-observation-tmp> ;
+         fhir:reference [ fhir:v "StructureDefinition/lmdi-observation-tmp" ]
+       ] ;
+       fhir:name [ fhir:v "Observasjon (kladd)" ] ;
+       fhir:description [ fhir:v "Observation" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
@@ -857,18 +869,6 @@
          fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-observation-tmp"^^xsd:anyURI ;
          fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-observation-tmp>
        ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-observation-tmp> ;
-         fhir:reference [ fhir:v "StructureDefinition/lmdi-observation-tmp" ]
-       ] ;
-       fhir:name [ fhir:v "Observation TMP (Kun et eksempel med kroppsvekt)" ] ;
-       fhir:description [ fhir:v "Observation" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1008,6 +1008,14 @@
          ] ) ;
          fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "administrasjon.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "administrasjon.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Administrasjon" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

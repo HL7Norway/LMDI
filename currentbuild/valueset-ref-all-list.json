@@ -24,8 +24,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.69"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-organization.html" : "Organisasjon",
-      "StructureDefinition-lmdi-address.html" : "Adresse"
+      "StructureDefinition-lmdi-address.html" : "Adresse",
+      "StructureDefinition-lmdi-organization.html" : "Organisasjon"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/address-use",
@@ -39,8 +39,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.67"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-organization.html" : "Organisasjon",
-      "StructureDefinition-lmdi-address.html" : "Adresse"
+      "StructureDefinition-lmdi-address.html" : "Adresse",
+      "StructureDefinition-lmdi-organization.html" : "Organisasjon"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/administration-method-codes",
@@ -97,8 +97,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose",
-      "StructureDefinition-lmdi-observation-tmp.html" : "Observation TMP (Kun et eksempel med kroppsvekt)"
+      "StructureDefinition-lmdi-observation-tmp.html" : "Observasjon (kladd)",
+      "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
@@ -239,7 +239,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-observation-tmp.html" : "Observation TMP (Kun et eksempel med kroppsvekt)"
+      "StructureDefinition-lmdi-observation-tmp.html" : "Observasjon (kladd)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
@@ -340,15 +340,15 @@
       "uses" : {
       },
       "StructureDefinition-lmdi-patient.html" : "Pasient",
+      "StructureDefinition-lmdi-practitionerrole.html" : "Rolle helsepersonell",
+      "StructureDefinition-lmdi-episodeofcare-institusjonsopphold.html" : "Institusjonsopphold",
+      "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel",
+      "StructureDefinition-lmdi-observation-tmp.html" : "Observasjon (kladd)",
       "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose",
       "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering",
       "StructureDefinition-lmdi-organization.html" : "Organisasjon",
-      "StructureDefinition-lmdi-practitionerrole.html" : "Rolle helsepersonell",
-      "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel",
-      "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel",
-      "StructureDefinition-lmdi-episodeofcare-institusjonsopphold.html" : "Institusjonsopphold",
-      "StructureDefinition-lmdi-observation-tmp.html" : "Observation TMP (Kun et eksempel med kroppsvekt)",
-      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell"
+      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
+      "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -439,9 +439,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.375"],
       "uses" : {
       },
+      "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel",
       "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering",
-      "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel",
-      "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel"
+      "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-form-codes",
@@ -559,7 +559,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-observation-tmp.html" : "Observation TMP (Kun et eksempel med kroppsvekt)"
+      "StructureDefinition-lmdi-observation-tmp.html" : "Observasjon (kladd)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -573,7 +573,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-observation-tmp.html" : "Observation TMP (Kun et eksempel med kroppsvekt)"
+      "StructureDefinition-lmdi-observation-tmp.html" : "Observasjon (kladd)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -589,7 +589,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-observation-tmp.html" : "Observation TMP (Kun et eksempel med kroppsvekt)"
+      "StructureDefinition-lmdi-observation-tmp.html" : "Observasjon (kladd)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -603,7 +603,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-observation-tmp.html" : "Observation TMP (Kun et eksempel med kroppsvekt)"
+      "StructureDefinition-lmdi-observation-tmp.html" : "Observasjon (kladd)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -617,7 +617,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-observation-tmp.html" : "Observation TMP (Kun et eksempel med kroppsvekt)"
+      "StructureDefinition-lmdi-observation-tmp.html" : "Observasjon (kladd)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/organization-type",
@@ -690,7 +690,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.59"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-observation-tmp.html" : "Observation TMP (Kun et eksempel med kroppsvekt)"
+      "StructureDefinition-lmdi-observation-tmp.html" : "Observasjon (kladd)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/reason-medication-given-codes",
@@ -737,7 +737,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-observation-tmp.html" : "Observation TMP (Kun et eksempel med kroppsvekt)"
+      "StructureDefinition-lmdi-observation-tmp.html" : "Observasjon (kladd)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -753,7 +753,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-observation-tmp.html" : "Observation TMP (Kun et eksempel med kroppsvekt)"
+      "StructureDefinition-lmdi-observation-tmp.html" : "Observasjon (kladd)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/request-priority",

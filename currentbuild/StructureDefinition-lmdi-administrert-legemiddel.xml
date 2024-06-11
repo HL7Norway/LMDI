@@ -30,7 +30,7 @@
       <value value="https://www.fhi.no"/>
     </telecom>
   </contact>
-  <description value="Beskriver administrasjon av legemiddel til pasient på institusjon."/>
+  <description value="Beskriver administrasjon av legemiddel til pasient på institusjon.&#xA;&#xA;{% include administrasjon.md %}"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
