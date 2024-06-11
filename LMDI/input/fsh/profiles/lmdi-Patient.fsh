@@ -23,6 +23,8 @@ Description: "Informasjon om pasienten"
 * identifier contains
     FNR 0..1 and
     DNR 0..1
+* identifier[FNR] ^alias = "fødselsnummer"
+* identifier[DNR] ^alias = "D-nummer"
 * identifier[FNR].system = "urn:oid:2.16.578.1.12.4.1.4.1" 
 * identifier[DNR].system = "urn:oid:2.16.578.1.12.4.1.4.2" 
 * identifier[DNR].system ^short = "The identification of the D-nummer"
