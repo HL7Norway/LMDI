@@ -2,10 +2,7 @@ Profile: AdministrertLegemiddel
 Parent:   MedicationAdministration
 Id:       lmdi-administrert-legemiddel
 Title:    "Administrert legemiddel"
-Description: """Beskriver administrasjon av legemiddel til pasient på institusjon.
-
-{% include administrasjon.md %}
-"""
+Description: """Beskriver administrasjon av legemiddel til pasient på institusjon."""
 * ^status = #draft
 * ^date = "2024-05-27"
 * ^publisher = "Folkehelseinstituttet"
