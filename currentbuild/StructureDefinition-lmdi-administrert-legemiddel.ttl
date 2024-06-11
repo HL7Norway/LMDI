@@ -26,7 +26,7 @@
        fhir:value [ fhir:v "https://www.fhi.no" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Beskriver administrasjon av legemiddel til pasient på institusjon.\n\n{% include administrasjon.md %}"] ; # 
+  fhir:description [ fhir:v "Beskriver administrasjon av legemiddel til pasient på institusjon."] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
        fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;

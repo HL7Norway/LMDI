@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Lmdi"] ; # 
   fhir:title [ fhir:v "Legemiddeldata fra institusjon til Legemiddelregisteret"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-11T06:32:24+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-11T06:46:50+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;
@@ -578,7 +578,7 @@
          fhir:reference [ fhir:v "StructureDefinition/lmdi-administrert-legemiddel" ]
        ] ;
        fhir:name [ fhir:v "Administrert legemiddel" ] ;
-       fhir:description [ fhir:v "Beskriver administrasjon av legemiddel til pasient på institusjon.\n\n{% include administrasjon.md %}" ] ;
+       fhir:description [ fhir:v "Beskriver administrasjon av legemiddel til pasient på institusjon." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1008,14 +1008,6 @@
          ] ) ;
          fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Home" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "administrasjon.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "administrasjon.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Administrasjon" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
