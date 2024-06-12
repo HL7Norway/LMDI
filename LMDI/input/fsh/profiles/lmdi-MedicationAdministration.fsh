@@ -62,12 +62,12 @@ Description: """Beskriver administrasjon av legemiddel til pasient på institusj
 * dosage.route.coding.code from http://hl7.org/fhir/ValueSet/route-codes (required)
 
 // Krav: Administrert mengde
+// TODO #19 Sjekk hvordan Pasientent legemiddelliste (PLL) bruker dose med FHIR
 * dosage.dose 1..1
 * dosage.dose ^short = "Administrert mengde"
 
 // Krav: Infusjon
-// ESS: Er vel del av administrasjonsvei? 
-// Som f.eks. SCT#intravenøs administrasjonsvei 47625008, SCT#26643006 Oral route
+// ESS: Er vel del av administrasjonsvei? Som f.eks. SCT#intravenøs administrasjonsvei 47625008, SCT#26643006 Oral route
 
 // VALUE SETS
 
