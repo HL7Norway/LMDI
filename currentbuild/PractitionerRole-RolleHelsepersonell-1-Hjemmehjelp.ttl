@@ -1,6 +1,7 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
@@ -16,10 +17,16 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole </b><a name=\"RolleHelsepersonell-1-Hjemmehjelp\"> </a><a name=\"hcRolleHelsepersonell-1-Hjemmehjelp\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourcePractitionerRole &quot;RolleHelsepersonell-1-Hjemmehjelp&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-lmdi-practitionerrole.html\">Rolle helsepersonell</a></p></div><p><b>code</b>: Hjemmehjelp <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole </b><a name=\"RolleHelsepersonell-1-Hjemmehjelp\"> </a><a name=\"hcRolleHelsepersonell-1-Hjemmehjelp\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourcePractitionerRole &quot;RolleHelsepersonell-1-Hjemmehjelp&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-lmdi-practitionerrole.html\">Rolle helsepersonell</a></p></div><p><b>code</b>: Hjemmehjelp (Helsefagarbeider) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#5275007 &quot;Auxiliary nurse (occupation)&quot;)</span></p></div>"
   ] ; # 
   fhir:code ( [
-     fhir:text [ fhir:v "Hjemmehjelp" ]
+     fhir:coding ( [
+       a sct:5275007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "5275007" ] ;
+       fhir:display [ fhir:v "Auxiliary nurse (occupation)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Hjemmehjelp (Helsefagarbeider)" ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status",
-      "version" : "0.6.6",
+      "version" : "0.6.7",
       "status" : "draft",
       "name" : "LegemiddeladministreringStatus",
       "title" : "Status for legemiddeladministrasjon",
@@ -11,6 +11,23 @@
       "uses" : {
       },
       "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/practitioner-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "PractitionerRole",
+      "title" : "Practitioner role",
+      "description" : "This example value set defines a set of codes that can be used to indicate the role of a Practitioner.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/practitioner-role",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.439"],
+      "sources" : ["2.16.840.1.113883.4.642.3.439"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-practitionerrole.html" : "Rolle helsepersonell"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/route-codes",

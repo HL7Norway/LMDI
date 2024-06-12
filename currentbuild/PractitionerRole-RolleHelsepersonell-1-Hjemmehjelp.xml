@@ -6,9 +6,14 @@
     <profile value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PractitionerRole </b><a name="RolleHelsepersonell-1-Hjemmehjelp"> </a><a name="hcRolleHelsepersonell-1-Hjemmehjelp"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourcePractitionerRole &quot;RolleHelsepersonell-1-Hjemmehjelp&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-lmdi-practitionerrole.html">Rolle helsepersonell</a></p></div><p><b>code</b>: Hjemmehjelp <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PractitionerRole </b><a name="RolleHelsepersonell-1-Hjemmehjelp"> </a><a name="hcRolleHelsepersonell-1-Hjemmehjelp"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourcePractitionerRole &quot;RolleHelsepersonell-1-Hjemmehjelp&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-lmdi-practitionerrole.html">Rolle helsepersonell</a></p></div><p><b>code</b>: Hjemmehjelp (Helsefagarbeider) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#5275007 &quot;Auxiliary nurse (occupation)&quot;)</span></p></div>
   </text>
   <code>
-    <text value="Hjemmehjelp"/>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="5275007"/>
+      <display value="Auxiliary nurse (occupation)"/>
+    </coding>
+    <text value="Hjemmehjelp (Helsefagarbeider)"/>
   </code>
 </PractitionerRole>
