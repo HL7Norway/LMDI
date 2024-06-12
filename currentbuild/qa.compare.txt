@@ -1,10 +1,10 @@
 Lmdi : Validation Results
 =========================================
 
-err = 37, warn = 24, info = 4
+err = 37, warn = 22, info = 4
 $--
 Generated $--. FHIR version $-- for hl7.fhir.no.lmdi#$-- (canonical = http://hl7.no/fhir/ig/lmdi)
- Build Errors : 7 / 5 / 0
+ Build Errors : 7 / 3 / 0
  /github/workspace/LMDI/fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Condition-Diagnose-1-ICD10-OID : 2 / 1 / 2
  /github/workspace/LMDI/fsh-generated/resources/Condition-Diagnose-2-SNOMED-CT : 3 / 1 / 2
@@ -44,8 +44,6 @@ Generated $--. FHIR version $-- for hl7.fhir.no.lmdi#$-- (canonical = http://hl7
  /github/workspace/LMDI/fsh-generated/resources/ValueSet-lmdi-medicationadministration-status : 0 / 3 / 2
 </table>
 == n/a ==
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/Observasjon-1-Kroppsvekt.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/Observasjon-2-Hoyde.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 234, column 4: The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 237 other files)
 WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 275, column 4: The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 237 other files)
 WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.change.history.html#/html/body/script at Line 201, column 4: The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 130 other files)

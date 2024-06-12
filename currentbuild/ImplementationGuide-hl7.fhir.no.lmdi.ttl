@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Lmdi"] ; # 
   fhir:title [ fhir:v "Legemiddeldata fra institusjon til Legemiddelregisteret"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-12T11:50:52+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-12T12:03:07+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;
@@ -851,6 +851,7 @@
          fhir:reference [ fhir:v "Observation/Observasjon-1-Kroppsvekt" ]
        ] ;
        fhir:name [ fhir:v "Observasjon-1-Kroppsvekt" ] ;
+       fhir:description [ fhir:v "Eksempel på observasjon - kroppsvekt" ] ;
        fhir:example [
          fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-observation-tmp"^^xsd:anyURI ;
          fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-observation-tmp>
@@ -865,6 +866,7 @@
          fhir:reference [ fhir:v "Observation/Observasjon-2-Hoyde" ]
        ] ;
        fhir:name [ fhir:v "Observasjon-2-Hoyde" ] ;
+       fhir:description [ fhir:v "Eksempel på observasjon - høyde" ] ;
        fhir:example [
          fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-observation-tmp"^^xsd:anyURI ;
          fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-observation-tmp>

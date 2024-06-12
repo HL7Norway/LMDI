@@ -1,8 +1,6 @@
 Lmdi
 =========================================
 
-Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource Observation/Observasjon-1-Kroppsvekt.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
-Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource Observation/Observasjon-2-Hoyde.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
 Generic: line 0, col 0, Warning - The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 237 other files) (INVALID)
 Generic: line 0, col 0, Warning - The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 237 other files) (INVALID)
 Generic: line 0, col 0, Warning - The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 130 other files) (INVALID)
@@ -74,5 +72,5 @@ Generic: line 0, col 0, Error - The link 'uuid:69fb46ff-8874-4cda-bc6a-53ea69330
 /github/workspace/LMDI/fsh-generated/resources/ValueSet-lmdi-medicationadministration-status.json: line 0, col 0, Warning - The code 'entered-in-error' is not valid in the system http://hl7.org/fhir/ValueSet/medication-admin-status (The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/medication-admin-status')) (BUSINESSRULE)
 /github/workspace/LMDI/fsh-generated/resources/ValueSet-lmdi-medicationadministration-status.json: line 0, col 0, Warning - Error from http://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/ValueSet/medication-admin-status (EXCEPTION)
 
-err = 37, warn = 24, info = 4
+err = 37, warn = 22, info = 4
 IG Publisher Version: 1.6.11

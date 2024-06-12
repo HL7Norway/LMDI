@@ -10,7 +10,7 @@
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-06-12T11:50:52+00:00",
+  "date" : "2024-06-12T12:03:07+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -914,6 +914,7 @@
         "reference" : "Observation/Observasjon-1-Kroppsvekt"
       },
       "name" : "Observasjon-1-Kroppsvekt",
+      "description" : "Eksempel på observasjon - kroppsvekt",
       "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-observation-tmp"
     },
     {
@@ -925,6 +926,7 @@
         "reference" : "Observation/Observasjon-2-Hoyde"
       },
       "name" : "Observasjon-2-Hoyde",
+      "description" : "Eksempel på observasjon - høyde",
       "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-observation-tmp"
     },
     {
