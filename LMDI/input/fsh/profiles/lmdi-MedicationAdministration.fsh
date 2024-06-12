@@ -1,8 +1,4 @@
-// Krav: Infusjon
-// TODO #23 Lage eksempel på (lang) infusjon for MedicationAdministration
-// ESS: Er vel del av administrasjonsvei? Som f.eks. SCT#intravenøs administrasjonsvei 47625008, SCT#26643006 Oral route
-// Se på følgende kilder:
-// eResept, Pasientens legemiddelliste / sentral forskrivningsmodul (eResept) / HSØ Lukket legemiddelsløyfe - H-resept, IDMP/UNICOM
+// Se på følgende kilder: eResept, Pasientens legemiddelliste / sentral forskrivningsmodul (eResept) / HSØ Lukket legemiddelsløyfe - H-resept, IDMP/UNICOM
 // Legge til støtte for no-basis-Patient senere
 // TODO #19 Sjekk hvordan Pasientent legemiddelliste (PLL) bruker dose med FHIR
 
@@ -31,7 +27,8 @@ Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legem
 * context ^definition = "Referanse til hvilket institusjonsopphold eller avtale pasienten var på da legemiddelet ble administrert."
 * context ^comment = "TODO Encounter må vurderes om nødvendig, f.eks. hos spesialist. " // TODO 
 
-* effective[x] only dateTime
+// Må støtte både effectiveDateTime og effectivePeriod
+// * effective[x] only dateTime
 * effective[x] ^short = "Tidspunkt for administrasjon"
 * effective[x] ^comment = "NB! R5 bruker 'occurence'. Behov for 'Period' ved infusjon?"
 
@@ -100,3 +97,29 @@ Description: "Eksempel på administrering av legemiddel"
 * dosage.dose.unit = "metric tablespoon"
 * dosage.dose.system = "http://unitsofmeasure.org"
 * dosage.dose.code = #tsp_us
+
+Instance: Administrering-2-Infusjon
+InstanceOf: AdministrertLegemiddel
+Description: "Eksempel på administrering av legemiddel - infusjon"
+* status = #completed
+* medicationReference = Reference(https://fhir.legemidler.example.com/legemidler/0987654321)
+* subject = Reference(https://fhi.no/fhir/lmdi/pasient/12345678)
+* context = Reference(https://fhi.no/fhir/lmdi/institusjonsopphold/428ff23d-7a65-4c67-8059-6a1d07d287e3)
+* performer.actor = Reference(https://fhir.npr.no/helsepersonell/1234567890)
+* effectivePeriod.start = "2024-06-13T14:26:01+02:00"
+* effectivePeriod.end = "2024-06-13T14:48:47+02:00"
+* dosage.text = "4,5g D5W 250 ml. IV hver 6. time. Infuser over 30 minutter ved 8 ml/min"
+* dosage.route.coding[SCT].system = "http://snomed.info/sct"
+* dosage.route.coding[SCT].code = #47625008
+* dosage.route.coding[SCT].display = "Intravenous route (qualifier value)"
+* dosage.route.text = "Intravenøst"
+* dosage.dose.value = 4.5
+* dosage.dose.unit = "g"
+* dosage.dose.system = "http://unitsofmeasure.org"
+* dosage.dose.code = #g
+* dosage.rateRatio.numerator.value = 8.0
+* dosage.rateRatio.numerator.system = "http://unitsofmeasure.org"
+* dosage.rateRatio.numerator.code = #ml
+* dosage.rateRatio.denominator.value = 1
+* dosage.rateRatio.denominator.system = "http://unitsofmeasure.org"
+* dosage.rateRatio.denominator.code = #min
