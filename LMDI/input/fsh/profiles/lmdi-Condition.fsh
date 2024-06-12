@@ -1,15 +1,13 @@
-// Documentation: https://www.hl7.org/fhir/R4/condition.html 
 Profile: LmdiDiagnose
 Parent: Condition
 Id: lmdi-condition-diagnose
 Title: "Diagnose"
-Description: "Diagnosen som pasienten har fått rekvirert og administrert legemiddelet for"
+Description: "Diagnosen som pasienten har fått rekvirert og administrert legemiddelet for. "
 * ^status = #draft
 * ^date = "2024-06-12"
 * ^publisher = "Folkehelseinstituttet"
-
-// NB! Må peke på subject (pasient)
-// MVP: ICPC-2, ICD-10, ICD-11, SNOMED CT
+* subject ^short = "Pasienten diagnosen er knyttet til."
+* subject only Reference(Patient)
 * code 1..1
 * code ^short = "Diagnosekode."
 * code ^definition = "Diagnosekode. Det er mulig å bruke ICD-10, ICD-11, ICPC-2 og SNOMED CT."
@@ -34,8 +32,8 @@ Description: "Diagnosen som pasienten har fått rekvirert og administrert legemi
 * code.coding[SCT].code 1..1
 * code.coding[ICD10].system = "urn:oid:2.16.578.1.12.4.1.1.7110"
 * code.coding[ICD10].code 1..1
-// Kilde for URI: https://build.fhir.org/ig/HL7/UTG/CodeSystem-ICD11MMS.html
 * code.coding[ICD11].system = "http://id.who.int/icd/release/11/mms"
+* code.coding[ICD11].system ^comment = "Kilde for URI: https://build.fhir.org/ig/HL7/UTG/CodeSystem-ICD11MMS.html "
 * code.coding[ICD11].code 1..1
 * code.coding[ICPC2].system = "urn:oid:2.16.578.1.12.4.1.1.7170"
 * code.coding[ICPC2].code 1..1
