@@ -2,12 +2,26 @@
   "codeSystems" : [
     {
       "url" : "http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status",
-      "version" : "0.6.5",
+      "version" : "0.6.6",
       "status" : "draft",
       "name" : "LegemiddeladministreringStatus",
       "title" : "Status for legemiddeladministrasjon",
       "description" : "Verdisett som begrenses status til Legemiddeladministrasjon til henholdsvis 'Gjennomført' eller 'Feilregistrert'.",
       "systems" : ["http://hl7.org/fhir/ValueSet/medication-admin-status"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/route-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTRouteCodes",
+      "title" : "SNOMED CT Route Codes",
+      "description" : "This value set includes all Route codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.98"],
+      "sources" : ["2.16.840.1.113883.4.642.3.98"],
       "uses" : {
       },
       "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel"

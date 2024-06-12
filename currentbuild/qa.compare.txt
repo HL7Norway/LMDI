@@ -1,7 +1,7 @@
 Lmdi : Validation Results
 =========================================
 
-err = 36, warn = 24, info = 3
+err = 37, warn = 24, info = 3
 $--
 Generated $--. FHIR version $-- for hl7.fhir.no.lmdi#$-- (canonical = http://hl7.no/fhir/ig/lmdi)
  Build Errors : 7 / 5 / 0
@@ -13,7 +13,7 @@ Generated $--. FHIR version $-- for hl7.fhir.no.lmdi#$-- (canonical = http://hl7
  /github/workspace/LMDI/fsh-generated/resources/Medication-Medisin-1-LegemiddelDose-Oxycodone : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Medication-Medisin-2-Paracetamol : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Medication-Medisin-3-LegemiddelPakning-Monoket : 0 / 0 / 1
- /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-1-Oralt : 6 / 0 / 2
+ /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-1-Oralt : 7 / 0 / 2
  /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-10 : 3 / 0 / 5
  /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-20 : 4 / 0 / 2
  /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-30 : 4 / 0 / 1
@@ -77,11 +77,12 @@ ERROR: EpisodeOfCare.text.div: Hyperlink 'sykehjemref-1234567' at 'div/p/a' for 
 == fsh-generated/resources/Medication-Medisin-2-Paracetamol.json ==
 == fsh-generated/resources/Medication-Medisin-3-LegemiddelPakning-Monoket.json ==
 == fsh-generated/resources/MedicationAdministration-Administrering-1-Oralt.json ==
-ERROR: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.status: The value provided ('completed') was not found in the value set 'Status for legemiddeladministrasjon' (http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.5), and a code is required from this value set  (error message = The provided code '#completed' was not found in the value set 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.5'; The System URI could not be determined for the code 'completed' in the ValueSet 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.5')
+ERROR: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.status: The value provided ('completed') was not found in the value set 'Status for legemiddeladministrasjon' (http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.6), and a code is required from this value set  (error message = The provided code '#completed' was not found in the value set 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.6'; The System URI could not be determined for the code 'completed' in the ValueSet 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.6')
 ERROR: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.medication.ofType(Reference): Unable to resolve resource with reference 'https://fhir.legemidler.example.com/legemidler/123456780'
 ERROR: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.subject: Unable to resolve resource with reference 'https://fhi.no/fhir/lmdi/pasient/12345678'
 ERROR: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.context: Unable to resolve resource with reference 'https://fhi.no/fhir/lmdi/institusjonsopphold/428ff23d-7a65-4c67-8059-6a1d07d287e3'
 ERROR: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.performer[0].actor: Unable to resolve resource with reference 'https://fhir.npr.no/helsepersonell/1234567890'
+ERROR: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.dosage.route.coding[0].code: The value provided ('421521009') was not found in the value set 'SNOMED CT Route Codes' (http://hl7.org/fhir/ValueSet/route-codes|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code '421521009' in the ValueSet 'http://hl7.org/fhir/ValueSet/route-codes|4.0.1'; The provided code '#421521009' was not found in the value set 'http://hl7.org/fhir/ValueSet/route-codes|4.0.1')
 ERROR: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.dosage.dose.code: Unknown code 'tsp_us' in the CodeSystem 'http://unitsofmeasure.org' version '2.0.1'
 INFORMATION: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.dosage.dose.code: Error processing Unit: 'tsp_us': The unit "tsp_us" is unknown at character 1
 == fsh-generated/resources/MedicationAdministration-Administrering-10.json ==
