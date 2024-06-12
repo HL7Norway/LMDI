@@ -24,8 +24,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.69"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-organization.html" : "Organisasjon",
-      "StructureDefinition-lmdi-address.html" : "Adresse"
+      "StructureDefinition-lmdi-address.html" : "Adresse",
+      "StructureDefinition-lmdi-organization.html" : "Organisasjon"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/address-use",
@@ -39,8 +39,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.67"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-organization.html" : "Organisasjon",
-      "StructureDefinition-lmdi-address.html" : "Adresse"
+      "StructureDefinition-lmdi-address.html" : "Adresse",
+      "StructureDefinition-lmdi-organization.html" : "Organisasjon"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/administration-method-codes",
@@ -97,8 +97,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-observation-tmp.html" : "Observasjon (kladd)",
-      "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose"
+      "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose",
+      "StructureDefinition-lmdi-observation-tmp.html" : "Observasjon (kladd)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
@@ -339,15 +339,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-observation-tmp.html" : "Observasjon (kladd)",
-      "StructureDefinition-lmdi-practitionerrole.html" : "Rolle helsepersonell",
       "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
-      "StructureDefinition-lmdi-episodeofcare-institusjonsopphold.html" : "Institusjonsopphold",
-      "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel",
-      "StructureDefinition-lmdi-patient.html" : "Pasient",
-      "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel",
       "StructureDefinition-lmdi-organization.html" : "Organisasjon",
       "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose",
+      "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel",
+      "StructureDefinition-lmdi-patient.html" : "Pasient",
+      "StructureDefinition-lmdi-practitionerrole.html" : "Rolle helsepersonell",
+      "StructureDefinition-lmdi-observation-tmp.html" : "Observasjon (kladd)",
+      "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel",
+      "StructureDefinition-lmdi-episodeofcare-institusjonsopphold.html" : "Institusjonsopphold",
       "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering"
     },
     {
