@@ -57,12 +57,15 @@ Description: """Beskriver administrasjon av legemiddel til pasient på institusj
 // TODO: #18 Administrasjonsvei (Volven OID=7477) - bruke som utkast
 * dosage.route 1..1
 * dosage.route ^short = "Administrasjonsvei"
+* dosage.route ^definition = "Aministrasjonsvei. Er begrenset til foreslått koding fra SNOMED CT-verdisettet til HL7 og Volven-kodeverket Administrasjonsvei (OID=7477) fra eResept. "
 * dosage.route.coding ^slicing.discriminator.type = #pattern
 * dosage.route.coding ^slicing.discriminator.path = "system"
 * dosage.route.coding ^slicing.rules = #closed
 * dosage.route.coding contains SCT 0..1 and 7477 0..1
+* dosage.route.coding[SCT] ^alias = "SNOMED CT"
 * dosage.route.coding[SCT].system = "http://snomed.info/sct"
 * dosage.route.coding[SCT].code from http://hl7.org/fhir/ValueSet/route-codes (required)
+* dosage.route.coding[SCT] ^alias = "Administrasjonsvei (OID=7477)"
 * dosage.route.coding[7477].system = "urn:oid:2.16.578.1.12.4.1.1.7477"
 // * dosage.route.coding[7477].code from http://xxx (required)
 
