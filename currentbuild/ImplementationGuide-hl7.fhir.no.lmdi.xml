@@ -11,7 +11,7 @@
   <name value="Lmdi"/>
   <title value="Legemiddeldata fra institusjon til Legemiddelregisteret"/>
   <status value="draft"/>
-  <date value="2024-06-12T10:41:40+00:00"/>
+  <date value="2024-06-12T11:50:52+00:00"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>
   <contact>
     <name value="Folkehelseinstituttet (FHI)"/>
@@ -536,7 +536,7 @@
         <reference value="Condition/Diagnose-1-ICD10-OID"/>
       </reference>
       <name value="Diagnose-1-ICD10-OID"/>
-      <description value="Eksempel på diagnose"/>
+      <description value="Eksempel på diagnose ICD-10"/>
       <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose"/>
     </resource>
     <resource>
@@ -544,10 +544,10 @@
         <valueString value="Condition"/>
       </extension>
       <reference>
-        <reference value="Condition/Diagnose-2-ICD10-HL7"/>
+        <reference value="Condition/Diagnose-2-SNOMED-CT"/>
       </reference>
-      <name value="Diagnose-2-ICD10-HL7"/>
-      <description value="Eksempel på diagnose"/>
+      <name value="Diagnose-2-SNOMED-CT"/>
+      <description value="Eksempel på diagnose SNOMED CT og ICD-10"/>
       <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose"/>
     </resource>
     <resource>

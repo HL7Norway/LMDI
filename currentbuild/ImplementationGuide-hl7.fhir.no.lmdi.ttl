@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Lmdi"] ; # 
   fhir:title [ fhir:v "Legemiddeldata fra institusjon til Legemiddelregisteret"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-12T10:41:40+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-12T11:50:52+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;
@@ -614,7 +614,7 @@
          fhir:reference [ fhir:v "Condition/Diagnose-1-ICD10-OID" ]
        ] ;
        fhir:name [ fhir:v "Diagnose-1-ICD10-OID" ] ;
-       fhir:description [ fhir:v "Eksempel på diagnose" ] ;
+       fhir:description [ fhir:v "Eksempel på diagnose ICD-10" ] ;
        fhir:example [
          fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose"^^xsd:anyURI ;
          fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose>
@@ -625,11 +625,11 @@
          fhir:value [ fhir:v "Condition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.no/fhir/ig/lmdi/Condition/Diagnose-2-ICD10-HL7> ;
-         fhir:reference [ fhir:v "Condition/Diagnose-2-ICD10-HL7" ]
+         fhir:link <http://hl7.no/fhir/ig/lmdi/Condition/Diagnose-2-SNOMED-CT> ;
+         fhir:reference [ fhir:v "Condition/Diagnose-2-SNOMED-CT" ]
        ] ;
-       fhir:name [ fhir:v "Diagnose-2-ICD10-HL7" ] ;
-       fhir:description [ fhir:v "Eksempel på diagnose" ] ;
+       fhir:name [ fhir:v "Diagnose-2-SNOMED-CT" ] ;
+       fhir:description [ fhir:v "Eksempel på diagnose SNOMED CT og ICD-10" ] ;
        fhir:example [
          fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose"^^xsd:anyURI ;
          fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose>

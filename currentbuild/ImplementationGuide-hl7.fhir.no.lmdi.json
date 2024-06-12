@@ -10,7 +10,7 @@
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-06-12T10:41:40+00:00",
+  "date" : "2024-06-12T11:50:52+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -698,7 +698,7 @@
         "reference" : "Condition/Diagnose-1-ICD10-OID"
       },
       "name" : "Diagnose-1-ICD10-OID",
-      "description" : "Eksempel på diagnose",
+      "description" : "Eksempel på diagnose ICD-10",
       "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose"
     },
     {
@@ -707,10 +707,10 @@
         "valueString" : "Condition"
       }],
       "reference" : {
-        "reference" : "Condition/Diagnose-2-ICD10-HL7"
+        "reference" : "Condition/Diagnose-2-SNOMED-CT"
       },
-      "name" : "Diagnose-2-ICD10-HL7",
-      "description" : "Eksempel på diagnose",
+      "name" : "Diagnose-2-SNOMED-CT",
+      "description" : "Eksempel på diagnose SNOMED CT og ICD-10",
       "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose"
     },
     {

@@ -1,13 +1,13 @@
 Lmdi : Validation Results
 =========================================
 
-err = 37, warn = 24, info = 3
+err = 37, warn = 24, info = 4
 IG Publisher Version: 1.6.11
-Generated Wed Jun 12 10:44:43 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.6.6 (canonical = http://hl7.no/fhir/ig/lmdi)
+Generated Wed Jun 12 11:53:59 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.6.6 (canonical = http://hl7.no/fhir/ig/lmdi)
  Build Errors : 7 / 5 / 0
  /github/workspace/LMDI/fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Condition-Diagnose-1-ICD10-OID : 2 / 1 / 2
- /github/workspace/LMDI/fsh-generated/resources/Condition-Diagnose-2-ICD10-HL7 : 3 / 1 / 1
+ /github/workspace/LMDI/fsh-generated/resources/Condition-Diagnose-2-SNOMED-CT : 3 / 1 / 2
  /github/workspace/LMDI/fsh-generated/resources/EpisodeOfCare-Institusjonsopphold-1-Sykehjem : 4 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Medication-Medisin-1-LegemiddelDose-Oxycodone : 0 / 0 / 1
@@ -50,7 +50,7 @@ WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-
 WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 275, column 4: The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 237 other files)
 WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.change.history.html#/html/body/script at Line 201, column 4: The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 130 other files)
 ERROR: /github/workspace/LMDI/output/Condition-Diagnose-1-ICD10-OID.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 717: The link 'eksempel-pasient-1234567890' for "eksempel-pasient-1234567890" cannot be resolved
-ERROR: /github/workspace/LMDI/output/Condition-Diagnose-2-ICD10-HL7.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 716: The link 'eksempel-pasient-1234567890' for "eksempel-pasient-1234567890" cannot be resolved
+ERROR: /github/workspace/LMDI/output/Condition-Diagnose-2-SNOMED-CT.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 821: The link 'eksempel-pasient-1234567890' for "eksempel-pasient-1234567890" cannot be resolved
 ERROR: /github/workspace/LMDI/output/EpisodeOfCare-Institusjonsopphold-1-Sykehjem.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 635: The link 'pasientreferanse-1234567' for "pasientreferanse-1234567" cannot be resolved
 ERROR: /github/workspace/LMDI/output/EpisodeOfCare-Institusjonsopphold-1-Sykehjem.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 734: The link 'sykehjemref-1234567' for "sykehjemref-1234567" cannot be resolved
 ERROR: /github/workspace/LMDI/output/MedicationAdministration-Administrering-10.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 1451: The link 'uuid:9b62d7e8-df64-47b7-9fe1-38bc45795d82' for "uuid:9b62d7e8-df64-47b7-9fe1-38bc45795d82" cannot be resolved
@@ -62,10 +62,11 @@ INFORMATION: Condition/Diagnose-1-ICD10-OID: Condition.code.coding[0].system: A 
 ERROR: Condition/Diagnose-1-ICD10-OID: Condition.subject: Unable to resolve resource with reference 'eksempel-pasient-1234567890'
 WARNING: Condition/Diagnose-1-ICD10-OID: Condition: Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
 ERROR: Condition.text.div: Hyperlink 'eksempel-pasient-1234567890' at 'div/p/a' for 'eksempel-pasient-1234567890' does not resolve
-== fsh-generated/resources/Condition-Diagnose-2-ICD10-HL7.json ==
-ERROR: Condition/Diagnose-2-ICD10-HL7: Condition.code.coding[0].system: The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/icd-10')
-ERROR: Condition/Diagnose-2-ICD10-HL7: Condition.subject: Unable to resolve resource with reference 'eksempel-pasient-1234567890'
-WARNING: Condition/Diagnose-2-ICD10-HL7: Condition: Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
+== fsh-generated/resources/Condition-Diagnose-2-SNOMED-CT.json ==
+ERROR: Condition/Diagnose-2-SNOMED-CT: Condition.code.coding[0].display: Wrong Display Name 'frykt for høyder' for http://snomed.info/sct#276241001. Valid display is one of 3 choices: 'Fear of heights', 'Fear of heights (finding)' or 'Fear of high places' (for the language(s) '--')
+INFORMATION: Condition/Diagnose-2-SNOMED-CT: Condition.code.coding[1]: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.7110' could not be found, so the code cannot be validated
+ERROR: Condition/Diagnose-2-SNOMED-CT: Condition.subject: Unable to resolve resource with reference 'eksempel-pasient-1234567890'
+WARNING: Condition/Diagnose-2-SNOMED-CT: Condition: Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
 ERROR: Condition.text.div: Hyperlink 'eksempel-pasient-1234567890' at 'div/p/a' for 'eksempel-pasient-1234567890' does not resolve
 == fsh-generated/resources/EpisodeOfCare-Institusjonsopphold-1-Sykehjem.json ==
 ERROR: EpisodeOfCare/Institusjonsopphold-1-Sykehjem: EpisodeOfCare.patient: Unable to resolve resource with reference 'pasientreferanse-1234567'
