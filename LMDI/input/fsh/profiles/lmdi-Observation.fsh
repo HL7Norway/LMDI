@@ -2,9 +2,9 @@ Profile: LmdiObservation
 Parent: Observation
 Id: lmdi-observation-tmp
 Title: "Observasjon (kladd)"
-Description: "Observation"
+Description: "Observation. Kommentar: For høyde og vekt skal denne baseres på nasjonal eller internasjonal Vital Signs IG når den foreligger. "
 * ^status = #draft
-* ^date = "2024-06-06"
+* ^date = "2024-06-12"
 * ^publisher = "Folkehelseinstituttet"
 // Krav: Vekt etc. 
 // Bør kunne bruke no-domain-VitalSigns direkte (eller hvordan det ender opp)
