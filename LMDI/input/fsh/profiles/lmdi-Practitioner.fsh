@@ -15,14 +15,17 @@ Description: "Helsepersonell som har foreskrevet eller administrert legemiddelet
 * identifier.value ^short = "Selve identifikatoren"
 // MVP: HPR-nummer
 * identifier.system = "urn:oid:2.16.578.1.12.4.1.4.4"
-* identifier.system ^short = "MIDLERTIDIG låst til HPR"
+* identifier.system ^short = "Nummer fra Helsepersonellregisteret (NPR)"
+* identifier.system ^definition = "In Norway all registered health care personnel is registered in the Helsepersonellregister (HPR) and is assigned a HPR-number that is used to identify the health care practitioner. Health care personnel not registered in HPR can use FNR for identification."
+* identifier.system ^comment = "Midlertidig låst til HPR. Engelsk beskrivelse fra no-basis-practitioner."
 
 // Krav: Spesialitet (qualification)
 * qualification MS
 * qualification ^short = "Spesialitet"
 // MVP: urn:oid:2.16.578.1.12.4.1.1.7426 - Godkjent spesialitet for helsepersonell registrert i HPR.
-// Se Volven https://volven.no/produkt.asp?id=521762&catID=3&subID=8
-* qualification.code.coding.system = "urn:oid:2.16.578.1.12.4.1.1.7426" 
+* qualification.code.coding.system = "urn:oid:2.16.578.1.12.4.1.1.7426"
+* qualification.code.coding.system ^short = "Helsepersonellregisterets (HPR) klassifikasjon av spesialiteter (OID=7426)"
+* qualification.code.coding.system ^definition = "Dette kodeverket inneholder koder for spesialiteter i Helsepersonellregisteret. Kilde: Forskrift om spesialistgodkjenning av helsepersonell og turnusstillinger for leger."
 
 
 // EKSEMPLER
