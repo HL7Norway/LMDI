@@ -9,6 +9,7 @@ Description: "Organisasjon eller organisasjonsenhet. "
 
 // Krav (nasjonalt): Basere på no-basis-Organization
 // Krav: Organisasjons-ID som ENH eller RESH (identifier)
+// TODO #20 Lage slice for ENH+RESH i Organization
 * identifier 1..* 
 * identifier ^short = "Unik identifikasjon av behandlingsenhet / avdeling / intitusjon"
 
