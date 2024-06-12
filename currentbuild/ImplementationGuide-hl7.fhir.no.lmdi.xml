@@ -11,7 +11,7 @@
   <name value="Lmdi"/>
   <title value="Legemiddeldata fra institusjon til Legemiddelregisteret"/>
   <status value="draft"/>
-  <date value="2024-06-12T12:45:40+00:00"/>
+  <date value="2024-06-12T13:38:27+00:00"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>
   <contact>
     <name value="Folkehelseinstituttet (FHI)"/>
@@ -558,7 +558,7 @@
         <reference value="StructureDefinition/lmdi-practitioner"/>
       </reference>
       <name value="Helsepersonell"/>
-      <description value="Helsepersonell som har foreskrevet eller administrert legemiddelet"/>
+      <description value="Helsepersonell som har foreskrevet eller administrert legemiddelet. &#xA;&#xA;Basisprofil for Norwegian Practitioner information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. Should be used as a basis for further profiling in use-cases where specific identity information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.&#xA;&#xA;2019-03 - The no-basis-Practitioner resource main use-case is to represent the actual Practitioner, e.g. a person. The resource can include information about how to identify the practitioner in addition to the practitioner's education, qualifications and speciality. The resource can also include approvals and other centrally registered capabilities recorded for the practitioner.&#xA;&#xA;(Engelsk tekst Hentet fra no-basis-practitioner.)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
