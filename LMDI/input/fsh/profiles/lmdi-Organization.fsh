@@ -1,3 +1,5 @@
+// TODO #8 Utvide Organisasjon med utvidelse for kommunenummer fra no-basis
+
 Profile: LmdiOrganization
 Parent: Organization
 Id: lmdi-organization
@@ -20,24 +22,17 @@ Description: "Organisasjon eller organisasjonsenhet. "
 * identifier[RESH].system = "urn.oid:2.16.578.1.12.4.1.4.102" 
 * identifier[ENH].value 1..1
 * identifier[RESH].value 1..1
-
-// Krav: Type organisasjon / organisatorisk nivå / betegnelse
 * type MS
 * type ^short = "Organisatorisk nivå / betegnelse"
 * type ^comment = "Mangler gode kodeverk. De som er i no-basis-organization er ikke tilstrekkelig. "
-
-// Krav: Navn (name)
 * name MS
 * name ^short = "Navn på organisasjonsenhet"
 * name ^definition = "Eks. avdelingsnavn / institsjonsnavn / org navn"
-
-// Krav: Kommune (.district.extension:municipalitycode, fra no-basis)
-// TODO #8 Utvide Organisasjon med utvidelse for kommunenummer fra no-basis
+* name ^comment = "Inkluderer helst hvis opplysningen finnes."
 * address MS
 * address.district.extension contains NoBasisMunicipalitycode named municipalitycode 0..1
 * address.district.extension[municipalitycode] ^short = "Coded value for municipality/county Norwegian kommune"
 * address.district.extension[municipalitycode] ^definition = "Coded value for municipality/county Norwegian kommune"
-
 * partOf MS
 * partOf ^short = "Del av organisasjon"
 * partOf ^comment = "Er det behov for nivåer, rekursjon? NB! Kan bare peke oppover."
@@ -72,7 +67,6 @@ Description: "Eksempel på organisasjon - Primærhelsetjeneste"
 Instance: Organisasjon-2-Spesialist
 InstanceOf: LmdiOrganization
 Description: "Eksempel på organisasjon - spesialisthelsetjenesten med RESH."
-// RESH-id. Tydeligvis fortsatt lukket.
 * identifier[RESH].system = "urn.oid:2.16.578.1.12.4.1.4.102"
 * identifier[RESH].value = "09876-54"
 * name = "Cytologisk poliklinikk, Avdeling for patologi, Oslo universitetssykehus HF" 
