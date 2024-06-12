@@ -54,9 +54,12 @@ Description: """Beskriver administrasjon av legemiddel til pasient på institusj
 // Krav: Administrasjonsvei
 // ESS: Diskuter om det bør være 0..1 MS
 // Eksempler SNOMDED CT: https://www.hl7.org/fhir/R4/valueset-route-codes.html
-// Volven: https://volven.no/produkt.asp?id=521599&catID=3&subID=8 <- gjenbrukes?
+// TODO: #18 Administrasjonsvei (Volven OID=7477) - bruke som utkast
+// Låser til SNOMED CT-verdisettet til HL7 inntil videre
 * dosage.route 1..1
 * dosage.route ^short = "Administrasjonsvei"
+* dosage.route.coding.system = "http://snomed.info/sct"
+* dosage.route.coding.code from http://hl7.org/fhir/ValueSet/route-codes (required)
 
 // Krav: Administrert mengde
 * dosage.dose 1..1
