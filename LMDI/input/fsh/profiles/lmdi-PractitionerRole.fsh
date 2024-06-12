@@ -11,7 +11,7 @@ Description: "Rollen til helsepersonellet eller personen som har foreskrevet ell
 * code ^comment = "Det finnes p.t. ikke gode nok kodeverk/verdisett, spesielt innenfor primærhelsetjenesten. Som placeholder settes HL7 FHIR sitt eksempel-verdisett basert på SNOMED CT. Se issue #14 på GitHub."
 * code.coding.system = "http://snomed.info/sct"
 // Alternativ: required | extensible | preferred | example
-* code.coding.code from http://hl7.org/fhir/ValueSet/practitioner-role (preferred)
+* code.coding.code from http://hl7.org/fhir/ValueSet/practitioner-role (example)
 
 // EKSEMPLER
 Instance: RolleHelsepersonell-1-Hjemmehjelp
