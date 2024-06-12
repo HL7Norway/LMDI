@@ -9,6 +9,7 @@ Description: "Informasjon om pasienten"
 * ^status = #draft
 * ^date = "2024-06-12"
 * ^publisher = "Folkehelseinstituttet"
+
 * identifier MS
 * identifier ^short = "Identifikator for pasienten."
 * identifier ^definition = "Identifikator for pasienten. Skal være fødselsnummer (FNR) eller D-nummer (DNR)."
@@ -26,10 +27,12 @@ Description: "Informasjon om pasienten"
 * identifier[FNR].system ^short = "The identification of the Fødselsnummer"
 * identifier[FNR].value 1..1
 * identifier[DNR].value 1..1
+
 * gender MS
 * gender ^short = "Kjønn"
 * gender ^definition = "Pasientens kjønn. Skal oppgis sammen med fødselsdato hvis det ikke finnes pasient-ID."
 * gender ^comment = "Inkluderer helst hvis opplysningen finnes."
+
 * birthDate MS
 * birthDate ^short = "Fødselsdato"
 * birthDate ^definition = "Pasientens fødselsdato. Skal oppgis sammen med kjønn hvis det ikke finnes pasient-ID."

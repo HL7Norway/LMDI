@@ -1,10 +1,14 @@
+// Krav: Kode, som FEST-id, SNOMED-CT etc., obligatorisk
+// Opprette NamingSystem for FEST #12 <- issue
+// Slicing? Hva kan LMR ta i mot? Hvilket nivå skal man rapportere på? Hva med "ukurrante" legemidler? 
+
 Profile: Legemiddel
 Parent:   Medication
 Id:       lmdi-legemiddel
 Title:    "Legemiddel"
 Description: "Beskrivelse av legemiddel."
 * ^status = #draft
-* ^date = "2024-05-30"
+* ^date = "2024-06-12"
 * ^publisher = "Folkehelseinstituttet"
 
 // Se basis-profiler og evt. eResept/PLL
@@ -13,10 +17,7 @@ Description: "Beskrivelse av legemiddel."
 * identifier MS
 * identifier ^short = "Legemiddelets identifikasjon"
 * identifier ^definition = "Legemiddelets identifikasjon i henhold til TODO"
-
-// Krav: Kode, som FEST-id, SNOMED-CT etc., obligatorisk
-// Opprette NamingSystem for FEST #12 <- issue
-// Slicing? Hva kan LMR ta i mot? Hvilket nivå skal man rapportere på? Hva med "ukurrante" legemidler? 
+* identifier ^comment = "Finnes ikke p.t."
 
 // Notater FEST:
 // - Katalog LegemiddelVirkestoff: benyttes ved virkestoffrekvirering
@@ -24,7 +25,6 @@ Description: "Beskrivelse av legemiddel."
 // - Katalog LegemiddelPakningMerkevare: rekvirering av en bestemt pakning av en merkevare (varenummer). I figuren er denne katalogen forkortet til LegemiddelPakning.
 // - Katalog LegemiddelDose: rekvirering av en bestemt merkevare med ID (LMR-nummer) som representerer minste plukkbare enhet, f.eks. 1 ampulle eller 1 tablett.
 // - Katalog Handelsvare: inneholder handelsvarer med refusjon, det vil si medisinsk forbruksmateriell, næringsmidler og brystproteser.
-
 
 * code 1..1
 // * code.system = etc. 

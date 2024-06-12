@@ -1,3 +1,6 @@
+// TODO #5 "Helsepersonell" skal baseres på no-basis-practitioner
+// Se: https://simplifier.net/HL7Norwayno-basis/NoBasisPractitioner/~overview 
+
 Profile:     LmdiPractitioner
 Id:          lmdi-practitioner
 Parent:      Practitioner
@@ -14,8 +17,6 @@ Basisprofil for Norwegian Practitioner information. Defined by The Norwegian Dir
 * ^date = "2024-06-12"
 * ^publisher = "Folkehelseinstituttet"
 
-// TODO #5 "Helsepersonell" skal baseres på no-basis-practitioner
-// Se: https://simplifier.net/HL7Norwayno-basis/NoBasisPractitioner/~overview 
 * identifier 1..1
 * identifier.value 1..1 
 * identifier.value ^short = "Selve identifikatoren"

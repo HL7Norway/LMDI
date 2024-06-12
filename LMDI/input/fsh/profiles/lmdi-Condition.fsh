@@ -6,8 +6,10 @@ Description: "Diagnosen som pasienten har fått rekvirert og administrert legemi
 * ^status = #draft
 * ^date = "2024-06-12"
 * ^publisher = "Folkehelseinstituttet"
+
 * subject ^short = "Pasienten diagnosen er knyttet til."
 * subject only Reference(Patient)
+
 * code 1..1
 * code ^short = "Diagnosekode."
 * code ^definition = "Diagnosekode. Det er mulig å bruke ICD-10, ICD-11, ICPC-2 og SNOMED CT."

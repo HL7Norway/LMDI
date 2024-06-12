@@ -1,3 +1,7 @@
+// Bør kunne bruke no-domain-VitalSigns direkte (eller hvordan det ender opp)
+// alternativt internasjonal --> VitalSigns <---. 
+// partOf = Reference(MedicationAdministration) ???
+
 Profile: LmdiObservation
 Parent: Observation
 Id: lmdi-observation-tmp
@@ -6,15 +10,13 @@ Description: "Observation. Kommentar: For høyde og vekt skal denne baseres på 
 * ^status = #draft
 * ^date = "2024-06-12"
 * ^publisher = "Folkehelseinstituttet"
-// Krav: Vekt etc. 
-// Bør kunne bruke no-domain-VitalSigns direkte (eller hvordan det ender opp)
-// alternativt internasjonal --> VitalSigns <---. 
-// Peker på subject = patient
-// partOf = Reference(MedicationAdministration) ???
-// Foreslår at status = final, dvs. man sender kun "endelige" målinger
+
 * status = #final
-// SNOMED CT <- Eksempel
+* status ^comment = "Kun endelige observasjoner skal være med."
+
 * code.coding.system = "http://snomed.info/sct"
+* code.coding.system ^comment = "SNOMED CT er brukt som eksempel, Vital Signs IG etc. vil åpne for andre kodeverk om nødvendig."
+
 * valueQuantity MS
 * valueQuantity.system = "http://unitsofmeasure.org"
 

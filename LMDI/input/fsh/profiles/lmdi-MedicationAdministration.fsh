@@ -1,3 +1,11 @@
+// Krav: Infusjon
+// TODO #23 Lage eksempel på (lang) infusjon for MedicationAdministration
+// ESS: Er vel del av administrasjonsvei? Som f.eks. SCT#intravenøs administrasjonsvei 47625008, SCT#26643006 Oral route
+// Se på følgende kilder:
+// eResept, Pasientens legemiddelliste / sentral forskrivningsmodul (eResept) / HSØ Lukket legemiddelsløyfe - H-resept, IDMP/UNICOM
+// Legge til støtte for no-basis-Patient senere
+// TODO #19 Sjekk hvordan Pasientent legemiddelliste (PLL) bruker dose med FHIR
+
 Profile: AdministrertLegemiddel
 Parent:   MedicationAdministration
 Id:       lmdi-administrert-legemiddel
@@ -54,18 +62,9 @@ Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legem
 * dosage.route.coding[7477].system = "urn:oid:2.16.578.1.12.4.1.1.7477"
 // * dosage.route.coding[7477].code from http://xxx (required)
 
-// Krav: Administrert mengde
-// TODO #19 Sjekk hvordan Pasientent legemiddelliste (PLL) bruker dose med FHIR
 * dosage.dose 1..1
 * dosage.dose ^short = "Administrert mengde"
 * dosage.dose ^definition = "Administrert mengde av legemiddelet som det blir referert til."
-
-// Krav: Infusjon
-// TODO #23 Lage eksempel på (lang) infusjon for MedicationAdministration
-// ESS: Er vel del av administrasjonsvei? Som f.eks. SCT#intravenøs administrasjonsvei 47625008, SCT#26643006 Oral route
-// Se på følgende kilder:
-// eResept, Pasientens legemiddelliste / sentral forskrivningsmodul (eResept) / HSØ Lukket legemiddelsløyfe - H-resept, IDMP/UNICOM
-// Legge til støtte for no-basis-Patient senere
 
 // VALUE SETS
 ValueSet: LegemiddeladministreringStatus

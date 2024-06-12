@@ -1,4 +1,3 @@
-// Institusjonsopphold basert på EpisodeOfCare
 Profile: LmdiEpisodeOfCareInstitusjonsopphold
 Parent: EpisodeOfCare
 Id: lmdi-episodeofcare-institusjonsopphold
@@ -7,10 +6,14 @@ Description: "Beskrivelse av pasientens opphold i institusjon. Dette kan være b
 * ^status = #draft
 * ^date = "2024-06-12"
 * ^publisher = "Folkehelseinstituttet"
+
 * diagnosis ^comment = "TODO #15 Krav: Diagnose (utskrivningsdiagnose) (referanse). Sjekke om dette faktisk skal/bør være med." // TODO #15
+
 * patient ^short = "Pasienten som institusjonsoppholdet gjelder."
+
 * managingOrganization 1..1
 * managingOrganization ^short = "Organisasjonen (institusjonen) som har ansvar for oppholdet"
+
 * period MS
 * period ^short = "Periode for pasientens (antatte) opphold i institusjon."
 
