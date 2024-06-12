@@ -40,9 +40,7 @@ Description: """Beskriver administrasjon av legemiddel til pasient på institusj
 * effective[x] only dateTime
 * effective[x] ^short = "Tidspunkt for administrasjon"
 
-// Krav: Helsepersonell, må støtte
-// TODO #9 Spørsmål: Skal det (på sikt) være flere som administerer, f.eks pasient selv (dispenser), eller kun helsepersonell?
-// TODO #13 Legge inn støtte for at både Practitioner og PractitionerRole i MedicationAdministration
+// Krav: Referanse til helsepersonell eller rolle helsepersonell
 * performer and performer.actor MS
 * performer.actor only Reference (Practitioner) or Reference (PractitionerRole)
 * performer.actor ^short = "Hvem som har administrert legemiddelet"
