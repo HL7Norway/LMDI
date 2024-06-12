@@ -9,56 +9,38 @@ Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legem
 * ^date = "2024-06-12"
 * ^publisher = "Folkehelseinstituttet"
 
-// Se på følgende kilder:
-// eResept, Pasientens legemiddelliste / sentral forskrivningsmodul (eResept)
-// HSØ Lukket legemiddelsløyfe - H-resept, IDMP/UNICOM
-// TODO Se på navngivning iht. "Best Practice / HL7 Norge"
-// Legge til støtte for no-basies-Patient senere
-
-// Krav: Status administrering = completeded, påkrevd (allerede 1..1 i ressurs)
-// Må nok også tillate #entered-in-error 
 * status from LegemiddeladministreringStatus
-// * status = #entered-in-error
 * status ^short = "Status administrering."
-* status ^definition = "Status administrering. Skal alltid være satt til utført = completed. "
-
-// Krav: Legemiddel, påkrevd
-// * medication 1..1 (allerede 1..1 i ressursen)
-// YFS: legg til no-basis-Medication
-
-// * subject only Reference(Patient or $no-basis-Patient)
+* status ^definition = "Status administrering. Skal vanligvis settes til 'Gjennomført' (completed), men 'Feilregistrert' (entered-in-error) MÅ benyttes hvis registreringen inneholder en alvorlig feil og skal slettes. "
+* medication[x] ^short = "Administrert legemiddel."
 * subject only Reference(Patient)
 * subject ^short = "Referanse til pasient"
 * subject ^definition = "Det skal alltid være en referanse til pasienten som har blitt administrert legemiddel."
 
-// Krav: Opphold, må støtte
-* context MS // peke på EpisodeOfCare
+* context MS
 * context only Reference(EpisodeOfCare)
-* context ^short = "Referanse til aktuelt opphold"
-* context ^definition = "Referanse til hvilket opphold eller avtale pasienten var på da legemiddelet ble administrert."
+* context ^short = "Referanse til aktuelt institusjonsopphold"
+* context ^definition = "Referanse til hvilket institusjonsopphold eller avtale pasienten var på da legemiddelet ble administrert."
+* context ^comment = "TODO Encounter må vurderes om nødvendig, f.eks. hos spesialist. " // TODO 
 
-// Krav: Tidspunkt for administrasjon, påkrevd dateTime
-// NB! R5 bruker "occurence"
 * effective[x] only dateTime
 * effective[x] ^short = "Tidspunkt for administrasjon"
+* effective[x] ^comment = "NB! R5 bruker 'occurence'. Behov for 'Period' ved infusjon?"
 
-// Krav: Referanse til helsepersonell eller rolle helsepersonell
 * performer and performer.actor MS
 * performer.actor only Reference (Practitioner) or Reference (PractitionerRole)
 * performer.actor ^short = "Hvem som har administrert legemiddelet"
 * performer.actor ^definition = "Utfører av administrering kan være helsepersonell eller en rolle knyttet til institusjonen eller pasienten. "
+* performer.actor ^comment = "TODO #21 Tolkning: Det viktigste er helsepersonellets rolle ved institusjonen, og ikke selve helsepersonellet?"
 
-// Krav: Referanse til rekvisisjon, må støtte
 * request MS
 * request ^short = "Referanse til rekvisisjon"
+* request ^comment = "Usikker på hvordan dette skal støttes p.t."
 
-// Krav: Administrasjonsvei.  
-// ESS: Diskuter om det bør være 0..1 MS.
-// ESS: Legger opp til både 7477 og SCT.
-// TODO: #18 Administrasjonsvei (Volven OID=7477) - bruke som utkast
 * dosage.route 1..1
 * dosage.route ^short = "Administrasjonsvei"
 * dosage.route ^definition = "Aministrasjonsvei. Er begrenset til foreslått koding fra SNOMED CT-verdisettet til HL7 og Volven-kodeverket Administrasjonsvei (OID=7477) fra eResept. "
+* dosage.route ^comment = "TODO #22 Diskuter om det bør være 0..1 hvis man ikke har registret administrasjonsvei."
 * dosage.route.coding ^slicing.discriminator.type = #pattern
 * dosage.route.coding ^slicing.discriminator.path = "system"
 * dosage.route.coding ^slicing.rules = #closed
@@ -79,10 +61,13 @@ Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legem
 * dosage.dose ^definition = "Administrert mengde av legemiddelet som det blir referert til."
 
 // Krav: Infusjon
+// TODO #23 Lage eksempel på (lang) infusjon for MedicationAdministration
 // ESS: Er vel del av administrasjonsvei? Som f.eks. SCT#intravenøs administrasjonsvei 47625008, SCT#26643006 Oral route
+// Se på følgende kilder:
+// eResept, Pasientens legemiddelliste / sentral forskrivningsmodul (eResept) / HSØ Lukket legemiddelsløyfe - H-resept, IDMP/UNICOM
+// Legge til støtte for no-basis-Patient senere
 
 // VALUE SETS
-
 ValueSet: LegemiddeladministreringStatus
 Id: lmdi-medicationadministration-status
 Title: "Status for legemiddeladministrasjon"
