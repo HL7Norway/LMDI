@@ -6,25 +6,12 @@ Description: "Legemiddelrekvirering - ordinering, resept eller annen rekvirering
 * ^status = #draft
 * ^date = "2024-05-27"
 * ^publisher = "Folkehelseinstituttet"
-
-// Krav: ForskrivningsID
-// * identifier MS
-
-// Krav: Status rekvisisjon (status), allerede 1..1
-// * status 1..1
+* identifier ^comment = "TODO / ESS / Krav: ForskrivningsID. Det er ytret behov for en (business-)identifier for forskrivning. Dette finnes ikke hvis det ikke er snakk om en faktisk instans, som f.eks. en M1 Resept (eResept). Mulig dette kan benyttes for interne ID'er ved f.eks. forordning på sykehus. Uvisst behov. "
 * status ^short = "Status rekvisisjon"
-
-// Krav: Hensikt (intent), allerede 1..1
 * intent ^short = "Hensikten med forskrivningen"
-
-// Krav: Legemiddel (medication), allerede 1..1
 * medication[x] ^short = "Referanse til legemiddel"
-
-// Krav: Pasient (subject), allerede 1..1, men åpen
 * subject only Reference(Patient)
 * subject ^short = "Referanse til pasient"
-
-// Krav: Rekvirent (practitioner)
 * requester 1..1
 * requester ^short = "Referanse til rekvirent"
 * requester only Reference(Practitioner)
