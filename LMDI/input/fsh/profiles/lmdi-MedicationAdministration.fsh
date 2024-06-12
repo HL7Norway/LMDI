@@ -51,15 +51,20 @@ Description: """Beskriver administrasjon av legemiddel til pasient på institusj
 * request MS
 * request ^short = "Referanse til rekvisisjon"
 
-// Krav: Administrasjonsvei
-// ESS: Diskuter om det bør være 0..1 MS
-// Eksempler SNOMDED CT: https://www.hl7.org/fhir/R4/valueset-route-codes.html
+// Krav: Administrasjonsvei.  
+// ESS: Diskuter om det bør være 0..1 MS.
+// ESS: Legger opp til både 7477 og SCT.
 // TODO: #18 Administrasjonsvei (Volven OID=7477) - bruke som utkast
-// Låser til SNOMED CT-verdisettet til HL7 inntil videre
 * dosage.route 1..1
 * dosage.route ^short = "Administrasjonsvei"
-* dosage.route.coding.system = "http://snomed.info/sct"
-* dosage.route.coding.code from http://hl7.org/fhir/ValueSet/route-codes (required)
+* dosage.route.coding ^slicing.discriminator.type = #pattern
+* dosage.route.coding ^slicing.discriminator.path = "system"
+* dosage.route.coding ^slicing.rules = #closed
+* dosage.route.coding contains SCT 0..1 and 7477 0..1
+* dosage.route.coding[SCT].system = "http://snomed.info/sct"
+* dosage.route.coding[SCT].code from http://hl7.org/fhir/ValueSet/route-codes (required)
+* dosage.route.coding[7477].system = "urn:oid:2.16.578.1.12.4.1.1.7477"
+// * dosage.route.coding[7477].code from http://xxx (required)
 
 // Krav: Administrert mengde
 // TODO #19 Sjekk hvordan Pasientent legemiddelliste (PLL) bruker dose med FHIR
@@ -96,9 +101,9 @@ Description: "Eksempel på administrering av legemiddel"
 * performer.actor = Reference(https://fhir.npr.no/helsepersonell/1234567890)
 * effectiveDateTime = "2024-05-28"
 * dosage.text = "Svelge to spiseskjéer"
-* dosage.route.coding.system = "http://snomed.info/sct"
-* dosage.route.coding.code = #421521009
-* dosage.route.coding.display = "Swallow"
+* dosage.route.coding[SCT].system = "http://snomed.info/sct"
+* dosage.route.coding[SCT].code = #421521009
+* dosage.route.coding[SCT].display = "Swallow"
 * dosage.route.text = "oralt"
 * dosage.dose.value = 2.0
 * dosage.dose.unit = "metric tablespoon"
