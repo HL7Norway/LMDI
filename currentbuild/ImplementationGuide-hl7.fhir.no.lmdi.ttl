@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Lmdi"] ; # 
   fhir:title [ fhir:v "Legemiddeldata fra institusjon til Legemiddelregisteret"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-12T22:02:25+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-12T22:49:19+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;
@@ -544,6 +544,21 @@
        fhir:name [ fhir:v "Administrering-10" ] ;
        fhir:description [ fhir:v "Utfyllende eksempel" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationAdministration" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.no/fhir/ig/lmdi/MedicationAdministration/Administrering-2-Infusjon> ;
+         fhir:reference [ fhir:v "MedicationAdministration/Administrering-2-Infusjon" ]
+       ] ;
+       fhir:name [ fhir:v "Administrering-2-Infusjon" ] ;
+       fhir:description [ fhir:v "Eksempel på administrering av legemiddel - infusjon" ] ;
+       fhir:example [
+         fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-administrert-legemiddel"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-administrert-legemiddel>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

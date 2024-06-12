@@ -1,9 +1,9 @@
 Lmdi
 =========================================
 
-Generic: line 0, col 0, Warning - The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 237 other files) (INVALID)
-Generic: line 0, col 0, Warning - The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 237 other files) (INVALID)
-Generic: line 0, col 0, Warning - The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 130 other files) (INVALID)
+Generic: line 0, col 0, Warning - The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 242 other files) (INVALID)
+Generic: line 0, col 0, Warning - The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 242 other files) (INVALID)
+Generic: line 0, col 0, Warning - The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 131 other files) (INVALID)
 Generic: line 0, col 0, Error - The link 'eksempel-pasient-1234567890' for "eksempel-pasient-1234567890" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'eksempel-pasient-1234567890' for "eksempel-pasient-1234567890" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'pasientreferanse-1234567' for "pasientreferanse-1234567" cannot be resolved (NOTFOUND)
@@ -35,6 +35,11 @@ Generic: line 0, col 0, Error - The link 'uuid:69fb46ff-8874-4cda-bc6a-53ea69330
 /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-10.json: line 11, col 4, Error - Unable to resolve resource with reference 'uuid:9b62d7e8-df64-47b7-9fe1-38bc45795d82' (STRUCTURE)
 /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-10.json: line 61, col 6, Error - The contained resource 'Helsepersonell-10' is not referenced to from elsewhere in the containing resource nor does it refer to the containing resource (dom-3) (INVALID)
 /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-10.json: line 0, col 0, Error - Hyperlink 'uuid:9b62d7e8-df64-47b7-9fe1-38bc45795d82' at 'div/p/a' for 'uuid:9b62d7e8-df64-47b7-9fe1-38bc45795d82' does not resolve (INVALID)
+/github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-2-Infusjon.json: line 40, col 24, Error - The value provided ('completed') was not found in the value set 'Status for legemiddeladministrasjon' (http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.7), and a code is required from this value set  (error message = The provided code '#completed' was not found in the value set 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.7'; The System URI could not be determined for the code 'completed' in the ValueSet 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.7') (CODEINVALID)
+/github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-2-Infusjon.json: line 41, col 4, Error - Unable to resolve resource with reference 'https://fhir.legemidler.example.com/legemidler/0987654321' (STRUCTURE)
+/github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-2-Infusjon.json: line 44, col 4, Error - Unable to resolve resource with reference 'https://fhi.no/fhir/lmdi/pasient/12345678' (STRUCTURE)
+/github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-2-Infusjon.json: line 47, col 4, Error - Unable to resolve resource with reference 'https://fhi.no/fhir/lmdi/institusjonsopphold/428ff23d-7a65-4c67-8059-6a1d07d287e3' (STRUCTURE)
+/github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-2-Infusjon.json: line 52, col 8, Error - Unable to resolve resource with reference 'https://fhir.npr.no/helsepersonell/1234567890' (STRUCTURE)
 /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-20.json: line 8, col 4, Error - Unable to resolve resource with reference 'https://fhi.no/fhir/lmdi/pasient/12345678' (STRUCTURE)
 /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-20.json: line 11, col 4, Error - Unable to resolve resource with reference 'uuid:9b62d7e8-df64-47b7-9fe1-38bc45795d82' (STRUCTURE)
 /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-20.json: line 16, col 8, Error - Unable to resolve resource with reference 'https://fhir.npr.no/helsepersonell/1234567890' (STRUCTURE)
@@ -72,5 +77,5 @@ Generic: line 0, col 0, Error - The link 'uuid:69fb46ff-8874-4cda-bc6a-53ea69330
 /github/workspace/LMDI/fsh-generated/resources/ValueSet-lmdi-medicationadministration-status.json: line 0, col 0, Warning - The code 'entered-in-error' is not valid in the system http://hl7.org/fhir/ValueSet/medication-admin-status (The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/medication-admin-status')) (BUSINESSRULE)
 /github/workspace/LMDI/fsh-generated/resources/ValueSet-lmdi-medicationadministration-status.json: line 0, col 0, Warning - Error from http://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/ValueSet/medication-admin-status (EXCEPTION)
 
-err = 37, warn = 22, info = 4
+err = 42, warn = 22, info = 4
 IG Publisher Version: 1.6.11

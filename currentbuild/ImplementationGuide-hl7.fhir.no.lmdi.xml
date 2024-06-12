@@ -11,7 +11,7 @@
   <name value="Lmdi"/>
   <title value="Legemiddeldata fra institusjon til Legemiddelregisteret"/>
   <status value="draft"/>
-  <date value="2024-06-12T22:02:25+00:00"/>
+  <date value="2024-06-12T22:49:19+00:00"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>
   <contact>
     <name value="Folkehelseinstituttet (FHI)"/>
@@ -472,6 +472,17 @@
       <name value="Administrering-10"/>
       <description value="Utfyllende eksempel"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/Administrering-2-Infusjon"/>
+      </reference>
+      <name value="Administrering-2-Infusjon"/>
+      <description value="Eksempel på administrering av legemiddel - infusjon"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-administrert-legemiddel"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

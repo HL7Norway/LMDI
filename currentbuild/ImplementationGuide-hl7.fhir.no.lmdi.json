@@ -10,7 +10,7 @@
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-06-12T22:02:25+00:00",
+  "date" : "2024-06-12T22:49:19+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -628,6 +628,18 @@
       "name" : "Administrering-10",
       "description" : "Utfyllende eksempel",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationAdministration"
+      }],
+      "reference" : {
+        "reference" : "MedicationAdministration/Administrering-2-Infusjon"
+      },
+      "name" : "Administrering-2-Infusjon",
+      "description" : "Eksempel på administrering av legemiddel - infusjon",
+      "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-administrert-legemiddel"
     },
     {
       "extension" : [{
