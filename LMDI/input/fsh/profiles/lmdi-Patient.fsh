@@ -1,19 +1,14 @@
+// TODO #6 "Pasient" skal baseres på no-basis-Patient
+// Spør FHI: Er kommunenummer for bosted og/eller tjeneste? Yngve sier begge. 
+
 Profile:     LmdiPatient
 Id:          lmdi-patient
 Parent:      Patient
 Title:       "Pasient"
 Description: "Informasjon om pasienten"
 * ^status = #draft
-* ^date = "2024-06-07"
+* ^date = "2024-06-12"
 * ^publisher = "Folkehelseinstituttet"
-
-// TODO #6 "Pasient" skal baseres på no-basis-Patient
-// Krav: MÅ være FNR eller DNR <- profileres
-// ESS: Må kanskje være MS hvis det er mulighet for kjønn+fdato
-// Spør FHI: Er kommunenummer for bosted eller tjeneste? Yngve sier begge. 
-// Slice med FNR + DNR, TODO usikker på mutual excl. 
-
-// Identifikator - Fødselsnummer eller D-nummer
 * identifier MS
 * identifier ^short = "Identifikator for pasienten."
 * identifier ^definition = "Identifikator for pasienten. Skal være fødselsnummer (FNR) eller D-nummer (DNR)."
@@ -31,17 +26,14 @@ Description: "Informasjon om pasienten"
 * identifier[FNR].system ^short = "The identification of the Fødselsnummer"
 * identifier[FNR].value 1..1
 * identifier[DNR].value 1..1
-
-// Kjønn
 * gender MS
 * gender ^short = "Kjønn"
 * gender ^definition = "Pasientens kjønn. Skal oppgis sammen med fødselsdato hvis det ikke finnes pasient-ID."
-
-// Fødselsdato
+* gender ^comment = "Inkluderer helst hvis opplysningen finnes."
 * birthDate MS
 * birthDate ^short = "Fødselsdato"
 * birthDate ^definition = "Pasientens fødselsdato. Skal oppgis sammen med kjønn hvis det ikke finnes pasient-ID."
-
+* birthDate ^comment = "Inkluderer helst hvis opplysningen finnes."
 
 // EKSEMPLER
 
