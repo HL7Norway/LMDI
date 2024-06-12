@@ -20,13 +20,14 @@ Description: "Diagnosen som pasienten har fått rekvirert og administrert legemi
       ICD10 0..1 and 
       ICD11 0..1 and 
       ICPC2 0..1
-// SNOMED CT
+* code.coding[SCT] ^alias = "SNOMED CT"
+* code.coding[ICD10] ^alias = "ICD-10"
+* code.coding[ICD11] ^alias = "ICD-11"
+* code.coding[ICPC2] ^alias = "ICPC-2"
 * code.coding[SCT].system = "http://snomed.info/sct"
-// ICD-10
 * code.coding[ICD10].system = "urn:oid:2.16.578.1.12.4.1.1.7110"
-// ICD-11   Kilde for URI: https://build.fhir.org/ig/HL7/UTG/CodeSystem-ICD11MMS.html
+// Kilde for URI: https://build.fhir.org/ig/HL7/UTG/CodeSystem-ICD11MMS.html
 * code.coding[ICD11].system = "http://id.who.int/icd/release/11/mms"
-// ICPC-2
 * code.coding[ICPC2].system = "urn:oid:2.16.578.1.12.4.1.1.7170"
 
 // EKSEMPLER
