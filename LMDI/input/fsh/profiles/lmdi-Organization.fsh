@@ -24,6 +24,7 @@ Description: "Organisasjon eller organisasjonsenhet. "
 // Krav: Type organisasjon / organisatorisk nivå / betegnelse
 * type MS
 * type ^short = "Organisatorisk nivå / betegnelse"
+* type ^comment = "Mangler gode kodeverk. De som er i no-basis-organization er ikke tilstrekkelig. "
 
 // Krav: Navn (name)
 * name MS
@@ -37,8 +38,9 @@ Description: "Organisasjon eller organisasjonsenhet. "
 * address.district.extension[municipalitycode] ^short = "Coded value for municipality/county Norwegian kommune"
 * address.district.extension[municipalitycode] ^definition = "Coded value for municipality/county Norwegian kommune"
 
-// Krav: Del av organisasjon (ref:organization)
-// * partOf MS <- NB! kan bare peke oppover
+* partOf MS
+* partOf ^short = "Del av organisasjon"
+* partOf ^comment = "Er det behov for nivåer, rekursjon? NB! Kan bare peke oppover."
 
 // Kopiert fra Thomas sin fsh-no-basis
 Alias: $kommunenummer-alle = https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle
