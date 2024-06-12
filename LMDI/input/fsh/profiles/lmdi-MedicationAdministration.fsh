@@ -2,7 +2,9 @@ Profile: AdministrertLegemiddel
 Parent:   MedicationAdministration
 Id:       lmdi-administrert-legemiddel
 Title:    "Administrert legemiddel"
-Description: """Beskriver administrasjon av legemiddel til pasient på institusjon."""
+Description: """Beskriver administrasjon av legemiddel til pasient på institusjon.
+
+Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei."""
 * ^status = #draft
 * ^date = "2024-06-12"
 * ^publisher = "Folkehelseinstituttet"
