@@ -27,6 +27,7 @@ Description: "Diagnosen som pasienten har fått rekvirert og administrert legemi
 * code.coding[ICD10] ^definition = "ICD-10: Den internasjonale statistiske klassifikasjonen av sykdommer og beslektede helseproblemer."
 * code.coding[ICD11] ^short = "ICD-11"
 * code.coding[ICD11] ^definition = "International Classification of Diseases, 11th Revision Mortality and Morbidity Statistics (MMS)."
+* code.coding[ICD11] ^comment = "Skal erstattes av navnerom som peker på generell ICD-11, ikke MMS."
 * code.coding[ICPC2] ^short = "ICPC-2"
 * code.coding[ICPC2] ^definition = "ICPC-2 er den internasjonale klassifikasjonen for helseproblemer, diagnoser og andre årsaker til kontakt med primærhelsetjenesten."
 * code.coding[SCT].system = "http://snomed.info/sct"
