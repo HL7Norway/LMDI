@@ -5,14 +5,14 @@ Id: lmdi-episodeofcare-institusjonsopphold
 Title: "Institusjonsopphold"
 Description: "Beskrivelse av pasientens opphold i institusjon. Dette kan være både av kortere og lengre karaktert, slik som døgnopphold, innleggelse hos spesialist, sykehjem og aldershjem. "
 * ^status = #draft
-* ^date = "2024-06-06"
+* ^date = "2024-06-12"
 * ^publisher = "Folkehelseinstituttet"
 
 // TODO #15 Krav: Diagnose (utskrivningsdiagnose) (referanse). Sjekke om dette faktisk skal/bør være med
 // Krav: Pasient. Allerede 1..1 i ressursen.
 // Krav: Må referere til organisasjon, f.eks. sykehjem
 * managingOrganization 1..1
-* managingOrganization ^short = "Organisasjonen som har ansvar for oppholdet"
+* managingOrganization ^short = "Organisasjonen (institusjonen) som har ansvar for oppholdet"
 
 // Krav: actualPeriod
 * period MS
