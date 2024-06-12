@@ -4,7 +4,7 @@ Id:       lmdi-administrert-legemiddel
 Title:    "Administrert legemiddel"
 Description: """Beskriver administrasjon av legemiddel til pasient på institusjon."""
 * ^status = #draft
-* ^date = "2024-05-27"
+* ^date = "2024-06-12"
 * ^publisher = "Folkehelseinstituttet"
 
 // Se på følgende kilder:
