@@ -25,10 +25,14 @@ Description: "Diagnosen som pasienten har fått rekvirert og administrert legemi
 * code.coding[ICD11] ^alias = "ICD-11"
 * code.coding[ICPC2] ^alias = "ICPC-2"
 * code.coding[SCT].system = "http://snomed.info/sct"
+* code.coding[SCT].code 1..1
 * code.coding[ICD10].system = "urn:oid:2.16.578.1.12.4.1.1.7110"
+* code.coding[ICD10].code 1..1
 // Kilde for URI: https://build.fhir.org/ig/HL7/UTG/CodeSystem-ICD11MMS.html
 * code.coding[ICD11].system = "http://id.who.int/icd/release/11/mms"
+* code.coding[ICD11].code 1..1
 * code.coding[ICPC2].system = "urn:oid:2.16.578.1.12.4.1.1.7170"
+* code.coding[ICPC2].code 1..1
 
 // EKSEMPLER
 Instance: Diagnose-1-ICD10-OID
