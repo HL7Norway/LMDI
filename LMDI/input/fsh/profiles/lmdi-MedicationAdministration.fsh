@@ -75,6 +75,7 @@ Description: """Beskriver administrasjon av legemiddel til pasient på institusj
 // TODO #19 Sjekk hvordan Pasientent legemiddelliste (PLL) bruker dose med FHIR
 * dosage.dose 1..1
 * dosage.dose ^short = "Administrert mengde"
+* dosage.dose ^definition = "Administrert mengde av legemiddelet som det blir referert til."
 
 // Krav: Infusjon
 // ESS: Er vel del av administrasjonsvei? Som f.eks. SCT#intravenøs administrasjonsvei 47625008, SCT#26643006 Oral route
