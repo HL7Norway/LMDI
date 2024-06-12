@@ -11,7 +11,7 @@
   <name value="Lmdi"/>
   <title value="Legemiddeldata fra institusjon til Legemiddelregisteret"/>
   <status value="draft"/>
-  <date value="2024-06-12T14:26:42+00:00"/>
+  <date value="2024-06-12T16:13:46+00:00"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>
   <contact>
     <name value="Folkehelseinstituttet (FHI)"/>
@@ -503,7 +503,7 @@
         <reference value="StructureDefinition/lmdi-administrert-legemiddel"/>
       </reference>
       <name value="Administrert legemiddel"/>
-      <description value="Beskriver administrasjon av legemiddel til pasient på institusjon."/>
+      <description value="Beskriver administrasjon av legemiddel til pasient på institusjon.&#xA;&#xA;Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -525,7 +525,7 @@
         <reference value="StructureDefinition/lmdi-condition-diagnose"/>
       </reference>
       <name value="Diagnose"/>
-      <description value="Diagnosen som pasienten har fått rekvirert og administrert legemiddelet for"/>
+      <description value="Diagnosen som pasienten har fått rekvirert og administrert legemiddelet for."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -723,7 +723,7 @@
         <reference value="StructureDefinition/lmdi-observation-tmp"/>
       </reference>
       <name value="Observasjon (kladd)"/>
-      <description value="Observation"/>
+      <description value="Observation. Kommentar: For høyde og vekt skal denne baseres på nasjonal eller internasjonal Vital Signs IG når den foreligger."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

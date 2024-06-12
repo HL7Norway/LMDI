@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Legemiddel"] ; # 
   fhir:title [ fhir:v "Legemiddel"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-30"^^xsd:date] ; # 
+  fhir:date [ fhir:v "2024-06-12"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;
@@ -422,7 +422,7 @@
        fhir:path [ fhir:v "Medication.identifier" ] ;
        fhir:short [ fhir:v "Legemiddelets identifikasjon" ] ;
        fhir:definition [ fhir:v "Legemiddelets identifikasjon i henhold til TODO" ] ;
-       fhir:comment [ fhir:v "The serial number could be included as an identifier." ] ;
+       fhir:comment [ fhir:v "Finnes ikke p.t." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
@@ -1190,6 +1190,7 @@
        fhir:path [ fhir:v "Medication.identifier" ] ;
        fhir:short [ fhir:v "Legemiddelets identifikasjon" ] ;
        fhir:definition [ fhir:v "Legemiddelets identifikasjon i henhold til TODO" ] ;
+       fhir:comment [ fhir:v "Finnes ikke p.t." ] ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "Medication.code" ] ;

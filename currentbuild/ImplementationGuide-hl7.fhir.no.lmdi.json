@@ -10,7 +10,7 @@
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-06-12T14:26:42+00:00",
+  "date" : "2024-06-12T16:13:46+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -662,7 +662,7 @@
         "reference" : "StructureDefinition/lmdi-administrert-legemiddel"
       },
       "name" : "Administrert legemiddel",
-      "description" : "Beskriver administrasjon av legemiddel til pasient på institusjon.",
+      "description" : "Beskriver administrasjon av legemiddel til pasient på institusjon.\n\nDette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei.",
       "exampleBoolean" : false
     },
     {
@@ -686,7 +686,7 @@
         "reference" : "StructureDefinition/lmdi-condition-diagnose"
       },
       "name" : "Diagnose",
-      "description" : "Diagnosen som pasienten har fått rekvirert og administrert legemiddelet for",
+      "description" : "Diagnosen som pasienten har fått rekvirert og administrert legemiddelet for.",
       "exampleBoolean" : false
     },
     {
@@ -902,7 +902,7 @@
         "reference" : "StructureDefinition/lmdi-observation-tmp"
       },
       "name" : "Observasjon (kladd)",
-      "description" : "Observation",
+      "description" : "Observation. Kommentar: For høyde og vekt skal denne baseres på nasjonal eller internasjonal Vital Signs IG når den foreligger.",
       "exampleBoolean" : false
     },
     {

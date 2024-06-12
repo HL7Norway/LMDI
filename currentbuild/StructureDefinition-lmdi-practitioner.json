@@ -10,7 +10,7 @@
   "name" : "LmdiPractitioner",
   "title" : "Helsepersonell",
   "status" : "draft",
-  "date" : "2024-06-05",
+  "date" : "2024-06-12",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -1472,7 +1472,7 @@
       "path" : "Practitioner.qualification.code.coding.system",
       "short" : "Helsepersonellregisterets (HPR) klassifikasjon av spesialiteter (OID=7426)",
       "definition" : "Dette kodeverket inneholder koder for spesialiteter i Helsepersonellregisteret. Kilde: Forskrift om spesialistgodkjenning av helsepersonell og turnusstillinger for leger.",
-      "comment" : "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously.",
+      "comment" : "MVP - satt til HPR-spesialieter (OID=7426).",
       "requirements" : "Need to be unambiguous about the source of the definition of the symbol.",
       "min" : 0,
       "max" : "1",
@@ -1869,6 +1869,7 @@
       "path" : "Practitioner.qualification.code.coding.system",
       "short" : "Helsepersonellregisterets (HPR) klassifikasjon av spesialiteter (OID=7426)",
       "definition" : "Dette kodeverket inneholder koder for spesialiteter i Helsepersonellregisteret. Kilde: Forskrift om spesialistgodkjenning av helsepersonell og turnusstillinger for leger.",
+      "comment" : "MVP - satt til HPR-spesialieter (OID=7426).",
       "patternUri" : "urn:oid:2.16.578.1.12.4.1.1.7426"
     }]
   }

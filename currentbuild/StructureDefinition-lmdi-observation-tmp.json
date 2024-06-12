@@ -10,7 +10,7 @@
   "name" : "LmdiObservation",
   "title" : "Observasjon (kladd)",
   "status" : "draft",
-  "date" : "2024-06-06",
+  "date" : "2024-06-12",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -19,7 +19,7 @@
       "value" : "https://www.fhi.no"
     }]
   }],
-  "description" : "Observation",
+  "description" : "Observation. Kommentar: For høyde og vekt skal denne baseres på nasjonal eller internasjonal Vital Signs IG når den foreligger. ",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -574,7 +574,7 @@
       "path" : "Observation.status",
       "short" : "registered | preliminary | final | amended +",
       "definition" : "The status of the result value.",
-      "comment" : "This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.",
+      "comment" : "Kun endelige observasjoner skal være med.",
       "requirements" : "Need to track the status of individual results. Some results are finalized before the whole report is finalized.",
       "min" : 1,
       "max" : "1",
@@ -932,7 +932,7 @@
       "path" : "Observation.code.coding.system",
       "short" : "Identity of the terminology system",
       "definition" : "The identification of the code system that defines the meaning of the symbol in the code.",
-      "comment" : "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously.",
+      "comment" : "SNOMED CT er brukt som eksempel, Vital Signs IG etc. vil åpne for andre kodeverk om nødvendig.",
       "requirements" : "Need to be unambiguous about the source of the definition of the symbol.",
       "min" : 0,
       "max" : "1",
@@ -3067,11 +3067,13 @@
     {
       "id" : "Observation.status",
       "path" : "Observation.status",
+      "comment" : "Kun endelige observasjoner skal være med.",
       "patternCode" : "final"
     },
     {
       "id" : "Observation.code.coding.system",
       "path" : "Observation.code.coding.system",
+      "comment" : "SNOMED CT er brukt som eksempel, Vital Signs IG etc. vil åpne for andre kodeverk om nødvendig.",
       "patternUri" : "http://snomed.info/sct"
     },
     {

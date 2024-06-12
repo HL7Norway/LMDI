@@ -62,7 +62,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Type/class  - e.g. specialist referral, disease management","A classification of the type of episode of care; e.g. specialist referral, disease management, type of funded care.","The type can be very important in processing as this could be used in determining if the EpisodeOfCare is relevant to specific government reporting, or other types of classifications.","","","","","","","","",,"example","The type of the episode of care.","http://hl7.org/fhir/ValueSet/episodeofcare-type","",,,,"EpisodeOfCare.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","FiveWs.class"
 "EpisodeOfCare.diagnosis","EpisodeOfCare.diagnosis","","","",0,*,"","","Y","BackboneElement {[]} {[]}
-","The list of diagnosis relevant to this episode of care","The list of diagnosis relevant to this episode of care.","","","","","","","","","",,,,,"",,,,"EpisodeOfCare.diagnosis",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","The list of diagnosis relevant to this episode of care","The list of diagnosis relevant to this episode of care.","TODO #15 Krav: Diagnose (utskrivningsdiagnose) (referanse). Sjekke om dette faktisk skal/bør være med.","","","","","","","","",,,,,"",,,,"EpisodeOfCare.diagnosis",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "EpisodeOfCare.diagnosis.id","EpisodeOfCare.diagnosis.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -86,7 +86,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Ranking of the diagnosis (for each role type)","Ranking of the diagnosis (for each role type).","","","","","","","","","",,,,,"",,,,"EpisodeOfCare.diagnosis.rank",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "EpisodeOfCare.patient","EpisodeOfCare.patient","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
-","The patient who is the focus of this episode of care","The patient who is the focus of this episode of care.","","","","","","","","","",,,,,"",,,,"EpisodeOfCare.patient",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Pasienten som institusjonsoppholdet gjelder.","The patient who is the focus of this episode of care.","","","","","","","","","",,,,,"",,,,"EpisodeOfCare.patient",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.subject","FiveWs.subject[x]","FiveWs.subject"
 "EpisodeOfCare.managingOrganization","EpisodeOfCare.managingOrganization","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","Organisasjonen (institusjonen) som har ansvar for oppholdet","The organization that has assumed the specific responsibilities for the specified duration.","","","","","","","","","",,,,,"",,,,"EpisodeOfCare.managingOrganization",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

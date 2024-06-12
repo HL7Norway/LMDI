@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for Lmdi</h1>
- <p>Generated Wed Jun 12 14:29:36 UTC 2024, FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.6.6 (canonical = <a href="http://hl7.no/fhir/ig/lmdi">http://hl7.no/fhir/ig/lmdi</a> (<a href="http://hl7.no/fhir/ig/lmdi/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Wed Jun 12 16:16:43 UTC 2024, FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.6.6 (canonical = <a href="http://hl7.no/fhir/ig/lmdi">http://hl7.no/fhir/ig/lmdi</a> (<a href="http://hl7.no/fhir/ig/lmdi/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.6.11</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.no.lmdi, Canonical = http://hl7.no/fhir/ig/lmdi</td></tr>
@@ -71,7 +71,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (14 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
  (11 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
  (6 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
- (19 uses),     <a href="http://hl7.org/fhir/R4/medication.html">Medication</a>
+ (21 uses),     <a href="http://hl7.org/fhir/R4/medication.html">Medication</a>
  (4 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-codes.html">SNOMEDCTMedicationCodes</a>
  (3 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
  (3 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
@@ -104,7 +104,6 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-category.html">ConditionCategoryCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-severity.html">Condition/DiagnosisSeverity</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a>
- (2 uses),     <a href="http://hl7.org/fhir/R4/group.html">Group</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-stage.html">ConditionStage</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/clinicalimpression.html">ClinicalImpression</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-stage-type.html">ConditionStageType</a>
@@ -124,7 +123,8 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (1 uses),     <a href="http://hl7.org/fhir/R4/imagingstudy.html">ImagingStudy</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-category.html">ObservationCategoryCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINCCodes</a>
- (2 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/group.html">Group</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-methods.html">ObservationMethods</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/specimen.html">Specimen</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/devicemetric.html">DeviceMetric</a>
@@ -545,7 +545,7 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Organization&#8203;.address[0]&#8203;.district&#8203;.extension[0]&#8203;.value&#8203;.ofType(Coding) (l16&#8203;/c14)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+     <td><b>Organization&#8203;.address[0]&#8203;.district&#8203;.extension[0]&#8203;.value&#8203;.ofType(Coding) (l22&#8203;/c14)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
    </tr>
 </table>
 <hr/>

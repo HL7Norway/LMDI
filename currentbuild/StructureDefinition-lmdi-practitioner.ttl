@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "LmdiPractitioner"] ; # 
   fhir:title [ fhir:v "Helsepersonell"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-05"^^xsd:date] ; # 
+  fhir:date [ fhir:v "2024-06-12"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;
@@ -1528,7 +1528,7 @@
        fhir:path [ fhir:v "Practitioner.qualification.code.coding.system" ] ;
        fhir:short [ fhir:v "Helsepersonellregisterets (HPR) klassifikasjon av spesialiteter (OID=7426)" ] ;
        fhir:definition [ fhir:v "Dette kodeverket inneholder koder for spesialiteter i Helsepersonellregisteret. Kilde: Forskrift om spesialistgodkjenning av helsepersonell og turnusstillinger for leger." ] ;
-       fhir:comment [ fhir:v "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously." ] ;
+       fhir:comment [ fhir:v "MVP - satt til HPR-spesialieter (OID=7426)." ] ;
        fhir:requirements [ fhir:v "Need to be unambiguous about the source of the definition of the symbol." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
@@ -1932,6 +1932,7 @@
        fhir:path [ fhir:v "Practitioner.qualification.code.coding.system" ] ;
        fhir:short [ fhir:v "Helsepersonellregisterets (HPR) klassifikasjon av spesialiteter (OID=7426)" ] ;
        fhir:definition [ fhir:v "Dette kodeverket inneholder koder for spesialiteter i Helsepersonellregisteret. Kilde: Forskrift om spesialistgodkjenning av helsepersonell og turnusstillinger for leger." ] ;
+       fhir:comment [ fhir:v "MVP - satt til HPR-spesialieter (OID=7426)." ] ;
        fhir:pattern [ fhir:v "urn:oid:2.16.578.1.12.4.1.1.7426"^^xsd:anyURI ]
      ] )
   ] . # 

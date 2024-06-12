@@ -18,7 +18,7 @@
   <name value="LmdiPractitioner"/>
   <title value="Helsepersonell"/>
   <status value="draft"/>
-  <date value="2024-06-05"/>
+  <date value="2024-06-12"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>
   <contact>
     <name value="Folkehelseinstituttet (FHI)"/>
@@ -1430,7 +1430,7 @@
       <path value="Practitioner.qualification.code.coding.system"/>
       <short value="Helsepersonellregisterets (HPR) klassifikasjon av spesialiteter (OID=7426)"/>
       <definition value="Dette kodeverket inneholder koder for spesialiteter i Helsepersonellregisteret. Kilde: Forskrift om spesialistgodkjenning av helsepersonell og turnusstillinger for leger."/>
-      <comment value="The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously."/>
+      <comment value="MVP - satt til HPR-spesialieter (OID=7426)."/>
       <requirements value="Need to be unambiguous about the source of the definition of the symbol."/>
       <min value="0"/>
       <max value="1"/>
@@ -1809,6 +1809,7 @@
       <path value="Practitioner.qualification.code.coding.system"/>
       <short value="Helsepersonellregisterets (HPR) klassifikasjon av spesialiteter (OID=7426)"/>
       <definition value="Dette kodeverket inneholder koder for spesialiteter i Helsepersonellregisteret. Kilde: Forskrift om spesialistgodkjenning av helsepersonell og turnusstillinger for leger."/>
+      <comment value="MVP - satt til HPR-spesialieter (OID=7426)."/>
       <patternUri value="urn:oid:2.16.578.1.12.4.1.1.7426"/>
     </element>
   </differential>

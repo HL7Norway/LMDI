@@ -10,7 +10,7 @@
   "name" : "Legemiddel",
   "title" : "Legemiddel",
   "status" : "draft",
-  "date" : "2024-05-30",
+  "date" : "2024-06-12",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -396,7 +396,7 @@
       "path" : "Medication.identifier",
       "short" : "Legemiddelets identifikasjon",
       "definition" : "Legemiddelets identifikasjon i henhold til TODO",
-      "comment" : "The serial number could be included as an identifier.",
+      "comment" : "Finnes ikke p.t.",
       "min" : 0,
       "max" : "*",
       "base" : {
@@ -1132,6 +1132,7 @@
       "path" : "Medication.identifier",
       "short" : "Legemiddelets identifikasjon",
       "definition" : "Legemiddelets identifikasjon i henhold til TODO",
+      "comment" : "Finnes ikke p.t.",
       "mustSupport" : true
     },
     {
