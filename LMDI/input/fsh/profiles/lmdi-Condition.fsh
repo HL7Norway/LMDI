@@ -11,7 +11,7 @@ Description: "Diagnosen som pasienten har fått rekvirert og administrert legemi
 // NB! Må peke på subject (pasient)
 // MVP: ICPC-2, ICD-10, ICD-11, SNOMED CT
 * code 1..1
-* code ^short = "Diagnosekode"
+* code ^short = "Diagnosekode. Det er mulig å bruke ICD-10, ICD-11, ICPC-2 og SNOMED CT."
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "system"
 * code.coding ^slicing.rules = #closed
@@ -20,9 +20,13 @@ Description: "Diagnosen som pasienten har fått rekvirert og administrert legemi
       ICD10 0..1 and 
       ICD11 0..1 and 
       ICPC2 0..1
+// SNOMED CT
 * code.coding[SCT].system = "http://snomed.info/sct"
+// ICD-10
 * code.coding[ICD10].system = "urn:oid:2.16.578.1.12.4.1.1.7110"
-* code.coding[ICD11].system = "urn:oid:2.16.578.1.12.4.1.1.TODO"
+// ICD-11   Kilde for URI: https://build.fhir.org/ig/HL7/UTG/CodeSystem-ICD11MMS.html
+* code.coding[ICD11].system = "http://id.who.int/icd/release/11/mms"
+// ICPC-2
 * code.coding[ICPC2].system = "urn:oid:2.16.578.1.12.4.1.1.7170"
 
 // EKSEMPLER
