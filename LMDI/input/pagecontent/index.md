@@ -15,6 +15,7 @@ Se [informasjonsmodell](informasjonsmodell.html).
 
 ### Utvikling
 
+- All utvikling skjer på eget [repository på GitHub](https://github.com/HL7Norway/LMDI). Sidene du leser nå publiseres automatisk derfra. 
 - All koding av profiler skjer med [FHIR Shorthand](https://www.hl7.org/fhir/uv/shorthand/) (FSH)
 - Dokumentasjon genereres med [IG Publisher](https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation)
 
