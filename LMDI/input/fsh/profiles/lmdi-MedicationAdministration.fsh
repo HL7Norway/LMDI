@@ -65,7 +65,7 @@ Description: """Beskriver administrasjon av legemiddel til pasient på institusj
 * dosage.route.coding[SCT] ^alias = "SNOMED CT"
 * dosage.route.coding[SCT].system = "http://snomed.info/sct"
 * dosage.route.coding[SCT].code from http://hl7.org/fhir/ValueSet/route-codes (required)
-* dosage.route.coding[SCT] ^alias = "Administrasjonsvei (OID=7477)"
+* dosage.route.coding[7477] ^alias = "Administrasjonsvei (OID=7477)"
 * dosage.route.coding[7477].system = "urn:oid:2.16.578.1.12.4.1.1.7477"
 // * dosage.route.coding[7477].code from http://xxx (required)
 
