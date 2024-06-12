@@ -44,6 +44,7 @@ Description: """Beskriver administrasjon av legemiddel til pasient på institusj
 // TODO #9 Spørsmål: Skal det (på sikt) være flere som administerer, f.eks pasient selv (dispenser), eller kun helsepersonell?
 // TODO #13 Legge inn støtte for at både Practitioner og PractitionerRole i MedicationAdministration
 * performer and performer.actor MS
+* performer.actor only Reference (Practitioner) or Reference (PractitionerRole)
 * performer.actor ^short = "Hvem som har administrert legemiddelet"
 * performer.actor ^definition = "Utfører av administrering kan være helsepersonell eller en rolle knyttet til institusjonen eller pasienten. "
 
