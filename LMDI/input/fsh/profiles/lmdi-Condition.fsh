@@ -22,9 +22,13 @@ Description: "Diagnosen som pasienten har fått rekvirert og administrert legemi
       ICD11 0..1 and 
       ICPC2 0..1
 * code.coding[SCT] ^short = "SNOMED CT"
+* code.coding[SCT] ^definition = "SNOMED CT er ei systematisk samling av helsefaglege omgrep som kan brukast til å dokumentere og dele opplysningar knytt til pasientbehandlinga. Ved å bruke eit felles omgrepsapparat skal det bli lettare å kommunisere mellom ulike delar av helsetenesta."
 * code.coding[ICD10] ^short = "ICD-10"
+* code.coding[ICD10] ^definition = "ICD-10: Den internasjonale statistiske klassifikasjonen av sykdommer og beslektede helseproblemer."
 * code.coding[ICD11] ^short = "ICD-11"
+* code.coding[ICD11] ^definition = "International Classification of Diseases, 11th Revision Mortality and Morbidity Statistics (MMS)."
 * code.coding[ICPC2] ^short = "ICPC-2"
+* code.coding[ICPC2] ^definition = "ICPC-2 er den internasjonale klassifikasjonen for helseproblemer, diagnoser og andre årsaker til kontakt med primærhelsetjenesten."
 * code.coding[SCT].system = "http://snomed.info/sct"
 * code.coding[SCT].code 1..1
 * code.coding[ICD10].system = "urn:oid:2.16.578.1.12.4.1.1.7110"
