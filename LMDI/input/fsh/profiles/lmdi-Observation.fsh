@@ -18,6 +18,11 @@ Description: "Observation. Kommentar: For høyde og vekt skal denne baseres på 
 * code.coding.system ^comment = "SNOMED CT er brukt som eksempel, Vital Signs IG etc. vil åpne for andre kodeverk om nødvendig."
 
 * valueQuantity MS
+// constrains/MS under fra Vital Signs IG
+// * valueQuantity.value 1..1 MS
+// * valueQuantity.unit 1..1 MS
+// * valueQuantity.system 1..1 MS
+// * valueQuantity.code 1..1 MS
 * valueQuantity.system = "http://unitsofmeasure.org"
 
 // EKSEMPLER
