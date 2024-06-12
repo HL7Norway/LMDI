@@ -4,14 +4,22 @@ Id: lmdi-organization
 Title: "Organisasjon"
 Description: "Organisasjon eller organisasjonsenhet. "
 * ^status = #draft
-* ^date = "2024-06-05"
+* ^date = "2024-06-12"
 * ^publisher = "Folkehelseinstituttet"
 
-// Krav (nasjonalt): Basere på no-basis-Organization
-// Krav: Organisasjons-ID som ENH eller RESH (identifier)
-// TODO #20 Lage slice for ENH+RESH i Organization
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #closed
+* identifier contains ENH 0..1 and RESH 0..1
 * identifier 1..* 
-* identifier ^short = "Unik identifikasjon av behandlingsenhet / avdeling / intitusjon"
+* identifier ^short = "Unik identifikasjon av enhet basert på organisasjonsnummer eller RESH-id."
+* identifier ^comment = "Skal baseres på no-basis-Organization."
+* identifier[ENH] ^short = "Organisasjonsnummer fra Enhetsregisteret"
+* identifier[RESH] ^short = "D-nummer"
+* identifier[ENH].system = "urn:oid:2.16.578.1.12.4.1.4.101" 
+* identifier[RESH].system = "urn.oid:2.16.578.1.12.4.1.4.102" 
+* identifier[ENH].value 1..1
+* identifier[RESH].value 1..1
 
 // Krav: Type organisasjon / organisatorisk nivå / betegnelse
 * type MS
@@ -53,8 +61,8 @@ Description: "Coded value for municipality/county Norwegian kommune"
 Instance: Organisasjon-1-Eldrehjem
 InstanceOf: LmdiOrganization
 Description: "Eksempel på organisasjon - Primærhelsetjeneste"
-* identifier.system = "urn:oid:2.16.578.1.12.4.1.4.101"
-* identifier.value = "1234567890"
+* identifier[ENH].system = "urn:oid:2.16.578.1.12.4.1.4.101"
+* identifier[ENH].value = "1234567890"
 * name = "Lykkedalen eldrehjem"
 * address.district = "Sigdal"
 * address.district[0].extension[NoBasisMunicipalitycode].valueCoding = #3034
@@ -63,8 +71,8 @@ Instance: Organisasjon-2-Spesialist
 InstanceOf: LmdiOrganization
 Description: "Eksempel på organisasjon - spesialisthelsetjenesten med RESH."
 // RESH-id. Tydeligvis fortsatt lukket.
-* identifier.system = "urn.oid:2.16.578.1.12.4.1.4.102"
-* identifier.value = "09876-54"
+* identifier[RESH].system = "urn.oid:2.16.578.1.12.4.1.4.102"
+* identifier[RESH].value = "09876-54"
 * name = "Cytologisk poliklinikk, Avdeling for patologi, Oslo universitetssykehus HF" 
 
 // Oslo universitetssykehus HF
