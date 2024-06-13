@@ -3,7 +3,7 @@ Lmdi : Validation Results
 
 err = 42, warn = 22, info = 4
 IG Publisher Version: 1.6.11
-Generated Wed Jun 12 22:52:20 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.6.7 (canonical = http://hl7.no/fhir/ig/lmdi)
+Generated Thu Jun 13 09:19:40 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.8.0 (canonical = http://hl7.no/fhir/ig/lmdi)
  Build Errors : 7 / 3 / 0
  /github/workspace/LMDI/fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Condition-Diagnose-1-ICD10-OID : 2 / 1 / 2
@@ -25,7 +25,7 @@ Generated Wed Jun 12 22:52:20 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#
  /github/workspace/LMDI/fsh-generated/resources/Observation-Observasjon-1-Kroppsvekt : 1 / 3 / 1
  /github/workspace/LMDI/fsh-generated/resources/Observation-Observasjon-2-Hoyde : 6 / 3 / 2
  /github/workspace/LMDI/fsh-generated/resources/Organization-Organisasjon-1-Eldrehjem : 0 / 1 / 1
- /github/workspace/LMDI/fsh-generated/resources/Organization-Organisasjon-2-Spesialist : 1 / 0 / 1
+ /github/workspace/LMDI/fsh-generated/resources/Organization-Organisasjon-2-Spesialist-RESH : 1 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Patient-Pasient-1-Uten-FNR : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Patient-Pasient-2-FNR : 2 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Practitioner-Helsepersonell-1-HPR-nummer : 0 / 0 / 1
@@ -77,7 +77,7 @@ ERROR: EpisodeOfCare.text.div: Hyperlink 'sykehjemref-1234567' at 'div/p/a' for 
 == fsh-generated/resources/Medication-Medisin-2-Paracetamol.json ==
 == fsh-generated/resources/Medication-Medisin-3-LegemiddelPakning-Monoket.json ==
 == fsh-generated/resources/MedicationAdministration-Administrering-1-Oralt.json ==
-ERROR: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.status: The value provided ('completed') was not found in the value set 'Status for legemiddeladministrasjon' (http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.7), and a code is required from this value set  (error message = The provided code '#completed' was not found in the value set 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.7'; The System URI could not be determined for the code 'completed' in the ValueSet 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.7')
+ERROR: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.status: The value provided ('completed') was not found in the value set 'Status for legemiddeladministrasjon' (http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.8.0), and a code is required from this value set  (error message = The provided code '#completed' was not found in the value set 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.8.0'; The System URI could not be determined for the code 'completed' in the ValueSet 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.8.0')
 ERROR: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.medication.ofType(Reference): Unable to resolve resource with reference 'https://fhir.legemidler.example.com/legemidler/123456780'
 ERROR: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.subject: Unable to resolve resource with reference 'https://fhi.no/fhir/lmdi/pasient/12345678'
 ERROR: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.context: Unable to resolve resource with reference 'https://fhi.no/fhir/lmdi/institusjonsopphold/428ff23d-7a65-4c67-8059-6a1d07d287e3'
@@ -90,7 +90,7 @@ ERROR: MedicationAdministration/Administrering-10: MedicationAdministration.cont
 ERROR: MedicationAdministration/Administrering-10: MedicationAdministration.contained[2]: The contained resource 'Helsepersonell-10' is not referenced to from elsewhere in the containing resource nor does it refer to the containing resource (dom-3)
 ERROR: MedicationAdministration.text.div: Hyperlink 'uuid:9b62d7e8-df64-47b7-9fe1-38bc45795d82' at 'div/p/a' for 'uuid:9b62d7e8-df64-47b7-9fe1-38bc45795d82' does not resolve
 == fsh-generated/resources/MedicationAdministration-Administrering-2-Infusjon.json ==
-ERROR: MedicationAdministration/Administrering-2-Infusjon: MedicationAdministration.status: The value provided ('completed') was not found in the value set 'Status for legemiddeladministrasjon' (http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.7), and a code is required from this value set  (error message = The provided code '#completed' was not found in the value set 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.7'; The System URI could not be determined for the code 'completed' in the ValueSet 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.6.7')
+ERROR: MedicationAdministration/Administrering-2-Infusjon: MedicationAdministration.status: The value provided ('completed') was not found in the value set 'Status for legemiddeladministrasjon' (http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.8.0), and a code is required from this value set  (error message = The provided code '#completed' was not found in the value set 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.8.0'; The System URI could not be determined for the code 'completed' in the ValueSet 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.8.0')
 ERROR: MedicationAdministration/Administrering-2-Infusjon: MedicationAdministration.medication.ofType(Reference): Unable to resolve resource with reference 'https://fhir.legemidler.example.com/legemidler/0987654321'
 ERROR: MedicationAdministration/Administrering-2-Infusjon: MedicationAdministration.subject: Unable to resolve resource with reference 'https://fhi.no/fhir/lmdi/pasient/12345678'
 ERROR: MedicationAdministration/Administrering-2-Infusjon: MedicationAdministration.context: Unable to resolve resource with reference 'https://fhi.no/fhir/lmdi/institusjonsopphold/428ff23d-7a65-4c67-8059-6a1d07d287e3'
@@ -130,8 +130,8 @@ WARNING: Observation/Observasjon-2-Hoyde: Observation: Best Practice Recommendat
 WARNING: Observation/Observasjon-2-Hoyde: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Organization-Organisasjon-1-Eldrehjem.json ==
 WARNING: Organization/Organisasjon-1-Eldrehjem: Organization.address[0].district.extension[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
-== fsh-generated/resources/Organization-Organisasjon-2-Spesialist.json ==
-ERROR: Organization/Organisasjon-2-Spesialist: Organization.identifier[0]: Identifier.system must be an absolute reference, not a local reference
+== fsh-generated/resources/Organization-Organisasjon-2-Spesialist-RESH.json ==
+ERROR: Organization/Organisasjon-2-Spesialist-RESH: Organization.identifier[0]: Identifier.system must be an absolute reference, not a local reference
 == fsh-generated/resources/Patient-Pasient-1-Uten-FNR.json ==
 == fsh-generated/resources/Patient-Pasient-2-FNR.json ==
 ERROR: Patient/Pasient-2-FNR: Patient.identifier[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient on element Patient.identifier:FNR, looking in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient (@char 1)

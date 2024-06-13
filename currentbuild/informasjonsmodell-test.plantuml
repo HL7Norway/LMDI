@@ -57,7 +57,7 @@ class Organisasjon <<Organization>> {
 Organisasjon --> adresse
 Organisasjon --> Organisasjon
 
-class Institusjonsopphold <<EpisodeOfCate>> {
+class Institusjonsopphold <<EpisodeOfCare>> {
     pasient: referanse[Pasient]
     organisasjon: referanse[Organisasjon]
     periode

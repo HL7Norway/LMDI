@@ -6,7 +6,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://hl7.org/fhir/ValueSet/medication-admin-status</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>completed</td><td>Gjennomført</td></tr><tr><td>entered-in-error</td><td>Feilregistrert</td></tr></table></li></ul></div>"
   },
   "url" : "http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status",
-  "version" : "0.6.7",
+  "version" : "0.8.0",
   "name" : "LegemiddeladministreringStatus",
   "title" : "Status for legemiddeladministrasjon",
   "status" : "draft",

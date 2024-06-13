@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi"/>
-  <version value="0.6.7"/>
+  <version value="0.8.0"/>
   <name value="Lmdi"/>
   <title value="Legemiddeldata fra institusjon til Legemiddelregisteret"/>
   <status value="draft"/>
-  <date value="2024-06-12T22:49:19+00:00"/>
+  <date value="2024-06-13T09:16:42+00:00"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>
   <contact>
     <name value="Folkehelseinstituttet (FHI)"/>
@@ -786,9 +786,9 @@
         <valueString value="Organization"/>
       </extension>
       <reference>
-        <reference value="Organization/Organisasjon-2-Spesialist"/>
+        <reference value="Organization/Organisasjon-2-Spesialist-RESH"/>
       </reference>
-      <name value="Organisasjon-2-Spesialist"/>
+      <name value="Organisasjon-2-Spesialist-RESH"/>
       <description value="Eksempel på organisasjon - spesialisthelsetjenesten med RESH."/>
       <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization"/>
     </resource>
