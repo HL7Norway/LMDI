@@ -11,7 +11,7 @@
   <name value="Lmdi"/>
   <title value="Legemiddeldata fra institusjon til Legemiddelregisteret"/>
   <status value="draft"/>
-  <date value="2024-06-13T09:16:42+00:00"/>
+  <date value="2024-06-13T10:31:55+00:00"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>
   <contact>
     <name value="Folkehelseinstituttet (FHI)"/>
@@ -790,6 +790,17 @@
       </reference>
       <name value="Organisasjon-2-Spesialist-RESH"/>
       <description value="Eksempel på organisasjon - spesialisthelsetjenesten med RESH."/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/Organisasjon-3-Spesialist-topp"/>
+      </reference>
+      <name value="Organisasjon-3-Spesialist-topp"/>
+      <description value="Eksempel på organisasjon - spesialisthelsetjenesten med RESH - toppnivå."/>
       <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization"/>
     </resource>
     <resource>

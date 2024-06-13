@@ -10,7 +10,7 @@
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-06-13T09:16:42+00:00",
+  "date" : "2024-06-13T10:31:55+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -975,6 +975,18 @@
       },
       "name" : "Organisasjon-2-Spesialist-RESH",
       "description" : "Eksempel på organisasjon - spesialisthelsetjenesten med RESH.",
+      "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/Organisasjon-3-Spesialist-topp"
+      },
+      "name" : "Organisasjon-3-Spesialist-topp",
+      "description" : "Eksempel på organisasjon - spesialisthelsetjenesten med RESH - toppnivå.",
       "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization"
     },
     {

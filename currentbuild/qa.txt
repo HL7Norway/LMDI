@@ -1,9 +1,9 @@
 Lmdi : Validation Results
 =========================================
 
-err = 42, warn = 22, info = 4
+err = 43, warn = 22, info = 4
 IG Publisher Version: 1.6.11
-Generated Thu Jun 13 09:19:40 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.8.0 (canonical = http://hl7.no/fhir/ig/lmdi)
+Generated Thu Jun 13 10:35:02 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.8.0 (canonical = http://hl7.no/fhir/ig/lmdi)
  Build Errors : 7 / 3 / 0
  /github/workspace/LMDI/fsh-generated/resources/CodeSystem-lmdi-test-kodeverk.codesystem : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Condition-Diagnose-1-ICD10-OID : 2 / 1 / 2
@@ -26,6 +26,7 @@ Generated Thu Jun 13 09:19:40 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#
  /github/workspace/LMDI/fsh-generated/resources/Observation-Observasjon-2-Hoyde : 6 / 3 / 2
  /github/workspace/LMDI/fsh-generated/resources/Organization-Organisasjon-1-Eldrehjem : 0 / 1 / 1
  /github/workspace/LMDI/fsh-generated/resources/Organization-Organisasjon-2-Spesialist-RESH : 1 / 0 / 1
+ /github/workspace/LMDI/fsh-generated/resources/Organization-Organisasjon-3-Spesialist-topp : 1 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Patient-Pasient-1-Uten-FNR : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Patient-Pasient-2-FNR : 2 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Practitioner-Helsepersonell-1-HPR-nummer : 0 / 0 / 1
@@ -45,9 +46,9 @@ Generated Thu Jun 13 09:19:40 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#
  /github/workspace/LMDI/fsh-generated/resources/ValueSet-lmdi-medicationadministration-status : 0 / 3 / 2
 </table>
 == n/a ==
-WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 234, column 4: The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 242 other files)
-WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 275, column 4: The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 242 other files)
-WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.change.history.html#/html/body/script at Line 201, column 4: The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 131 other files)
+WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 234, column 4: The <script> containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 247 other files)
+WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem-testing.html#/html/body/script at Line 275, column 4: The <script> containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 247 other files)
+WARNING: /github/workspace/LMDI/output/CodeSystem-lmdi-test-kodeverk.codesystem.change.history.html#/html/body/script at Line 201, column 4: The <script> containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 132 other files)
 ERROR: /github/workspace/LMDI/output/Condition-Diagnose-1-ICD10-OID.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 717: The link 'eksempel-pasient-1234567890' for "eksempel-pasient-1234567890" cannot be resolved
 ERROR: /github/workspace/LMDI/output/Condition-Diagnose-2-SNOMED-CT.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 821: The link 'eksempel-pasient-1234567890' for "eksempel-pasient-1234567890" cannot be resolved
 ERROR: /github/workspace/LMDI/output/EpisodeOfCare-Institusjonsopphold-1-Sykehjem.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 635: The link 'pasientreferanse-1234567' for "pasientreferanse-1234567" cannot be resolved
@@ -132,6 +133,8 @@ WARNING: Observation/Observasjon-2-Hoyde: Observation: Best Practice Recommendat
 WARNING: Organization/Organisasjon-1-Eldrehjem: Organization.address[0].district.extension[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/Organization-Organisasjon-2-Spesialist-RESH.json ==
 ERROR: Organization/Organisasjon-2-Spesialist-RESH: Organization.identifier[0]: Identifier.system must be an absolute reference, not a local reference
+== fsh-generated/resources/Organization-Organisasjon-3-Spesialist-topp.json ==
+ERROR: Organization/Organisasjon-3-Spesialist-topp: Organization.identifier[1]: Identifier.system must be an absolute reference, not a local reference
 == fsh-generated/resources/Patient-Pasient-1-Uten-FNR.json ==
 == fsh-generated/resources/Patient-Pasient-2-FNR.json ==
 ERROR: Patient/Pasient-2-FNR: Patient.identifier[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient on element Patient.identifier:FNR, looking in profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient (@char 1)

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Lmdi"] ; # 
   fhir:title [ fhir:v "Legemiddeldata fra institusjon til Legemiddelregisteret"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-13T09:16:42+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-13T10:31:55+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;
@@ -924,6 +924,21 @@
        ] ;
        fhir:name [ fhir:v "Organisasjon-2-Spesialist-RESH" ] ;
        fhir:description [ fhir:v "Eksempel på organisasjon - spesialisthelsetjenesten med RESH." ] ;
+       fhir:example [
+         fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.no/fhir/ig/lmdi/Organization/Organisasjon-3-Spesialist-topp> ;
+         fhir:reference [ fhir:v "Organization/Organisasjon-3-Spesialist-topp" ]
+       ] ;
+       fhir:name [ fhir:v "Organisasjon-3-Spesialist-topp" ] ;
+       fhir:description [ fhir:v "Eksempel på organisasjon - spesialisthelsetjenesten med RESH - toppnivå." ] ;
        fhir:example [
          fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization"^^xsd:anyURI ;
          fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization>
