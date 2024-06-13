@@ -79,3 +79,4 @@ Description: "Eksempel på organisasjon - spesialisthelsetjenesten med RESH."
 // Offisielt navn: Avdeling for epilepsi, poliklinikk
 // Kortnavn: SSE avd for epilepsi,poliklinikk
 // Rekvirentkode: SSE-POL
+// TODO #24 Lage eksempel på partOf med OUS for lmdi-Organization
