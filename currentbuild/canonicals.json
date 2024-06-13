@@ -1,12 +1,5 @@
 [
   {
-    "id" : "lmdi-test-kodeverk.codesystem",
-    "type" : "CodeSystem",
-    "url" : "http://hl7.no/fhir/ig/lmdi/CodeSystem/lmdi-test-kodeverk.codesystem",
-    "version" : "0.8.1",
-    "name" : "LmdiTestKodeverk"
-  },
-  {
     "id" : "hl7.fhir.no.lmdi",
     "type" : "ImplementationGuide",
     "url" : "http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi",

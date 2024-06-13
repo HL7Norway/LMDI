@@ -1,12 +1,3 @@
 {
-  "codeSystems" : [
-    {
-      "url" : "http://hl7.no/fhir/ig/lmdi/CodeSystem/lmdi-test-kodeverk.codesystem",
-      "version" : "0.8.1",
-      "status" : "draft",
-      "name" : "LmdiTestKodeverk",
-      "title" : "LMDI Test-kodeverk",
-      "description" : "Dette kodeverket inneholder noen rare koder."
-    }
-  ]
+  "codeSystems" : []
 }

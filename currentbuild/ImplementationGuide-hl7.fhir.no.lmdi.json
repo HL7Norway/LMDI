@@ -10,7 +10,7 @@
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-06-13T12:44:36+00:00",
+  "date" : "2024-06-13T21:24:42+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -795,18 +795,6 @@
       },
       "name" : "Legemiddelrekvirering",
       "description" : "Legemiddelrekvirering - ordinering, resept eller annen rekvirering av legemiddel",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/lmdi-test-kodeverk.codesystem"
-      },
-      "name" : "LMDI Test-kodeverk",
-      "description" : "Dette kodeverket inneholder noen rare koder.",
       "exampleBoolean" : false
     },
     {

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Lmdi"] ; # 
   fhir:title [ fhir:v "Legemiddeldata fra institusjon til Legemiddelregisteret"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-13T12:44:36+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-13T21:24:42+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;
@@ -726,18 +726,6 @@
        ] ;
        fhir:name [ fhir:v "Legemiddelrekvirering" ] ;
        fhir:description [ fhir:v "Legemiddelrekvirering - ordinering, resept eller annen rekvirering av legemiddel" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.no/fhir/ig/lmdi/CodeSystem/lmdi-test-kodeverk.codesystem> ;
-         fhir:reference [ fhir:v "CodeSystem/lmdi-test-kodeverk.codesystem" ]
-       ] ;
-       fhir:name [ fhir:v "LMDI Test-kodeverk" ] ;
-       fhir:description [ fhir:v "Dette kodeverket inneholder noen rare koder." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
