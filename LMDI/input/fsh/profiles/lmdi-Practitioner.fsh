@@ -21,7 +21,7 @@ Basisprofil for Norwegian Practitioner information. Defined by The Norwegian Dir
 * identifier.value 1..1 
 * identifier.value ^short = "Selve identifikatoren"
 * identifier.system = "urn:oid:2.16.578.1.12.4.1.4.4"
-* identifier.system ^short = "Nummer fra Helsepersonellregisteret (NPR)"
+* identifier.system ^short = "Nummer fra Helsepersonellregisteret (HPR)"
 * identifier.system ^definition = "In Norway all registered health care personnel is registered in the Helsepersonellregister (HPR) and is assigned a HPR-number that is used to identify the health care practitioner. Health care personnel not registered in HPR can use FNR for identification."
 * identifier.system ^comment = "Midlertidig låst til HPR. Engelsk beskrivelse fra no-basis-practitioner."
 

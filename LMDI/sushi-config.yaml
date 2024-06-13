@@ -8,7 +8,7 @@ name: Lmdi
 title: "Legemiddeldata fra institusjon til Legemiddelregisteret"
 description: Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret
 status: draft
-version: 0.6.7
+version: 0.8.0
 fhirVersion: 4.0.1
 copyrightYear: 2024+
 releaseLabel: ci-build
