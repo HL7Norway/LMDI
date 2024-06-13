@@ -27,7 +27,8 @@ Description: "Beskrivelse av legemiddel."
 // - Katalog Handelsvare: inneholder handelsvarer med refusjon, det vil si medisinsk forbruksmateriell, næringsmidler og brystproteser.
 
 * code 1..1
-// * code.system = etc. 
+// * code.system = etc.
+// Slice med festKatalogerXXX
 
 // Krav: Legemiddelform, obligatorisk? HL7 Form vs FEST-form. IDMP/SAFEST?
 * form MS
