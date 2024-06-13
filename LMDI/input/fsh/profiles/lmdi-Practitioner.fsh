@@ -40,3 +40,6 @@ Description: "Eksempel på helsepersonell med HPR-nummer"
 * identifier.value = "9144900"
 * name.family = "Lin"
 * name.given = "Rita"
+* qualification.code.coding.system = "urn:oid:2.16.578.1.12.4.1.1.7426"
+* qualification.code.coding.code = #1
+* qualification.code.coding.display = "Allmennmedisin"
