@@ -68,15 +68,14 @@ Description: "Eksempel på organisasjon - Primærhelsetjeneste"
 * address.district = "Sigdal"
 * address.district[0].extension[NoBasisMunicipalitycode].valueCoding = #3034
 
-Instance: Organisasjon-2-Spesialist
+Instance: Organisasjon-2-Spesialist-RESH
 InstanceOf: LmdiOrganization
 Description: "Eksempel på organisasjon - spesialisthelsetjenesten med RESH."
 * identifier[RESH].system = "urn.oid:2.16.578.1.12.4.1.4.102"
-* identifier[RESH].value = "09876-54"
-* name = "Cytologisk poliklinikk, Avdeling for patologi, Oslo universitetssykehus HF" 
+* identifier[RESH].value = "4208723"
+* name = "Avdeling for epilepsi, poliklinikk" 
 
-// Oslo universitetssykehus HF
-// Avdeling for patologi
-// Postboks 4953 Nydalen
-// 0424 Oslo
-// patologi@ous-hf.no
+// OUS -> Nevroklinikken -> Avdeling for epilepsi, poliklinikk
+// Offisielt navn: Avdeling for epilepsi, poliklinikk
+// Kortnavn: SSE avd for epilepsi,poliklinikk
+// Rekvirentkode: SSE-POL
