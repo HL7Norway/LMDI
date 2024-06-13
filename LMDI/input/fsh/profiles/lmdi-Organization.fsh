@@ -74,9 +74,19 @@ Description: "Eksempel på organisasjon - spesialisthelsetjenesten med RESH."
 * identifier[RESH].system = "urn.oid:2.16.578.1.12.4.1.4.102"
 * identifier[RESH].value = "4208723"
 * name = "Avdeling for epilepsi, poliklinikk" 
+* partOf = Reference(Organisasjon-3-Spesialist-topp)
 
 // OUS -> Nevroklinikken -> Avdeling for epilepsi, poliklinikk
 // Offisielt navn: Avdeling for epilepsi, poliklinikk
 // Kortnavn: SSE avd for epilepsi,poliklinikk
 // Rekvirentkode: SSE-POL
 // TODO #24 Lage eksempel på partOf med OUS for lmdi-Organization
+
+Instance: Organisasjon-3-Spesialist-topp
+InstanceOf: LmdiOrganization
+Description: "Eksempel på organisasjon - spesialisthelsetjenesten med RESH - toppnivå."
+* identifier[ENH].system = "urn:oid:2.16.578.1.12.4.1.4.101"
+* identifier[ENH].value = "993467049"
+* identifier[RESH].system = "urn.oid:2.16.578.1.12.4.1.4.102"
+* identifier[RESH].value = "4001031"
+* name = "Oslo universitetssykehus HF"
