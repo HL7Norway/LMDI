@@ -63,6 +63,8 @@ Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legem
 * dosage.dose ^short = "Administrert mengde"
 * dosage.dose ^definition = "Administrert mengde av legemiddelet som det blir referert til."
 
+* dosage.rateRatio MS
+
 // VALUE SETS
 ValueSet: LegemiddeladministreringStatus
 Id: lmdi-medicationadministration-status
