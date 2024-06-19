@@ -6,10 +6,11 @@ Det finnes en liste med åpne saker under [åpne saker på GitHub](https://githu
 
 #### Arbeidsgruppemøte 21.6.24
 
-Temaer til diskusjon:
+Temaer:
 
-- Identifisering av legemidler (FEST, SAFEST/IDMP/SNOMED CT etc. )
+- Identifisering av legemidler (FEST, SAFEST/IDMP/SNOMED CT etc. ), id vs. avansert
 - Administrasjonsvei - kardinalitet og kodeverk
+- Diagnose - opphold/behandling, resept/ordinering
 - Organisasjonsnivå/enheter
 
 #### Diskuter om det bør være 0..1 hvis man ikke har registret administrasjonsvei. - 22
