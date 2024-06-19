@@ -2,7 +2,15 @@
 
 Oppgaver og videre arbeid.
 
-Det finnes en liste med åpne saker under [åpne saker på GitHub](https://github.com/HL7Norway/LMDI/issues). De viktigste for videre diskusjon og arbeid er gjengitt på denne siden. 
+Det finnes en liste med åpne saker under [åpne saker på GitHub](https://github.com/HL7Norway/LMDI/issues). De viktigste for videre diskusjon og arbeid er gjengitt på denne siden.
+
+#### Arbeidsgruppemøte 21.6.24
+
+Temaer til diskusjon:
+
+- Identifisering av legemidler (FEST, SAFEST/IDMP/SNOMED CT etc. )
+- Administrasjonsvei - kardinalitet og kodeverk
+- Organisasjonsnivå/enheter
 
 #### Diskuter om det bør være 0..1 hvis man ikke har registret administrasjonsvei. - 22
 
