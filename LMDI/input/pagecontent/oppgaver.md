@@ -58,6 +58,17 @@ Støtter modellen denne type use-case?
 [Sak og diskusjon på GitHub](https://github.com/HL7Norway/LMDI/issues/16)
 
 
+#### Verdisett administrasjonsvei (MedicationAdministration) - 18
+
+- Volven: Administrasjonsvei (OID=7477) - fra eResept
+- SNOMED CT https://www.hl7.org/fhir/R4/valueset-route-codes.html (HL7)
+- Andre?
+- Låser til SNOMED CT-verdisettet til HL7 inntil videre.
+- Finnes ikke en offisiell mapping mellom 7477 og SCT.
+
+[Sak og diskusjon på GitHub](https://github.com/HL7Norway/LMDI/issues/18)
+
+
 
 [Sak og diskusjon på GitHub]()
 
