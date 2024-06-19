@@ -4,12 +4,27 @@ Oppgaver og videre arbeid.
 
 Det finnes en liste med åpne saker under [åpne saker på GitHub](https://github.com/HL7Norway/LMDI/issues). De viktigste for videre diskusjon og arbeid er gjengitt på denne siden. 
 
+#### Diskuter om det bør være 0..1 hvis man ikke har registret administrasjonsvei. - 22
+
+Forslag er kun MS (must support) og 0..1.
+
+[Sak og diskusjon på GitHub](https://github.com/HL7Norway/LMDI/issues/22)
+
+#### Verdisett administrasjonsvei (MedicationAdministration) - 18
+
+- Volven: Administrasjonsvei (OID=7477) - fra eResept
+- SNOMED CT https://www.hl7.org/fhir/R4/valueset-route-codes.html (HL7)
+- Andre?
+- Låser til SNOMED CT-verdisettet til HL7 inntil videre.
+- Finnes ikke en offisiell mapping mellom 7477 og SCT.
+
+[Sak og diskusjon på GitHub](https://github.com/HL7Norway/LMDI/issues/18)
+
 #### Legemiddel - Pris - 28
 
-Hvilke muligheter har LMR for å hente inn denne? 
+Hvilke muligheter har LMR for å hente inn denne?
 
 [Sak og diskusjon på GitHub](https://github.com/HL7Norway/LMDI/issues/28)
-
 
 #### Organisasjon / Lokasjon - 27
 
@@ -40,7 +55,6 @@ Støtter modellen denne type use-case?
 
 [Sak og diskusjon på GitHub](https://github.com/HL7Norway/LMDI/issues/32)
 
-
 #### Krav: Diagnose (utskrivningsdiagnose) (referanse). Sjekke om dette faktisk skal/bør være med - 15
 
 - Mulig utskrivningsdiagnose ikke er fastsatt underveis i oppholdet / ved administrering? Når skal data sendes?
@@ -50,23 +64,12 @@ Støtter modellen denne type use-case?
 
 [Sak og diskusjon på GitHub](https://github.com/HL7Norway/LMDI/issues/15)
 
-
 #### Observasjon.Laboratorieverdier - hvilke typer er aktuelle? - 16
 
 (Fra informasjonsmodellen)
 
 [Sak og diskusjon på GitHub](https://github.com/HL7Norway/LMDI/issues/16)
 
-
-#### Verdisett administrasjonsvei (MedicationAdministration) - 18
-
-- Volven: Administrasjonsvei (OID=7477) - fra eResept
-- SNOMED CT https://www.hl7.org/fhir/R4/valueset-route-codes.html (HL7)
-- Andre?
-- Låser til SNOMED CT-verdisettet til HL7 inntil videre.
-- Finnes ikke en offisiell mapping mellom 7477 og SCT.
-
-[Sak og diskusjon på GitHub](https://github.com/HL7Norway/LMDI/issues/18)
 
 
 
