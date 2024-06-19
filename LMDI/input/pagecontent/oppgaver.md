@@ -1,8 +1,6 @@
-### Oppgaver, åpne saker og videre arbeid
+### Oppgaver og åpne saker
 
-Oppgaver og videre arbeid.
-
-Det finnes en liste med åpne saker under [åpne saker på GitHub](https://github.com/HL7Norway/LMDI/issues). De viktigste for videre diskusjon og arbeid er gjengitt på denne siden.
+Det finnes en liste med åpne saker under [åpne saker på GitHub](https://github.com/HL7Norway/LMDI/issues). Et utvalg saker for videre diskusjon og arbeid er gjengitt på denne siden.
 
 #### Arbeidsgruppemøte 21.6.24
 
@@ -12,6 +10,7 @@ Temaer:
 - Administrasjonsvei - kardinalitet og kodeverk
 - Diagnose - opphold/behandling, resept/ordinering
 - Organisasjonsnivå/enheter
+- **Forutsetninger for å kunne starte implementasjon, utprøving og testing** - Minimum Viable Product
 
 #### Diskuter om det bør være 0..1 hvis man ikke har registret administrasjonsvei. - 22
 
@@ -80,9 +79,9 @@ Støtter modellen denne type use-case?
 [Sak og diskusjon på GitHub](https://github.com/HL7Norway/LMDI/issues/16)
 
 
+### Veien videre
 
-
-[Sak og diskusjon på GitHub]()
+Planlegge neste arbeidsgruppemøte. 
 
 
 ---
