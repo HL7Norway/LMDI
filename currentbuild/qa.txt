@@ -3,7 +3,7 @@ Lmdi : Validation Results
 
 err = 43, warn = 22, info = 5
 IG Publisher Version: 1.6.11
-Generated Wed Jun 19 07:53:56 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.8.2 (canonical = http://hl7.no/fhir/ig/lmdi)
+Generated Wed Jun 19 08:09:43 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.8.2 (canonical = http://hl7.no/fhir/ig/lmdi)
  Build Errors : 7 / 3 / 0
  /github/workspace/LMDI/fsh-generated/resources/Condition-Diagnose-1-ICD10-OID : 2 / 1 / 2
  /github/workspace/LMDI/fsh-generated/resources/Condition-Diagnose-2-SNOMED-CT : 3 / 1 / 2
