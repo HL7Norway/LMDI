@@ -169,6 +169,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Det finnes en liste med åpne saker under <a href="https://github.com/HL7Norway/LMDI/issues">åpne saker på GitHub</a>. De viktigste for videre diskusjon og arbeid er gjengitt på denne siden.</p>
 
+<h4 id="diskuter-om-det-bør-være-01-hvis-man-ikke-har-registret-administrasjonsvei---22">Diskuter om det bør være 0..1 hvis man ikke har registret administrasjonsvei. - 22</h4>
+
+<p>Forslag er kun MS (must support) og 0..1.</p>
+
+<p><a href="https://github.com/HL7Norway/LMDI/issues/22">Sak og diskusjon på GitHub</a></p>
+
+<h4 id="verdisett-administrasjonsvei-medicationadministration---18">Verdisett administrasjonsvei (MedicationAdministration) - 18</h4>
+
+<ul>
+  <li>Volven: Administrasjonsvei (OID=7477) - fra eResept</li>
+  <li>SNOMED CT https://www.hl7.org/fhir/R4/valueset-route-codes.html (HL7)</li>
+  <li>Andre?</li>
+  <li>Låser til SNOMED CT-verdisettet til HL7 inntil videre.</li>
+  <li>Finnes ikke en offisiell mapping mellom 7477 og SCT.</li>
+</ul>
+
+<p><a href="https://github.com/HL7Norway/LMDI/issues/18">Sak og diskusjon på GitHub</a></p>
+
 <h4 id="legemiddel---pris---28">Legemiddel - Pris - 28</h4>
 
 <p>Hvilke muligheter har LMR for å hente inn denne?</p>
@@ -206,6 +224,23 @@ Støtter modellen denne type use-case?</p>
 
 <p><a href="https://github.com/HL7Norway/LMDI/issues/32">Sak og diskusjon på GitHub</a></p>
 
+<h4 id="krav-diagnose-utskrivningsdiagnose-referanse-sjekke-om-dette-faktisk-skalbør-være-med---15">Krav: Diagnose (utskrivningsdiagnose) (referanse). Sjekke om dette faktisk skal/bør være med - 15</h4>
+
+<ul>
+  <li>Mulig utskrivningsdiagnose ikke er fastsatt underveis i oppholdet / ved administrering? Når skal data sendes?</li>
+  <li>Det oversendes ingen informasjon før det er skjedd en administrasjon, og det finnes komplette data rundt.</li>
+  <li>Hva med utskrivningsdiagnose - er data tilgjengelig? Kan det hentes fra andre registre?</li>
+  <li>Skal denne flyttes fra opphold til forskrivning?</li>
+</ul>
+
+<p><a href="https://github.com/HL7Norway/LMDI/issues/15">Sak og diskusjon på GitHub</a></p>
+
+<h4 id="observasjonlaboratorieverdier---hvilke-typer-er-aktuelle---16">Observasjon.Laboratorieverdier - hvilke typer er aktuelle? - 16</h4>
+
+<p>(Fra informasjonsmodellen)</p>
+
+<p><a href="https://github.com/HL7Norway/LMDI/issues/16">Sak og diskusjon på GitHub</a></p>
+
 <p><a href="">Sak og diskusjon på GitHub</a></p>
 
 <hr />
@@ -239,7 +274,7 @@ Støtter modellen denne type use-case?</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no">Folkehelseinstituttet (FHI)</a>.  Package hl7.fhir.no.lmdi#0.8.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 19, 2024 08:06+0000">2024-06-19</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no">Folkehelseinstituttet (FHI)</a>.  Package hl7.fhir.no.lmdi#0.8.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 19, 2024 08:44+0000">2024-06-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
