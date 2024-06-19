@@ -41,10 +41,25 @@ Støtter modellen denne type use-case?
 [Sak og diskusjon på GitHub](https://github.com/HL7Norway/LMDI/issues/32)
 
 
+#### Krav: Diagnose (utskrivningsdiagnose) (referanse). Sjekke om dette faktisk skal/bør være med - 15
+
+- Mulig utskrivningsdiagnose ikke er fastsatt underveis i oppholdet / ved administrering? Når skal data sendes?
+- Det oversendes ingen informasjon før det er skjedd en administrasjon, og det finnes komplette data rundt.
+- Hva med utskrivningsdiagnose - er data tilgjengelig? Kan det hentes fra andre registre?
+- Skal denne flyttes fra opphold til forskrivning?
+
+[Sak og diskusjon på GitHub](https://github.com/HL7Norway/LMDI/issues/15)
+
+
+#### Observasjon.Laboratorieverdier - hvilke typer er aktuelle? - 16
+
+(Fra informasjonsmodellen)
+
+[Sak og diskusjon på GitHub](https://github.com/HL7Norway/LMDI/issues/16)
+
 
 
 [Sak og diskusjon på GitHub]()
-
 
 
 ---
