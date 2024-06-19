@@ -10,7 +10,7 @@
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-06-13T21:24:42+00:00",
+  "date" : "2024-06-19T07:26:39+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -1082,6 +1082,15 @@
         }],
         "nameUrl" : "informasjonsmodell.html",
         "title" : "Informasjonsmodell",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "oppgaver.html"
+        }],
+        "nameUrl" : "oppgaver.html",
+        "title" : "Oppgaver",
         "generation" : "markdown"
       }]
     },

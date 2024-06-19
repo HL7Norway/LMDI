@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Lmdi"] ; # 
   fhir:title [ fhir:v "Legemiddeldata fra institusjon til Legemiddelregisteret"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-13T21:24:42+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-19T07:26:39+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;
@@ -1044,6 +1044,14 @@
          ] ) ;
          fhir:name [ fhir:v "informasjonsmodell.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Informasjonsmodell" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "oppgaver.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "oppgaver.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Oppgaver" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

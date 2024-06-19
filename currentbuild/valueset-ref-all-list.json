@@ -309,8 +309,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-organization.html" : "Organisasjon",
       "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
+      "StructureDefinition-lmdi-organization.html" : "Organisasjon",
       "StructureDefinition-lmdi-patient.html" : "Pasient"
     },
     {
@@ -325,8 +325,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-organization.html" : "Organisasjon",
       "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
+      "StructureDefinition-lmdi-organization.html" : "Organisasjon",
       "StructureDefinition-lmdi-patient.html" : "Pasient"
     },
     {
@@ -341,14 +341,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-observation-tmp.html" : "Observasjon (kladd)",
+      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
       "StructureDefinition-lmdi-episodeofcare-institusjonsopphold.html" : "Institusjonsopphold",
       "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel",
+      "StructureDefinition-lmdi-observation-tmp.html" : "Observasjon (kladd)",
       "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering",
       "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel",
-      "StructureDefinition-lmdi-organization.html" : "Organisasjon",
-      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
       "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose",
+      "StructureDefinition-lmdi-organization.html" : "Organisasjon",
       "StructureDefinition-lmdi-practitionerrole.html" : "Rolle helsepersonell",
       "StructureDefinition-lmdi-patient.html" : "Pasient"
     },

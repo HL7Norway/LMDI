@@ -11,7 +11,7 @@
   <name value="Lmdi"/>
   <title value="Legemiddeldata fra institusjon til Legemiddelregisteret"/>
   <status value="draft"/>
-  <date value="2024-06-13T21:24:42+00:00"/>
+  <date value="2024-06-19T07:26:39+00:00"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>
   <contact>
     <name value="Folkehelseinstituttet (FHI)"/>
@@ -887,6 +887,14 @@
         </extension>
         <nameUrl value="informasjonsmodell.html"/>
         <title value="Informasjonsmodell"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="oppgaver.html"/>
+        </extension>
+        <nameUrl value="oppgaver.html"/>
+        <title value="Oppgaver"/>
         <generation value="markdown"/>
       </page>
     </page>
