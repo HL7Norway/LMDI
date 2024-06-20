@@ -12,7 +12,7 @@ Temaer:
 - Organisasjonsnivå/enheter
 - **Forutsetninger for å kunne starte implementasjon, utprøving og testing** - Minimum Viable Product
 
-#### Diskuter om det bør være 0..1 hvis man ikke har registret administrasjonsvei. - 22
+#### Diskuter om det bør være 0..1 hvis man ikke har registrert administrasjonsvei - 22
 
 Forslag er kun MS (must support) og 0..1.
 
