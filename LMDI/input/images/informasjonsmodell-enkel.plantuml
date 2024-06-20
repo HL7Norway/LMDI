@@ -27,7 +27,7 @@ class Organisasjon <<Organization>> {
 
 Organisasjon --> Organisasjon
 
-class Institusjonsopphold <<EpisodeOfCate>> {
+class Institusjonsopphold <<EpisodeOfCare>> {
 }
 
 Institusjonsopphold --> Pasient
