@@ -1,18 +1,13 @@
 @startuml
 
 header "Legemiddeldata fra institusjon til Legemiddelregisteret"
-title "Informasjonsmodell: UML klassediagam (arbeidsversjon) - enkel"
+title "Informasjonsmodell: UML klassediagam - MVP"
 footer "Folkehelseinstituttet / Vali AS"
 
-class Pasient <<Patient>> {
-get()
-post()
+class Pasient <<Patient>> #cyan {
 }
 
-class Legemiddeladministrasjon <<MedicationAdministration>> {
-get()
-post()
-delete()
+class Legemiddeladministrasjon <<MedicationAdministration>> #cyan {
 }
 
 Legemiddeladministrasjon --> Legemiddel 
@@ -22,7 +17,7 @@ Legemiddeladministrasjon --> Organisasjon
 Legemiddeladministrasjon --> Rekvisisjon
 Legemiddeladministrasjon --> Institusjonsopphold
 
-class Legemiddel <<Medication>> {
+class Legemiddel <<Medication>> #cyan {
 }
 
 class Helsepersonell <<Practitioner>> {
@@ -32,7 +27,7 @@ class Organisasjon <<Organization>> {
 
 Organisasjon --> Organisasjon
 
-class Institusjonsopphold <<EpisodeOfCate>> {
+class Institusjonsopphold <<EpisodeOfCare>> {
 }
 
 Institusjonsopphold --> Pasient
