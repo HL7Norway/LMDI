@@ -8,7 +8,7 @@ Id:       lmdi-legemiddel
 Title:    "Legemiddel"
 Description: "Beskrivelse av legemiddel."
 * ^status = #draft
-* ^date = "2024-06-12"
+* ^date = "2024-06-20"
 * ^publisher = "Folkehelseinstituttet"
 
 // Se basis-profiler og evt. eResept/PLL
