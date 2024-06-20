@@ -27,12 +27,25 @@ Description: "Beskrivelse av legemiddel."
 // - Katalog Handelsvare: inneholder handelsvarer med refusjon, det vil si medisinsk forbruksmateriell, næringsmidler og brystproteser.
 
 * code 1..1
-// * code.system = etc.
 // Slice med festKatalogerXXX
 
-// Krav: Legemiddelform, obligatorisk? HL7 Form vs FEST-form. IDMP/SAFEST?
 * form MS
 * form ^short = "Legemiddelform"
+* form.coding 1..*
+* form.coding.system 1..1
+* form.coding.code 1..1
+* form.coding.display MS
+* form.coding ^slicing.discriminator.type = #pattern
+* form.coding ^slicing.discriminator.path = "system"
+* form.coding ^slicing.rules = #closed
+* form.coding contains 7448 0..1 and SCT 0..1
+* form.coding 1..* 
+* form.coding ^short = "Legemiddelform"
+* form.coding ^comment = "Kodet legemiddelform. Inntil videre begrenset til Legemiddelform (7448) og kodesetteksempel basert på SNOMED CT fra HL7."
+* form.coding[7448] ^short = "Kodeverk Legemiddelform (7448) fra FEST/eResept"
+* form.coding[SCT] ^short = "SNOMED CT Form Codes"
+* form.coding[7448].system = "urn:oid:2.16.578.1.12.4.1.1.7448" 
+* form.coding[SCT].system = "http://snomed.info/sct" 
 
 // Krav: Ingredienser/virkestoff navn (ingredienth) // Bør finnes indirekte for de flest
 // Krav: Styrke (ingredient.strength[x]) // Bør finnes indirekte for de fleste
