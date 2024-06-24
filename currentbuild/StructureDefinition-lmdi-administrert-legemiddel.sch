@@ -12,7 +12,6 @@
   <sch:pattern>
     <sch:title>f:MedicationAdministration/f:dosage</sch:title>
     <sch:rule context="f:MedicationAdministration/f:dosage">
-      <sch:assert test="count(f:route) &gt;= 1">route: minimum cardinality of 'route' is 1</sch:assert>
       <sch:assert test="count(f:dose) &gt;= 1">dose: minimum cardinality of 'dose' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
