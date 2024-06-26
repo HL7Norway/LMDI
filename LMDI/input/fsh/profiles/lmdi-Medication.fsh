@@ -32,6 +32,10 @@ Description: "Beskrivelse av legemiddel."
 * code.coding[FM] ^short = "FEST-id for legemiddel MERKEVARE"
 * code.coding[FP] ^short = "FEST-id for legemiddel PAKNING"
 * code.coding[FV] ^short = "FEST-is for legemiddel VIRKESTOFF"
+* code.coding[FD] ^comment = "URI for NamingSystem er midlertidig, må normeres som en del av no-basis."
+* code.coding[FM] ^comment = "URI for NamingSystem er midlertidig, må normeres som en del av no-basis."
+* code.coding[FP] ^comment = "URI for NamingSystem er midlertidig, må normeres som en del av no-basis."
+* code.coding[FV] ^comment = "URI for NamingSystem er midlertidig, må normeres som en del av no-basis."
 
 * form MS
 * form ^short = "Legemiddelform"
