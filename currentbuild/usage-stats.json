@@ -84,7 +84,8 @@
   "usage": {
     "http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode": [
       "Address.district",
-      "Organization.address.district"
+      "Organization.address.district",
+      "Patient.address.district"
     ],
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url": [
       "NamingSystem"
