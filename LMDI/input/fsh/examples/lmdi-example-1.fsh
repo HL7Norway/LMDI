@@ -8,7 +8,7 @@ Description: "Utfyllende eksempel"
 * status = #completed
 * medicationReference = Reference(Medisin-10)
 * subject = Reference(Pasient-20)
-* context = Reference(uuid:9b62d7e8-df64-47b7-9fe1-38bc45795d82)
+* context = Reference(Institusjonsopphold-2-Sykehjem)
 * performer.actor = Reference(Helsepersonell-10)
 * performer.actor = Reference(RolleHelsepersonell-10)
 * effectiveDateTime = "2024-05-28"
@@ -16,6 +16,8 @@ Description: "Utfyllende eksempel"
 * contained[+] = Pasient-20
 * contained[+] = Helsepersonell-10
 * contained[+] = RolleHelsepersonell-10
+* contained[+] = Institusjonsopphold-2-Sykehjem
+* contained[+] = Organisasjon-2-Eldrehjem
 
 Instance: Medisin-10
 InstanceOf: Medication
@@ -51,3 +53,20 @@ Usage: #inline
 // TODO #14 Dårlig kodeverk for PractitionerRole fra no-basis-PractitionerRole
 * identifier.system = "urn:oid:2.16.578.1.12.4.1.1.9034"
 * identifier.value = #9
+
+Instance: Institusjonsopphold-2-Sykehjem
+InstanceOf: EpisodeOfCare
+Description: "Eksempel på institusjonsopphold med EpisodeOfCare"
+Usage: #inline
+* status = #active
+* patient = Reference(Pasient-20)
+* managingOrganization = Reference(Organisasjon-2-Eldrehjem)
+* period.start = "2019-04-01"
+
+Instance: Organisasjon-2-Eldrehjem
+InstanceOf: Organization
+Description: "Eksempel på organisasjon - Primærhelsetjeneste"
+Usage: #inline
+* identifier.system = "urn:oid:2.16.578.1.12.4.1.4.101"
+* identifier.value = "1234567890"
+* name = "Lykkedalen eldrehjem"
