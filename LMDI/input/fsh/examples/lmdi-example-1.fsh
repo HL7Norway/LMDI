@@ -9,9 +9,9 @@ Description: "Utfyllende eksempel"
 * medicationReference = Reference(Medisin-10)
 * subject = Reference(Pasient-20)
 * context = Reference(Institusjonsopphold-2-Sykehjem)
-* performer.actor = Reference(Helsepersonell-10)
-* performer.actor = Reference(RolleHelsepersonell-10)
-* effectiveDateTime = "2024-05-28"
+* performer[0].actor = Reference(Helsepersonell-10)
+* performer[+].actor = Reference(RolleHelsepersonell-10)
+* effectiveDateTime = "2024-05-28T13:14:00Z"
 * contained[+] = Medisin-10
 * contained[+] = Pasient-20
 * contained[+] = Helsepersonell-10
