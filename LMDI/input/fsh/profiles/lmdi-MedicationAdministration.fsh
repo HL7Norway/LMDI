@@ -26,7 +26,6 @@ Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legem
 * context ^comment = "Encounter må vurderes om nødvendig, f.eks. hos spesialist."
 
 * effective[x] ^short = "Tidspunkt eller periode for administrasjon"
-* effective[x] ^comment = "NB! R5 bruker 'occurence'. Behov for 'Period' ved infusjon?"
 
 * performer and performer.actor MS
 * performer.actor only Reference (Practitioner) or Reference (PractitionerRole)
