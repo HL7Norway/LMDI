@@ -10,11 +10,9 @@ Samle inn legemiddeldata på individnivå fra polikliniske og innlagte pasienter
 
 ## Spesifikasjon
 
-### Modell
+### Overordnet informasjonsmodell
 
-Utkast, under stadig forandring! Stereotypen sier hvilken FHIR-ressurs som benyttes, f.eks. ```<<Patient>>```
-
-<img src="LMDI/input/images/informasjonsmodell-test.svg" width="100%" />
+<img src="LMDI/input/images/informasjonsmodell-enkel.svg" width="100%" />
 
 ## Utvikling
 
