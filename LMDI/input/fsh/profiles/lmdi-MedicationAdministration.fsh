@@ -36,7 +36,7 @@ Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legem
 
 * request MS
 * request ^short = "Referanse til rekvisisjon"
-* request ^comment = "Usikker på hvordan dette skal støttes p.t."
+* request ^definition = "Referanse til rekvisisjonen som denne administreringen er basert på (som for eksempel resept eller ordinering."
 
 * dosage.route MS
 * dosage.route ^short = "Administrasjonsvei"

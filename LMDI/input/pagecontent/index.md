@@ -15,7 +15,7 @@ Se [informasjonsmodell](informasjonsmodell.html).
 
 ### Utvikling
 
-- All utvikling skjer på eget [repository på GitHub](https://github.com/HL7Norway/LMDI). Sidene du leser nå publiseres automatisk derfra. 
+- All utvikling skjer på eget [repository på GitHub](https://github.com/HL7Norway/LMDI). Sidene du leser nå publiseres automatisk derfra.
 - All koding av profiler skjer med [FHIR Shorthand](https://www.hl7.org/fhir/uv/shorthand/) (FSH)
 - Dokumentasjon genereres med [IG Publisher](https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation)
 
@@ -35,6 +35,7 @@ Versjon 0.9 sommer 2024.
 
 #### Status og historikk
 
+- 2024-06-27: Versjon 0.9 klar for test
 - 2024-06-13: Versjon 0.8
 - 2024-05-28: Versjon 0.5 klar for teknisk gjennomgang og kommentering fra torsdag 30.5.2025
 - 2024-05-23: Versjon 0.2

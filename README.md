@@ -33,10 +33,11 @@ Inntil videre er profilene og implementasjonsguiden ([se siste build](https://hl
 
 ## Plan
 
-Versjon 0.9 sommer 2024. 
+Versjon 0.9 sommer 2024.
 
 ## Status og historikk
 
+- 2024-06-27: Versjon 0.9 klar for test
 - 2024-06-13: Versjon 0.8
 - 2024-05-28: Versjon 0.5 klar for teknisk gjennomgang og kommentering fra torsdag 30.5.2025
 - 2024-05-23: Versjon 0.2
