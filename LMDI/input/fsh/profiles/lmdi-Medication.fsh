@@ -1,7 +1,3 @@
-// Krav: Kode, som FEST-id, SNOMED-CT etc., obligatorisk
-// Opprette NamingSystem for FEST #12 <- issue
-// Slicing? Hva kan LMR ta i mot? Hvilket nivå skal man rapportere på? Hva med "ukurrante" legemidler? 
-
 Profile: Legemiddel
 Parent:   Medication
 Id:       lmdi-legemiddel
@@ -57,9 +53,6 @@ Description: "Beskrivelse av legemiddel."
 * batch MS
 * batch ^short = "Batch-nummer for legemiddelet"
 
-// Krav: Merkevarenavn, handelsnavn
-// TODO #17 Krav: Definerte døgndoser (DDD). Gjør det indirekte ved f.eks. festLegemiddelPakning
-
 // EKSEMPLER
 
 Instance: Medisin-1-LegemiddelDose-Oxycodone
@@ -86,4 +79,3 @@ Description: "Eksempel på legemiddel - paking"
 * identifier.system = "http://dmp.no/fhir/NamingSystem/festLegemiddelPakning"
 * identifier.value = "ID_0003602E-315E-4CDE-9EB0-6756BE9CD120"
 * code.text = "Monoket OD SySk depotkaps, hard 50 mg"
-// <DDD V="0.04" U="g" />
