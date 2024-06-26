@@ -609,7 +609,7 @@
       <sliceName value="FD"/>
       <short value="FEST-id for legemiddel DOSE"/>
       <definition value="A reference to a code defined by a terminology system."/>
-      <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true."/>
+      <comment value="URI for NamingSystem er midlertidig, må normeres som en del av no-basis."/>
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems."/>
       <min value="0"/>
       <max value="1"/>
@@ -918,7 +918,7 @@
       <sliceName value="FM"/>
       <short value="FEST-id for legemiddel MERKEVARE"/>
       <definition value="A reference to a code defined by a terminology system."/>
-      <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true."/>
+      <comment value="URI for NamingSystem er midlertidig, må normeres som en del av no-basis."/>
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems."/>
       <min value="0"/>
       <max value="1"/>
@@ -1227,7 +1227,7 @@
       <sliceName value="FP"/>
       <short value="FEST-id for legemiddel PAKNING"/>
       <definition value="A reference to a code defined by a terminology system."/>
-      <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true."/>
+      <comment value="URI for NamingSystem er midlertidig, må normeres som en del av no-basis."/>
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems."/>
       <min value="0"/>
       <max value="1"/>
@@ -1536,7 +1536,7 @@
       <sliceName value="FV"/>
       <short value="FEST-is for legemiddel VIRKESTOFF"/>
       <definition value="A reference to a code defined by a terminology system."/>
-      <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true."/>
+      <comment value="URI for NamingSystem er midlertidig, må normeres som en del av no-basis."/>
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems."/>
       <min value="0"/>
       <max value="1"/>
@@ -3581,6 +3581,7 @@
       <path value="Medication.code.coding"/>
       <sliceName value="FD"/>
       <short value="FEST-id for legemiddel DOSE"/>
+      <comment value="URI for NamingSystem er midlertidig, må normeres som en del av no-basis."/>
       <min value="0"/>
       <max value="1"/>
     </element>
@@ -3593,6 +3594,7 @@
       <path value="Medication.code.coding"/>
       <sliceName value="FM"/>
       <short value="FEST-id for legemiddel MERKEVARE"/>
+      <comment value="URI for NamingSystem er midlertidig, må normeres som en del av no-basis."/>
       <min value="0"/>
       <max value="1"/>
     </element>
@@ -3605,6 +3607,7 @@
       <path value="Medication.code.coding"/>
       <sliceName value="FP"/>
       <short value="FEST-id for legemiddel PAKNING"/>
+      <comment value="URI for NamingSystem er midlertidig, må normeres som en del av no-basis."/>
       <min value="0"/>
       <max value="1"/>
     </element>
@@ -3617,6 +3620,7 @@
       <path value="Medication.code.coding"/>
       <sliceName value="FV"/>
       <short value="FEST-is for legemiddel VIRKESTOFF"/>
+      <comment value="URI for NamingSystem er midlertidig, må normeres som en del av no-basis."/>
       <min value="0"/>
       <max value="1"/>
     </element>

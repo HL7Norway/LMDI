@@ -4,29 +4,30 @@ header "Legemiddeldata fra institusjon til Legemiddelregisteret"
 title "Informasjonsmodell: UML klassediagam - MVP"
 footer "Folkehelseinstituttet / Vali AS"
 
-class Pasient <<Patient>> #cyan {
+class Pasient <<Patient>> #lightgreen {
 }
 
-class Legemiddeladministrasjon <<MedicationAdministration>> #cyan {
+class Legemiddeladministrasjon <<MedicationAdministration>> #lightgreen {
 }
 
 Legemiddeladministrasjon --> Legemiddel 
 Legemiddeladministrasjon --> Pasient
 Legemiddeladministrasjon --> Helsepersonell
+Legemiddeladministrasjon --> "Rolle helsepersonell"
 Legemiddeladministrasjon --> Rekvisisjon
 Legemiddeladministrasjon --> Institusjonsopphold
 
-class Legemiddel <<Medication>> #cyan {
+class Legemiddel <<Medication>> #lightgreen {
 }
 
 class Helsepersonell <<Practitioner>> {
 }
-class Organisasjon <<Organization>> {
+class Organisasjon <<Organization>> #lightgreen {
 }
 
 Organisasjon --> Organisasjon
 
-class Institusjonsopphold <<EpisodeOfCare>> {
+class Institusjonsopphold <<EpisodeOfCare>> #lightgreen {
 }
 
 Institusjonsopphold --> Pasient
@@ -46,6 +47,11 @@ Rekvisisjon --> Legemiddel
 Rekvisisjon --> Pasient
 Rekvisisjon --> Helsepersonell
 Rekvisisjon --> Rekvisisjon
+
+class "Rolle helsepersonell" <<PractitionerRole>> {
+}
+
+
 
 @enduml
 

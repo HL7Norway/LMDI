@@ -639,7 +639,7 @@
        fhir:sliceName [ fhir:v "FD" ] ;
        fhir:short [ fhir:v "FEST-id for legemiddel DOSE" ] ;
        fhir:definition [ fhir:v "A reference to a code defined by a terminology system." ] ;
-       fhir:comment [ fhir:v "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ] ;
+       fhir:comment [ fhir:v "URI for NamingSystem er midlertidig, må normeres som en del av no-basis." ] ;
        fhir:requirements [ fhir:v "Allows for alternative encodings within a code system, and translations to other code systems." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
@@ -960,7 +960,7 @@
        fhir:sliceName [ fhir:v "FM" ] ;
        fhir:short [ fhir:v "FEST-id for legemiddel MERKEVARE" ] ;
        fhir:definition [ fhir:v "A reference to a code defined by a terminology system." ] ;
-       fhir:comment [ fhir:v "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ] ;
+       fhir:comment [ fhir:v "URI for NamingSystem er midlertidig, må normeres som en del av no-basis." ] ;
        fhir:requirements [ fhir:v "Allows for alternative encodings within a code system, and translations to other code systems." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
@@ -1281,7 +1281,7 @@
        fhir:sliceName [ fhir:v "FP" ] ;
        fhir:short [ fhir:v "FEST-id for legemiddel PAKNING" ] ;
        fhir:definition [ fhir:v "A reference to a code defined by a terminology system." ] ;
-       fhir:comment [ fhir:v "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ] ;
+       fhir:comment [ fhir:v "URI for NamingSystem er midlertidig, må normeres som en del av no-basis." ] ;
        fhir:requirements [ fhir:v "Allows for alternative encodings within a code system, and translations to other code systems." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
@@ -1602,7 +1602,7 @@
        fhir:sliceName [ fhir:v "FV" ] ;
        fhir:short [ fhir:v "FEST-is for legemiddel VIRKESTOFF" ] ;
        fhir:definition [ fhir:v "A reference to a code defined by a terminology system." ] ;
-       fhir:comment [ fhir:v "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ] ;
+       fhir:comment [ fhir:v "URI for NamingSystem er midlertidig, må normeres som en del av no-basis." ] ;
        fhir:requirements [ fhir:v "Allows for alternative encodings within a code system, and translations to other code systems." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
@@ -3755,6 +3755,7 @@
        fhir:path [ fhir:v "Medication.code.coding" ] ;
        fhir:sliceName [ fhir:v "FD" ] ;
        fhir:short [ fhir:v "FEST-id for legemiddel DOSE" ] ;
+       fhir:comment [ fhir:v "URI for NamingSystem er midlertidig, må normeres som en del av no-basis." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ]
      ] [
@@ -3767,6 +3768,7 @@
        fhir:path [ fhir:v "Medication.code.coding" ] ;
        fhir:sliceName [ fhir:v "FM" ] ;
        fhir:short [ fhir:v "FEST-id for legemiddel MERKEVARE" ] ;
+       fhir:comment [ fhir:v "URI for NamingSystem er midlertidig, må normeres som en del av no-basis." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ]
      ] [
@@ -3779,6 +3781,7 @@
        fhir:path [ fhir:v "Medication.code.coding" ] ;
        fhir:sliceName [ fhir:v "FP" ] ;
        fhir:short [ fhir:v "FEST-id for legemiddel PAKNING" ] ;
+       fhir:comment [ fhir:v "URI for NamingSystem er midlertidig, må normeres som en del av no-basis." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ]
      ] [
@@ -3791,6 +3794,7 @@
        fhir:path [ fhir:v "Medication.code.coding" ] ;
        fhir:sliceName [ fhir:v "FV" ] ;
        fhir:short [ fhir:v "FEST-is for legemiddel VIRKESTOFF" ] ;
+       fhir:comment [ fhir:v "URI for NamingSystem er midlertidig, må normeres som en del av no-basis." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ]
      ] [
