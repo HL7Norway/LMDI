@@ -1,7 +1,3 @@
-// Se på følgende kilder: eResept, Pasientens legemiddelliste / sentral forskrivningsmodul (eResept) / HSØ Lukket legemiddelsløyfe - H-resept, IDMP/UNICOM
-// Legge til støtte for no-basis-Patient senere
-// TODO #19 Sjekk hvordan Pasientent legemiddelliste (PLL) bruker dose med FHIR
-
 Profile: AdministrertLegemiddel
 Parent:   MedicationAdministration
 Id:       lmdi-administrert-legemiddel
