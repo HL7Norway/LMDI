@@ -1,0 +1,37 @@
+<OppfLegemiddelpakning>
+      <Id>ID_E335E986-0D85-4D39-B354-18DBD79F3602</Id>
+      <Tidspunkt>2023-07-01T03:11:50</Tidspunkt>
+      <Status V="A" DN="Aktiv oppføring" />
+      <Legemiddelpakning xmlns="http://www.kith.no/xmlstds/eresept/forskrivning/2014-12-01">
+        <Atc V="M03AX01" S="2.16.578.1.12.4.1.1.7180" DN="Botulinumtoksin" />
+        <NavnFormStyrke>Botox pulv til inj væske, oppl 50 E</NavnFormStyrke>
+        <Reseptgruppe V="C" DN="Reseptgruppe C" />
+        <LegemiddelformKort V="789" S="2.16.578.1.12.4.1.1.7448" DN="Pulver til injeksjonsvæske, oppløsning" />
+        <Preparattype V="7" DN="Legemiddel" />
+        <TypeSoknadSlv V="1" DN="Skal ikke søkes" />
+        <Id>ID_00B35335-0DF7-4C98-8A0A-1148F4599D21</Id>
+        <Varenr>026491</Varenr>
+        <Ean>5016007205480</Ean>
+        <Oppbevaring V="K" DN="Kaldt (2-8 grader)" />
+        <Pakningsinfo>
+          <RefLegemiddelMerkevare>ID_5DB02D60-FECA-4FCB-B403-FB3CED9DE8C4</RefLegemiddelMerkevare>
+          <Pakningsstr>50</Pakningsstr>
+          <EnhetPakning V="E" S="2.16.578.1.12.4.1.1.7452" DN="enhet(er)" />
+          <Pakningstype V="37" S="2.16.578.1.12.4.1.1.7449" DN="Hetteglass" />
+          <Mengde>50</Mengde>
+        </Pakningsinfo>
+        <PrisVare>
+          <Type V="4" S="2.16.578.1.12.4.1.1.7453" DN="AUP" />
+          <Pris V="1444.9" U="NOK" />
+          <GyldigFraDato>2023-07-01</GyldigFraDato>
+        </PrisVare>
+        <PrisVare>
+          <Type V="3" S="2.16.578.1.12.4.1.1.7453" DN="AIP" />
+          <Pris V="1099.45" U="NOK" />
+          <GyldigFraDato>2023-07-01</GyldigFraDato>
+        </PrisVare>
+        <Markedsforingsinfo>
+          <Markedsforingsdato>2016-12-15</Markedsforingsdato>
+        </Markedsforingsinfo>
+      </Legemiddelpakning>
+    </OppfLegemiddelpakning>
