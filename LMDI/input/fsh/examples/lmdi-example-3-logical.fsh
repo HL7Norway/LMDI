@@ -11,9 +11,9 @@ Description: "Utfyllende eksempel - minimalt, logiske referanser"
 * performer.actor.identifier.system = "urn:oid:2.16.578.1.12.4.1.4.4"
 * performer.actor.identifier.value = "9144900"
 * effectiveDateTime = "2024-05-28"
-* dosage.route.coding[SCT].system = "http://snomed.info/sct"
-* dosage.route.coding[SCT].code = #47625008
-* dosage.route.coding[SCT].display = "Intravenous route (qualifier value)"
+* dosage.route.coding.system = "http://snomed.info/sct"
+* dosage.route.coding.code = #47625008
+* dosage.route.coding.display = "Intravenous route (qualifier value)"
 * dosage.dose.value = 100.0
 * dosage.dose.system = "http://unitsofmeasure.org"
 * dosage.dose.code = #mg
