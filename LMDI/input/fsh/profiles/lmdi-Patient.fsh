@@ -38,6 +38,11 @@ Description: "Informasjon om pasienten"
 * birthDate ^definition = "Pasientens fødselsdato. Skal oppgis sammen med kjønn hvis det ikke finnes pasient-ID."
 * birthDate ^comment = "Inkluderer helst hvis opplysningen finnes."
 
+* address MS
+* address.district.extension contains NoBasisMunicipalitycode named municipalitycode 0..1
+* address.district.extension[municipalitycode] ^short = "Coded value for municipality/county Norwegian kommune"
+* address.district.extension[municipalitycode] ^definition = "Coded value for municipality/county Norwegian kommune"
+
 // EKSEMPLER
 
 Instance: Pasient-1-Uten-FNR
