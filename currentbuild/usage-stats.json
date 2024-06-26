@@ -1,6 +1,6 @@
 {
   "package": "hl7.fhir.no.lmdi",
-  "version": "0.8.4",
+  "version": "0.8.5",
   "fhirVersion": "4.0.1",
   "jurisdiction": "NO",
   "extensions": [

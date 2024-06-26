@@ -1,15 +1,15 @@
 Lmdi : Validation Results
 =========================================
 
-err = 43, warn = 22, info = 5
+err = 44, warn = 23, info = 6
 IG Publisher Version: 1.6.11
-Generated Mon Jun 24 15:02:13 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.8.4 (canonical = http://hl7.no/fhir/ig/lmdi)
- Build Errors : 7 / 3 / 0
+Generated Wed Jun 26 08:25:29 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.8.5 (canonical = http://hl7.no/fhir/ig/lmdi)
+ Build Errors : 8 / 4 / 0
  /github/workspace/LMDI/fsh-generated/resources/Condition-Diagnose-1-ICD10-OID : 2 / 1 / 2
  /github/workspace/LMDI/fsh-generated/resources/Condition-Diagnose-2-SNOMED-CT : 3 / 1 / 2
  /github/workspace/LMDI/fsh-generated/resources/EpisodeOfCare-Institusjonsopphold-1-Sykehjem : 4 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi : 0 / 0 / 1
- /github/workspace/LMDI/fsh-generated/resources/Medication-Medisin-1-LegemiddelDose-Oxycodone : 0 / 0 / 1
+ /github/workspace/LMDI/fsh-generated/resources/Medication-Medisin-1-LegemiddelDose-Oxycodone : 0 / 0 / 2
  /github/workspace/LMDI/fsh-generated/resources/Medication-Medisin-2-Paracetamol : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Medication-Medisin-3-LegemiddelPakning-Monoket : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-1-Oralt : 7 / 0 / 2
@@ -55,6 +55,8 @@ ERROR: /github/workspace/LMDI/output/EpisodeOfCare-Institusjonsopphold-1-Sykehje
 ERROR: /github/workspace/LMDI/output/MedicationAdministration-Administrering-10.html#/html/body/div/div/div/div/div/div/p/a at Line 197, column 1451: The link 'uuid:9b62d7e8-df64-47b7-9fe1-38bc45795d82' for "uuid:9b62d7e8-df64-47b7-9fe1-38bc45795d82" cannot be resolved
 ERROR: /github/workspace/LMDI/output/MedicationAdministration-Administrering-20.html#/html/body/div/div/div/div/div/div/p/a at Line 197, column 925: The link 'uuid:9b62d7e8-df64-47b7-9fe1-38bc45795d82' for "uuid:9b62d7e8-df64-47b7-9fe1-38bc45795d82" cannot be resolved
 ERROR: /github/workspace/LMDI/output/MedicationAdministration-Administrering-30.html#/html/body/div/div/div/div/div/div/p/a at Line 197, column 713: The link 'uuid:69fb46ff-8874-4cda-bc6a-53ea6933026a' for "uuid:69fb46ff-8874-4cda-bc6a-53ea6933026a" cannot be resolved
+ERROR: /github/workspace/LMDI/output/assets/images/nor.svg: The html source does not contain the publish box <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader--> (see note at http://wiki.hl7.org/index.php?title=FHIR_Implementation_Guide_Publishing_Requirements#HL7_HTML_Standards_considerations)
+WARNING: /github/workspace/LMDI/output/assets/images/nor.svg#/html/head/script at Line 1, column 29: The <script> containing the javascript 'window.onload=functi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild
 == fsh-generated/resources/Condition-Diagnose-1-ICD10-OID.json ==
 INFORMATION: Condition/Diagnose-1-ICD10-OID: Condition.code.coding[0].system: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.7110' could not be found, so the code cannot be validated
 ERROR: Condition/Diagnose-1-ICD10-OID: Condition.subject: Unable to resolve resource with reference 'eksempel-pasient-1234567890'
@@ -73,10 +75,11 @@ ERROR: EpisodeOfCare.text.div: Hyperlink 'pasientreferanse-1234567' at 'div/p/a'
 ERROR: EpisodeOfCare.text.div: Hyperlink 'sykehjemref-1234567' at 'div/p/a' for 'sykehjemref-1234567' does not resolve
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi.json ==
 == fsh-generated/resources/Medication-Medisin-1-LegemiddelDose-Oxycodone.json ==
+INFORMATION: Medication/Medisin-1-LegemiddelDose-Oxycodone: Medication.code.coding[0]: This element does not match any known slice defined in the profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddel|0.8.5 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Medication-Medisin-2-Paracetamol.json ==
 == fsh-generated/resources/Medication-Medisin-3-LegemiddelPakning-Monoket.json ==
 == fsh-generated/resources/MedicationAdministration-Administrering-1-Oralt.json ==
-ERROR: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.status: The value provided ('completed') was not found in the value set 'Status for legemiddeladministrasjon' (http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.8.4), and a code is required from this value set  (error message = The provided code '#completed' was not found in the value set 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.8.4'; The System URI could not be determined for the code 'completed' in the ValueSet 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.8.4')
+ERROR: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.status: The value provided ('completed') was not found in the value set 'Status for legemiddeladministrasjon' (http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.8.5), and a code is required from this value set  (error message = The provided code '#completed' was not found in the value set 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.8.5'; The System URI could not be determined for the code 'completed' in the ValueSet 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.8.5')
 ERROR: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.medication.ofType(Reference): Unable to resolve resource with reference 'https://fhir.legemidler.example.com/legemidler/123456780'
 ERROR: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.subject: Unable to resolve resource with reference 'https://fhi.no/fhir/lmdi/pasient/12345678'
 ERROR: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.context: Unable to resolve resource with reference 'https://fhi.no/fhir/lmdi/institusjonsopphold/428ff23d-7a65-4c67-8059-6a1d07d287e3'
@@ -89,7 +92,7 @@ ERROR: MedicationAdministration/Administrering-10: MedicationAdministration.cont
 ERROR: MedicationAdministration/Administrering-10: MedicationAdministration.contained[2]: The contained resource 'Helsepersonell-10' is not referenced to from elsewhere in the containing resource nor does it refer to the containing resource (dom-3)
 ERROR: MedicationAdministration.text.div: Hyperlink 'uuid:9b62d7e8-df64-47b7-9fe1-38bc45795d82' at 'div/p/a' for 'uuid:9b62d7e8-df64-47b7-9fe1-38bc45795d82' does not resolve
 == fsh-generated/resources/MedicationAdministration-Administrering-2-Infusjon.json ==
-ERROR: MedicationAdministration/Administrering-2-Infusjon: MedicationAdministration.status: The value provided ('completed') was not found in the value set 'Status for legemiddeladministrasjon' (http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.8.4), and a code is required from this value set  (error message = The provided code '#completed' was not found in the value set 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.8.4'; The System URI could not be determined for the code 'completed' in the ValueSet 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.8.4')
+ERROR: MedicationAdministration/Administrering-2-Infusjon: MedicationAdministration.status: The value provided ('completed') was not found in the value set 'Status for legemiddeladministrasjon' (http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.8.5), and a code is required from this value set  (error message = The provided code '#completed' was not found in the value set 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.8.5'; The System URI could not be determined for the code 'completed' in the ValueSet 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.8.5')
 ERROR: MedicationAdministration/Administrering-2-Infusjon: MedicationAdministration.medication.ofType(Reference): Unable to resolve resource with reference 'https://fhir.legemidler.example.com/legemidler/0987654321'
 ERROR: MedicationAdministration/Administrering-2-Infusjon: MedicationAdministration.subject: Unable to resolve resource with reference 'https://fhi.no/fhir/lmdi/pasient/12345678'
 ERROR: MedicationAdministration/Administrering-2-Infusjon: MedicationAdministration.context: Unable to resolve resource with reference 'https://fhi.no/fhir/lmdi/institusjonsopphold/428ff23d-7a65-4c67-8059-6a1d07d287e3'

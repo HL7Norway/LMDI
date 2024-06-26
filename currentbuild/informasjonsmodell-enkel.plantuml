@@ -13,7 +13,6 @@ class Legemiddeladministrasjon <<MedicationAdministration>> #cyan {
 Legemiddeladministrasjon --> Legemiddel 
 Legemiddeladministrasjon --> Pasient
 Legemiddeladministrasjon --> Helsepersonell
-Legemiddeladministrasjon --> Organisasjon
 Legemiddeladministrasjon --> Rekvisisjon
 Legemiddeladministrasjon --> Institusjonsopphold
 
