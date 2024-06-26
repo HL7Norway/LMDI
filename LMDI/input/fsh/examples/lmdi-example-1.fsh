@@ -4,7 +4,7 @@ Alias: $SCT = http://snomed.info/sct
 
 Instance: Administrering-10
 InstanceOf: MedicationAdministration
-Description: "Utfyllende eksempel"
+Description: "Utfyllende eksempel, f.eks. om alt rapporteres som én melding. Bruker contained - bundle er å foretrekke for melding."
 * status = #completed
 * medicationReference = Reference(Medisin-10)
 * subject = Reference(Pasient-20)
