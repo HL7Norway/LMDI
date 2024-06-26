@@ -10,7 +10,7 @@ Description: """Beskriver administrasjon av legemiddel til pasient på institusj
 
 Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei."""
 * ^status = #draft
-* ^date = "2024-06-12"
+* ^date = "2024-06-24"
 * ^publisher = "Folkehelseinstituttet"
 
 * status from LegemiddeladministreringStatus
