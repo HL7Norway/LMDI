@@ -4,7 +4,7 @@ Id:       lmdi-legemiddel
 Title:    "Legemiddel"
 Description: "Beskrivelse av legemiddel."
 * ^status = #draft
-* ^date = "2024-06-20"
+* ^date = "2024-06-26"
 * ^publisher = "Folkehelseinstituttet"
 
 * code 1..1
@@ -49,7 +49,6 @@ Description: "Beskrivelse av legemiddel."
 // Krav: Ingredienser/virkestoff navn (ingredienth) // Bør finnes indirekte for de flest
 // Krav: Styrke (ingredient.strength[x]) // Bør finnes indirekte for de fleste
 
-// Krav: Batchnummer
 * batch MS
 * batch ^short = "Batch-nummer for legemiddelet"
 
