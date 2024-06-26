@@ -2,32 +2,6 @@
 
 Det finnes en liste med åpne saker under [åpne saker på GitHub](https://github.com/HL7Norway/LMDI/issues). Et utvalg saker for videre diskusjon og arbeid er gjengitt på denne siden.
 
-#### Arbeidsgruppemøte 21.6.24
-
-Temaer:
-
-- Identifisering av legemidler (FEST, SAFEST/IDMP/SNOMED CT etc. ), id vs. avansert
-- Administrasjonsvei - kardinalitet og kodeverk
-- Diagnose - opphold/behandling, resept/ordinering
-- Organisasjonsnivå/enheter
-- **Forutsetninger for å kunne starte implementasjon, utprøving og testing** - Minimum Viable Product
-
-#### Diskuter om det bør være 0..1 hvis man ikke har registrert administrasjonsvei - 22
-
-Forslag er kun MS (must support) og 0..1.
-
-[Sak og diskusjon på GitHub](https://github.com/HL7Norway/LMDI/issues/22)
-
-#### Verdisett administrasjonsvei (MedicationAdministration) - 18
-
-- Volven: Administrasjonsvei (OID=7477) - fra eResept
-- SNOMED CT https://www.hl7.org/fhir/R4/valueset-route-codes.html (HL7)
-- Andre?
-- Låser til SNOMED CT-verdisettet til HL7 inntil videre.
-- Finnes ikke en offisiell mapping mellom 7477 og SCT.
-
-[Sak og diskusjon på GitHub](https://github.com/HL7Norway/LMDI/issues/18)
-
 #### Legemiddel - Pris - 28
 
 Hvilke muligheter har LMR for å hente inn denne?
