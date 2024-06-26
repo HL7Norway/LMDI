@@ -11,23 +11,27 @@ Description: "Beskrivelse av legemiddel."
 * ^date = "2024-06-20"
 * ^publisher = "Folkehelseinstituttet"
 
-// Se basis-profiler og evt. eResept/PLL
-// MedicationKnowledge under utvikling, se R5 for status
-// Krav: Legemiddel-id (identifier), må mulig settes av FHI
 * identifier MS
 * identifier ^short = "Legemiddelets identifikasjon"
 * identifier ^definition = "Legemiddelets identifikasjon i henhold til TODO"
 * identifier ^comment = "Finnes ikke p.t."
 
-// Notater FEST:
-// - Katalog LegemiddelVirkestoff: benyttes ved virkestoffrekvirering
-// - Katalog LegemiddelMerkevare: rekvirering av en styrke og form av en bestemt merkevare. Pr. 2024 er det ikke lenger ønskelig at det rekvireres på LegemiddelMerkevare
-// - Katalog LegemiddelPakningMerkevare: rekvirering av en bestemt pakning av en merkevare (varenummer). I figuren er denne katalogen forkortet til LegemiddelPakning.
-// - Katalog LegemiddelDose: rekvirering av en bestemt merkevare med ID (LMR-nummer) som representerer minste plukkbare enhet, f.eks. 1 ampulle eller 1 tablett.
-// - Katalog Handelsvare: inneholder handelsvarer med refusjon, det vil si medisinsk forbruksmateriell, næringsmidler og brystproteser.
-
 * code 1..1
-// Slice med festKatalogerXXX
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "system"
+* code.coding ^slicing.rules = #open
+* code.coding contains FD 0..1 
+    and FM 0..1
+    and FP 0..1
+    and FV 0..1
+* code.coding[FD].system = "http://dmp.no/fhir/NamingSystem/festLegemiddelDose"
+* code.coding[FM].system = "http://dmp.no/fhir/NamingSystem/festLegemiddelMerkevare"
+* code.coding[FP].system = "http://dmp.no/fhir/NamingSystem/festLegemiddelPakning"
+* code.coding[FV].system = "http://dmp.no/fhir/NamingSystem/festLegemiddelVirkestoff"
+* code.coding[FD] ^short = "FEST-id for legemiddel DOSE"
+* code.coding[FM] ^short = "FEST-id for legemiddel MERKEVARE"
+* code.coding[FP] ^short = "FEST-id for legemiddel PAKNING"
+* code.coding[FV] ^short = "FEST-is for legemiddel VIRKESTOFF"
 
 * form MS
 * form ^short = "Legemiddelform"
