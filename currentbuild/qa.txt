@@ -1,9 +1,9 @@
 Lmdi : Validation Results
 =========================================
 
-err = 42, warn = 23, info = 8
+err = 41, warn = 23, info = 8
 IG Publisher Version: 1.6.11
-Generated Wed Jun 26 21:51:17 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.9.0 (canonical = http://hl7.no/fhir/ig/lmdi)
+Generated Wed Jun 26 22:01:45 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.9.0 (canonical = http://hl7.no/fhir/ig/lmdi)
  Build Errors : 7 / 4 / 0
  /github/workspace/LMDI/fsh-generated/resources/Condition-Diagnose-1-ICD10-OID : 2 / 1 / 2
  /github/workspace/LMDI/fsh-generated/resources/Condition-Diagnose-2-SNOMED-CT : 3 / 1 / 2
@@ -13,7 +13,7 @@ Generated Wed Jun 26 21:51:17 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.lmdi#
  /github/workspace/LMDI/fsh-generated/resources/Medication-Medisin-2-Paracetamol : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Medication-Medisin-3-LegemiddelPakning-Monoket : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-1-Oralt : 7 / 0 / 2
- /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-10 : 1 / 0 / 8
+ /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-10 : 0 / 0 / 8
  /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-2-Infusjon : 5 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-20 : 4 / 0 / 3
  /github/workspace/LMDI/fsh-generated/resources/MedicationAdministration-Administrering-30 : 4 / 0 / 1
@@ -88,7 +88,6 @@ ERROR: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration
 INFORMATION: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.dosage.dose.code: Error processing Unit: 'tsp_us': The unit "tsp_us" is unknown at character 1
 == fsh-generated/resources/MedicationAdministration-Administrering-10.json ==
 INFORMATION: MedicationAdministration/Administrering-10: MedicationAdministration.contained[0]/*Medication/Medisin-10*/.code.coding[0].system: A definition for CodeSystem 'http://dmp.no/fhir/NamingSystem/festLegemiddelDose' could not be found, so the code cannot be validated
-ERROR: MedicationAdministration/Administrering-10: MedicationAdministration.contained[2]: The contained resource 'Helsepersonell-10' is not referenced to from elsewhere in the containing resource nor does it refer to the containing resource (dom-3)
 == fsh-generated/resources/MedicationAdministration-Administrering-2-Infusjon.json ==
 ERROR: MedicationAdministration/Administrering-2-Infusjon: MedicationAdministration.status: The value provided ('completed') was not found in the value set 'Status for legemiddeladministrasjon' (http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.9.0), and a code is required from this value set  (error message = The provided code '#completed' was not found in the value set 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.9.0'; The System URI could not be determined for the code 'completed' in the ValueSet 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status|0.9.0')
 ERROR: MedicationAdministration/Administrering-2-Infusjon: MedicationAdministration.medication.ofType(Reference): Unable to resolve resource with reference 'https://fhir.legemidler.example.com/legemidler/0987654321'
