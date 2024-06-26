@@ -11,11 +11,6 @@ Description: "Beskrivelse av legemiddel."
 * ^date = "2024-06-20"
 * ^publisher = "Folkehelseinstituttet"
 
-* identifier MS
-* identifier ^short = "Legemiddelets identifikasjon"
-* identifier ^definition = "Legemiddelets identifikasjon i henhold til TODO"
-* identifier ^comment = "Finnes ikke p.t."
-
 * code 1..1
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "system"

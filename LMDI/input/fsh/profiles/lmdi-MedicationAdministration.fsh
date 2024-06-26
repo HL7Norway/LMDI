@@ -12,7 +12,9 @@ Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legem
 * status from LegemiddeladministreringStatus
 * status ^short = "Status administrering."
 * status ^definition = "Status administrering. Skal vanligvis settes til 'Gjennomført' (completed), men 'Feilregistrert' (entered-in-error) MÅ benyttes hvis registreringen inneholder en alvorlig feil og skal slettes. "
+
 * medication[x] ^short = "Administrert legemiddel."
+
 * subject only Reference(Patient)
 * subject ^short = "Referanse til pasient"
 * subject ^definition = "Det skal alltid være en referanse til pasienten som har blitt administrert legemiddel."
