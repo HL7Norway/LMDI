@@ -60,8 +60,8 @@ Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legem
 // * dosage.route.coding[7477].code from http://xxx (required)
 
 * dosage.dose 1..1
-* dosage.dose ^short = "Administrert mengde"
-* dosage.dose ^definition = "Administrert mengde av legemiddelet som det blir referert til."
+* dosage.dose ^short = "Administrert mengde virkestoff"
+* dosage.dose ^definition = "Mengde (dosering) av legemiddelets primære virkestoff."
 
 * dosage.rateRatio MS
 
@@ -115,10 +115,10 @@ Description: "Eksempel på administrering av legemiddel - infusjon"
 * dosage.route.coding[SCT].code = #47625008
 * dosage.route.coding[SCT].display = "Intravenous route (qualifier value)"
 * dosage.route.text = "Intravenøst"
-* dosage.dose.value = 4.5
-* dosage.dose.unit = "g"
+* dosage.dose.value = 4500
+* dosage.dose.unit = "mg"
 * dosage.dose.system = "http://unitsofmeasure.org"
-* dosage.dose.code = #g
+* dosage.dose.code = #mg
 * dosage.rateRatio.numerator.value = 8.0
 * dosage.rateRatio.numerator.system = "http://unitsofmeasure.org"
 * dosage.rateRatio.numerator.code = #ml
