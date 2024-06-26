@@ -21,11 +21,9 @@ Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legem
 * context only Reference(EpisodeOfCare)
 * context ^short = "Referanse til aktuelt institusjonsopphold"
 * context ^definition = "Referanse til hvilket institusjonsopphold eller avtale pasienten var på da legemiddelet ble administrert."
-* context ^comment = "TODO Encounter må vurderes om nødvendig, f.eks. hos spesialist. " // TODO 
+* context ^comment = "Encounter må vurderes om nødvendig, f.eks. hos spesialist."
 
-// Må støtte både effectiveDateTime og effectivePeriod
-// * effective[x] only dateTime
-* effective[x] ^short = "Tidspunkt for administrasjon"
+* effective[x] ^short = "Tidspunkt eller periode for administrasjon"
 * effective[x] ^comment = "NB! R5 bruker 'occurence'. Behov for 'Period' ved infusjon?"
 
 * performer and performer.actor MS
@@ -53,7 +51,6 @@ Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legem
 * dosage.route.coding[7477] ^short = "Administrasjonsvei (OID=7477)"
 * dosage.route.coding[7477] ^definition = "Administrasjonsvei (OID=7477) fra kodeverkssamling Resept."
 * dosage.route.coding[7477].system = "urn:oid:2.16.578.1.12.4.1.1.7477"
-// * dosage.route.coding[7477].code from http://xxx (required)
 
 * dosage.dose 1..1
 * dosage.dose ^short = "Administrert mengde virkestoff"
