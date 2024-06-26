@@ -22,14 +22,11 @@ Description: "Legemiddelrekvirering - ordinering, resept eller annen rekvirering
 * requester ^short = "Referanse til rekvirent"
 * requester only Reference(Practitioner)
 
-// Krav: Diagnose (reasonCode)
-// Krav: Dosering ???
-// Krav: Indikasjon ???
-// Krav: Legemiddelforordnetføropphold
-// Krav: Tid oppstart
-// Krav: Seponeringsårsak 
-// Krav: Tid seponering
-// Krav: Type legemiddelbruk
-
-// EKSEMPLER
-// Kommer...
+// Krav/forslag: Diagnose (reasonCode)
+// Krav/forslag: Dosering ???
+// Krav/forslag: Indikasjon ???
+// Krav/forslag: Legemiddelforordnetføropphold
+// Krav/forslag: Tid oppstart
+// Krav/forslag: Seponeringsårsak 
+// Krav/forslag: Tid seponering
+// Krav/forslag: Type legemiddelbruk
