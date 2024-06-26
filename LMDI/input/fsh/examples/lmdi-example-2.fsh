@@ -19,4 +19,6 @@ Description: "Utfyllende eksempel - andre referanser"
 Instance: medisin-91171f8e-b615-41ba-881a-87b8e8075611
 InstanceOf: Medication
 Usage: #inline
-* identifier.value = "FEST-XXX-9e6c620b-5d09-4f27-9ee1-b108e7f338ab"
+* code.coding.system = "http://dmp.no/fhir/NamingSystem/festLegemiddelPakning"
+* code.coding.code = #ID_00B35335-0DF7-4C98-8A0A-1148F4599D21
+* code.coding.display = "Botox pulv til inj væske, oppl 50 E"
