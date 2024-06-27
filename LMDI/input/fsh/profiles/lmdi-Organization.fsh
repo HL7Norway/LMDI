@@ -17,7 +17,7 @@ Description: "Organisasjon eller organisasjonsenhet. "
 * identifier ^short = "Unik identifikasjon av enhet basert på organisasjonsnummer eller RESH-id."
 * identifier ^comment = "Skal baseres på no-basis-Organization."
 * identifier[ENH] ^short = "Organisasjonsnummer fra Enhetsregisteret"
-* identifier[RESH] ^short = "D-nummer"
+* identifier[RESH] ^short = "Id fra Register for enheter i spesialisthelsetjenesten (RESH)"
 * identifier[ENH].system = "urn:oid:2.16.578.1.12.4.1.4.101" 
 * identifier[RESH].system = "urn.oid:2.16.578.1.12.4.1.4.102" 
 * identifier[ENH].value 1..1
