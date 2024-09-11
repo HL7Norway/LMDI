@@ -39,7 +39,7 @@ Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legem
 
 * dosage.route MS
 * dosage.route ^short = "Administrasjonsvei"
-* dosage.route ^definition = "Aministrasjonsvei. Er begrenset til foreslått koding fra SNOMED CT-verdisettet til HL7 og Volven-kodeverket Administrasjonsvei (OID=7477) fra eResept. "
+* dosage.route ^definition = "Administrasjonsvei. Er begrenset til foreslått koding fra SNOMED CT-verdisettet til HL7 og Volven-kodeverket Administrasjonsvei (OID=7477) fra eResept. "
 * dosage.route ^comment = "TODO #22 Diskuter om det bør være 0..1 hvis man ikke har registret administrasjonsvei."
 * dosage.route.coding ^slicing.discriminator.type = #pattern
 * dosage.route.coding ^slicing.discriminator.path = "system"
