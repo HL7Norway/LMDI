@@ -6,7 +6,7 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization Organisasjon-1-Eldrehjem</b></p><a name=\"Organisasjon-1-Eldrehjem\"> </a><a name=\"hcOrganisasjon-1-Eldrehjem\"> </a><a name=\"hcOrganisasjon-1-Eldrehjem-no-NO\"> </a><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.101</code>/1234567890</p><p><b>name</b>: Lykkedalen eldrehjem</p><p><b>address</b>: </p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization Organisasjon-1-Eldrehjem</b></p><a name=\"Organisasjon-1-Eldrehjem\"> </a><a name=\"hcOrganisasjon-1-Eldrehjem\"> </a><a name=\"Organisasjon-1-Eldrehjem-no-NO\"> </a><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.101</code>/1234567890</p><p><b>name</b>: Lykkedalen eldrehjem</p><p><b>address</b>: </p></div>"
   },
   "identifier" : [{
     "system" : "urn:oid:2.16.578.1.12.4.1.4.101",

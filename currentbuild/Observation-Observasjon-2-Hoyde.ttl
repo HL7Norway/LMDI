@@ -17,7 +17,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Observasjon-2-Hoyde</b></p><a name=\"Observasjon-2-Hoyde\"> </a><a name=\"hcObservasjon-2-Hoyde\"> </a><a name=\"hcObservasjon-2-Hoyde-no-NO\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1153637007}\">kropphøyde</span></p><p><b>value</b>: 187.5 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Observasjon-2-Hoyde</b></p><a name=\"Observasjon-2-Hoyde\"> </a><a name=\"hcObservasjon-2-Hoyde\"> </a><a name=\"Observasjon-2-Hoyde-no-NO\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1153637007}\">kropphøyde</span></p><p><b>value</b>: 187.5 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></div>"
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [

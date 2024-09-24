@@ -16,7 +16,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization Organisasjon-2-Spesialist-RESH</b></p><a name=\"Organisasjon-2-Spesialist-RESH\"> </a><a name=\"hcOrganisasjon-2-Spesialist-RESH\"> </a><a name=\"hcOrganisasjon-2-Spesialist-RESH-no-NO\"> </a><p><b>identifier</b>: <code>urn.oid:2.16.578.1.12.4.1.4.102</code>/4208723</p><p><b>name</b>: Avdeling for epilepsi, poliklinikk</p><p><b>partOf</b>: <a href=\"Organization-Organisasjon-3-Spesialist-topp.html\">Organization Oslo universitetssykehus HF</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization Organisasjon-2-Spesialist-RESH</b></p><a name=\"Organisasjon-2-Spesialist-RESH\"> </a><a name=\"hcOrganisasjon-2-Spesialist-RESH\"> </a><a name=\"Organisasjon-2-Spesialist-RESH-no-NO\"> </a><p><b>identifier</b>: <code>urn.oid:2.16.578.1.12.4.1.4.102</code>/4208723</p><p><b>name</b>: Avdeling for epilepsi, poliklinikk</p><p><b>partOf</b>: <a href=\"Organization-Organisasjon-3-Spesialist-topp.html\">Organization Oslo universitetssykehus HF</a></p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "urn.oid:2.16.578.1.12.4.1.4.102"^^xsd:anyURI ] ;

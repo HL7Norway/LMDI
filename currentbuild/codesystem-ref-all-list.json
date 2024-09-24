@@ -178,28 +178,28 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html" : "SNOMED CT Reason Medication Not Given Codes",
-      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-      "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
-      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
-      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
-      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
-      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
-      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-      "http://hl7.org/fhir/R4/valueset-medication-form-codes.html" : "SNOMED CT Form Codes",
       "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+      "http://hl7.org/fhir/R4/valueset-medication-form-codes.html" : "SNOMED CT Form Codes",
+      "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes",
       "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
       "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
       "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html" : "SNOMED CT Reason Medication Not Given Codes",
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
       "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes"
+      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
+      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
+      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "ConditionCategoryCodes",
       "title" : "Condition Category Codes",
       "description" : "Preferred value set for Condition Categories.",
@@ -222,8 +222,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-      "version" : "2.0.0",
-      "status" : "draft",
+      "version" : "2.0.1",
+      "status" : "active",
       "name" : "ConditionVerificationStatus",
       "title" : "ConditionVerificationStatus",
       "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
@@ -258,8 +258,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/diagnosis-role",
-      "version" : "1.1.0",
-      "status" : "draft",
+      "version" : "1.1.1",
+      "status" : "active",
       "name" : "DiagnosisRole",
       "title" : "Diagnosis Role",
       "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
@@ -270,8 +270,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/episodeofcare-type",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "EpisodeOfCareType",
       "title" : "Episode of care type",
       "description" : "This example value set defines a set of codes that can be used to express the usage type of an EpisodeOfCare record.",
@@ -282,8 +282,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/med-admin-perform-function",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "MedicationAdministrationPerformerFunctionCodes",
       "title" : "MedicationAdministration Performer Function Codes",
       "description" : "MedicationAdministration Performer Function Codes",
@@ -318,8 +318,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "MedicationRequestCourseOfTherapyCodes",
       "title" : "MedicationRequest Course of Therapy Codes",
       "description" : "MedicationRequest Course of Therapy Codes",
@@ -330,8 +330,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "MedicationRequestStatusReasonCodes",
       "title" : "MedicationRequest Status Reason Codes",
       "description" : "MedicationRequest Status Reason Codes",
@@ -342,8 +342,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "ObservationCategoryCodes",
       "title" : "Observation Category Codes",
       "description" : "Observation Category codes.",
@@ -354,8 +354,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/organization-type",
-      "version" : "2.0.0",
-      "status" : "draft",
+      "version" : "2.0.1",
+      "status" : "active",
       "name" : "OrganizationType",
       "title" : "Organization type",
       "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
@@ -366,8 +366,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/practitioner-role",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "PractitionerRole",
       "title" : "Practitioner role",
       "description" : "This example value set defines a set of codes that can be used to indicate the role of a Practitioner.",
@@ -378,8 +378,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/reason-medication-given",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "ReasonMedicationGivenCodes",
       "title" : "Reason Medication Given Codes",
       "description" : "This value set is provided as an example. The value set to instantiate this attribute should be drawn from a robust terminology code system that consists of or contains concepts to support the medication process.",
@@ -390,8 +390,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "ObservationReferenceRangeMeaningCodes",
       "title" : "Observation Reference Range Meaning Codes",
       "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
@@ -426,7 +426,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-      "version" : "3.0.0",
+      "version" : "3.1.0",
       "status" : "active",
       "name" : "ActReason",
       "title" : "ActReason",
@@ -434,7 +434,7 @@
       "oids" : ["2.16.840.1.113883.5.8"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.5.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason"
+      "http://terminology.hl7.org/6.0.2/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
@@ -482,7 +482,7 @@
       "oids" : ["2.16.840.1.113883.5.1070"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ActSubstanceAdminSubstitutionCode.html" : "ActSubstanceAdminSubstitutionCode"
+      "http://terminology.hl7.org/6.0.2/ValueSet-v3-ActSubstanceAdminSubstitutionCode.html" : "ActSubstanceAdminSubstitutionCode"
     },
     {
       "url" : "urn:ietf:bcp:47",

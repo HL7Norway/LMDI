@@ -17,7 +17,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Observasjon-1-Kroppsvekt</b></p><a name=\"Observasjon-1-Kroppsvekt\"> </a><a name=\"hcObservasjon-1-Kroppsvekt\"> </a><a name=\"hcObservasjon-1-Kroppsvekt-no-NO\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 27113001}\">kroppsvekt</span></p><p><b>value</b>: 99 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg = 'kg')</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Observasjon-1-Kroppsvekt</b></p><a name=\"Observasjon-1-Kroppsvekt\"> </a><a name=\"hcObservasjon-1-Kroppsvekt\"> </a><a name=\"Observasjon-1-Kroppsvekt-no-NO\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 27113001}\">kroppsvekt</span></p><p><b>value</b>: 99 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg = 'kg')</span></p></div>"
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [

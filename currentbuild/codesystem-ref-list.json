@@ -15,8 +15,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/practitioner-role",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "PractitionerRole",
       "title" : "Practitioner role",
       "description" : "This example value set defines a set of codes that can be used to indicate the role of a Practitioner.",
