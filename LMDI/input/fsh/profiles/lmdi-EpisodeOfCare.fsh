@@ -2,7 +2,7 @@ Profile: LmdiEpisodeOfCareInstitusjonsopphold
 Parent: EpisodeOfCare
 Id: lmdi-episodeofcare-institusjonsopphold
 Title: "Institusjonsopphold"
-Description: "Beskrivelse av pasientens opphold i institusjon. Dette kan være både av kortere og lengre karaktert, slik som døgnopphold, innleggelse hos spesialist, sykehjem og aldershjem. "
+Description: "Beskrivelse av pasientens opphold i institusjon. Dette kan være både av kortere og lengre karakter, slik som døgnopphold, innleggelse hos spesialist, sykehjem og aldershjem. "
 * ^status = #draft
 * ^date = "2024-06-12"
 * ^publisher = "Folkehelseinstituttet"
