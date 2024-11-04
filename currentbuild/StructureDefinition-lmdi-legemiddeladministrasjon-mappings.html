@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Administrert legemiddel - Mappings - Legemiddeldata fra institusjon til Legemiddelregisteret v0.9.1</title>
+    <title>Legemiddeladministrasjon - Mappings - Legemiddeldata fra institusjon til Legemiddelregisteret v0.9.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -45,8 +45,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.1"}
-    h3,h4,h5,h6{--heading-prefix:"5.1"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.5"}
+    h3,h4,h5,h6{--heading-prefix:"5.5"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -128,7 +128,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Administrert legemiddel</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Legemiddeladministrasjon</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -157,13 +157,13 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="StructureDefinition-lmdi-administrert-legemiddel.html">Content</a>
+    <a href="StructureDefinition-lmdi-legemiddeladministrasjon.html">Content</a>
   </li>
 
 
 
   <li>
-    <a href="StructureDefinition-lmdi-administrert-legemiddel-definitions.html">Detailed Descriptions</a>
+    <a href="StructureDefinition-lmdi-legemiddeladministrasjon-definitions.html">Detailed Descriptions</a>
   </li>
 
 
@@ -182,7 +182,7 @@
   
     
       <li>
-        <a href="StructureDefinition-lmdi-administrert-legemiddel-examples.html">Examples</a>
+        <a href="StructureDefinition-lmdi-legemiddeladministrasjon-examples.html">Examples</a>
       </li>
     
   
@@ -192,21 +192,21 @@
 
   
     <li>
-      <a href="StructureDefinition-lmdi-administrert-legemiddel.profile.xml.html">XML</a>
+      <a href="StructureDefinition-lmdi-legemiddeladministrasjon.profile.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="StructureDefinition-lmdi-administrert-legemiddel.profile.json.html">JSON</a>
+      <a href="StructureDefinition-lmdi-legemiddeladministrasjon.profile.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="StructureDefinition-lmdi-administrert-legemiddel.profile.ttl.html">TTL</a>
+      <a href="StructureDefinition-lmdi-legemiddeladministrasjon.profile.ttl.html">TTL</a>
     </li>
   
 
@@ -215,7 +215,7 @@
 
 
 <a name="root"> </a>
-<h2 id="root">Resource Profile: AdministrertLegemiddel - Mappings</h2>
+<h2 id="root">Resource Profile: Legemiddeladministrasjon - Mappings</h2>
 
   <table class="colsd">
     <tr>
@@ -233,7 +233,7 @@
   </table>
 
 
-<p>Mappings for the lmdi-administrert-legemiddel resource profile.</p>
+<p>Mappings for the lmdi-legemiddeladministrasjon resource profile.</p>
 
   <!-- insert intro if present -->
   
@@ -241,7 +241,7 @@
 
 
   <a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>AdministrertLegemiddel</b></td></tr>
+ <tr><td colspan="3"><b>Legemiddeladministrasjon</b></td></tr>
  <tr><td>MedicationAdministration</td><td>Event</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Event.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;instantiates</td><td>Event.instantiates</td> </tr>
@@ -261,7 +261,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>Event.note</td> </tr>
 </table>
 <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>AdministrertLegemiddel</b></td></tr>
+ <tr><td colspan="3"><b>Legemiddeladministrasjon</b></td></tr>
  <tr><td>MedicationAdministration</td><td>Entity. Role, or Act, SubstanceAdministration</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
@@ -323,7 +323,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;eventHistory</td><td>.inboundRelationship(typeCode=SUBJ].source[classCode=CACT, moodCode=EVN]</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
- <tr><td colspan="3"><b>AdministrertLegemiddel</b></td></tr>
+ <tr><td colspan="3"><b>Legemiddeladministrasjon</b></td></tr>
  <tr><td>MedicationAdministration</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>FiveWs.status</td> </tr>
@@ -336,7 +336,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>FiveWs.why[x]</td> </tr>
 </table>
 <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>AdministrertLegemiddel</b></td></tr>
+ <tr><td colspan="3"><b>Legemiddeladministrasjon</b></td></tr>
  <tr><td>MedicationAdministration</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>RXA-20-Completion Status</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;statusReason</td><td>RXA-9-Administration Notes / RXA-18 Substance/Treatment Refusal Reason</td> </tr>
@@ -371,7 +371,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rate[x] (rateRatio)</td><td>RXA-12-Administered Per (Time Unit)</td> </tr>
 </table>
 <a name="w3c.prov"> </a><h3>Mappings for W3C PROV (<a href="http://www.w3.org/ns/prov">http://www.w3.org/ns/prov</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>AdministrertLegemiddel</b></td></tr>
+ <tr><td colspan="3"><b>Legemiddeladministrasjon</b></td></tr>
  <tr><td>MedicationAdministration</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>no mapping</td> </tr>
 </table>
@@ -428,7 +428,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no">Folkehelseinstituttet (FHI)</a>.  Package hl7.fhir.no.lmdi#0.9.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 24, 2024 19:47+0000">2024-09-24</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no">Folkehelseinstituttet (FHI)</a>.  Package hl7.fhir.no.lmdi#0.9.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 4, 2024 10:15+0000">2024-11-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

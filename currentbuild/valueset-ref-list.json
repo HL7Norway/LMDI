@@ -10,7 +10,7 @@
       "systems" : ["http://hl7.org/fhir/ValueSet/medication-admin-status"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel"
+      "StructureDefinition-lmdi-legemiddeladministrasjon.html" : "Legemiddeladministrasjon"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/practitioner-role",
@@ -41,7 +41,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.98"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-administrert-legemiddel.html" : "Administrert legemiddel"
+      "StructureDefinition-lmdi-legemiddeladministrasjon.html" : "Legemiddeladministrasjon"
     }
   ]
 }

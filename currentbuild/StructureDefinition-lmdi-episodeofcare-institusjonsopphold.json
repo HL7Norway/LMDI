@@ -19,7 +19,7 @@
       "value" : "https://www.fhi.no"
     }]
   }],
-  "description" : "Beskrivelse av pasientens opphold i institusjon. Dette kan være både av kortere og lengre karaktert, slik som døgnopphold, innleggelse hos spesialist, sykehjem og aldershjem. ",
+  "description" : "Beskrivelse av pasientens opphold i institusjon. Dette kan være både av kortere og lengre karakter, slik som døgnopphold, innleggelse hos spesialist, sykehjem og aldershjem. ",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

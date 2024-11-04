@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Administrert legemiddel - Definitions - Legemiddeldata fra institusjon til Legemiddelregisteret v0.9.1</title>
+    <title>Legemiddeladministrasjon - Definitions - Legemiddeldata fra institusjon til Legemiddelregisteret v0.9.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -45,8 +45,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.1"}
-    h3,h4,h5,h6{--heading-prefix:"5.1"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.5"}
+    h3,h4,h5,h6{--heading-prefix:"5.5"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -128,7 +128,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Administrert legemiddel</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Legemiddeladministrasjon</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -157,7 +157,7 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="StructureDefinition-lmdi-administrert-legemiddel.html">Content</a>
+    <a href="StructureDefinition-lmdi-legemiddeladministrasjon.html">Content</a>
   </li>
 
 
@@ -170,7 +170,7 @@
 
   
     <li>
-      <a href="StructureDefinition-lmdi-administrert-legemiddel-mappings.html">Mappings</a>
+      <a href="StructureDefinition-lmdi-legemiddeladministrasjon-mappings.html">Mappings</a>
     </li>
   
 
@@ -182,7 +182,7 @@
   
     
       <li>
-        <a href="StructureDefinition-lmdi-administrert-legemiddel-examples.html">Examples</a>
+        <a href="StructureDefinition-lmdi-legemiddeladministrasjon-examples.html">Examples</a>
       </li>
     
   
@@ -192,21 +192,21 @@
 
   
     <li>
-      <a href="StructureDefinition-lmdi-administrert-legemiddel.profile.xml.html">XML</a>
+      <a href="StructureDefinition-lmdi-legemiddeladministrasjon.profile.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="StructureDefinition-lmdi-administrert-legemiddel.profile.json.html">JSON</a>
+      <a href="StructureDefinition-lmdi-legemiddeladministrasjon.profile.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="StructureDefinition-lmdi-administrert-legemiddel.profile.ttl.html">TTL</a>
+      <a href="StructureDefinition-lmdi-legemiddeladministrasjon.profile.ttl.html">TTL</a>
     </li>
   
 
@@ -215,7 +215,7 @@
 
 
 <a name="root"> </a>
-<h2 id="root">Resource Profile: AdministrertLegemiddel - Detailed Descriptions</h2>
+<h2 id="root">Resource Profile: Legemiddeladministrasjon - Detailed Descriptions</h2>
 
   <table class="colsd">
     <tr>
@@ -233,7 +233,7 @@
   </table>
 
 
-<p>Definitions for the lmdi-administrert-legemiddel resource profile.</p>
+<p>Definitions for the lmdi-legemiddeladministrasjon resource profile.</p>
 
   <!-- insert intro if present -->
   
@@ -259,7 +259,7 @@
 <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_MedicationAdministration.status">  </a><span style="color: grey">2</span><b>. MedicationAdministration.status</b><a href="#diff_MedicationAdministration.status" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Definition</td><td><p style="font-size: 11px">Status administrering. Skal vanligvis settes til 'Gjennomført' (completed), men 'Feilregistrert' (entered-in-error) MÅ benyttes hvis registreringen inneholder en alvorlig feil og skal slettes.</p>
 </td></tr><tr><td style="white-space: nowrap">Short</td><td>Status administrering.</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><span>The codes SHALL be taken from  <a href="ValueSet-lmdi-medicationadministration-status.html">Status for legemiddeladministrasjon</a><br/>(<a href="http://hl7.org/fhir/R4/terminologies.html#required">required</a> to <span class="copy-text-inline"><code>http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status</code><button data-clipboard-text="http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status" title="Click to Copy URL" class="btn-copy"></button></span>)</span></td></tr>
 
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_MedicationAdministration.medication[x]">  </a><span style="color: grey">4</span><b>. MedicationAdministration.medication[x]</b><a href="#diff_MedicationAdministration.medication[x]" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Short</td><td>Administrert legemiddel.</td></tr><tr><td style="white-space: nowrap">[x] Note</td><td>See<a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a>for further information about how to use [x]</td></tr>
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_MedicationAdministration.medication[x]">  </a><span style="color: grey">4</span><b>. MedicationAdministration.medication[x]</b><a href="#diff_MedicationAdministration.medication[x]" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Short</td><td>Legemiddeladministrasjon.</td></tr><tr><td style="white-space: nowrap">[x] Note</td><td>See<a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a>for further information about how to use [x]</td></tr>
 
 <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_MedicationAdministration.subject">  </a><span style="color: grey">6</span><b>. MedicationAdministration.subject</b><a href="#diff_MedicationAdministration.subject" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Definition</td><td><p style="font-size: 11px">Det skal alltid være en referanse til pasienten som har blitt administrert legemiddel.</p>
 </td></tr><tr><td style="white-space: nowrap">Short</td><td>Referanse til pasient</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/patient.html">Patient</a>)</td></tr>
@@ -331,7 +331,7 @@
 </td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style="color:DarkGray">1</span>..<span style="color:DarkGray">1</span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><span><span style="color:DarkGray">The codes SHALL be taken from </span> <a href="ValueSet-lmdi-medicationadministration-status.html">Status for legemiddeladministrasjon</a><span style="color:DarkGray;text-decoration:line-through">http://hl7.org/fhir/ValueSet/medication-admin-status|4.0.1</span><br/>(<a href="http://hl7.org/fhir/R4/terminologies.html#required">required</a> to <span class="copy-text-inline"><code>http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status</code><button data-clipboard-text="http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status" title="Click to Copy URL" class="btn-copy"></button></span>)</span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style="color:DarkGray"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td><span style="color:DarkGray">true</span> because <span style="color:DarkGray">This element is labelled as a modifier because it is a status element that contains status entered-in-error which means that the resource should not be treated as valid</span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr><tr><td style="white-space: nowrap">Invariants</td><td><span style="color:DarkGray"><b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (hasValue() or (children().count() &gt; id.count()))</span></td></tr>
 
 <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="key_MedicationAdministration.medication[x]">  </a><a name="key_MedicationAdministration.medicationCodeableConcept">  </a><a name="key_MedicationAdministration.medication[x]:medicationCodeableConcept">  </a><a name="key_MedicationAdministration.medicationCodeableConcept:medicationCodeableConcept">  </a><a name="key_MedicationAdministration.medicationReference">  </a><a name="key_MedicationAdministration.medication[x]:medicationReference">  </a><a name="key_MedicationAdministration.medicationReference:medicationReference">  </a><span style="color: grey">8</span><b>. MedicationAdministration.medication[x]</b><a href="#key_MedicationAdministration.medication[x]" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Definition</td><td><p style="color:DarkGray">Identifies the medication that was administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications.</p>
-</td></tr><tr><td style="white-space: nowrap">Short</td><td>Administrert legemiddel.<span style="color:DarkGray;text-decoration:line-through">What was administered</span></td></tr><tr><td style="white-space: nowrap">Comments</td><td><p style="color:DarkGray">If only a code is specified, then it needs to be a code for a specific product. If more information is required, then the use of the medication resource is recommended.  For example, if you require form or lot number, then you must reference the Medication resource.</p>
+</td></tr><tr><td style="white-space: nowrap">Short</td><td>Legemiddeladministrasjon.<span style="color:DarkGray;text-decoration:line-through">What was administered</span></td></tr><tr><td style="white-space: nowrap">Comments</td><td><p style="color:DarkGray">If only a code is specified, then it needs to be a code for a specific product. If more information is required, then the use of the medication resource is recommended.  For example, if you require form or lot number, then you must reference the Medication resource.</p>
 </td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style="color:DarkGray">1</span>..<span style="color:DarkGray">1</span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><span><span style="color:DarkGray">For example codes, see </span> <a href="http://hl7.org/fhir/R4/valueset-medication-codes.html">SNOMEDCTMedicationCodes</a><span style="color:DarkGray;text-decoration:line-through">http://hl7.org/fhir/ValueSet/medication-codes</span><br/>(<a href="http://hl7.org/fhir/R4/terminologies.html#example">example</a> to <span class="copy-text-inline"><code>http://hl7.org/fhir/ValueSet/medication-codes</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/medication-codes" title="Click to Copy URL" class="btn-copy"></button></span>)</span><br/><p style="color:DarkGray">Codes identifying substance or product that can be administered.</p>
 </td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td>Choice of: <span style="color:DarkGray"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>, <span style="color:DarkGray"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color:DarkGray"><a href="http://hl7.org/fhir/R4/medication.html">Medication</a></span>)</td></tr><tr><td style="white-space: nowrap">[x] Note</td><td>See<a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a>for further information about how to use [x]</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td><span style="color:DarkGray">false</span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr><tr><td style="white-space: nowrap">Invariants</td><td><span style="color:DarkGray"><b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (hasValue() or (children().count() &gt; id.count()))</span></td></tr>
 
@@ -491,7 +491,7 @@
 </td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>false</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr><tr><td style="white-space: nowrap">Invariants</td><td><b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (<code>hasValue() or (children().count() &gt; id.count())</code>)</td></tr>
 
 <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="MedicationAdministration.medication[x]">  </a><a name="MedicationAdministration.medicationCodeableConcept">  </a><a name="MedicationAdministration.medication[x]:medicationCodeableConcept">  </a><a name="MedicationAdministration.medicationCodeableConcept:medicationCodeableConcept">  </a><a name="MedicationAdministration.medicationReference">  </a><a name="MedicationAdministration.medication[x]:medicationReference">  </a><a name="MedicationAdministration.medicationReference:medicationReference">  </a><span style="color: grey">30</span><b>. MedicationAdministration.medication[x]</b><a href="#MedicationAdministration.medication[x]" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Definition</td><td><p style="font-size: 11px">Identifies the medication that was administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications.</p>
-</td></tr><tr><td style="white-space: nowrap">Short</td><td>Administrert legemiddel.</td></tr><tr><td style="white-space: nowrap">Comments</td><td><p style="font-size: 11px">If only a code is specified, then it needs to be a code for a specific product. If more information is required, then the use of the medication resource is recommended.  For example, if you require form or lot number, then you must reference the Medication resource.</p>
+</td></tr><tr><td style="white-space: nowrap">Short</td><td>Legemiddeladministrasjon.</td></tr><tr><td style="white-space: nowrap">Comments</td><td><p style="font-size: 11px">If only a code is specified, then it needs to be a code for a specific product. If more information is required, then the use of the medication resource is recommended.  For example, if you require form or lot number, then you must reference the Medication resource.</p>
 </td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><span>For example codes, see  <a href="http://hl7.org/fhir/R4/valueset-medication-codes.html">SNOMEDCTMedicationCodes</a><br/>(<a href="http://hl7.org/fhir/R4/terminologies.html#example">example</a> to <span class="copy-text-inline"><code>http://hl7.org/fhir/ValueSet/medication-codes</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/medication-codes" title="Click to Copy URL" class="btn-copy"></button></span>)</span><br/><p>Codes identifying substance or product that can be administered.</p>
 </td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>, <a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/medication.html">Medication</a>)</td></tr><tr><td style="white-space: nowrap">[x] Note</td><td>See<a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a>for further information about how to use [x]</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>false</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr><tr><td style="white-space: nowrap">Invariants</td><td><b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (<code>hasValue() or (children().count() &gt; id.count())</code>)</td></tr>
 
@@ -746,7 +746,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no">Folkehelseinstituttet (FHI)</a>.  Package hl7.fhir.no.lmdi#0.9.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 24, 2024 19:47+0000">2024-09-24</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no">Folkehelseinstituttet (FHI)</a>.  Package hl7.fhir.no.lmdi#0.9.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 4, 2024 10:15+0000">2024-11-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

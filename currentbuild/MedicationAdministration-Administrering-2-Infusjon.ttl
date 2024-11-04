@@ -11,8 +11,8 @@
   fhir:id [ fhir:v "Administrering-2-Infusjon"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-administrert-legemiddel"^^xsd:anyURI ;
-       fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-administrert-legemiddel>
+       fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrasjon"^^xsd:anyURI ;
+       fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrasjon>
      ] )
   ] ; # 
   fhir:text [

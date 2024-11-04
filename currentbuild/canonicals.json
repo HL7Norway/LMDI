@@ -49,13 +49,6 @@
     "name" : "LmdiAdresse"
   },
   {
-    "id" : "lmdi-administrert-legemiddel",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-administrert-legemiddel",
-    "version" : "0.9.1",
-    "name" : "AdministrertLegemiddel"
-  },
-  {
     "id" : "lmdi-condition-diagnose",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose",
@@ -75,6 +68,13 @@
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddel",
     "version" : "0.9.1",
     "name" : "Legemiddel"
+  },
+  {
+    "id" : "lmdi-legemiddeladministrasjon",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrasjon",
+    "version" : "0.9.1",
+    "name" : "Legemiddeladministrasjon"
   },
   {
     "id" : "lmdi-observation-tmp",

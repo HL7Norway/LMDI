@@ -26,7 +26,7 @@
        fhir:value [ fhir:v "https://www.fhi.no" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Beskrivelse av pasientens opphold i institusjon. Dette kan være både av kortere og lengre karaktert, slik som døgnopphold, innleggelse hos spesialist, sykehjem og aldershjem. "] ; # 
+  fhir:description [ fhir:v "Beskrivelse av pasientens opphold i institusjon. Dette kan være både av kortere og lengre karakter, slik som døgnopphold, innleggelse hos spesialist, sykehjem og aldershjem. "] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
        fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;

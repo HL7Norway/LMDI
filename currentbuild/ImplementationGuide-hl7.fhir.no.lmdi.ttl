@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Lmdi"] ; # 
   fhir:title [ fhir:v "Legemiddeldata fra institusjon til Legemiddelregisteret"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-09-24T19:47:08+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-04T10:15:31+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;
@@ -529,8 +529,8 @@
        fhir:name [ fhir:v "Administrering-1-Oralt" ] ;
        fhir:description [ fhir:v "Eksempel på administrering av legemiddel" ] ;
        fhir:example [
-         fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-administrert-legemiddel"^^xsd:anyURI ;
-         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-administrert-legemiddel>
+         fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrasjon"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrasjon>
        ]
      ] [
        fhir:extension ( [
@@ -556,8 +556,8 @@
        fhir:name [ fhir:v "Administrering-2-Infusjon" ] ;
        fhir:description [ fhir:v "Eksempel på administrering av legemiddel - infusjon" ] ;
        fhir:example [
-         fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-administrert-legemiddel"^^xsd:anyURI ;
-         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-administrert-legemiddel>
+         fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrasjon"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrasjon>
        ]
      ] [
        fhir:extension ( [
@@ -583,18 +583,6 @@
        fhir:name [ fhir:v "Administrering-30" ] ;
        fhir:description [ fhir:v "Utfyllende eksempel - minimalt, logiske referanser" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-administrert-legemiddel> ;
-         fhir:reference [ fhir:v "StructureDefinition/lmdi-administrert-legemiddel" ]
-       ] ;
-       fhir:name [ fhir:v "Administrert legemiddel" ] ;
-       fhir:description [ fhir:v "Beskriver administrasjon av legemiddel til pasient på institusjon.\n\nDette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -686,7 +674,7 @@
          fhir:reference [ fhir:v "StructureDefinition/lmdi-episodeofcare-institusjonsopphold" ]
        ] ;
        fhir:name [ fhir:v "Institusjonsopphold" ] ;
-       fhir:description [ fhir:v "Beskrivelse av pasientens opphold i institusjon. Dette kan være både av kortere og lengre karaktert, slik som døgnopphold, innleggelse hos spesialist, sykehjem og aldershjem." ] ;
+       fhir:description [ fhir:v "Beskrivelse av pasientens opphold i institusjon. Dette kan være både av kortere og lengre karakter, slik som døgnopphold, innleggelse hos spesialist, sykehjem og aldershjem." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -714,6 +702,18 @@
        ] ;
        fhir:name [ fhir:v "Legemiddel" ] ;
        fhir:description [ fhir:v "Beskrivelse av legemiddel." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrasjon> ;
+         fhir:reference [ fhir:v "StructureDefinition/lmdi-legemiddeladministrasjon" ]
+       ] ;
+       fhir:name [ fhir:v "Legemiddeladministrasjon" ] ;
+       fhir:description [ fhir:v "Beskriver administrasjon av legemiddel til pasient på institusjon.\n\nDette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
