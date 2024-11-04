@@ -1,7 +1,7 @@
-Profile: AdministrertLegemiddel
+Profile: Legemiddeladministrasjon
 Parent:   MedicationAdministration
-Id:       lmdi-administrert-legemiddel
-Title:    "Administrert legemiddel"
+Id:       lmdi-legemiddeladministrasjon
+Title:    "Legemiddeladministrasjon"
 Description: """Beskriver administrasjon av legemiddel til pasient på institusjon.
 
 Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei."""
@@ -13,7 +13,7 @@ Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legem
 * status ^short = "Status administrering."
 * status ^definition = "Status administrering. Skal vanligvis settes til 'Gjennomført' (completed), men 'Feilregistrert' (entered-in-error) MÅ benyttes hvis registreringen inneholder en alvorlig feil og skal slettes. "
 
-* medication[x] ^short = "Administrert legemiddel."
+* medication[x] ^short = "Legemiddeladministrasjon."
 
 * subject only Reference(Patient)
 * subject ^short = "Referanse til pasient"
@@ -76,7 +76,7 @@ Description: "Verdisett som begrenses status til Legemiddeladministrasjon til he
 // EKSEMPLER
 
 Instance: Administrering-1-Oralt
-InstanceOf: AdministrertLegemiddel
+InstanceOf: Legemiddeladministrasjon
 Description: "Eksempel på administrering av legemiddel"
 * status = #completed
 * medicationReference = Reference(https://fhir.legemidler.example.com/legemidler/123456780)
@@ -95,7 +95,7 @@ Description: "Eksempel på administrering av legemiddel"
 * dosage.dose.code = #tsp_us
 
 Instance: Administrering-2-Infusjon
-InstanceOf: AdministrertLegemiddel
+InstanceOf: Legemiddeladministrasjon
 Description: "Eksempel på administrering av legemiddel - infusjon"
 * status = #completed
 * medicationReference = Reference(https://fhir.legemidler.example.com/legemidler/0987654321)
