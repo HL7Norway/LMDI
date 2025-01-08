@@ -14,12 +14,6 @@
   </identifier>
   <name value="Lykkedalen eldrehjem"/>
   <address>
-    <district value="Sigdal">
-      <extension url="http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode">
-        <valueCoding>
-          <code value="3034"/>
-        </valueCoding>
-      </extension>
-    </district>
+    <district value="Sigdal"/>
   </address>
 </Organization>

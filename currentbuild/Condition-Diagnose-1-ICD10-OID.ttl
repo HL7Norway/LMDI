@@ -16,7 +16,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition Diagnose-1-ICD10-OID</b></p><a name=\"Diagnose-1-ICD10-OID\"> </a><a name=\"hcDiagnose-1-ICD10-OID\"> </a><a name=\"Diagnose-1-ICD10-OID-no-NO\"> </a><p><b>code</b>: <span title=\"Codes:{urn:oid:2.16.578.1.12.4.1.1.7110 R63.3}\">Vanskeligheter med inntak og tilførsel av mat</span></p><p><b>subject</b>: <a href=\"eksempel-pasient-1234567890\">eksempel-pasient-1234567890</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition Diagnose-1-ICD10-OID</b></p><a name=\"Diagnose-1-ICD10-OID\"> </a><a name=\"hcDiagnose-1-ICD10-OID\"> </a><a name=\"Diagnose-1-ICD10-OID-no-NO\"> </a><p><b>code</b>: <span title=\"Codes:{urn:oid:2.16.578.1.12.4.1.1.7110 R63.3}\">Vanskeligheter med inntak og tilførsel av mat</span></p><p><b>subject</b>: <a href=\"Patient-eksempel-pasient-1234567890.html\">Anonymous Patient (no stated gender), DoB Unknown</a></p></div>"
   ] ; # 
   fhir:code [
      fhir:coding ( [
@@ -26,7 +26,8 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:reference [ fhir:v "eksempel-pasient-1234567890" ]
+     fhir:link <http://hl7.no/fhir/ig/lmdi/Patient/eksempel-pasient-1234567890> ;
+     fhir:reference [ fhir:v "Patient/eksempel-pasient-1234567890" ]
   ] . # 
 
 # -------------------------------------------------------------------------------------

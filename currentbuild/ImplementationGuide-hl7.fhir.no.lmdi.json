@@ -10,7 +10,7 @@
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2024-11-04T10:15:31+00:00",
+  "date" : "2025-01-08T15:19:04+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -38,7 +38,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.0.2"
+    "version" : "6.1.0"
   },
   {
     "id" : "hl7ext",
@@ -328,7 +328,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#0.2.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.3.0"
     },
     {
       "extension" : [{
@@ -716,6 +716,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/eksempel-pasient-1234567890"
+      },
+      "name" : "eksempel-pasient-1234567890",
+      "description" : "Eksempel på en pasient",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -795,6 +807,54 @@
       },
       "name" : "Legemiddelrekvirering",
       "description" : "Legemiddelrekvirering - ordinering, resept eller annen rekvirering av legemiddel",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/lmdi-lokaltLegemiddel"
+      },
+      "name" : "lmdi-lokaltLegemiddel",
+      "description" : "Id for angivelse av legemiddel fra lokal legemiddelkatalog",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lokal-legemiddelkatalog-extension"
+      },
+      "name" : "Lokal Legemiddelkatalog",
+      "description" : "Informasjon om hvilken lokal legemiddelkatalog koden kommer fra.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/LokalLegemiddelkatalogCodeSystem"
+      },
+      "name" : "Lokal Legemiddelkatalog Codes",
+      "description" : "Kodesystem for lokal legemiddelkatalog",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/LokalLegemiddelkatalogValues"
+      },
+      "name" : "Lokal Legemiddelkatalog Values",
+      "description" : "Gyldige verdier for medlemskapsstatus",
       "exampleBoolean" : false
     },
     {
@@ -899,42 +959,6 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/lmdi-observation-tmp"
-      },
-      "name" : "Observasjon (kladd)",
-      "description" : "Observation. Kommentar: For høyde og vekt skal denne baseres på nasjonal eller internasjonal Vital Signs IG når den foreligger.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/Observasjon-1-Kroppsvekt"
-      },
-      "name" : "Observasjon-1-Kroppsvekt",
-      "description" : "Eksempel på observasjon - kroppsvekt",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-observation-tmp"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/Observasjon-2-Hoyde"
-      },
-      "name" : "Observasjon-2-Hoyde",
-      "description" : "Eksempel på observasjon - høyde",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-observation-tmp"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/lmdi-organization"
       },
       "name" : "Organisasjon",
@@ -1016,6 +1040,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/pasientreferanse-1234567"
+      },
+      "name" : "pasientreferanse-1234567",
+      "description" : "Eksempel på en pasient",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1048,6 +1084,18 @@
       "name" : "Status for legemiddeladministrasjon",
       "description" : "Verdisett som begrenses status til Legemiddeladministrasjon til henholdsvis 'Gjennomført' eller 'Feilregistrert'.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/sykehjemref-1234567"
+      },
+      "name" : "sykehjemref-1234567",
+      "description" : "Eksempel på et sykehjem",
+      "exampleBoolean" : true
     }],
     "page" : {
       "extension" : [{

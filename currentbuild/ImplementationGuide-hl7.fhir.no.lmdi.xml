@@ -11,7 +11,7 @@
   <name value="Lmdi"/>
   <title value="Legemiddeldata fra institusjon til Legemiddelregisteret"/>
   <status value="draft"/>
-  <date value="2024-11-04T10:15:31+00:00"/>
+  <date value="2025-01-08T15:19:04+00:00"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>
   <contact>
     <name value="Folkehelseinstituttet (FHI)"/>
@@ -37,7 +37,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.0.2"/>
+    <version value="6.1.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -249,7 +249,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools#0.2.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.3.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -552,6 +552,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/eksempel-pasient-1234567890"/>
+      </reference>
+      <name value="eksempel-pasient-1234567890"/>
+      <description value="Eksempel på en pasient"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -625,6 +636,50 @@
       </reference>
       <name value="Legemiddelrekvirering"/>
       <description value="Legemiddelrekvirering - ordinering, resept eller annen rekvirering av legemiddel"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/lmdi-lokaltLegemiddel"/>
+      </reference>
+      <name value="lmdi-lokaltLegemiddel"/>
+      <description value="Id for angivelse av legemiddel fra lokal legemiddelkatalog"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lokal-legemiddelkatalog-extension"/>
+      </reference>
+      <name value="Lokal Legemiddelkatalog"/>
+      <description value="Informasjon om hvilken lokal legemiddelkatalog koden kommer fra."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/LokalLegemiddelkatalogCodeSystem"/>
+      </reference>
+      <name value="Lokal Legemiddelkatalog Codes"/>
+      <description value="Kodesystem for lokal legemiddelkatalog"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/LokalLegemiddelkatalogValues"/>
+      </reference>
+      <name value="Lokal Legemiddelkatalog Values"/>
+      <description value="Gyldige verdier for medlemskapsstatus"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -720,39 +775,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/lmdi-observation-tmp"/>
-      </reference>
-      <name value="Observasjon (kladd)"/>
-      <description value="Observation. Kommentar: For høyde og vekt skal denne baseres på nasjonal eller internasjonal Vital Signs IG når den foreligger."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Observasjon-1-Kroppsvekt"/>
-      </reference>
-      <name value="Observasjon-1-Kroppsvekt"/>
-      <description value="Eksempel på observasjon - kroppsvekt"/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-observation-tmp"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Observasjon-2-Hoyde"/>
-      </reference>
-      <name value="Observasjon-2-Hoyde"/>
-      <description value="Eksempel på observasjon - høyde"/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-observation-tmp"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/lmdi-organization"/>
       </reference>
       <name value="Organisasjon"/>
@@ -827,6 +849,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/pasientreferanse-1234567"/>
+      </reference>
+      <name value="pasientreferanse-1234567"/>
+      <description value="Eksempel på en pasient"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -857,6 +890,17 @@
       <name value="Status for legemiddeladministrasjon"/>
       <description value="Verdisett som begrenses status til Legemiddeladministrasjon til henholdsvis 'Gjennomført' eller 'Feilregistrert'."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/sykehjemref-1234567"/>
+      </reference>
+      <name value="sykehjemref-1234567"/>
+      <description value="Eksempel på et sykehjem"/>
+      <exampleBoolean value="true"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

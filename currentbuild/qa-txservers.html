@@ -11,7 +11,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for Lmdi</h1>
- <p>Generated Mon Nov 04 10:16:28 UTC 2024, FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.9.1 (canonical = <a href="http://hl7.no/fhir/ig/lmdi">http://hl7.no/fhir/ig/lmdi</a> (<a href="http://hl7.no/fhir/ig/lmdi/history.html">history</a>))</p>
+ <p>Generated Wed Jan 08 15:20:07 UTC 2025, FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.9.1 (canonical = <a href="http://hl7.no/fhir/ig/lmdi">http://hl7.no/fhir/ig/lmdi</a> (<a href="http://hl7.no/fhir/ig/lmdi/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -21,6 +21,9 @@
   </li>
 </ul>
 <h2>Tx Manager report for 'http://tx.fhir.org/tx-reg'</h2>
+<p>
+  <b>Decisions</b>
+</p>
 <table class="grid">
   <tr>
     <td>
@@ -54,46 +57,46 @@
     <td>auth = , candidates=</td>
   </tr>
   <tr>
-    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>System not handled by any servers. Using primary server</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
-    <td>http://unitsofmeasure.org</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+    <td>http://hl7.org/fhir/fhir-types</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://hl7.org/fhir/fhir-types</td>
+    <td>auth = , candidates=</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://unitsofmeasure.org</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://unitsofmeasure.org</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://unitsofmeasure.org</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://unitsofmeasure.org</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
-  </tr>
-  <tr>
-    <td>Found candidate server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://unitsofmeasure.org</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
@@ -149,7 +152,7 @@
     <td>http://tx.fhir.org/r4</td>
     <td>https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle</td>
     <td>http://loinc.org</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
@@ -170,14 +173,14 @@
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://snomed.info/sct</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://snomed.info/sct</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
@@ -191,21 +194,21 @@
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://snomed.info/sct</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>urn:uuid:d3c3c4fb-15fa-4279-86d4-64660921e32c</td>
+    <td>urn:uuid:4ea9ac3c-bf74-4cc0-a435-b46c72b3bdd5</td>
     <td>http://snomed.info/sct</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://unitsofmeasure.org</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
@@ -226,49 +229,49 @@
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://snomed.info/sct</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>urn:uuid:e8299884-f2a4-4136-be25-0899f148d534</td>
+    <td>urn:uuid:00fdd215-b413-4260-b332-5835a423e9fc</td>
     <td>http://snomed.info/sct</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>urn:uuid:6a251dc2-4eaa-4e14-ac57-2b43005e723e</td>
+    <td>urn:uuid:4cf470e9-868c-43c2-9b5d-ad090c20feae</td>
     <td>http://snomed.info/sct</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>http://hl7.org/fhir/ValueSet/route-codes|4.0.1</td>
     <td>http://snomed.info/sct</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://unitsofmeasure.org</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://unitsofmeasure.org</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://unitsofmeasure.org</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
@@ -283,41 +286,6 @@
     <td>null</td>
     <td>http://dmp.no/fhir/NamingSystem/festLegemiddelPakning</td>
     <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Found candidate server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://snomed.info/sct</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
-  </tr>
-  <tr>
-    <td>Found candidate server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://unitsofmeasure.org</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
-  </tr>
-  <tr>
-    <td>Found candidate server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://snomed.info/sct</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
-  </tr>
-  <tr>
-    <td>Found candidate server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://unitsofmeasure.org</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
-  </tr>
-  <tr>
-    <td>Found candidate server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.1</td>
-    <td>http://unitsofmeasure.org</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
@@ -338,7 +306,35 @@
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://snomed.info/sct</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir</td>
+  </tr>
+  <tr>
+    <td>Found authoritative server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>http://terminology.hl7.org/CodeSystem/v2-0360|2.7</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
+    <td>Found authoritative server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://terminology.hl7.org/ValueSet/v2-2.7-0360|0360</td>
+    <td>http://terminology.hl7.org/CodeSystem/v2-0360|2.7</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=https://tx.ontoserver.csiro.au/fhir</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
@@ -427,27 +423,39 @@
     <td></td>
   </tr>
   <tr>
+    <td>http://hl7.org/fhir/fhir-types</td>
+    <td>0</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>http://loinc.org</td>
     <td>0</td>
     <td>1</td>
     <td>
-      <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
+      <a href="http://terminology.hl7.org/6.1.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
     </td>
   </tr>
   <tr>
     <td>http://snomed.info/sct</td>
-    <td>0</td>
-    <td>11</td>
+    <td>2</td>
+    <td>9</td>
     <td>
       <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a>
     </td>
   </tr>
   <tr>
+    <td>http://terminology.hl7.org/CodeSystem/v2-0360|2.7</td>
+    <td>2</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>http://unitsofmeasure.org</td>
     <td>0</td>
-    <td>13</td>
+    <td>8</td>
     <td>
-      <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ucum.html">Unified Code for Units of Measure (UCUM)</a>
+      <a href="http://terminology.hl7.org/6.1.0/CodeSystem-v3-ucum.html">Unified Code for Units of Measure (UCUM)</a>
     </td>
   </tr>
   <tr>
@@ -461,7 +469,7 @@
     <td>3</td>
     <td>2</td>
     <td>
-      <a href="http://terminology.hl7.org/6.0.2/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
+      <a href="http://terminology.hl7.org/6.1.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
     </td>
   </tr>
   <tr>
@@ -469,7 +477,7 @@
     <td>1</td>
     <td>2</td>
     <td>
-      <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-iso3166-2.html">ISO 3166 Part 2 Country Subdivision Codes</a>
+      <a href="http://terminology.hl7.org/6.1.0/CodeSystem-v3-iso3166-2.html">ISO 3166 Part 2 Country Subdivision Codes</a>
     </td>
   </tr>
   <tr>
@@ -485,5 +493,9 @@
     <td></td>
   </tr>
 </table>
+<p>ValueSets fetched:</p>
+<ul>
+  <li>https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle</li>
+</ul>
 </body>
 </html>

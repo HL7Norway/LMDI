@@ -14,14 +14,6 @@
   }],
   "name" : "Lykkedalen eldrehjem",
   "address" : [{
-    "district" : "Sigdal",
-    "_district" : {
-      "extension" : [{
-        "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode",
-        "valueCoding" : {
-          "code" : "3034"
-        }
-      }]
-    }
+    "district" : "Sigdal"
   }]
 }

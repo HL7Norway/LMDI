@@ -1,10 +1,31 @@
 [
   {
+    "id" : "lokal-legemiddelkatalog-extension",
+    "type" : "StructureDefinition",
+    "url" : "http://fhi.no/fhir/lmr/lokal-legemiddel-katalog",
+    "version" : "0.9.1",
+    "name" : "LokalLegemiddelkatalogExtension"
+  },
+  {
+    "id" : "LokalLegemiddelkatalogCodeSystem",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem",
+    "version" : "0.9.1",
+    "name" : "LokalLegemiddelkatalogCodeSystem"
+  },
+  {
     "id" : "hl7.fhir.no.lmdi",
     "type" : "ImplementationGuide",
     "url" : "http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi",
     "version" : "0.9.1",
     "name" : "Lmdi"
+  },
+  {
+    "id" : "lmdi-lokaltLegemiddel",
+    "type" : "NamingSystem",
+    "url" : "http://hl7.no/fhir/ig/lmdi/NamingSystem/lmdi-lokaltLegemiddel",
+    "version" : "0.9.1",
+    "name" : "lmdiLokaltLegemiddel"
   },
   {
     "id" : "no-basis-fest-legemiddeldose",
@@ -77,13 +98,6 @@
     "name" : "Legemiddeladministrasjon"
   },
   {
-    "id" : "lmdi-observation-tmp",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-observation-tmp",
-    "version" : "0.9.1",
-    "name" : "LmdiObservation"
-  },
-  {
     "id" : "lmdi-organization",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization",
@@ -117,6 +131,13 @@
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode",
     "version" : "0.9.1",
     "name" : "NoBasisMunicipalitycode"
+  },
+  {
+    "id" : "LokalLegemiddelkatalogValues",
+    "type" : "ValueSet",
+    "url" : "http://hl7.no/fhir/ig/lmdi/ValueSet/LokalLegemiddelkatalogValues",
+    "version" : "0.9.1",
+    "name" : "LokalLegemiddelkatalogValues"
   },
   {
     "id" : "lmdi-medicationadministration-status",

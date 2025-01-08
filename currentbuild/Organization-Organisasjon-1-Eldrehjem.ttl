@@ -24,16 +24,7 @@
   ] ) ; # 
   fhir:name [ fhir:v "Lykkedalen eldrehjem"] ; # 
   fhir:address ( [
-     fhir:district [
-       fhir:v "Sigdal" ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:Coding ;
-           fhir:code [ fhir:v "3034" ]
-         ]
-       ] )
-     ]
+     fhir:district [ fhir:v "Sigdal" ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------
