@@ -26,3 +26,11 @@ Description: "Eksempel på institusjonsopphold med EpisodeOfCare"
 * managingOrganization = Reference(sykehjemref-1234567)
 * period.start = "2024-04-01"
 * period.end = "2024-05-30"
+
+Instance: pasientreferanse-1234567
+InstanceOf: Patient
+Description: "Eksempel på en pasient"
+
+Instance: sykehjemref-1234567
+InstanceOf: Organization
+Description: "Eksempel på et sykehjem"
