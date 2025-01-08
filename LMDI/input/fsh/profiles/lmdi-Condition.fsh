@@ -60,3 +60,7 @@ Description: "Eksempel på diagnose SNOMED CT og ICD-10"
 * code.coding[ICD10] = #F40.2
 * code.coding[ICD10].display = "Spesifikke (isolerte) fobier"
 * code.text = "Høydeskrekk"
+
+Instance: eksempel-pasient-1234567890
+InstanceOf: Patient
+Description: "Eksempel på en pasient"

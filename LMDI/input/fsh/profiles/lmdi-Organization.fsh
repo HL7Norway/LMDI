@@ -57,6 +57,7 @@ Description: "Coded value for municipality/county Norwegian kommune"
 * value[x].code ^short = "Actual kommunenummer"
 * value[x].code ^definition = "Norwegian kommunenummer/municipalitycode"
 
+
 // EKSEMPLER
 
 Instance: Organisasjon-1-Eldrehjem
@@ -66,7 +67,6 @@ Description: "Eksempel på organisasjon - Primærhelsetjeneste"
 * identifier[ENH].value = "1234567890"
 * name = "Lykkedalen eldrehjem"
 * address.district = "Sigdal"
-* address.district[0].extension[NoBasisMunicipalitycode].valueCoding = #3034
 
 Instance: Organisasjon-2-Spesialist-RESH
 InstanceOf: LmdiOrganization
