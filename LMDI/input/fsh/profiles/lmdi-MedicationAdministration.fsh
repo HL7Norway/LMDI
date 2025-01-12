@@ -1,8 +1,8 @@
-Profile: Legemiddeladministrasjon
+Profile: Legemiddeladministrering
 Parent:   MedicationAdministration
-Id:       lmdi-legemiddeladministrasjon
-Title:    "Legemiddeladministrasjon"
-Description: """Beskriver administrasjon av legemiddel til pasient på institusjon.
+Id:       lmdi-legemiddeladministrering
+Title:    "Legemiddeladministrering"
+Description: """Beskriver administrering av legemiddel til pasient på institusjon.
 
 Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei."""
 * ^status = #draft
@@ -13,7 +13,7 @@ Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legem
 * status ^short = "Status administrering."
 * status ^definition = "Status administrering. Skal vanligvis settes til 'Gjennomført' (completed), men 'Feilregistrert' (entered-in-error) MÅ benyttes hvis registreringen inneholder en alvorlig feil og skal slettes. "
 
-* medication[x] ^short = "Legemiddeladministrasjon."
+* medication[x] ^short = "Legemiddeladministrering."
 
 * subject only Reference(Patient)
 * subject ^short = "Referanse til pasient"
@@ -25,7 +25,7 @@ Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legem
 * context ^definition = "Referanse til hvilket institusjonsopphold eller avtale pasienten var på da legemiddelet ble administrert."
 * context ^comment = "Encounter må vurderes om nødvendig, f.eks. hos spesialist."
 
-* effective[x] ^short = "Tidspunkt eller periode for administrasjon"
+* effective[x] ^short = "Tidspunkt eller periode for administrering"
 
 * performer and performer.actor MS
 * performer.actor only Reference (Practitioner) or Reference (PractitionerRole)
@@ -62,8 +62,8 @@ Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legem
 // VALUE SETS
 ValueSet: LegemiddeladministreringStatus
 Id: lmdi-medicationadministration-status
-Title: "Status for legemiddeladministrasjon"
-Description: "Verdisett som begrenses status til Legemiddeladministrasjon til henholdsvis 'Gjennomført' eller 'Feilregistrert'."
+Title: "Status for legemiddeladministrering"
+Description: "Verdisett som begrenses status til Legemiddeladministrering til henholdsvis 'Gjennomført' eller 'Feilregistrert'."
 * ^version = "0.1.0"
 * ^status = #draft
 * ^experimental = true
@@ -76,7 +76,7 @@ Description: "Verdisett som begrenses status til Legemiddeladministrasjon til he
 // EKSEMPLER
 
 Instance: Administrering-1-Oralt
-InstanceOf: Legemiddeladministrasjon
+InstanceOf: Legemiddeladministrering
 Description: "Eksempel på administrering av legemiddel"
 * status = #completed
 * medicationReference = Reference(https://fhir.legemidler.example.com/legemidler/123456780)
@@ -95,7 +95,7 @@ Description: "Eksempel på administrering av legemiddel"
 * dosage.dose.code = #tsp_us
 
 Instance: Administrering-2-Infusjon
-InstanceOf: Legemiddeladministrasjon
+InstanceOf: Legemiddeladministrering
 Description: "Eksempel på administrering av legemiddel - infusjon"
 * status = #completed
 * medicationReference = Reference(https://fhir.legemidler.example.com/legemidler/0987654321)
