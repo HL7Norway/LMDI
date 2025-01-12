@@ -1,6 +1,6 @@
-Profile: LmdiDiagnose
+Profile: Diagnose
 Parent: Condition
-Id: lmdi-condition-diagnose
+Id: lmdi-diagnose
 Title: "Diagnose"
 Description: "Diagnosen som pasienten har fått rekvirert og administrert legemiddelet for. "
 * ^status = #draft
@@ -42,7 +42,7 @@ Description: "Diagnosen som pasienten har fått rekvirert og administrert legemi
 
 // EKSEMPLER
 Instance: Diagnose-1-ICD10-OID
-InstanceOf: LmdiDiagnose
+InstanceOf: Diagnose
 Description: "Eksempel på diagnose ICD-10"
 * subject = Reference(eksempel-pasient-1234567890)
 * code.coding[ICD10].system = "urn:oid:2.16.578.1.12.4.1.1.7110"
@@ -50,7 +50,7 @@ Description: "Eksempel på diagnose ICD-10"
 * code.coding[ICD10].display = "Vanskeligheter med inntak og tilførsel av mat"
 
 Instance: Diagnose-2-SNOMED-CT
-InstanceOf: LmdiDiagnose
+InstanceOf: Diagnose
 Description: "Eksempel på diagnose SNOMED CT og ICD-10"
 * subject = Reference(eksempel-pasient-1234567890)
 * code.coding[SCT].system = "http://snomed.info/sct"

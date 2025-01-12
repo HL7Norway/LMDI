@@ -1,7 +1,7 @@
 // Adresse med kommunenummer. Skal baseres på no-basis-adress. 
-Profile: LmdiAdresse
+Profile: Adresse
 Parent: Address
-Id: lmdi-address
+Id: lmdi-adresse
 Title: "Adresse"
 Description: "Adresse som inneholder utvidelse for kommune"
 * ^status = #draft
@@ -18,6 +18,6 @@ Description: "Adresse som inneholder utvidelse for kommune"
 // EKSEMPLER
 // FSH genererer ikke eksempler for datatyper, ergo Usage=inline for å unngå feilmeldinger. 
 // Instance: Adresse-1
-// InstanceOf: LmdiAdresse
+// InstanceOf: Adresse
 // Description: "Eksempel på adresse med kun kommunenummer"
 // Usage: #inline

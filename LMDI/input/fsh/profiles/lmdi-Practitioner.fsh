@@ -1,7 +1,7 @@
 // TODO #5 "Helsepersonell" skal baseres på no-basis-practitioner
 // Se: https://simplifier.net/HL7Norwayno-basis/NoBasisPractitioner/~overview 
 
-Profile:     LmdiPractitioner
+Profile:     Helsepersonell
 Id:          lmdi-practitioner
 Parent:      Practitioner
 Title:       "Helsepersonell"
@@ -34,7 +34,7 @@ Basisprofil for Norwegian Practitioner information. Defined by The Norwegian Dir
 
 // EKSEMPLER
 Instance: Helsepersonell-1-HPR-nummer
-InstanceOf: LmdiPractitioner
+InstanceOf: Helsepersonell
 Description: "Eksempel på helsepersonell med HPR-nummer"
 * identifier.system = "urn:oid:2.16.578.1.12.4.1.4.4"
 * identifier.value = "9144900"
