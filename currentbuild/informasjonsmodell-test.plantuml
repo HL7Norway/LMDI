@@ -13,7 +13,7 @@ class Pasient <<Patient>> {
 
 Pasient --> adresse
 
-class Legemiddeladministrasjon <<MedicationAdministration>> {
+class Legemiddeladministrering <<MedicationAdministration>> {
    status: kodet = komplett
    legemiddel: referanse[Legemiddel]
    pasient: referanse[Pasient]
@@ -25,12 +25,12 @@ class Legemiddeladministrasjon <<MedicationAdministration>> {
    mengde/dosering: kvantitet
 }
 
-Legemiddeladministrasjon -> Legemiddel 
-Legemiddeladministrasjon --> Pasient
-Legemiddeladministrasjon --> Helsepersonell
-Legemiddeladministrasjon --> Organisasjon
-Legemiddeladministrasjon -> Rekvisisjon
-Legemiddeladministrasjon --> Institusjonsopphold : kontekst
+Legemiddeladministrering -> Legemiddel 
+Legemiddeladministrering --> Pasient
+Legemiddeladministrering --> Helsepersonell
+Legemiddeladministrering --> Organisasjon
+Legemiddeladministrering -> Rekvisisjon
+Legemiddeladministrering --> Institusjonsopphold : kontekst
 
 class Legemiddel <<Medication>> {
    identifikator
@@ -99,11 +99,11 @@ Rekvisisjon --> Helsepersonell
 Rekvisisjon -> Rekvisisjon
 
 class "Legemiddel klargjøring" <<MedicationDispense>> {
-    administrasjon: referanse[Legemiddeladministrasjon]
+    administrering: referanse[Legemiddeladministrering]
     årsak bytte: kodet
 } 
 
-"Legemiddel klargjøring" -> Legemiddeladministrasjon
+"Legemiddel klargjøring" -> Legemiddeladministrering
 
 class "Rolle helsepersonell" <<PractitionerRole>> {
     helsepersonell: referanse[Helsepersonell]

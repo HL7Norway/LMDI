@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Lmdi"] ; # 
   fhir:title [ fhir:v "Legemiddeldata fra institusjon til Legemiddelregisteret"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-01-08T15:19:04+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-12T13:05:41+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;
@@ -529,8 +529,8 @@
        fhir:name [ fhir:v "Administrering-1-Oralt" ] ;
        fhir:description [ fhir:v "Eksempel på administrering av legemiddel" ] ;
        fhir:example [
-         fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrasjon"^^xsd:anyURI ;
-         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrasjon>
+         fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrering"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrering>
        ]
      ] [
        fhir:extension ( [
@@ -556,8 +556,8 @@
        fhir:name [ fhir:v "Administrering-2-Infusjon" ] ;
        fhir:description [ fhir:v "Eksempel på administrering av legemiddel - infusjon" ] ;
        fhir:example [
-         fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrasjon"^^xsd:anyURI ;
-         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrasjon>
+         fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrering"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrering>
        ]
      ] [
        fhir:extension ( [
@@ -721,11 +721,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrasjon> ;
-         fhir:reference [ fhir:v "StructureDefinition/lmdi-legemiddeladministrasjon" ]
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrering> ;
+         fhir:reference [ fhir:v "StructureDefinition/lmdi-legemiddeladministrering" ]
        ] ;
-       fhir:name [ fhir:v "Legemiddeladministrasjon" ] ;
-       fhir:description [ fhir:v "Beskriver administrasjon av legemiddel til pasient på institusjon.\n\nDette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei." ] ;
+       fhir:name [ fhir:v "Legemiddeladministrering" ] ;
+       fhir:description [ fhir:v "Beskriver administrering av legemiddel til pasient på institusjon.\n\nDette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1039,8 +1039,8 @@
          fhir:link <http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status> ;
          fhir:reference [ fhir:v "ValueSet/lmdi-medicationadministration-status" ]
        ] ;
-       fhir:name [ fhir:v "Status for legemiddeladministrasjon" ] ;
-       fhir:description [ fhir:v "Verdisett som begrenses status til Legemiddeladministrasjon til henholdsvis 'Gjennomført' eller 'Feilregistrert'." ] ;
+       fhir:name [ fhir:v "Status for legemiddeladministrering" ] ;
+       fhir:description [ fhir:v "Verdisett som begrenses status til Legemiddeladministrering til henholdsvis 'Gjennomført' eller 'Feilregistrert'." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

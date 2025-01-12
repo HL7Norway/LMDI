@@ -19,12 +19,12 @@
       "version" : "0.9.1",
       "status" : "draft",
       "name" : "LegemiddeladministreringStatus",
-      "title" : "Status for legemiddeladministrasjon",
-      "description" : "Verdisett som begrenses status til Legemiddeladministrasjon til henholdsvis 'Gjennomført' eller 'Feilregistrert'.",
+      "title" : "Status for legemiddeladministrering",
+      "description" : "Verdisett som begrenses status til Legemiddeladministrering til henholdsvis 'Gjennomført' eller 'Feilregistrert'.",
       "systems" : ["http://hl7.org/fhir/ValueSet/medication-admin-status"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-legemiddeladministrasjon.html" : "Legemiddeladministrasjon"
+      "StructureDefinition-lmdi-legemiddeladministrering.html" : "Legemiddeladministrering"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/practitioner-role",
@@ -55,7 +55,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.98"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-legemiddeladministrasjon.html" : "Legemiddeladministrasjon"
+      "StructureDefinition-lmdi-legemiddeladministrering.html" : "Legemiddeladministrering"
     }
   ]
 }

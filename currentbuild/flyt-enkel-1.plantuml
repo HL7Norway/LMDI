@@ -22,8 +22,8 @@ Klient -> API : Skriv Pasient
 end
 
 activate LMR
-Klient -> API : Skriv Legemiddeladministrasjon
-API -> LMR : Lagre Legemiddeladministrasjon
+Klient -> API : Skriv Legemiddeladministrering
+API -> LMR : Lagre Legemiddeladministrering
 deactivate API
 deactivate LMR
 

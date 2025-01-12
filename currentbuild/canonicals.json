@@ -91,11 +91,11 @@
     "name" : "Legemiddel"
   },
   {
-    "id" : "lmdi-legemiddeladministrasjon",
+    "id" : "lmdi-legemiddeladministrering",
     "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrasjon",
+    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrering",
     "version" : "0.9.1",
-    "name" : "Legemiddeladministrasjon"
+    "name" : "Legemiddeladministrering"
   },
   {
     "id" : "lmdi-organization",

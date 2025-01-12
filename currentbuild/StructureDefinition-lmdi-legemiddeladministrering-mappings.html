@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Legemiddeladministrasjon - Mappings - Legemiddeldata fra institusjon til Legemiddelregisteret v0.9.1</title>
+    <title>Legemiddeladministrering - Mappings - Legemiddeldata fra institusjon til Legemiddelregisteret v0.9.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -128,7 +128,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Legemiddeladministrasjon</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Legemiddeladministrering</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -157,13 +157,13 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="StructureDefinition-lmdi-legemiddeladministrasjon.html">Content</a>
+    <a href="StructureDefinition-lmdi-legemiddeladministrering.html">Content</a>
   </li>
 
 
 
   <li>
-    <a href="StructureDefinition-lmdi-legemiddeladministrasjon-definitions.html">Detailed Descriptions</a>
+    <a href="StructureDefinition-lmdi-legemiddeladministrering-definitions.html">Detailed Descriptions</a>
   </li>
 
 
@@ -182,7 +182,7 @@
   
     
       <li>
-        <a href="StructureDefinition-lmdi-legemiddeladministrasjon-examples.html">Examples</a>
+        <a href="StructureDefinition-lmdi-legemiddeladministrering-examples.html">Examples</a>
       </li>
     
   
@@ -192,21 +192,21 @@
 
   
     <li>
-      <a href="StructureDefinition-lmdi-legemiddeladministrasjon.profile.xml.html">XML</a>
+      <a href="StructureDefinition-lmdi-legemiddeladministrering.profile.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="StructureDefinition-lmdi-legemiddeladministrasjon.profile.json.html">JSON</a>
+      <a href="StructureDefinition-lmdi-legemiddeladministrering.profile.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="StructureDefinition-lmdi-legemiddeladministrasjon.profile.ttl.html">TTL</a>
+      <a href="StructureDefinition-lmdi-legemiddeladministrering.profile.ttl.html">TTL</a>
     </li>
   
 
@@ -215,7 +215,7 @@
 
 
 <a name="root"> </a>
-<h2 id="root">Resource Profile: Legemiddeladministrasjon - Mappings</h2>
+<h2 id="root">Resource Profile: Legemiddeladministrering - Mappings</h2>
 
   <table class="colsd">
     <tr>
@@ -233,7 +233,7 @@
   </table>
 
 
-<p>Mappings for the lmdi-legemiddeladministrasjon resource profile.</p>
+<p>Mappings for the lmdi-legemiddeladministrering resource profile.</p>
 
   <!-- insert intro if present -->
   
@@ -241,54 +241,38 @@
 
 
   <a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>Legemiddeladministrasjon</b></td></tr>
+ <tr><td colspan="3"><b>Legemiddeladministrering</b></td></tr>
  <tr><td>MedicationAdministration</td><td>Event</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Event.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;instantiates</td><td>Event.instantiates</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;partOf</td><td>Event.partOf</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>Event.status</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;statusReason</td><td>Event.statusReason</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;medication[x]</td><td>Event.code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>Event.subject</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;context</td><td>Event.context</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;effective[x]</td><td>Event.occurrence[x]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>Event.performer</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function</td><td>Event.performer.function</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;actor</td><td>Event.performer.actor</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>Event.reasonCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>Event.reasonReference</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;request</td><td>Event.basedOn</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>Event.note</td> </tr>
 </table>
 <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>Legemiddeladministrasjon</b></td></tr>
+ <tr><td colspan="3"><b>Legemiddeladministrering</b></td></tr>
  <tr><td>MedicationAdministration</td><td>Entity. Role, or Act, SubstanceAdministration</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>.id</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;instantiates</td><td>.outboundRelationship[typeCode=DEFN].target[classCode=unspecified]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;partOf</td><td>.outboundRelationship[typeCode=COMP]/target[classCode=SBADM or PROC,moodCode=EVN]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>.statusCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;statusReason</td><td>.outboundRelationship[typeCode=RSON]/target[classCode=OBS,moodCode=EVN, code=&quot;reason not given&quot;].value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>.inboundRelationship[typeCode=COMP].source[classCode=OBS, moodCode=EVN, code=&quot;type of medication usage&quot;].value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;medication[x]</td><td>.participation[typeCode=CSM].role[classCode=ADMM]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>.participation[typeCode=SBJ].role[classCode=PAT]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;context</td><td>.inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN, code=&quot;type of encounter or episode&quot;]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInformation</td><td>.outboundRelationship[typeCode=PERT].target[A_SupportingClinicalStatement CMET minimal with many different choices of classCodes(ORG, ENC, PROC, SPLY, SBADM, OBS) and each of the act class codes draws from one or more of the following moodCodes (EVN, DEF, INT PRMS, RQO, PRP, APT, ARQ, GOL)]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;effective[x]</td><td>.effectiveTime</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>.participation[typeCode=PRF]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function</td><td>participation[typeCode=PRF].functionCode</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;actor</td><td>.role</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>.reasonCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>.outboundRelationship[typeCode=RSON]/target[classCode=OBS,moodCode=EVN, code=&quot;reason for use ASSERTION&quot;].value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;request</td><td>InFullfillmentOf-&gt;SubstanceAdministration</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;device</td><td>device-&gt;Access  OR device-&gt;AssignedDevice</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>.inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=&quot;annotation&quot;].value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;dosage</td><td>component-&gt;SubstanceAdministrationEvent</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
@@ -323,20 +307,18 @@
  <tr><td>&nbsp;&nbsp;&nbsp;eventHistory</td><td>.inboundRelationship(typeCode=SUBJ].source[classCode=CACT, moodCode=EVN]</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
- <tr><td colspan="3"><b>Legemiddeladministrasjon</b></td></tr>
+ <tr><td colspan="3"><b>Legemiddeladministrering</b></td></tr>
  <tr><td>MedicationAdministration</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>FiveWs.status</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;medication[x]</td><td>FiveWs.what[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>FiveWs.subject[x], FiveWs.subject</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;context</td><td>FiveWs.context</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInformation</td><td>FiveWs.context</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;effective[x]</td><td>FiveWs.done[x]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>FiveWs.actor</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>FiveWs.why[x]</td> </tr>
 </table>
 <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>Legemiddeladministrasjon</b></td></tr>
+ <tr><td colspan="3"><b>Legemiddeladministrering</b></td></tr>
  <tr><td>MedicationAdministration</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>RXA-20-Completion Status</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;statusReason</td><td>RXA-9-Administration Notes / RXA-18 Substance/Treatment Refusal Reason</td> </tr>
@@ -344,10 +326,8 @@
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>PID-3-Patient ID List</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;context</td><td>PV1-19-Visit Number</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;effective[x]</td><td>RXA-3-Date/Time Start of Administration / RXA-4-Date/Time End of Administration</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>RXA-10-Administering Provider / PRT-5-Participation Person: PRT-4-Participation='AP' (RXA-10 is deprecated)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>RXE-27 Give Indication</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;request</td><td>ORC-2-Placer Order Number / ORC-3-Filler Order Number</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;device</td><td>PRT-10 Participation Device / RXR-3 Administrative Device</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;dosage</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;site</td><td>RXR-2 Administration Site / RXR-6 Administration Site Modifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;route</td><td>RXR-1-Route</td> </tr>
@@ -371,7 +351,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rate[x] (rateRatio)</td><td>RXA-12-Administered Per (Time Unit)</td> </tr>
 </table>
 <a name="w3c.prov"> </a><h3>Mappings for W3C PROV (<a href="http://www.w3.org/ns/prov">http://www.w3.org/ns/prov</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>Legemiddeladministrasjon</b></td></tr>
+ <tr><td colspan="3"><b>Legemiddeladministrering</b></td></tr>
  <tr><td>MedicationAdministration</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>no mapping</td> </tr>
 </table>
@@ -428,7 +408,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no">Folkehelseinstituttet (FHI)</a>.  Package hl7.fhir.no.lmdi#0.9.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 8, 2025 15:19+0000">2025-01-08</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no">Folkehelseinstituttet (FHI)</a>.  Package hl7.fhir.no.lmdi#0.9.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jan 12, 2025 13:05+0000">2025-01-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

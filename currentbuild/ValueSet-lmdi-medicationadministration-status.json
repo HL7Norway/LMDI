@@ -8,7 +8,7 @@
   "url" : "http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status",
   "version" : "0.9.1",
   "name" : "LegemiddeladministreringStatus",
-  "title" : "Status for legemiddeladministrasjon",
+  "title" : "Status for legemiddeladministrering",
   "status" : "draft",
   "experimental" : true,
   "date" : "2024-06-05",
@@ -20,7 +20,7 @@
       "value" : "https://www.fhi.no"
     }]
   }],
-  "description" : "Verdisett som begrenses status til Legemiddeladministrasjon til henholdsvis 'Gjennomført' eller 'Feilregistrert'.",
+  "description" : "Verdisett som begrenses status til Legemiddeladministrering til henholdsvis 'Gjennomført' eller 'Feilregistrert'.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

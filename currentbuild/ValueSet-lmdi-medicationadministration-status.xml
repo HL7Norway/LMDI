@@ -8,7 +8,7 @@
   <url value="http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status"/>
   <version value="0.9.1"/>
   <name value="LegemiddeladministreringStatus"/>
-  <title value="Status for legemiddeladministrasjon"/>
+  <title value="Status for legemiddeladministrering"/>
   <status value="draft"/>
   <experimental value="true"/>
   <date value="2024-06-05"/>
@@ -20,7 +20,7 @@
       <value value="https://www.fhi.no"/>
     </telecom>
   </contact>
-  <description value="Verdisett som begrenses status til Legemiddeladministrasjon til henholdsvis 'Gjennomført' eller 'Feilregistrert'."/>
+  <description value="Verdisett som begrenses status til Legemiddeladministrering til henholdsvis 'Gjennomført' eller 'Feilregistrert'."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

@@ -19,12 +19,12 @@
       "version" : "0.9.1",
       "status" : "draft",
       "name" : "LegemiddeladministreringStatus",
-      "title" : "Status for legemiddeladministrasjon",
-      "description" : "Verdisett som begrenses status til Legemiddeladministrasjon til henholdsvis 'Gjennomført' eller 'Feilregistrert'.",
+      "title" : "Status for legemiddeladministrering",
+      "description" : "Verdisett som begrenses status til Legemiddeladministrering til henholdsvis 'Gjennomført' eller 'Feilregistrert'.",
       "systems" : ["http://hl7.org/fhir/ValueSet/medication-admin-status"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-legemiddeladministrasjon.html" : "Legemiddeladministrasjon"
+      "StructureDefinition-lmdi-legemiddeladministrering.html" : "Legemiddeladministrering"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/address-type",
@@ -39,8 +39,8 @@
       "uses" : {
       },
       "StructureDefinition-lmdi-address.html" : "Adresse",
-      "StructureDefinition-lmdi-organization.html" : "Organisasjon",
-      "StructureDefinition-lmdi-patient.html" : "Pasient"
+      "StructureDefinition-lmdi-patient.html" : "Pasient",
+      "StructureDefinition-lmdi-organization.html" : "Organisasjon"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/address-use",
@@ -55,8 +55,8 @@
       "uses" : {
       },
       "StructureDefinition-lmdi-address.html" : "Adresse",
-      "StructureDefinition-lmdi-organization.html" : "Organisasjon",
-      "StructureDefinition-lmdi-patient.html" : "Pasient"
+      "StructureDefinition-lmdi-patient.html" : "Pasient",
+      "StructureDefinition-lmdi-organization.html" : "Organisasjon"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/administration-method-codes",
@@ -70,7 +70,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.97"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-legemiddeladministrasjon.html" : "Legemiddeladministrasjon"
+      "StructureDefinition-lmdi-legemiddeladministrering.html" : "Legemiddeladministrering"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
@@ -99,7 +99,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.346"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-legemiddeladministrasjon.html" : "Legemiddeladministrasjon"
+      "StructureDefinition-lmdi-legemiddeladministrering.html" : "Legemiddeladministrering"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/body-site",
@@ -311,8 +311,8 @@
       "uses" : {
       },
       "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
-      "StructureDefinition-lmdi-organization.html" : "Organisasjon",
-      "StructureDefinition-lmdi-patient.html" : "Pasient"
+      "StructureDefinition-lmdi-patient.html" : "Pasient",
+      "StructureDefinition-lmdi-organization.html" : "Organisasjon"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -327,8 +327,8 @@
       "uses" : {
       },
       "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
-      "StructureDefinition-lmdi-organization.html" : "Organisasjon",
-      "StructureDefinition-lmdi-patient.html" : "Pasient"
+      "StructureDefinition-lmdi-patient.html" : "Pasient",
+      "StructureDefinition-lmdi-organization.html" : "Organisasjon"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -343,14 +343,14 @@
       "uses" : {
       },
       "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering",
-      "StructureDefinition-lmdi-legemiddeladministrasjon.html" : "Legemiddeladministrasjon",
-      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
       "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose",
+      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
+      "StructureDefinition-lmdi-legemiddeladministrering.html" : "Legemiddeladministrering",
       "StructureDefinition-lmdi-practitionerrole.html" : "Rolle helsepersonell",
       "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel",
+      "StructureDefinition-lmdi-patient.html" : "Pasient",
       "StructureDefinition-lmdi-episodeofcare-institusjonsopphold.html" : "Institusjonsopphold",
-      "StructureDefinition-lmdi-organization.html" : "Organisasjon",
-      "StructureDefinition-lmdi-patient.html" : "Pasient"
+      "StructureDefinition-lmdi-organization.html" : "Organisasjon"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -411,7 +411,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.349"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-legemiddeladministrasjon.html" : "Legemiddeladministrasjon"
+      "StructureDefinition-lmdi-legemiddeladministrering.html" : "Legemiddeladministrering"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-admin-category",
@@ -427,7 +427,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.347"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-legemiddeladministrasjon.html" : "Legemiddeladministrasjon"
+      "StructureDefinition-lmdi-legemiddeladministrering.html" : "Legemiddeladministrering"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
@@ -442,7 +442,6 @@
       "uses" : {
       },
       "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering",
-      "StructureDefinition-lmdi-legemiddeladministrasjon.html" : "Legemiddeladministrasjon",
       "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel"
     },
     {
@@ -622,7 +621,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.344"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-legemiddeladministrasjon.html" : "Legemiddeladministrasjon"
+      "StructureDefinition-lmdi-legemiddeladministrering.html" : "Legemiddeladministrering"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/reason-medication-not-given-codes",
@@ -636,7 +635,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.342"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-legemiddeladministrasjon.html" : "Legemiddeladministrasjon"
+      "StructureDefinition-lmdi-legemiddeladministrering.html" : "Legemiddeladministrering"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/request-priority",
@@ -664,7 +663,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.98"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-legemiddeladministrasjon.html" : "Legemiddeladministrasjon"
+      "StructureDefinition-lmdi-legemiddeladministrering.html" : "Legemiddeladministrering"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-2.7-0360",

@@ -53,8 +53,8 @@
     ],
     "MedicationAdministration": [
       {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrasjon",
-        "title": "Legemiddeladministrasjon"
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrering",
+        "title": "Legemiddeladministrering"
       }
     ],
     "Organization": [

@@ -16,8 +16,8 @@
       "version" : "0.9.1",
       "status" : "draft",
       "name" : "LegemiddeladministreringStatus",
-      "title" : "Status for legemiddeladministrasjon",
-      "description" : "Verdisett som begrenses status til Legemiddeladministrasjon til henholdsvis 'Gjennomført' eller 'Feilregistrert'.",
+      "title" : "Status for legemiddeladministrering",
+      "description" : "Verdisett som begrenses status til Legemiddeladministrering til henholdsvis 'Gjennomført' eller 'Feilregistrert'.",
       "systems" : ["http://hl7.org/fhir/ValueSet/medication-admin-status"]
     }
   ]

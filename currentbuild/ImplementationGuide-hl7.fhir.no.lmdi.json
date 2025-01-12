@@ -10,7 +10,7 @@
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2025-01-08T15:19:04+00:00",
+  "date" : "2025-01-12T13:05:41+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -615,7 +615,7 @@
       },
       "name" : "Administrering-1-Oralt",
       "description" : "Eksempel på administrering av legemiddel",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrasjon"
+      "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrering"
     },
     {
       "extension" : [{
@@ -639,7 +639,7 @@
       },
       "name" : "Administrering-2-Infusjon",
       "description" : "Eksempel på administrering av legemiddel - infusjon",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrasjon"
+      "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrering"
     },
     {
       "extension" : [{
@@ -791,10 +791,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/lmdi-legemiddeladministrasjon"
+        "reference" : "StructureDefinition/lmdi-legemiddeladministrering"
       },
-      "name" : "Legemiddeladministrasjon",
-      "description" : "Beskriver administrasjon av legemiddel til pasient på institusjon.\n\nDette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei.",
+      "name" : "Legemiddeladministrering",
+      "description" : "Beskriver administrering av legemiddel til pasient på institusjon.\n\nDette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei.",
       "exampleBoolean" : false
     },
     {
@@ -1081,8 +1081,8 @@
       "reference" : {
         "reference" : "ValueSet/lmdi-medicationadministration-status"
       },
-      "name" : "Status for legemiddeladministrasjon",
-      "description" : "Verdisett som begrenses status til Legemiddeladministrasjon til henholdsvis 'Gjennomført' eller 'Feilregistrert'.",
+      "name" : "Status for legemiddeladministrering",
+      "description" : "Verdisett som begrenses status til Legemiddeladministrering til henholdsvis 'Gjennomført' eller 'Feilregistrert'.",
       "exampleBoolean" : false
     },
     {
