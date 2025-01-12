@@ -1,23 +1,14 @@
-Profile: Legemiddeladministrasjon
+Profile: Legemiddeladministrering
 Parent:   MedicationAdministration
-Id:       lmdi-legemiddeladministrasjon
-Title:    "Legemiddeladministrasjon"
-Description: """Beskriver administrasjon av legemiddel til pasient på institusjon.
+Id:       lmdi-legemiddeladministrering
+Title:    "Legemiddeladministrering"
+Description: """Beskriver administrering av legemiddel til pasient på institusjon.
 
 Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei."""
 * ^status = #draft
 * ^date = "2024-06-24"
 * ^publisher = "Folkehelseinstituttet"
 
-* status from LegemiddeladministreringStatus
-* status ^short = "Status administrering."
-* status ^definition = "Status administrering. Skal vanligvis settes til 'Gjennomført' (completed), men 'Feilregistrert' (entered-in-error) MÅ benyttes hvis registreringen inneholder en alvorlig feil og skal slettes. "
-
-* medication[x] ^short = "Legemiddeladministrasjon."
-
-* subject only Reference(Patient)
-* subject ^short = "Referanse til pasient"
-* subject ^definition = "Det skal alltid være en referanse til pasienten som har blitt administrert legemiddel."
 
 * context MS
 * context only Reference(EpisodeOfCare)
@@ -25,17 +16,7 @@ Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legem
 * context ^definition = "Referanse til hvilket institusjonsopphold eller avtale pasienten var på da legemiddelet ble administrert."
 * context ^comment = "Encounter må vurderes om nødvendig, f.eks. hos spesialist."
 
-* effective[x] ^short = "Tidspunkt eller periode for administrasjon"
-
-* performer and performer.actor MS
-* performer.actor only Reference (Practitioner) or Reference (PractitionerRole)
-* performer.actor ^short = "Hvem som har administrert legemiddelet"
-* performer.actor ^definition = "Utfører av administrering kan være helsepersonell eller en rolle knyttet til institusjonen eller pasienten. "
-* performer.actor ^comment = "TODO #21 Tolkning: Det viktigste er helsepersonellets rolle ved institusjonen, og ikke selve helsepersonellet?"
-
-* request MS
-* request ^short = "Referanse til rekvisisjon"
-* request ^definition = "Referanse til rekvisisjonen som denne administreringen er basert på (som for eksempel resept eller ordinering."
+* device 0..0
 
 * dosage.route MS
 * dosage.route ^short = "Administrasjonsvei"
@@ -59,11 +40,44 @@ Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legem
 
 * dosage.rateRatio MS
 
+
+* effective[x] ^short = "Tidspunkt eller periode for administrering"
+
+* medication[x] ^short = "Legemiddel"
+* medication[x] only Reference(Legemiddel)
+
+* note 0..0
+
+* partOf 0..0
+
+* performer 0..0
+
+* reasonReference only Reference(Condition)
+
+* request MS
+* request ^short = "Referanse til rekvisisjon"
+* request ^definition = "Referanse til rekvisisjonen som denne administreringen er basert på (som for eksempel resept eller ordinering."
+
+
+* status from LegemiddeladministreringStatus
+* status ^short = "Status administrering."
+* status ^definition = "Status administrering. Skal vanligvis settes til 'Gjennomført' (completed), men 'Feilregistrert' (entered-in-error) MÅ benyttes hvis registreringen inneholder en alvorlig feil og skal slettes. "
+
+
+* subject only Reference(Patient)
+* subject ^short = "Referanse til pasient"
+* subject ^definition = "Det skal alltid være en referanse til pasienten som har blitt administrert legemiddel."
+
+* supportingInformation 0..0
+
+* text 0..0
+
+
 // VALUE SETS
 ValueSet: LegemiddeladministreringStatus
 Id: lmdi-medicationadministration-status
-Title: "Status for legemiddeladministrasjon"
-Description: "Verdisett som begrenses status til Legemiddeladministrasjon til henholdsvis 'Gjennomført' eller 'Feilregistrert'."
+Title: "Status for legemiddeladministrering"
+Description: "Verdisett som begrenses status til Legemiddeladministrering til henholdsvis 'Gjennomført' eller 'Feilregistrert'."
 * ^version = "0.1.0"
 * ^status = #draft
 * ^experimental = true
@@ -76,13 +90,12 @@ Description: "Verdisett som begrenses status til Legemiddeladministrasjon til he
 // EKSEMPLER
 
 Instance: Administrering-1-Oralt
-InstanceOf: Legemiddeladministrasjon
+InstanceOf: Legemiddeladministrering
 Description: "Eksempel på administrering av legemiddel"
 * status = #completed
 * medicationReference = Reference(https://fhir.legemidler.example.com/legemidler/123456780)
 * subject = Reference(https://fhi.no/fhir/lmdi/pasient/12345678)
 * context = Reference(https://fhi.no/fhir/lmdi/institusjonsopphold/428ff23d-7a65-4c67-8059-6a1d07d287e3)
-* performer.actor = Reference(https://fhir.npr.no/helsepersonell/1234567890)
 * effectiveDateTime = "2024-05-28"
 * dosage.text = "Svelge to spiseskjéer"
 * dosage.route.coding[SCT].system = "http://snomed.info/sct"
@@ -95,13 +108,12 @@ Description: "Eksempel på administrering av legemiddel"
 * dosage.dose.code = #tsp_us
 
 Instance: Administrering-2-Infusjon
-InstanceOf: Legemiddeladministrasjon
+InstanceOf: Legemiddeladministrering
 Description: "Eksempel på administrering av legemiddel - infusjon"
 * status = #completed
 * medicationReference = Reference(https://fhir.legemidler.example.com/legemidler/0987654321)
 * subject = Reference(https://fhi.no/fhir/lmdi/pasient/12345678)
 * context = Reference(https://fhi.no/fhir/lmdi/institusjonsopphold/428ff23d-7a65-4c67-8059-6a1d07d287e3)
-* performer.actor = Reference(https://fhir.npr.no/helsepersonell/1234567890)
 * effectivePeriod.start = "2024-06-13T14:26:01+02:00"
 * effectivePeriod.end = "2024-06-13T14:48:47+02:00"
 * dosage.text = "4,5g D5W 250 ml. IV hver 6. time. Infuser over 30 minutter ved 8 ml/min"

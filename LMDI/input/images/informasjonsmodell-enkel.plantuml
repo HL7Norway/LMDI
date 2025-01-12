@@ -7,15 +7,15 @@ footer "Folkehelseinstituttet / Vali AS"
 class Pasient <<Patient>> #lightgreen {
 }
 
-class Legemiddeladministrasjon <<MedicationAdministration>> #lightgreen {
+class Legemiddeladministrering <<MedicationAdministration>> #lightgreen {
 }
 
-Legemiddeladministrasjon --> Legemiddel 
-Legemiddeladministrasjon --> Pasient
-Legemiddeladministrasjon --> Helsepersonell
-Legemiddeladministrasjon --> "Rolle helsepersonell"
-Legemiddeladministrasjon --> Rekvisisjon
-Legemiddeladministrasjon --> Institusjonsopphold
+Legemiddeladministrering --> Legemiddel 
+Legemiddeladministrering --> Pasient
+Legemiddeladministrering --> Helsepersonell
+Legemiddeladministrering --> "Rolle helsepersonell"
+Legemiddeladministrering --> Rekvisisjon
+Legemiddeladministrering --> Institusjonsopphold
 
 class Legemiddel <<Medication>> #lightgreen {
 }
