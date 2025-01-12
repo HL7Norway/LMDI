@@ -1,7 +1,7 @@
-Profile:     LmdiPractitionerRole
+Profile:     Helsepersonellrolle
 Id:          lmdi-practitionerrole
 Parent:      PractitionerRole
-Title:       "Rolle helsepersonell"
+Title:       "Helsepersonellrolle"
 Description: "Rollen til helsepersonellet eller personen som har foreskrevet eller administrert legemiddelet"
 * ^status = #draft
 * ^date = "2024-06-12"
@@ -15,7 +15,7 @@ Description: "Rollen til helsepersonellet eller personen som har foreskrevet ell
 
 // EKSEMPLER
 Instance: RolleHelsepersonell-1-Hjemmehjelp
-InstanceOf: LmdiPractitionerRole
+InstanceOf: Helsepersonellrolle
 Description: "Eksempel på rolle (Hjemmehjelp), ikke komplett kodeverk"
 * code.coding.system = "http://snomed.info/sct"
 * code.coding.code = #5275007

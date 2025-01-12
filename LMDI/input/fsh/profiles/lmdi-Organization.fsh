@@ -1,6 +1,6 @@
 // TODO #8 Utvide Organisasjon med utvidelse for kommunenummer fra no-basis
 
-Profile: LmdiOrganization
+Profile: Organisasjon
 Parent: Organization
 Id: lmdi-organization
 Title: "Organisasjon"
@@ -61,7 +61,7 @@ Description: "Coded value for municipality/county Norwegian kommune"
 // EKSEMPLER
 
 Instance: Organisasjon-1-Eldrehjem
-InstanceOf: LmdiOrganization
+InstanceOf: Organisasjon
 Description: "Eksempel på organisasjon - Primærhelsetjeneste"
 * identifier[ENH].system = "urn:oid:2.16.578.1.12.4.1.4.101"
 * identifier[ENH].value = "1234567890"
@@ -69,7 +69,7 @@ Description: "Eksempel på organisasjon - Primærhelsetjeneste"
 * address.district = "Sigdal"
 
 Instance: Organisasjon-2-Spesialist-RESH
-InstanceOf: LmdiOrganization
+InstanceOf: Organisasjon
 Description: "Eksempel på organisasjon - spesialisthelsetjenesten med RESH."
 * identifier[RESH].system = "urn.oid:2.16.578.1.12.4.1.4.102"
 * identifier[RESH].value = "4208723"
@@ -83,7 +83,7 @@ Description: "Eksempel på organisasjon - spesialisthelsetjenesten med RESH."
 // TODO #24 Lage eksempel på partOf med OUS for lmdi-Organization
 
 Instance: Organisasjon-3-Spesialist-topp
-InstanceOf: LmdiOrganization
+InstanceOf: Organisasjon
 Description: "Eksempel på organisasjon - spesialisthelsetjenesten med RESH - toppnivå."
 * identifier[ENH].system = "urn:oid:2.16.578.1.12.4.1.4.101"
 * identifier[ENH].value = "993467049"

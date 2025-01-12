@@ -1,7 +1,7 @@
 // TODO #6 "Pasient" skal baseres på no-basis-Patient
 // Spør FHI: Er kommunenummer for bosted og/eller tjeneste? Yngve sier begge. 
 
-Profile:     LmdiPatient
+Profile:     Pasient
 Id:          lmdi-patient
 Parent:      Patient
 Title:       "Pasient"
@@ -76,7 +76,7 @@ Description: "Informasjon om pasienten"
 // EKSEMPLER
 
 Instance: Pasient-1-Uten-FNR
-InstanceOf: LmdiPatient
+InstanceOf: Pasient
 Description: "Eksempel på pasient med kjønn og fødselsdato"
 * gender = #female
 * birthDate = "1958-09-19"
@@ -84,7 +84,7 @@ Description: "Eksempel på pasient med kjønn og fødselsdato"
 * address.district = "Bærum"
 
 Instance: Pasient-2-FNR
-InstanceOf: LmdiPatient
+InstanceOf: Pasient
 Description: "Eksempel på pasient med fødselsnummer"
 * identifier[FNR].system = "urn:oid:2.16.578.1.12.4.1.4.1"
 * identifier[FNR].value = "13031353453"

@@ -11,7 +11,7 @@ Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legem
 
 
 * context MS
-* context only Reference(EpisodeOfCare)
+* context only Reference(Institusjonsopphold)
 * context ^short = "Referanse til aktuelt institusjonsopphold"
 * context ^definition = "Referanse til hvilket institusjonsopphold eller avtale pasienten var på da legemiddelet ble administrert."
 * context ^comment = "Encounter må vurderes om nødvendig, f.eks. hos spesialist."
@@ -52,9 +52,10 @@ Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legem
 
 * performer 0..0
 
-* reasonReference only Reference(Condition)
+* reasonReference only Reference(Diagnose)
 
 * request MS
+* request only Reference(Legemiddelrekvirering)
 * request ^short = "Referanse til rekvisisjon"
 * request ^definition = "Referanse til rekvisisjonen som denne administreringen er basert på (som for eksempel resept eller ordinering."
 
@@ -64,7 +65,7 @@ Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legem
 * status ^definition = "Status administrering. Skal vanligvis settes til 'Gjennomført' (completed), men 'Feilregistrert' (entered-in-error) MÅ benyttes hvis registreringen inneholder en alvorlig feil og skal slettes. "
 
 
-* subject only Reference(Patient)
+* subject only Reference(Pasient)
 * subject ^short = "Referanse til pasient"
 * subject ^definition = "Det skal alltid være en referanse til pasienten som har blitt administrert legemiddel."
 

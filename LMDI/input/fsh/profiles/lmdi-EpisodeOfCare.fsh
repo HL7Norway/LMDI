@@ -1,6 +1,6 @@
-Profile: LmdiEpisodeOfCareInstitusjonsopphold
+Profile: Institusjonsopphold
 Parent: EpisodeOfCare
-Id: lmdi-episodeofcare-institusjonsopphold
+Id: lmdi-institusjonsopphold
 Title: "Institusjonsopphold"
 Description: "Beskrivelse av pasientens opphold i institusjon. Dette kan være både av kortere og lengre karakter, slik som døgnopphold, innleggelse hos spesialist, sykehjem og aldershjem. "
 * ^status = #draft
@@ -19,7 +19,7 @@ Description: "Beskrivelse av pasientens opphold i institusjon. Dette kan være b
 
 // EKSEMPLER
 Instance: Institusjonsopphold-1-Sykehjem
-InstanceOf: LmdiEpisodeOfCareInstitusjonsopphold
+InstanceOf: Institusjonsopphold
 Description: "Eksempel på institusjonsopphold med EpisodeOfCare"
 * status = #active
 * patient = Reference(pasientreferanse-1234567)
