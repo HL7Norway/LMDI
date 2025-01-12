@@ -3,7 +3,7 @@
 <EpisodeOfCare xmlns="http://hl7.org/fhir">
   <id value="Institusjonsopphold-1-Sykehjem"/>
   <meta>
-    <profile value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-episodeofcare-institusjonsopphold"/>
+    <profile value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-institusjonsopphold"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: EpisodeOfCare Institusjonsopphold-1-Sykehjem</b></p><a name="Institusjonsopphold-1-Sykehjem"> </a><a name="hcInstitusjonsopphold-1-Sykehjem"> </a><a name="Institusjonsopphold-1-Sykehjem-no-NO"> </a><p><b>status</b>: Active</p><p><b>patient</b>: <a href="Patient-pasientreferanse-1234567.html">Anonymous Patient (no stated gender), DoB Unknown</a></p><p><b>managingOrganization</b>: <a href="Organization-sykehjemref-1234567.html">Organization</a></p><p><b>period</b>: 2024-04-01 --&gt; 2024-05-30</p></div>

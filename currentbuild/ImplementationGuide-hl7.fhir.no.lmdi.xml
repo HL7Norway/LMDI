@@ -11,7 +11,7 @@
   <name value="Lmdi"/>
   <title value="Legemiddeldata fra institusjon til Legemiddelregisteret"/>
   <status value="draft"/>
-  <date value="2025-01-12T13:05:41+00:00"/>
+  <date value="2025-01-12T14:01:50+00:00"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>
   <contact>
     <name value="Folkehelseinstituttet (FHI)"/>
@@ -511,7 +511,7 @@
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/lmdi-address"/>
+        <reference value="StructureDefinition/lmdi-adresse"/>
       </reference>
       <name value="Adresse"/>
       <description value="Adresse som inneholder utvidelse for kommune"/>
@@ -522,7 +522,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/lmdi-condition-diagnose"/>
+        <reference value="StructureDefinition/lmdi-diagnose"/>
       </reference>
       <name value="Diagnose"/>
       <description value="Diagnosen som pasienten har fått rekvirert og administrert legemiddelet for."/>
@@ -537,7 +537,7 @@
       </reference>
       <name value="Diagnose-1-ICD10-OID"/>
       <description value="Eksempel på diagnose ICD-10"/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-diagnose"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -548,7 +548,7 @@
       </reference>
       <name value="Diagnose-2-SNOMED-CT"/>
       <description value="Eksempel på diagnose SNOMED CT og ICD-10"/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-diagnose"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -588,7 +588,18 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/lmdi-episodeofcare-institusjonsopphold"/>
+        <reference value="StructureDefinition/lmdi-practitionerrole"/>
+      </reference>
+      <name value="Helsepersonellrolle"/>
+      <description value="Rollen til helsepersonellet eller personen som har foreskrevet eller administrert legemiddelet"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lmdi-institusjonsopphold"/>
       </reference>
       <name value="Institusjonsopphold"/>
       <description value="Beskrivelse av pasientens opphold i institusjon. Dette kan være både av kortere og lengre karakter, slik som døgnopphold, innleggelse hos spesialist, sykehjem og aldershjem."/>
@@ -603,7 +614,7 @@
       </reference>
       <name value="Institusjonsopphold-1-Sykehjem"/>
       <description value="Eksempel på institusjonsopphold med EpisodeOfCare"/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-episodeofcare-institusjonsopphold"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-institusjonsopphold"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -632,7 +643,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/Legemiddelrekvirering"/>
+        <reference value="StructureDefinition/lmdi-legemiddelrekvirering"/>
       </reference>
       <name value="Legemiddelrekvirering"/>
       <description value="Legemiddelrekvirering - ordinering, resept eller annen rekvirering av legemiddel"/>
@@ -857,17 +868,6 @@
       <name value="pasientreferanse-1234567"/>
       <description value="Eksempel på en pasient"/>
       <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/lmdi-practitionerrole"/>
-      </reference>
-      <name value="Rolle helsepersonell"/>
-      <description value="Rollen til helsepersonellet eller personen som har foreskrevet eller administrert legemiddelet"/>
-      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

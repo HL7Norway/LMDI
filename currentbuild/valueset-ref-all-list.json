@@ -38,7 +38,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.69"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-address.html" : "Adresse",
+      "StructureDefinition-lmdi-adresse.html" : "Adresse",
       "StructureDefinition-lmdi-patient.html" : "Pasient",
       "StructureDefinition-lmdi-organization.html" : "Organisasjon"
     },
@@ -54,7 +54,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.67"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-address.html" : "Adresse",
+      "StructureDefinition-lmdi-adresse.html" : "Adresse",
       "StructureDefinition-lmdi-patient.html" : "Pasient",
       "StructureDefinition-lmdi-organization.html" : "Organisasjon"
     },
@@ -84,8 +84,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
-      "StructureDefinition-lmdi-patient.html" : "Pasient"
+      "StructureDefinition-lmdi-patient.html" : "Pasient",
+      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/approach-site-codes",
@@ -113,7 +113,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose"
+      "StructureDefinition-lmdi-diagnose.html" : "Diagnose"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
@@ -127,7 +127,7 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-practitionerrole.html" : "Rolle helsepersonell"
+      "StructureDefinition-lmdi-practitionerrole.html" : "Helsepersonellrolle"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-category",
@@ -141,7 +141,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.162"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose"
+      "StructureDefinition-lmdi-diagnose.html" : "Diagnose"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
@@ -155,7 +155,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.164"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose"
+      "StructureDefinition-lmdi-diagnose.html" : "Diagnose"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-code",
@@ -169,8 +169,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.161"],
       "uses" : {
       },
-      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering",
-      "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose"
+      "StructureDefinition-lmdi-legemiddelrekvirering.html" : "Legemiddelrekvirering",
+      "StructureDefinition-lmdi-diagnose.html" : "Diagnose"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
@@ -184,7 +184,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.168"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose"
+      "StructureDefinition-lmdi-diagnose.html" : "Diagnose"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-stage",
@@ -198,7 +198,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.170"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose"
+      "StructureDefinition-lmdi-diagnose.html" : "Diagnose"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-stage-type",
@@ -212,7 +212,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.171"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose"
+      "StructureDefinition-lmdi-diagnose.html" : "Diagnose"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
@@ -226,7 +226,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.166"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose"
+      "StructureDefinition-lmdi-diagnose.html" : "Diagnose"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -254,7 +254,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.512"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-practitionerrole.html" : "Rolle helsepersonell"
+      "StructureDefinition-lmdi-practitionerrole.html" : "Helsepersonellrolle"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
@@ -268,7 +268,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.49"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-episodeofcare-institusjonsopphold.html" : "Institusjonsopphold"
+      "StructureDefinition-lmdi-institusjonsopphold.html" : "Institusjonsopphold"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/episode-of-care-status",
@@ -282,7 +282,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.664"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-episodeofcare-institusjonsopphold.html" : "Institusjonsopphold"
+      "StructureDefinition-lmdi-institusjonsopphold.html" : "Institusjonsopphold"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/episodeofcare-type",
@@ -296,7 +296,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.666"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-episodeofcare-institusjonsopphold.html" : "Institusjonsopphold"
+      "StructureDefinition-lmdi-institusjonsopphold.html" : "Institusjonsopphold"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
@@ -310,9 +310,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
       "StructureDefinition-lmdi-patient.html" : "Pasient",
-      "StructureDefinition-lmdi-organization.html" : "Organisasjon"
+      "StructureDefinition-lmdi-organization.html" : "Organisasjon",
+      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -326,9 +326,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
       "StructureDefinition-lmdi-patient.html" : "Pasient",
-      "StructureDefinition-lmdi-organization.html" : "Organisasjon"
+      "StructureDefinition-lmdi-organization.html" : "Organisasjon",
+      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -342,15 +342,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering",
-      "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose",
-      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
+      "StructureDefinition-lmdi-institusjonsopphold.html" : "Institusjonsopphold",
       "StructureDefinition-lmdi-legemiddeladministrering.html" : "Legemiddeladministrering",
-      "StructureDefinition-lmdi-practitionerrole.html" : "Rolle helsepersonell",
-      "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel",
+      "StructureDefinition-lmdi-legemiddelrekvirering.html" : "Legemiddelrekvirering",
+      "StructureDefinition-lmdi-practitionerrole.html" : "Helsepersonellrolle",
       "StructureDefinition-lmdi-patient.html" : "Pasient",
-      "StructureDefinition-lmdi-episodeofcare-institusjonsopphold.html" : "Institusjonsopphold",
-      "StructureDefinition-lmdi-organization.html" : "Organisasjon"
+      "StructureDefinition-lmdi-diagnose.html" : "Diagnose",
+      "StructureDefinition-lmdi-organization.html" : "Organisasjon",
+      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
+      "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -378,7 +378,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.169"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-condition-diagnose.html" : "Diagnose"
+      "StructureDefinition-lmdi-diagnose.html" : "Diagnose"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/marital-status",
@@ -441,7 +441,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.375"],
       "uses" : {
       },
-      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering",
+      "StructureDefinition-lmdi-legemiddelrekvirering.html" : "Legemiddelrekvirering",
       "StructureDefinition-lmdi-legemiddel.html" : "Legemiddel"
     },
     {
@@ -486,7 +486,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1322"],
       "uses" : {
       },
-      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering"
+      "StructureDefinition-lmdi-legemiddelrekvirering.html" : "Legemiddelrekvirering"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-course-of-therapy",
@@ -502,7 +502,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1326"],
       "uses" : {
       },
-      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering"
+      "StructureDefinition-lmdi-legemiddelrekvirering.html" : "Legemiddelrekvirering"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-intent",
@@ -516,7 +516,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1321"],
       "uses" : {
       },
-      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering"
+      "StructureDefinition-lmdi-legemiddelrekvirering.html" : "Legemiddelrekvirering"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status",
@@ -530,7 +530,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1320"],
       "uses" : {
       },
-      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering"
+      "StructureDefinition-lmdi-legemiddelrekvirering.html" : "Legemiddelrekvirering"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status-reason",
@@ -546,7 +546,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1324"],
       "uses" : {
       },
-      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering"
+      "StructureDefinition-lmdi-legemiddelrekvirering.html" : "Legemiddelrekvirering"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/organization-type",
@@ -588,7 +588,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.433"],
       "uses" : {
       },
-      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering"
+      "StructureDefinition-lmdi-legemiddelrekvirering.html" : "Legemiddelrekvirering"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/practitioner-role",
@@ -605,7 +605,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.439"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-practitionerrole.html" : "Rolle helsepersonell"
+      "StructureDefinition-lmdi-practitionerrole.html" : "Helsepersonellrolle"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/reason-medication-given-codes",
@@ -649,7 +649,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.115"],
       "uses" : {
       },
-      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering"
+      "StructureDefinition-lmdi-legemiddelrekvirering.html" : "Legemiddelrekvirering"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/route-codes",
@@ -691,7 +691,7 @@
       "sources" : ["2.16.840.1.113883.1.11.16621"],
       "uses" : {
       },
-      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering"
+      "StructureDefinition-lmdi-legemiddelrekvirering.html" : "Legemiddelrekvirering"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason",
@@ -705,7 +705,7 @@
       "sources" : ["2.16.840.1.113883.1.11.19377"],
       "uses" : {
       },
-      "StructureDefinition-Legemiddelrekvirering.html" : "Legemiddelrekvirering"
+      "StructureDefinition-lmdi-legemiddelrekvirering.html" : "Legemiddelrekvirering"
     }
   ]
 }

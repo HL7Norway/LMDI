@@ -11,8 +11,8 @@
   fhir:id [ fhir:v "Diagnose-2-SNOMED-CT"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose"^^xsd:anyURI ;
-       fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose>
+       fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-diagnose"^^xsd:anyURI ;
+       fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-diagnose>
      ] )
   ] ; # 
   fhir:text [

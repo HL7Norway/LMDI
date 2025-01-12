@@ -41,7 +41,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.439"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-practitionerrole.html" : "Rolle helsepersonell"
+      "StructureDefinition-lmdi-practitionerrole.html" : "Helsepersonellrolle"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/route-codes",

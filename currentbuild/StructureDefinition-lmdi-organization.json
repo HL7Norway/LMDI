@@ -7,7 +7,7 @@
   },
   "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization",
   "version" : "0.9.1",
-  "name" : "LmdiOrganization",
+  "name" : "Organisasjon",
   "title" : "Organisasjon",
   "status" : "draft",
   "date" : "2024-06-12",

@@ -56,32 +56,25 @@
     "name" : "festLegemiddelVirkestoff"
   },
   {
-    "id" : "Legemiddelrekvirering",
+    "id" : "lmdi-adresse",
     "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/Legemiddelrekvirering",
+    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-adresse",
     "version" : "0.9.1",
-    "name" : "Legemiddelrekvirering"
+    "name" : "Adresse"
   },
   {
-    "id" : "lmdi-address",
+    "id" : "lmdi-diagnose",
     "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-address",
+    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-diagnose",
     "version" : "0.9.1",
-    "name" : "LmdiAdresse"
+    "name" : "Diagnose"
   },
   {
-    "id" : "lmdi-condition-diagnose",
+    "id" : "lmdi-institusjonsopphold",
     "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose",
+    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-institusjonsopphold",
     "version" : "0.9.1",
-    "name" : "LmdiDiagnose"
-  },
-  {
-    "id" : "lmdi-episodeofcare-institusjonsopphold",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-episodeofcare-institusjonsopphold",
-    "version" : "0.9.1",
-    "name" : "LmdiEpisodeOfCareInstitusjonsopphold"
+    "name" : "Institusjonsopphold"
   },
   {
     "id" : "lmdi-legemiddel",
@@ -98,32 +91,39 @@
     "name" : "Legemiddeladministrering"
   },
   {
+    "id" : "lmdi-legemiddelrekvirering",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddelrekvirering",
+    "version" : "0.9.1",
+    "name" : "Legemiddelrekvirering"
+  },
+  {
     "id" : "lmdi-organization",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization",
     "version" : "0.9.1",
-    "name" : "LmdiOrganization"
+    "name" : "Organisasjon"
   },
   {
     "id" : "lmdi-patient",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient",
     "version" : "0.9.1",
-    "name" : "LmdiPatient"
+    "name" : "Pasient"
   },
   {
     "id" : "lmdi-practitioner",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner",
     "version" : "0.9.1",
-    "name" : "LmdiPractitioner"
+    "name" : "Helsepersonell"
   },
   {
     "id" : "lmdi-practitionerrole",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole",
     "version" : "0.9.1",
-    "name" : "LmdiPractitionerRole"
+    "name" : "Helsepersonellrolle"
   },
   {
     "id" : "no-basis-municipalitycode",

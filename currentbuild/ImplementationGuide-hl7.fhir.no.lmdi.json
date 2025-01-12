@@ -10,7 +10,7 @@
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2025-01-12T13:05:41+00:00",
+  "date" : "2025-01-12T14:01:50+00:00",
   "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
     "name" : "Folkehelseinstituttet (FHI)",
@@ -671,7 +671,7 @@
         "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/lmdi-address"
+        "reference" : "StructureDefinition/lmdi-adresse"
       },
       "name" : "Adresse",
       "description" : "Adresse som inneholder utvidelse for kommune",
@@ -683,7 +683,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/lmdi-condition-diagnose"
+        "reference" : "StructureDefinition/lmdi-diagnose"
       },
       "name" : "Diagnose",
       "description" : "Diagnosen som pasienten har fått rekvirert og administrert legemiddelet for.",
@@ -699,7 +699,7 @@
       },
       "name" : "Diagnose-1-ICD10-OID",
       "description" : "Eksempel på diagnose ICD-10",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose"
+      "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-diagnose"
     },
     {
       "extension" : [{
@@ -711,7 +711,7 @@
       },
       "name" : "Diagnose-2-SNOMED-CT",
       "description" : "Eksempel på diagnose SNOMED CT og ICD-10",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose"
+      "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-diagnose"
     },
     {
       "extension" : [{
@@ -755,7 +755,19 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/lmdi-episodeofcare-institusjonsopphold"
+        "reference" : "StructureDefinition/lmdi-practitionerrole"
+      },
+      "name" : "Helsepersonellrolle",
+      "description" : "Rollen til helsepersonellet eller personen som har foreskrevet eller administrert legemiddelet",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lmdi-institusjonsopphold"
       },
       "name" : "Institusjonsopphold",
       "description" : "Beskrivelse av pasientens opphold i institusjon. Dette kan være både av kortere og lengre karakter, slik som døgnopphold, innleggelse hos spesialist, sykehjem og aldershjem.",
@@ -771,7 +783,7 @@
       },
       "name" : "Institusjonsopphold-1-Sykehjem",
       "description" : "Eksempel på institusjonsopphold med EpisodeOfCare",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-episodeofcare-institusjonsopphold"
+      "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-institusjonsopphold"
     },
     {
       "extension" : [{
@@ -803,7 +815,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/Legemiddelrekvirering"
+        "reference" : "StructureDefinition/lmdi-legemiddelrekvirering"
       },
       "name" : "Legemiddelrekvirering",
       "description" : "Legemiddelrekvirering - ordinering, resept eller annen rekvirering av legemiddel",
@@ -1048,18 +1060,6 @@
       "name" : "pasientreferanse-1234567",
       "description" : "Eksempel på en pasient",
       "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/lmdi-practitionerrole"
-      },
-      "name" : "Rolle helsepersonell",
-      "description" : "Rollen til helsepersonellet eller personen som har foreskrevet eller administrert legemiddelet",
-      "exampleBoolean" : false
     },
     {
       "extension" : [{

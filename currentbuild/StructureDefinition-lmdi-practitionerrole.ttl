@@ -14,8 +14,8 @@
   ] ; # 
   fhir:url [ fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.9.1"] ; # 
-  fhir:name [ fhir:v "LmdiPractitionerRole"] ; # 
-  fhir:title [ fhir:v "Rolle helsepersonell"] ; # 
+  fhir:name [ fhir:v "Helsepersonellrolle"] ; # 
+  fhir:title [ fhir:v "Helsepersonellrolle"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:date [ fhir:v "2024-06-12"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 

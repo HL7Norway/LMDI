@@ -2,7 +2,7 @@
   "resourceType" : "Condition",
   "id" : "Diagnose-2-SNOMED-CT",
   "meta" : {
-    "profile" : ["http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose"]
+    "profile" : ["http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-diagnose"]
   },
   "text" : {
     "status" : "generated",

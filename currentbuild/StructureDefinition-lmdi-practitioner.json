@@ -7,7 +7,7 @@
   },
   "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner",
   "version" : "0.9.1",
-  "name" : "LmdiPractitioner",
+  "name" : "Helsepersonell",
   "title" : "Helsepersonell",
   "status" : "draft",
   "date" : "2024-06-12",

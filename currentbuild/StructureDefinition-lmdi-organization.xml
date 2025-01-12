@@ -22,7 +22,7 @@
   </text>
   <url value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization"/>
   <version value="0.9.1"/>
-  <name value="LmdiOrganization"/>
+  <name value="Organisasjon"/>
   <title value="Organisasjon"/>
   <status value="draft"/>
   <date value="2024-06-12"/>

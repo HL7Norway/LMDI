@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for Lmdi</h1>
- <p>Generated Sun Jan 12 13:06:28 UTC 2025, FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.9.1 (canonical = <a href="http://hl7.no/fhir/ig/lmdi">http://hl7.no/fhir/ig/lmdi</a> (<a href="http://hl7.no/fhir/ig/lmdi/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Sun Jan 12 14:02:38 UTC 2025, FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.9.1 (canonical = <a href="http://hl7.no/fhir/ig/lmdi">http://hl7.no/fhir/ig/lmdi</a> (<a href="http://hl7.no/fhir/ig/lmdi/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.8.7</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.no.lmdi, Canonical = http://hl7.no/fhir/ig/lmdi</td></tr>
@@ -61,50 +61,35 @@
  <tr><td>Draft Dependencies:</td><td><ul>
   <li>
 hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
- (15 uses),     <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
- (4 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
- (11 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-status.html">medicationrequest Status</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-status-reason.html">medicationRequest Status Reason Codes</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-intent.html">medicationRequest Intent</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-category.html">medicationRequest Category Codes</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-request-priority.html">RequestPriority</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
- (12 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
- (9 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
- (6 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
- (20 uses),     <a href="http://hl7.org/fhir/R4/medication.html">Medication</a>
- (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-codes.html">SNOMEDCTMedicationCodes</a>
- (2 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
- (2 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
- (3 uses),     <a href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a>
- (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-performer-role.html">ProcedurePerformerRoleCodes</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-code.html">Condition/Problem/DiagnosisCodes</a>
- (2 uses),     <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
- (10 uses),     <a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
- (2 uses),     <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-course-of-therapy.html">medicationRequest Course of Therapy Codes</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/coverage.html">Coverage</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/claimresponse.html">ClaimResponse</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/detectedissue.html">DetectedIssue</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/provenance.html">Provenance</a>
- (2 uses),     <a href="http://hl7.org/fhir/R4/extension-regex.html">regex</a>
- (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-clinical.html">ConditionClinicalStatusCodes</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/extension-regex.html">regex</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
+ (11 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-clinical.html">ConditionClinicalStatusCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-ver-status.html">ConditionVerificationStatus</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-category.html">ConditionCategoryCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-severity.html">Condition/DiagnosisSeverity</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-stage.html">ConditionStage</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-code.html">Condition/Problem/DiagnosisCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
+ (12 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
+ (9 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-stage.html">ConditionStage</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/clinicalimpression.html">ClinicalImpression</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-stage-type.html">ConditionStageType</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html">ManifestationAndSymptomCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/episodeofcare.html">EpisodeOfCare</a>
- (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-episode-of-care-status.html">EpisodeOfCareStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-episode-of-care-status.html">EpisodeOfCareStatus</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-episodeofcare-type.html">EpisodeOfCareType</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-diagnosis-role.html">DiagnosisRole</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/account.html">Account</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-status.html">Medication Status Codes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+ (20 uses),     <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/account.html">Account</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/medication.html">Medication</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-codes.html">SNOMEDCTMedicationCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-status.html">Medication Status Codes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-form-codes.html">SNOMEDCTFormCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/substance.html">Substance</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>
@@ -112,10 +97,25 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html">SNOMEDCTReasonMedicationNotGivenCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-admin-category.html">MedicationAdministration Category Codes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-med-admin-perform-function.html">MedicationAdministration Performer Function Codes</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-reason-medication-given-codes.html">ReasonMedicationGivenCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-reason-medication-given-codes.html">ReasonMedicationGivenCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-approach-site-codes.html">SNOMEDCTAnatomicalStructureForAdministrationSiteCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-route-codes.html">SNOMEDCTRouteCodes</a>
  (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-administration-method-codes.html">SNOMEDCTAdministrationMethodCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/provenance.html">Provenance</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-status.html">medicationrequest Status</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-status-reason.html">medicationRequest Status Reason Codes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-intent.html">medicationRequest Intent</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-category.html">medicationRequest Category Codes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-request-priority.html">RequestPriority</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-performer-role.html">ProcedurePerformerRoleCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-course-of-therapy.html">medicationRequest Course of Therapy Codes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/coverage.html">Coverage</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/claimresponse.html">ClaimResponse</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/detectedissue.html">DetectedIssue</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-organization-type.html">OrganizationType</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-contactentity-type.html">ContactEntityType</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>
@@ -230,22 +230,22 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
      <td><a href="#_github_workspace_LMDI_fsh-generated_resources_PractitionerRole-RolleHelsepersonell-1-Hjemmehjelp"><b>/github/workspace/LMDI/fsh-generated/resources/PractitionerRole-RolleHelsepersonell-1-Hjemmehjelp</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-Legemiddelrekvirering"><b>/github/workspace/LMDI/fsh-generated/resources/StructureDefinition-Legemiddelrekvirering</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-adresse"><b>/github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-adresse</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-address"><b>/github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-address</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-diagnose"><b>/github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-diagnose</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-condition-diagnose"><b>/github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-condition-diagnose</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-episodeofcare-institusjonsopphold"><b>/github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-episodeofcare-institusjonsopphold</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-institusjonsopphold"><b>/github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-institusjonsopphold</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-legemiddel"><b>/github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-legemiddel</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>4</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-legemiddeladministrering"><b>/github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-legemiddeladministrering</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-legemiddelrekvirering"><b>/github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-legemiddelrekvirering</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-organization"><b>/github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-organization</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
@@ -287,22 +287,22 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
      <td><b>output&#8203;/CodeSystem-LokalLegemiddelkatalogCodeSystem&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/script at Line 204, column 4</b></td><td><b>warning</b></td><td><b>The &lt;script&gt; containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 134 other files)</b> <span style="font-size: 8px; font-color: silver"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>output&#8203;/StructureDefinition-Legemiddelrekvirering&#8203;.html</b></td><td><b>warning</b></td><td><b>The html source has duplicate anchor Ids: MedicationRequest,MedicationRequest.authoredOn,MedicationRequest.basedOn,MedicationRequest.category,MedicationRequest.contained,MedicationRequest.courseOfTherapyType,MedicationRequest.detectedIssue,MedicationRequest.dispenseRequest,MedicationRequest.dispenseRequest.dispenseInterval,MedicationRequest.dispenseRequest.expectedSupplyDuration,MedicationRequest.dispenseRequest.extension,MedicationRequest.dispenseRequest.id,MedicationRequest.dispenseRequest.initialFill,MedicationRequest.dispenseRequest.initialFill.duration,MedicationRequest.dispenseRequest.initialFill.extension,MedicationRequest.dispenseRequest.initialFill.id,MedicationRequest.dispenseRequest.initialFill.modifierExtension,MedicationRequest.dispenseRequest.initialFill.quantity,MedicationRequest.dispenseRequest.modifierExtension,MedicationRequest.dispenseRequest.numberOfRepeatsAllowed,MedicationRequest.dispenseRequest.performer,MedicationRequest.dispenseRequest.quantity,MedicationRequest.dispenseRequest.validityPeriod,MedicationRequest.doNotPerform,MedicationRequest.dosageInstruction,MedicationRequest.encounter,MedicationRequest.eventHistory,MedicationRequest.extension,MedicationRequest.groupIdentifier,MedicationRequest.id,MedicationRequest.identifier,MedicationRequest.implicitRules,MedicationRequest.instantiatesCanonical,MedicationRequest.instantiatesUri,MedicationRequest.insurance,MedicationRequest.intent,MedicationRequest.language,MedicationRequest.medication_x_,MedicationRequest.meta,MedicationRequest.modifierExtension,MedicationRequest.note,MedicationRequest.performer,MedicationRequest.performerType,MedicationRequest.priorPrescription,MedicationRequest.priority,MedicationRequest.reasonCode,MedicationRequest.reasonReference,MedicationRequest.recorder,MedicationRequest.reported_x_,MedicationRequest.requester,MedicationRequest.status,MedicationRequest.statusReason,MedicationRequest.subject,MedicationRequest.substitution,MedicationRequest.substitution.allowed_x_,MedicationRequest.substitution.extension,MedicationRequest.substitution.id,MedicationRequest.substitution.modifierExtension,MedicationRequest.substitution.reason,MedicationRequest.supportingInformation,MedicationRequest.text,d-MedicationRequest,d-MedicationRequest.identifier,d-MedicationRequest.intent,d-MedicationRequest.medication_x_,d-MedicationRequest.requester,d-MedicationRequest.status,d-MedicationRequest.subject,inv,k-MedicationRequest,k-MedicationRequest.doNotPerform,k-MedicationRequest.identifier,k-MedicationRequest.implicitRules,k-MedicationRequest.intent,k-MedicationRequest.medication_x_,k-MedicationRequest.modifierExtension,k-MedicationRequest.requester,k-MedicationRequest.status,k-MedicationRequest.subject,s-summary</b> <span style="font-size: 8px; font-color: silver"></span></td>
+     <td><b>output&#8203;/StructureDefinition-lmdi-adresse&#8203;.html</b></td><td><b>warning</b></td><td><b>The html source has duplicate anchor Ids: Address,Address.city,Address.country,Address.district,Address.district.extension,Address.district.extension.2,Address.district.id,Address.district.value,Address.extension,Address.id,Address.line,Address.period,Address.postalCode,Address.state,Address.text,Address.type,Address.use,d-Address,d-Address.district,d-Address.district.extension,d-Address.district.extension.2,inv,k-Address,k-Address.use,s-summary</b> <span style="font-size: 8px; font-color: silver"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>output&#8203;/StructureDefinition-lmdi-address&#8203;.html</b></td><td><b>warning</b></td><td><b>The html source has duplicate anchor Ids: Address,Address.city,Address.country,Address.district,Address.district.extension,Address.district.extension.2,Address.district.id,Address.district.value,Address.extension,Address.id,Address.line,Address.period,Address.postalCode,Address.state,Address.text,Address.type,Address.use,d-Address,d-Address.district,d-Address.district.extension,d-Address.district.extension.2,inv,k-Address,k-Address.use,s-summary</b> <span style="font-size: 8px; font-color: silver"></span></td>
+     <td><b>output&#8203;/StructureDefinition-lmdi-diagnose&#8203;.html</b></td><td><b>warning</b></td><td><b>The html source has duplicate anchor Ids: Condition,Condition.abatement_x_,Condition.asserter,Condition.bodySite,Condition.category,Condition.clinicalStatus,Condition.code,Condition.code.coding,Condition.code.coding.2,Condition.code.coding.3,Condition.code.coding.4,Condition.code.coding.5,Condition.code.coding.code,Condition.code.coding.code.2,Condition.code.coding.code.3,Condition.code.coding.code.4,Condition.code.coding.display,Condition.code.coding.display.2,Condition.code.coding.display.3,Condition.code.coding.display.4,Condition.code.coding.extension,Condition.code.coding.extension.2,Condition.code.coding.extension.3,Condition.code.coding.extension.4,Condition.code.coding.id,Condition.code.coding.id.2,Condition.code.coding.id.3,Condition.code.coding.id.4,Condition.code.coding.system,Condition.code.coding.system.2,Condition.code.coding.system.3,Condition.code.coding.system.4,Condition.code.coding.userSelected,Condition.code.coding.userSelected.2,Condition.code.coding.userSelected.3,Condition.code.coding.userSelected.4,Condition.code.coding.version,Condition.code.coding.version.2,Condition.code.coding.version.3,Condition.code.coding.version.4,Condition.code.extension,Condition.code.id,Condition.code.text,Condition.contained,Condition.encounter,Condition.evidence,Condition.evidence.code,Condition.evidence.detail,Condition.evidence.extension,Condition.evidence.id,Condition.evidence.modifierExtension,Condition.extension,Condition.id,Condition.identifier,Condition.implicitRules,Condition.language,Condition.meta,Condition.modifierExtension,Condition.note,Condition.onset_x_,Condition.recordedDate,Condition.recorder,Condition.severity,Condition.stage,Condition.stage.assessment,Condition.stage.extension,Condition.stage.id,Condition.stage.modifierExtension,Condition.stage.summary,Condition.stage.type,Condition.subject,Condition.text,Condition.verificationStatus,d-Condition,d-Condition.code,d-Condition.code.coding,d-Condition.code.coding.2,d-Condition.code.coding.3,d-Condition.code.coding.4,d-Condition.code.coding.5,d-Condition.code.coding.code,d-Condition.code.coding.code.2,d-Condition.code.coding.code.3,d-Condition.code.coding.code.4,d-Condition.code.coding.system,d-Condition.code.coding.system.2,d-Condition.code.coding.system.3,d-Condition.code.coding.system.4,d-Condition.subject,inv,k-Condition,k-Condition.clinicalStatus,k-Condition.code,k-Condition.code.coding,k-Condition.code.coding.2,k-Condition.code.coding.3,k-Condition.code.coding.4,k-Condition.code.coding.5,k-Condition.code.coding.code,k-Condition.code.coding.code.2,k-Condition.code.coding.code.3,k-Condition.code.coding.code.4,k-Condition.code.coding.system,k-Condition.code.coding.system.2,k-Condition.code.coding.system.3,k-Condition.code.coding.system.4,k-Condition.implicitRules,k-Condition.modifierExtension,k-Condition.subject,k-Condition.verificationStatus,s-summary</b> <span style="font-size: 8px; font-color: silver"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>output&#8203;/StructureDefinition-lmdi-condition-diagnose&#8203;.html</b></td><td><b>warning</b></td><td><b>The html source has duplicate anchor Ids: Condition,Condition.abatement_x_,Condition.asserter,Condition.bodySite,Condition.category,Condition.clinicalStatus,Condition.code,Condition.code.coding,Condition.code.coding.2,Condition.code.coding.3,Condition.code.coding.4,Condition.code.coding.5,Condition.code.coding.code,Condition.code.coding.code.2,Condition.code.coding.code.3,Condition.code.coding.code.4,Condition.code.coding.display,Condition.code.coding.display.2,Condition.code.coding.display.3,Condition.code.coding.display.4,Condition.code.coding.extension,Condition.code.coding.extension.2,Condition.code.coding.extension.3,Condition.code.coding.extension.4,Condition.code.coding.id,Condition.code.coding.id.2,Condition.code.coding.id.3,Condition.code.coding.id.4,Condition.code.coding.system,Condition.code.coding.system.2,Condition.code.coding.system.3,Condition.code.coding.system.4,Condition.code.coding.userSelected,Condition.code.coding.userSelected.2,Condition.code.coding.userSelected.3,Condition.code.coding.userSelected.4,Condition.code.coding.version,Condition.code.coding.version.2,Condition.code.coding.version.3,Condition.code.coding.version.4,Condition.code.extension,Condition.code.id,Condition.code.text,Condition.contained,Condition.encounter,Condition.evidence,Condition.evidence.code,Condition.evidence.detail,Condition.evidence.extension,Condition.evidence.id,Condition.evidence.modifierExtension,Condition.extension,Condition.id,Condition.identifier,Condition.implicitRules,Condition.language,Condition.meta,Condition.modifierExtension,Condition.note,Condition.onset_x_,Condition.recordedDate,Condition.recorder,Condition.severity,Condition.stage,Condition.stage.assessment,Condition.stage.extension,Condition.stage.id,Condition.stage.modifierExtension,Condition.stage.summary,Condition.stage.type,Condition.subject,Condition.text,Condition.verificationStatus,d-Condition,d-Condition.code,d-Condition.code.coding,d-Condition.code.coding.2,d-Condition.code.coding.3,d-Condition.code.coding.4,d-Condition.code.coding.5,d-Condition.code.coding.code,d-Condition.code.coding.code.2,d-Condition.code.coding.code.3,d-Condition.code.coding.code.4,d-Condition.code.coding.system,d-Condition.code.coding.system.2,d-Condition.code.coding.system.3,d-Condition.code.coding.system.4,d-Condition.subject,inv,k-Condition,k-Condition.clinicalStatus,k-Condition.code,k-Condition.code.coding,k-Condition.code.coding.2,k-Condition.code.coding.3,k-Condition.code.coding.4,k-Condition.code.coding.5,k-Condition.code.coding.code,k-Condition.code.coding.code.2,k-Condition.code.coding.code.3,k-Condition.code.coding.code.4,k-Condition.code.coding.system,k-Condition.code.coding.system.2,k-Condition.code.coding.system.3,k-Condition.code.coding.system.4,k-Condition.implicitRules,k-Condition.modifierExtension,k-Condition.subject,k-Condition.verificationStatus,s-summary</b> <span style="font-size: 8px; font-color: silver"></span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>output&#8203;/StructureDefinition-lmdi-episodeofcare-institusjonsopphold&#8203;.html</b></td><td><b>warning</b></td><td><b>The html source has duplicate anchor Ids: EpisodeOfCare,EpisodeOfCare.account,EpisodeOfCare.careManager,EpisodeOfCare.contained,EpisodeOfCare.diagnosis,EpisodeOfCare.diagnosis.condition,EpisodeOfCare.diagnosis.extension,EpisodeOfCare.diagnosis.id,EpisodeOfCare.diagnosis.modifierExtension,EpisodeOfCare.diagnosis.rank,EpisodeOfCare.diagnosis.role,EpisodeOfCare.extension,EpisodeOfCare.id,EpisodeOfCare.identifier,EpisodeOfCare.implicitRules,EpisodeOfCare.language,EpisodeOfCare.managingOrganization,EpisodeOfCare.meta,EpisodeOfCare.modifierExtension,EpisodeOfCare.patient,EpisodeOfCare.period,EpisodeOfCare.referralRequest,EpisodeOfCare.status,EpisodeOfCare.statusHistory,EpisodeOfCare.statusHistory.extension,EpisodeOfCare.statusHistory.id,EpisodeOfCare.statusHistory.modifierExtension,EpisodeOfCare.statusHistory.period,EpisodeOfCare.statusHistory.status,EpisodeOfCare.team,EpisodeOfCare.text,EpisodeOfCare.type,d-EpisodeOfCare,d-EpisodeOfCare.diagnosis,d-EpisodeOfCare.managingOrganization,d-EpisodeOfCare.patient,d-EpisodeOfCare.period,inv,k-EpisodeOfCare,k-EpisodeOfCare.diagnosis,k-EpisodeOfCare.diagnosis.condition,k-EpisodeOfCare.diagnosis.modifierExtension,k-EpisodeOfCare.implicitRules,k-EpisodeOfCare.managingOrganization,k-EpisodeOfCare.modifierExtension,k-EpisodeOfCare.patient,k-EpisodeOfCare.period,k-EpisodeOfCare.status,s-summary</b> <span style="font-size: 8px; font-color: silver"></span></td>
+     <td><b>output&#8203;/StructureDefinition-lmdi-institusjonsopphold&#8203;.html</b></td><td><b>warning</b></td><td><b>The html source has duplicate anchor Ids: EpisodeOfCare,EpisodeOfCare.account,EpisodeOfCare.careManager,EpisodeOfCare.contained,EpisodeOfCare.diagnosis,EpisodeOfCare.diagnosis.condition,EpisodeOfCare.diagnosis.extension,EpisodeOfCare.diagnosis.id,EpisodeOfCare.diagnosis.modifierExtension,EpisodeOfCare.diagnosis.rank,EpisodeOfCare.diagnosis.role,EpisodeOfCare.extension,EpisodeOfCare.id,EpisodeOfCare.identifier,EpisodeOfCare.implicitRules,EpisodeOfCare.language,EpisodeOfCare.managingOrganization,EpisodeOfCare.meta,EpisodeOfCare.modifierExtension,EpisodeOfCare.patient,EpisodeOfCare.period,EpisodeOfCare.referralRequest,EpisodeOfCare.status,EpisodeOfCare.statusHistory,EpisodeOfCare.statusHistory.extension,EpisodeOfCare.statusHistory.id,EpisodeOfCare.statusHistory.modifierExtension,EpisodeOfCare.statusHistory.period,EpisodeOfCare.statusHistory.status,EpisodeOfCare.team,EpisodeOfCare.text,EpisodeOfCare.type,d-EpisodeOfCare,d-EpisodeOfCare.diagnosis,d-EpisodeOfCare.managingOrganization,d-EpisodeOfCare.patient,d-EpisodeOfCare.period,inv,k-EpisodeOfCare,k-EpisodeOfCare.diagnosis,k-EpisodeOfCare.diagnosis.condition,k-EpisodeOfCare.diagnosis.modifierExtension,k-EpisodeOfCare.implicitRules,k-EpisodeOfCare.managingOrganization,k-EpisodeOfCare.modifierExtension,k-EpisodeOfCare.patient,k-EpisodeOfCare.period,k-EpisodeOfCare.status,s-summary</b> <span style="font-size: 8px; font-color: silver"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>output&#8203;/StructureDefinition-lmdi-legemiddel&#8203;.html</b></td><td><b>warning</b></td><td><b>The html source has duplicate anchor Ids: Medication,Medication.amount,Medication.batch,Medication.batch.expirationDate,Medication.batch.extension,Medication.batch.id,Medication.batch.lotNumber,Medication.batch.modifierExtension,Medication.code,Medication.code.coding,Medication.code.coding.2,Medication.code.coding.3,Medication.code.coding.4,Medication.code.coding.5,Medication.code.coding.6,Medication.code.coding.code,Medication.code.coding.code.2,Medication.code.coding.code.3,Medication.code.coding.code.4,Medication.code.coding.code.5,Medication.code.coding.display,Medication.code.coding.display.2,Medication.code.coding.display.3,Medication.code.coding.display.4,Medication.code.coding.display.5,Medication.code.coding.extension,Medication.code.coding.extension.2,Medication.code.coding.extension.3,Medication.code.coding.extension.4,Medication.code.coding.extension.5,Medication.code.coding.extension.6,Medication.code.coding.id,Medication.code.coding.id.2,Medication.code.coding.id.3,Medication.code.coding.id.4,Medication.code.coding.id.5,Medication.code.coding.system,Medication.code.coding.system.2,Medication.code.coding.system.3,Medication.code.coding.system.4,Medication.code.coding.system.5,Medication.code.coding.userSelected,Medication.code.coding.userSelected.2,Medication.code.coding.userSelected.3,Medication.code.coding.userSelected.4,Medication.code.coding.userSelected.5,Medication.code.coding.version,Medication.code.coding.version.2,Medication.code.coding.version.3,Medication.code.coding.version.4,Medication.code.coding.version.5,Medication.code.extension,Medication.code.id,Medication.code.text,Medication.contained,Medication.extension,Medication.form,Medication.form.coding,Medication.form.coding.2,Medication.form.coding.3,Medication.form.coding.4,Medication.form.coding.code,Medication.form.coding.code.2,Medication.form.coding.code.3,Medication.form.coding.display,Medication.form.coding.display.2,Medication.form.coding.display.3,Medication.form.coding.extension,Medication.form.coding.extension.2,Medication.form.coding.extension.3,Medication.form.coding.id,Medication.form.coding.id.2,Medication.form.coding.id.3,Medication.form.coding.system,Medication.form.coding.system.2,Medication.form.coding.system.3,Medication.form.coding.userSelected,Medication.form.coding.userSelected.2,Medication.form.coding.userSelected.3,Medication.form.coding.version,Medication.form.coding.version.2,Medication.form.coding.version.3,Medication.form.extension,Medication.form.id,Medication.form.text,Medication.id,Medication.identifier,Medication.implicitRules,Medication.ingredient,Medication.ingredient.extension,Medication.ingredient.id,Medication.ingredient.isActive,Medication.ingredient.item_x_,Medication.ingredient.modifierExtension,Medication.ingredient.strength,Medication.language,Medication.manufacturer,Medication.meta,Medication.modifierExtension,Medication.status,Medication.text,d-Medication,d-Medication.batch,d-Medication.code,d-Medication.code.coding,d-Medication.code.coding.2,d-Medication.code.coding.3,d-Medication.code.coding.4,d-Medication.code.coding.5,d-Medication.code.coding.6,d-Medication.code.coding.extension,d-Medication.code.coding.extension.2,d-Medication.code.coding.system,d-Medication.code.coding.system.2,d-Medication.code.coding.system.3,d-Medication.code.coding.system.4,d-Medication.code.coding.system.5,d-Medication.form,d-Medication.form.coding,d-Medication.form.coding.2,d-Medication.form.coding.3,d-Medication.form.coding.4,d-Medication.form.coding.code,d-Medication.form.coding.display,d-Medication.form.coding.system,d-Medication.form.coding.system.2,d-Medication.form.coding.system.3,inv,k-Medication,k-Medication.batch,k-Medication.batch.modifierExtension,k-Medication.code,k-Medication.code.coding,k-Medication.code.coding.2,k-Medication.code.coding.3,k-Medication.code.coding.4,k-Medication.code.coding.5,k-Medication.code.coding.6,k-Medication.code.coding.extension,k-Medication.code.coding.extension.2,k-Medication.code.coding.system,k-Medication.code.coding.system.2,k-Medication.code.coding.system.3,k-Medication.code.coding.system.4,k-Medication.code.coding.system.5,k-Medication.form,k-Medication.form.coding,k-Medication.form.coding.2,k-Medication.form.coding.3,k-Medication.form.coding.4,k-Medication.form.coding.code,k-Medication.form.coding.display,k-Medication.form.coding.system,k-Medication.form.coding.system.2,k-Medication.form.coding.system.3,k-Medication.implicitRules,k-Medication.modifierExtension,k-Medication.status,s-summary</b> <span style="font-size: 8px; font-color: silver"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>output&#8203;/StructureDefinition-lmdi-legemiddeladministrering&#8203;.html</b></td><td><b>warning</b></td><td><b>The html source has duplicate anchor Ids: MedicationAdministration,MedicationAdministration.category,MedicationAdministration.contained,MedicationAdministration.context,MedicationAdministration.dosage,MedicationAdministration.dosage.dose,MedicationAdministration.dosage.extension,MedicationAdministration.dosage.id,MedicationAdministration.dosage.method,MedicationAdministration.dosage.modifierExtension,MedicationAdministration.dosage.rate_x_,MedicationAdministration.dosage.rate_x_.2,MedicationAdministration.dosage.route,MedicationAdministration.dosage.route.coding,MedicationAdministration.dosage.route.coding.2,MedicationAdministration.dosage.route.coding.3,MedicationAdministration.dosage.route.coding.code,MedicationAdministration.dosage.route.coding.code.2,MedicationAdministration.dosage.route.coding.display,MedicationAdministration.dosage.route.coding.display.2,MedicationAdministration.dosage.route.coding.extension,MedicationAdministration.dosage.route.coding.extension.2,MedicationAdministration.dosage.route.coding.id,MedicationAdministration.dosage.route.coding.id.2,MedicationAdministration.dosage.route.coding.system,MedicationAdministration.dosage.route.coding.system.2,MedicationAdministration.dosage.route.coding.userSelected,MedicationAdministration.dosage.route.coding.userSelected.2,MedicationAdministration.dosage.route.coding.version,MedicationAdministration.dosage.route.coding.version.2,MedicationAdministration.dosage.route.extension,MedicationAdministration.dosage.route.id,MedicationAdministration.dosage.route.text,MedicationAdministration.dosage.site,MedicationAdministration.dosage.text,MedicationAdministration.effective_x_,MedicationAdministration.eventHistory,MedicationAdministration.extension,MedicationAdministration.id,MedicationAdministration.identifier,MedicationAdministration.implicitRules,MedicationAdministration.instantiates,MedicationAdministration.language,MedicationAdministration.medication_x_,MedicationAdministration.meta,MedicationAdministration.modifierExtension,MedicationAdministration.reasonCode,MedicationAdministration.reasonReference,MedicationAdministration.request,MedicationAdministration.status,MedicationAdministration.statusReason,MedicationAdministration.subject,d-MedicationAdministration,d-MedicationAdministration.context,d-MedicationAdministration.device,d-MedicationAdministration.dosage,d-MedicationAdministration.dosage.dose,d-MedicationAdministration.dosage.rate_x_,d-MedicationAdministration.dosage.rate_x_.2,d-MedicationAdministration.dosage.route,d-MedicationAdministration.dosage.route.coding,d-MedicationAdministration.dosage.route.coding.2,d-MedicationAdministration.dosage.route.coding.3,d-MedicationAdministration.dosage.route.coding.code,d-MedicationAdministration.dosage.route.coding.system,d-MedicationAdministration.dosage.route.coding.system.2,d-MedicationAdministration.effective_x_,d-MedicationAdministration.medication_x_,d-MedicationAdministration.note,d-MedicationAdministration.partOf,d-MedicationAdministration.performer,d-MedicationAdministration.reasonReference,d-MedicationAdministration.request,d-MedicationAdministration.status,d-MedicationAdministration.subject,d-MedicationAdministration.supportingInformation,d-MedicationAdministration.text,inv,k-MedicationAdministration,k-MedicationAdministration.context,k-MedicationAdministration.dosage,k-MedicationAdministration.dosage.dose,k-MedicationAdministration.dosage.modifierExtension,k-MedicationAdministration.dosage.rate_x_,k-MedicationAdministration.dosage.rate_x_.2,k-MedicationAdministration.dosage.route,k-MedicationAdministration.dosage.route.coding,k-MedicationAdministration.dosage.route.coding.2,k-MedicationAdministration.dosage.route.coding.3,k-MedicationAdministration.dosage.route.coding.code,k-MedicationAdministration.dosage.route.coding.system,k-MedicationAdministration.dosage.route.coding.system.2,k-MedicationAdministration.effective_x_,k-MedicationAdministration.implicitRules,k-MedicationAdministration.medication_x_,k-MedicationAdministration.modifierExtension,k-MedicationAdministration.reasonReference,k-MedicationAdministration.request,k-MedicationAdministration.status,k-MedicationAdministration.subject,s-summary</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-lmdi-legemiddelrekvirering&#8203;.html</b></td><td><b>warning</b></td><td><b>The html source has duplicate anchor Ids: MedicationRequest,MedicationRequest.authoredOn,MedicationRequest.basedOn,MedicationRequest.category,MedicationRequest.contained,MedicationRequest.courseOfTherapyType,MedicationRequest.detectedIssue,MedicationRequest.dispenseRequest,MedicationRequest.dispenseRequest.dispenseInterval,MedicationRequest.dispenseRequest.expectedSupplyDuration,MedicationRequest.dispenseRequest.extension,MedicationRequest.dispenseRequest.id,MedicationRequest.dispenseRequest.initialFill,MedicationRequest.dispenseRequest.initialFill.duration,MedicationRequest.dispenseRequest.initialFill.extension,MedicationRequest.dispenseRequest.initialFill.id,MedicationRequest.dispenseRequest.initialFill.modifierExtension,MedicationRequest.dispenseRequest.initialFill.quantity,MedicationRequest.dispenseRequest.modifierExtension,MedicationRequest.dispenseRequest.numberOfRepeatsAllowed,MedicationRequest.dispenseRequest.performer,MedicationRequest.dispenseRequest.quantity,MedicationRequest.dispenseRequest.validityPeriod,MedicationRequest.doNotPerform,MedicationRequest.dosageInstruction,MedicationRequest.encounter,MedicationRequest.eventHistory,MedicationRequest.extension,MedicationRequest.groupIdentifier,MedicationRequest.id,MedicationRequest.identifier,MedicationRequest.implicitRules,MedicationRequest.instantiatesCanonical,MedicationRequest.instantiatesUri,MedicationRequest.insurance,MedicationRequest.intent,MedicationRequest.language,MedicationRequest.medication_x_,MedicationRequest.meta,MedicationRequest.modifierExtension,MedicationRequest.note,MedicationRequest.performer,MedicationRequest.performerType,MedicationRequest.priorPrescription,MedicationRequest.priority,MedicationRequest.reasonCode,MedicationRequest.reasonReference,MedicationRequest.recorder,MedicationRequest.reported_x_,MedicationRequest.requester,MedicationRequest.status,MedicationRequest.statusReason,MedicationRequest.subject,MedicationRequest.substitution,MedicationRequest.substitution.allowed_x_,MedicationRequest.substitution.extension,MedicationRequest.substitution.id,MedicationRequest.substitution.modifierExtension,MedicationRequest.substitution.reason,MedicationRequest.supportingInformation,MedicationRequest.text,d-MedicationRequest,d-MedicationRequest.identifier,d-MedicationRequest.intent,d-MedicationRequest.medication_x_,d-MedicationRequest.requester,d-MedicationRequest.status,d-MedicationRequest.subject,inv,k-MedicationRequest,k-MedicationRequest.doNotPerform,k-MedicationRequest.identifier,k-MedicationRequest.implicitRules,k-MedicationRequest.intent,k-MedicationRequest.medication_x_,k-MedicationRequest.modifierExtension,k-MedicationRequest.requester,k-MedicationRequest.status,k-MedicationRequest.subject,s-summary</b> <span style="font-size: 8px; font-color: silver"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>output&#8203;/StructureDefinition-lmdi-organization&#8203;.html</b></td><td><b>warning</b></td><td><b>The html source has duplicate anchor Ids: Organization,Organization.active,Organization.address,Organization.address.city,Organization.address.country,Organization.address.district,Organization.address.district.extension,Organization.address.district.extension.2,Organization.address.district.id,Organization.address.district.value,Organization.address.extension,Organization.address.id,Organization.address.line,Organization.address.period,Organization.address.postalCode,Organization.address.state,Organization.address.text,Organization.address.type,Organization.address.use,Organization.alias,Organization.contact,Organization.contact.address,Organization.contact.extension,Organization.contact.id,Organization.contact.modifierExtension,Organization.contact.name,Organization.contact.purpose,Organization.contact.telecom,Organization.contained,Organization.endpoint,Organization.extension,Organization.id,Organization.identifier,Organization.identifier.2,Organization.identifier.3,Organization.identifier.assigner,Organization.identifier.assigner.2,Organization.identifier.extension,Organization.identifier.extension.2,Organization.identifier.id,Organization.identifier.id.2,Organization.identifier.period,Organization.identifier.period.2,Organization.identifier.system,Organization.identifier.system.2,Organization.identifier.type,Organization.identifier.type.2,Organization.identifier.use,Organization.identifier.use.2,Organization.identifier.value,Organization.identifier.value.2,Organization.implicitRules,Organization.language,Organization.meta,Organization.modifierExtension,Organization.name,Organization.partOf,Organization.telecom,Organization.text,Organization.type,d-Organization,d-Organization.address,d-Organization.address.district,d-Organization.address.district.extension,d-Organization.address.district.extension.2,d-Organization.identifier,d-Organization.identifier.2,d-Organization.identifier.3,d-Organization.identifier.system,d-Organization.identifier.system.2,d-Organization.identifier.value,d-Organization.identifier.value.2,d-Organization.name,d-Organization.partOf,d-Organization.type,inv,k-Organization,k-Organization.active,k-Organization.address,k-Organization.address.use,k-Organization.identifier,k-Organization.identifier.2,k-Organization.identifier.3,k-Organization.identifier.system,k-Organization.identifier.system.2,k-Organization.identifier.use,k-Organization.identifier.use.2,k-Organization.identifier.value,k-Organization.identifier.value.2,k-Organization.implicitRules,k-Organization.modifierExtension,k-Organization.name,k-Organization.partOf,k-Organization.type,s-summary</b> <span style="font-size: 8px; font-color: silver"></span></td>
@@ -351,7 +351,7 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
 <hr/>
 <a name="_github_workspace_LMDI_fsh-generated_resources_Condition-Diagnose-1-ICD10-OID"> </a>
 <h2><a href="Condition-Diagnose-1-ICD10-OID.html">fsh-generated/resources/Condition-Diagnose-1-ICD10-OID.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Condition: Validated against <i>this.</i><a href="StructureDefinition-lmdi-condition-diagnose.html">Diagnose</a></li></ul>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Condition: Validated against <i>this.</i><a href="StructureDefinition-lmdi-diagnose.html">Diagnose</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -364,7 +364,7 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
 <hr/>
 <a name="_github_workspace_LMDI_fsh-generated_resources_Condition-Diagnose-2-SNOMED-CT"> </a>
 <h2><a href="Condition-Diagnose-2-SNOMED-CT.html">fsh-generated/resources/Condition-Diagnose-2-SNOMED-CT.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Condition: Validated against <i>this.</i><a href="StructureDefinition-lmdi-condition-diagnose.html">Diagnose</a></li></ul>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Condition: Validated against <i>this.</i><a href="StructureDefinition-lmdi-diagnose.html">Diagnose</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -380,7 +380,7 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
 <hr/>
 <a name="_github_workspace_LMDI_fsh-generated_resources_EpisodeOfCare-Institusjonsopphold-1-Sykehjem"> </a>
 <h2><a href="EpisodeOfCare-Institusjonsopphold-1-Sykehjem.html">fsh-generated/resources/EpisodeOfCare-Institusjonsopphold-1-Sykehjem.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>EpisodeOfCare: Validated against <i>this.</i><a href="StructureDefinition-lmdi-episodeofcare-institusjonsopphold.html">Institusjonsopphold</a></li></ul>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>EpisodeOfCare: Validated against <i>this.</i><a href="StructureDefinition-lmdi-institusjonsopphold.html">Institusjonsopphold</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -716,7 +716,7 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
 <hr/>
 <a name="_github_workspace_LMDI_fsh-generated_resources_PractitionerRole-RolleHelsepersonell-1-Hjemmehjelp"> </a>
 <h2><a href="PractitionerRole-RolleHelsepersonell-1-Hjemmehjelp.html">fsh-generated/resources/PractitionerRole-RolleHelsepersonell-1-Hjemmehjelp.json</a> <span id="svi28" class="toggle" onclick="toggle('vi28')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi28')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi28"><ul style="font-size: 7px"><li>PractitionerRole: Validated against <i>this.</i><a href="StructureDefinition-lmdi-practitionerrole.html">Rolle helsepersonell</a></li></ul>
+ <div style="border: 1px grey solid; display: none" id="vi28"><ul style="font-size: 7px"><li>PractitionerRole: Validated against <i>this.</i><a href="StructureDefinition-lmdi-practitionerrole.html">Helsepersonellrolle</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -724,8 +724,8 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-Legemiddelrekvirering"> </a>
-<h2><a href="StructureDefinition-Legemiddelrekvirering.html">fsh-generated/resources/StructureDefinition-Legemiddelrekvirering.json</a> <span id="svi29" class="toggle" onclick="toggle('vi29')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi29')">(1)</span></h2>
+<a name="_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-adresse"> </a>
+<h2><a href="StructureDefinition-lmdi-adresse.html">fsh-generated/resources/StructureDefinition-lmdi-adresse.json</a> <span id="svi29" class="toggle" onclick="toggle('vi29')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi29')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi29"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -733,42 +733,29 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.no&#8203;/fhir&#8203;/ig&#8203;/lmdi&#8203;/StructureDefinition&#8203;/Legemiddelrekvirering')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span style="font-size: 8px; font-color: silver"></span></td>
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.no&#8203;/fhir&#8203;/ig&#8203;/lmdi&#8203;/StructureDefinition&#8203;/lmdi-adresse')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this data type profile</b> <span style="font-size: 8px; font-color: silver"></span></td>
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-address"> </a>
-<h2><a href="StructureDefinition-lmdi-address.html">fsh-generated/resources/StructureDefinition-lmdi-address.json</a> <span id="svi30" class="toggle" onclick="toggle('vi30')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi30')">(1)</span></h2>
+<a name="_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-diagnose"> </a>
+<h2><a href="StructureDefinition-lmdi-diagnose.html">fsh-generated/resources/StructureDefinition-lmdi-diagnose.json</a> <span id="svi30" class="toggle" onclick="toggle('vi30')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi30')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi30"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.no&#8203;/fhir&#8203;/ig&#8203;/lmdi&#8203;/StructureDefinition&#8203;/lmdi-address')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this data type profile</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c134587)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span style="font-size: 8px; font-color: silver">SD_PATH_SLICING_DEPRECATED</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[17]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c65486)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span style="font-size: 8px; font-color: silver">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-condition-diagnose"> </a>
-<h2><a href="StructureDefinition-lmdi-condition-diagnose.html">fsh-generated/resources/StructureDefinition-lmdi-condition-diagnose.json</a> <span id="svi31" class="toggle" onclick="toggle('vi31')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi31')">(1)</span></h2>
+<a name="_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-institusjonsopphold"> </a>
+<h2><a href="StructureDefinition-lmdi-institusjonsopphold.html">fsh-generated/resources/StructureDefinition-lmdi-institusjonsopphold.json</a> <span id="svi31" class="toggle" onclick="toggle('vi31')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi31')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi31"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c134811)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span style="font-size: 8px; font-color: silver">SD_PATH_SLICING_DEPRECATED</span></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[17]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c65710)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span style="font-size: 8px; font-color: silver">SD_PATH_SLICING_DEPRECATED</span></td>
-   </tr>
-</table>
-<hr/>
-<a name="_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-episodeofcare-institusjonsopphold"> </a>
-<h2><a href="StructureDefinition-lmdi-episodeofcare-institusjonsopphold.html">fsh-generated/resources/StructureDefinition-lmdi-episodeofcare-institusjonsopphold.json</a> <span id="svi32" class="toggle" onclick="toggle('vi32')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi32')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi32"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -777,8 +764,8 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
 </table>
 <hr/>
 <a name="_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-legemiddel"> </a>
-<h2><a href="StructureDefinition-lmdi-legemiddel.html">fsh-generated/resources/StructureDefinition-lmdi-legemiddel.json</a> <span id="svi33" class="toggle" onclick="toggle('vi33')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi33')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi33"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-lmdi-legemiddel.html">fsh-generated/resources/StructureDefinition-lmdi-legemiddel.json</a> <span id="svi32" class="toggle" onclick="toggle('vi32')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi32')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi32"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -799,8 +786,8 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
 </table>
 <hr/>
 <a name="_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-legemiddeladministrering"> </a>
-<h2><a href="StructureDefinition-lmdi-legemiddeladministrering.html">fsh-generated/resources/StructureDefinition-lmdi-legemiddeladministrering.json</a> <span id="svi34" class="toggle" onclick="toggle('vi34')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi34')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi34"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-lmdi-legemiddeladministrering.html">fsh-generated/resources/StructureDefinition-lmdi-legemiddeladministrering.json</a> <span id="svi33" class="toggle" onclick="toggle('vi33')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi33')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi33"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -813,13 +800,26 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.binding</b></td><td><b>warning</b></td><td><b>The definition for the element 'MedicationAdministration.status' binds to the value set 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status' which is experimental, but this structure is not labeled as experimental</b> <span style="font-size: 8px; font-color: silver">SD_ED_EXPERIMENTAL_BINDING</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c140243)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span style="font-size: 8px; font-color: silver">SD_PATH_SLICING_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c140492)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span style="font-size: 8px; font-color: silver">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[12]&#8203;.binding</b></td><td><b>warning</b></td><td><b>The definition for the element 'MedicationAdministration.status' binds to the value set 'http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status' which is experimental, but this structure is not labeled as experimental</b> <span style="font-size: 8px; font-color: silver">SD_ED_EXPERIMENTAL_BINDING</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[40]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c106573)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span style="font-size: 8px; font-color: silver">SD_PATH_SLICING_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[40]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c106657)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span style="font-size: 8px; font-color: silver">SD_PATH_SLICING_DEPRECATED</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-legemiddelrekvirering"> </a>
+<h2><a href="StructureDefinition-lmdi-legemiddelrekvirering.html">fsh-generated/resources/StructureDefinition-lmdi-legemiddelrekvirering.json</a> <span id="svi34" class="toggle" onclick="toggle('vi34')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi34')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi34"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.no&#8203;/fhir&#8203;/ig&#8203;/lmdi&#8203;/StructureDefinition&#8203;/lmdi-legemiddelrekvirering')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span style="font-size: 8px; font-color: silver"></span></td>
    </tr>
 </table>
 <hr/>
@@ -832,10 +832,10 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c106986)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span style="font-size: 8px; font-color: silver">SD_PATH_SLICING_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c106982)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span style="font-size: 8px; font-color: silver">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[9]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c48868)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span style="font-size: 8px; font-color: silver">SD_PATH_SLICING_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[9]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c48864)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span style="font-size: 8px; font-color: silver">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
 </table>
 <hr/>
@@ -848,13 +848,13 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c156182)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span style="font-size: 8px; font-color: silver">SD_PATH_SLICING_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c155916)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span style="font-size: 8px; font-color: silver">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[9]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c71852)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span style="font-size: 8px; font-color: silver">SD_PATH_SLICING_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[9]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c71620)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span style="font-size: 8px; font-color: silver">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[9]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c71852)</b></td><td><b>error</b></td><td><b>The discriminator path 'code' does not appear to be valid for the element that is being sliced 'Patient.identifier'</b> <span style="font-size: 8px; font-color: silver">SD_PATH_NOT_VALID</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[9]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c71620)</b></td><td><b>error</b></td><td><b>The discriminator path 'code' does not appear to be valid for the element that is being sliced 'Patient.identifier'</b> <span style="font-size: 8px; font-color: silver">SD_PATH_NOT_VALID</span></td>
    </tr>
 </table>
 <hr/>
@@ -1031,10 +1031,10 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
 <h2>SD_PATH_SLICING_DEPRECATED</h2>
  <table class="grid">
    <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-lmdi-condition-diagnose.html">fsh-generated/resources/StructureDefinition-lmdi-condition-diagnose.json</a></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>
+     <td><a href="StructureDefinition-lmdi-diagnose.html">fsh-generated/resources/StructureDefinition-lmdi-diagnose.json</a></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-lmdi-condition-diagnose.html">fsh-generated/resources/StructureDefinition-lmdi-condition-diagnose.json</a></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>
+     <td><a href="StructureDefinition-lmdi-diagnose.html">fsh-generated/resources/StructureDefinition-lmdi-diagnose.json</a></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="StructureDefinition-lmdi-legemiddel.html">fsh-generated/resources/StructureDefinition-lmdi-legemiddel.json</a></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>

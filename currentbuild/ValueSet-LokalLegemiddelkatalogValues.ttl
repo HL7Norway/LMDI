@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "LokalLegemiddelkatalogValues"] ; # 
   fhir:title [ fhir:v "Lokal Legemiddelkatalog Values"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-01-12T13:05:41+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-12T14:01:50+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;

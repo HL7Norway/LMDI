@@ -12,8 +12,8 @@
   </text>
   <url value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole"/>
   <version value="0.9.1"/>
-  <name value="LmdiPractitionerRole"/>
-  <title value="Rolle helsepersonell"/>
+  <name value="Helsepersonellrolle"/>
+  <title value="Helsepersonellrolle"/>
   <status value="draft"/>
   <date value="2024-06-12"/>
   <publisher value="Folkehelseinstituttet (FHI)"/>

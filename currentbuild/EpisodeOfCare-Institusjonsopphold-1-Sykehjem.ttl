@@ -10,8 +10,8 @@
   fhir:id [ fhir:v "Institusjonsopphold-1-Sykehjem"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-episodeofcare-institusjonsopphold"^^xsd:anyURI ;
-       fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-episodeofcare-institusjonsopphold>
+       fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-institusjonsopphold"^^xsd:anyURI ;
+       fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-institusjonsopphold>
      ] )
   ] ; # 
   fhir:text [

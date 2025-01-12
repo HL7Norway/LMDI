@@ -27,21 +27,15 @@
     }
   ],
   "profiles": {
-    "MedicationRequest": [
-      {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/Legemiddelrekvirering",
-        "title": "Legemiddelrekvirering"
-      }
-    ],
     "Condition": [
       {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition-diagnose",
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-diagnose",
         "title": "Diagnose"
       }
     ],
     "EpisodeOfCare": [
       {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-episodeofcare-institusjonsopphold",
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-institusjonsopphold",
         "title": "Institusjonsopphold"
       }
     ],
@@ -55,6 +49,12 @@
       {
         "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrering",
         "title": "Legemiddeladministrering"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddelrekvirering",
+        "title": "Legemiddelrekvirering"
       }
     ],
     "Organization": [
@@ -78,7 +78,7 @@
     "PractitionerRole": [
       {
         "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole",
-        "title": "Rolle helsepersonell"
+        "title": "Helsepersonellrolle"
       }
     ]
   },

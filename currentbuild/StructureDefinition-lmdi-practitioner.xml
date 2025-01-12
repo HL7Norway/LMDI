@@ -15,7 +15,7 @@
   </text>
   <url value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner"/>
   <version value="0.9.1"/>
-  <name value="LmdiPractitioner"/>
+  <name value="Helsepersonell"/>
   <title value="Helsepersonell"/>
   <status value="draft"/>
   <date value="2024-06-12"/>
