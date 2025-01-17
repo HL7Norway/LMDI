@@ -1,5 +1,5 @@
 Profile:     Helsepersonellrolle
-Id:          lmdi-practitionerrole
+Id:          lmdiHelsepersonellrolle
 Parent:      PractitionerRole
 Title:       "Helsepersonellrolle"
 Description: "Rollen til helsepersonellet eller personen som har foreskrevet eller administrert legemiddelet"

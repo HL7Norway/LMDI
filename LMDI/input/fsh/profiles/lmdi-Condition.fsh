@@ -1,6 +1,6 @@
 Profile: Diagnose
 Parent: Condition
-Id: lmdi-diagnose
+Id: lmdiDiagnose
 Title: "Diagnose"
 Description: "Diagnosen som pasienten har fått rekvirert og administrert legemiddelet for. "
 * ^status = #draft

@@ -2,7 +2,7 @@
 // Se: https://simplifier.net/HL7Norwayno-basis/NoBasisPractitioner/~overview 
 
 Profile:     Helsepersonell
-Id:          lmdi-practitioner
+Id:          lmdiHelsepersonell
 Parent:      Practitioner
 Title:       "Helsepersonell"
 Description: """Helsepersonell som har foreskrevet eller administrert legemiddelet. 

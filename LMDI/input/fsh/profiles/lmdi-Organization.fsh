@@ -2,7 +2,7 @@
 
 Profile: Organisasjon
 Parent: Organization
-Id: lmdi-organization
+Id: lmdiOrganisasjon
 Title: "Organisasjon"
 Description: "Organisasjon eller organisasjonsenhet. "
 * ^status = #draft
@@ -44,7 +44,7 @@ Description: "Organisasjon eller organisasjonsenhet. "
 // Kopiert fra Thomas sin fsh-no-basis
 Alias: $kommunenummer-alle = https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle
 Extension: NoBasisMunicipalitycode
-Id: no-basis-municipalitycode
+Id: noBasisMunicipalitycode
 Title: "no-basis-municipalitycode"
 Description: "Coded value for municipality/county Norwegian kommune"
 * ^version = "2.0.16"

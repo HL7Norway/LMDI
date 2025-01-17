@@ -7,3 +7,5 @@ Thumbs.db
 **/template
 **/input/fsh/old
 **/.vs/
+
+*.log

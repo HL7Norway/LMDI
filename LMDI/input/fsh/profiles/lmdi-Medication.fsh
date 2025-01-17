@@ -1,6 +1,6 @@
 Profile: Legemiddel
 Parent:   Medication
-Id:       lmdi-legemiddel
+Id:       lmdiLegemiddel
 Title:    "Legemiddel"
 Description: "Beskrivelse av legemiddel."
 * ^status = #draft

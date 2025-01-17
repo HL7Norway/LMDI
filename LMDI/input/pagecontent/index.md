@@ -31,7 +31,7 @@ Inntil videre er profilene og implementasjonsguiden ([se siste build](https://hl
 
 ### Plan
 
-Versjon 0.9 sommer 2024.
+Versjon 1.0 våren 2025.
 
 #### Status og historikk
 
@@ -42,9 +42,9 @@ Versjon 0.9 sommer 2024.
 
 ### Kontaktpersoner
 
-- Yngve Flater-Sandberg ([Vali](https://www.vali.no/))
+- Kari Jansdotter Husabø (legemiddelregisteret@fhi.no)
 - Line A. Sæle ([FHI](https://www.fhi.no/))
-- [Espen Stranger Seland](https://github.com/rockphotog) ([Vali](https://www.vali.no/))
+- Roar Andersen (team-a@fhi.no)
 
 ---
 

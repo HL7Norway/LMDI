@@ -6,16 +6,28 @@ id: hl7.fhir.no.lmdi
 canonical: http://hl7.no/fhir/ig/lmdi
 name: Lmdi
 title: "Legemiddeldata fra institusjon til Legemiddelregisteret"
-description: Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret
+description: "Denne implementasjongguiden beskriver hvordan institusjoner skal overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret"
 status: draft
-version: 0.9.1
+version: 0.9.2
 fhirVersion: 4.0.1
 copyrightYear: 2024+
 releaseLabel: ci-build
 jurisdiction: urn:iso:std:iso:3166#NO "Norway"
 publisher:
-  name: Folkehelseinstituttet (FHI)
+  name: Folkehelseinstituttet
   url: https://www.fhi.no
+contact:
+  - name: Legemiddelregisteret
+    telecom:
+      - system: email
+        value: legemiddelregisteret@fhi.no
+license: CC-BY-4.0
+parameters:
+  apply-contact: true
+  apply-jurisdiction: true
+  generate-json: true
+  generate-xml: false
+  generate-turtle: false
 # dependencies:
 # hl7.fhir.no.basis: 2.1.1
 # hl7.fhir.no.basis: 2.2.0

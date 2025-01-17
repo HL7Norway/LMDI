@@ -4,7 +4,7 @@
 
 // Profile: LmdiObservation
 // Parent: Observation
-// Id: lmdi-observation-tmp
+// Id: lmdiObservation
 // Title: "Observasjon (kladd)"
 // Description: "Observation. Kommentar: For høyde og vekt skal denne baseres på nasjonal eller internasjonal Vital Signs IG når den foreligger. "
 // * ^status = #draft
