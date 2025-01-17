@@ -2,7 +2,7 @@
   "resourceType" : "Organization",
   "id" : "Organisasjon-3-Spesialist-topp",
   "meta" : {
-    "profile" : ["http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization"]
+    "profile" : ["http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiOrganisasjon"]
   },
   "text" : {
     "status" : "generated",

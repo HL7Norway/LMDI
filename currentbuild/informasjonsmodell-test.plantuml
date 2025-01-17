@@ -2,7 +2,7 @@
 
 header "Legemiddeldata fra institusjon til Legemiddelregisteret"
 title "Informasjonsmodell: UML klassediagam (arbeidsversjon)"
-footer "Folkehelseinstituttet / Vali AS"
+footer "Folkehelseinstituttet"
 
 class Pasient <<Patient>> {
    identifikator: FNR|DNR

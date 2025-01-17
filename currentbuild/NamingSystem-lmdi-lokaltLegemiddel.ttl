@@ -10,25 +10,31 @@
   fhir:id [ fhir:v "lmdi-lokaltLegemiddel"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem lmdi-lokaltLegemiddel</b></p><a name=\"lmdi-lokaltLegemiddel\"> </a><a name=\"hclmdi-lokaltLegemiddel\"> </a><a name=\"lmdi-lokaltLegemiddel-no-NO\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://hl7.no/fhir/ig/lmdi/NamingSystem/lmdi-lokaltLegemiddel</td></tr><tr><td>Version</td><td>0.9.1</td></tr><tr><td>Name</td><td>lmdiLokaltLegemiddel</td></tr><tr><td>Status</td><td>draft</td></tr><tr><td>Definition</td><td><div><p>Id for angivelse av legemiddel fra lokal legemiddelkatalog</p>\n</div></td></tr><tr><td>Publisher</td><td>Folkehelseinstituttet (FHI)</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://fh.no/fhir/NamingSystem/lokaltVirkemiddel</td><td>true</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem lmdi-lokaltLegemiddel</b></p><a name=\"lmdi-lokaltLegemiddel\"> </a><a name=\"hclmdi-lokaltLegemiddel\"> </a><a name=\"lmdi-lokaltLegemiddel-no-NO\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://hl7.no/fhir/ig/lmdi/NamingSystem/lmdi-lokaltLegemiddel</td></tr><tr><td>Version</td><td>0.9.2</td></tr><tr><td>Name</td><td>lmdiLokaltLegemiddel</td></tr><tr><td>Status</td><td>draft</td></tr><tr><td>Definition</td><td><div><p>Id for angivelse av legemiddel fra lokal legemiddelkatalog</p>\n</div></td></tr><tr><td>Publisher</td><td>Folkehelseinstituttet</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://fh.no/fhir/NamingSystem/lokaltVirkemiddel</td><td>true</td></tr></table></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "http://hl7.no/fhir/ig/lmdi/NamingSystem/lmdi-lokaltLegemiddel"^^xsd:anyURI ]
   ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "0.9.1" ]
+     fhir:value [ fhir:v "0.9.2" ]
   ] ) ; # 
   fhir:name [ fhir:v "lmdiLokaltLegemiddel"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:kind [ fhir:v "identifier"] ; # 
   fhir:date [ fhir:v "2024-06-10"^^xsd:date] ; # 
-  fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
+  fhir:publisher [ fhir:v "Folkehelseinstituttet"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;
+     fhir:name [ fhir:v "Folkehelseinstituttet" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
        fhir:value [ fhir:v "https://www.fhi.no" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Legemiddelregisteret" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "legemiddelregisteret@fhi.no" ]
      ] )
   ] ) ; # 
   fhir:responsible [ fhir:v "Folkehelseinstituttet"] ; # 

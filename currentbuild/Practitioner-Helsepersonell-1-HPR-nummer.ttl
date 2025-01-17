@@ -10,8 +10,8 @@
   fhir:id [ fhir:v "Helsepersonell-1-HPR-nummer"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner"^^xsd:anyURI ;
-       fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner>
+       fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiHelsepersonell"^^xsd:anyURI ;
+       fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiHelsepersonell>
      ] )
   ] ; # 
   fhir:text [

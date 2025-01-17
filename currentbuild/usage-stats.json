@@ -1,6 +1,6 @@
 {
   "package": "hl7.fhir.no.lmdi",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "fhirVersion": "4.0.1",
   "jurisdiction": "NO",
   "extensions": [
@@ -12,7 +12,7 @@
       ]
     },
     {
-      "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode",
+      "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/noBasisMunicipalitycode",
       "title": "no-basis-municipalitycode",
       "types": [
         "Coding",
@@ -27,58 +27,58 @@
     }
   ],
   "profiles": {
-    "Condition": [
-      {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-diagnose",
-        "title": "Diagnose"
-      }
-    ],
-    "EpisodeOfCare": [
-      {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-institusjonsopphold",
-        "title": "Institusjonsopphold"
-      }
-    ],
-    "Medication": [
-      {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddel",
-        "title": "Legemiddel"
-      }
-    ],
     "MedicationAdministration": [
       {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrering",
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdLegemiddeladministrering",
         "title": "Legemiddeladministrering"
       }
     ],
-    "MedicationRequest": [
+    "Condition": [
       {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddelrekvirering",
-        "title": "Legemiddelrekvirering"
-      }
-    ],
-    "Organization": [
-      {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization",
-        "title": "Organisasjon"
-      }
-    ],
-    "Patient": [
-      {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient",
-        "title": "Pasient"
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiDiagnose",
+        "title": "Diagnose"
       }
     ],
     "Practitioner": [
       {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner",
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiHelsepersonell",
         "title": "Helsepersonell"
       }
     ],
     "PractitionerRole": [
       {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole",
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiHelsepersonellrolle",
         "title": "Helsepersonellrolle"
+      }
+    ],
+    "EpisodeOfCare": [
+      {
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiIstitusjonsopphold",
+        "title": "Institusjonsopphold"
+      }
+    ],
+    "Medication": [
+      {
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiLegemiddel",
+        "title": "Legemiddel"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiLegemiddelrekvirering",
+        "title": "Legemiddelrekvirering"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiOrganisasjon",
+        "title": "Organisasjon"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiPasient",
+        "title": "Pasient"
       }
     ]
   },
@@ -86,7 +86,7 @@
     "http://fhi.no/fhir/lmr/lokal-legemiddel-katalog": [
       "Medication.code.coding"
     ],
-    "http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode": [
+    "http://hl7.no/fhir/ig/lmdi/StructureDefinition/noBasisMunicipalitycode": [
       "Address.district",
       "Organization.address.district",
       "Patient.address.district"

@@ -4,7 +4,7 @@ skinparam Shadowing false
 
 title "Eksempel på enkel flyt 2"
 header "Legemiddeldata fra institusjon til LMR"
-footer "Folkehelseinstituttet / Vali AS"
+footer "Folkehelseinstituttet"
 
 participant "Klient / fagystem" as K #lightgreen
 boundary "LMR FHIR API" as A #yellow

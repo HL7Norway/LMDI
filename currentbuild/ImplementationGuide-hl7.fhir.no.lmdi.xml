@@ -3,24 +3,31 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.no.lmdi"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.lmdi</b></p><a name="hl7.fhir.no.lmdi"> </a><a name="hchl7.fhir.no.lmdi"> </a><a name="hl7.fhir.no.lmdi-no-NO"> </a><h2>Lmdi</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi</pre><div><p>Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.lmdi</b></p><a name="hl7.fhir.no.lmdi"> </a><a name="hchl7.fhir.no.lmdi"> </a><a name="hl7.fhir.no.lmdi-no-NO"> </a><h2>Lmdi</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi</pre><div><p>Denne implementasjongguiden beskriver hvordan institusjoner skal overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret</p>
 </div></div>
   </text>
   <url value="http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi"/>
-  <version value="0.9.1"/>
+  <version value="0.9.2"/>
   <name value="Lmdi"/>
   <title value="Legemiddeldata fra institusjon til Legemiddelregisteret"/>
   <status value="draft"/>
-  <date value="2025-01-12T14:01:50+00:00"/>
-  <publisher value="Folkehelseinstituttet (FHI)"/>
+  <date value="2025-01-17T08:31:13+00:00"/>
+  <publisher value="Folkehelseinstituttet"/>
   <contact>
-    <name value="Folkehelseinstituttet (FHI)"/>
+    <name value="Folkehelseinstituttet"/>
     <telecom>
       <system value="url"/>
       <value value="https://www.fhi.no"/>
     </telecom>
   </contact>
-  <description value="Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret"/>
+  <contact>
+    <name value="Legemiddelregisteret"/>
+    <telecom>
+      <system value="email"/>
+      <value value="legemiddelregisteret@fhi.no"/>
+    </telecom>
+  </contact>
+  <description value="Denne implementasjongguiden beskriver hvordan institusjoner skal overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -29,7 +36,7 @@
     </coding>
   </jurisdiction>
   <packageId value="hl7.fhir.no.lmdi"/>
-  <license value="CC0-1.0"/>
+  <license value="CC-BY-4.0"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="hl7tx">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -62,6 +69,22 @@
       </extension>
       <extension url="value">
         <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -146,14 +169,6 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-contact"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
         <valueString value="apply-context"/>
       </extension>
       <extension url="value">
@@ -163,14 +178,6 @@
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
         <valueString value="apply-copyright"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-jurisdiction"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -269,6 +276,22 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueCode value="autoload-resources"/>
       </extension>
       <extension url="value">
@@ -349,14 +372,6 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="apply-contact"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
         <valueCode value="apply-context"/>
       </extension>
       <extension url="value">
@@ -366,14 +381,6 @@
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
         <valueCode value="apply-copyright"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueCode value="apply-jurisdiction"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -460,7 +467,7 @@
       </reference>
       <name value="Administrering-1-Oralt"/>
       <description value="Eksempel på administrering av legemiddel"/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrering"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdLegemiddeladministrering"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -482,7 +489,7 @@
       </reference>
       <name value="Administrering-2-Infusjon"/>
       <description value="Eksempel på administrering av legemiddel - infusjon"/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddeladministrering"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdLegemiddeladministrering"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -511,7 +518,7 @@
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/lmdi-adresse"/>
+        <reference value="StructureDefinition/lmdiAdresse"/>
       </reference>
       <name value="Adresse"/>
       <description value="Adresse som inneholder utvidelse for kommune"/>
@@ -522,7 +529,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/lmdi-diagnose"/>
+        <reference value="StructureDefinition/lmdiDiagnose"/>
       </reference>
       <name value="Diagnose"/>
       <description value="Diagnosen som pasienten har fått rekvirert og administrert legemiddelet for."/>
@@ -537,7 +544,7 @@
       </reference>
       <name value="Diagnose-1-ICD10-OID"/>
       <description value="Eksempel på diagnose ICD-10"/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-diagnose"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiDiagnose"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -548,7 +555,7 @@
       </reference>
       <name value="Diagnose-2-SNOMED-CT"/>
       <description value="Eksempel på diagnose SNOMED CT og ICD-10"/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-diagnose"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiDiagnose"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -566,7 +573,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/lmdi-practitioner"/>
+        <reference value="StructureDefinition/lmdiHelsepersonell"/>
       </reference>
       <name value="Helsepersonell"/>
       <description value="Helsepersonell som har foreskrevet eller administrert legemiddelet. &#xA;&#xA;Basisprofil for Norwegian Practitioner information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. Should be used as a basis for further profiling in use-cases where specific identity information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.&#xA;&#xA;2019-03 - The no-basis-Practitioner resource main use-case is to represent the actual Practitioner, e.g. a person. The resource can include information about how to identify the practitioner in addition to the practitioner's education, qualifications and speciality. The resource can also include approvals and other centrally registered capabilities recorded for the practitioner.&#xA;&#xA;(Engelsk tekst Hentet fra no-basis-practitioner.)"/>
@@ -581,14 +588,14 @@
       </reference>
       <name value="Helsepersonell-1-HPR-nummer"/>
       <description value="Eksempel på helsepersonell med HPR-nummer"/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiHelsepersonell"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/lmdi-practitionerrole"/>
+        <reference value="StructureDefinition/lmdiHelsepersonellrolle"/>
       </reference>
       <name value="Helsepersonellrolle"/>
       <description value="Rollen til helsepersonellet eller personen som har foreskrevet eller administrert legemiddelet"/>
@@ -599,7 +606,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/lmdi-institusjonsopphold"/>
+        <reference value="StructureDefinition/lmdiIstitusjonsopphold"/>
       </reference>
       <name value="Institusjonsopphold"/>
       <description value="Beskrivelse av pasientens opphold i institusjon. Dette kan være både av kortere og lengre karakter, slik som døgnopphold, innleggelse hos spesialist, sykehjem og aldershjem."/>
@@ -614,14 +621,14 @@
       </reference>
       <name value="Institusjonsopphold-1-Sykehjem"/>
       <description value="Eksempel på institusjonsopphold med EpisodeOfCare"/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-institusjonsopphold"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiIstitusjonsopphold"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/lmdi-legemiddel"/>
+        <reference value="StructureDefinition/lmdiLegemiddel"/>
       </reference>
       <name value="Legemiddel"/>
       <description value="Beskrivelse av legemiddel."/>
@@ -632,7 +639,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/lmdi-legemiddeladministrering"/>
+        <reference value="StructureDefinition/lmdLegemiddeladministrering"/>
       </reference>
       <name value="Legemiddeladministrering"/>
       <description value="Beskriver administrering av legemiddel til pasient på institusjon.&#xA;&#xA;Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei."/>
@@ -643,7 +650,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/lmdi-legemiddelrekvirering"/>
+        <reference value="StructureDefinition/lmdiLegemiddelrekvirering"/>
       </reference>
       <name value="Legemiddelrekvirering"/>
       <description value="Legemiddelrekvirering - ordinering, resept eller annen rekvirering av legemiddel"/>
@@ -702,7 +709,7 @@
       </reference>
       <name value="Medisin-1-LegemiddelDose-Oxycodone"/>
       <description value="Eksempel på legemiddel"/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddel"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiLegemiddel"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -713,7 +720,7 @@
       </reference>
       <name value="Medisin-2-Paracetamol"/>
       <description value="Eksempel på legemiddel - Paracetamol - UTKAST"/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddel"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiLegemiddel"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -724,7 +731,7 @@
       </reference>
       <name value="Medisin-3-LegemiddelPakning-Monoket"/>
       <description value="Eksempel på legemiddel - paking"/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-legemiddel"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiLegemiddel"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -775,7 +782,7 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/no-basis-municipalitycode"/>
+        <reference value="StructureDefinition/noBasisMunicipalitycode"/>
       </reference>
       <name value="no-basis-municipalitycode"/>
       <description value="Coded value for municipality/county Norwegian kommune"/>
@@ -786,7 +793,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/lmdi-organization"/>
+        <reference value="StructureDefinition/lmdiOrganisasjon"/>
       </reference>
       <name value="Organisasjon"/>
       <description value="Organisasjon eller organisasjonsenhet."/>
@@ -801,7 +808,7 @@
       </reference>
       <name value="Organisasjon-1-Eldrehjem"/>
       <description value="Eksempel på organisasjon - Primærhelsetjeneste"/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiOrganisasjon"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -812,7 +819,7 @@
       </reference>
       <name value="Organisasjon-2-Spesialist-RESH"/>
       <description value="Eksempel på organisasjon - spesialisthelsetjenesten med RESH."/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiOrganisasjon"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -823,14 +830,14 @@
       </reference>
       <name value="Organisasjon-3-Spesialist-topp"/>
       <description value="Eksempel på organisasjon - spesialisthelsetjenesten med RESH - toppnivå."/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiOrganisasjon"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/lmdi-patient"/>
+        <reference value="StructureDefinition/lmdiPasient"/>
       </reference>
       <name value="Pasient"/>
       <description value="Informasjon om pasienten"/>
@@ -845,7 +852,7 @@
       </reference>
       <name value="Pasient-1-Uten-FNR"/>
       <description value="Eksempel på pasient med kjønn og fødselsdato"/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiPasient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -856,7 +863,7 @@
       </reference>
       <name value="Pasient-2-FNR"/>
       <description value="Eksempel på pasient med fødselsnummer"/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiPasient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -878,7 +885,7 @@
       </reference>
       <name value="RolleHelsepersonell-1-Hjemmehjelp"/>
       <description value="Eksempel på rolle (Hjemmehjelp), ikke komplett kodeverk"/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiHelsepersonellrolle"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -942,6 +949,18 @@
         <generation value="markdown"/>
       </page>
     </page>
+    <parameter>
+      <code value="generate-json"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="generate-xml"/>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code value="generate-turtle"/>
+      <value value="false"/>
+    </parameter>
     <parameter>
       <code value="path-resource"/>
       <value value="input/capabilities"/>

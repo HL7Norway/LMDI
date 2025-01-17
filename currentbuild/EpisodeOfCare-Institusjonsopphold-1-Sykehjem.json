@@ -2,7 +2,7 @@
   "resourceType" : "EpisodeOfCare",
   "id" : "Institusjonsopphold-1-Sykehjem",
   "meta" : {
-    "profile" : ["http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-institusjonsopphold"]
+    "profile" : ["http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiIstitusjonsopphold"]
   },
   "text" : {
     "status" : "generated",

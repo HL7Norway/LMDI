@@ -2,7 +2,7 @@
   "resourceType" : "Organization",
   "id" : "Organisasjon-2-Spesialist-RESH",
   "meta" : {
-    "profile" : ["http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization"]
+    "profile" : ["http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiOrganisasjon"]
   },
   "text" : {
     "status" : "generated",

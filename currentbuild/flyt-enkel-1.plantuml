@@ -4,7 +4,7 @@ skinparam Shadowing false
 
 title "Eksempel på enkel flyt"
 header "Legemiddeldata fra institusjon til Legemiddelregisteret"
-footer "Folkehelseinstituttet / Vali AS"
+footer "Folkehelseinstituttet"
 
 actor Klient
 boundary API
