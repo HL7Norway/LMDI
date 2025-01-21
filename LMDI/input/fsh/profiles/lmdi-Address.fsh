@@ -1,7 +1,7 @@
 // Adresse med kommunenummer. Skal baseres på no-basis-adress. 
 Profile: Adresse
 Parent: Address
-Id: lmdiAdresse
+Id: lmdi-address
 Title: "Adresse"
 Description: "Adresse som inneholder utvidelse for kommune"
 * ^status = #draft

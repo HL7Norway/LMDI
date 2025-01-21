@@ -1,6 +1,6 @@
 Profile: Legemiddelrekvirering
 Parent: MedicationRequest
-Id: lmdiLegemiddelrekvirering
+Id: lmdi-medicationrequest
 Title: "Legemiddelrekvirering"
 Description: "Legemiddelrekvirering - ordinering, resept eller annen rekvirering av legemiddel"
 

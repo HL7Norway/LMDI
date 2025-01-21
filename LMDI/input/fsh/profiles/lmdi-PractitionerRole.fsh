@@ -1,19 +1,29 @@
-Profile:     Helsepersonellrolle
-Id:          lmdiHelsepersonellrolle
-Parent:      PractitionerRole
-Title:       "Helsepersonellrolle"
+Profile: Helsepersonellrolle
+Id: lmdi-practitionerrole
+Parent: PractitionerRole
+Title: "Helsepersonellrolle"
 Description: "Rollen til helsepersonellet eller personen som har foreskrevet eller administrert legemiddelet"
+
+// Metadata
 * ^status = #draft
 * ^date = "2024-06-12"
 * ^publisher = "Folkehelseinstituttet"
 
+// Rolle
+* code 1..1
 * code ^short = "Kode for helsepersonells rolle."
-* code ^comment = "Det finnes p.t. ikke gode nok kodeverk/verdisett, spesielt innenfor primærhelsetjenesten. Som placeholder settes HL7 FHIR sitt eksempel-verdisett basert på SNOMED CT. Se issue #14 på GitHub."
+* code ^comment = "Det finnes p.t. ikke gode nok kodeverk/verdisett, spesielt innenfor primærhelsetjenesten. 
+    Som placeholder settes HL7 FHIR sitt eksempel-verdisett basert på SNOMED CT. 
+    Se issue #14 på GitHub."
+
+// Kodesystem
+* code.coding 1..1
+* code.coding.system 1..1
 * code.coding.system = "http://snomed.info/sct"
-// Alternativ: required | extensible | preferred | example
+* code.coding.code 1..1
 * code.coding.code from http://hl7.org/fhir/ValueSet/practitioner-role (example)
 
-// EKSEMPLER
+// Eksempel
 Instance: RolleHelsepersonell-1-Hjemmehjelp
 InstanceOf: Helsepersonellrolle
 Description: "Eksempel på rolle (Hjemmehjelp), ikke komplett kodeverk"

@@ -2,7 +2,7 @@
 // Spør FHI: Er kommunenummer for bosted og/eller tjeneste? Yngve sier begge. 
 
 Profile:     Pasient
-Id:          lmdiPasient
+Id:          lmdi-patient
 Parent:      Patient
 Title:       "Pasient"
 Description: "Informasjon om pasienten"

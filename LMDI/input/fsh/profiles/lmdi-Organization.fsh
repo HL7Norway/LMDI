@@ -2,7 +2,7 @@
 
 Profile: Organisasjon
 Parent: Organization
-Id: lmdiOrganisasjon
+Id: lmdi-organization
 Title: "Organisasjon"
 Description: "Organisasjon eller organisasjonsenhet. "
 * ^status = #draft

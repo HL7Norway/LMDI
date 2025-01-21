@@ -1,6 +1,6 @@
 Profile: Legemiddeladministrering
 Parent: MedicationAdministration
-Id: lmdLegemiddeladministrering
+Id: lmdi-medicationadministration
 Title: "Legemiddeladministrering"
 Description: """Beskriver administrering av legemiddel til pasient på institusjon.
 
@@ -89,7 +89,7 @@ Expression: "$this.matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}.*$')"
 // ValueSet Definition
 // =========================================
 ValueSet: LegemiddeladministreringStatus
-Id: lmdi-medicationadministration-status
+Id: lmdi-medicationadministrationstatus
 Title: "Status for legemiddeladministrering"
 Description: "Verdisett som begrenses status til Legemiddeladministrering til henholdsvis 'Gjennomført' eller 'Feilregistrert'."
 * ^version = "0.1.0"

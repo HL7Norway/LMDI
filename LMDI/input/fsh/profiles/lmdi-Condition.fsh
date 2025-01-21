@@ -1,46 +1,63 @@
 Profile: Diagnose
 Parent: Condition
-Id: lmdiDiagnose
+Id: lmdi-condition
 Title: "Diagnose"
-Description: "Diagnosen som pasienten har fått rekvirert og administrert legemiddelet for. "
+Description: "Diagnosen som pasienten har fått rekvirert og administrert legemiddelet for."
+
+// Metadata
 * ^status = #draft
 * ^date = "2024-06-12"
 * ^publisher = "Folkehelseinstituttet"
 
+// Grunnleggende elementer
+* subject 1..1
+* subject only Reference(Pasient)
 * subject ^short = "Pasienten diagnosen er knyttet til."
-* subject only Reference(Patient)
 
+// Diagnosekoding
 * code 1..1
 * code ^short = "Diagnosekode."
 * code ^definition = "Diagnosekode. Det er mulig å bruke ICD-10, ICD-11, ICPC-2 og SNOMED CT."
+
+// Kodingsystemoppsett
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "system"
 * code.coding ^slicing.rules = #closed
-* code.coding contains 
-      SCT 0..1 and
-      ICD10 0..1 and 
-      ICD11 0..1 and 
-      ICPC2 0..1
+
+// Definisjon av kodesystemer
+* code.coding contains
+    SCT 0..1 and
+    ICD10 0..1 and 
+    ICD11 0..1 and 
+    ICPC2 0..1
+
+// SNOMED CT
 * code.coding[SCT] ^short = "SNOMED CT"
 * code.coding[SCT] ^definition = "SNOMED CT er ei systematisk samling av helsefaglege omgrep som kan brukast til å dokumentere og dele opplysningar knytt til pasientbehandlinga. Ved å bruke eit felles omgrepsapparat skal det bli lettare å kommunisere mellom ulike delar av helsetenesta."
+* code.coding[SCT].system = "http://snomed.info/sct"
+* code.coding[SCT].code 1..1
+
+// ICD-10
 * code.coding[ICD10] ^short = "ICD-10"
 * code.coding[ICD10] ^definition = "ICD-10: Den internasjonale statistiske klassifikasjonen av sykdommer og beslektede helseproblemer."
+* code.coding[ICD10].system = "urn:oid:2.16.578.1.12.4.1.1.7110"
+* code.coding[ICD10].code 1..1
+
+// ICD-11
 * code.coding[ICD11] ^short = "ICD-11"
 * code.coding[ICD11] ^definition = "International Classification of Diseases, 11th Revision Mortality and Morbidity Statistics (MMS)."
 * code.coding[ICD11] ^comment = "Skal erstattes av navnerom som peker på generell ICD-11, ikke MMS."
+* code.coding[ICD11].system = "http://id.who.int/icd/release/11/mms"
+* code.coding[ICD11].system ^comment = "Kilde for URI: https://build.fhir.org/ig/HL7/UTG/CodeSystem-ICD11MMS.html"
+* code.coding[ICD11].code 1..1
+
+// ICPC-2
 * code.coding[ICPC2] ^short = "ICPC-2"
 * code.coding[ICPC2] ^definition = "ICPC-2 er den internasjonale klassifikasjonen for helseproblemer, diagnoser og andre årsaker til kontakt med primærhelsetjenesten."
-* code.coding[SCT].system = "http://snomed.info/sct"
-* code.coding[SCT].code 1..1
-* code.coding[ICD10].system = "urn:oid:2.16.578.1.12.4.1.1.7110"
-* code.coding[ICD10].code 1..1
-* code.coding[ICD11].system = "http://id.who.int/icd/release/11/mms"
-* code.coding[ICD11].system ^comment = "Kilde for URI: https://build.fhir.org/ig/HL7/UTG/CodeSystem-ICD11MMS.html "
-* code.coding[ICD11].code 1..1
 * code.coding[ICPC2].system = "urn:oid:2.16.578.1.12.4.1.1.7170"
 * code.coding[ICPC2].code 1..1
 
-// EKSEMPLER
+// Eksempelinstanser
 Instance: Diagnose-1-ICD10-OID
 InstanceOf: Diagnose
 Description: "Eksempel på diagnose ICD-10"
