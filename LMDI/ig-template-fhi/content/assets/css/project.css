@@ -819,3 +819,7 @@ a:not(.nav-link) {
 .navbar-nav {
   margin-bottom: 0!important;
 }
+
+#publish-box {
+  display: none!important;
+}
