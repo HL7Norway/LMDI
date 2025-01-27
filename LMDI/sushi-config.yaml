@@ -37,7 +37,7 @@ parameters:
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
-  Home: index.html
+  Hjem: index.html
   Informasjonsmodell: informasjonsmodell.html
   Artifacts: artifacts.html
   Oppgaver: oppgaver.html
