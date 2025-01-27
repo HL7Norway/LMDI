@@ -1,0 +1,102 @@
+</div> <!-- /inner-wrapper -->
+</div> <!-- /row -->
+</div> <!-- /container -->
+</div> <!-- /segment-content -->
+
+<script type="text/javascript" src="{{site.data.info.assets}}assets/js/jquery.js"> </script>
+<!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="{{site.data.info.assets}}assets/js/jquery-ui.min.js"> </script>
+{% if includetabscripts %}
+<script type="text/javascript" src="{{site.data.info.assets}}assets/js/tabs.js"> </script>
+{% endif %}
+<script type="text/javascript" src="{{site.data.info.assets}}assets/js/window-hash.js"> </script>
+<a name="bottom"> </a>
+<div id="segment-footer" igtool="footer" class="segment"> <!-- segment-footer -->
+    <div class="container"> <!-- container -->
+        <div class="container-fluid">
+            {% if shownav == 'y' %}
+            <div style="background-color:var(--footer-nav-bg-color)">
+                <table style="width:100%">
+                    <tbody>
+                        <tr>
+                            <td style="text-align:left">&#xA0;
+                                {% if site.data.pages[page.path].previous %}
+                                <a href="{{site.data.pages[page.path].previous}}">&lt;prev</a>
+                                {% else %}
+                                <span style="visibility:hidden">&lt;prev</span>
+                                {% endif %}
+                            </td>
+                            <td style="text-align:center">
+                                <a href="#top">top</a>
+                            </td>
+                            <td style="text-align:right">&#xA0;
+                                {% if site.data.pages[page.path].next %}
+                                <a href="{{site.data.pages[page.path].next}}">next&gt;</a>
+                                {% else %}
+                                <span style="visibility:hidden">next&gt;</span>
+                                {% endif %}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            {% endif %}
+            <div class="inner-wrapper p-3">
+                <p class="m-0">
+                    IG &#169; {{site.data.info.copyrightyear}} <a style="color:var(--footer-hyperlink-text-color)"
+                        href="{{site.data.fhir.ig.contact[0].telecom[0]}}">{{site.data.fhir.ig.publisher | escape}}</a>.
+                    Package {{site.data.fhir.packageId}}#{{site.data.fhir.igVer}} based on <a
+                        style="color: var(--footer-hyperlink-text-color)" href="{{site.data.fhir.path}}">FHIR
+                        {{site.data.fhir.version}}</a>. Generated <span
+                        title="{{site.data.fhir.genDate}}">{{site.data.fhir.genDate | date: "%Y-%m-%d"}}</span>
+                    <br />
+                    <span style="color: var(--footer-highlight-text-color)">
+                        {% include fragment-footer.html %}
+                    </span>
+                </p>
+            </div> <!-- /inner-wrapper -->
+        </div>
+    </div><!-- /container -->
+</div> <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden d-none"> <!-- segment-post-footer -->
+    <div class="container"> <!-- container -->
+    </div> <!-- /container -->
+</div> <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+  ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="{{site.data.info.assets}}assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="{{site.data.info.assets}}assets/js/anchor.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="{{site.data.info.assets}}assets/js/anchor-hover.js"> </script>
+<script type="text/javascript">
+    // Style  fhi menu
+    const menu = document.getElementById('menu');
+    const ul = menu.querySelector('ul');
+    ul.classList.add('nav', 'nav-tabs', 'fhi-nav-tabs', 'fhi-main-menu__nav');
+    ul.querySelectorAll('li').forEach(li => {
+        li.classList.add('fhi-main-menu__nav-item');
+        li.querySelectorAll('a').forEach(a => {
+            a.classList.add('nav-link', 'fhi-main-menu__nav-link');
+        });
+
+        if (li.classList.contains('dropdown')) {
+            li.addEventListener('click', () => {
+                li.classList.toggle('show');
+                li.querySelector('ul').classList.toggle('show');
+            });
+        }
+    });
+</script>
+<!-- Analytics Below
+  ================================================== -->
+</body>
+
+</html>

@@ -7,5 +7,9 @@ Thumbs.db
 **/template
 **/input/fsh/old
 **/.vs/
-
+**/txCache
+.index.db
+.index.json
+**/.index.json
+**/.index.db
 *.log

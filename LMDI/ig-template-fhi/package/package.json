@@ -1,0 +1,13 @@
+{
+  "name": "no.fhi.fhir.ig.template",
+  "version": "0.0.1",
+  "type": "fhir.template",
+  "license": "CC0-1.0",
+  "author": "FHI",
+  "description": "FHIR IG Template",
+  "canonical": "http://fhir.no/ig/template",
+  "base": "fhir.base.template",
+  "dependencies": {
+    "fhir.base.template": "0.8.1"
+  }
+}
