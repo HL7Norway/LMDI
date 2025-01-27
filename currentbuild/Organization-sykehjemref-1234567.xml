@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<Organization xmlns="http://hl7.org/fhir">
-  <id value="sykehjemref-1234567"/>
-  <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization sykehjemref-1234567</b></p><a name="sykehjemref-1234567"> </a><a name="hcsykehjemref-1234567"> </a><a name="sykehjemref-1234567-no-NO"> </a></div>
-  </text>
-</Organization>

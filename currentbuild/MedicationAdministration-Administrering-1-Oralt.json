@@ -2,7 +2,7 @@
   "resourceType" : "MedicationAdministration",
   "id" : "Administrering-1-Oralt",
   "meta" : {
-    "profile" : ["http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdLegemiddeladministrering"]
+    "profile" : ["http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationadministration"]
   },
   "text" : {
     "status" : "generated",

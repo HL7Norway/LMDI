@@ -10,8 +10,8 @@
   fhir:id [ fhir:v "Pasient-2-FNR"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiPasient"^^xsd:anyURI ;
-       fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiPasient>
+       fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient"^^xsd:anyURI ;
+       fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient>
      ] )
   ] ; # 
   fhir:text [

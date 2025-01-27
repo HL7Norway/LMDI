@@ -2,7 +2,7 @@
   "resourceType" : "Practitioner",
   "id" : "Helsepersonell-1-HPR-nummer",
   "meta" : {
-    "profile" : ["http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiHelsepersonell"]
+    "profile" : ["http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner"]
   },
   "text" : {
     "status" : "generated",

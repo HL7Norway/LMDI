@@ -3,7 +3,7 @@
 <Organization xmlns="http://hl7.org/fhir">
   <id value="Organisasjon-3-Spesialist-topp"/>
   <meta>
-    <profile value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiOrganisasjon"/>
+    <profile value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization Organisasjon-3-Spesialist-topp</b></p><a name="Organisasjon-3-Spesialist-topp"> </a><a name="hcOrganisasjon-3-Spesialist-topp"> </a><a name="Organisasjon-3-Spesialist-topp-no-NO"> </a><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.101</code>/993467049, <code>urn.oid:2.16.578.1.12.4.1.4.102</code>/4001031</p><p><b>name</b>: Oslo universitetssykehus HF</p></div>

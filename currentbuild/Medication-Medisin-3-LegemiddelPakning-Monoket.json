@@ -2,7 +2,7 @@
   "resourceType" : "Medication",
   "id" : "Medisin-3-LegemiddelPakning-Monoket",
   "meta" : {
-    "profile" : ["http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiLegemiddel"]
+    "profile" : ["http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medication"]
   },
   "text" : {
     "status" : "generated",

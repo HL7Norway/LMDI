@@ -1,54 +1,8 @@
-/*
-
-    Specific layout and styling, project based
-
-
-*/
-/*
-Flexslider vs LayerSlider vs SliderRevolution
-Font-scaling
-Transition
-Isotope Masonry less
-popover alties => wireframe analyse hiervoor
-breadcrumb vs history what is a breadcrumb hiearchy or history?
-gray-color thingy
-
-widget-row vs thumbs vs joyo-thumbs
-shortcode for
-- Fontawesome
-- Accordion
-- Notifications
-- span-fluid in content bv span3
-font-awesome OWN export
-joyo-widget and all other style
-widget in sidebar vs in column = uiterlijk op basis van locale class via functions of template
-  een sidebar uiterlijk moet ook midden in de pagina kunnen.
-*/
-/*
-
-- SCAFFOLDING							Groundwork for the site. Background colors are set in less or overruled here
-- SCAFFOLDING OBJECTS					Objects reoccurring on every page
-- COMPONENTS							Everything what can be moved around
-- BACK TO TOP							Anchor animating to top of the page
-- EXCEPTIONS FOR SPECIFIC SITUATIONS	Some pages are not like the others
-- D-I-D AREA							Do-It-Dirty
-
-*/
-/* SCAFFOLDING STYLING
-----------------------------------------------------------------------------------------*/
-
-
-/* Colors
-
-Usage:
-var(--publish-box-border); */
-
 :root {
-
-  --ig-status-text-color: maroon; /* 1. IG Title and status text color */
+  --ig-status-text-color: var(--black); /* 1. IG Title and status text color */
   --navbar-bg-color: #7b1fad; /* 2. Header container color */
   --footer-bg-color: #707070; /* 3. Footer background color*/
-  --footer-container-bg-color: #7b1fad; /* 4. Footer container color */
+  --footer-container-bg-color: var(--color-accent-background-subtle); /* 4. Footer container color */
   --stripe-bg-color: #999999; /* 5. Header strip color */
 
   --btn-hover-color: #9b2fdd;  /* 6. Menu button hover color */
@@ -58,14 +12,14 @@ var(--publish-box-border); */
   --btn-gradient-end-color: #357ebd; /* 10. Menu item gradient end  color */
   --btn-gradient-start-color-alpha: #ff428bca; /* 11. Menu item gradient start color (with alpha) */
   --btn-gradient-end-color-alpha: #ff357ebd; /* 12. Menu item gradient end color (with alpha) */
-  --link-color: #428bca; /* 13. Hyperlink text color */
-  --link-hover-color: #2a6496; /* 14. Hyperlink text hover color */
+  --link-color: var(--color-neutral-text); /* 13. Hyperlink text color */
+  --link-hover-color: var(--color-neutral-text-subtle); /* 14. Hyperlink text hover color */
 
-  --publish-box-bg-color: yellow; /* 15. Publish box background color */
-  --publish-box-border: 1px solid #0A0008; /* 16.  Publish box border definition */
+  --publish-box-bg-color: var(--color-info-background-subtle); /* 15. Publish box background color */
+  --publish-box-border: 1px solid var(--color-info-border); /* 16.  Publish box border definition */
 
-  --toc-box-bg-color: #ffeb7e; /* 17.  TOC box background color */
-  --toc-box-border: 1px solid navy; /* 18. TOC box border definition */
+  --toc-box-bg-color: var(--color-accent-background-subtle); /* 17.  TOC box background color */
+  --toc-box-border: 1px solid var(--color-accent-border); /* 18. TOC box border definition */
 
   --stu-note-background-color: #fff2ff; /* 19. (STU) Note box background color */
   --stu-note-border-left-color: #ffa0ff; /* 20. (STU) Note box border color */
@@ -74,19 +28,13 @@ var(--publish-box-border); */
   --ig-header-container-color: #ffffff; /* 22. Header container color (center) */
   --footer-nav-bg-color: #f5f5f5; /* 23. Footer navigation background color*/
 
-  --footer-text-color: #ffffff; /* 24. Footer highlight font color */
-  --footer-hyperlink-text-color: #81BEF7; /* 25. Footer hyperlinks font color */
-  --footer-highlight-text-color: #ffff77; /* 26. Footer highlight font color */
+  --footer-text-color: var(--black); /* 24. Footer highlight font color */
+  --footer-hyperlink-text-color: var(--link-color); /* 25. Footer hyperlinks font color */
+  --footer-highlight-text-color: var(--color-neutral-base); /* 26. Footer highlight font color */
 
-  --breadcrumb-bg-color: #f5f5f5; /* 27. Breadcrumb font color */
+  --breadcrumb-bg-color: var(--color-neutral-background-subtle); /* 27. Breadcrumb font color */
   --breadcrumb-text-color: ##555555; /* 28. Breadcrumb font color */
-
-  --dragon-background-color: #fffbf7; /* 29. Dragon background color */
-  --dragon-text-color: #101020; /* 30. Dragon font color */
-
 }
-
-
 
 html {
   background-color: #ffffff;
@@ -95,6 +43,11 @@ body {
   background-color: #ffffff;
   position: relative;
   padding-top: 0;
+      font-family: var(--font-family-roboto-flex);
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 .segment {
   position: relative;
@@ -103,7 +56,7 @@ body {
   background-color: #ffffff;
   position: relative;
 }
-#segment-header {
+/* #segment-header {
   background-color: var(--ig-header-color);
 }
 #segment-header > .container {
@@ -111,7 +64,7 @@ body {
 }
 #segment-footer {
   background-color: var(--footer-bg-color);
-}
+}*/
 
 #segment-footer > .container {
   background-color: var(--footer-container-bg-color);
@@ -138,26 +91,7 @@ body {
   background-color: #e6e6e6;
   min-height: 90px;
 }
-/*
-@media (max-width: 767px) {
-	body {
-		//padding-left: 0;
-		//padding-right: 0;
-		.segment > .container {
-			//padding-left: 10px;
-			//padding-right: 10px;
-		}
-	}
-	.segment {
-		margin-left: -20px;
-		margin-right: -20px;
-		&#segment-content {
-			margin-left: 0;
-			margin-right: 0;
-		}
-	}
-}
-*/
+
 #sidebar > .inner-wrapper {
   margin-top: 14px;
   margin-bottom: 20px;
@@ -167,6 +101,7 @@ body {
   margin-top: 4px;
   margin-bottom: 20px;
 }
+
 /* SCAFFOlDING OBJECTS
 ----------------------------------------------------------------------------------------*/
 #logo {
@@ -178,6 +113,15 @@ body {
 }
 #logo img {
   max-width: 100%;
+}
+
+#fcp-nav {
+  line-height: 50px;
+  float: right;
+}
+
+#fcp-nav a {
+  color: inherit;
 }
 
 #project-nav {
@@ -403,45 +347,6 @@ blockquote.stu-note {
   background-color: var(--btn-hover-color);
 }
 
-/*
-@media (max-width: 979px) {
-    // make tabs act like nav-stacked
-    // (mostly) copied from bootstrap/navs.less
-    .nav-tabs > li {
-        float: none;
-    }
-    .nav-tabs > li > a {
-        margin-right: 0; // no need for the gap between nav items
-    }
-    .nav-tabs {
-        border-bottom: 0;
-    }
-    .nav-tabs > li > a {
-        border: 1px solid #ddd;
-        .border-top-radius(0);
-        .border-right-radius(0);
-        .border-bottom-radius(0);
-        .border-left-radius(0);
-    }
-    .nav-tabs > .active > a,
-    .nav-tabs > .active > a:hover {
-        border: 1px solid #ddd;
-    }
-    .nav-tabs > li:first-child > a {
-        .border-top-radius(4px);
-    }
-    .nav-tabs > li:last-child > a {
-        .border-bottom-radius(4px);
-    }
-    .nav-tabs > li > a:hover,
-    .nav-tabs > li > a:focus {
-        border-color: #ddd;
-        z-index: 2;
-    }
-}
-*/
-
-
 a {
   color:  var(--link-color);
   text-decoration: none;
@@ -459,7 +364,6 @@ a:focus {
   text-decoration: underline;
   background-color: transparent;
 }
-
 
 .nav-list > li > a {
   padding: 3px 15px;
@@ -745,13 +649,177 @@ li a[href^="http://"]:not([no-external^="true"]):after,li a[href^="https://"]:no
 .copy-text:hover .btn-copy {
   visibility: visible;
 }
-
-.btn-copy {
+/* .btn-copy {
   height: 14px;
   width: 17px;
   background-image: url('../ico/noun_copy to clipboard_1669410.png');
   background-size: 22px;
-  padding: 0px 0px; 
+  padding: 0px 0px;
   border-width: 0px;
   background-color: transparent;
+} */
+
+code[class*="language-"],
+pre[class*="language-"] {
+    text-shadow: none;
+}
+
+/* Overrides */
+
+#family-nav {
+  line-height: 50px;
+  float: right;
+  margin-top: 4px;
+  color: #808080;
+}
+#family-logo {
+  float: right;
+  margin-left: 6px;
+}
+
+/* Product families should override the following two colors with family-specific colors */
+#segment-footer {
+  background-color: var(--color-accent-background-subtle);
+}
+.navbar-inverse {
+  background-color: #505050;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+  background-color: #808080;
+}
+/* Generic settings common to all HL7 IGs */
+#hl7-nav {
+  line-height: 50px;
+  float: left;
+  margin-top: 4px;
+  color: #808080;
+}
+#hl7-nav a {
+  color: inherit;
+}
+#hl7-logo {
+  float: left;
+  margin-left: 6px;
+}
+#hl7-search {
+  line-height: 50px;
+  float: right;
+  margin-top: 4px;
+  color: maroon;
+}
+#hl7-search a {
+  color: inherit;
+}
+#project-nav {
+  line-height: 50px;
+  float: left;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  color: #808080;
+}
+#project-logo {
+  float: left;
+  margin-left: 3px;
+}
+
+
+/* ----------note-to-balloters styling------*/
+
+.note-to-balloters::before {
+  white-space: pre;
+  content: "Note To Balloters\A ";
+  /* #background-color: yellow; */
+  color: red;
+  font-weight: bold;
+}
+.note-to-balloters, .stu-note{
+    margin: 5px;
+    padding: 10px;
+    border-left-style: solid;
+    background-color: #fff2ff;
+    border-left-color: #ffa0ff;
+}
+
+.stu-note::before {
+  white-space: pre;
+  content: "STU Note\A ";
+  /* #background-color: yellow; */
+  color: red;
+  font-weight: bold;
+}
+
+/* toc boks */
+ul.markdown-toc
+{
+  margin: 4px;
+  padding: 4px;
+  float: right;
+  z-index: 10;
+  width: 30%;
+  background-color:  var(--toc-box-bg-color);
+  border: var(--toc-box-border);
+}
+
+ul.markdown-toc p
+{
+  font-size: 10px;
+  font-weight: bold;
+  margin: 5px;
+  padding: 0px;
+}
+
+ul.markdown-toc p.link
+{
+  font-size: 10px;
+  padding-left: 8px;
+  margin: 0px;
+}
+
+div.markdown-toc
+{
+  margin: 4px;
+  padding: 4px;
+  float: right;
+  z-index: 10;
+  width: 30%;
+  background-color:  var(--toc-box-bg-color);
+  border: var(--toc-box-border);
+}
+
+div.markdown-toc p
+{
+  font-size: 10px;
+  font-weight: bold;
+  margin: 5px;
+  padding: 0px;
+}
+
+div.markdown-toc p.link
+{
+  font-size: 10px;
+  padding-left: 8px;
+  margin: 0px;
+}
+
+.breadcrumb {
+    flex-flow: row!important;
+    padding-top: .5rem!important;
+}
+
+.breadcrumb > li + li:before {
+    content: ">\00a0";
+    padding: 0 5px;
+    color: #cccccc;
+}
+
+a:not(.nav-link) {
+  text-decoration: underline;
+}
+
+.navbar-nav {
+  margin-bottom: 0!important;
+}
+
+#publish-box {
+  display: none!important;
 }

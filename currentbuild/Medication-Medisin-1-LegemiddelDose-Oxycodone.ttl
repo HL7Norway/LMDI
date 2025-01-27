@@ -11,8 +11,8 @@
   fhir:id [ fhir:v "Medisin-1-LegemiddelDose-Oxycodone"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiLegemiddel"^^xsd:anyURI ;
-       fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiLegemiddel>
+       fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medication"^^xsd:anyURI ;
+       fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medication>
      ] )
   ] ; # 
   fhir:text [

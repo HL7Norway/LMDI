@@ -27,58 +27,58 @@
     }
   ],
   "profiles": {
-    "MedicationAdministration": [
-      {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdLegemiddeladministrering",
-        "title": "Legemiddeladministrering"
-      }
-    ],
     "Condition": [
       {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiDiagnose",
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition",
         "title": "Diagnose"
-      }
-    ],
-    "Practitioner": [
-      {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiHelsepersonell",
-        "title": "Helsepersonell"
-      }
-    ],
-    "PractitionerRole": [
-      {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiHelsepersonellrolle",
-        "title": "Helsepersonellrolle"
       }
     ],
     "EpisodeOfCare": [
       {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiIstitusjonsopphold",
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-episodeofcare",
         "title": "Institusjonsopphold"
       }
     ],
     "Medication": [
       {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiLegemiddel",
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medication",
         "title": "Legemiddel"
+      }
+    ],
+    "MedicationAdministration": [
+      {
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationadministration",
+        "title": "Legemiddeladministrering"
       }
     ],
     "MedicationRequest": [
       {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiLegemiddelrekvirering",
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationrequest",
         "title": "Legemiddelrekvirering"
       }
     ],
     "Organization": [
       {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiOrganisasjon",
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization",
         "title": "Organisasjon"
       }
     ],
     "Patient": [
       {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiPasient",
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient",
         "title": "Pasient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner",
+        "title": "Helsepersonell"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole",
+        "title": "Helsepersonellrolle"
       }
     ]
   },

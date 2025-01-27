@@ -11,8 +11,8 @@
   fhir:id [ fhir:v "RolleHelsepersonell-1-Hjemmehjelp"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiHelsepersonellrolle"^^xsd:anyURI ;
-       fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiHelsepersonellrolle>
+       fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole"^^xsd:anyURI ;
+       fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole>
      ] )
   ] ; # 
   fhir:text [
