@@ -1,0 +1,28 @@
+    <link href="{{site.data.info.assets}}assets/css/fhir.css" rel="stylesheet" type="text/css" />
+    <link href="{{site.data.info.assets}}assets/css/fhi.css" rel="stylesheet" type="text/css" />
+    <link href="{{site.data.info.assets}}assets/css/project.css" rel="stylesheet" type="text/css" />
+
+    <style>
+    {% if site.data.features.css.navbar %}
+    .navbar-inverse {
+        background-color: #{{site.data.features.css.navbar}};
+    }
+
+    #segment-footer {
+      background-color: #{{site.data.features.css.navbar}};
+    }
+    {% endif %}
+
+    {% if site.data.features.css.hover %}
+    .navbar-inverse .navbar-nav li  a:hover {
+      background-color: #{{site.data.features.css.hover}};
+    }
+    {% endif %}
+
+    {% if site.data.features.css.title %}
+    #ig-status {
+      color: #{{site.data.features.css.title}};
+    }
+    {% endif %}
+
+    </style>

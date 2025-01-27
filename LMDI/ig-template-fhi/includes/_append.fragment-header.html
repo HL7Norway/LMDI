@@ -1,0 +1,33 @@
+{% if site.data.info.releaselabel != '' %}
+{% assign status = site.data.info.releaselabel %}
+{% else %}
+{% assign status = site.data.fhir.ig.status %}
+{% endif %}
+<header class="fhi-header mb-0">
+    <div class="fhi-header__brand">
+        <div class="container fhi-header__brand-container">
+            <div class="fhi-header__brand-content">
+                <a class="fhi-header__logo" href="javascript:void(0)">
+                    <i class="icon-fhi-logo fhi-header__logo-icon"></i>
+                    <span class="visually-hidden">FHI Produktnavn</span>
+                </a>
+                <div class="fhi-header__project">
+                    <span class="fhi-header__project-name d-inline">{{site.data.fhir.ig.title | escape_once}}<span style="display:inline;" class="tagline"> &mdash; {{site.data.fhir.ig.version}} - {{status}}
+                            {% assign igId = site.data.fhir.ig.id | prepend: "ImplementationGuide/" %}
+                            {% for jurisdiction in site.data.resources[igId].jurisdictions %}
+                            {% if jurisdiction.flag %}
+                            <img alt="{{jurisdiction.name}} flag" src="assets/images/{{jurisdiction.flag}}.svg" height="16"
+                                title="{{jurisdiction.name}}" />
+                            {% elsif jurisdiction.code %}
+                            <span title="{{jurisdiction.name}}">{{jurisdiction.code}}</span>
+                            {% else %}
+                            {{jurisdiction.name}}
+                            {% endif %}
+                            {% endfor %}
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

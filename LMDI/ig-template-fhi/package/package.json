@@ -1,0 +1,13 @@
+{
+  "name": "no.fhir.ig.template",
+  "version": "0.5.0",
+  "type": "fhir.template",
+  "license": "CC0-1.0",
+  "author": "HL7 Norway",
+  "description": "FHIR IG Template",
+  "canonical": "http://fhir.no/ig/template",
+  "base": "fhir.base.template",
+  "dependencies": {
+    "fhir.base.template": "0.8.1"
+  }
+}
