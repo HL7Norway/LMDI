@@ -63,6 +63,45 @@
 }
 
 body {
-   font-family: var(--font-family-roboto-flex)!important;
-   font-size: 16px;
+    font-family: var(--font-family-roboto-flex)!important;
+    font-size: 16px;
+}
+
+/* Headings */
+h1 {
+    font-size: var(--font-size-10);
+    font-weight: var(--font-weight-medium);
+}
+
+h2 {
+    font-size: var(--font-size-8);
+    font-weight: var(--font-weight-medium);
+
+}
+
+h3 {
+    font-size: var(--font-size-6);
+    font-weight: var(--font-weight-medium);
+
+}
+
+h4 {
+    font-size: var(--font-size-5);
+    font-weight: var(--font-weight-medium);
+
+}
+
+h5 {
+    font-size: var(--font-size-5);
+    font-weight: var(--font-weight-regular);
+
+}
+
+h6 {
+    font-size: var(--font-size-4);
+    font-weight: var(--font-weight-regular);
+}
+
+code {
+    font-size: unset!important;
 }

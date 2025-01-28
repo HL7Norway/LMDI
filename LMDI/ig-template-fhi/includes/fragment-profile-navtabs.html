@@ -12,111 +12,58 @@
 {% assign contained_resource = 'y' %}
 {% endif %}
 
-<div class="fhi-nav-tabs">
-    <ul class="nav nav-tabs">
-    {% if include.active == 'content' %}
-    <li class="nav-item active">
-        <a class="nav-link active" href="#">Content</a>
-    </li>
-    {% else %}
-    <li class="nav-item">
-        <a class="nav-link" href="{{include.type}}-{{include.id}}.html">Content</a>
-    </li>
-    {% endif %}
+<div class="fhi-nav-tabs border-bottom">
+    <ul class="nav nav-tabs undermeny mb-0">
+        {% capture contentHref %}{{ include.type }}-{{ include.id }}.html{% endcapture %}
+        {% include tabs.html key='content' label='Content' href=contentHref
+        active=include.active %}
 
-    {% if include.active == 'definition' %}
-    <li class="nav-item active">
-        <a class="nav-link active" href="#">Detailed Descriptions</a>
-    </li>
-    {% else %}
-    <li class="nav-item">
-        <a class="nav-link" href="{{include.type}}-{{include.id}}-definitions.html">Detailed Descriptions</a>
-    </li>
-    {% endif %}
+        {% capture definitionsHref %}{{ include.type }}-{{ include.id }}-definitions.html{% endcapture %}
+        {% include tabs.html key='definition' label='Detailed Descriptions' href=definitionsHref active=include.active %}
 
-    {% unless excludemaps == 'y' %}
-    {% if include.active == 'mapping' %}
-        <li class="nav-item active">
-        <a class="nav-link active" href="#">Mappings</a>
-        </li>
-    {% else %}
-        <li class="nav-item">
-        <a class="nav-link" href="{{include.type}}-{{include.id}}-mappings.html">Mappings</a>
-        </li>
-    {% endif %}
-    {% endunless %}
+        {% unless excludemaps == 'y' %}
+        {% capture mappingsHref %}{{ include.type }}-{{ include.id }}-mappings.html{% endcapture %}
+        {% include tabs.html key='mapping' label='Mappings' href=mappingsHref
+        active=include.active %}
+        {% endunless %}
 
-    {% if site.data.resources[resource_].['testplan'] or site.data.resources[resource_].['testscript'] %}
-    {% if include.active == 'testing' %}
-        <li class="nav-item active">
-        <a class="nav-link active" href="#">Testing</a>
-        </li>
-    {% else %}
-        <li class="nav-item">
-        <a class="nav-link" href="{{include.type}}-{{include.id}}-testing.html">Testing</a>
-        </li>
-    {% endif %}
-    {% endif %}
-
-    {% unless example_count == 0 %}
-    {% unless sd_type == 'Extension' %}
-    {% unless excludeexamples == 'y' %}
-        {% if include.active == 'example' %}
-        <li class="nav-item active">
-            <a class="nav-link active" href="#">Examples</a>
-        </li>
-        {% else %}
-        <li class="nav-item">
-            <a class="nav-link" href="{{include.type}}-{{include.id}}-examples.html">Examples</a>
-        </li>
+        {% if site.data.resources[resource_]['testplan'] or site.data.resources[resource_]['testscript'] %}
+        {% capture testingHref %}{{ include.type }}-{{ include.id }}-testing.html{% endcapture %}
+        {% include tabs.html key='testing' label='Testing' href=testingHref
+        active=include.active %}
         {% endif %}
-    {% endunless %}
-    {% endunless %}
-    {% endunless %}
 
-    {% unless excludexml == 'y' or contained_resource == 'y' %}
-    {% if include.active == 'xml' %}
-        <li class="nav-item active">
-        <a class="nav-link active" href="#">XML</a>
-        </li>
-    {% else %}
-        <li class="nav-item">
-        <a class="nav-link" href="{{include.type}}-{{include.id}}.profile.xml.html">XML</a>
-        </li>
-    {% endif %}
-    {% endunless %}
-    {% unless excludejson == 'y' or contained_resource == 'y' %}
-    {% if include.active == 'json' %}
-        <li class="nav-item active">
-        <a class="nav-link active" href="#">JSON</a>
-        </li>
-    {% else %}
-        <li class="nav-item">
-        <a class="nav-link" href="{{include.type}}-{{include.id}}.profile.json.html">JSON</a>
-        </li>
-    {% endif %}
-    {% endunless %}
-    {% unless excludettl == 'y' or contained_resource == 'y' %}
-    {% if include.active == 'ttl' %}
-        <li class="nav-item active">
-        <a class="nav-link active" href="#">TTL</a>
-        </li>
-    {% else %}
-        <li class="nav-item">
-        <a class="nav-link" href="{{include.type}}-{{include.id}}.profile.ttl.html">TTL</a>
-        </li>
-    {% endif %}
-    {% endunless %}
-    {% if  site.data.resources[resource_].['history'] %}
-    {% if include.active == 'history' %}
-        <li class="nav-item active">
-        <a class="nav-link active" href="#">History</a>
-        </li>
-    {% else %}
-        <li class="nav-item">
-        <a class="nav-link" href="{{include.type}}-{{include.id}}.profile.history.html">History</a>
-        </li>
-    {% endif %}
-    {% endif %}
+        {% unless example_count == 0 %}
+        {% unless sd_type == 'Extension' %}
+        {% unless excludeexamples == 'y' %}
+        {% capture examplesHref %}{{ include.type }}-{{ include.id }}-examples.html{% endcapture %}
+        {% include tabs.html key='example' label='Examples' href=examplesHref
+        active=include.active %}
+        {% endunless %}
+        {% endunless %}
+        {% endunless %}
+
+        {% unless excludexml == 'y' or contained_resource == 'y' %}
+        {% capture xmlHref %}{{ include.type }}-{{ include.id }}.profile.xml.html{% endcapture %}
+        {% include tabs.html key='xml' label='XML' href=xmlHref
+        active=include.active %}
+        {% endunless %}
+
+        {% unless excludejson == 'y' or contained_resource == 'y' %}
+        {% capture jsonHref %}{{ include.type }}-{{ include.id }}.profile.json.html{% endcapture %}
+        {% include tabs.html key='json' label='JSON' href=jsonHref
+        active=include.active %}
+        {% endunless %}
+
+        {% unless excludettl == 'y' or contained_resource == 'y' %}
+        {% capture ttlHref %}{{ include.type }}-{{ include.id }}.profile.ttl.html{% endcapture %}
+        {% include tabs.html key='ttl' label='TTL' href=ttlHref
+        active=include.active %}
+        {% endunless %}
+
+        {% if site.data.resources[resource_]['history'] %}
+        {% capture historyHref %}{{ include.type }}-{{ include.id }}.profile.history.html{% endcapture %}
+        {% include tabs.html key='history' label='History' href=historyHref active=include.active %}
+        {% endif %}
     </ul>
 </div>

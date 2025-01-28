@@ -1,0 +1,11 @@
+<li class="nav-item {% if include.active == include.key %}active{% endif %}">
+    <!-- {% if include.active == include.key %}
+    <a class="nav-link active" href="#">{{ include.label }}</a>
+    {% else %}
+    <a class="nav-link" href="{{ include.href }}">{{ include.label }}</a>
+    {% endif %} -->
+        <a class="nav-link {% if include.active == include.key %}active{% endif %}"
+            href="{% if include.active == include.key %}#{% else %}{{ include.href }}{% endif %}">
+            {{ include.label }}
+        </a>
+</li>

@@ -224,10 +224,20 @@ a:not(.nav-link) {
   min-height: 100%;
 }
 
-.copy-text .btn-copy {
+/* .copy-text .btn-copy {
     visibility: visible;
-}
+} */
 
 .btn-copy {
   background-image: unset;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  border: unset;
+}
+
+.undermeny li a {
+  font-size: var(--font-size-3)!important;
 }

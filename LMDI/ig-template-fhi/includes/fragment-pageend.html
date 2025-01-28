@@ -73,8 +73,24 @@
 <script type="text/javascript" src="{{site.data.info.assets}}assets/js/anchor.min.js"> </script>
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
 <script type="text/javascript" src="{{site.data.info.assets}}assets/js/anchor-hover.js"> </script>
+<script id="page-data" type="application/json">
+  {
+    "breadcrumb": "{{ site.data.pages[page.path].breadcrumb }}"
+  }
+</script>
 <script type="text/javascript">
-    // Style  fhi menu
+    const pageData = JSON.parse(document.getElementById("page-data").textContent);
+
+    const secondLevel = (key) => {
+        if (pageData.breadcrumb) {
+            const liRegex = /<li>(.*?)<\/li>/g;
+            const listItems = [...pageData.breadcrumb.matchAll(liRegex)].map(match => match[1].trim());
+            return listItems[1]?.includes(key) || false;
+        }
+        return false;
+    };
+
+    // Style FHI menu
     const menu = document.getElementById('menu');
     const ul = menu.querySelector('ul');
     ul.classList.add('nav', 'nav-tabs', 'fhi-nav-tabs', 'fhi-main-menu__nav');
@@ -92,7 +108,23 @@
         }
     });
 
-    // clipboard.js
+    // Set active class on menu item
+    const path = window.location.pathname;
+    const page = path.split("/").pop();
+    const menuItems = document.querySelectorAll('.fhi-main-menu__nav-item');
+    menuItems.forEach(item => {
+        const menuLink = item.querySelector('a').getAttribute('href');
+        if (menuLink === page) {
+            item.classList.add('active');
+            item.querySelector('a').classList.add('active');
+        }
+        else if (secondLevel(menuLink)) {
+            item.classList.add('active');
+            item.querySelector('a').classList.add('active');
+        }
+    });
+
+    // Init clipboard.js
     new ClipboardJS('.btn-copy');
 </script>
 <!-- Analytics Below
