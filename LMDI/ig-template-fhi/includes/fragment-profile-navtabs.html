@@ -1,0 +1,69 @@
+{% assign excludexml = site.data.info.excludexml | downcase | slice: 0 %}
+{% assign excludejson = site.data.info.excludejson | downcase | slice: 0 %}
+{% assign excludettl = site.data.info.excludettl | downcase | slice: 0 %}
+{% assign excludemaps = site.data.info.excludemap | downcase | slice: 0 %}
+{% assign excludeexamples = site.data.info.excludeexample | downcase | slice: 0 %}
+{% assign sd_type = site.data.structuredefinitions.[include.id].type %}
+{% assign resource_ = include.type| append: '/'| append: include.id  %}
+{% assign has_history = site.data.resources[resource_].['history'] %}
+{% assign basepath = include.type | append: '-' | append: include.id | append: '.html' %}
+{% assign example_count = site.data.pages[basepath].examples.size %}
+{% if site.data.resources[resource_].source contains "#" %}
+{% assign contained_resource = 'y' %}
+{% endif %}
+
+<div class="fhi-nav-tabs border-bottom">
+    <ul class="nav nav-tabs undermeny mb-0">
+        {% capture contentHref %}{{ include.type }}-{{ include.id }}.html{% endcapture %}
+        {% include tabs.html key='content' label='Content' href=contentHref
+        active=include.active %}
+
+        {% capture definitionsHref %}{{ include.type }}-{{ include.id }}-definitions.html{% endcapture %}
+        {% include tabs.html key='definition' label='Detailed Descriptions' href=definitionsHref active=include.active %}
+
+        {% unless excludemaps == 'y' %}
+        {% capture mappingsHref %}{{ include.type }}-{{ include.id }}-mappings.html{% endcapture %}
+        {% include tabs.html key='mapping' label='Mappings' href=mappingsHref
+        active=include.active %}
+        {% endunless %}
+
+        {% if site.data.resources[resource_]['testplan'] or site.data.resources[resource_]['testscript'] %}
+        {% capture testingHref %}{{ include.type }}-{{ include.id }}-testing.html{% endcapture %}
+        {% include tabs.html key='testing' label='Testing' href=testingHref
+        active=include.active %}
+        {% endif %}
+
+        {% unless example_count == 0 %}
+        {% unless sd_type == 'Extension' %}
+        {% unless excludeexamples == 'y' %}
+        {% capture examplesHref %}{{ include.type }}-{{ include.id }}-examples.html{% endcapture %}
+        {% include tabs.html key='example' label='Examples' href=examplesHref
+        active=include.active %}
+        {% endunless %}
+        {% endunless %}
+        {% endunless %}
+
+        {% unless excludexml == 'y' or contained_resource == 'y' %}
+        {% capture xmlHref %}{{ include.type }}-{{ include.id }}.profile.xml.html{% endcapture %}
+        {% include tabs.html key='xml' label='XML' href=xmlHref
+        active=include.active %}
+        {% endunless %}
+
+        {% unless excludejson == 'y' or contained_resource == 'y' %}
+        {% capture jsonHref %}{{ include.type }}-{{ include.id }}.profile.json.html{% endcapture %}
+        {% include tabs.html key='json' label='JSON' href=jsonHref
+        active=include.active %}
+        {% endunless %}
+
+        {% unless excludettl == 'y' or contained_resource == 'y' %}
+        {% capture ttlHref %}{{ include.type }}-{{ include.id }}.profile.ttl.html{% endcapture %}
+        {% include tabs.html key='ttl' label='TTL' href=ttlHref
+        active=include.active %}
+        {% endunless %}
+
+        {% if site.data.resources[resource_]['history'] %}
+        {% capture historyHref %}{{ include.type }}-{{ include.id }}.profile.history.html{% endcapture %}
+        {% include tabs.html key='history' label='History' href=historyHref active=include.active %}
+        {% endif %}
+    </ul>
+</div>

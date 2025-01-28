@@ -1,0 +1,48 @@
+{% assign excludexml = site.data.info.excludexml | downcase | slice: 0 %}
+{% assign excludejson = site.data.info.excludejson | downcase | slice: 0 %}
+{% assign excludettl = site.data.info.excludettl | downcase | slice: 0 %}
+{% assign excludelogbinaryformat = site.data.info.excludelogbinaryformat | downcase | slice: 0 %}
+{% assign resource_ = include.type| append: '/'| append: include.id  %}
+{% assign has_history = site.data.resources[resource_].['history'] %}
+{% if site.data.resources[resource_].sourceTail contains "#" %}
+{% assign contained_resource = 'y' %}
+{% endif %}
+{% if excludelogbinaryformat == 'y' and site.data.artifacts[page.path].type == 'Binary' %}
+{% assign profile_path = site.data.artifacts[page.path].exampleOf.url %}
+{% assign profile_structure = site.data.structuredefinitions | where: "path", profile_path | first %}
+{% if profile_structure.kind == 'logical' %}
+{% assign suppressformat = 'y' %}
+{% endif %}
+{% endif %}
+<div class="fhi-nav-tabs border-bottom">
+    <ul class="nav nav-tabs undermeny mb-0">
+        {% capture contentHref %}{{ include.type }}-{{ include.id }}.html{% endcapture %}
+        {% include tabs.html key="content" label="Narrative Content"
+        href=contentHref active=include.active %}
+
+        {% if site.data.resources[resource_]['testplan'] or site.data.resources[resource_]['testscript'] %}
+        {% capture testingHref %}{{ include.type }}-{{ include.id }}-testing.html{% endcapture %}
+        {% include tabs.html key='testing' label='Testing' href=testingHref active=include.active %}
+        {% endif %}
+
+        {% unless excludexml == 'y' or contained_resource == 'y' or suppressformat == 'y' %}
+        {% capture xmlHref %}{{ include.type }}-{{ include.id }}.xml.html{% endcapture %}
+        {% include tabs.html key='xml' label='XML' href=xmlHref active=include.active %}
+        {% endunless %}
+
+        {% unless excludejson == 'y' or contained_resource == 'y' or suppressformat == 'y' %}
+        {% capture jsonHref %}{{ include.type }}-{{ include.id }}.json.html{% endcapture %}
+        {% include tabs.html key='json' label='JSON' href=jsonHref active=include.active %}
+        {% endunless %}
+
+        {% unless excludettl == 'y' or contained_resource == 'y' or suppressformat == 'y' %}
+        {% capture ttlHref %}{{ include.type }}-{{ include.id }}.ttl.html{% endcapture %}
+        {% include tabs.html key='ttl' label='TTL' href=ttlHref active=include.active %}
+        {% endunless %}
+
+        {% if site.data.resources[resource_]['history'] %}
+        {% capture historyHref %}{{ include.type }}-{{ include.id }}.change.history.html{% endcapture %}
+        {% include tabs.html key='history' label='History' href=historyHref active=include.active %}
+        {% endif %}
+    </ul>
+</div>
