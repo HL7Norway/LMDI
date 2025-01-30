@@ -1,27 +1,27 @@
 @import url('https://cdn.jsdelivr.net/gh/HL7/ig-template-base@master/content/assets/css/project.css');
 
 :root {
-  --ig-status-text-color: var(--black); /* 1. IG Title and status text color */
+  --ig-status-text-color: var(--fhi-black); /* 1. IG Title and status text color */
   --navbar-bg-color: #7b1fad; /* 2. Header container color */
   --footer-bg-color: #707070; /* 3. Footer background color*/
-  --footer-container-bg-color: var(--color-accent-background-subtle); /* 4. Footer container color */
+  --footer-container-bg-color: var(--fhi-color-accent-background-subtle); /* 4. Footer container color */
   --stripe-bg-color: #999999; /* 5. Header strip color */
 
   --btn-hover-color: #9b2fdd;  /* 6. Menu button hover color */
-  --btn-active-color: var(--black); /* 7. Menu button active color */
+  --btn-active-color: var(--fhi-black); /* 7. Menu button active color */
   --btn-text-color: #e6e6e6; /* 8. Menu button text color */
   --btn-gradient-start-color: #428bca; /* 9. Menu item gradient start color */
   --btn-gradient-end-color: #357ebd; /* 10. Menu item gradient end  color */
   --btn-gradient-start-color-alpha: #ff428bca; /* 11. Menu item gradient start color (with alpha) */
   --btn-gradient-end-color-alpha: #ff357ebd; /* 12. Menu item gradient end color (with alpha) */
-  --link-color: var(--color-neutral-text); /* 13. Hyperlink text color */
-  --link-hover-color: var(--color-neutral-text-subtle); /* 14. Hyperlink text hover color */
+  --link-color: var(--fhi-color-neutral-text); /* 13. Hyperlink text color */
+  --link-hover-color: var(--fhi-color-neutral-text-subtle); /* 14. Hyperlink text hover color */
 
-  --publish-box-bg-color: var(--color-info-background-subtle); /* 15. Publish box background color */
-  --publish-box-border: 1px solid var(--color-info-border); /* 16.  Publish box border definition */
+  --publish-box-bg-color: var(--fhi-color-info-background-subtle); /* 15. Publish box background color */
+  --publish-box-border: 1px solid var(--fhi-color-info-border); /* 16.  Publish box border definition */
 
-  --toc-box-bg-color: var(--color-accent-background-subtle); /* 17.  TOC box background color */
-  --toc-box-border: 1px solid var(--color-accent-border); /* 18. TOC box border definition */
+  --toc-box-bg-color: var(--fhi-color-accent-background-subtle); /* 17.  TOC box background color */
+  --toc-box-border: 1px solid var(--fhi-color-accent-border); /* 18. TOC box border definition */
 
   --stu-note-background-color: #fff2ff; /* 19. (STU) Note box background color */
   --stu-note-border-left-color: #ffa0ff; /* 20. (STU) Note box border color */
@@ -30,11 +30,11 @@
   --ig-header-container-color: #ffffff; /* 22. Header container color (center) */
   --footer-nav-bg-color: #f5f5f5; /* 23. Footer navigation background color*/
 
-  --footer-text-color: var(--black); /* 24. Footer highlight font color */
+  --footer-text-color: var(--fhi-black); /* 24. Footer highlight font color */
   --footer-hyperlink-text-color: var(--link-color); /* 25. Footer hyperlinks font color */
-  --footer-highlight-text-color: var(--color-neutral-base); /* 26. Footer highlight font color */
+  --footer-highlight-text-color: var(--fhi-color-neutral-base); /* 26. Footer highlight font color */
 
-  --breadcrumb-bg-color: var(--color-neutral-background-subtle); /* 27. Breadcrumb font color */
+  --breadcrumb-bg-color: var(--fhi-color-neutral-background-subtle); /* 27. Breadcrumb font color */
   --breadcrumb-text-color: ##555555; /* 28. Breadcrumb font color */
 }
 
@@ -43,22 +43,12 @@ html, body {
 }
 
 body {
-  font-family: var(--font-family-roboto-flex);
+  font-family: var(--fhi-font-family-roboto-flex);
   font-size: 16px;
   line-height: 1.6;
   margin: 0;
   padding: 0;
 }
-
-/* .btn-copy {
-  height: 14px;
-  width: 17px;
-  background-image: url('../ico/noun_copy to clipboard_1669410.png');
-  background-size: 22px;
-  padding: 0px 0px;
-  border-width: 0px;
-  background-color: transparent;
-} */
 
 /* Overrides */
 #family-nav {
@@ -74,7 +64,7 @@ body {
 
 /* Product families should override the following two colors with family-specific colors */
 #segment-footer {
-  background-color: var(--color-accent-background-subtle);
+  background-color: var(--fhi-color-accent-background-subtle);
 }
 .navbar-inverse {
   background-color: #505050;
@@ -224,10 +214,6 @@ a:not(.nav-link) {
   min-height: 100%;
 }
 
-/* .copy-text .btn-copy {
-    visibility: visible;
-} */
-
 .btn-copy {
   background-image: unset;
 }
@@ -239,5 +225,5 @@ a:not(.nav-link) {
 }
 
 .undermeny li a {
-  font-size: var(--font-size-3)!important;
+  font-size: var(--fhi-font-size-3)!important;
 }

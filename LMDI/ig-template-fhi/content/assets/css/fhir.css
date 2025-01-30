@@ -76,11 +76,11 @@ table.colstu {
 }
 
 table.colstu td {
-  border: 1px var(--color-neutral-border) solid;
+  border: 1px var(--fhi-color-neutral-border) solid;
 	border-spacing: 0;
 	padding: 5px;
 	border-collapse: collapse;
-	background-color: var(--orange-100);
+	background-color: var(--fhi-orange-100);
 }
 
 table.colsd {
@@ -88,11 +88,11 @@ table.colsd {
 }
 
 table.colsd td {
-  border: 1px var(--color-neutral-border) solid;
+  border: 1px var(--fhi-color-neutral-border) solid;
 	border-spacing: 0;
 	padding: 5px;
 	border-collapse: collapse;
-	background-color: var(--color-neutral-background-subtle);
+	background-color: var(--fhi-color-neutral-background-subtle);
 }
 
 table.colsn {
@@ -100,11 +100,11 @@ table.colsn {
 }
 
 table.colsn td {
-  border: 1px var(--color-neutral-border)var(--color-neutral-border) solid;
+  border: 1px var(--fhi-color-neutral-border) solid;
 	border-spacing: 0;
 	padding: 5px;
 	border-collapse: collapse;
-	background-color: var(--green-100);
+	background-color: var(--fhi-green-100);
 }
 
 table.colse {
@@ -112,11 +112,11 @@ table.colse {
 }
 
 table.colse td {
-  border: 1px var(--color-neutral-border) solid;
+  border: 1px var(--fhi-color-neutral-border) solid;
 	border-spacing: 0;
 	padding: 5px;
 	border-collapse: collapse;
-	background-color: var(--greyblue-100);
+	background-color: var(--fhi-greyblue-100);
 }
 
 table.colsi {
@@ -124,11 +124,11 @@ table.colsi {
 }
 
 table.colsi td {
-  border: 1px var(--color-neutral-border) solid;
+  border: 1px var(--fhi-color-neutral-border) solid;
 	border-spacing: 0;
 	padding: 5px;
 	border-collapse: collapse;
-	background-color: var(--yellow-100);
+	background-color: var(--fhi-yellow-100);
 }
 
 table.colsdp {
@@ -136,11 +136,11 @@ table.colsdp {
 }
 
 table.colsdp td {
-  border: 1px var(--color-neutral-border) solid;
+  border: 1px var(-fhi-color-neutral-border) solid;
 	border-spacing: 0;
 	padding: 5px;
 	border-collapse: collapse;
-	background-color: var(--red-100);
+	background-color: var(--fhi-red-100);
 }
 
 
