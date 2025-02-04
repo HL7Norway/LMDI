@@ -16,8 +16,13 @@ Description: "Adresse som inneholder utvidelse for kommune"
 // Kommentert vekk og puttet i lmdi-Organization.fsh inntil videre. 
 
 // EKSEMPLER
-// FSH genererer ikke eksempler for datatyper, ergo Usage=inline for å unngå feilmeldinger. 
-// Instance: Adresse-1
-// InstanceOf: Adresse
-// Description: "Eksempel på adresse med kun kommunenummer"
-// Usage: #inline
+Instance: EksempelAdresse
+InstanceOf: Adresse
+Description: "Eksempel på adresse med kun kommunenummer"
+Usage: #inline
+* district = "Oslo"
+* district.extension[municipalitycode].valueCoding = urn:oid:2.16.578.1.12.4.1.1.3402#0301 "Oslo"
+* city = "Oslo"
+* postalCode = "0001"
+* country = "NO"
+

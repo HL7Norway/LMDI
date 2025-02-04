@@ -35,11 +35,18 @@ Description: "Legemiddelrekvirering - ordinering eller annen rekvirering av lege
 * requester only Reference(Helsepersonell)
 * requester ^short = "Referanse til rekvirent"
 
+* reported[x] only boolean
 
 // Deaktiverte elementer
 * text 0..0
 * recorder 0..0
 * insurance 0..0
+* encounter 0..0
+* supportingInformation 0..0
+* performer 0..0
+* performerType 0..0
+* reasonReference 0..0
+* basedOn 0..0
 
 
 

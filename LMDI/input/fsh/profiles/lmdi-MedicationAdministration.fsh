@@ -37,7 +37,7 @@ Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legem
 * request MS
 * request only Reference(Legemiddelrekvirering)
 * request ^short = "Referanse til rekvisisjon"
-* request ^definition = "Referanse til rekvisisjonen som denne administreringen er basert på (som for eksempel resept eller ordinering."
+* request ^definition = "Referanse til rekvisisjonen som denne administreringen er basert på."
 
 * reasonReference only Reference(Diagnose)
 

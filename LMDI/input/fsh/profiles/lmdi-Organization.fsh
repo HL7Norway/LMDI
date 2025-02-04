@@ -1,50 +1,73 @@
-// TODO #8 Utvide Organisasjon med utvidelse for kommunenummer fra no-basis
-
+// Hoveddefinisjon av organisasjonsprofil
 Profile: Organisasjon
 Parent: Organization
 Id: lmdi-organization
 Title: "Organisasjon"
-Description: "Organisasjon eller organisasjonsenhet. "
+Description: "Profil for organisasjoner i norsk helse- og omsorgstjeneste"
+* ^version = "0.9.3"
 * ^status = #draft
-* ^date = "2024-06-12"
+* ^date = "2025-01-27"
 * ^publisher = "Folkehelseinstituttet"
 
+// Grunnleggende kardinalitet
+* text 0..0
+* identifier 0..* MS
+* active 0..0
+* telecom 0..0
+
+// Regler for identifikatorer
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #closed
-* identifier contains ENH 0..1 and RESH 0..1
-* identifier 1..* 
-* identifier ^short = "Unik identifikasjon av enhet basert på organisasjonsnummer eller RESH-id."
-* identifier ^comment = "Skal baseres på no-basis-Organization."
+* identifier ^short = "Organisasjonsidentifikatorer (ENH/RESH)"
+* identifier ^comment = "Identifikatorer skal angis på laveste mulige organisatoriske nivå. For eksempel organisasjonsnummer for sykehjemmet fremfor kommunen der det finnes."
+
+// Oppdeling av identifikatortyper
+* identifier contains
+    ENH 0..1 and
+    RESH 0..1
 * identifier[ENH] ^short = "Organisasjonsnummer fra Enhetsregisteret"
-* identifier[RESH] ^short = "Id fra Register for enheter i spesialisthelsetjenesten (RESH)"
-* identifier[ENH].system = "urn:oid:2.16.578.1.12.4.1.4.101" 
-* identifier[RESH].system = "urn.oid:2.16.578.1.12.4.1.4.102" 
+* identifier[ENH] ^comment = "Identifikatorer skal angis på laveste relevante virksomhetsnivå i henhold til SSBs retningslinjer. For kommunale tjenester betyr dette på institusjonsnivå (f.eks sykehjem) der egen organisatorisk enhet er etablert, ikke på overordnet kommunenivå."
+* identifier[ENH].system = "urn:oid:2.16.578.1.12.4.1.4.101" (exactly)
 * identifier[ENH].value 1..1
+* identifier[ENH].value ^short = "Organisasjonsnummer"
+
+* identifier[RESH] ^short = "ID fra Register for enheter i spesialisthelsetjenesten"
+* identifier[RESH] ^comment = "Det nivået aktiviteten har skjedd på."
+* identifier[RESH].system = "urn:oid:2.16.578.1.12.4.1.4.102" (exactly)
 * identifier[RESH].value 1..1
+* identifier[RESH].value ^short = "RESH-ID"
 
-* type MS
-* type ^short = "Organisatorisk nivå / betegnelse"
-* type ^comment = "Mangler gode kodeverk. De som er i no-basis-organization er ikke tilstrekkelig. "
+// Organisasjonstype
+* type 1..*
+* type ^short = "Organisasjonstype"
+* type ^definition = "Type organisasjon (f.eks. sykehus, avdeling, klinikk)"
+* type from $organization-type (preferred)
 
-* name MS
-* name ^short = "Navn på organisasjonsenhet"
-* name ^definition = "Eks. avdelingsnavn / institsjonsnavn / org navn"
-* name ^comment = "Inkluderer helst hvis opplysningen finnes."
+// Navnekrav
+* name 1..1 MS 
+* name ^short = "Organisasjonsnavn"
+* name ^definition = "Offisielt navn på organisasjonen"
 
+// Adresse med kommunekode
 * address MS
+* address.type = #physical
+* address.district MS
 * address.district.extension contains NoBasisMunicipalitycode named municipalitycode 0..1
-* address.district.extension[municipalitycode] ^short = "Coded value for municipality/county Norwegian kommune"
-* address.district.extension[municipalitycode] ^definition = "Coded value for municipality/county Norwegian kommune"
 
+// Hierarkisk struktur
 * partOf MS
-* partOf ^short = "Del av organisasjon"
-* partOf ^comment = "Er det behov for nivåer, rekursjon? NB! Kan bare peke oppover."
+* partOf ^short = "Overordnet organisasjon"
+* partOf ^definition = "Organisasjonen som denne organisasjonen er en del av"
+* partOf only Reference(Organisasjon)
 
-// Kopiert fra Thomas sin fsh-no-basis
+// Definisjon av eksterne kodeverk og verdisett
 Alias: $kommunenummer-alle = https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle
+Alias: $organization-type = http://terminology.hl7.org/CodeSystem/organization-type
+
+// Utvidelse for kommunenummer (kopiert fra no-basis)
 Extension: NoBasisMunicipalitycode
-Id: noBasisMunicipalitycode
+Id: no-basis-municipalitycode
 Title: "no-basis-municipalitycode"
 Description: "Coded value for municipality/county Norwegian kommune"
 * ^version = "2.0.16"
@@ -57,36 +80,39 @@ Description: "Coded value for municipality/county Norwegian kommune"
 * value[x].code ^short = "Actual kommunenummer"
 * value[x].code ^definition = "Norwegian kommunenummer/municipalitycode"
 
-
-// EKSEMPLER
-
-Instance: Organisasjon-1-Eldrehjem
+// Eksempelinstanser
+Instance: Organisasjon-1-Sykehjem
 InstanceOf: Organisasjon
-Description: "Eksempel på organisasjon - Primærhelsetjeneste"
+Description: "Eksempel på sykehjem i primærhelsetjenesten"
 * identifier[ENH].system = "urn:oid:2.16.578.1.12.4.1.4.101"
 * identifier[ENH].value = "1234567890"
-* name = "Lykkedalen eldrehjem"
+* name = "Lykkedalen sykehjem"
+* type = $organization-type#prov "Healthcare Provider"
+* address.type = #physical
 * address.district = "Sigdal"
+* address.district.extension[municipalitycode].valueCoding = $kommunenummer-alle#3025
 
-Instance: Organisasjon-2-Spesialist-RESH
+Instance: Organisasjon-2-Avdeling
 InstanceOf: Organisasjon
-Description: "Eksempel på organisasjon - spesialisthelsetjenesten med RESH."
-* identifier[RESH].system = "urn.oid:2.16.578.1.12.4.1.4.102"
+Description: "Eksempel på spesialistavdeling"
+* identifier[RESH].system = "urn:oid:2.16.578.1.12.4.1.4.102"
 * identifier[RESH].value = "4208723"
-* name = "Avdeling for epilepsi, poliklinikk" 
-* partOf = Reference(Organisasjon-3-Spesialist-topp)
+* name = "Avdeling for epilepsi, poliklinikk"
+* type = $organization-type#dept "Hospital Department"
+* address.type = #physical
+* address.district = "Oslo"
+* address.district.extension[municipalitycode].valueCoding = $kommunenummer-alle#0301
+* partOf = Reference(Organisasjon-3-Sykehus)
 
-// OUS -> Nevroklinikken -> Avdeling for epilepsi, poliklinikk
-// Offisielt navn: Avdeling for epilepsi, poliklinikk
-// Kortnavn: SSE avd for epilepsi,poliklinikk
-// Rekvirentkode: SSE-POL
-// TODO #24 Lage eksempel på partOf med OUS for lmdi-Organization
-
-Instance: Organisasjon-3-Spesialist-topp
+Instance: Organisasjon-3-Sykehus
 InstanceOf: Organisasjon
-Description: "Eksempel på organisasjon - spesialisthelsetjenesten med RESH - toppnivå."
+Description: "Eksempel på sykehusorganisasjon"
 * identifier[ENH].system = "urn:oid:2.16.578.1.12.4.1.4.101"
 * identifier[ENH].value = "993467049"
-* identifier[RESH].system = "urn.oid:2.16.578.1.12.4.1.4.102"
+* identifier[RESH].system = "urn:oid:2.16.578.1.12.4.1.4.102"
 * identifier[RESH].value = "4001031"
 * name = "Oslo universitetssykehus HF"
+* type = $organization-type#prov "Healthcare Provider"
+* address.type = #physical
+* address.district = "Oslo"
+* address.district.extension[municipalitycode].valueCoding = $kommunenummer-alle#0301

@@ -1,51 +1,66 @@
-// TODO #5 "Helsepersonell" skal baseres på no-basis-practitioner
-// Se: https://simplifier.net/HL7Norwayno-basis/NoBasisPractitioner/~overview 
-
 Profile: Helsepersonell
 Id: lmdi-practitioner
 Parent: Practitioner
-Title: "Helsepersonell" 
-Description: """Helsepersonell som har foreskrevet eller administrert legemiddelet. 
+Title: "Helsepersonell"
+Description: """
+Profil for å dokumentere helsepersonell som har foreskrevet eller administrert legemidler i Norge. 
 
-Basisprofil for Norwegian Practitioner information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. Should be used as a basis for further profiling in use-cases where specific identity information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.
+Profilen er basert på den norske basisprofilen NoBasisPractitioner, men er begrenset til kun å inkludere:
+- Helsepersonellnummer som unik identifikator
 
-2019-03 - The no-basis-Practitioner resource main use-case is to represent the actual Practitioner, e.g. a person. The resource can include information about how to identify the practitioner in addition to the practitioner's education, qualifications and speciality. The resource can also include approvals and other centrally registered capabilities recorded for the practitioner.
+I denne profilen er personopplysninger som navn, kontaktinformasjon, fødselsdato og kjønn eksplisitt utelatt. Dette er gjort for å begrense behandling av personopplysninger til det som er nødvendig for formålet.
 
-(Engelsk tekst Hentet fra no-basis-practitioner.)
+Profilen brukes i sammenheng med legemiddeladministrering og -rekvirering, der det er behov for å dokumentere hvilket helsepersonell som har vært involvert.
 """
 
-// Metadata
 * ^status = #draft
 * ^date = "2024-06-12"
 * ^publisher = "Folkehelseinstituttet"
+* ^version = "0.1.0"
+* ^experimental = true
 
 // HPR-nummer
 * identifier 1..1
+* identifier ^short = "Helsepersonellnummer for helsepersonellet"
+* identifier ^definition = "Helsepersonellnummer er en unik identifikator fra Helsepersonellregisteret som tildeles alt autorisert helsepersonell i Norge."
+* identifier ^comment = """
+Helsepersonellnummer er påkrevet i denne profilen og skal alltid oppgis. 
+Andre identifikatorer som FNR/DNR støttes ikke i denne profilen da den er begrenset til kun autorisert helsepersonell med helsepersonellnummer."""
+
 * identifier.system 1..1
 * identifier.system = "urn:oid:2.16.578.1.12.4.1.4.4"
-* identifier.system ^short = "Nummer fra Helsepersonellregisteret (HPR)"
-* identifier.system ^definition = "In Norway all registered health care personnel is registered in the Helsepersonellregister (HPR) and is assigned a HPR-number that is used to identify the health care practitioner. Health care personnel not registered in HPR can use FNR for identification."
-* identifier.system ^comment = "Midlertidig låst til HPR. Engelsk beskrivelse fra no-basis-practitioner."
+* identifier.system ^short = "Identifikatortype: Helsepersonellnummer"
+* identifier.system ^definition = "URN OID for helsepersonellnummer (2.16.578.1.12.4.1.4.4) som identifiserer at dette er et nummer fra det norske Helsepersonellregisteret."
+* identifier.system ^comment = "Skal være helsepersonellnummer (2.16.578.1.12.4.1.4.4)"
+
 * identifier.value 1..1 
-* identifier.value ^short = "Selve identifikatoren"
+* identifier.value ^short = "Selve helsepersonellnummeret"
+* identifier.value ^definition = """
+Det faktiske helsepersonellnummeret som er tildelt helsepersonellet. 
+Dette er et unikt nummer som tildeles ved autorisasjon."""
+* identifier.value ^comment = "Helsepersonellnummer er et heltall"
 
 // Spesialitet
-* qualification MS
-* qualification ^short = "Spesialitet"
-* qualification.code.coding.system 1..1
-* qualification.code.coding.system = "urn:oid:2.16.578.1.12.4.1.1.7426"
-* qualification.code.coding.system ^short = "Helsepersonellregisterets (HPR) klassifikasjon av spesialiteter (OID=7426)"
-* qualification.code.coding.system ^definition = "Dette kodeverket inneholder koder for spesialiteter i Helsepersonellregisteret. Kilde: Forskrift om spesialistgodkjenning av helsepersonell og turnusstillinger for leger."
-* qualification.code.coding.system ^comment = "MVP - satt til HPR-spesialieter (OID=7426)."
+// * qualification ^short = "Spesialitet"
+// * qualification.code.coding.system 1..1
+// * qualification.code.coding.system = "urn:oid:2.16.578.1.12.4.1.1.7426"
+// * qualification.code.coding.system ^short = "Helsepersonellregisterets (HPR) klassifikasjon av spesialiteter (OID=7426)"
+// * qualification.code.coding.system ^definition = "Dette kodeverket inneholder koder for spesialiteter i Helsepersonellregisteret. Kilde: Forskrift om spesialistgodkjenning av helsepersonell og turnusstillinger for leger."
+// * qualification.code.coding.system ^comment = "MVP - satt til HPR-spesialieter (OID=7426)."
 
-// Eksempel
+// Deaktiverte elementer
+* text 0..0
+* name 0..0
+* telecom 0..0
+* address 0..0
+* gender 0..0
+* birthDate 0..0
+* photo 0..0
+* qualification 0..0
+* communication 0..0
+
 Instance: Helsepersonell-1-HPR-nummer
 InstanceOf: Helsepersonell
 Description: "Eksempel på helsepersonell med HPR-nummer"
 * identifier.system = "urn:oid:2.16.578.1.12.4.1.4.4"
 * identifier.value = "9144900"
-* name.family = "Lin"
-* name.given = "Rita"
-* qualification.code.coding.system = "urn:oid:2.16.578.1.12.4.1.1.7426"
-* qualification.code.coding.code = #1
-* qualification.code.coding.display = "Allmennmedisin"
