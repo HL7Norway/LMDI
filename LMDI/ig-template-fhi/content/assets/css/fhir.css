@@ -39,9 +39,13 @@ i.inherited {
 p, li {
 	font-size: 12px;
 	line-height: 1.4em;
-	font-family: verdana;
+	font-family:  var(--fhi-font-family-roboto-flex);
 	margin: 0 0 20px 0;
 	font-weight: normal;
+}
+
+.dropdown li {
+  margin: 0;
 }
 
 a.cf {
@@ -55,7 +59,7 @@ a.dict {
 td {
 	font-size: 12px;
 	line-height: 1.4em;
-	font-family: verdana;
+	font-family:  var(--fhi-font-family-roboto-flex);
 	font-weight: normal;
 	padding: 3px;
 	vertical-align: top;
@@ -64,7 +68,7 @@ td {
 tr {
 	font-size: 12px;
 	line-height: 1.4em;
-	font-family: verdana;
+	font-family:  var(--fhi-font-family-roboto-flex);
 	font-weight: normal;
 	padding: 3px;
 	vertical-align: top;
@@ -155,7 +159,7 @@ table.bare td {
 ul.dict li {
 	font-size: 11px;
 	line-height: 1.2em;
-	font-family: verdana;
+	font-family:  var(--fhi-font-family-roboto-flex);
 	font-weight: normal;
 	padding: 3px;
 }
@@ -164,7 +168,7 @@ table.dict td {
         padding:3px 7px 2px 7px;
 	font-size: 11px;
 	line-height: 1.2em;
-	font-family: verdana;
+	font-family:  var(--fhi-font-family-roboto-flex);
 	font-weight: normal;
 	padding: 3px;
 	vertical-align: top;
@@ -178,7 +182,7 @@ table.dict td.structure {
         padding:3px 7px 2px 7px;
 	font-size: 12px;
 	line-height: 1.2em;
-	font-family: verdana;
+	font-family:  var(--fhi-font-family-roboto-flex);
 	font-weight: bold;
 	padding: 3px;
 	vertical-align: top;
@@ -202,37 +206,37 @@ table.codes td {
         padding:3px 7px 2px 7px;
 	font-size: 12px;
 	line-height: 1.4em;
-	font-family: verdana;
+	font-family:  var(--fhi-font-family-roboto-flex);
 	font-weight: normal;
 	padding: 3px;
 	vertical-align: top;
 }
 
-table.grid{
+table {
 	margin-bottom: 10px;
         border: 1px black solid;
         margin-right: inherit;
 
 }
 
-table.grid th {
-        border:1px solid silver;
-        padding:3px 7px 2px 7px;
+table th {
+  border:1px solid silver;
+  padding:3px 7px 2px 7px;
 	font-size: 12px;
 	line-height: 1.4em;
-	font-family: verdana;
+	font-family:  var(--fhi-font-family-roboto-flex);
 	font-weight: bold;
 	padding: 3px;
 	vertical-align: top;
 }
 
 
-table.grid td {
-        border:1px solid silver;
-        padding:3px 7px 2px 7px;
+table td {
+  border:1px solid silver;
+  padding:3px 7px 2px 7px;
 	font-size: 12px;
 	line-height: 1.4em;
-	font-family: verdana;
+	font-family:  var(--fhi-font-family-roboto-flex);
 	font-weight: normal;
 	padding: 3px;
 	vertical-align: top;
@@ -246,20 +250,20 @@ ul {
 .dense li {
 	margin: 0 0 0 0;
 }
-li {
+li:not(.fhi-main-menu__nav-item ) {
 	margin: 0 0 5px 0;
 }
 
 h1 {
 	font-size: 16px;
 	margin: 0 0 4px 0;
-	font-family: verdana;
+	font-family:  var(--fhi-font-family-roboto-flex);
 	border-bottom: 1px solid #7e7e7e;
 	padding-bottom: 2px;
 }
 
 h2 {
-	font-family: verdana;
+	font-family:  var(--fhi-font-family-roboto-flex);
 	line-height: 1.2em;
 	font-size: 14px;
 	margin: 0 0 3px 0;
@@ -270,7 +274,7 @@ h2 {
 
 
 h3 {
-	font-family: verdana;
+	font-family:  var(--fhi-font-family-roboto-flex);
 	line-height: 1.2em;
 	font-size: 12px;
 	margin: 0 0 3px 0;
@@ -278,7 +282,7 @@ h3 {
 }
 
 h4 {
-	font-family: verdana;
+	font-family:  var(--fhi-font-family-roboto-flex);
 	line-height: 1.2em;
 	font-size: 11px;
 	margin: 0 0 3px 0;
@@ -672,7 +676,7 @@ x-margin-right: 30px;
   border: 0px;
   padding:0px 4px 0px 4px;
 	font-size: 11px;
-	font-family: verdana;
+	font-family:  var(--fhi-font-family-roboto-flex);
 	vertical-align: top;
 }
 
@@ -680,7 +684,7 @@ tr.hierarchy {
   border: 1px #F0F0F0 solid;
   padding:0px 4px 0px 4px;
 	font-size: 11px;
-	font-family: verdana;
+	font-family:  var(--fhi-font-family-roboto-flex);
 	vertical-align: top;
 }
 
@@ -934,7 +938,7 @@ table.lmap th {
   padding:3px 7px 2px 7px;
   font-size: 10px;
   line-height: 1.4em;
-  font-family: verdana;
+  font-family:  var(--fhi-font-family-roboto-flex);
   font-weight: bold;
   padding: 3px;
   vertical-align: top;
@@ -946,7 +950,7 @@ table.lmap td {
   padding:3px 7px 2px 7px;
   font-size: 10px;
   line-height: 1.4em;
-  font-family: verdana;
+  font-family:  var(--fhi-font-family-roboto-flex);
   font-weight: normal;
   padding: 3px;
   vertical-align: top;
@@ -963,4 +967,14 @@ ol.fmmlist li::before {
   content: "FMM " counter(number);
   position: relative;
   left:-25px
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  background-color: var(--fhi-color-neutral-base-hover)!important;
+}
+
+.dropdown-menu .nav-link:hover:not(.active) {
+    background-color: var(--fhi-color-neutral-base-hover)!important;
 }

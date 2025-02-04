@@ -227,3 +227,8 @@ a:not(.nav-link) {
 .undermeny li a {
   font-size: var(--fhi-font-size-3)!important;
 }
+
+.dropdown-menu li a {
+  font-size: var(--fhi-font-size-3)!important;
+  text-align: left!important;
+}
