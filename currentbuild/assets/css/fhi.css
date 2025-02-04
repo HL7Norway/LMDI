@@ -105,3 +105,46 @@ h6 {
 code {
     font-size: unset!important;
 }
+
+/* table */
+table {
+	 width: auto;
+}
+ table thead th, table thead td {
+	 background-color: var(--fhi-greyblue-300);
+	 border: 1px solid var(--fhi-white);
+}
+ table thead td:empty {
+	 background-color: transparent;
+	 border-color: transparent;
+}
+ table thead th {
+	 font-weight: 400;
+}
+ table tbody > tr[aria-selected="true"] > td {
+	 --bs-table-striped-bg: var(--fhi-greyblue-300);
+	 background-color: var(--fhi-color-neutral-background-subtle);
+}
+ table tbody th[rowspan], table tbody td[rowspan] {
+	 vertical-align: middle;
+}
+ table tbody th {
+	 background-color: var(--fhi-greyblue-300);
+	 border: 1px solid var(--fhi-white);
+	 font-weight: 400;
+}
+ table tbody tr:nth-of-type(even) th {
+	 --bs-table-bg-type: var(--fhi-greyblue-300);
+}
+ th, td {
+	/* font-size: $fhi-core-font-size-1;
+	 */
+	 line-height: calc(0.0625rem * 20);
+	 transition: background-color 0.25s ease;
+}
+ th[tabindex]:focus-visible {
+	 box-shadow: 0 0 0 2px var(--fhi-color-neutral-background-subtle) inset !important;
+}
+ .table-striped td {
+	 border-color: var(--fhi-white);
+}

@@ -4,8 +4,8 @@
 
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
-    <title>Home - Legemiddeldata fra institusjon til Legemiddelregisteret
-        v0.9.2</title>
+    <title>Hjem - Legemiddeldata fra institusjon til Legemiddelregisteret
+        v0.9.4</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="http://hl7.org/fhir" />
@@ -36,6 +36,8 @@
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif]-->
+
+    <link rel="icon" sizes="32x32" href="assets/images/favicon.ico" />
 </head>
 
 <body onload="document.body.style.opacity='1'">
@@ -58,7 +60,7 @@
                     <span class="visually-hidden">FHI Produktnavn</span>
                 </a>
                 <div class="fhi-header__project">
-                    <span class="fhi-header__project-name d-inline">Legemiddeldata fra institusjon til Legemiddelregisteret<span style="display:inline;" class="tagline"> &mdash; 0.9.2 - ci-build
+                    <span class="fhi-header__project-name d-inline">Legemiddeldata fra institusjon til Legemiddelregisteret<span style="display:inline;" class="tagline"> &mdash; 0.9.4 - ci-build
                             
                             
                             
@@ -93,13 +95,13 @@
     <a href="informasjonsmodell.html">Informasjonsmodell</a>
   </li>
   <li>
+    <a href="spesifikasjon.html">Spesifikasjon</a>
+  </li>
+  <li>
     <a href="artifacts.html">Artifacts</a>
   </li>
   <li>
-    <a href="oppgaver.html">Oppgaver</a>
-  </li>
-  <li>
-    <a href="toc.html">Innholdsfortegnelse</a>
+    <a href="nedlastinger.html">Nedlastinger</a>
   </li>
 </ul>
                 </div>
@@ -111,7 +113,7 @@
     <div id="segment-breadcrumb" class="segment"> <!-- segment-breadcrumb -->
         <div class="container p-0"> <!-- container -->
             <ul class="breadcrumb p-2 mb-1">
-                <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
+                <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Hjem</b></li>
                 
             </ul>
         </div> <!-- /container -->
@@ -132,7 +134,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
-  <h2>Home</h2>
+  <h2>Hjem</h2>
   
 
 
@@ -152,12 +154,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                 </span>
         </td>
         <td><i>Version</i>:
-            <span class="copy-text">0.9.2
+            <span class="copy-text">0.9.4
                     <i
                     title="Click to copy versioned URL"
                     class="bi bi-copy btn-copy"
                     role="button"
-                    data-clipboard-text="http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi|0.9.2"
+                    data-clipboard-text="http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi|0.9.4"
                     ></i>
                 </span>
         </td>
@@ -175,7 +177,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             
             Draft
             
-            as of 2025-01-30
+            as of 2025-02-04
             
             
         </td>
@@ -201,17 +203,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div class="markdown-toc">
-<ul id="markdown-toc">
-  <li><a href="#legemiddeldata-fra-institusjon-til-legemiddelregisteret-lmdi" id="markdown-toc-legemiddeldata-fra-institusjon-til-legemiddelregisteret-lmdi">Legemiddeldata fra institusjon til Legemiddelregisteret (LMDI)</a></li>
-  <li><a href="#spesifikasjon" id="markdown-toc-spesifikasjon">Spesifikasjon</a></li>
-  <li><a href="#utvikling" id="markdown-toc-utvikling">Utvikling</a></li>
-  <li><a href="#samhandlingsarkitektur" id="markdown-toc-samhandlingsarkitektur">Samhandlingsarkitektur</a></li>
-  <li><a href="#plan" id="markdown-toc-plan">Plan</a></li>
-  <li><a href="#kontaktpersoner" id="markdown-toc-kontaktpersoner">Kontaktpersoner</a></li>
-</ul>
-
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
+
 <h3 id="legemiddeldata-fra-institusjon-til-legemiddelregisteret-lmdi">Legemiddeldata fra institusjon til Legemiddelregisteret (LMDI)</h3>
 
 <p>Komplette og oppdaterte helsedata på legemidler er tilgjengelig for analyse og forskning med tanke på å forbedre kvalitet, styring, helseovervåking, beredskap og kunnskapsforvaltning i helsetjenesten</p>
@@ -223,54 +218,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p><img src="lmdi-1.png" width="75%" />
 <br clear="all" /></p>
 
-<h3 id="spesifikasjon">Spesifikasjon</h3>
-
-<p>Se <a href="informasjonsmodell.html">informasjonsmodell</a>.</p>
-
-<h3 id="utvikling">Utvikling</h3>
-
-<ul>
-  <li>All utvikling skjer på eget <a href="https://github.com/HL7Norway/LMDI">repository på GitHub</a>. Sidene du leser nå publiseres automatisk derfra.</li>
-  <li>All koding av profiler skjer med <a href="https://www.hl7.org/fhir/uv/shorthand/">FHIR Shorthand</a> (FSH)</li>
-  <li>Dokumentasjon genereres med <a href="https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation">IG Publisher</a></li>
-</ul>
-
-<p>I første omgang utvikles implementasjonsguiden for <a href="https://www.hl7.org/fhir/R4/">FHIR R4</a>, da dette er anbefalingen fra Helsedirektoratet og HL7 Norge. Tilrettelegging for R4B eller R5 må vurderes på et senere tidspunkt.</p>
-
-<p>Er HL7 FHIR nytt for deg anbefaler vi å ta en titt på <a href="https://hl7norway.github.io/best-practice/docs/resources.html">HL7 Norge sin side med ressurser</a>, f.eks. introduksjon for henholdsvis <a href="https://www.hl7.org/fhir/overview-clinical.html">klinikere</a>, <a href="https://www.hl7.org/fhir/overview-arch.html">arkitekter</a> og <a href="https://www.hl7.org/fhir/overview-dev.html">utviklere</a>.</p>
-
-<h3 id="samhandlingsarkitektur">Samhandlingsarkitektur</h3>
-
-<p>Hovedmålet er datadeling ved hjelp av RESTful API i henhold til <a href="https://hl7.org/fhir/R4/http.html">HL7 FHIR sin spesifikasjon</a>, og etter <a href="https://www.ehelse.no/standardisering/standarder/anbefaling-om-bruk-av-hl7-fhir-for-datadeling">anbefaling fra Helsedirektoratet</a>.</p>
-
-<p>Inntil videre er profilene og implementasjonsguiden (<a href="https://hl7norway.github.io/LMDI/currentbuild/">se siste build</a>) agnostiske til om det skal genereres dokumenter eller forskjellig mønster for REST API (f.eks. <em>reference</em> vs <em>logical id</em>).</p>
-
-<h3 id="plan">Plan</h3>
-
-<p>Versjon 1.0 våren 2025.</p>
-
-<h4 id="status-og-historikk">Status og historikk</h4>
-
-<ul>
-  <li>2024-06-27: Versjon 0.9 klar for test</li>
-  <li>2024-06-13: Versjon 0.8</li>
-  <li>2024-05-28: Versjon 0.5 klar for teknisk gjennomgang og kommentering fra torsdag 30.5.2025</li>
-  <li>2024-05-23: Versjon 0.2</li>
-</ul>
-
-<h3 id="kontaktpersoner">Kontaktpersoner</h3>
-
-<ul>
-  <li>Kari Jansdotter Husabø (legemiddelregisteret@fhi.no)</li>
-  <li>Line A. Sæle (<a href="https://www.fhi.no/">FHI</a>)</li>
-  <li>Roar Andersen (team-a@fhi.no)</li>
-</ul>
-
-<hr />
-
-<p><br clear="all" />
-<img src="logo-norsk-hele-navnet.svg" height="80px" />
-<br clear="all" /></p>
 
 
 
@@ -294,10 +241,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                 <p class="m-0">
                     IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)"
                         href="https://www.fhi.no">Folkehelseinstituttet</a>.
-                    Package hl7.fhir.no.lmdi#0.9.2 based on <a
+                    Package hl7.fhir.no.lmdi#0.9.4 based on <a
                         style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR
                         4.0.1</a>. Generated <span
-                        title="Thu, Jan 30, 2025 10:14+0000">2025-01-30</span>
+                        title="Tue, Feb 4, 2025 14:35+0000">2025-02-04</span>
                     <br />
                     <span style="color: var(--footer-highlight-text-color)">
                                   Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -327,7 +274,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
 <script id="page-data" type="application/json">
   {
-    "breadcrumb": "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>"
+    "breadcrumb": "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Hjem</b></li>"
   }
 </script>
 <script type="text/javascript">

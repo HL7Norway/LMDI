@@ -5,7 +5,7 @@
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
     <title>Artifacts Summary - Legemiddeldata fra institusjon til Legemiddelregisteret
-        v0.9.2</title>
+        v0.9.4</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="http://hl7.org/fhir" />
@@ -36,6 +36,8 @@
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif]-->
+
+    <link rel="icon" sizes="32x32" href="assets/images/favicon.ico" />
 </head>
 
 <body onload="document.body.style.opacity='1'">
@@ -58,7 +60,7 @@
                     <span class="visually-hidden">FHI Produktnavn</span>
                 </a>
                 <div class="fhi-header__project">
-                    <span class="fhi-header__project-name d-inline">Legemiddeldata fra institusjon til Legemiddelregisteret<span style="display:inline;" class="tagline"> &mdash; 0.9.2 - ci-build
+                    <span class="fhi-header__project-name d-inline">Legemiddeldata fra institusjon til Legemiddelregisteret<span style="display:inline;" class="tagline"> &mdash; 0.9.4 - ci-build
                             
                             
                             
@@ -93,13 +95,13 @@
     <a href="informasjonsmodell.html">Informasjonsmodell</a>
   </li>
   <li>
+    <a href="spesifikasjon.html">Spesifikasjon</a>
+  </li>
+  <li>
     <a href="artifacts.html">Artifacts</a>
   </li>
   <li>
-    <a href="oppgaver.html">Oppgaver</a>
-  </li>
-  <li>
-    <a href="toc.html">Innholdsfortegnelse</a>
+    <a href="nedlastinger.html">Nedlastinger</a>
   </li>
 </ul>
                 </div>
@@ -190,13 +192,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/lmdi-practitioner">Helsepersonell</a>
             </td>
             <td>
-<p>Helsepersonell som har foreskrevet eller administrert legemiddelet.</p>
+<p>Profil for å dokumentere helsepersonell som har foreskrevet eller administrert legemidler i Norge.</p>
 
-<p>Basisprofil for Norwegian Practitioner information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. Should be used as a basis for further profiling in use-cases where specific identity information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.</p>
+<p>Profilen er basert på den norske basisprofilen NoBasisPractitioner, men er begrenset til kun å inkludere:</p>
+<ul>
+  <li>Helsepersonellnummer som unik identifikator</li>
+</ul>
 
-<p>2019-03 - The no-basis-Practitioner resource main use-case is to represent the actual Practitioner, e.g. a person. The resource can include information about how to identify the practitioner in addition to the practitioner’s education, qualifications and speciality. The resource can also include approvals and other centrally registered capabilities recorded for the practitioner.</p>
+<p>I denne profilen er personopplysninger som navn, kontaktinformasjon, fødselsdato og kjønn eksplisitt utelatt. Dette er gjort for å begrense behandling av personopplysninger til det som er nødvendig for formålet.</p>
 
-<p>(Engelsk tekst Hentet fra no-basis-practitioner.)</p>
+<p>Profilen brukes i sammenheng med legemiddeladministrering og -rekvirering, der det er behov for å dokumentere hvilket helsepersonell som har vært involvert.</p>
 </td>
          </tr>
          <tr>
@@ -239,6 +244,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-lmdi-bundle.html"
+                  title="StructureDefinition/lmdi-bundle">LegemiddelregisterBundle</a>
+            </td>
+            <td>
+<p>Profil av Bundle for Legemiddelregisteret. Støtter bare batch-type og POST-operasjoner, med begrensninger på tillatte ressurstyper.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-lmdi-medicationrequest.html"
                   title="StructureDefinition/lmdi-medicationrequest">Legemiddelrekvirering</a>
             </td>
@@ -252,7 +266,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/lmdi-organization">Organisasjon</a>
             </td>
             <td>
-<p>Organisasjon eller organisasjonsenhet.</p>
+<p>Profil for organisasjoner i norsk helse- og omsorgstjeneste</p>
 </td>
          </tr>
          <tr>
@@ -300,8 +314,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-noBasisMunicipalitycode.html"
-                  title="StructureDefinition/noBasisMunicipalitycode">no-basis-municipalitycode</a>
+               <a href="StructureDefinition-no-basis-municipalitycode.html"
+                  title="StructureDefinition/no-basis-municipalitycode">no-basis-municipalitycode</a>
             </td>
             <td>
 <p>Coded value for municipality/county Norwegian kommune</p>
@@ -476,6 +490,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Bundle-LegemiddelregisterBundle-1.html"
+                  title="Bundle/LegemiddelregisterBundle-1">Eksempel på LegemiddelregisterBundle med administreringer</a>
+            </td>
+            <td>
+<p>Eksempel på en batch-bundle som inneholder to legemiddeladministreringer</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="EpisodeOfCare-EksempelInstitusjonsopphold.html"
+                  title="EpisodeOfCare/EksempelInstitusjonsopphold">EksempelInstitusjonsopphold</a>
+            </td>
+            <td>
+<p>Eksempel på Institusjonsopphold</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Practitioner-Helsepersonell-1-HPR-nummer.html"
                   title="Practitioner/Helsepersonell-1-HPR-nummer">Helsepersonell-1-HPR-nummer</a>
             </td>
@@ -512,29 +544,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Organization-Organisasjon-1-Eldrehjem.html"
-                  title="Organization/Organisasjon-1-Eldrehjem">Organisasjon-1-Eldrehjem</a>
+               <a href="Organization-Organisasjon-1-Sykehjem.html"
+                  title="Organization/Organisasjon-1-Sykehjem">Organisasjon-1-Sykehjem</a>
             </td>
             <td>
-<p>Eksempel på organisasjon - Primærhelsetjeneste</p>
+<p>Eksempel på sykehjem i primærhelsetjenesten</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Organization-Organisasjon-2-Spesialist-RESH.html"
-                  title="Organization/Organisasjon-2-Spesialist-RESH">Organisasjon-2-Spesialist-RESH</a>
+               <a href="Organization-Organisasjon-2-Avdeling.html"
+                  title="Organization/Organisasjon-2-Avdeling">Organisasjon-2-Avdeling</a>
             </td>
             <td>
-<p>Eksempel på organisasjon - spesialisthelsetjenesten med RESH.</p>
+<p>Eksempel på spesialistavdeling</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Organization-Organisasjon-3-Spesialist-topp.html"
-                  title="Organization/Organisasjon-3-Spesialist-topp">Organisasjon-3-Spesialist-topp</a>
+               <a href="Organization-Organisasjon-3-Sykehus.html"
+                  title="Organization/Organisasjon-3-Sykehus">Organisasjon-3-Sykehus</a>
             </td>
             <td>
-<p>Eksempel på organisasjon - spesialisthelsetjenesten med RESH - toppnivå.</p>
+<p>Eksempel på sykehusorganisasjon</p>
 </td>
          </tr>
          <tr>
@@ -605,10 +637,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                 <p class="m-0">
                     IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)"
                         href="https://www.fhi.no">Folkehelseinstituttet</a>.
-                    Package hl7.fhir.no.lmdi#0.9.2 based on <a
+                    Package hl7.fhir.no.lmdi#0.9.4 based on <a
                         style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR
                         4.0.1</a>. Generated <span
-                        title="Thu, Jan 30, 2025 10:14+0000">2025-01-30</span>
+                        title="Tue, Feb 4, 2025 14:35+0000">2025-02-04</span>
                     <br />
                     <span style="color: var(--footer-highlight-text-color)">
                                   Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

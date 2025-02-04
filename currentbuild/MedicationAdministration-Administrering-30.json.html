@@ -7,7 +7,7 @@
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
     <title>Administrering-30 - JSON Representation - Legemiddeldata fra institusjon til Legemiddelregisteret
-        v0.9.2</title>
+        v0.9.4</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="http://hl7.org/fhir" />
@@ -38,6 +38,8 @@
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif]-->
+
+    <link rel="icon" sizes="32x32" href="assets/images/favicon.ico" />
 </head>
 
 <body onload="document.body.style.opacity='1'">
@@ -60,7 +62,7 @@
                     <span class="visually-hidden">FHI Produktnavn</span>
                 </a>
                 <div class="fhi-header__project">
-                    <span class="fhi-header__project-name d-inline">Legemiddeldata fra institusjon til Legemiddelregisteret<span style="display:inline;" class="tagline"> &mdash; 0.9.2 - ci-build
+                    <span class="fhi-header__project-name d-inline">Legemiddeldata fra institusjon til Legemiddelregisteret<span style="display:inline;" class="tagline"> &mdash; 0.9.4 - ci-build
                             
                             
                             
@@ -95,13 +97,13 @@
     <a href="informasjonsmodell.html">Informasjonsmodell</a>
   </li>
   <li>
+    <a href="spesifikasjon.html">Spesifikasjon</a>
+  </li>
+  <li>
     <a href="artifacts.html">Artifacts</a>
   </li>
   <li>
-    <a href="oppgaver.html">Oppgaver</a>
-  </li>
-  <li>
-    <a href="toc.html">Innholdsfortegnelse</a>
+    <a href="nedlastinger.html">Nedlastinger</a>
   </li>
 </ul>
                 </div>
@@ -204,7 +206,7 @@
   "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.id">id</a>" : "Administrering-30",
   "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: MedicationAdministration Administrering-30&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;Administrering-30\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcAdministrering-30\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;Administrering-30-no-NO\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;medication&lt;/b&gt;: Identifier: &lt;code&gt;uri:eu:spor:idmp:mpid:dummy&lt;/code&gt;/1a38f25a8791fc3270e7c388f2031eee&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;https://fhi.no/fhir/lmdi/pasient/12345678\&quot;&gt;https://fhi.no/fhir/lmdi/pasient/12345678&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2024-05-28&lt;/p&gt;&lt;h3&gt;Dosages&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Route&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Dose&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://snomed.info/sct 47625008}\&quot;&gt;Intravenous route (qualifier value)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;100 mg&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemg = 'mg')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: MedicationAdministration Administrering-30&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;Administrering-30\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcAdministrering-30\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;Administrering-30-no\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;medication&lt;/b&gt;: Identifier: &lt;code&gt;uri:eu:spor:idmp:mpid:dummy&lt;/code&gt;/1a38f25a8791fc3270e7c388f2031eee&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;https://fhi.no/fhir/lmdi/pasient/12345678\&quot;&gt;https://fhi.no/fhir/lmdi/pasient/12345678&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2024-05-28&lt;/p&gt;&lt;h3&gt;Dosages&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Route&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Dose&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://snomed.info/sct 47625008}\&quot;&gt;Intravenous route (qualifier value)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;100 mg&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemg = 'mg')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.status">status</a>" : "completed",
   "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.medication[x]">medicationReference</a>" : {
@@ -261,10 +263,10 @@
                 <p class="m-0">
                     IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)"
                         href="https://www.fhi.no">Folkehelseinstituttet</a>.
-                    Package hl7.fhir.no.lmdi#0.9.2 based on <a
+                    Package hl7.fhir.no.lmdi#0.9.4 based on <a
                         style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR
                         4.0.1</a>. Generated <span
-                        title="Thu, Jan 30, 2025 10:14+0000">2025-01-30</span>
+                        title="Tue, Feb 4, 2025 14:35+0000">2025-02-04</span>
                     <br />
                     <span style="color: var(--footer-highlight-text-color)">
                                   Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

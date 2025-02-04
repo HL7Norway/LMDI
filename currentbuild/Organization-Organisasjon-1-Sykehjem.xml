@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="Organisasjon-1-Sykehjem"/>
+  <meta>
+    <profile value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization Organisasjon-1-Sykehjem</b></p><a name="Organisasjon-1-Sykehjem"> </a><a name="hcOrganisasjon-1-Sykehjem"> </a><a name="Organisasjon-1-Sykehjem-no"> </a><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.101</code>/1234567890</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span></p><p><b>name</b>: Lykkedalen sykehjem</p><p><b>address</b>: </p></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.16.578.1.12.4.1.4.101"/>
+    <value value="1234567890"/>
+  </identifier>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+      <code value="prov"/>
+      <display value="Healthcare Provider"/>
+    </coding>
+  </type>
+  <name value="Lykkedalen sykehjem"/>
+  <address>
+    <type value="physical"/>
+    <district value="Sigdal">
+      <extension url="http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode">
+        <valueCoding>
+          <system value="https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle"/>
+          <code value="3025"/>
+        </valueCoding>
+      </extension>
+    </district>
+  </address>
+</Organization>
