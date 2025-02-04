@@ -57,8 +57,3 @@ Støtter modellen denne type use-case?
 
 Planlegge neste arbeidsgruppemøte. 
 
-
----
-
-{% include footer.md %}
-

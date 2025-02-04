@@ -22,3 +22,13 @@ Description: "Beskrivelse av pasientens opphold i institusjon. Dette kan være b
 
 // TODO: Vurder behov for diagnose/utskrivningsdiagnose
 * diagnosis ^comment = "Sjekke om utskrivningsdiagnose skal/bør være med."
+
+Instance: EksempelInstitusjonsopphold
+InstanceOf: Institusjonsopphold
+Description: "Eksempel på Institusjonsopphold"
+* patient = Reference(Pasient-2-FNR)
+* managingOrganization = Reference(Organisasjon-1-Sykehjem)
+* period.start = "2024-01-01"
+* period.end = "2024-01-15"
+* status = #active
+* type = http://terminology.hl7.org/CodeSystem/episodeofcare-type#hacc "Home and Community Care"

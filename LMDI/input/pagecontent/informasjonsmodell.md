@@ -22,7 +22,3 @@ Diskusjonsunderlagsmodell, under stadig forandring! Stereotypen sier hvilken FHI
 
 <img src="flyt-enkel-2.svg" width="50%" />
 <br clear="all"/>
-
----
-
-{% include footer.md %}
