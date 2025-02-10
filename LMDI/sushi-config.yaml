@@ -30,6 +30,7 @@ contact:
 jurisdiction: urn:iso:std:iso:3166#NO "Norway"
 
 parameters:
+  path-assets: input/assets
   apply-contact: true
   apply-jurisdiction: true
   generate-json: true

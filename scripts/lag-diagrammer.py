@@ -56,6 +56,7 @@ class FHIRProfileParser:
 
     def generate_plantuml(self) -> str:
         uml = ["@startuml", 
+               'hide empty members',
                'skinparam class {',
                '    BackgroundColor White',
                '    ArrowColor Black',
@@ -77,7 +78,7 @@ class FHIRProfileParser:
         # Add relationships
         for profile, refs in self.references.items():
             for target, element, cardinality in refs:
-                uml.append(f'{profile} --> "{element}" {target} : {cardinality}')
+                uml.append(f'{profile} "{cardinality}" --> {target} : {element}')
         
         uml.extend(["", "@enduml"])
         return "\n".join(uml)
