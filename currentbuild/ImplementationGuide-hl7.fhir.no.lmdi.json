@@ -676,19 +676,7 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:complex-type"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/lmdi-address"
-      },
-      "name" : "Adresse",
-      "description" : "Adresse som inneholder utvidelse for kommune",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "StructureDefinition"
       }],
       "reference" : {
         "reference" : "StructureDefinition/lmdi-condition"
@@ -760,7 +748,7 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "StructureDefinition"
       }],
       "reference" : {
         "reference" : "StructureDefinition/lmdi-practitioner"
@@ -784,7 +772,7 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "StructureDefinition"
       }],
       "reference" : {
         "reference" : "StructureDefinition/lmdi-practitionerrole"
@@ -796,7 +784,7 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "StructureDefinition"
       }],
       "reference" : {
         "reference" : "StructureDefinition/lmdi-episodeofcare"
@@ -808,7 +796,7 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "StructureDefinition"
       }],
       "reference" : {
         "reference" : "StructureDefinition/lmdi-medication"
@@ -820,7 +808,7 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "StructureDefinition"
       }],
       "reference" : {
         "reference" : "StructureDefinition/lmdi-medicationadministration"
@@ -832,7 +820,7 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "StructureDefinition"
       }],
       "reference" : {
         "reference" : "StructureDefinition/lmdi-bundle"
@@ -844,7 +832,7 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "StructureDefinition"
       }],
       "reference" : {
         "reference" : "StructureDefinition/lmdi-medicationrequest"
@@ -868,7 +856,31 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
+        "valueString" : "StructureDefinition"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lmdi-municipalitycode"
+      },
+      "name" : "lmdi-municipalitycode",
+      "description" : "Coded value for municipality/county Norwegian kommune",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lmdi-urban-district"
+      },
+      "name" : "lmdi-urban-district",
+      "description" : "Information about Norwegian urban district (bydel)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition"
       }],
       "reference" : {
         "reference" : "StructureDefinition/lokal-legemiddelkatalog-extension"
@@ -988,25 +1000,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/no-basis-municipalitycode"
-      },
-      "name" : "no-basis-municipalitycode",
-      "description" : "Coded value for municipality/county Norwegian kommune",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "StructureDefinition"
       }],
       "reference" : {
         "reference" : "StructureDefinition/lmdi-organization"
       },
       "name" : "Organisasjon",
-      "description" : "Profil for organisasjoner i norsk helse- og omsorgstjeneste",
+      "description" : "Organisasjoner i norsk helse- og omsorgstjeneste, som sykehus og sykehjem, og avdelinger/poster under disse.",
       "exampleBoolean" : false
     },
     {
@@ -1048,7 +1048,7 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "StructureDefinition"
       }],
       "reference" : {
         "reference" : "StructureDefinition/lmdi-patient"
@@ -1146,10 +1146,10 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "spesifikasjon.html"
+          "valueUrl" : "integrasjon.html"
         }],
-        "nameUrl" : "spesifikasjon.html",
-        "title" : "Spesifikasjon",
+        "nameUrl" : "integrasjon.html",
+        "title" : "Integrasjon",
         "generation" : "markdown",
         "page" : [{
           "extension" : [{

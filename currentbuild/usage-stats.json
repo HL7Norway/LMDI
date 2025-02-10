@@ -12,8 +12,22 @@
       ]
     },
     {
-      "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode",
-      "title": "no-basis-municipalitycode",
+      "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-municipalitycode",
+      "title": "lmdi-municipalitycode",
+      "types": [
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-urban-district",
+      "title": "lmdi-urban-district",
       "types": [
         "Coding",
         "string",
@@ -92,10 +106,12 @@
     "http://fhi.no/fhir/lmr/lokal-legemiddel-katalog": [
       "Medication.code.coding"
     ],
-    "http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode": [
-      "Address.district",
+    "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-municipalitycode": [
       "Organization.address.district",
       "Patient.address.district"
+    ],
+    "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-urban-district": [
+      "Organization.address"
     ],
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url": [
       "NamingSystem"
@@ -144,6 +160,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
     ]
   }
 }

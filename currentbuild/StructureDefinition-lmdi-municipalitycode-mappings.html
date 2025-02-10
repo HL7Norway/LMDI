@@ -8,7 +8,7 @@
 
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
-    <title>Adresse - Mappings - Legemiddeldata fra institusjon til Legemiddelregisteret
+    <title>lmdi-municipalitycode - Mappings - Legemiddeldata fra institusjon til Legemiddelregisteret
         v0.9.4</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -99,7 +99,7 @@
     <a href="informasjonsmodell.html">Informasjonsmodell</a>
   </li>
   <li>
-    <a href="spesifikasjon.html">Spesifikasjon</a>
+    <a href="integrasjon.html">Integrasjon</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -117,7 +117,7 @@
     <div id="segment-breadcrumb" class="segment"> <!-- segment-breadcrumb -->
         <div class="container p-0"> <!-- container -->
             <ul class="breadcrumb p-2 mb-1">
-                <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Adresse</b></li>
+                <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>lmdi-municipalitycode</b></li>
                 
             </ul>
         </div> <!-- /container -->
@@ -148,7 +148,7 @@
         
         <li class="nav-item ">
     <a class="nav-link "
-        href="StructureDefinition-lmdi-address.html">
+        href="StructureDefinition-lmdi-municipalitycode.html">
         Content
     </a>
 </li>
@@ -157,7 +157,7 @@
         
         <li class="nav-item ">
     <a class="nav-link "
-        href="StructureDefinition-lmdi-address-definitions.html">
+        href="StructureDefinition-lmdi-municipalitycode-definitions.html">
         Detailed Descriptions
     </a>
 </li>
@@ -182,7 +182,7 @@
         
         <li class="nav-item ">
     <a class="nav-link "
-        href="StructureDefinition-lmdi-address.profile.xml.html">
+        href="StructureDefinition-lmdi-municipalitycode.profile.xml.html">
         XML
     </a>
 </li>
@@ -193,7 +193,7 @@
         
         <li class="nav-item ">
     <a class="nav-link "
-        href="StructureDefinition-lmdi-address.profile.json.html">
+        href="StructureDefinition-lmdi-municipalitycode.profile.json.html">
         JSON
     </a>
 </li>
@@ -204,7 +204,7 @@
         
         <li class="nav-item ">
     <a class="nav-link "
-        href="StructureDefinition-lmdi-address.profile.ttl.html">
+        href="StructureDefinition-lmdi-municipalitycode.profile.ttl.html">
         TTL
     </a>
 </li>
@@ -217,7 +217,7 @@
 
 
 <a name="root"> </a>
-<h2 id="root">Data Type Profile: Adresse - Mappings</h2>
+<h2 id="root">Extension: LmdiMunicipalitycode - Mappings</h2>
 
   <table class="colsd">
     <tr>
@@ -226,7 +226,7 @@
         
           Draft
           
-            as of 2024-05-30
+            as of 2021-04-09
           
         
       </td>
@@ -235,64 +235,26 @@
   </table>
 
 
-<p>Mappings for the lmdi-address data type profile.</p>
+<p>Mappings for the lmdi-municipalitycode extension.</p>
 
   <!-- insert intro if present -->
   
 
 
 
-  <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>Adresse</b></td></tr>
- <tr><td>Address</td><td>XAD</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;use</td><td>XAD.7</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>XAD.18</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>XAD.1 + XAD.2 + XAD.3 + XAD.4 + XAD.5 + XAD.6</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;line</td><td>XAD.1 + XAD.2 (note: XAD.1 and XAD.2 have different meanings for a company address than for a person address)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;city</td><td>XAD.3</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;district</td><td>XAD.9</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;state</td><td>XAD.4</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;postalCode</td><td>XAD.5</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;country</td><td>XAD.6</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;period</td><td>XAD.12 / XAD.13 + XAD.14</td> </tr>
-</table>
-<a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>Adresse</b></td></tr>
- <tr><td>Address</td><td>n/a, AD</td> </tr>
+  <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
+ <tr><td colspan="3"><b>LmdiMunicipalitycode</b></td></tr>
+ <tr><td>Extension</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;use</td><td>unique(./use)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>unique(./use)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>./formatted</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;line</td><td>AD.part[parttype = AL]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;city</td><td>AD.part[parttype = CTY]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;district</td><td>AD.part[parttype = CNT | CPA]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;state</td><td>AD.part[parttype = STA]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;postalCode</td><td>AD.part[parttype = ZIP]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;country</td><td>AD.part[parttype = CNT]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;period</td><td>./usablePeriod[type=&quot;IVL&lt;TS&gt;&quot;]</td> </tr>
-</table>
-<a name="servd"> </a><h3>Mappings for ServD (<a href="http://www.omg.org/spec/ServD/1.0/">http://www.omg.org/spec/ServD/1.0/</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>Adresse</b></td></tr>
- <tr><td>Address</td><td>Address</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;use</td><td>./AddressPurpose</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;line</td><td>./StreetAddress (newline delimitted)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;city</td><td>./Jurisdiction</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;state</td><td>./Region</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;postalCode</td><td>./PostalIdentificationCode</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;country</td><td>./Country</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;period</td><td>./StartDate and ./EndDate</td> </tr>
-</table>
-<a name="vcard"> </a><h3>Mappings for vCard Mapping (http://w3.org/vcard)</h3><table class="grid">
- <tr><td colspan="3"><b>Adresse</b></td></tr>
- <tr><td>Address</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>address type parameter</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>address label parameter</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;line</td><td>street</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;city</td><td>locality</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;state</td><td>region</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;postalCode</td><td>code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;country</td><td>country</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;url</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;value[x]</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>./codeSystem</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;version</td><td>./codeSystemVersion</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>./code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display</td><td>CV.displayName</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;userSelected</td><td>CD.codingRationale</td> </tr>
 </table>
 
 
@@ -327,7 +289,7 @@
                     Package hl7.fhir.no.lmdi#0.9.4 based on <a
                         style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR
                         4.0.1</a>. Generated <span
-                        title="Tue, Feb 4, 2025 14:35+0000">2025-02-04</span>
+                        title="Mon, Feb 10, 2025 09:14+0000">2025-02-10</span>
                     <br />
                     <span style="color: var(--footer-highlight-text-color)">
                                   Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -357,7 +319,7 @@
 <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
 <script id="page-data" type="application/json">
   {
-    "breadcrumb": "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Adresse</b></li>"
+    "breadcrumb": "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>lmdi-municipalitycode</b></li>"
   }
 </script>
 <script type="text/javascript">

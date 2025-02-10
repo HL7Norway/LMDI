@@ -7,14 +7,14 @@
   "status" : "draft",
   "package-id" : "hl7.fhir.no.lmdi",
   "ig-ver" : "0.9.4",
-  "date" : "Tue, 04 Feb, 2025 14:35:28 +0000",
-  "dateISO8601" : "2025-02-04T14:35:28+00:00",
-  "errs" : 186,
-  "warnings" : 24,
+  "date" : "Mon, 10 Feb, 2025 09:14:34 +0000",
+  "dateISO8601" : "2025-02-10T09:14:34+00:00",
+  "errs" : 191,
+  "warnings" : 25,
   "hints" : 18,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 3,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1519425328
+  "maxMemory" : 2266330848
 }

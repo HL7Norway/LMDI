@@ -76,6 +76,9 @@ Dette er et unikt nummer som tildeles ved autorisasjon.">value</a><a name="Pract
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
   <derivation value="constraint"/>
   <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="4.0.1"/>
+    </extension>
     <element id="Practitioner">
       <path value="Practitioner"/>
       <short value="A person with a  formal responsibility in the provisioning of healthcare or related services"/>

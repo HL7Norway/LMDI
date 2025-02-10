@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -16,7 +17,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization Organisasjon-1-Sykehjem</b></p><a name=\"Organisasjon-1-Sykehjem\"> </a><a name=\"hcOrganisasjon-1-Sykehjem\"> </a><a name=\"Organisasjon-1-Sykehjem-no\"> </a><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.101</code>/1234567890</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span></p><p><b>name</b>: Lykkedalen sykehjem</p><p><b>address</b>: </p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization Organisasjon-1-Sykehjem</b></p><a name=\"Organisasjon-1-Sykehjem\"> </a><a name=\"hcOrganisasjon-1-Sykehjem\"> </a><a name=\"Organisasjon-1-Sykehjem-no\"> </a><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.101</code>/1234567890</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span></p><p><b>name</b>: Lykkedalen sykehjem</p><p><b>address</b>: </p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.101"^^xsd:anyURI ] ;
@@ -35,11 +36,12 @@
      fhir:district [
        fhir:v "Sigdal" ;
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode"^^xsd:anyURI ] ;
+         fhir:url [ fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-municipalitycode"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:Coding ;
-           fhir:system [ fhir:v "https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "3025" ]
+           fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.1.3402"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "3025" ] ;
+           fhir:display [ fhir:v "Sigdal" ]
          ]
        ] )
      ]

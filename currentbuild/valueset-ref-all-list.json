@@ -38,7 +38,6 @@
       "sources" : ["2.16.840.1.113883.4.642.3.69"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-address.html" : "Adresse",
       "StructureDefinition-lmdi-organization.html" : "Organisasjon",
       "StructureDefinition-lmdi-patient.html" : "Pasient"
     },
@@ -54,7 +53,6 @@
       "sources" : ["2.16.840.1.113883.4.642.3.67"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-address.html" : "Adresse",
       "StructureDefinition-lmdi-organization.html" : "Organisasjon",
       "StructureDefinition-lmdi-patient.html" : "Pasient"
     },
@@ -371,15 +369,15 @@
       "uses" : {
       },
       "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
-      "StructureDefinition-lmdi-bundle.html" : "LegemiddelregisterBundle",
+      "StructureDefinition-lmdi-organization.html" : "Organisasjon",
+      "StructureDefinition-lmdi-patient.html" : "Pasient",
+      "StructureDefinition-lmdi-practitionerrole.html" : "Helsepersonellrolle",
       "StructureDefinition-lmdi-episodeofcare.html" : "Institusjonsopphold",
       "StructureDefinition-lmdi-medicationrequest.html" : "Legemiddelrekvirering",
-      "StructureDefinition-lmdi-practitionerrole.html" : "Helsepersonellrolle",
       "StructureDefinition-lmdi-medication.html" : "Legemiddel",
-      "StructureDefinition-lmdi-organization.html" : "Organisasjon",
-      "StructureDefinition-lmdi-condition.html" : "Diagnose",
       "StructureDefinition-lmdi-medicationadministration.html" : "Legemiddeladministrering",
-      "StructureDefinition-lmdi-patient.html" : "Pasient"
+      "StructureDefinition-lmdi-condition.html" : "Diagnose",
+      "StructureDefinition-lmdi-bundle.html" : "LegemiddelregisterBundle"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",

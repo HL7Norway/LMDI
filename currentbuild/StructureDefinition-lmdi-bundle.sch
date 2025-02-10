@@ -9,4 +9,21 @@
     you may need to use this schematron fragment to build a, 
     single schematron that validates contained resources (if you have any) 
   -->
+  <sch:pattern>
+    <sch:title>f:Bundle</sch:title>
+    <sch:rule context="f:Bundle">
+      <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
+      <sch:assert test="count(f:timestamp) &gt;= 1">timestamp: minimum cardinality of 'timestamp' is 1</sch:assert>
+      <sch:assert test="count(f:total) &lt;= 0">total: maximum cardinality of 'total' is 0</sch:assert>
+      <sch:assert test="count(f:link) &lt;= 0">link: maximum cardinality of 'link' is 0</sch:assert>
+      <sch:assert test="count(f:entry) &gt;= 1">entry: minimum cardinality of 'entry' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Bundle/f:entry</sch:title>
+    <sch:rule context="f:Bundle/f:entry">
+      <sch:assert test="count(f:resource) &gt;= 1">resource: minimum cardinality of 'resource' is 1</sch:assert>
+      <sch:assert test="count(f:request) &gt;= 1">request: minimum cardinality of 'request' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
 </sch:schema>

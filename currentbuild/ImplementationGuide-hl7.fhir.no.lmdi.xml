@@ -516,18 +516,7 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:complex-type"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/lmdi-address"/>
-      </reference>
-      <name value="Adresse"/>
-      <description value="Adresse som inneholder utvidelse for kommune"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="StructureDefinition"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/lmdi-condition"/>
@@ -593,7 +582,7 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="StructureDefinition"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/lmdi-practitioner"/>
@@ -615,7 +604,7 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="StructureDefinition"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/lmdi-practitionerrole"/>
@@ -626,7 +615,7 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="StructureDefinition"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/lmdi-episodeofcare"/>
@@ -637,7 +626,7 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="StructureDefinition"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/lmdi-medication"/>
@@ -648,7 +637,7 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="StructureDefinition"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/lmdi-medicationadministration"/>
@@ -659,7 +648,7 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="StructureDefinition"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/lmdi-bundle"/>
@@ -670,7 +659,7 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="StructureDefinition"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/lmdi-medicationrequest"/>
@@ -692,7 +681,29 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
+        <valueString value="StructureDefinition"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lmdi-municipalitycode"/>
+      </reference>
+      <name value="lmdi-municipalitycode"/>
+      <description value="Coded value for municipality/county Norwegian kommune"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lmdi-urban-district"/>
+      </reference>
+      <name value="lmdi-urban-district"/>
+      <description value="Information about Norwegian urban district (bydel)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/lokal-legemiddelkatalog-extension"/>
@@ -802,24 +813,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/no-basis-municipalitycode"/>
-      </reference>
-      <name value="no-basis-municipalitycode"/>
-      <description value="Coded value for municipality/county Norwegian kommune"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="StructureDefinition"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/lmdi-organization"/>
       </reference>
       <name value="Organisasjon"/>
-      <description value="Profil for organisasjoner i norsk helse- og omsorgstjeneste"/>
+      <description value="Organisasjoner i norsk helse- og omsorgstjeneste, som sykehus og sykehjem, og avdelinger/poster under disse."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -857,7 +857,7 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="StructureDefinition"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/lmdi-patient"/>
@@ -946,10 +946,10 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="spesifikasjon.html"/>
+          <valueUrl value="integrasjon.html"/>
         </extension>
-        <nameUrl value="spesifikasjon.html"/>
-        <title value="Spesifikasjon"/>
+        <nameUrl value="integrasjon.html"/>
+        <title value="Integrasjon"/>
         <generation value="markdown"/>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

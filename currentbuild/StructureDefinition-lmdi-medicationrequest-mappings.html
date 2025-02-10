@@ -99,7 +99,7 @@
     <a href="informasjonsmodell.html">Informasjonsmodell</a>
   </li>
   <li>
-    <a href="spesifikasjon.html">Spesifikasjon</a>
+    <a href="integrasjon.html">Integrasjon</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -268,12 +268,11 @@
  <tr><td>&nbsp;&nbsp;&nbsp;authoredOn</td><td>Request.authoredOn</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;requester</td><td>Request.requester</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>Request.reasonCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>Request.reasonReference</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;instantiatesCanonical</td><td>Request.instantiates</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;groupIdentifier</td><td>Request.groupIdentifier</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>Request.note</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;dosageInstruction</td><td>Request.occurrence[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;priorPrescription</td><td>Request.replaces</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;eventHistory</td><td>Request.relevantHistory</td> </tr>
 </table>
 <a name="script10.6"> </a><h3>Mappings for Mapping to NCPDP SCRIPT 10.6 (http://ncpdp.org/SCRIPT10_6)</h3><table class="grid">
  <tr><td colspan="3"><b>Legemiddelrekvirering</b></td></tr>
@@ -285,12 +284,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>Message/Body/NewRx/Patient(need detail to link to specific patient … Patient.Identification in SCRIPT)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;authoredOn</td><td>Message/Body/NewRx/MedicationPrescribed/WrittenDate</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>Message/Body/NewRx/MedicationPrescribed/Diagnosis/Primary/Value</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>Message/Body/NewRx/MedicationPrescribed/Note</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;dispenseRequest</td><td>Message/Body/NewRx/MedicationPrescribed/ExpirationDate</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;validityPeriod</td><td>Message/Body/NewRx/MedicationPrescribed/Refills</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numberOfRepeatsAllowed</td><td>Message/Body/NewRx/MedicationPrescribed/Quantity</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quantity</td><td>Message/Body/NewRx/MedicationPrescribed/DaysSupply</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expectedSupplyDuration</td><td>Message/Body/NewRx/MedicationPrescribed/Substitutions</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>no mapping</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;substitution</td><td>specific values within Message/Body/NewRx/MedicationPrescribed/Substitutions</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allowed[x]</td><td>specific values within Message/Body/NewRx/MedicationPrescribed/Substitutions</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reason</td><td>not mapped</td> </tr>
@@ -315,28 +309,12 @@
  <tr><td>&nbsp;&nbsp;&nbsp;authoredOn</td><td>author.time</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;requester</td><td>.participation[typeCode=AUT].role</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>reason.observation.reasonCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>reason.observation[code=ASSERTION].value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;instantiatesCanonical</td><td>.outboundRelationship[typeCode=DEFN].target</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;instantiatesUri</td><td>.outboundRelationship[typeCode=DEFN].target</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;groupIdentifier</td><td>.outboundRelationship(typeCode=COMP].target[classCode=SBADM, moodCode=INT].id</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;courseOfTherapyType</td><td>Act.code where classCode = LIST and moodCode = EVN</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>.inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=&quot;annotation&quot;].value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;dosageInstruction</td><td>see dosageInstruction mapping</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;dispenseRequest</td><td>component.supplyEvent</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;initialFill</td><td>SubstanceAdministration -&gt; ActRelationship[sequenceNumber = '1'] -&gt; Supply</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quantity</td><td>Supply.quantity[moodCode=RQO]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;duration</td><td>Supply.effectivetime[moodCode=RQO]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dispenseInterval</td><td>Supply.effectivetime[moodCode=RQO]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;validityPeriod</td><td>effectiveTime</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numberOfRepeatsAllowed</td><td>repeatNumber</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quantity</td><td>quantity</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expectedSupplyDuration</td><td>expectedUseTime</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;performer</td><td>.outboundRelationship[typeCode=COMP].target[classCode=SPLY, moodCode=RQO] .participation[typeCode=PRF].role[scoper.determinerCode=INSTANCE]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;substitution</td><td>subjectOf.substitutionPersmission</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
@@ -344,8 +322,6 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allowed[x]</td><td>code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reason</td><td>reasonCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;priorPrescription</td><td>.outboundRelationship[typeCode=?RPLC or ?SUCC]/target[classCode=SBADM,moodCode=RQO]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;detectedIssue</td><td>.inboundRelationship[typeCode=SUBJ]/source[classCode=ALRT,moodCode=EVN].value</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;eventHistory</td><td>.inboundRelationship(typeCode=SUBJ].source[classCode=CACT, moodCode=EVN]</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
  <tr><td colspan="3"><b>Legemiddelrekvirering</b></td></tr>
@@ -360,8 +336,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;authoredOn</td><td>FiveWs.recorded</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;requester</td><td>FiveWs.author</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>FiveWs.why[x]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;dispenseRequest</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;performer</td><td>FiveWs.who</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>FiveWs.why[x]</td> </tr>
 </table>
 <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>Legemiddelrekvirering</b></td></tr>
@@ -371,9 +346,6 @@
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>PID-3-Patient ID List</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;authoredOn</td><td>RXE-32-Original Order Date/Time / ORC-9-Date/Time of Transaction</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>ORC-16-Order Control Code Reason /RXE-27-Give Indication/RXO-20-Indication / RXD-21-Indication / RXG-22-Indication / RXA-19-Indication</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;dispenseRequest</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numberOfRepeatsAllowed</td><td>RXE-12-Number of Refills</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quantity</td><td>RXD-4-Actual Dispense Amount / RXD-5.1-Actual Dispense Units.code / RXD-5.3-Actual Dispense Units.name of coding system</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;substitution</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allowed[x]</td><td>RXO-9-Allow Substitutions / RXE-9-Substitution Status</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reason</td><td>RXE-9 Substition status</td> </tr>
@@ -411,7 +383,7 @@
                     Package hl7.fhir.no.lmdi#0.9.4 based on <a
                         style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR
                         4.0.1</a>. Generated <span
-                        title="Tue, Feb 4, 2025 14:35+0000">2025-02-04</span>
+                        title="Mon, Feb 10, 2025 09:14+0000">2025-02-10</span>
                     <br />
                     <span style="color: var(--footer-highlight-text-color)">
                                   Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

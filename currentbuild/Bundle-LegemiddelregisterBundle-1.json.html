@@ -97,7 +97,7 @@
     <a href="informasjonsmodell.html">Informasjonsmodell</a>
   </li>
   <li>
-    <a href="spesifikasjon.html">Spesifikasjon</a>
+    <a href="integrasjon.html">Integrasjon</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -209,7 +209,12 @@
       <a href="StructureDefinition-lmdi-bundle.html" style="color: Maroon">&#x1F517;</a> "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-bundle"
     ]
   },
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.identifier">identifier</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:2.16.578.1.34.10.3",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "bundle-001"
+  },
   "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a>" : "batch",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.timestamp">timestamp</a>" : "2024-02-07T13:28:17.239+02:00",
   "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/patient.html#Patient">resource</a>" : {
@@ -322,7 +327,7 @@
         "<a href="http://hl7.org/fhir/R4/episodeofcare.html#EpisodeOfCare.id">id</a>" : "Institusjonsopphold-2-Sykehjem",
         "<a href="http://hl7.org/fhir/R4/episodeofcare.html#EpisodeOfCare.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;EpisodeOfCare_Institusjonsopphold-2-Sykehjem\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: EpisodeOfCare Institusjonsopphold-2-Sykehjem&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;Institusjonsopphold-2-Sykehjem\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcInstitusjonsopphold-2-Sykehjem\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;Institusjonsopphold-2-Sykehjem-no\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;Bundle-LegemiddelregisterBundle-1.html#Patient_Pasient-20\&quot;&gt;Bundle: type = batch&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;managingOrganization&lt;/b&gt;: &lt;a href=\&quot;Bundle-LegemiddelregisterBundle-1.html#Organization_Organisasjon-2-Eldrehjem\&quot;&gt;Bundle: type = batch&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2019-04-01 --&amp;gt; (ongoing)&lt;/p&gt;&lt;/div&gt;"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;EpisodeOfCare_Institusjonsopphold-2-Sykehjem\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: EpisodeOfCare Institusjonsopphold-2-Sykehjem&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;Institusjonsopphold-2-Sykehjem\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcInstitusjonsopphold-2-Sykehjem\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;Institusjonsopphold-2-Sykehjem-no\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;Bundle-LegemiddelregisterBundle-1.html#Patient_Pasient-20\&quot;&gt;Bundle: identifier = urn:oid:2.16.578.1.34.10.3#bundle-001; type = batch; timestamp = 2024-02-07 13:28:17+0200&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;managingOrganization&lt;/b&gt;: &lt;a href=\&quot;Bundle-LegemiddelregisterBundle-1.html#Organization_Organisasjon-2-Eldrehjem\&quot;&gt;Bundle: identifier = urn:oid:2.16.578.1.34.10.3#bundle-001; type = batch; timestamp = 2024-02-07 13:28:17+0200&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2019-04-01 --&amp;gt; (ongoing)&lt;/p&gt;&lt;/div&gt;"
         },
         "<a href="http://hl7.org/fhir/R4/episodeofcare.html#EpisodeOfCare.status">status</a>" : "active",
         "<a href="http://hl7.org/fhir/R4/episodeofcare.html#EpisodeOfCare.patient">patient</a>" : {
@@ -522,7 +527,7 @@
                     Package hl7.fhir.no.lmdi#0.9.4 based on <a
                         style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR
                         4.0.1</a>. Generated <span
-                        title="Tue, Feb 4, 2025 14:35+0000">2025-02-04</span>
+                        title="Mon, Feb 10, 2025 09:14+0000">2025-02-10</span>
                     <br />
                     <span style="color: var(--footer-highlight-text-color)">
                                   Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

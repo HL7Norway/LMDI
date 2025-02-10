@@ -97,7 +97,7 @@
     <a href="informasjonsmodell.html">Informasjonsmodell</a>
   </li>
   <li>
-    <a href="spesifikasjon.html">Spesifikasjon</a>
+    <a href="integrasjon.html">Integrasjon</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -204,6 +204,7 @@
   <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 @prefix sct: &lt;http://snomed.info/id/&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
@@ -220,7 +221,7 @@
   ] ; # 
   <a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: PractitionerRole RolleHelsepersonell-1-Hjemmehjelp&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;RolleHelsepersonell-1-Hjemmehjelp\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcRolleHelsepersonell-1-Hjemmehjelp\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;RolleHelsepersonell-1-Hjemmehjelp-no\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 5275007}\&quot;&gt;Hjemmehjelp (Helsefagarbeider)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: PractitionerRole RolleHelsepersonell-1-Hjemmehjelp&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;RolleHelsepersonell-1-Hjemmehjelp\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcRolleHelsepersonell-1-Hjemmehjelp\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;RolleHelsepersonell-1-Hjemmehjelp-no\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 5275007}\&quot;&gt;Hjemmehjelp (Helsefagarbeider)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
   ] ; # 
   <a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.code">fhir:code</a> ( [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
@@ -263,7 +264,7 @@ a sct:5275007 ;
                     Package hl7.fhir.no.lmdi#0.9.4 based on <a
                         style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR
                         4.0.1</a>. Generated <span
-                        title="Tue, Feb 4, 2025 14:35+0000">2025-02-04</span>
+                        title="Mon, Feb 10, 2025 09:14+0000">2025-02-10</span>
                     <br />
                     <span style="color: var(--footer-highlight-text-color)">
                                   Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

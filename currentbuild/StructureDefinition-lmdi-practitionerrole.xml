@@ -66,6 +66,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
   <derivation value="constraint"/>
   <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="4.0.1"/>
+    </extension>
     <element id="PractitionerRole">
       <path value="PractitionerRole"/>
       <short value="Roles/organizations the practitioner is associated with"/>

@@ -56,6 +56,10 @@
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare",
   "derivation" : "constraint",
   "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "4.0.1"
+    }],
     "element" : [{
       "id" : "EpisodeOfCare",
       "path" : "EpisodeOfCare",

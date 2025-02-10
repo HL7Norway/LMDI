@@ -4,7 +4,7 @@
 
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
-    <title>Spesifikasjon - Legemiddeldata fra institusjon til Legemiddelregisteret
+    <title>Integrasjon - Legemiddeldata fra institusjon til Legemiddelregisteret
         v0.9.4</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -95,7 +95,7 @@
     <a href="informasjonsmodell.html">Informasjonsmodell</a>
   </li>
   <li>
-    <a href="spesifikasjon.html">Spesifikasjon</a>
+    <a href="integrasjon.html">Integrasjon</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -113,7 +113,7 @@
     <div id="segment-breadcrumb" class="segment"> <!-- segment-breadcrumb -->
         <div class="container p-0"> <!-- container -->
             <ul class="breadcrumb p-2 mb-1">
-                <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Spesifikasjon</b></li>
+                <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Integrasjon</b></li>
                 
             </ul>
         </div> <!-- /container -->
@@ -134,7 +134,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
-  <h2>Spesifikasjon</h2>
+  <h2>Integrasjon</h2>
   
 
 
@@ -159,15 +159,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="etablering-av-integrasjon-mot-legemiddelregisteret">Etablering av integrasjon mot Legemiddelregisteret</h3>
 
-<p><strong>Hvitelisting av IP-adresse</strong></p>
+<h4 id="hvitelisting-av-ip-adresse">Hvitelisting av IP-adresse</h4>
 
 <p>For å få tilgang til API-et for overføring av data kreves det at vi registrerer avsendersystemets IP-adressen i vår oversikt over hvitelistede adresser. Både enkeltadresser og adresseområder kan hvitelistes.</p>
 
-<p><strong>Sertifikater</strong></p>
+<h4 id="sertifikater">Sertifikater</h4>
 
-<p>Data som overføres til API-et skal være kryptert og signert (se <a href="SignertKryptertBundle.html">SignertKryptertBundle</a>). Ved signering benyttes privat nøkkel i avsenders virksomhetssertifikat. Den offentlige delen av dette sertifikatet må sendes til Legemiddelregisteret. Ved kryptering av data benyttes offentlig nøkkel i Legemiddelregisterets virksomhetssertifikat. Dette kan lastes ned <a href="nedlastinger.html">her</a></p>
+<p>Data som overføres til API-et skal være kryptert og signert (se <a href="SignertKryptertBundle.html">SignertKryptertBundle</a>).</p>
+<ul>
+  <li>Ved signering benyttes privat nøkkel i avsenders virksomhetssertifikat. Den offentlige delen av dette sertifikatet må sendes til Legemiddelregisteret.</li>
+  <li>Ved kryptering av data benyttes offentlig nøkkel i Legemiddelregisterets virksomhetssertifikat. Dette kan lastes ned <a href="nedlastinger.html">her</a></li>
+</ul>
 
-<p><strong>HelseId</strong></p>
+<h4 id="helseid">HelseId</h4>
 
 <p>APIet er beskyttet av HelseID og krever at klienter autentiserer seg med Client Credentials Grant.</p>
 
@@ -184,18 +188,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Institusjoner som skal overføre data til Legemiddelregisteret, må følge den definerte protokollen. Protokollen beskriver krav til overføringsfrekvens, datastruktur og sikkerhet. Du finner mer informasjon her: <a href="protokoll.html">Protokoll for overføring av data</a>.</p>
 
-<p>2) Lag en LegemiddelregisterBundle
-<a href="StructureDefinition-lmdi-bundle.html">LegemiddelregisterBundle</a> er en spesialisert FHIR Bundle-profil utviklet for innsending av data til Legemiddelregisteret. Den er begrenset til batch-type bundles og tillater kun POST-operasjoner, noe som sikrer konsistent datahåndtering og sporbarhet. Bundlen kan kun inneholde spesifikke ressurstyper som er relevante for legemiddelregistrering: Pasient, Helsepersonell, Legemiddel, LegemiddelAdministrasjon, Diagnose, Institusjonsopphold, Legemiddelrekvirering, Organisasjon og Helsepersonellrolle.</p>
+<p>For å bygge en samling med data som skal overføres må det lages en <a href="StructureDefinition-lmdi-bundle.html">LegemiddelregisterBundle</a>. Dette er en spesialisert FHIR Bundle-profil utviklet for innsending av data til Legemiddelregisteret. Den er begrenset til batch-type bundles og tillater kun POST-operasjoner, noe som sikrer konsistent datahåndtering og sporbarhet. Bundlen kan kun inneholde spesifikke ressurstyper som er relevante for legemiddelregistrering: Pasient, Helsepersonell, Legemiddel, LegemiddelAdministrasjon, Diagnose, Institusjonsopphold, Legemiddelrekvirering, Organisasjon og Helsepersonellrolle.</p>
 
-<p>3) Når data overføres til Legemiddelregisteret, må dette skje via en <code class="language-plaintext highlighter-rouge">SignertKryptertBundle</code>, som sikrer både kryptering og signering av innholdet. Denne prosessen innebærer å komprimere, kryptere og signere en FHIR-basert <code class="language-plaintext highlighter-rouge">LegemiddelregisterBundle</code> før den sendes til API-et. Les mer om hvordan du oppretter en <code class="language-plaintext highlighter-rouge">SignertKryptertBundle</code> i <a href="SignertKryptertBundle.html">denne veiledningen</a>.</p>
+<p>Vet overføring av data skal det lages en <code class="language-plaintext highlighter-rouge">SignertKryptertBundle</code>, som sikrer både kryptering og signering av innholdet. Denne prosessen innebærer å komprimere, kryptere og signere en FHIR-basert <code class="language-plaintext highlighter-rouge">LegemiddelregisterBundle</code> før den sendes til API-et. Les mer om hvordan du oppretter en <code class="language-plaintext highlighter-rouge">SignertKryptertBundle</code> i <a href="SignertKryptertBundle.html">denne veiledningen</a>.</p>
 
-<p>4) Send bundle via API
-KryptertSignertBundle sendes til Legemiddelregisterets FHIR-mottak.
-Responskoder
+<p>URL til Legemiddelregisterets API:</p>
+<ul>
+  <li>TEST-miljø<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>: <a href="https://test-fhirmottak.legemiddelregisteret.fhi.no/api/v1">https://test-fhirmottak.legemiddelregisteret.fhi.no/api/v1</a></li>
+  <li>PROD-miljø<sup id="fnref:1:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>: <a href="https://fhirmottak.legemiddelregisteret.fhi.no/api/v1">https://fhirmottak.legemiddelregisteret.fhi.no/api/v1</a></li>
+</ul>
+
+<p>Responskoder
 200 OK: LegemiddelregisterBundleResponse</p>
 
-<p>5) Håndter respons fra API-et</p>
+<h4 id="håndter-respons-fra-api-et">Håndter respons fra API-et</h4>
 
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Foreløpig adresse - denne adressen vil endres <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:1:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+  </ol>
+</div>
 
 
 
@@ -222,7 +236,7 @@ Responskoder
                     Package hl7.fhir.no.lmdi#0.9.4 based on <a
                         style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR
                         4.0.1</a>. Generated <span
-                        title="Tue, Feb 4, 2025 14:35+0000">2025-02-04</span>
+                        title="Mon, Feb 10, 2025 09:14+0000">2025-02-10</span>
                     <br />
                     <span style="color: var(--footer-highlight-text-color)">
                                   Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -252,7 +266,7 @@ Responskoder
 <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
 <script id="page-data" type="application/json">
   {
-    "breadcrumb": "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Spesifikasjon</b></li>"
+    "breadcrumb": "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Integrasjon</b></li>"
   }
 </script>
 <script type="text/javascript">

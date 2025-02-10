@@ -61,6 +61,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"/>
   <derivation value="constraint"/>
   <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="4.0.1"/>
+    </extension>
     <element id="EpisodeOfCare">
       <path value="EpisodeOfCare"/>
       <short value="An association of a Patient with an Organization and  Healthcare Provider(s) for a period of time that the Organization assumes some level of responsibility"/>

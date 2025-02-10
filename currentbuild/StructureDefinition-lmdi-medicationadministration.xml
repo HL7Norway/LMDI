@@ -93,6 +93,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration"/>
   <derivation value="constraint"/>
   <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="4.0.1"/>
+    </extension>
     <element id="MedicationAdministration">
       <path value="MedicationAdministration"/>
       <short value="Administration of medication to a patient"/>

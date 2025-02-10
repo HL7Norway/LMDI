@@ -25,14 +25,23 @@
   }],
   "name" : "Oslo universitetssykehus HF",
   "address" : [{
+    "extension" : [{
+      "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-urban-district",
+      "valueCoding" : {
+        "system" : "urn:oid:2.16.578.1.12.4.1.1.3403",
+        "code" : "01",
+        "display" : "Gamle Oslo"
+      }
+    }],
     "type" : "physical",
     "district" : "Oslo",
     "_district" : {
       "extension" : [{
-        "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode",
+        "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-municipalitycode",
         "valueCoding" : {
-          "system" : "https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle",
-          "code" : "0301"
+          "system" : "urn:oid:2.16.578.1.12.4.1.1.3402",
+          "code" : "0301",
+          "display" : "Oslo"
         }
       }]
     }

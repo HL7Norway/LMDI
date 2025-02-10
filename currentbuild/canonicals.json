@@ -56,13 +56,6 @@
     "name" : "festLegemiddelVirkestoff"
   },
   {
-    "id" : "lmdi-address",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-address",
-    "version" : "0.9.4",
-    "name" : "Adresse"
-  },
-  {
     "id" : "lmdi-bundle",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-bundle",
@@ -105,6 +98,13 @@
     "name" : "Legemiddelrekvirering"
   },
   {
+    "id" : "lmdi-municipalitycode",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-municipalitycode",
+    "version" : "0.9.4",
+    "name" : "LmdiMunicipalitycode"
+  },
+  {
     "id" : "lmdi-organization",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization",
@@ -133,11 +133,11 @@
     "name" : "Helsepersonellrolle"
   },
   {
-    "id" : "no-basis-municipalitycode",
+    "id" : "lmdi-urban-district",
     "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode",
+    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-urban-district",
     "version" : "0.9.4",
-    "name" : "NoBasisMunicipalitycode"
+    "name" : "LmdiUrbanDistrict"
   },
   {
     "id" : "LokalLegemiddelkatalogValues",

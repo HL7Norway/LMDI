@@ -1,76 +1,16 @@
 "Profile","Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
-"lmdi-address","Address","Address","","","",0,*,"","","","null {[]} {[]}
-","An address expressed using postal conventions (as opposed to GPS or other location definition formats)","An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiting locations which might not be valid for mail delivery.  There are a variety of postal address formats defined around the world.","Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates.  Postal addresses are often used as proxies for physical locations (also see the [Location](http://hl7.org/fhir/R4/location.html#) resource).","","","","","","","","",,,,,"",,,,"Address",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"lmdi-address","Address.id","Address.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"lmdi-address","Address.extension","Address.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"lmdi-address","Address.use","Address.use","","","",0,1,"","Y","Y","code {[]} {[]}
-","home | work | temp | old | billing - purpose of this address","The purpose of this address.","Applications can assume that an address is current unless it explicitly says that it is temporary or old.","Allows an appropriate address to be chosen from a list of many.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""home""/>","","",,"required","The use of an address.","http://hl7.org/fhir/ValueSet/address-use|4.0.1","",,,,"Address.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"lmdi-address","Address.type","Address.type","","","",0,1,"","","Y","code {[]} {[]}
-","postal | physical | both","Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes and care-of addresses). Most addresses are both.","The definition of Address states that ""address is intended to describe postal addresses, not physical locations"". However, many applications track whether an address has a dual purpose of being a location that can be visited as well as being a valid delivery destination, and Postal addresses are often used as proxies for physical locations (also see the [Location](http://hl7.org/fhir/R4/location.html#) resource).","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""both""/>","","",,"required","The type of an address (physical / postal).","http://hl7.org/fhir/ValueSet/address-type|4.0.1","",,,,"Address.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"lmdi-address","Address.text","Address.text","","","",0,1,"","","Y","string {[]} {[]}
-","Text representation of the address","Specifies the entire address as it should be displayed e.g. on a postal label. This may be provided instead of or as well as the specific parts.","Can provide both a text representation and parts. Applications updating an address SHALL ensure that  when both text and parts are present,  no content is included in the text that isn't found in a part.","A renderable, unencoded form.","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""137 Nowhere Street, Erewhon 9132""/>","","",,,,,"",,,,"Address.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"lmdi-address","Address.line","Address.line","","","",0,*,"","","Y","string {[]} {[]}
-","Street name, number, direction & P.O. Box etc.","This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information.","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""137 Nowhere Street""/>","","",,,,,"",,,,"Address.line",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"lmdi-address","Address.city","Address.city","","Municpality
-","",0,1,"","","Y","string {[]} {[]}
-","Name of city, town etc.","The name of the city, town, suburb, village or other community or delivery center.","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Erewhon""/>","","",,,,,"",,,,"Address.city",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"lmdi-address","Address.district","Address.district","","County
-","",0,1,"","","Y","string {[]} {[]}
-","District name (aka county)","The name of the administrative area (county).","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,,,,"",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"lmdi-address","Address.district.id","Address.district.id","","","",0,1,"","","","string {[]} {[]}
-","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references)","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"lmdi-address","Address.district.extension","Address.district.extension","","","",0,*,"","","","Extension {[]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
-","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"lmdi-address","Address.district.extension:municipalitycode","Address.district.extension","municipalitycode","","",0,1,"","","","Extension {[CanonicalType[http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode]]} {[]}
-","Coded value for municipality/county Norwegian kommune","Coded value for municipality/county Norwegian kommune","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"lmdi-address","Address.district.value","Address.district.value","","","",0,1,"","","","string {[]} {[]}
-","Primitive value for string","The actual value","","","","","","","","","",1048576,,,,"",,,,"string.value",0,1,"",""
-"lmdi-address","Address.state","Address.state","","Province
-Territory","",0,1,"","","Y","string {[]} {[]}
-","Sub-unit of country (abbreviations ok)","Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).","","","","","","","","","",,,,,"",,,,"Address.state",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"lmdi-address","Address.postalCode","Address.postalCode","","Zip
-","",0,1,"","","Y","string {[]} {[]}
-","Postal code for area","A postal code designating a region defined by the postal service.","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""9132""/>","","",,,,,"",,,,"Address.postalCode",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"lmdi-address","Address.country","Address.country","","","",0,1,"","","Y","string {[]} {[]}
-","Country (e.g. can be ISO 3166 2 or 3 letter code)","Country - a nation as commonly understood or generally accepted.","ISO 3166 3 letter codes can be used in place of a human readable country name.","","","","","","","","",,,,,"",,,,"Address.country",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"lmdi-address","Address.period","Address.period","","","",0,1,"","","Y","Period {[]} {[]}
-","Time period when address was/is in use","Time period when address was/is in use.","","Allows addresses to be placed in historical context.","","","","","<valuePeriod xmlns=""http://hl7.org/fhir"">
-  <start value=""2010-03-23""/>
-  <end value=""2010-07-01""/>
-</valuePeriod>","","",,,,,"",,,,"Address.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
 "lmdi-bundle","Bundle","Bundle","","","",0,*,"","","","null {[]} {[]}
 ","Contains a collection of resources","A container for a collection of resources.","","","","","","","","","",,,,,"",,,,"Bundle",0,*,"","bdl-1:total only when a search or history {total.empty() or (type = 'searchset') or (type = 'history')}
 bdl-2:entry.search only when a search {entry.search.empty() or (type = 'searchset')}bdl-3:entry.request mandatory for batch/transaction/history, otherwise prohibited {entry.all(request.exists() = (%resource.type = 'batch' or %resource.type = 'transaction' or %resource.type = 'history'))}bdl-4:entry.response mandatory for batch-response/transaction-response/history, otherwise prohibited {entry.all(response.exists() = (%resource.type = 'batch-response' or %resource.type = 'transaction-response' or %resource.type = 'history'))}bdl-7:FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles) {(type = 'history') or entry.where(fullUrl.exists()).select(fullUrl&resource.meta.versionId).isDistinct()}bdl-9:A document must have an identifier with a system and a value {type = 'document' implies (identifier.system.exists() and identifier.value.exists())}bdl-10:A document must have a date {type = 'document' implies (timestamp.hasValue())}bdl-11:A document must have a Composition as the first resource {type = 'document' implies entry.first().resource.is(Composition)}bdl-12:A message must have a MessageHeader as the first resource {type = 'message' implies entry.first().resource.is(MessageHeader)}lr-allowed-resources:Bundle kan bare inneholde følgende ressurstyper: Pasient, Helsepersonell, Legemiddel, LegemiddelAdministrasjon, Diagnose, Institusjonsopphold, Legemiddelrekvirering, Organisasjon, Helsepersonellrolle {entry.all(
-  resource.conformsTo('Pasient') or 
-  resource.conformsTo('Helsepersonell') or 
-  resource.conformsTo('Legemiddel') or 
-  resource.conformsTo('LegemiddelAdministrasjon') or 
-  resource.conformsTo('Diagnose') or 
-  resource.conformsTo('Institusjonsopphold') or 
-  resource.conformsTo('Legemiddelrekvirering') or 
-  resource.conformsTo('Organisasjon') or 
-  resource.conformsTo('Helsepersonellrolle')
+  resource.ofType(Patient) or 
+  resource.ofType(Practitioner) or 
+  resource.ofType(Medication) or 
+  resource.ofType(MedicationAdministration) or 
+  resource.ofType(Condition) or 
+  resource.ofType(EpisodeOfCare) or 
+  resource.ofType(MedicationRequest) or 
+  resource.ofType(Organization) or 
+  resource.ofType(PractitionerRole)
 )}"
 "lmdi-bundle","Bundle.id","Bundle.id","","","",0,1,"","","Y","id {[]} {[]}
 ","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
@@ -83,13 +23,13 @@ bdl-2:entry.search only when a search {entry.search.empty() or (type = 'searchse
 "lmdi-bundle","Bundle.language","Bundle.language","","","",0,1,"","","","code {[]} {[]}
 ","Language of the resource content","The base language in which the resource is written.","Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).","","","","","","","","",,"preferred","A human language.","http://hl7.org/fhir/ValueSet/languages","",,,,"Resource.language",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-bundle","Bundle.identifier","Bundle.identifier","","","",0,1,"","","Y","Identifier {[]} {[]}
+"lmdi-bundle","Bundle.identifier","Bundle.identifier","","","",1,1,"Y","","Y","Identifier {[]} {[]}
 ","Persistent identifier for the bundle","A persistent identifier for the bundle that won't change as a bundle is copied from server to server.","Persistent identity generally only matters for batches of type Document, Message, and Collection. It would not normally be populated for search and history results and servers ignore Bundle.identifier when processing batches and transactions. For Documents  the .identifier SHALL be populated such that the .identifier is globally unique.","","","","","","","","",,,,,"",,,,"Bundle.identifier",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "lmdi-bundle","Bundle.type","Bundle.type","","","",1,1,"Y","","Y","code {[]} {[]}
-","Må være av type batch","Angir at bunten må være av type batch","It's possible to use a bundle for other purposes (e.g. a document can be accepted as a transaction). This is primarily defined so that there can be specific rules for some of the bundle types.","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""batch""/>","","","","",,"required","Indicates the purpose of a bundle - how it is intended to be used.","http://hl7.org/fhir/ValueSet/bundle-type|4.0.1","",,,,"Bundle.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Må være av type batch","Angir at bundle må være av type batch","It's possible to use a bundle for other purposes (e.g. a document can be accepted as a transaction). This is primarily defined so that there can be specific rules for some of the bundle types.","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""batch""/>","","","","",,"required","Indicates the purpose of a bundle - how it is intended to be used.","http://hl7.org/fhir/ValueSet/bundle-type|4.0.1","",,,,"Bundle.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-bundle","Bundle.timestamp","Bundle.timestamp","","","",0,1,"","","Y","instant {[]} {[]}
+"lmdi-bundle","Bundle.timestamp","Bundle.timestamp","","","",1,1,"Y","","Y","instant {[]} {[]}
 ","When the bundle was assembled","The date/time that the bundle was assembled - i.e. when the resources were placed in the bundle.","For many bundles, the timestamp is equal to .meta.lastUpdated, because they are not stored (e.g. search results). When a bundle is placed in a persistent store, .meta.lastUpdated will be usually be changed by the server. When the bundle is a message, a middleware agent altering the message (even if not stored) SHOULD update .meta.lastUpdated. .timestamp is used to track the original time of the Bundle, and SHOULD be populated.  
 
 Usage:
@@ -102,11 +42,11 @@ Usage:
 
 The timestamp value should be greater than the lastUpdated and other timestamps in the resources in the bundle, and it should be equal or earlier than the .meta.lastUpdated on the Bundle itself.","","","","","","","","",,,,,"",,,,"Bundle.timestamp",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-bundle","Bundle.total","Bundle.total","","","",0,1,"","","Y","unsignedInt {[]} {[]}
+"lmdi-bundle","Bundle.total","Bundle.total","","","",0,0,"","","Y","unsignedInt {[]} {[]}
 ","If search, the total number of matches","If a set of search matches, this is the total number of entries of type 'match' across all pages in the search.  It does not include search.mode = 'include' or 'outcome' entries and it does not provide a count of the number of entries in the Bundle.","Only used if the bundle is a search result set. The total does not include resources such as OperationOutcome and included resources, only the total number of matching resources.","","","","","","","","",,,,,"",,,,"Bundle.total",0,1,"bdl-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-bundle","Bundle.link","Bundle.link","","","",0,*,"","","Y","BackboneElement {[]} {[]}
+"lmdi-bundle","Bundle.link","Bundle.link","","","",0,0,"","","Y","BackboneElement {[]} {[]}
 ","Links related to this Bundle","A series of links that provide context to this bundle.","Both Bundle.link and Bundle.entry.link are defined to support providing additional context when Bundles are used (e.g. [HATEOAS](http://en.wikipedia.org/wiki/HATEOAS)). 
 
 Bundle.entry.link corresponds to links found in the HTTP header if the resource in the entry was [read](http://hl7.org/fhir/R4/http.html#read) directly.
@@ -131,8 +71,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "lmdi-bundle","Bundle.link.url","Bundle.link.url","","","",1,1,"","","Y","uri {[]} {[]}
 ","Reference details for the link","The reference details for the link.","","","","","","","","","",,,,,"",,,,"Bundle.link.url",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-bundle","Bundle.entry","Bundle.entry","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
-","Entry in the bundle - will have a resource or information","An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only).","","","","","","","","","",,,,,"",,,,"Bundle.entry",0,*,"","bdl-5:must be a resource unless there's a request or response {resource.exists() or request.exists() or response.exists()}
+"lmdi-bundle","Bundle.entry","Bundle.entry","","","",1,*,"Y","","Y","BackboneElement {[]} {[]}
+","Innholdselementer i bundle","Inneholder ressursene som skal sendes inn til registeret","","","","","","","","","",,,,,"",,,,"Bundle.entry",0,*,"","bdl-5:must be a resource unless there's a request or response {resource.exists() or request.exists() or response.exists()}
 bdl-8:fullUrl cannot be a version specific reference {fullUrl.contains('/_history/').not()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}"
 "lmdi-bundle","Bundle.entry.id","Bundle.entry.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -156,7 +96,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-bundle","Bundle.entry.resource","Bundle.entry.resource","","","",0,1,"Y","","Y","Resource {[]} {[]}
+"lmdi-bundle","Bundle.entry.resource","Bundle.entry.resource","","","",1,1,"Y","","Y","Resource {[]} {[]}
 ","A resource in the bundle","The Resource for the entry. The purpose/meaning of the resource is determined by the Bundle.type.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "lmdi-bundle","Bundle.entry.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -182,7 +122,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 See [Patient Match](http://hl7.org/fhir/R4/patient-operation-match.html) for the EMPI search which relates to this element.","","","","","","","","",,,,,"",,,,"Bundle.entry.search.score",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-bundle","Bundle.entry.request","Bundle.entry.request","","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
+"lmdi-bundle","Bundle.entry.request","Bundle.entry.request","","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Additional execution information (transaction/batch/history)","Additional information about how this entry should be processed as part of a transaction or batch.  For history, it shows how the entry was processed to create the version contained in the entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.request",0,1,"bdl-3
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -199,7 +139,7 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "lmdi-bundle","Bundle.entry.request.method","Bundle.entry.request.method","","","",1,1,"Y","","Y","code {[]} {[]}
-","Må være POST","Angir at alle forespørsler i bunten må være av type POST","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""POST""/>","","","","",,"required","HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.","http://hl7.org/fhir/ValueSet/http-verb|4.0.1","",,,,"Bundle.entry.request.method",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Må være POST","Angir at alle forespørsler i bundle må være av type POST","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""POST""/>","","","","",,"required","HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.","http://hl7.org/fhir/ValueSet/http-verb|4.0.1","",,,,"Bundle.entry.request.method",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "lmdi-bundle","Bundle.entry.request.url","Bundle.entry.request.url","","","",1,1,"","","Y","uri {[]} {[]}
 ","URL for HTTP equivalent of this entry","The URL for this entry, relative to the root (the address to which the request is posted).","E.g. for a Patient Create, the method would be ""POST"" and the URL would be ""Patient"". For a Patient Update, the method would be PUT and the URL would be ""Patient/[id]"".","","","","","","","","",,,,,"",,,,"Bundle.entry.request.url",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -266,7 +206,7 @@ con-4:If condition is abated, then clinicalStatus must be either inactive, resol
 ","Language of the resource content","The base language in which the resource is written.","Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).","","","","","","","","",,"preferred","A human language.","http://hl7.org/fhir/ValueSet/languages","",,,,"Resource.language",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "lmdi-condition","Condition.text","Condition.text","","narrative
-htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
+htmlxhtmldisplay","",0,0,"","","","Narrative {[]} {[]}
 ","Text summary of the resource, for human interpretation","A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it ""clinically safe"" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.","Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a ""text blob"" or where text is additionally entered raw or narrated and encoded information is added later.","","","","","","","","",,,,,"",,,,"DomainResource.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "lmdi-condition","Condition.contained","Condition.contained","","inline resources
@@ -294,10 +234,10 @@ con-4con-5","ele-1:All FHIR elements must have a @value or children {hasValue() 
 The data type is CodeableConcept because verificationStatus has some clinical judgment involved, such that there might need to be more specificity than the required FHIR value set allows. For example, a SNOMED coding might allow for additional specificity.","","","","","","","","",,"required","The verification status to support or decline the clinical status of the condition or diagnosis.","http://hl7.org/fhir/ValueSet/condition-ver-status|4.0.1","",,,,"Condition.verificationStatus",0,1,"con-3
 con-5","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-condition","Condition.category","Condition.category","","","",0,*,"","","","CodeableConcept {[]} {[]}
+"lmdi-condition","Condition.category","Condition.category","","","",0,0,"","","","CodeableConcept {[]} {[]}
 ","problem-list-item | encounter-diagnosis","A category assigned to the condition.","The categorization is often highly contextual and may appear poorly differentiated or not very useful in other contexts.","","","","","","","","",,"extensible","A category assigned to the condition.","http://hl7.org/fhir/ValueSet/condition-category","",,,,"Condition.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-condition","Condition.severity","Condition.severity","","","",0,1,"","","","CodeableConcept {[]} {[]}
+"lmdi-condition","Condition.severity","Condition.severity","","","",0,0,"","","","CodeableConcept {[]} {[]}
 ","Subjective severity of condition","A subjective assessment of the severity of the condition as evaluated by the clinician.","Coding of the severity with a terminology is preferred, where possible.","","","","","","","","",,"preferred","A subjective assessment of the severity of the condition as evaluated by the clinician.","http://hl7.org/fhir/ValueSet/condition-severity","",,,,"Condition.severity",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "lmdi-condition","Condition.code","Condition.code","","type
@@ -418,30 +358,30 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "lmdi-condition","Condition.code.text","Condition.code.text","","","",0,1,"","","Y","string {[]} {[]}
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-condition","Condition.bodySite","Condition.bodySite","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
+"lmdi-condition","Condition.bodySite","Condition.bodySite","","","",0,0,"","","Y","CodeableConcept {[]} {[]}
 ","Anatomical location, if relevant","The anatomical location where this condition manifests itself.","Only used if not implicit in code found in Condition.code. If the use case requires attributes from the BodySite resource (e.g. to identify and track separately) then use the standard extension [bodySite](http://hl7.org/fhir/R4/extension-bodysite.html).  May be a summary code, or a reference to a very precise definition of the location, or both.","","","","","","","","",,"example","Codes describing anatomical locations. May include laterality.","http://hl7.org/fhir/ValueSet/body-site","",,,,"Condition.bodySite",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "lmdi-condition","Condition.subject","Condition.subject","","patient
 ","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient]]}
 ","Pasienten diagnosen er knyttet til.","Indicates the patient or group who the condition record is associated with.","","Group is typically used for veterinary or public health use cases.","","","","","","","",,,,,"",,,,"Condition.subject",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-condition","Condition.encounter","Condition.encounter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
+"lmdi-condition","Condition.encounter","Condition.encounter","","","",0,0,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
 ","Encounter created as part of","The Encounter during which this Condition was created or to which the creation of this record is tightly associated.","This will typically be the encounter the event occurred within, but some activities may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter. This record indicates the encounter this particular record is associated with.  In the case of a ""new"" diagnosis reflecting ongoing/revised information about the condition, this might be distinct from the first encounter in which the underlying condition was first ""known"".","","","","","","","","",,,,,"",,,,"Condition.encounter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-condition","Condition.onset[x]","Condition.onset[x]","","","",0,1,"","","Y","dateTime {[]} {[]}
+"lmdi-condition","Condition.onset[x]","Condition.onset[x]","","","",0,0,"","","Y","dateTime {[]} {[]}
 Age {[]} {[]}Period {[]} {[]}Range {[]} {[]}string {[]} {[]}","Estimated or actual date,  date-time, or age","Estimated or actual date or date-time  the condition began, in the opinion of the clinician.","Age is generally used when the patient reports an age at which the Condition began to occur.","","","","","","","","",,,,,"",,,,"Condition.onset[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-condition","Condition.abatement[x]","Condition.abatement[x]","","","",0,1,"","","","dateTime {[]} {[]}
+"lmdi-condition","Condition.abatement[x]","Condition.abatement[x]","","","",0,0,"","","","dateTime {[]} {[]}
 Age {[]} {[]}Period {[]} {[]}Range {[]} {[]}string {[]} {[]}","When in resolution/remission","The date or estimated date that the condition resolved or went into remission. This is called ""abatement"" because of the many overloaded connotations associated with ""remission"" or ""resolution"" - Conditions are never really resolved, but they can abate.","There is no explicit distinction between resolution and remission because in many cases the distinction is not clear. Age is generally used when the patient reports an age at which the Condition abated.  If there is no abatement element, it is unknown whether the condition has resolved or entered remission; applications and users should generally assume that the condition is still valid.  When abatementString exists, it implies the condition is abated.","","","","","","","","",,,,,"",,,,"Condition.abatement[x]",0,1,"con-4
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-condition","Condition.recordedDate","Condition.recordedDate","","","",0,1,"","","Y","dateTime {[]} {[]}
+"lmdi-condition","Condition.recordedDate","Condition.recordedDate","","","",0,0,"","","Y","dateTime {[]} {[]}
 ","Date record was first recorded","The recordedDate represents when this particular Condition record was created in the system, which is often a system-generated date.","","","","","","","","","",,,,,"",,,,"Condition.recordedDate",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-condition","Condition.recorder","Condition.recorder","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
+"lmdi-condition","Condition.recorder","Condition.recorder","","","",0,0,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
 ","Who recorded the condition","Individual who recorded the record and takes responsibility for its content.","","","","","","","","","",,,,,"",,,,"Condition.recorder",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-condition","Condition.asserter","Condition.asserter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
+"lmdi-condition","Condition.asserter","Condition.asserter","","","",0,0,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
 ","Person who asserts this condition","Individual who is making the condition statement.","","","","","","","","","",,,,,"",,,,"Condition.asserter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "lmdi-condition","Condition.stage","Condition.stage","","","",0,*,"","","","BackboneElement {[]} {[]}
@@ -470,7 +410,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "lmdi-condition","Condition.stage.type","Condition.stage.type","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Kind of staging","The kind of staging, such as pathological or clinical staging.","","","","","","","","","",,"example","Codes describing the kind of condition staging (e.g. clinical or pathological).","http://hl7.org/fhir/ValueSet/condition-stage-type","",,,,"Condition.stage.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-condition","Condition.evidence","Condition.evidence","","","",0,*,"","","","BackboneElement {[]} {[]}
+"lmdi-condition","Condition.evidence","Condition.evidence","","","",0,0,"","","","BackboneElement {[]} {[]}
 ","Supporting evidence","Supporting evidence / manifestations that are the basis of the Condition's verification status, such as evidence that confirmed or refuted the condition.","The evidence may be a simple list of coded symptoms/manifestations, or references to observations or formal assessments, or both.","","","","","","","","",,,,,"",,,,"Condition.evidence",0,*,"","con-2:evidence SHALL have code or details {code.exists() or detail.exists()}
 ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}"
 "lmdi-condition","Condition.evidence.id","Condition.evidence.id","","","",0,1,"","","","string {[]} {[]}
@@ -493,7 +433,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Supporting information found elsewhere","Links to other relevant information, including pathology reports.","","","","","","","","","",,,,,"",,,,"Condition.evidence.detail",0,*,"con-2
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-condition","Condition.note","Condition.note","","","",0,*,"","","","Annotation {[]} {[]}
+"lmdi-condition","Condition.note","Condition.note","","","",0,0,"","","","Annotation {[]} {[]}
 ","Additional information about the Condition","Additional information about the Condition. This is a general notes/comments entry  for description of the Condition, its diagnosis and prognosis.","","","","","","","","","",,,,,"",,,,"Condition.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "lmdi-episodeofcare","EpisodeOfCare","EpisodeOfCare","","Case Program Problem
@@ -1167,7 +1107,7 @@ user content","",0,*,"","Y","","Extension {[]} {[]}
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"DomainResource.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "lmdi-medicationrequest","MedicationRequest.identifier","MedicationRequest.identifier","","","",0,*,"Y","","","Identifier {[]} {[]}
-","Identifikator for rekvisisjon","Must Support: En identifikator som unikt identifiserer en rekvirering må oppgis om en slik finnes","TODO / ESS / Krav: ForskrivningsID. Det er ytret behov for en (business-)identifier for forskrivning. Dette finnes ikke hvis det ikke er snakk om en faktisk instans, som f.eks. en M1 Resept (eResept). Mulig dette kan benyttes for interne ID'er ved f.eks. forordning på sykehus. Uvisst behov. ","","","","","","","","",,,,,"",,,,"MedicationRequest.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Identifikator for rekvisisjon","Must Support: En identifikator som unikt identifiserer en rekvirering må oppgis om en slik finnes","This is a business identifier, not a resource identifier.","","","","","","","","",,,,,"",,,,"MedicationRequest.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "lmdi-medicationrequest","MedicationRequest.status","MedicationRequest.status","","","",1,1,"Y","Y","Y","code {[]} {[]}
 ","Status for rekvireringen","Must Support: Status er viktig for å kunne følge livssyklusen til en rekvisisjon og må støttes av alle systemer","Gyldige verdier: active | on-hold | cancelled | completed | entered-in-error | stopped | draft","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/medicationrequest-status","",,,,"MedicationRequest.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -1176,7 +1116,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Reason for current status","Captures the reason for the current state of the MedicationRequest.","This is generally only used for ""exception"" statuses such as ""suspended"" or ""cancelled"". The reason why the MedicationRequest was created at all is captured in reasonCode, not here.","","","","","","","","",,"example","Identifies the reasons for a given status.","http://hl7.org/fhir/ValueSet/medicationrequest-status-reason","",,,,"MedicationRequest.statusReason",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "lmdi-medicationrequest","MedicationRequest.intent","MedicationRequest.intent","","","",1,1,"Y","Y","Y","code {[]} {[]}
-","Intensjonen eller hensikten med rekvireringen","Whether the request is a proposal, plan, or an original order.","Gyldige verdier: proposal | plan | order | original-order | reflex-order | filler-order | instance-order | option","","","","","","","","",,"required","The kind of medication order.","http://hl7.org/fhir/ValueSet/medicationrequest-intent|4.0.1","",,,,"MedicationRequest.intent",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Intensjonen eller hensikten med rekvireringen: : proposal | plan | order | original-order | reflex-order | filler-order | instance-order | option","Whether the request is a proposal, plan, or an original order.","It is expected that the type of requester will be restricted for different stages of a MedicationRequest.  For example, Proposals can be created by a patient, relatedPerson, Practitioner or Device.  Plans can be created by Practitioners, Patients, RelatedPersons and Devices.  Original orders can be created by a Practitioner only.An instance-order is an instantiation of a request or order and may be used to populate Medication Administration Record.This element is labeled as a modifier because the intent alters when and how the resource is actually applicable.","","","","","","","","",,"required","The kind of medication order.","http://hl7.org/fhir/ValueSet/medicationrequest-intent|4.0.1","",,,,"MedicationRequest.intent",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "lmdi-medicationrequest","MedicationRequest.category","MedicationRequest.category","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","Type of medication usage","Indicates the type of medication request (for example, where the medication is expected to be consumed or administered (i.e. inpatient or outpatient)).","The category can be used to include where the medication is expected to be consumed or other types of requests.","","","","","","","","",,"example","A coded concept identifying the category of medication request.  For example, where the medication is to be consumed or administered, or the type of medication treatment.","http://hl7.org/fhir/ValueSet/medicationrequest-category","",,,,"MedicationRequest.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -1220,7 +1160,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "lmdi-medicationrequest","MedicationRequest.reasonCode","MedicationRequest.reasonCode","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","Reason or indication for ordering or not ordering the medication","The reason or the indication for ordering or not ordering the medication.","This could be a diagnosis code. If a full condition record exists or additional detail is needed, use reasonReference.","","","","","","","","",,"example","A coded concept indicating why the medication was ordered.","http://hl7.org/fhir/ValueSet/condition-code","",,,,"MedicationRequest.reasonCode",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-medicationrequest","MedicationRequest.reasonReference","MedicationRequest.reasonReference","","","",0,0,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition], CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation]]}
+"lmdi-medicationrequest","MedicationRequest.reasonReference","MedicationRequest.reasonReference","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition]]}
 ","Condition or observation that supports why the prescription is being written","Condition or observation that supports why the medication was ordered.","This is a reference to a condition or observation that is the reason for the medication order.  If only a code exists, use reasonCode.","","","","","","","","",,,,,"",,,,"MedicationRequest.reasonReference",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "lmdi-medicationrequest","MedicationRequest.instantiatesCanonical","MedicationRequest.instantiatesCanonical","","","",0,*,"","","Y","canonical {[]} {[]}
@@ -1241,13 +1181,13 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "lmdi-medicationrequest","MedicationRequest.insurance","MedicationRequest.insurance","","","",0,0,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Coverage], CanonicalType[http://hl7.org/fhir/StructureDefinition/ClaimResponse]]}
 ","Associated insurance coverage","Insurance plans, coverage extensions, pre-authorizations and/or pre-determinations that may be required for delivering the requested service.","","","","","","","","","",,,,,"",,,,"MedicationRequest.insurance",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-medicationrequest","MedicationRequest.note","MedicationRequest.note","","","",0,*,"","","","Annotation {[]} {[]}
+"lmdi-medicationrequest","MedicationRequest.note","MedicationRequest.note","","","",0,0,"","","","Annotation {[]} {[]}
 ","Information about the prescription","Extra information about the prescription that could not be conveyed by the other attributes.","","","","","","","","","",,,,,"",,,,"MedicationRequest.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "lmdi-medicationrequest","MedicationRequest.dosageInstruction","MedicationRequest.dosageInstruction","","","",0,*,"","","","Dosage {[]} {[]}
 ","How the medication should be taken","Indicates how the medication is to be used by the patient.","There are examples where a medication request may include the option of an oral dose or an Intravenous or Intramuscular dose.  For example, ""Ondansetron 8mg orally or IV twice a day as needed for nausea"" or ""Compazine® (prochlorperazine) 5-10mg PO or 25mg PR bid prn nausea or vomiting"".  In these cases, two medication requests would be created that could be grouped together.  The decision on which dose and route of administration to use is based on the patient's condition at the time the dose is needed.","","","","","","","","",,,,,"",,,,"MedicationRequest.dosageInstruction",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-medicationrequest","MedicationRequest.dispenseRequest","MedicationRequest.dispenseRequest","","","",0,1,"","","","BackboneElement {[]} {[]}
+"lmdi-medicationrequest","MedicationRequest.dispenseRequest","MedicationRequest.dispenseRequest","","","",0,0,"","","","BackboneElement {[]} {[]}
 ","Medication supply authorization","Indicates the specific details for the dispense or medication supply part of a medication request (also known as a Medication Prescription or Medication Order).  Note that this information is not always sent with the order.  There may be in some settings (e.g. hospitals) institutional or system support for completing the dispense details in the pharmacy department.","","","","","","","","","",,,,,"",,,,"MedicationRequest.dispenseRequest",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "lmdi-medicationrequest","MedicationRequest.dispenseRequest.id","MedicationRequest.dispenseRequest.id","","","",0,1,"","","","string {[]} {[]}
@@ -1322,15 +1262,52 @@ CodeableConcept {[]} {[]}","Whether substitution is allowed or not","True if the
 "lmdi-medicationrequest","MedicationRequest.substitution.reason","MedicationRequest.substitution.reason","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Why should (not) substitution be made","Indicates the reason for the substitution, or why substitution must or must not be performed.","","","","","","","","","",,"example","A coded concept describing the reason that a different medication should (or should not) be substituted from what was prescribed.","http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason","",,,,"MedicationRequest.substitution.reason",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-medicationrequest","MedicationRequest.priorPrescription","MedicationRequest.priorPrescription","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicationRequest]]}
+"lmdi-medicationrequest","MedicationRequest.priorPrescription","MedicationRequest.priorPrescription","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationrequest]]}
 ","An order/prescription that is being replaced","A link to a resource representing an earlier order related order or prescription.","","","","","","","","","",,,,,"",,,,"MedicationRequest.priorPrescription",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "lmdi-medicationrequest","MedicationRequest.detectedIssue","MedicationRequest.detectedIssue","","Contraindication
-Drug Utilization Review (DUR)Alert","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/DetectedIssue]]}
+Drug Utilization Review (DUR)Alert","",0,0,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/DetectedIssue]]}
 ","Clinical Issue with action","Indicates an actual or potential clinical issue with or between one or more active or proposed clinical actions for a patient; e.g. Drug-drug interaction, duplicate therapy, dosage alert etc.","This element can include a detected issue that has been identified either by a decision support system or by a clinician and may include information on the steps that were taken to address the issue.","","","","","","","","",,,,,"",,,,"MedicationRequest.detectedIssue",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-medicationrequest","MedicationRequest.eventHistory","MedicationRequest.eventHistory","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Provenance]]}
+"lmdi-medicationrequest","MedicationRequest.eventHistory","MedicationRequest.eventHistory","","","",0,0,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Provenance]]}
 ","A list of events of interest in the lifecycle","Links to Provenance records for past versions of this resource or fulfilling request or event resources that identify key state transitions or updates that are likely to be relevant to a user looking at the current version of the resource.","This might not include provenances for all versions of the request – only those deemed “relevant” or important. This SHALL NOT include the provenance associated with this current version of the resource. (If that provenance is deemed to be a “relevant” change, it will need to be added as part of a later update. Until then, it can be queried directly as the provenance that points to this version using _revinclude All Provenances should have some historical version of this Request as their subject.).","","","","","","","","",,,,,"",,,,"MedicationRequest.eventHistory",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"lmdi-municipalitycode","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","lmdi-municipalitycode","Coded value for municipality/county Norwegian kommune","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"lmdi-municipalitycode","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"lmdi-municipalitycode","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"lmdi-municipalitycode","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-municipalitycode""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"lmdi-municipalitycode","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","Coding {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","urn:oid:2.16.578.1.12.4.1.1.3402","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"lmdi-municipalitycode","Extension.value[x].id","Extension.value[x].id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"lmdi-municipalitycode","Extension.value[x].extension","Extension.value[x].extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"lmdi-municipalitycode","Extension.value[x].system","Extension.value[x].system","","","",0,1,"","","Y","uri {[]} {[]}
+","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""urn:oid:2.16.578.1.12.4.1.1.3402""/>","","","","",,,,,"",,,,"Coding.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"lmdi-municipalitycode","Extension.value[x].version","Extension.value[x].version","","","",0,1,"","","Y","string {[]} {[]}
+","Version of the system - if relevant","The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.","Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"lmdi-municipalitycode","Extension.value[x].code","Extension.value[x].code","","","",0,1,"","","Y","code {[]} {[]}
+","Kommunenummer","Norwegian kommunenummer from Volven 3402","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"lmdi-municipalitycode","Extension.value[x].display","Extension.value[x].display","","","",0,1,"","","Y","string {[]} {[]}
+","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"lmdi-municipalitycode","Extension.value[x].userSelected","Extension.value[x].userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
+","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "lmdi-organization","Organization","Organization","","","",0,*,"","","","null {[]} {[]}
 ","A grouping of people or organizations with a common purpose","A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.","","","","","","","","","",,,,,"",,,,"Organization",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}
@@ -1452,7 +1429,7 @@ For searching knowing previous names that the organization was known by can be v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 org-3:The telecom of an organization can never be of use 'home' {where(use = 'home').empty()}"
 "lmdi-organization","Organization.address","Organization.address","","","",0,*,"Y","","","Address {[]} {[]}
-","An address for the organization","An address for the organization.","Organization may have multiple addresses with different uses or applicable periods. The use code 'home' is not to be used.","May need to keep track of the organization's addresses for contacting, billing or reporting requirements.","","","","","","","",,,,,"",,,,"Organization.address",0,*,"org-2
+","Gjeldende fysisk adresse","An address for the organization.","Organization may have multiple addresses with different uses or applicable periods. The use code 'home' is not to be used.","May need to keep track of the organization's addresses for contacting, billing or reporting requirements.","","","","","","","",,,,,"",,,,"Organization.address",0,*,"org-2
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 org-2:An address of an organization can never be of use 'home' {where(use = 'home').empty()}"
 "lmdi-organization","Organization.address.id","Organization.address.id","","","",0,1,"","","","string {[]} {[]}
@@ -1462,16 +1439,19 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"lmdi-organization","Organization.address.extension:urbanDistrict","Organization.address.extension","urbanDistrict","","",0,1,"","","","Extension {[CanonicalType[http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-urban-district]]} {[]}
+","Bydel","Information about Norwegian urban district (bydel)","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "lmdi-organization","Organization.address.use","Organization.address.use","","","",0,1,"","Y","Y","code {[]} {[]}
 ","home | work | temp | old | billing - purpose of this address","The purpose of this address.","Applications can assume that an address is current unless it explicitly says that it is temporary or old.","Allows an appropriate address to be chosen from a list of many.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""home""/>","","",,"required","The use of an address.","http://hl7.org/fhir/ValueSet/address-use|4.0.1","",,,,"Address.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "lmdi-organization","Organization.address.type","Organization.address.type","","","",0,1,"","","Y","code {[]} {[]}
 ","postal | physical | both","Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes and care-of addresses). Most addresses are both.","The definition of Address states that ""address is intended to describe postal addresses, not physical locations"". However, many applications track whether an address has a dual purpose of being a location that can be visited as well as being a valid delivery destination, and Postal addresses are often used as proxies for physical locations (also see the [Location](http://hl7.org/fhir/R4/location.html#) resource).","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""physical""/>","<valueCode xmlns=""http://hl7.org/fhir"" value=""both""/>","","",,"required","The type of an address (physical / postal).","http://hl7.org/fhir/ValueSet/address-type|4.0.1","",,,,"Address.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-organization","Organization.address.text","Organization.address.text","","","",0,1,"","","Y","string {[]} {[]}
+"lmdi-organization","Organization.address.text","Organization.address.text","","","",0,0,"","","Y","string {[]} {[]}
 ","Text representation of the address","Specifies the entire address as it should be displayed e.g. on a postal label. This may be provided instead of or as well as the specific parts.","Can provide both a text representation and parts. Applications updating an address SHALL ensure that  when both text and parts are present,  no content is included in the text that isn't found in a part.","A renderable, unencoded form.","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""137 Nowhere Street, Erewhon 9132""/>","","",,,,,"",,,,"Address.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-organization","Organization.address.line","Organization.address.line","","","",0,*,"","","Y","string {[]} {[]}
+"lmdi-organization","Organization.address.line","Organization.address.line","","","",0,0,"","","Y","string {[]} {[]}
 ","Street name, number, direction & P.O. Box etc.","This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information.","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""137 Nowhere Street""/>","","",,,,,"",,,,"Address.line",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "lmdi-organization","Organization.address.city","Organization.address.city","","Municpality
@@ -1479,7 +1459,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Name of city, town etc.","The name of the city, town, suburb, village or other community or delivery center.","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Erewhon""/>","","",,,,,"",,,,"Address.city",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "lmdi-organization","Organization.address.district","Organization.address.district","","County
-","",0,1,"Y","","Y","string {[]} {[]}
+","",0,1,"","","Y","string {[]} {[]}
 ","District name (aka county)","The name of the administrative area (county).","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,,,,"",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "lmdi-organization","Organization.address.district.id","Organization.address.district.id","","","",0,1,"","","","string {[]} {[]}
@@ -1488,18 +1468,18 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"lmdi-organization","Organization.address.district.extension:municipalitycode","Organization.address.district.extension","municipalitycode","","",0,1,"","","","Extension {[CanonicalType[http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode]]} {[]}
-","no-basis-municipalitycode","Coded value for municipality/county Norwegian kommune","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+"lmdi-organization","Organization.address.district.extension:municipalitycode","Organization.address.district.extension","municipalitycode","","",0,1,"","","","Extension {[CanonicalType[http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-municipalitycode]]} {[]}
+","Coded value for municipality/county Norwegian kommune","Coded value for municipality/county Norwegian kommune","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "lmdi-organization","Organization.address.district.value","Organization.address.district.value","","","",0,1,"","","","string {[]} {[]}
 ","Primitive value for string","The actual value","","","","","","","","","",1048576,,,,"",,,,"string.value",0,1,"",""
 "lmdi-organization","Organization.address.state","Organization.address.state","","Province
 Territory","",0,1,"","","Y","string {[]} {[]}
-","Sub-unit of country (abbreviations ok)","Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).","","","","","","","","","",,,,,"",,,,"Address.state",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Fylkesnavn","Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).","","","","","","","","","",,,,,"",,,,"Address.state",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "lmdi-organization","Organization.address.postalCode","Organization.address.postalCode","","Zip
-","",0,1,"","","Y","string {[]} {[]}
+","",0,0,"","","Y","string {[]} {[]}
 ","Postal code for area","A postal code designating a region defined by the postal service.","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""9132""/>","","",,,,,"",,,,"Address.postalCode",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "lmdi-organization","Organization.address.country","Organization.address.country","","","",0,1,"","","Y","string {[]} {[]}
@@ -1514,7 +1494,7 @@ Territory","",0,1,"","","Y","string {[]} {[]}
 "lmdi-organization","Organization.partOf","Organization.partOf","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization]]}
 ","Overordnet organisasjon","Organisasjonen som denne organisasjonen er en del av","","Need to be able to track the hierarchy of organizations within an organization.","","","","","","","",,,,,"",,,,"Organization.partOf",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-organization","Organization.contact","Organization.contact","","","",0,*,"","","","BackboneElement {[]} {[]}
+"lmdi-organization","Organization.contact","Organization.contact","","","",0,0,"","","","BackboneElement {[]} {[]}
 ","Contact for the organization for a certain purpose","Contact for the organization for a certain purpose.","Where multiple contacts for the same purpose are provided there is a standard extension that can be used to determine which one is the preferred contact to use.","Need to keep track of assigned contact points within bigger organization.","","","","","","","",,,,,"",,,,"Organization.contact",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "lmdi-organization","Organization.contact.id","Organization.contact.id","","","",0,1,"","","","string {[]} {[]}
@@ -1541,7 +1521,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "lmdi-organization","Organization.contact.address","Organization.contact.address","","","",0,1,"","","","Address {[]} {[]}
 ","Visiting or postal addresses for the contact","Visiting or postal addresses for the contact.","","May need to keep track of a contact party's address for contacting, billing or reporting requirements.","","","","","","","",,,,,"",,,,"Organization.contact.address",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"lmdi-organization","Organization.endpoint","Organization.endpoint","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Endpoint]]}
+"lmdi-organization","Organization.endpoint","Organization.endpoint","","","",0,0,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Endpoint]]}
 ","Technical endpoints providing access to services operated for the organization","Technical endpoints providing access to services operated for the organization.","","Organizations have multiple systems that provide various services and need to be able to define the technical connection details for how to connect to them, and for what purpose.","","","","","","","",,,,,"",,,,"Organization.endpoint",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "lmdi-patient","Patient","Patient","","SubjectOfCare Client Resident
@@ -1695,7 +1675,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"lmdi-patient","Patient.address.district.extension:municipalitycode","Patient.address.district.extension","municipalitycode","","",0,1,"","","","Extension {[CanonicalType[http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode]]} {[]}
+"lmdi-patient","Patient.address.district.extension:municipalitycode","Patient.address.district.extension","municipalitycode","","",0,1,"","","","Extension {[CanonicalType[http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-municipalitycode]]} {[]}
 ","Coded value for municipality Norwegian kommune","Coded value for municipality Norwegian kommune","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -2086,6 +2066,43 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "lmdi-practitionerrole","PractitionerRole.endpoint","PractitionerRole.endpoint","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Endpoint]]}
 ","Technical endpoints providing access to services operated for the practitioner with this role","Technical endpoints providing access to services operated for the practitioner with this role.","","Organizations have multiple systems that provide various services and ,ay also be different for practitioners too.So the endpoint satisfies the need to be able to define the technical connection details for how to connect to them, and for what purpose.","","","","","","","",,,,,"",,,,"PractitionerRole.endpoint",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
+"lmdi-urban-district","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","lmdi-urban-district","Information about Norwegian urban district (bydel)","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"lmdi-urban-district","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"lmdi-urban-district","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"lmdi-urban-district","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-urban-district""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"lmdi-urban-district","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","Coding {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","urn:oid:2.16.578.1.12.4.1.1.3403","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"lmdi-urban-district","Extension.value[x].id","Extension.value[x].id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"lmdi-urban-district","Extension.value[x].extension","Extension.value[x].extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"lmdi-urban-district","Extension.value[x].system","Extension.value[x].system","","","",0,1,"","","Y","uri {[]} {[]}
+","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""urn:oid:2.16.578.1.12.4.1.1.3403""/>","","","","",,,,,"",,,,"Coding.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"lmdi-urban-district","Extension.value[x].version","Extension.value[x].version","","","",0,1,"","","Y","string {[]} {[]}
+","Version of the system - if relevant","The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.","Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"lmdi-urban-district","Extension.value[x].code","Extension.value[x].code","","","",0,1,"","","Y","code {[]} {[]}
+","Bydelskode","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"lmdi-urban-district","Extension.value[x].display","Extension.value[x].display","","","",0,1,"","","Y","string {[]} {[]}
+","Bydelsnavn","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"lmdi-urban-district","Extension.value[x].userSelected","Extension.value[x].userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
+","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "lokal-legemiddelkatalog-extension","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Lokal Legemiddelkatalog","Informasjon om hvilken lokal legemiddelkatalog koden kommer fra.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -2100,41 +2117,4 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://fhi.no/fhir/lmr/lokal-legemiddel-katalog""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "lokal-legemiddelkatalog-extension","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","Coding {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","http://hl7.no/fhir/ig/lmdi/ValueSet/LokalLegemiddelkatalogValues","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"no-basis-municipalitycode","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","no-basis-municipalitycode","Coded value for municipality/county Norwegian kommune","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"no-basis-municipalitycode","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"no-basis-municipalitycode","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"no-basis-municipalitycode","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
-"no-basis-municipalitycode","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","Coding {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"no-basis-municipalitycode","Extension.value[x].id","Extension.value[x].id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"no-basis-municipalitycode","Extension.value[x].extension","Extension.value[x].extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"no-basis-municipalitycode","Extension.value[x].system","Extension.value[x].system","","","",0,1,"","","Y","uri {[]} {[]}
-","Identity of the terminology system","All Norwegian kommunenummer/municipalitycodes are published by SSB","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","","","","","",,,,,"",,,,"Coding.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"no-basis-municipalitycode","Extension.value[x].version","Extension.value[x].version","","","",0,1,"","","Y","string {[]} {[]}
-","Version of the system - if relevant","The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.","Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"no-basis-municipalitycode","Extension.value[x].code","Extension.value[x].code","","","",0,1,"","","Y","code {[]} {[]}
-","Actual kommunenummer","Norwegian kommunenummer/municipalitycode","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"no-basis-municipalitycode","Extension.value[x].display","Extension.value[x].display","","","",0,1,"","","Y","string {[]} {[]}
-","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"no-basis-municipalitycode","Extension.value[x].userSelected","Extension.value[x].userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
-","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "

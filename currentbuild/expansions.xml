@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="77862a76-1001-42a0-a312-1e7eec69416c"/>
+  <id value="881e07b1-0fd5-4745-89dc-ad31e24e7ec5"/>
   <meta>
-    <lastUpdated value="2025-02-04T14:35:28.467+00:00"/>
+    <lastUpdated value="2025-02-10T09:14:34.264+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -71,7 +71,7 @@
         <name value="LokalLegemiddelkatalogValues"/>
         <title value="Lokal Legemiddelkatalog Values"/>
         <status value="draft"/>
-        <date value="2025-02-04T14:35:28+00:00"/>
+        <date value="2025-02-10T09:13:37+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -80,8 +80,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f14403dc-88ec-4150-a9b0-b9a1187e3f0d"/>
-          <timestamp value="2025-02-04T14:35:52+00:00"/>
+          <identifier value="urn:uuid:a6507df9-ecb6-43bb-9b91-a81fdbbfd95c"/>
+          <timestamp value="2025-02-10T09:15:13+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>

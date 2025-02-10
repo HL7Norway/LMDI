@@ -95,7 +95,7 @@
     <a href="informasjonsmodell.html">Informasjonsmodell</a>
   </li>
   <li>
-    <a href="spesifikasjon.html">Spesifikasjon</a>
+    <a href="integrasjon.html">Integrasjon</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -145,25 +145,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Structures: Resource Profiles</a>
+         <a href="#1">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#2">Structures: Data Type Profiles</a>
+         <a href="#2">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#3">Structures: Extension Definitions</a>
+         <a href="#3">Terminology: Naming Systems</a>
       </li>
       <li>
-         <a href="#4">Terminology: Value Sets</a>
+         <a href="#4">Example: Example Instances</a>
       </li>
       <li>
-         <a href="#5">Terminology: Code Systems</a>
-      </li>
-      <li>
-         <a href="#6">Terminology: Naming Systems</a>
-      </li>
-      <li>
-         <a href="#7">Example: Example Instances</a>
+         <a href="#5">Other</a>
       </li>
    </ul>
 </div>
@@ -172,158 +166,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:html="http://www.w3.org/1999/xhtml">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
-   <h3>Structures: Resource Profiles </h3>
-    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-lmdi-condition.html"
-                  title="StructureDefinition/lmdi-condition">Diagnose</a>
-            </td>
-            <td>
-<p>Diagnosen som pasienten har fått rekvirert og administrert legemiddelet for.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-lmdi-practitioner.html"
-                  title="StructureDefinition/lmdi-practitioner">Helsepersonell</a>
-            </td>
-            <td>
-<p>Profil for å dokumentere helsepersonell som har foreskrevet eller administrert legemidler i Norge.</p>
-
-<p>Profilen er basert på den norske basisprofilen NoBasisPractitioner, men er begrenset til kun å inkludere:</p>
-<ul>
-  <li>Helsepersonellnummer som unik identifikator</li>
-</ul>
-
-<p>I denne profilen er personopplysninger som navn, kontaktinformasjon, fødselsdato og kjønn eksplisitt utelatt. Dette er gjort for å begrense behandling av personopplysninger til det som er nødvendig for formålet.</p>
-
-<p>Profilen brukes i sammenheng med legemiddeladministrering og -rekvirering, der det er behov for å dokumentere hvilket helsepersonell som har vært involvert.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-lmdi-practitionerrole.html"
-                  title="StructureDefinition/lmdi-practitionerrole">Helsepersonellrolle</a>
-            </td>
-            <td>
-<p>Rollen til helsepersonellet eller personen som har foreskrevet eller administrert legemiddelet</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-lmdi-episodeofcare.html"
-                  title="StructureDefinition/lmdi-episodeofcare">Institusjonsopphold</a>
-            </td>
-            <td>
-<p>Beskrivelse av pasientens opphold i institusjon. Dette kan være både av kortere og lengre karakter, slik som døgnopphold, innleggelse hos spesialist, sykehjem og aldershjem.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-lmdi-medication.html"
-                  title="StructureDefinition/lmdi-medication">Legemiddel</a>
-            </td>
-            <td>
-<p>Beskrivelse av legemiddel.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-lmdi-medicationadministration.html"
-                  title="StructureDefinition/lmdi-medicationadministration">Legemiddeladministrering</a>
-            </td>
-            <td>
-<p>Beskriver administrering av legemiddel til pasient på institusjon.</p>
-
-<p>Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-lmdi-bundle.html"
-                  title="StructureDefinition/lmdi-bundle">LegemiddelregisterBundle</a>
-            </td>
-            <td>
-<p>Profil av Bundle for Legemiddelregisteret. Støtter bare batch-type og POST-operasjoner, med begrensninger på tillatte ressurstyper.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-lmdi-medicationrequest.html"
-                  title="StructureDefinition/lmdi-medicationrequest">Legemiddelrekvirering</a>
-            </td>
-            <td>
-<p>Legemiddelrekvirering - ordinering eller annen rekvirering av legemiddel</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-lmdi-organization.html"
-                  title="StructureDefinition/lmdi-organization">Organisasjon</a>
-            </td>
-            <td>
-<p>Profil for organisasjoner i norsk helse- og omsorgstjeneste</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-lmdi-patient.html"
-                  title="StructureDefinition/lmdi-patient">Pasient</a>
-            </td>
-            <td>
-<p>Informasjon om pasienten</p>
-</td>
-         </tr>
-      </tbody>
-   </table>
-   <a name="2"> </a>
-   <h3>Structures: Data Type Profiles </h3>
-    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-lmdi-address.html"
-                  title="StructureDefinition/lmdi-address">Adresse</a>
-            </td>
-            <td>
-<p>Adresse som inneholder utvidelse for kommune</p>
-</td>
-         </tr>
-      </tbody>
-   </table>
-   <a name="3"> </a>
-   <h3>Structures: Extension Definitions </h3>
-    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-lokal-legemiddelkatalog-extension.html"
-                  title="StructureDefinition/lokal-legemiddelkatalog-extension">Lokal Legemiddelkatalog</a>
-            </td>
-            <td>
-<p>Informasjon om hvilken lokal legemiddelkatalog koden kommer fra.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-no-basis-municipalitycode.html"
-                  title="StructureDefinition/no-basis-municipalitycode">no-basis-municipalitycode</a>
-            </td>
-            <td>
-<p>Coded value for municipality/county Norwegian kommune</p>
-</td>
-         </tr>
-      </tbody>
-   </table>
-   <a name="4"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -349,7 +191,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="5"> </a>
+   <a name="2"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -366,7 +208,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="6"> </a>
+   <a name="3"> </a>
    <h3>Terminology: Naming Systems </h3>
     <p>These define identifier and/or code system identities used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -419,7 +261,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="7"> </a>
+   <a name="4"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -615,6 +457,142 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
+   <a name="5"> </a>
+   <h3>Other </h3>
+    <p>These are resources that are used within this implementation guide that do not fit into one of the other categories.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-lmdi-condition.html"
+                  title="StructureDefinition/lmdi-condition">Diagnose</a>
+            </td>
+            <td>
+<p>Diagnosen som pasienten har fått rekvirert og administrert legemiddelet for.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-lmdi-practitioner.html"
+                  title="StructureDefinition/lmdi-practitioner">Helsepersonell</a>
+            </td>
+            <td>
+<p>Profil for å dokumentere helsepersonell som har foreskrevet eller administrert legemidler i Norge.</p>
+
+<p>Profilen er basert på den norske basisprofilen NoBasisPractitioner, men er begrenset til kun å inkludere:</p>
+<ul>
+  <li>Helsepersonellnummer som unik identifikator</li>
+</ul>
+
+<p>I denne profilen er personopplysninger som navn, kontaktinformasjon, fødselsdato og kjønn eksplisitt utelatt. Dette er gjort for å begrense behandling av personopplysninger til det som er nødvendig for formålet.</p>
+
+<p>Profilen brukes i sammenheng med legemiddeladministrering og -rekvirering, der det er behov for å dokumentere hvilket helsepersonell som har vært involvert.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-lmdi-practitionerrole.html"
+                  title="StructureDefinition/lmdi-practitionerrole">Helsepersonellrolle</a>
+            </td>
+            <td>
+<p>Rollen til helsepersonellet eller personen som har foreskrevet eller administrert legemiddelet</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-lmdi-episodeofcare.html"
+                  title="StructureDefinition/lmdi-episodeofcare">Institusjonsopphold</a>
+            </td>
+            <td>
+<p>Beskrivelse av pasientens opphold i institusjon. Dette kan være både av kortere og lengre karakter, slik som døgnopphold, innleggelse hos spesialist, sykehjem og aldershjem.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-lmdi-medication.html"
+                  title="StructureDefinition/lmdi-medication">Legemiddel</a>
+            </td>
+            <td>
+<p>Beskrivelse av legemiddel.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-lmdi-medicationadministration.html"
+                  title="StructureDefinition/lmdi-medicationadministration">Legemiddeladministrering</a>
+            </td>
+            <td>
+<p>Beskriver administrering av legemiddel til pasient på institusjon.</p>
+
+<p>Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-lmdi-bundle.html"
+                  title="StructureDefinition/lmdi-bundle">LegemiddelregisterBundle</a>
+            </td>
+            <td>
+<p>Profil av Bundle for Legemiddelregisteret. Støtter bare batch-type og POST-operasjoner, med begrensninger på tillatte ressurstyper.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-lmdi-medicationrequest.html"
+                  title="StructureDefinition/lmdi-medicationrequest">Legemiddelrekvirering</a>
+            </td>
+            <td>
+<p>Legemiddelrekvirering - ordinering eller annen rekvirering av legemiddel</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-lokal-legemiddelkatalog-extension.html"
+                  title="StructureDefinition/lokal-legemiddelkatalog-extension">Lokal Legemiddelkatalog</a>
+            </td>
+            <td>
+<p>Informasjon om hvilken lokal legemiddelkatalog koden kommer fra.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-lmdi-organization.html"
+                  title="StructureDefinition/lmdi-organization">Organisasjon</a>
+            </td>
+            <td>
+<p>Organisasjoner i norsk helse- og omsorgstjeneste, som sykehus og sykehjem, og avdelinger/poster under disse.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-lmdi-patient.html"
+                  title="StructureDefinition/lmdi-patient">Pasient</a>
+            </td>
+            <td>
+<p>Informasjon om pasienten</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-lmdi-municipalitycode.html"
+                  title="StructureDefinition/lmdi-municipalitycode">lmdi-municipalitycode</a>
+            </td>
+            <td>
+<p>Coded value for municipality/county Norwegian kommune</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-lmdi-urban-district.html"
+                  title="StructureDefinition/lmdi-urban-district">lmdi-urban-district</a>
+            </td>
+            <td>
+<p>Information about Norwegian urban district (bydel)</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
 </div>
 
 </div>
@@ -640,7 +618,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                     Package hl7.fhir.no.lmdi#0.9.4 based on <a
                         style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR
                         4.0.1</a>. Generated <span
-                        title="Tue, Feb 4, 2025 14:35+0000">2025-02-04</span>
+                        title="Mon, Feb 10, 2025 09:14+0000">2025-02-10</span>
                     <br />
                     <span style="color: var(--footer-highlight-text-color)">
                                   Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

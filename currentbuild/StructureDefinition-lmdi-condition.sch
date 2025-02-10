@@ -12,7 +12,19 @@
   <sch:pattern>
     <sch:title>f:Condition</sch:title>
     <sch:rule context="f:Condition">
+      <sch:assert test="count(f:text) &lt;= 0">text: maximum cardinality of 'text' is 0</sch:assert>
+      <sch:assert test="count(f:category) &lt;= 0">category: maximum cardinality of 'category' is 0</sch:assert>
+      <sch:assert test="count(f:severity) &lt;= 0">severity: maximum cardinality of 'severity' is 0</sch:assert>
       <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:bodySite) &lt;= 0">bodySite: maximum cardinality of 'bodySite' is 0</sch:assert>
+      <sch:assert test="count(f:encounter) &lt;= 0">encounter: maximum cardinality of 'encounter' is 0</sch:assert>
+      <sch:assert test="count(f:onset[x]) &lt;= 0">onset[x]: maximum cardinality of 'onset[x]' is 0</sch:assert>
+      <sch:assert test="count(f:abatement[x]) &lt;= 0">abatement[x]: maximum cardinality of 'abatement[x]' is 0</sch:assert>
+      <sch:assert test="count(f:recordedDate) &lt;= 0">recordedDate: maximum cardinality of 'recordedDate' is 0</sch:assert>
+      <sch:assert test="count(f:recorder) &lt;= 0">recorder: maximum cardinality of 'recorder' is 0</sch:assert>
+      <sch:assert test="count(f:asserter) &lt;= 0">asserter: maximum cardinality of 'asserter' is 0</sch:assert>
+      <sch:assert test="count(f:evidence) &lt;= 0">evidence: maximum cardinality of 'evidence' is 0</sch:assert>
+      <sch:assert test="count(f:note) &lt;= 0">note: maximum cardinality of 'note' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

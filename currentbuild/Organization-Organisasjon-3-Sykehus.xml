@@ -25,12 +25,20 @@
   </type>
   <name value="Oslo universitetssykehus HF"/>
   <address>
+    <extension url="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-urban-district">
+      <valueCoding>
+        <system value="urn:oid:2.16.578.1.12.4.1.1.3403"/>
+        <code value="01"/>
+        <display value="Gamle Oslo"/>
+      </valueCoding>
+    </extension>
     <type value="physical"/>
     <district value="Oslo">
-      <extension url="http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode">
+      <extension url="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-municipalitycode">
         <valueCoding>
-          <system value="https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle"/>
+          <system value="urn:oid:2.16.578.1.12.4.1.1.3402"/>
           <code value="0301"/>
+          <display value="Oslo"/>
         </valueCoding>
       </extension>
     </district>
