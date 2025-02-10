@@ -49,10 +49,7 @@ jobs:
       # Kopierer certificates.zip til output
       - name: Copy certificates.zip
         run: |
-          cp ${{ env.IG }}/input/includes/certificates.zip $GITHUB_WORKSPACE/output/
-          cp ${{ env.IG }}/output/full-ig.zip $GITHUB_WORKSPACE/output/
-          cp ${{ env.IG }}/output/definitions.json.zip $GITHUB_WORKSPACE/output/
-          cp ${{ env.IG }}/output/examples.json.zip $GITHUB_WORKSPACE/output/
+          cp ${{ env.IG }}/input/includes/certificates.zip $GITHUB_WORKSPACE/LMDI/output/
 
 
 
@@ -64,5 +61,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ${{ env.IG }}/output
           destination_dir: currentbuild
-          exclude_assets: '**.zip,**.tgz,**.pack'
+          exclude_assets: '**.tgz,**.pack'
           commit_message: '${{ env.IG }}: ${{ github.event.head_commit.message }}'
