@@ -84,6 +84,17 @@
     {
       "extension" : [{
         "url" : "code",
+        "valueString" : "path-assets"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/assets"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueString" : "apply-contact"
       },
       {
@@ -357,6 +368,17 @@
       {
         "url" : "value",
         "valueString" : "ci-build"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-assets"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/assets"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
