@@ -49,10 +49,10 @@ jobs:
       # Kopierer certificates.zip til output
       - name: Copy certificates.zip
         run: |
-          cp input/includes/certificates.zip output/
-          cp output/full-ig.zip $GITHUB_WORKSPACE/output/
-          cp output/definitions.json.zip $GITHUB_WORKSPACE/output/
-          cp output/examples.json.zip $GITHUB_WORKSPACE/output/
+          cp ${{ env.IG }}/input/includes/certificates.zip output/
+          cp ${{ env.IG }}/output/full-ig.zip $GITHUB_WORKSPACE/output/
+          cp ${{ env.IG }}/output/definitions.json.zip $GITHUB_WORKSPACE/output/
+          cp ${{ env.IG }}/output/examples.json.zip $GITHUB_WORKSPACE/output/
 
 
 
