@@ -45,8 +45,8 @@ pages:
     title: Hjem
   informasjonsmodell.md:
     title: Informasjonsmodell
-  spesifikasjon.md:
-    title: Spesifikasjon
+  integrasjon.md:
+    title: Integrasjon
     SignertKryptertBundle.md:
       title: SignertKryptertBundle
     protokoll.md:
@@ -57,6 +57,6 @@ pages:
 menu:
   Hjem: index.html
   Informasjonsmodell: informasjonsmodell.html
-  Spesifikasjon: spesifikasjon.html
+  Integrasjon: integrasjon.html
   Artifacts: artifacts.html
   Nedlastinger: nedlastinger.html

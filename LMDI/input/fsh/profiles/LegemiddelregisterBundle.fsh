@@ -4,76 +4,86 @@ Id: lmdi-bundle
 Title: "LegemiddelregisterBundle"
 Description: "Profil av Bundle for Legemiddelregisteret. Støtter bare batch-type og POST-operasjoner, med begrensninger på tillatte ressurstyper."
 
+// Påkrevde felter
+* identifier 1..1 MS
+* timestamp 1..1 MS
+* type 1..1 MS
 * type = #batch (exactly)
-* type MS
-* entry MS
-* entry.request MS
-* entry.request.method = #POST (exactly)
-* entry.request.method MS
-* entry.resource MS
-
 * type ^short = "Må være av type batch"
-* type ^definition = "Angir at bunten må være av type batch"
+* type ^definition = "Angir at bundle må være av type batch"
 
+// Deaktiverte elementer
+* total 0..0
+* link 0..0
+
+// Entry-elementer
+* entry 1..* MS
+* entry ^short = "Innholdselementer i bundle"
+* entry ^definition = "Inneholder ressursene som skal sendes inn til registeret"
+
+* entry.request 1..1 MS
+* entry.request.method 1..1 MS
+* entry.request.method = #POST (exactly)
 * entry.request.method ^short = "Må være POST"
-* entry.request.method ^definition = "Angir at alle forespørsler i bunten må være av type POST"
+* entry.request.method ^definition = "Angir at alle forespørsler i bundle må være av type POST"
 
+* entry.resource 1..1 MS
+
+// Invariant for tillatte ressurstyper
 * obeys lr-allowed-resources
 
-// Invariant som sjekker at bare tillatte ressurstyper er inkludert
 Invariant: lr-allowed-resources
 Description: "Bundle kan bare inneholde følgende ressurstyper: Pasient, Helsepersonell, Legemiddel, LegemiddelAdministrasjon, Diagnose, Institusjonsopphold, Legemiddelrekvirering, Organisasjon, Helsepersonellrolle"
 Severity: #error
 Expression: "entry.all(
-  resource.conformsTo('Pasient') or 
-  resource.conformsTo('Helsepersonell') or 
-  resource.conformsTo('Legemiddel') or 
-  resource.conformsTo('LegemiddelAdministrasjon') or 
-  resource.conformsTo('Diagnose') or 
-  resource.conformsTo('Institusjonsopphold') or 
-  resource.conformsTo('Legemiddelrekvirering') or 
-  resource.conformsTo('Organisasjon') or 
-  resource.conformsTo('Helsepersonellrolle')
+  resource.ofType(Patient) or 
+  resource.ofType(Practitioner) or 
+  resource.ofType(Medication) or 
+  resource.ofType(MedicationAdministration) or 
+  resource.ofType(Condition) or 
+  resource.ofType(EpisodeOfCare) or 
+  resource.ofType(MedicationRequest) or 
+  resource.ofType(Organization) or 
+  resource.ofType(PractitionerRole)
 )"
 
+// EKSEMPEL
 Instance: LegemiddelregisterBundle-1
 InstanceOf: LegemiddelregisterBundle
 Usage: #example
 Title: "Eksempel på LegemiddelregisterBundle med administreringer"
 Description: "Eksempel på en batch-bundle som inneholder to legemiddeladministreringer"
+
+* identifier.system = "urn:oid:2.16.578.1.34.10.3"
+* identifier.value = "bundle-001"
+* timestamp = "2024-02-07T13:28:17.239+02:00"
 * type = #batch
 
-// Pasient
+// Ressurser i bundle
 * entry[0].resource = Pasient-20
 * entry[0].request.method = #POST
 * entry[0].request.url = "Patient"
 
-// Legemiddel
 * entry[1].resource = Medisin-10
 * entry[1].request.method = #POST
 * entry[1].request.url = "Medication"
 
-// Helsepersonell
 * entry[2].resource = Helsepersonell-10
 * entry[2].request.method = #POST
 * entry[2].request.url = "Practitioner"
 
-// Helsepersonellrolle
 * entry[3].resource = RolleHelsepersonell-10
 * entry[3].request.method = #POST
 * entry[3].request.url = "PractitionerRole"
 
-// Institusjonsopphold
 * entry[4].resource = Institusjonsopphold-2-Sykehjem
 * entry[4].request.method = #POST
 * entry[4].request.url = "EpisodeOfCare"
 
-// Organisasjon
 * entry[5].resource = Organisasjon-2-Eldrehjem
 * entry[5].request.method = #POST
 * entry[5].request.url = "Organization"
 
-// Legemiddeladministrasjon
 * entry[6].resource = Administrering-10
 * entry[6].request.method = #POST
 * entry[6].request.url = "MedicationAdministration"
