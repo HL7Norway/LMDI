@@ -14,7 +14,7 @@ Description: "Informasjon om pasienten"
 
 * address MS
 * address.city 0..0
-* address.district.extension contains NoBasisMunicipalitycode named municipalitycode 0..1
+* address.district.extension contains LmdiMunicipalitycode named municipalitycode 0..1
 * address.district.extension[municipalitycode] ^short = "Coded value for municipality Norwegian kommune"
 * address.district.extension[municipalitycode] ^definition = "Coded value for municipality Norwegian kommune"
 * address.text 0..0
@@ -29,7 +29,6 @@ Description: "Informasjon om pasienten"
 * contact 0..0
 
 * deceased[x] 0..0
-
 
 * gender MS
 * gender ^short = "Kjønn"
@@ -70,7 +69,6 @@ Description: "Informasjon om pasienten"
 * telecom 0..0
 
 * text 0..0
-
 
 
 // EKSEMPLER

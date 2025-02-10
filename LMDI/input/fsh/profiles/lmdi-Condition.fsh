@@ -57,6 +57,20 @@ Description: "Diagnosen som pasienten har fått rekvirert og administrert legemi
 * code.coding[ICPC2].system = "urn:oid:2.16.578.1.12.4.1.1.7170"
 * code.coding[ICPC2].code 1..1
 
+// Deaktiverte elementer
+* encounter 0..0
+* text 0..0
+* category 0..0
+* severity 0..0
+* bodySite 0..0
+* abatement[x] 0..0
+* onset[x] 0..0
+* recorder 0..0
+* recordedDate 0..0
+* asserter 0..0
+* evidence 0..0
+* note 0..0
+
 // Eksempelinstanser
 Instance: Diagnose-1-ICD10-OID
 InstanceOf: Diagnose
