@@ -84,17 +84,6 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-assets"
-      },
-      {
-        "url" : "value",
-        "valueString" : "input/assets"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueString" : "apply-contact"
       },
       {
@@ -368,17 +357,6 @@
       {
         "url" : "value",
         "valueString" : "ci-build"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "path-assets"
-      },
-      {
-        "url" : "value",
-        "valueString" : "input/assets"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -701,6 +679,18 @@
         "valueString" : "StructureDefinition"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/lmdi-address"
+      },
+      "name" : "Adresse",
+      "description" : "Adresse som inneholder utvidelse for kommune",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/lmdi-condition"
       },
       "name" : "Diagnose",
@@ -881,30 +871,6 @@
         "valueString" : "StructureDefinition"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/lmdi-municipalitycode"
-      },
-      "name" : "lmdi-municipalitycode",
-      "description" : "Coded value for municipality/county Norwegian kommune",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/lmdi-urban-district"
-      },
-      "name" : "lmdi-urban-district",
-      "description" : "Information about Norwegian urban district (bydel)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/lokal-legemiddelkatalog-extension"
       },
       "name" : "Lokal Legemiddelkatalog",
@@ -1025,10 +991,22 @@
         "valueString" : "StructureDefinition"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/no-basis-municipalitycode"
+      },
+      "name" : "no-basis-municipalitycode",
+      "description" : "Coded value for municipality/county Norwegian kommune",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/lmdi-organization"
       },
       "name" : "Organisasjon",
-      "description" : "Organisasjoner i norsk helse- og omsorgstjeneste, som sykehus og sykehjem, og avdelinger/poster under disse.",
+      "description" : "Profil for organisasjoner i norsk helse- og omsorgstjeneste",
       "exampleBoolean" : false
     },
     {
@@ -1168,10 +1146,10 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "integrasjon.html"
+          "valueUrl" : "spesifikasjon.html"
         }],
-        "nameUrl" : "integrasjon.html",
-        "title" : "Integrasjon",
+        "nameUrl" : "spesifikasjon.html",
+        "title" : "Spesifikasjon",
         "generation" : "markdown",
         "page" : [{
           "extension" : [{

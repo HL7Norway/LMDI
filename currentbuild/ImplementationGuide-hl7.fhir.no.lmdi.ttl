@@ -112,21 +112,6 @@
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "path-assets"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "input/assets"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
            fhir:v "apply-contact"
          ]
        ] [
@@ -500,21 +485,6 @@
          fhir:value [
            a fhir:string ;
            fhir:v "ci-build"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:code ;
-           fhir:v "path-assets"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "input/assets"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
@@ -965,6 +935,24 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-address> ;
+         fhir:reference [ fhir:v "StructureDefinition/lmdi-address" ]
+       ] ;
+       fhir:name [ fhir:v "Adresse" ] ;
+       fhir:description [ fhir:v "Adresse som inneholder utvidelse for kommune" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition> ;
          fhir:reference [ fhir:v "StructureDefinition/lmdi-condition" ]
        ] ;
@@ -1240,42 +1228,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-municipalitycode> ;
-         fhir:reference [ fhir:v "StructureDefinition/lmdi-municipalitycode" ]
-       ] ;
-       fhir:name [ fhir:v "lmdi-municipalitycode" ] ;
-       fhir:description [ fhir:v "Coded value for municipality/county Norwegian kommune" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-urban-district> ;
-         fhir:reference [ fhir:v "StructureDefinition/lmdi-urban-district" ]
-       ] ;
-       fhir:name [ fhir:v "lmdi-urban-district" ] ;
-       fhir:description [ fhir:v "Information about Norwegian urban district (bydel)" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lokal-legemiddelkatalog-extension> ;
          fhir:reference [ fhir:v "StructureDefinition/lokal-legemiddelkatalog-extension" ]
        ] ;
@@ -1459,11 +1411,29 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode> ;
+         fhir:reference [ fhir:v "StructureDefinition/no-basis-municipalitycode" ]
+       ] ;
+       fhir:name [ fhir:v "no-basis-municipalitycode" ] ;
+       fhir:description [ fhir:v "Coded value for municipality/county Norwegian kommune" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization> ;
          fhir:reference [ fhir:v "StructureDefinition/lmdi-organization" ]
        ] ;
        fhir:name [ fhir:v "Organisasjon" ] ;
-       fhir:description [ fhir:v "Organisasjoner i norsk helse- og omsorgstjeneste, som sykehus og sykehjem, og avdelinger/poster under disse." ] ;
+       fhir:description [ fhir:v "Profil for organisasjoner i norsk helse- og omsorgstjeneste" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v "false"^^xsd:boolean
@@ -1685,14 +1655,14 @@
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
            fhir:value [
              a fhir:url ;
-             fhir:v "integrasjon.html"^^xsd:anyURI
+             fhir:v "spesifikasjon.html"^^xsd:anyURI
            ]
          ] ) ;
          fhir:name [
            a fhir:url ;
-           fhir:v "integrasjon.html"^^xsd:anyURI
+           fhir:v "spesifikasjon.html"^^xsd:anyURI
          ] ;
-         fhir:title [ fhir:v "Integrasjon" ] ;
+         fhir:title [ fhir:v "Spesifikasjon" ] ;
          fhir:generation [ fhir:v "markdown" ] ;
          fhir:page ( [
            fhir:extension ( [

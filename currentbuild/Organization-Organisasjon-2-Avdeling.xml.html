@@ -97,7 +97,7 @@
     <a href="informasjonsmodell.html">Informasjonsmodell</a>
   </li>
   <li>
-    <a href="integrasjon.html">Integrasjon</a>
+    <a href="spesifikasjon.html">Spesifikasjon</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -210,7 +210,7 @@
   &lt;/meta&gt;
   &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Organization Organisasjon-2-Avdeling&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;Organisasjon-2-Avdeling&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcOrganisasjon-2-Avdeling&quot;&gt; &lt;/a&gt;&lt;a name=&quot;Organisasjon-2-Avdeling-no&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;urn:oid:2.16.578.1.12.4.1.4.102&lt;/code&gt;/4208723&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/organization-type dept}&quot;&gt;Hospital Department&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Avdeling for epilepsi, poliklinikk&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=&quot;Organization-Organisasjon-3-Sykehus.html&quot;&gt;Organization Oslo universitetssykehus HF&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Organization Organisasjon-2-Avdeling&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;Organisasjon-2-Avdeling&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcOrganisasjon-2-Avdeling&quot;&gt; &lt;/a&gt;&lt;a name=&quot;Organisasjon-2-Avdeling-no&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;urn:oid:2.16.578.1.12.4.1.4.102&lt;/code&gt;/4208723&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/organization-type dept}&quot;&gt;Hospital Department&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Avdeling for epilepsi, poliklinikk&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=&quot;Organization-Organisasjon-3-Sykehus.html&quot;&gt;Organization Oslo universitetssykehus HF&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">identifier</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:oid:2.16.578.1.12.4.1.4.102&quot;/&gt;
@@ -225,6 +225,19 @@
     &lt;/coding&gt;
   &lt;/type&gt;
   &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Avdeling for epilepsi, poliklinikk&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.address">address</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;physical&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.district">district</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Oslo&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#string#string.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;0301&quot;/&gt;
+        &lt;/valueCoding&gt;
+      &lt;/extension&gt;
+    &lt;/district&gt;
+  &lt;/address&gt;
   &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.partOf">partOf</a>&gt;<a href="Organization-Organisasjon-3-Sykehus.html" style="color: Maroon">&#x1F517;</a> 
     &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Organization/Organisasjon-3-Sykehus&quot;/&gt;
   &lt;/partOf&gt;
@@ -259,7 +272,7 @@
                     Package hl7.fhir.no.lmdi#0.9.4 based on <a
                         style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR
                         4.0.1</a>. Generated <span
-                        title="Tue, Feb 11, 2025 10:50+0000">2025-02-11</span>
+                        title="Tue, Feb 11, 2025 10:58+0000">2025-02-11</span>
                     <br />
                     <span style="color: var(--footer-highlight-text-color)">
                                   Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

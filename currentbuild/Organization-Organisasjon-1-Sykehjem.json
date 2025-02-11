@@ -25,11 +25,10 @@
     "district" : "Sigdal",
     "_district" : {
       "extension" : [{
-        "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-municipalitycode",
+        "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/no-basis-municipalitycode",
         "valueCoding" : {
-          "system" : "urn:oid:2.16.578.1.12.4.1.1.3402",
-          "code" : "3025",
-          "display" : "Sigdal"
+          "system" : "https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle",
+          "code" : "3025"
         }
       }]
     }
