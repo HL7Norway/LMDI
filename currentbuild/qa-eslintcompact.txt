@@ -514,4 +514,4 @@ Generic: line 0, col 0, Warning - The IG is not for the international realm, and
 /github/workspace/LMDI/fsh-generated/resources/ValueSet-lmdi-medicationadministrationstatus.json: line 0, col 0, Warning - Error from http://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/ValueSet/medication-admin-status (EXCEPTION)
 
 err = 193, warn = 25, info = 18
-IG Publisher Version: 1.8.11
+IG Publisher Version: 1.8.12
