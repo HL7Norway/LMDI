@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem",
-      "version" : "0.9.2",
+      "version" : "0.9.4",
       "status" : "draft",
       "name" : "LokalLegemiddelkatalogCodeSystem",
       "title" : "Lokal Legemiddelkatalog Codes",
@@ -84,6 +84,18 @@
       "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
     },
     {
+      "url" : "http://hl7.org/fhir/bundle-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "BundleType",
+      "title" : "BundleType",
+      "description" : "Indicates the purpose of a bundle - how it is intended to be used.",
+      "oids" : ["2.16.840.1.113883.4.642.4.621"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-bundle-type.html" : "BundleType"
+    },
+    {
       "url" : "http://hl7.org/fhir/days-of-week",
       "version" : "4.0.1",
       "status" : "active",
@@ -106,6 +118,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-episode-of-care-status.html" : "EpisodeOfCareStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/http-verb",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "HTTPVerb",
+      "title" : "HTTPVerb",
+      "description" : "HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.",
+      "oids" : ["2.16.840.1.113883.4.642.4.625"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-http-verb.html" : "HTTPVerb"
     },
     {
       "url" : "http://hl7.org/fhir/identifier-use",
@@ -144,6 +168,18 @@
       "http://hl7.org/fhir/R4/valueset-request-priority.html" : "Request priority"
     },
     {
+      "url" : "http://hl7.org/fhir/search-entry-mode",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "SearchEntryMode",
+      "title" : "SearchEntryMode",
+      "description" : "Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.",
+      "oids" : ["2.16.840.1.113883.4.642.4.623"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-search-entry-mode.html" : "SearchEntryMode"
+    },
+    {
       "url" : "http://snomed.info/sct",
       "version" : null,
       "status" : "active",
@@ -153,21 +189,21 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-medication-form-codes.html" : "SNOMED CT Form Codes",
-      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
       "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
-      "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes",
-      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
-      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
-      "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
-      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-      "http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html" : "SNOMED CT Reason Medication Not Given Codes",
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
       "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes",
+      "http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html" : "SNOMED CT Reason Medication Not Given Codes",
+      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
       "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes"
+      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+      "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+      "http://hl7.org/fhir/R4/valueset-medication-form-codes.html" : "SNOMED CT Form Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
@@ -300,18 +336,6 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-medicationrequest-status-reason.html" : "Medication request  status  reason  codes"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/organization-type",
-      "version" : "2.0.1",
-      "status" : "active",
-      "name" : "OrganizationType",
-      "title" : "Organization type",
-      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1128"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-organization-type.html" : "Organization type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/practitioner-role",

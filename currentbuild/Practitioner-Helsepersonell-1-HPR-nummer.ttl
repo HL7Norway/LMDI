@@ -11,30 +11,17 @@
   fhir:id [ fhir:v "Helsepersonell-1-HPR-nummer"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiHelsepersonell"^^xsd:anyURI ;
-       fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiHelsepersonell>
+       fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner"^^xsd:anyURI ;
+       fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner Helsepersonell-1-HPR-nummer</b></p><a name=\"Helsepersonell-1-HPR-nummer\"> </a><a name=\"hcHelsepersonell-1-HPR-nummer\"> </a><a name=\"Helsepersonell-1-HPR-nummer-no-NO\"> </a><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.4</code>/9144900</p><p><b>name</b>: Rita Lin </p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{urn:oid:2.16.578.1.12.4.1.1.7426 1}\">Allmennmedisin</span></td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner Helsepersonell-1-HPR-nummer</b></p><a name=\"Helsepersonell-1-HPR-nummer\"> </a><a name=\"hcHelsepersonell-1-HPR-nummer\"> </a><a name=\"Helsepersonell-1-HPR-nummer-no\"> </a><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.4</code>/9144900</p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.4"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "9144900" ]
-  ] ) ; # 
-  fhir:name ( [
-     fhir:family [ fhir:v "Lin" ] ;
-     fhir:given ( [ fhir:v "Rita" ] )
-  ] ) ; # 
-  fhir:qualification ( [
-     fhir:code [
-       fhir:coding ( [
-         fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.1.7426"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "1" ] ;
-         fhir:display [ fhir:v "Allmennmedisin" ]
-       ] )
-     ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------
