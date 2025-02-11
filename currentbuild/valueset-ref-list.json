@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://hl7.no/fhir/ig/lmdi/ValueSet/LokalLegemiddelkatalogValues",
-      "version" : "0.9.4",
+      "version" : "0.9.2",
       "status" : "draft",
       "name" : "LokalLegemiddelkatalogValues",
       "title" : "Lokal Legemiddelkatalog Values",
@@ -15,8 +15,8 @@
       "StructureDefinition-lokal-legemiddelkatalog-extension.html" : "Lokal Legemiddelkatalog"
     },
     {
-      "url" : "http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministrationstatus",
-      "version" : "0.9.4",
+      "url" : "http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministration-status",
+      "version" : "0.9.2",
       "status" : "draft",
       "name" : "LegemiddeladministreringStatus",
       "title" : "Status for legemiddeladministrering",
@@ -24,7 +24,7 @@
       "systems" : ["http://hl7.org/fhir/ValueSet/medication-admin-status"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-medicationadministration.html" : "Legemiddeladministrering"
+      "StructureDefinition-lmdLegemiddeladministrering.html" : "Legemiddeladministrering"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status",
@@ -38,7 +38,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1320"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-medicationrequest.html" : "Legemiddelrekvirering"
+      "StructureDefinition-lmdiLegemiddelrekvirering.html" : "Legemiddelrekvirering"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/practitioner-role",
@@ -55,7 +55,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.439"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-practitionerrole.html" : "Helsepersonellrolle"
+      "StructureDefinition-lmdiHelsepersonellrolle.html" : "Helsepersonellrolle"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/route-codes",
@@ -69,7 +69,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.98"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-medicationadministration.html" : "Legemiddeladministrering"
+      "StructureDefinition-lmdLegemiddeladministrering.html" : "Legemiddeladministrering"
     }
   ]
 }

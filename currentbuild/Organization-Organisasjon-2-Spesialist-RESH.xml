@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="Organisasjon-2-Spesialist-RESH"/>
+  <meta>
+    <profile value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiOrganisasjon"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization Organisasjon-2-Spesialist-RESH</b></p><a name="Organisasjon-2-Spesialist-RESH"> </a><a name="hcOrganisasjon-2-Spesialist-RESH"> </a><a name="Organisasjon-2-Spesialist-RESH-no-NO"> </a><p><b>identifier</b>: <code>urn.oid:2.16.578.1.12.4.1.4.102</code>/4208723</p><p><b>name</b>: Avdeling for epilepsi, poliklinikk</p><p><b>partOf</b>: <a href="Organization-Organisasjon-3-Spesialist-topp.html">Organization Oslo universitetssykehus HF</a></p></div>
+  </text>
+  <identifier>
+    <system value="urn.oid:2.16.578.1.12.4.1.4.102"/>
+    <value value="4208723"/>
+  </identifier>
+  <name value="Avdeling for epilepsi, poliklinikk"/>
+  <partOf>
+    <reference value="Organization/Organisasjon-3-Spesialist-topp"/>
+  </partOf>
+</Organization>

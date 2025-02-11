@@ -2,11 +2,11 @@
   "resourceType" : "PractitionerRole",
   "id" : "RolleHelsepersonell-1-Hjemmehjelp",
   "meta" : {
-    "profile" : ["http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole"]
+    "profile" : ["http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiHelsepersonellrolle"]
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole RolleHelsepersonell-1-Hjemmehjelp</b></p><a name=\"RolleHelsepersonell-1-Hjemmehjelp\"> </a><a name=\"hcRolleHelsepersonell-1-Hjemmehjelp\"> </a><a name=\"RolleHelsepersonell-1-Hjemmehjelp-no\"> </a><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 5275007}\">Hjemmehjelp (Helsefagarbeider)</span></p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole RolleHelsepersonell-1-Hjemmehjelp</b></p><a name=\"RolleHelsepersonell-1-Hjemmehjelp\"> </a><a name=\"hcRolleHelsepersonell-1-Hjemmehjelp\"> </a><a name=\"RolleHelsepersonell-1-Hjemmehjelp-no-NO\"> </a><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 5275007}\">Hjemmehjelp (Helsefagarbeider)</span></p></div>"
   },
   "code" : [{
     "coding" : [{

@@ -3,10 +3,10 @@
 <Condition xmlns="http://hl7.org/fhir">
   <id value="Diagnose-2-SNOMED-CT"/>
   <meta>
-    <profile value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition"/>
+    <profile value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdiDiagnose"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition Diagnose-2-SNOMED-CT</b></p><a name="Diagnose-2-SNOMED-CT"> </a><a name="hcDiagnose-2-SNOMED-CT"> </a><a name="Diagnose-2-SNOMED-CT-no"> </a><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 276241001}, {urn:oid:2.16.578.1.12.4.1.1.7110 F40.2}">Høydeskrekk</span></p><p><b>subject</b>: <a href="Patient-eksempel-pasient-1234567890.html">Anonymous Patient (no stated gender), DoB Unknown</a></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition Diagnose-2-SNOMED-CT</b></p><a name="Diagnose-2-SNOMED-CT"> </a><a name="hcDiagnose-2-SNOMED-CT"> </a><a name="Diagnose-2-SNOMED-CT-no-NO"> </a><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 276241001}, {urn:oid:2.16.578.1.12.4.1.1.7110 F40.2}">Høydeskrekk</span></p><p><b>subject</b>: <a href="Patient-eksempel-pasient-1234567890.html">Anonymous Patient (no stated gender), DoB Unknown</a></p></div>
   </text>
   <code>
     <coding>
