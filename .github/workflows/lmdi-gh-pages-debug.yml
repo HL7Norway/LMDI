@@ -44,7 +44,7 @@ jobs:
       - name: 🏃‍♂️ Run IG Publisher
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          args: java -jar publisher.jar publisher -ig ${{ env.IG }}/ig.ini
+          args: java -jar publisher.jar publisher -ig ${{ env.IG }}/ig.ini -generate
 
       # Kopierer certificates.zip til output
       - name: Copy certificates.zip
