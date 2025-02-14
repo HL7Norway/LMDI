@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem",
-      "version" : "0.9.1",
+      "version" : "0.9.4",
       "status" : "draft",
       "name" : "LokalLegemiddelkatalogCodeSystem",
       "title" : "Lokal Legemiddelkatalog Codes",

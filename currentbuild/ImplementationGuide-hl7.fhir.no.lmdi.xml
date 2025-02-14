@@ -2,25 +2,33 @@
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.no.lmdi"/>
+  <language value="no"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.lmdi</b></p><a name="hl7.fhir.no.lmdi"> </a><a name="hchl7.fhir.no.lmdi"> </a><a name="hl7.fhir.no.lmdi-no-NO"> </a><h2>Lmdi</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi</pre><div><p>Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="no" lang="no"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.lmdi</b></p><a name="hl7.fhir.no.lmdi"> </a><a name="hchl7.fhir.no.lmdi"> </a><a name="hl7.fhir.no.lmdi-no"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: no</p></div><h2>Lmdi</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi</pre><div><p>Denne implementasjongguiden beskriver hvordan institusjoner skal overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret</p>
 </div></div>
   </text>
   <url value="http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi"/>
-  <version value="0.9.1"/>
+  <version value="0.9.4"/>
   <name value="Lmdi"/>
   <title value="Legemiddeldata fra institusjon til Legemiddelregisteret"/>
   <status value="draft"/>
-  <date value="2025-02-14T08:44:20+00:00"/>
-  <publisher value="Folkehelseinstituttet (FHI)"/>
+  <date value="2025-02-04"/>
+  <publisher value="Folkehelseinstituttet"/>
   <contact>
-    <name value="Folkehelseinstituttet (FHI)"/>
+    <name value="Folkehelseinstituttet"/>
     <telecom>
       <system value="url"/>
       <value value="https://www.fhi.no"/>
     </telecom>
   </contact>
-  <description value="Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret"/>
+  <contact>
+    <name value="Legemiddelregisteret"/>
+    <telecom>
+      <system value="email"/>
+      <value value="legemiddelregisteret@fhi.no"/>
+    </telecom>
+  </contact>
+  <description value="Denne implementasjongguiden beskriver hvordan institusjoner skal overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -29,7 +37,7 @@
     </coding>
   </jurisdiction>
   <packageId value="hl7.fhir.no.lmdi"/>
-  <license value="CC0-1.0"/>
+  <license value="CC-BY-4.0"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="hl7tx">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -62,6 +70,30 @@
       </extension>
       <extension url="value">
         <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-assets"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/assets"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -146,14 +178,6 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-contact"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
         <valueString value="apply-context"/>
       </extension>
       <extension url="value">
@@ -163,14 +187,6 @@
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
         <valueString value="apply-copyright"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-jurisdiction"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -269,6 +285,30 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueCode value="path-assets"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/assets"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueCode value="autoload-resources"/>
       </extension>
       <extension url="value">
@@ -349,14 +389,6 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="apply-contact"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
         <valueCode value="apply-context"/>
       </extension>
       <extension url="value">
@@ -366,14 +398,6 @@
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
         <valueCode value="apply-copyright"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueCode value="apply-jurisdiction"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -925,15 +949,7 @@
           <valueUrl value="index.html"/>
         </extension>
         <nameUrl value="index.html"/>
-        <title value="Home"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="gammel-index.html"/>
-        </extension>
-        <nameUrl value="gammel-index.html"/>
-        <title value="Gammel Index"/>
+        <title value="Hjem"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -951,6 +967,22 @@
         <nameUrl value="integrasjon.html"/>
         <title value="Integrasjon"/>
         <generation value="markdown"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="SignertKryptertBundle.html"/>
+          </extension>
+          <nameUrl value="SignertKryptertBundle.html"/>
+          <title value="SignertKryptertBundle"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="protokoll.html"/>
+          </extension>
+          <nameUrl value="protokoll.html"/>
+          <title value="Protokoll"/>
+          <generation value="markdown"/>
+        </page>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
@@ -960,31 +992,19 @@
         <title value="Nedlastinger"/>
         <generation value="markdown"/>
       </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="oppgaver.html"/>
-        </extension>
-        <nameUrl value="oppgaver.html"/>
-        <title value="Oppgaver"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="protokoll.html"/>
-        </extension>
-        <nameUrl value="protokoll.html"/>
-        <title value="Protokoll"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="SignertKryptertBundle.html"/>
-        </extension>
-        <nameUrl value="SignertKryptertBundle.html"/>
-        <title value="Signert Kryptert Bundle"/>
-        <generation value="markdown"/>
-      </page>
     </page>
+    <parameter>
+      <code value="generate-json"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="generate-xml"/>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code value="generate-turtle"/>
+      <value value="false"/>
+    </parameter>
     <parameter>
       <code value="path-resource"/>
       <value value="input/capabilities"/>

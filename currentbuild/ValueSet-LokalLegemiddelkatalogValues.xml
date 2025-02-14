@@ -3,20 +3,27 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="LokalLegemiddelkatalogValues"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet LokalLegemiddelkatalogValues</b></p><a name="LokalLegemiddelkatalogValues"> </a><a name="hcLokalLegemiddelkatalogValues"> </a><a name="LokalLegemiddelkatalogValues-no-NO"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-LokalLegemiddelkatalogCodeSystem.html"><code>http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem</code></a></li><li>Include all codes defined in <a href="CodeSystem-LokalLegemiddelkatalogCodeSystem.html"><code>http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet LokalLegemiddelkatalogValues</b></p><a name="LokalLegemiddelkatalogValues"> </a><a name="hcLokalLegemiddelkatalogValues"> </a><a name="LokalLegemiddelkatalogValues-no"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-LokalLegemiddelkatalogCodeSystem.html"><code>http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem</code></a></li><li>Include all codes defined in <a href="CodeSystem-LokalLegemiddelkatalogCodeSystem.html"><code>http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem</code></a></li></ul></div>
   </text>
   <url value="http://hl7.no/fhir/ig/lmdi/ValueSet/LokalLegemiddelkatalogValues"/>
-  <version value="0.9.1"/>
+  <version value="0.9.4"/>
   <name value="LokalLegemiddelkatalogValues"/>
   <title value="Lokal Legemiddelkatalog Values"/>
   <status value="draft"/>
-  <date value="2025-02-14T08:44:20+00:00"/>
-  <publisher value="Folkehelseinstituttet (FHI)"/>
+  <date value="2025-02-14T09:08:14+00:00"/>
+  <publisher value="Folkehelseinstituttet"/>
   <contact>
-    <name value="Folkehelseinstituttet (FHI)"/>
+    <name value="Folkehelseinstituttet"/>
     <telecom>
       <system value="url"/>
       <value value="https://www.fhi.no"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Legemiddelregisteret"/>
+    <telecom>
+      <system value="email"/>
+      <value value="legemiddelregisteret@fhi.no"/>
     </telecom>
   </contact>
   <description value="Gyldige verdier for medlemskapsstatus"/>

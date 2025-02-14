@@ -6,7 +6,7 @@
     <profile value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner Helsepersonell-1-HPR-nummer</b></p><a name="Helsepersonell-1-HPR-nummer"> </a><a name="hcHelsepersonell-1-HPR-nummer"> </a><a name="Helsepersonell-1-HPR-nummer-no-NO"> </a><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.4</code>/9144900</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner Helsepersonell-1-HPR-nummer</b></p><a name="Helsepersonell-1-HPR-nummer"> </a><a name="hcHelsepersonell-1-HPR-nummer"> </a><a name="Helsepersonell-1-HPR-nummer-no"> </a><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.4</code>/9144900</p></div>
   </text>
   <identifier>
     <system value="urn:oid:2.16.578.1.12.4.1.4.4"/>

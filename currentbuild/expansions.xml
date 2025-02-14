@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="5371a24f-b03a-4996-a10e-f602eefafdc4"/>
+  <id value="b5316c14-9335-435d-b6dc-3135a61ab793"/>
   <meta>
-    <lastUpdated value="2025-02-14T08:44:55.306+00:00"/>
+    <lastUpdated value="2025-02-14T09:08:52.467+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -17,7 +17,7 @@
               <b>Generated Narrative: ValueSet </b>
             </p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
-              <a href="CodeSystem-LokalLegemiddelkatalogCodeSystem.html">codesystem Lokal Legemiddelkatalog Codes v0.9.1 (CodeSystem)</a>
+              <a href="CodeSystem-LokalLegemiddelkatalogCodeSystem.html">codesystem Lokal Legemiddelkatalog Codes v0.9.4 (CodeSystem)</a>
             </p>
             <p>This value set contains 2 concepts</p>
             <table class="codes">
@@ -67,11 +67,11 @@
           </div>
         </text>
         <url value="http://hl7.no/fhir/ig/lmdi/ValueSet/LokalLegemiddelkatalogValues"/>
-        <version value="0.9.1"/>
+        <version value="0.9.4"/>
         <name value="LokalLegemiddelkatalogValues"/>
         <title value="Lokal Legemiddelkatalog Values"/>
         <status value="draft"/>
-        <date value="2025-02-14T08:44:20+00:00"/>
+        <date value="2025-02-14T09:08:14+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -80,8 +80,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6537e6a6-506f-430a-bdac-c12e1234a799"/>
-          <timestamp value="2025-02-14T08:45:21+00:00"/>
+          <identifier value="urn:uuid:58d2ac20-d6eb-41f2-b5c2-7ada0dbe0427"/>
+          <timestamp value="2025-02-14T09:09:20+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -98,7 +98,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem|0.9.1"/>
+            <valueUri value="http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem|0.9.4"/>
           </parameter>
           <contains>
             <system value="http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem"/>

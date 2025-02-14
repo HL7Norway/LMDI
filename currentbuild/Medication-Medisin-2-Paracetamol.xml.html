@@ -7,7 +7,7 @@
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
     <title>Medisin-2-Paracetamol - XML Representation - Legemiddeldata fra institusjon til Legemiddelregisteret
-        v0.9.1</title>
+        v0.9.4</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="http://hl7.org/fhir" />
@@ -62,7 +62,7 @@
                     <span class="visually-hidden">FHI Produktnavn</span>
                 </a>
                 <div class="fhi-header__project">
-                    <span class="fhi-header__project-name d-inline">Legemiddeldata fra institusjon til Legemiddelregisteret<span style="display:inline;" class="tagline"> &mdash; 0.9.1 - ci-build
+                    <span class="fhi-header__project-name d-inline">Legemiddeldata fra institusjon til Legemiddelregisteret<span style="display:inline;" class="tagline"> &mdash; 0.9.4 - ci-build
                             
                             
                             
@@ -91,19 +91,19 @@
 
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
-    <a href="index.html">Home</a>
+    <a href="index.html">Hjem</a>
   </li>
   <li>
     <a href="informasjonsmodell.html">Informasjonsmodell</a>
   </li>
   <li>
+    <a href="integrasjon.html">Integrasjon</a>
+  </li>
+  <li>
     <a href="artifacts.html">Artifacts</a>
   </li>
   <li>
-    <a href="oppgaver.html">Oppgaver</a>
-  </li>
-  <li>
-    <a href="toc.html">TOC</a>
+    <a href="nedlastinger.html">Nedlastinger</a>
   </li>
 </ul>
                 </div>
@@ -210,7 +210,7 @@
   &lt;/meta&gt;
   &lt;<a href="http://hl7.org/fhir/R4/medication.html#Medication.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Medication Medisin-2-Paracetamol&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;Medisin-2-Paracetamol&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcMedisin-2-Paracetamol&quot;&gt; &lt;/a&gt;&lt;a name=&quot;Medisin-2-Paracetamol-no-NO&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;a href=&quot;NamingSystem-no-basis-fest-legemiddelmerkevare.html&quot; title=&quot;FEST-id for legemiddel merkevare. Rekvirering av en styrke og form av en bestemt merkevare. Pr. 2024 er det ikke lenger ønskelig at det rekvireres på LegemiddelMerkevare.&quot;&gt;festLegemiddelMerkevare&lt;/a&gt;/ID_2ABAC272-0BCF-43F0-84BE-984074D92E15&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=&quot;Codes:&quot;&gt;Paracetamol&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Medication Medisin-2-Paracetamol&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;Medisin-2-Paracetamol&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcMedisin-2-Paracetamol&quot;&gt; &lt;/a&gt;&lt;a name=&quot;Medisin-2-Paracetamol-no&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;a href=&quot;NamingSystem-no-basis-fest-legemiddelmerkevare.html&quot; title=&quot;FEST-id for legemiddel merkevare. Rekvirering av en styrke og form av en bestemt merkevare. Pr. 2024 er det ikke lenger ønskelig at det rekvireres på LegemiddelMerkevare.&quot;&gt;festLegemiddelMerkevare&lt;/a&gt;/ID_2ABAC272-0BCF-43F0-84BE-984074D92E15&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=&quot;Codes:&quot;&gt;Paracetamol&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/medication.html#Medication.identifier">identifier</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://dmp.no/fhir/NamingSystem/festLegemiddelMerkevare&quot;/&gt;
@@ -246,11 +246,11 @@
             <div class="inner-wrapper p-3">
                 <p class="m-0">
                     IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)"
-                        href="https://www.fhi.no">Folkehelseinstituttet (FHI)</a>.
-                    Package hl7.fhir.no.lmdi#0.9.1 based on <a
+                        href="https://www.fhi.no">Folkehelseinstituttet</a>.
+                    Package hl7.fhir.no.lmdi#0.9.4 based on <a
                         style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR
                         4.0.1</a>. Generated <span
-                        title="Fri, Feb 14, 2025 08:44+0000">2025-02-14</span>
+                        title="Fri, Feb 14, 2025 09:08+0000">2025-02-14</span>
                     <br />
                     <span style="color: var(--footer-highlight-text-color)">
                                   Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
