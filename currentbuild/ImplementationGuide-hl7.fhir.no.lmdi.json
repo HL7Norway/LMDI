@@ -1,33 +1,25 @@
 {
   "resourceType" : "ImplementationGuide",
   "id" : "hl7.fhir.no.lmdi",
-  "language" : "no",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"no\" lang=\"no\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.lmdi</b></p><a name=\"hl7.fhir.no.lmdi\"> </a><a name=\"hchl7.fhir.no.lmdi\"> </a><a name=\"hl7.fhir.no.lmdi-no\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: no</p></div><h2>Lmdi</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi</pre><div><p>Denne implementasjongguiden beskriver hvordan institusjoner skal overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.lmdi</b></p><a name=\"hl7.fhir.no.lmdi\"> </a><a name=\"hchl7.fhir.no.lmdi\"> </a><a name=\"hl7.fhir.no.lmdi-no-NO\"> </a><h2>Lmdi</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi</pre><div><p>Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret</p>\n</div></div>"
   },
   "url" : "http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi",
-  "version" : "0.9.4",
+  "version" : "0.9.1",
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
-  "date" : "2025-02-04",
-  "publisher" : "Folkehelseinstituttet",
+  "date" : "2025-02-14T08:44:20+00:00",
+  "publisher" : "Folkehelseinstituttet (FHI)",
   "contact" : [{
-    "name" : "Folkehelseinstituttet",
+    "name" : "Folkehelseinstituttet (FHI)",
     "telecom" : [{
       "system" : "url",
       "value" : "https://www.fhi.no"
     }]
-  },
-  {
-    "name" : "Legemiddelregisteret",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "legemiddelregisteret@fhi.no"
-    }]
   }],
-  "description" : "Denne implementasjongguiden beskriver hvordan institusjoner skal overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret",
+  "description" : "Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -36,7 +28,7 @@
     }]
   }],
   "packageId" : "hl7.fhir.no.lmdi",
-  "license" : "CC-BY-4.0",
+  "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
     "id" : "hl7tx",
@@ -78,39 +70,6 @@
       {
         "url" : "value",
         "valueString" : "ci-build"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "path-assets"
-      },
-      {
-        "url" : "value",
-        "valueString" : "input/assets"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-contact"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-jurisdiction"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -227,6 +186,17 @@
     {
       "extension" : [{
         "url" : "code",
+        "valueString" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueString" : "apply-context"
       },
       {
@@ -239,6 +209,17 @@
       "extension" : [{
         "url" : "code",
         "valueString" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-jurisdiction"
       },
       {
         "url" : "value",
@@ -374,39 +355,6 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "path-assets"
-      },
-      {
-        "url" : "value",
-        "valueString" : "input/assets"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "apply-contact"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "apply-jurisdiction"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueCode" : "autoload-resources"
       },
       {
@@ -517,6 +465,17 @@
     {
       "extension" : [{
         "url" : "code",
+        "valueCode" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueCode" : "apply-context"
       },
       {
@@ -529,6 +488,17 @@
       "extension" : [{
         "url" : "code",
         "valueCode" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-jurisdiction"
       },
       {
         "url" : "value",
@@ -1153,7 +1123,16 @@
           "valueUrl" : "index.html"
         }],
         "nameUrl" : "index.html",
-        "title" : "Hjem",
+        "title" : "Home",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "gammel-index.html"
+        }],
+        "nameUrl" : "gammel-index.html",
+        "title" : "Gammel Index",
         "generation" : "markdown"
       },
       {
@@ -1172,25 +1151,7 @@
         }],
         "nameUrl" : "integrasjon.html",
         "title" : "Integrasjon",
-        "generation" : "markdown",
-        "page" : [{
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "SignertKryptertBundle.html"
-          }],
-          "nameUrl" : "SignertKryptertBundle.html",
-          "title" : "SignertKryptertBundle",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "protokoll.html"
-          }],
-          "nameUrl" : "protokoll.html",
-          "title" : "Protokoll",
-          "generation" : "markdown"
-        }]
+        "generation" : "markdown"
       },
       {
         "extension" : [{
@@ -1200,21 +1161,36 @@
         "nameUrl" : "nedlastinger.html",
         "title" : "Nedlastinger",
         "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "oppgaver.html"
+        }],
+        "nameUrl" : "oppgaver.html",
+        "title" : "Oppgaver",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "protokoll.html"
+        }],
+        "nameUrl" : "protokoll.html",
+        "title" : "Protokoll",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "SignertKryptertBundle.html"
+        }],
+        "nameUrl" : "SignertKryptertBundle.html",
+        "title" : "Signert Kryptert Bundle",
+        "generation" : "markdown"
       }]
     },
     "parameter" : [{
-      "code" : "generate-json",
-      "value" : "true"
-    },
-    {
-      "code" : "generate-xml",
-      "value" : "false"
-    },
-    {
-      "code" : "generate-turtle",
-      "value" : "false"
-    },
-    {
       "code" : "path-resource",
       "value" : "input/capabilities"
     },

@@ -6,7 +6,7 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication Medisin-3-LegemiddelPakning-Monoket</b></p><a name=\"Medisin-3-LegemiddelPakning-Monoket\"> </a><a name=\"hcMedisin-3-LegemiddelPakning-Monoket\"> </a><a name=\"Medisin-3-LegemiddelPakning-Monoket-no\"> </a><p><b>identifier</b>: <a href=\"NamingSystem-no-basis-fest-legemiddelpakning.html\" title=\"FEST-id for legemiddelpakninger. Rekvirering av en bestemt pakning av en merkevare (varenummer)\">festLegemiddelPakning</a>/ID_0003602E-315E-4CDE-9EB0-6756BE9CD120</p><p><b>code</b>: <span title=\"Codes:\">Monoket OD SySk depotkaps, hard 50 mg</span></p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication Medisin-3-LegemiddelPakning-Monoket</b></p><a name=\"Medisin-3-LegemiddelPakning-Monoket\"> </a><a name=\"hcMedisin-3-LegemiddelPakning-Monoket\"> </a><a name=\"Medisin-3-LegemiddelPakning-Monoket-no-NO\"> </a><p><b>identifier</b>: <a href=\"NamingSystem-no-basis-fest-legemiddelpakning.html\" title=\"FEST-id for legemiddelpakninger. Rekvirering av en bestemt pakning av en merkevare (varenummer)\">festLegemiddelPakning</a>/ID_0003602E-315E-4CDE-9EB0-6756BE9CD120</p><p><b>code</b>: <span title=\"Codes:\">Monoket OD SySk depotkaps, hard 50 mg</span></p></div>"
   },
   "identifier" : [{
     "system" : "http://dmp.no/fhir/NamingSystem/festLegemiddelPakning",

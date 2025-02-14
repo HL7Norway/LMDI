@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://hl7.no/fhir/ig/lmdi/ValueSet/LokalLegemiddelkatalogValues",
-      "version" : "0.9.4",
+      "version" : "0.9.1",
       "status" : "draft",
       "name" : "LokalLegemiddelkatalogValues",
       "title" : "Lokal Legemiddelkatalog Values",
@@ -16,7 +16,7 @@
     },
     {
       "url" : "http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministrationstatus",
-      "version" : "0.9.4",
+      "version" : "0.9.1",
       "status" : "draft",
       "name" : "LegemiddeladministreringStatus",
       "title" : "Status for legemiddeladministrering",
@@ -368,16 +368,16 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-lmdi-medication.html" : "Legemiddel",
-      "StructureDefinition-lmdi-medicationrequest.html" : "Legemiddelrekvirering",
-      "StructureDefinition-lmdi-patient.html" : "Pasient",
-      "StructureDefinition-lmdi-practitionerrole.html" : "Helsepersonellrolle",
-      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
-      "StructureDefinition-lmdi-condition.html" : "Diagnose",
-      "StructureDefinition-lmdi-episodeofcare.html" : "Institusjonsopphold",
-      "StructureDefinition-lmdi-organization.html" : "Organisasjon",
+      "StructureDefinition-lmdi-bundle.html" : "LegemiddelregisterBundle",
       "StructureDefinition-lmdi-medicationadministration.html" : "Legemiddeladministrering",
-      "StructureDefinition-lmdi-bundle.html" : "LegemiddelregisterBundle"
+      "StructureDefinition-lmdi-medication.html" : "Legemiddel",
+      "StructureDefinition-lmdi-patient.html" : "Pasient",
+      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
+      "StructureDefinition-lmdi-practitionerrole.html" : "Helsepersonellrolle",
+      "StructureDefinition-lmdi-episodeofcare.html" : "Institusjonsopphold",
+      "StructureDefinition-lmdi-medicationrequest.html" : "Legemiddelrekvirering",
+      "StructureDefinition-lmdi-condition.html" : "Diagnose",
+      "StructureDefinition-lmdi-organization.html" : "Organisasjon"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",

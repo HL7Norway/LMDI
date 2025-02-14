@@ -6,7 +6,7 @@
     <profile value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medication"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Medication Medisin-2-Paracetamol</b></p><a name="Medisin-2-Paracetamol"> </a><a name="hcMedisin-2-Paracetamol"> </a><a name="Medisin-2-Paracetamol-no"> </a><p><b>identifier</b>: <a href="NamingSystem-no-basis-fest-legemiddelmerkevare.html" title="FEST-id for legemiddel merkevare. Rekvirering av en styrke og form av en bestemt merkevare. Pr. 2024 er det ikke lenger ønskelig at det rekvireres på LegemiddelMerkevare.">festLegemiddelMerkevare</a>/ID_2ABAC272-0BCF-43F0-84BE-984074D92E15</p><p><b>code</b>: <span title="Codes:">Paracetamol</span></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Medication Medisin-2-Paracetamol</b></p><a name="Medisin-2-Paracetamol"> </a><a name="hcMedisin-2-Paracetamol"> </a><a name="Medisin-2-Paracetamol-no-NO"> </a><p><b>identifier</b>: <a href="NamingSystem-no-basis-fest-legemiddelmerkevare.html" title="FEST-id for legemiddel merkevare. Rekvirering av en styrke og form av en bestemt merkevare. Pr. 2024 er det ikke lenger ønskelig at det rekvireres på LegemiddelMerkevare.">festLegemiddelMerkevare</a>/ID_2ABAC272-0BCF-43F0-84BE-984074D92E15</p><p><b>code</b>: <span title="Codes:">Paracetamol</span></p></div>
   </text>
   <identifier>
     <system value="http://dmp.no/fhir/NamingSystem/festLegemiddelMerkevare"/>

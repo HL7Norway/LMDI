@@ -11,26 +11,20 @@
   fhir:id [ fhir:v "LokalLegemiddelkatalogCodeSystem"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem LokalLegemiddelkatalogCodeSystem</b></p><a name=\"LokalLegemiddelkatalogCodeSystem\"> </a><a name=\"hcLokalLegemiddelkatalogCodeSystem\"> </a><a name=\"LokalLegemiddelkatalogCodeSystem-no\"> </a><p>This  code system <code>http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">metavisionkatalogFraHso<a name=\"LokalLegemiddelkatalogCodeSystem-metavisionkatalogFraHso\"> </a></td><td>MetavisionkatalogFraHso</td><td>Metavisionkatalog fra Helse Sør-Øst</td></tr><tr><td style=\"white-space:nowrap\">metavisionkatalogFraHN<a name=\"LokalLegemiddelkatalogCodeSystem-metavisionkatalogFraHN\"> </a></td><td>MetavisionkatalogFraHN</td><td>Metavisionkatalog fra Helse Nord</td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem LokalLegemiddelkatalogCodeSystem</b></p><a name=\"LokalLegemiddelkatalogCodeSystem\"> </a><a name=\"hcLokalLegemiddelkatalogCodeSystem\"> </a><a name=\"LokalLegemiddelkatalogCodeSystem-no-NO\"> </a><p>This  code system <code>http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">metavisionkatalogFraHso<a name=\"LokalLegemiddelkatalogCodeSystem-metavisionkatalogFraHso\"> </a></td><td>MetavisionkatalogFraHso</td><td>Metavisionkatalog fra Helse Sør-Øst</td></tr><tr><td style=\"white-space:nowrap\">metavisionkatalogFraHN<a name=\"LokalLegemiddelkatalogCodeSystem-metavisionkatalogFraHN\"> </a></td><td>MetavisionkatalogFraHN</td><td>Metavisionkatalog fra Helse Nord</td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.9.4"] ; # 
+  fhir:version [ fhir:v "0.9.1"] ; # 
   fhir:name [ fhir:v "LokalLegemiddelkatalogCodeSystem"] ; # 
   fhir:title [ fhir:v "Lokal Legemiddelkatalog Codes"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-02-13T20:33:54+00:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "Folkehelseinstituttet"] ; # 
+  fhir:date [ fhir:v "2025-02-14T08:44:20+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "Folkehelseinstituttet" ] ;
+     fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
        fhir:value [ fhir:v "https://www.fhi.no" ]
-     ] )
-  ] [
-     fhir:name [ fhir:v "Legemiddelregisteret" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "legemiddelregisteret@fhi.no" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Kodesystem for lokal legemiddelkatalog"] ; # 

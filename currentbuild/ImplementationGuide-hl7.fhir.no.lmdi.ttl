@@ -9,32 +9,25 @@
 <http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "hl7.fhir.no.lmdi"] ; # 
-  fhir:language [ fhir:v "no"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"no\" lang=\"no\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.lmdi</b></p><a name=\"hl7.fhir.no.lmdi\"> </a><a name=\"hchl7.fhir.no.lmdi\"> </a><a name=\"hl7.fhir.no.lmdi-no\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: no</p></div><h2>Lmdi</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi</pre><div><p>Denne implementasjongguiden beskriver hvordan institusjoner skal overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret</p>\n</div></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.lmdi</b></p><a name=\"hl7.fhir.no.lmdi\"> </a><a name=\"hchl7.fhir.no.lmdi\"> </a><a name=\"hl7.fhir.no.lmdi-no-NO\"> </a><h2>Lmdi</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi</pre><div><p>Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret</p>\n</div></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.9.4"] ; # 
+  fhir:version [ fhir:v "0.9.1"] ; # 
   fhir:name [ fhir:v "Lmdi"] ; # 
   fhir:title [ fhir:v "Legemiddeldata fra institusjon til Legemiddelregisteret"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-02-04"^^xsd:date] ; # 
-  fhir:publisher [ fhir:v "Folkehelseinstituttet"] ; # 
+  fhir:date [ fhir:v "2025-02-14T08:44:20+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Folkehelseinstituttet (FHI)"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "Folkehelseinstituttet" ] ;
+     fhir:name [ fhir:v "Folkehelseinstituttet (FHI)" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
        fhir:value [ fhir:v "https://www.fhi.no" ]
      ] )
-  ] [
-     fhir:name [ fhir:v "Legemiddelregisteret" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "legemiddelregisteret@fhi.no" ]
-     ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Denne implementasjongguiden beskriver hvordan institusjoner skal overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret"] ; # 
+  fhir:description [ fhir:v "Implementasjonsguide for å overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
        fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
@@ -43,7 +36,7 @@
      ] )
   ] ) ; # 
   fhir:packageId [ fhir:v "hl7.fhir.no.lmdi"] ; # 
-  fhir:license [ fhir:v "CC-BY-4.0"] ; # 
+  fhir:license [ fhir:v "CC0-1.0"] ; # 
   fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
   fhir:dependsOn ( [
      fhir:id [ fhir:v "hl7tx" ] ;
@@ -104,51 +97,6 @@
          fhir:value [
            a fhir:string ;
            fhir:v "ci-build"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "path-assets"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "input/assets"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "apply-contact"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "true"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "apply-jurisdiction"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "true"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
@@ -307,6 +255,21 @@
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "apply-contact"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "apply-context"
          ]
        ] [
@@ -323,6 +286,21 @@
          fhir:value [
            a fhir:string ;
            fhir:v "apply-copyright"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "apply-jurisdiction"
          ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
@@ -508,51 +486,6 @@
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:code ;
-           fhir:v "path-assets"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "input/assets"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:code ;
-           fhir:v "apply-contact"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "true"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:code ;
-           fhir:v "apply-jurisdiction"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "true"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:code ;
            fhir:v "autoload-resources"
          ]
        ] [
@@ -703,6 +636,21 @@
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:code ;
+           fhir:v "apply-contact"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
            fhir:v "apply-context"
          ]
        ] [
@@ -719,6 +667,21 @@
          fhir:value [
            a fhir:code ;
            fhir:v "apply-copyright"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "apply-jurisdiction"
          ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
@@ -1664,7 +1627,21 @@
            a fhir:url ;
            fhir:v "index.html"^^xsd:anyURI
          ] ;
-         fhir:title [ fhir:v "Hjem" ] ;
+         fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "gammel-index.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "gammel-index.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Gammel Index" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
@@ -1693,36 +1670,7 @@
            fhir:v "integrasjon.html"^^xsd:anyURI
          ] ;
          fhir:title [ fhir:v "Integrasjon" ] ;
-         fhir:generation [ fhir:v "markdown" ] ;
-         fhir:page ( [
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-             fhir:value [
-               a fhir:url ;
-               fhir:v "SignertKryptertBundle.html"^^xsd:anyURI
-             ]
-           ] ) ;
-           fhir:name [
-             a fhir:url ;
-             fhir:v "SignertKryptertBundle.html"^^xsd:anyURI
-           ] ;
-           fhir:title [ fhir:v "SignertKryptertBundle" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-             fhir:value [
-               a fhir:url ;
-               fhir:v "protokoll.html"^^xsd:anyURI
-             ]
-           ] ) ;
-           fhir:name [
-             a fhir:url ;
-             fhir:v "protokoll.html"^^xsd:anyURI
-           ] ;
-           fhir:title [ fhir:v "Protokoll" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] )
+         fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
@@ -1737,18 +1685,51 @@
          ] ;
          fhir:title [ fhir:v "Nedlastinger" ] ;
          fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "oppgaver.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "oppgaver.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Oppgaver" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "protokoll.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "protokoll.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Protokoll" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "SignertKryptertBundle.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "SignertKryptertBundle.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Signert Kryptert Bundle" ] ;
+         fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;
      fhir:parameter ( [
-       fhir:code [ fhir:v "generate-json" ] ;
-       fhir:value [ fhir:v "true" ]
-     ] [
-       fhir:code [ fhir:v "generate-xml" ] ;
-       fhir:value [ fhir:v "false" ]
-     ] [
-       fhir:code [ fhir:v "generate-turtle" ] ;
-       fhir:value [ fhir:v "false" ]
-     ] [
        fhir:code [ fhir:v "path-resource" ] ;
        fhir:value [ fhir:v "input/capabilities" ]
      ] [
