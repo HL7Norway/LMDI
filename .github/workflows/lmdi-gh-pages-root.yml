@@ -28,6 +28,9 @@ jobs:
       - name: Installer NPM-pakke hl7.fhir.no.basis
         run: npm --registry https://packages.simplifier.net install hl7.fhir.no.basis@2.1.1
 
+      - name: Install SUSHI
+        run: npm install -g fsh-sushi
+
       - name: Last ned IG Publisher
         run: wget -q https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar
 
