@@ -1,0 +1,29 @@
+{
+  "resourceType" : "EpisodeOfCare",
+  "id" : "EksempelInstitusjonsopphold",
+  "meta" : {
+    "profile" : ["http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-episodeofcare"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EpisodeOfCare EksempelInstitusjonsopphold</b></p><a name=\"EksempelInstitusjonsopphold\"> </a><a name=\"hcEksempelInstitusjonsopphold\"> </a><a name=\"EksempelInstitusjonsopphold-no\"> </a><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/episodeofcare-type hacc}\">Home and Community Care</span></p><p><b>patient</b>: <a href=\"Patient-Pasient-2-FNR.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.1#13031353453)</a></p><p><b>managingOrganization</b>: <a href=\"Organization-Organisasjon-1-Sykehjem.html\">Organization Lykkedalen sykehjem</a></p><p><b>period</b>: 2024-01-01 --&gt; 2024-01-15</p></div>"
+  },
+  "status" : "active",
+  "type" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/episodeofcare-type",
+      "code" : "hacc",
+      "display" : "Home and Community Care"
+    }]
+  }],
+  "patient" : {
+    "reference" : "Patient/Pasient-2-FNR"
+  },
+  "managingOrganization" : {
+    "reference" : "Organization/Organisasjon-1-Sykehjem"
+  },
+  "period" : {
+    "start" : "2024-01-01",
+    "end" : "2024-01-15"
+  }
+}

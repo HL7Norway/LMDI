@@ -1,0 +1,57 @@
+@startuml
+
+header "Legemiddeldata fra institusjon til Legemiddelregisteret"
+title "Informasjonsmodell: UML klassediagam - MVP"
+footer "Folkehelseinstituttet"
+
+class Pasient <<Patient>> #lightgreen {
+}
+
+class Legemiddeladministrering <<MedicationAdministration>> #lightgreen {
+}
+
+Legemiddeladministrering --> Legemiddel 
+Legemiddeladministrering --> Pasient
+Legemiddeladministrering --> Helsepersonell
+Legemiddeladministrering --> "Rolle helsepersonell"
+Legemiddeladministrering --> Rekvisisjon
+Legemiddeladministrering --> Institusjonsopphold
+
+class Legemiddel <<Medication>> #lightgreen {
+}
+
+class Helsepersonell <<Practitioner>> {
+}
+class Organisasjon <<Organization>> #lightgreen {
+}
+
+Organisasjon --> Organisasjon
+
+class Institusjonsopphold <<EpisodeOfCare>> #lightgreen {
+}
+
+Institusjonsopphold --> Pasient
+Institusjonsopphold --> Organisasjon
+Institusjonsopphold --> Diagnose
+
+class Diagnose <<Condtition>> {
+}
+
+Diagnose ..> Pasient
+
+class Rekvisisjon <<MedicationRequest>> {
+}
+
+Rekvisisjon --> Diagnose
+Rekvisisjon --> Legemiddel
+Rekvisisjon --> Pasient
+Rekvisisjon --> Helsepersonell
+Rekvisisjon --> Rekvisisjon
+
+class "Rolle helsepersonell" <<PractitionerRole>> {
+}
+
+
+
+@enduml
+

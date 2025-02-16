@@ -1,0 +1,34 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.no/fhir/ig/lmdi/PractitionerRole/RolleHelsepersonell-1-Hjemmehjelp> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RolleHelsepersonell-1-Hjemmehjelp"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole"^^xsd:anyURI ;
+       fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole RolleHelsepersonell-1-Hjemmehjelp</b></p><a name=\"RolleHelsepersonell-1-Hjemmehjelp\"> </a><a name=\"hcRolleHelsepersonell-1-Hjemmehjelp\"> </a><a name=\"RolleHelsepersonell-1-Hjemmehjelp-no\"> </a><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 5275007}\">Hjemmehjelp (Helsefagarbeider)</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:code ( [
+     fhir:coding ( [
+       a sct:5275007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "5275007" ] ;
+       fhir:display [ fhir:v "Auxiliary nurse (occupation)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Hjemmehjelp (Helsefagarbeider)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

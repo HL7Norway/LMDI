@@ -1,0 +1,260 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.no/fhir/ig/lmdi/Bundle/LegemiddelregisterBundle-1> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "LegemiddelregisterBundle-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-bundle"^^xsd:anyURI ;
+       fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-bundle>
+     ] )
+  ] ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "urn:oid:2.16.578.1.34.10.3"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "bundle-001" ]
+  ] ; # 
+  fhir:type [ fhir:v "batch"] ; # 
+  fhir:timestamp [ fhir:v "2024-02-07T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:resource ( [
+       a fhir:Patient ;
+       fhir:id [ fhir:v "Pasient-20" ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_Pasient-20\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient Pasient-20</b></p><a name=\"Pasient-20\"> </a><a name=\"hcPasient-20\"> </a><a name=\"Pasient-20-no\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Rosa Eli Kopter  (no stated gender), DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.1#13031353453)</p><hr/></div>"^^rdf:XMLLiteral
+       ] ;
+       fhir:identifier ( [
+         fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.1"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "13031353453" ]
+       ] ) ;
+       fhir:name ( [
+         fhir:family [ fhir:v "Kopter" ] ;
+         fhir:given ( [ fhir:v "Rosa Eli" ] )
+       ] )
+     ] ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "Patient"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:resource ( [
+       a fhir:Medication ;
+       fhir:id [ fhir:v "Medisin-10" ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Medication_Medisin-10\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Medication Medisin-10</b></p><a name=\"Medisin-10\"> </a><a name=\"hcMedisin-10\"> </a><a name=\"Medisin-10-no\"> </a><p><b>code</b>: <span title=\"Codes:{http://dmp.no/fhir/NamingSystem/festLegemiddelDose ID_48BD33D2-2838-4B81-8225-02391B7A4516}, {http://snomed.info/sct 414984009}\">Oxycodone</span></p></div>"^^rdf:XMLLiteral
+       ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://dmp.no/fhir/NamingSystem/festLegemiddelDose"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "ID_48BD33D2-2838-4B81-8225-02391B7A4516" ] ;
+           fhir:display [ fhir:v "Oxycodone Orifarm mikst oppl 1 mg/ml" ]
+         ] [
+           a sct:414984009 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "414984009" ] ;
+           fhir:display [ fhir:v "Product containing oxycodone (medicinal product)" ]
+         ] ) ;
+         fhir:text [ fhir:v "Oxycodone" ]
+       ]
+     ] ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "Medication"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:resource ( [
+       a fhir:Practitioner ;
+       fhir:id [ fhir:v "Helsepersonell-10" ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_Helsepersonell-10\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner Helsepersonell-10</b></p><a name=\"Helsepersonell-10\"> </a><a name=\"hcHelsepersonell-10\"> </a><a name=\"Helsepersonell-10-no\"> </a><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.4</code>/9144900</p><p><b>name</b>: Rita Lin </p></div>"^^rdf:XMLLiteral
+       ] ;
+       fhir:identifier ( [
+         fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.4"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "9144900" ]
+       ] ) ;
+       fhir:name ( [
+         fhir:family [ fhir:v "Lin" ] ;
+         fhir:given ( [ fhir:v "Rita" ] )
+       ] )
+     ] ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "Practitioner"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:resource ( [
+       a fhir:PractitionerRole ;
+       fhir:id [ fhir:v "RolleHelsepersonell-10" ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_RolleHelsepersonell-10\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole RolleHelsepersonell-10</b></p><a name=\"RolleHelsepersonell-10\"> </a><a name=\"hcRolleHelsepersonell-10\"> </a><a name=\"RolleHelsepersonell-10-no\"> </a><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.1.9034</code>/9</p></div>"^^rdf:XMLLiteral
+       ] ;
+       fhir:identifier ( [
+         fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.1.9034"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "9" ]
+       ] )
+     ] ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "PractitionerRole"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:resource ( [
+       a fhir:EpisodeOfCare ;
+       fhir:id [ fhir:v "Institusjonsopphold-2-Sykehjem" ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"EpisodeOfCare_Institusjonsopphold-2-Sykehjem\"> </a><p class=\"res-header-id\"><b>Generated Narrative: EpisodeOfCare Institusjonsopphold-2-Sykehjem</b></p><a name=\"Institusjonsopphold-2-Sykehjem\"> </a><a name=\"hcInstitusjonsopphold-2-Sykehjem\"> </a><a name=\"Institusjonsopphold-2-Sykehjem-no\"> </a><p><b>status</b>: Active</p><p><b>patient</b>: <a href=\"Bundle-LegemiddelregisterBundle-1.html#Patient_Pasient-20\">Bundle: identifier = urn:oid:2.16.578.1.34.10.3#bundle-001; type = batch; timestamp = 2024-02-07 13:28:17+0200</a></p><p><b>managingOrganization</b>: <a href=\"Bundle-LegemiddelregisterBundle-1.html#Organization_Organisasjon-2-Eldrehjem\">Bundle: identifier = urn:oid:2.16.578.1.34.10.3#bundle-001; type = batch; timestamp = 2024-02-07 13:28:17+0200</a></p><p><b>period</b>: 2019-04-01 --&gt; (ongoing)</p></div>"^^rdf:XMLLiteral
+       ] ;
+       fhir:status [ fhir:v "active" ] ;
+       fhir:patient [
+         fhir:link <http://hl7.no/fhir/ig/lmdi/Patient/Pasient-20> ;
+         fhir:reference [ fhir:v "Patient/Pasient-20" ]
+       ] ;
+       fhir:managingOrganization [
+         fhir:link <http://hl7.no/fhir/ig/lmdi/Organization/Organisasjon-2-Eldrehjem> ;
+         fhir:reference [ fhir:v "Organization/Organisasjon-2-Eldrehjem" ]
+       ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2019-04-01"^^xsd:date ]
+       ]
+     ] ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "EpisodeOfCare"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:resource ( [
+       a fhir:Organization ;
+       fhir:id [ fhir:v "Organisasjon-2-Eldrehjem" ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_Organisasjon-2-Eldrehjem\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization Organisasjon-2-Eldrehjem</b></p><a name=\"Organisasjon-2-Eldrehjem\"> </a><a name=\"hcOrganisasjon-2-Eldrehjem\"> </a><a name=\"Organisasjon-2-Eldrehjem-no\"> </a><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.101</code>/1234567890</p><p><b>name</b>: Lykkedalen eldrehjem</p></div>"^^rdf:XMLLiteral
+       ] ;
+       fhir:identifier ( [
+         fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.101"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "1234567890" ]
+       ] ) ;
+       fhir:name [ fhir:v "Lykkedalen eldrehjem" ]
+     ] ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "Organization"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:resource ( [
+       a fhir:MedicationAdministration ;
+       fhir:id [ fhir:v "Administrering-10" ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationAdministration_Administrering-10\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationAdministration Administrering-10</b></p><a name=\"Administrering-10\"> </a><a name=\"hcAdministrering-10\"> </a><a name=\"Administrering-10-no\"> </a><p><b>status</b>: Completed</p><p><b>medication</b>: <a href=\"#hcAdministrering-10/Medisin-10\">Medication Oxycodone Orifarm mikst oppl 1 mg/ml</a></p><p><b>subject</b>: <a href=\"#hcAdministrering-10/Pasient-20\">Rosa Eli Kopter  (no stated gender), DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.1#13031353453)</a></p><p><b>context</b>: <a href=\"#hcAdministrering-10/Institusjonsopphold-2-Sykehjem\">EpisodeOfCare: status = active; period = 2019-04-01 --&gt; (ongoing)</a></p><p><b>effective</b>: 2024-05-28 13:14:00+0000</p><blockquote><p><b>performer</b></p><p><b>actor</b>: <a href=\"#hcAdministrering-10/Helsepersonell-10\">Practitioner Rita Lin </a></p></blockquote><blockquote><p><b>performer</b></p><p><b>actor</b>: <a href=\"#hcAdministrering-10/RolleHelsepersonell-10\">PractitionerRole: identifier = urn:oid:2.16.578.1.12.4.1.1.9034#9</a></p></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Medication #Medisin-10</b></p><a name=\"Administrering-10/Medisin-10\"> </a><a name=\"hcAdministrering-10/Medisin-10\"> </a><a name=\"Administrering-10/Medisin-10-no\"> </a><p><b>code</b>: <span title=\"Codes:{http://dmp.no/fhir/NamingSystem/festLegemiddelDose ID_48BD33D2-2838-4B81-8225-02391B7A4516}, {http://snomed.info/sct 414984009}\">Oxycodone</span></p></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Patient #Pasient-20</b></p><a name=\"Administrering-10/Pasient-20\"> </a><a name=\"hcAdministrering-10/Pasient-20\"> </a><a name=\"Administrering-10/Pasient-20-no\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Rosa Eli Kopter  (no stated gender), DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.1#13031353453)</p><hr/></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Practitioner #Helsepersonell-10</b></p><a name=\"Administrering-10/Helsepersonell-10\"> </a><a name=\"hcAdministrering-10/Helsepersonell-10\"> </a><a name=\"Administrering-10/Helsepersonell-10-no\"> </a><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.4</code>/9144900</p><p><b>name</b>: Rita Lin </p></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole #RolleHelsepersonell-10</b></p><a name=\"Administrering-10/RolleHelsepersonell-10\"> </a><a name=\"hcAdministrering-10/RolleHelsepersonell-10\"> </a><a name=\"Administrering-10/RolleHelsepersonell-10-no\"> </a><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.1.9034</code>/9</p></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: EpisodeOfCare #Institusjonsopphold-2-Sykehjem</b></p><a name=\"Administrering-10/Institusjonsopphold-2-Sykehjem\"> </a><a name=\"hcAdministrering-10/Institusjonsopphold-2-Sykehjem\"> </a><a name=\"Administrering-10/Institusjonsopphold-2-Sykehjem-no\"> </a><p><b>status</b>: Active</p><p><b>patient</b>: <a href=\"#hcAdministrering-10/Pasient-20\">Rosa Eli Kopter  (no stated gender), DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.1#13031353453)</a></p><p><b>managingOrganization</b>: <a href=\"#hcAdministrering-10/Organisasjon-2-Eldrehjem\">Organization Lykkedalen eldrehjem</a></p><p><b>period</b>: 2019-04-01 --&gt; (ongoing)</p></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Organization #Organisasjon-2-Eldrehjem</b></p><a name=\"Administrering-10/Organisasjon-2-Eldrehjem\"> </a><a name=\"hcAdministrering-10/Organisasjon-2-Eldrehjem\"> </a><a name=\"Administrering-10/Organisasjon-2-Eldrehjem-no\"> </a><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.101</code>/1234567890</p><p><b>name</b>: Lykkedalen eldrehjem</p></blockquote></div>"^^rdf:XMLLiteral
+       ] ;
+       fhir:contained ( [
+         a fhir:Medication ;
+         fhir:id [ fhir:v "Medisin-10" ] ;
+         fhir:code [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://dmp.no/fhir/NamingSystem/festLegemiddelDose"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "ID_48BD33D2-2838-4B81-8225-02391B7A4516" ] ;
+             fhir:display [ fhir:v "Oxycodone Orifarm mikst oppl 1 mg/ml" ]
+           ] [
+             a sct:414984009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "414984009" ] ;
+             fhir:display [ fhir:v "Product containing oxycodone (medicinal product)" ]
+           ] ) ;
+           fhir:text [ fhir:v "Oxycodone" ]
+         ]
+       ] [
+         a fhir:Patient ;
+         fhir:id [ fhir:v "Pasient-20" ] ;
+         fhir:identifier ( [
+           fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.1"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "13031353453" ]
+         ] ) ;
+         fhir:name ( [
+           fhir:family [ fhir:v "Kopter" ] ;
+           fhir:given ( [ fhir:v "Rosa Eli" ] )
+         ] )
+       ] [
+         a fhir:Practitioner ;
+         fhir:id [ fhir:v "Helsepersonell-10" ] ;
+         fhir:identifier ( [
+           fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.4"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "9144900" ]
+         ] ) ;
+         fhir:name ( [
+           fhir:family [ fhir:v "Lin" ] ;
+           fhir:given ( [ fhir:v "Rita" ] )
+         ] )
+       ] [
+         a fhir:PractitionerRole ;
+         fhir:id [ fhir:v "RolleHelsepersonell-10" ] ;
+         fhir:identifier ( [
+           fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.1.9034"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "9" ]
+         ] )
+       ] [
+         a fhir:EpisodeOfCare ;
+         fhir:id [ fhir:v "Institusjonsopphold-2-Sykehjem" ] ;
+         fhir:status [ fhir:v "active" ] ;
+         fhir:patient [
+           fhir:reference [ fhir:v "#Pasient-20" ]
+         ] ;
+         fhir:managingOrganization [
+           fhir:reference [ fhir:v "#Organisasjon-2-Eldrehjem" ]
+         ] ;
+         fhir:period [
+           fhir:start [ fhir:v "2019-04-01"^^xsd:date ]
+         ]
+       ] [
+         a fhir:Organization ;
+         fhir:id [ fhir:v "Organisasjon-2-Eldrehjem" ] ;
+         fhir:identifier ( [
+           fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.101"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "1234567890" ]
+         ] ) ;
+         fhir:name [ fhir:v "Lykkedalen eldrehjem" ]
+       ] ) ;
+       fhir:status [ fhir:v "completed" ] ;
+       fhir:medication [
+         a fhir:Reference ;
+         fhir:reference [ fhir:v "#Medisin-10" ]
+       ] ;
+       fhir:subject [
+         fhir:reference [ fhir:v "#Pasient-20" ]
+       ] ;
+       fhir:context [
+         fhir:reference [ fhir:v "#Institusjonsopphold-2-Sykehjem" ]
+       ] ;
+       fhir:effective [
+         a fhir:dateTime ;
+         fhir:v "2024-05-28T13:14:00Z"^^xsd:dateTime
+       ] ;
+       fhir:performer ( [
+         fhir:actor [
+           fhir:reference [ fhir:v "#Helsepersonell-10" ]
+         ]
+       ] [
+         fhir:actor [
+           fhir:reference [ fhir:v "#RolleHelsepersonell-10" ]
+         ]
+       ] )
+     ] ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "MedicationAdministration"^^xsd:anyURI ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
