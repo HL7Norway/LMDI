@@ -1,0 +1,46 @@
+name: LMDI-gh-pages-root
+
+on:
+  workflow_dispatch:
+
+env:
+  IG: LMDI
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sjekk ut koden
+        uses: actions/checkout@v4
+
+      - name: Cache FHIR-pakker
+        uses: actions/cache@v4
+        with:
+          path: ~/.fhir/packages
+          key: fhir-packages
+
+      - name: Cache IG Publisher input-cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.IG }}/input-cache
+          key: ig-publisher-input-cache
+
+      - name: Installer NPM-pakke hl7.fhir.no.basis
+        run: npm --registry https://packages.simplifier.net install hl7.fhir.no.basis@2.1.1
+
+      - name: Last ned IG Publisher
+        run: wget -q https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar
+
+      - name: Kjør IG Publisher
+        run: java -jar publisher.jar -ig ${{ env.IG }}/ig.ini -generate
+
+      - name: Kopier certificates.zip til output
+        run: cp ${{ env.IG }}/input/includes/certificates.zip $GITHUB_WORKSPACE/${{ env.IG }}/output/
+
+      - name: Deploy til GitHub Pages (rotmappe)
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ${{ env.IG }}/output
+          exclude_assets: '**.tgz,**.pack'
+          commit_message: 'Deploy til rot: ${{ env.IG }} - ${{ github.event.head_commit.message }}'
