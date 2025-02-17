@@ -98,7 +98,7 @@
     <a href="integrasjon.html">Integrasjon</a>
   </li>
   <li>
-    <a href="artifacts.html">Artifacts</a>
+    <a href="profiler.html">FHIR profiler</a>
   </li>
   <li>
     <a href="nedlastinger.html">Nedlastinger</a>
@@ -263,7 +263,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/lmdi-organization">Organisasjon</a>
             </td>
             <td>
-<p>Organisasjoner i norsk helse- og omsorgstjeneste, som sykehus og sykehjem, og avdelinger/poster under disse.</p>
+<p>Organisasjoner i norsk helse- og omsorgstjeneste, som post, avdeling, klinikk, sykehus og sykehjem.</p>
+
+<p>Denne profilen av Organization benyttes for å beskrive helseinstitusjoner og skal representere organisasjonen på lavest mulig nivå i organisasjonshierarkiet (f.eks. en avdeling eller klinikk eller post).</p>
+
+<p>For organisasjonen som er del av en større organisasjon, skal dette angis ved hjelp av partOf-relasjonen. Alle “organisasjonshierarki” skal inkludere minst et organisasjonsnummer fra Enhetsregisteret (identifier:ENH)</p>
 </td>
          </tr>
          <tr>
@@ -629,7 +633,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                     Package hl7.fhir.no.lmdi#0.9.4 based on <a
                         style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR
                         4.0.1</a>. Generated <span
-                        title="Mon, Feb 17, 2025 15:43+0000">2025-02-17</span>
+                        title="Mon, Feb 17, 2025 16:05+0000">2025-02-17</span>
                     <br />
                     <span style="color: var(--footer-highlight-text-color)">
                                   Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -4,7 +4,7 @@ Lmdi : Validation Results
 err = 194, warn = 26, info = 20
 $--
 Generated $--. FHIR version $-- for hl7.fhir.no.lmdi#$-- (canonical = http://hl7.no/fhir/ig/lmdi)
- Build Errors : 275 / 4 / 0
+ Build Errors : 276 / 4 / 0
  /github/workspace/LMDI/fsh-generated/resources/Bundle-LegemiddelregisterBundle-1 : 3 / 2 / 14
  /github/workspace/LMDI/fsh-generated/resources/CodeSystem-LokalLegemiddelkatalogCodeSystem : 2 / 0 / 2
  /github/workspace/LMDI/fsh-generated/resources/Condition-Diagnose-1-ICD10-OID : 1 / 1 / 1
@@ -321,6 +321,7 @@ ERROR: /github/workspace/LMDI/output/StructureDefinition-lmdi-condition.profile.
 ERROR: /github/workspace/LMDI/output/Organization-Organisasjon-2-Avdeling.ttl.html: Unable to read attribute on <div> at line 88 column 18
 ERROR: /github/workspace/LMDI/output/CodeSystem-LokalLegemiddelkatalogCodeSystem.ttl.html: Unable to read attribute on <div> at line 88 column 18
 ERROR: /github/workspace/LMDI/output/StructureDefinition-lmdi-medication-testing.html: Unable to read attribute on <div> at line 90 column 18
+ERROR: /github/workspace/LMDI/output/profiler.html: Unable to read attribute on <div> at line 86 column 18
 ERROR: /github/workspace/LMDI/output/Organization-Organisasjon-1-Sykehjem.html: Unable to read attribute on <div> at line 86 column 18
 ERROR: /github/workspace/LMDI/output/NamingSystem-no-basis-fest-legemiddeldose.xml.html: Unable to read attribute on <div> at line 88 column 18
 ERROR: /github/workspace/LMDI/output/NamingSystem-no-basis-fest-legemiddelmerkevare.xml.html: Unable to read attribute on <div> at line 88 column 18

@@ -1,12 +1,10 @@
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="nb" xmlns="http://www.w3.org/1999/xhtml" lang="nb">
 
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
-    <title>eksempel-pasient-1234567890 - TTL Representation - Legemiddeldata fra institusjon til Legemiddelregisteret
+    <title>FHIR-profiler - Legemiddeldata fra institusjon til Legemiddelregisteret
         v0.9.4</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -115,7 +113,7 @@
     <div id="segment-breadcrumb" class="segment"> <!-- segment-breadcrumb -->
         <div class="container p-0"> <!-- container -->
             <ul class="breadcrumb p-2 mb-1">
-                <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>eksempel-pasient-1234567890</b></li>
+                <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>FHIR-profiler</b></li>
                 
             </ul>
         </div> <!-- /container -->
@@ -127,8 +125,15 @@
             <div class="row">
                 <div class="inner-wrapper">
 
-<div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  
 
 
 
@@ -137,93 +142,93 @@
 
 
 
-<div class="fhi-nav-tabs border-bottom">
-    <ul class="nav nav-tabs undermeny mb-0">
-        
-        <li class="nav-item ">
-    <a class="nav-link "
-        href="Patient-eksempel-pasient-1234567890.html">
-        Narrative Content
-    </a>
-</li>
 
 
-        
 
-        
-        
-        <li class="nav-item ">
-    <a class="nav-link "
-        href="Patient-eksempel-pasient-1234567890.xml.html">
-        XML
-    </a>
-</li>
 
-        
-
-        
-        
-        <li class="nav-item ">
-    <a class="nav-link "
-        href="Patient-eksempel-pasient-1234567890.json.html">
-        JSON
-    </a>
-</li>
-
-        
-
-        
-        
-        <li class="nav-item active">
-    <a class="nav-link active"
-        href="#">
-        TTL
-    </a>
-</li>
-
-        
-
-        
-    </ul>
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
+<h3 id="fhir-profiler">FHIR-profiler</h3>
 
+<div xmlns="http://www.w3.org/1999/xhtml">
+  <table class="grid">
+    <thead>
+      <tr>
+        <th>Navn</th>
+        <th>Beskrivelse</th>
+      </tr>
+    </thead>
+    <tbody>
+    
+    
+      <tr>
+        <td><a href="StructureDefinition-lmdi-condition.html">Diagnose</a></td>
+        <td>Diagnosen som pasienten har fått rekvirert og administrert legemiddelet for.</td>
+      </tr>
+    
+      <tr>
+        <td><a href="StructureDefinition-lmdi-practitioner.html">Helsepersonell</a></td>
+        <td>Profil for å dokumentere helsepersonell som har foreskrevet eller administrert legemidler i Norge. 
 
-<a name="root"> </a>
+Profilen er basert på den norske basisprofilen NoBasisPractitioner, men er begrenset til kun å inkludere:
+- Helsepersonellnummer som unik identifikator
 
+I denne profilen er personopplysninger som navn, kontaktinformasjon, fødselsdato og kjønn eksplisitt utelatt. Dette er gjort for å begrense behandling av personopplysninger til det som er nødvendig for formålet.
 
-<h2 id="root">: eksempel-pasient-1234567890 - TTL Representation</h2>
+Profilen brukes i sammenheng med legemiddeladministrering og -rekvirering, der det er behov for å dokumentere hvilket helsepersonell som har vært involvert.</td>
+      </tr>
+    
+      <tr>
+        <td><a href="StructureDefinition-lmdi-practitionerrole.html">Helsepersonellrolle</a></td>
+        <td>Rollen til helsepersonellet eller personen som har foreskrevet eller administrert legemiddelet</td>
+      </tr>
+    
+      <tr>
+        <td><a href="StructureDefinition-lmdi-episodeofcare.html">Institusjonsopphold</a></td>
+        <td>Beskrivelse av pasientens opphold i institusjon. Dette kan være både av kortere og lengre karakter, slik som døgnopphold, innleggelse hos spesialist, sykehjem og aldershjem.</td>
+      </tr>
+    
+      <tr>
+        <td><a href="StructureDefinition-lmdi-medication.html">Legemiddel</a></td>
+        <td>Beskrivelse av legemiddel.</td>
+      </tr>
+    
+      <tr>
+        <td><a href="StructureDefinition-lmdi-medicationadministration.html">Legemiddeladministrering</a></td>
+        <td>Beskriver administrering av legemiddel til pasient på institusjon.
 
+Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei.</td>
+      </tr>
+    
+      <tr>
+        <td><a href="StructureDefinition-lmdi-bundle.html">LegemiddelregisterBundle</a></td>
+        <td>Profil av Bundle for Legemiddelregisteret. Støtter bare batch-type og POST-operasjoner, med begrensninger på tillatte ressurstyper.</td>
+      </tr>
+    
+      <tr>
+        <td><a href="StructureDefinition-lmdi-medicationrequest.html">Legemiddelrekvirering</a></td>
+        <td>Legemiddelrekvirering - ordinering eller annen rekvirering av legemiddel</td>
+      </tr>
+    
+      <tr>
+        <td><a href="StructureDefinition-lmdi-organization.html">Organisasjon</a></td>
+        <td>Organisasjoner i norsk helse- og omsorgstjeneste, som post, avdeling, klinikk, sykehus og sykehjem. 
 
-<p><a href="Patient-eksempel-pasient-1234567890.ttl" no-download="true">Raw ttl</a> | <a href="Patient-eksempel-pasient-1234567890.ttl" download>Download</a></p>
+Denne profilen av Organization benyttes for å beskrive helseinstitusjoner og skal representere organisasjonen på lavest mulig nivå i organisasjonshierarkiet (f.eks. en avdeling eller klinikk eller post).
 
-  <!-- insert intro if present -->
-  
-
-
-
-  <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
-@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
-@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
-
-# - resource -------------------------------------------------------------------
-
- a fhir:Patient ;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/patient.html#Patient.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;eksempel-pasient-1234567890&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/patient.html#Patient.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Patient eksempel-pasient-1234567890&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;eksempel-pasient-1234567890\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hceksempel-pasient-1234567890\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;eksempel-pasient-1234567890-no\&quot;&gt; &lt;/a&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown&lt;/p&gt;&lt;hr/&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
-  ] . # 
-
-</code></pre>
-
-
-
-  <!-- insert notes if present -->
-  
+For organisasjonen som er del av en større organisasjon, skal dette angis ved hjelp av partOf-relasjonen. Alle “organisasjonshierarki” skal inkludere minst et organisasjonsnummer fra Enhetsregisteret (identifier:ENH)</td>
+      </tr>
+    
+      <tr>
+        <td><a href="StructureDefinition-lmdi-patient.html">Pasient</a></td>
+        <td>Informasjon om pasienten</td>
+      </tr>
+    
+    </tbody>
+  </table>
+</div>
 
 
 
@@ -280,7 +285,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
 <script id="page-data" type="application/json">
   {
-    "breadcrumb": "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>eksempel-pasient-1234567890</b></li>"
+    "breadcrumb": "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>FHIR-profiler</b></li>"
   }
 </script>
 <script type="text/javascript">

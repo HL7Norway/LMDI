@@ -835,7 +835,7 @@
         <reference value="StructureDefinition/lmdi-organization"/>
       </reference>
       <name value="Organisasjon"/>
-      <description value="Organisasjoner i norsk helse- og omsorgstjeneste, som sykehus og sykehjem, og avdelinger/poster under disse."/>
+      <description value="Organisasjoner i norsk helse- og omsorgstjeneste, som post, avdeling, klinikk, sykehus og sykehjem. &#xA;&#xA;Denne profilen av Organization benyttes for å beskrive helseinstitusjoner og skal representere organisasjonen på lavest mulig nivå i organisasjonshierarkiet (f.eks. en avdeling eller klinikk eller post).&#xA;&#xA;For organisasjonen som er del av en større organisasjon, skal dette angis ved hjelp av partOf-relasjonen. Alle “organisasjonshierarki” skal inkludere minst et organisasjonsnummer fra Enhetsregisteret (identifier:ENH)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -990,6 +990,14 @@
         </extension>
         <nameUrl value="nedlastinger.html"/>
         <title value="Nedlastinger"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="profiler.html"/>
+        </extension>
+        <nameUrl value="profiler.html"/>
+        <title value="FHIR-profiler"/>
         <generation value="markdown"/>
       </page>
     </page>
