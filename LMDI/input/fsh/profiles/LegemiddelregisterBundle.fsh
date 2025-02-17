@@ -33,18 +33,17 @@ Description: "Profil av Bundle for Legemiddelregisteret. Støtter bare batch-typ
 * obeys lr-allowed-resources
 
 Invariant: lr-allowed-resources
-Description: "Bundle kan bare inneholde følgende ressurstyper: Pasient, Helsepersonell, Legemiddel, LegemiddelAdministrasjon, Diagnose, Institusjonsopphold, Legemiddelrekvirering, Organisasjon, Helsepersonellrolle"
+Description: "Bundle kan bare inneholde følgende profilerte ressurstyper: Diagnose, Helsepersonell, Episode, Legemiddel, LegemiddelAdministrasjon, Legemiddelrekvirering, Organisasjon, Pasient"
 Severity: #error
 Expression: "entry.all(
-  resource.ofType(Patient) or 
-  resource.ofType(Practitioner) or 
-  resource.ofType(Medication) or 
-  resource.ofType(MedicationAdministration) or 
-  resource.ofType(Condition) or 
-  resource.ofType(EpisodeOfCare) or 
-  resource.ofType(MedicationRequest) or 
-  resource.ofType(Organization) or 
-  resource.ofType(PractitionerRole)
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medication').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationadministration').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationrequest').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient').exists()
 )"
 
 // EKSEMPEL
@@ -76,7 +75,7 @@ Description: "Eksempel på en batch-bundle som inneholder to legemiddeladministr
 * entry[3].request.method = #POST
 * entry[3].request.url = "PractitionerRole"
 
-* entry[4].resource = Institusjonsopphold-2-Sykehjem
+* entry[4].resource = Episode-2-Sykehjem
 * entry[4].request.method = #POST
 * entry[4].request.url = "EpisodeOfCare"
 

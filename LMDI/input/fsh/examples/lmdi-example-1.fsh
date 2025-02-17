@@ -8,7 +8,7 @@ Description: "Utfyllende eksempel, f.eks. om alt rapporteres som én melding. Br
 * status = #completed
 * medicationReference = Reference(Medisin-10)
 * subject = Reference(Pasient-20)
-* context = Reference(Institusjonsopphold-2-Sykehjem)
+* context = Reference(Episode-2-Sykehjem)
 * performer[0].actor = Reference(Helsepersonell-10)
 * performer[+].actor = Reference(RolleHelsepersonell-10)
 * effectiveDateTime = "2024-05-28T13:14:00Z"
@@ -16,7 +16,7 @@ Description: "Utfyllende eksempel, f.eks. om alt rapporteres som én melding. Br
 * contained[+] = Pasient-20
 * contained[+] = Helsepersonell-10
 * contained[+] = RolleHelsepersonell-10
-* contained[+] = Institusjonsopphold-2-Sykehjem
+* contained[+] = Episode-2-Sykehjem
 * contained[+] = Organisasjon-2-Eldrehjem
 
 Instance: Medisin-10
@@ -54,14 +54,13 @@ Usage: #inline
 * identifier.system = "urn:oid:2.16.578.1.12.4.1.1.9034"
 * identifier.value = #9
 
-Instance: Institusjonsopphold-2-Sykehjem
-InstanceOf: EpisodeOfCare
-Description: "Eksempel på institusjonsopphold med EpisodeOfCare"
+Instance: Episode-2-Sykehjem
+InstanceOf: Episode
+Description: "Eksempel på Episode"
 Usage: #inline
 * status = #active
-* patient = Reference(Pasient-20)
-* managingOrganization = Reference(Organisasjon-2-Eldrehjem)
-* period.start = "2019-04-01"
+* serviceProvider = Reference(Organisasjon-2-Eldrehjem)
+* class = http://terminology.hl7.org/CodeSystem/v3-ActCode#IMP "inpatient encounter"
 
 Instance: Organisasjon-2-Eldrehjem
 InstanceOf: Organization

@@ -54,10 +54,14 @@ pages:
       title: Protokoll
   nedlastinger.md:
     title: Nedlastinger
+  profiler.md:
+    title: "FHIR-profiler"
+    generation: markdown
 
 menu:
   Hjem: index.html
   Informasjonsmodell: informasjonsmodell.html
   Integrasjon: integrasjon.html
-  Artifacts: artifacts.html
+  FHIR profiler: profiler.html
   Nedlastinger: nedlastinger.html
+ 

@@ -1,57 +1,43 @@
 @startuml
 
-header "Legemiddeldata fra institusjon til Legemiddelregisteret"
-title "Informasjonsmodell: UML klassediagam - MVP"
-footer "Folkehelseinstituttet"
-
-class Pasient <<Patient>> #lightgreen {
+hide empty members
+skinparam class {
+    BackgroundColor White
+    ArrowColor Black
+    BorderColor Black
 }
 
-class Legemiddeladministrering <<MedicationAdministration>> #lightgreen {
-}
+class LegemiddelregisterBundle
+class Diagnose
+class Pasient
+class Episode
+class Organisasjon
+class Legemiddel
+class Substance
+class Legemiddeladministrering
+class Legemiddelrekvirering
+class Helsepersonell
+class LmdiMunicipalitycode
+class Organization
+class LmdiUrbanDistrict
+class LokalLegemiddelkatalogExtension
 
-Legemiddeladministrering --> Legemiddel 
-Legemiddeladministrering --> Pasient
-Legemiddeladministrering --> Helsepersonell
-Legemiddeladministrering --> "Rolle helsepersonell"
-Legemiddeladministrering --> Rekvisisjon
-Legemiddeladministrering --> Institusjonsopphold
-
-class Legemiddel <<Medication>> #lightgreen {
-}
-
-class Helsepersonell <<Practitioner>> {
-}
-class Organisasjon <<Organization>> #lightgreen {
-}
-
-Organisasjon --> Organisasjon
-
-class Institusjonsopphold <<EpisodeOfCare>> #lightgreen {
-}
-
-Institusjonsopphold --> Pasient
-Institusjonsopphold --> Organisasjon
-Institusjonsopphold --> Diagnose
-
-class Diagnose <<Condtition>> {
-}
-
-Diagnose ..> Pasient
-
-class Rekvisisjon <<MedicationRequest>> {
-}
-
-Rekvisisjon --> Diagnose
-Rekvisisjon --> Legemiddel
-Rekvisisjon --> Pasient
-Rekvisisjon --> Helsepersonell
-Rekvisisjon --> Rekvisisjon
-
-class "Rolle helsepersonell" <<PractitionerRole>> {
-}
-
-
+Diagnose "1..1" --> Pasient : "subject"
+Episode "0..1" --> Organisasjon : "serviceProvider"
+Legemiddel "1..1" --> Substance : "ingredient.item[x]"
+Legemiddeladministrering "1..1" --> Legemiddel : "medication[x]"
+Legemiddeladministrering "1..1" --> Pasient : "subject"
+Legemiddeladministrering "0..1" --> Episode : "context"
+Legemiddeladministrering "0..*" --> Diagnose : "reasonReference"
+Legemiddeladministrering "0..1" --> Legemiddelrekvirering : "request"
+Legemiddelrekvirering "1..1" --> Legemiddel : "medication[x]"
+Legemiddelrekvirering "1..1" --> Pasient : "subject"
+Legemiddelrekvirering "1..1" --> Helsepersonell : "requester"
+Legemiddelrekvirering "0..*" --> Diagnose : "reasonReference"
+Legemiddelrekvirering "0..1" --> Legemiddelrekvirering : "priorPrescription"
+Organisasjon "0..1" --> Organization : "identifier.assigner"
+Organisasjon "0..1" --> Organisasjon : "partOf"
+Pasient "0..1" --> Organization : "identifier.assigner"
+Helsepersonell "0..1" --> Organization : "identifier.assigner"
 
 @enduml
-
