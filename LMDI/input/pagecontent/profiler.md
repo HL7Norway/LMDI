@@ -1,3 +1,3 @@
-### FHIR profiler
+### FHIR-profiler
 
 {% include template-sd-summary.xml %}

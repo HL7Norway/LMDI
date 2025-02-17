@@ -9,6 +9,20 @@ from dataclasses import dataclass
 import logging
 from urllib.parse import urlparse
 
+RESOURCE_NAME_MAPPING = {
+    'lmdi-bundle': 'LegemiddelregisterBundle',
+    'lmdi-condition': 'Diagnose',
+    'lmdi-episodeofcare': 'Institusjonsopphold',
+    'lmdi-medication': 'Legemiddel',
+    'lmdi-medicationadministration': 'Legemiddeladministrering',
+    'lmdi-medicationrequest': 'Legemiddelrekvirering',
+    'lmdi-organization': 'Organisasjon',
+    'lmdi-patient': 'Pasient',
+    'lmdi-practitioner': 'Helsepersonell',
+    'lmdi-practitionerrole': 'Helsepersonellrolle'
+}
+
+
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -17,6 +31,7 @@ logger = logging.getLogger(__name__)
 class ElementInfo:
     path: str
     type: str
+    binding_name: str
     cardinalityProfile: str
     cardinalityBase: str
     slicing: str
@@ -28,6 +43,11 @@ class FHIRProfileAnalyzer:
         self.cache = {}
         self.max_retries = 3
         self.timeout = 30
+        self.base_resources_cache = {}
+
+    def _get_resource_name(self, resource_id: str) -> str:
+        """Oversetter resource ID til navn hvis det finnes i mappingen."""
+        return RESOURCE_NAME_MAPPING.get(resource_id, resource_id)
 
     def load_resource(self, path: str) -> dict:
         """Load a FHIR StructureDefinition from file or URL."""
@@ -49,6 +69,54 @@ class FHIRProfileAnalyzer:
             logger.error(f"Error loading resource from {path}: {e}")
             raise
 
+    def get_base_resource(self, base_url: str) -> Optional[dict]:
+        """
+        Last ned (eller hent fra cache) en baseressurs for et gitt base_url.
+        Søker først lokalt i base_resources/<resource_type>.json, deretter
+        i http://hl7.org/fhir/R4/StructureDefinition-<resource_type>.json osv.
+        """
+        if not base_url:
+            return None
+
+        if base_url in self.base_resources_cache:
+            return self.base_resources_cache[base_url]
+
+        resource_type = base_url.split('/')[-1]  # f.eks "Organization"
+
+        local_path = f"base_resources/{resource_type}.json"
+        if os.path.exists(local_path):
+            try:
+                with open(local_path, 'r', encoding='utf-8') as f:
+                    base = json.load(f)
+                self.base_resources_cache[base_url] = base
+                return base
+            except Exception as e:
+                logger.warning(f"Feil ved lasting av baseressurs lokalt for {resource_type}: {e}")
+
+        try:
+            api_url = f"http://hl7.org/fhir/R4/StructureDefinition-{resource_type}.json"
+            response = requests.get(api_url)
+            if response.status_code == 404:
+                api_url = f"http://hl7.org/fhir/R4/{resource_type}.profile.json"
+                response = requests.get(api_url)
+
+            if response.status_code != 200:
+                logger.warning(f"Kunne ikke laste baseressurs: {resource_type} (HTTP {response.status_code})")
+                return None
+
+            base = response.json()
+
+            os.makedirs("base_resources", exist_ok=True)
+            with open(local_path, 'w', encoding='utf-8') as f:
+                json.dump(base, f, ensure_ascii=False, indent=2)
+
+            self.base_resources_cache[base_url] = base
+            return base
+
+        except Exception as e:
+            logger.warning(f"Feil ved lasting av baseressurs {resource_type}: {e}")
+            return None
+
     def get_element_type(self, element: dict) -> str:
         """Extract and format element type information."""
         try:
@@ -57,18 +125,17 @@ class FHIRProfileAnalyzer:
 
             types = []
             element_types = element['type']
-            
-            # Handle case where type might be a string instead of list
+
             if isinstance(element_types, str):
                 element_types = [{'code': element_types}]
             elif isinstance(element_types, dict):
                 element_types = [element_types]
-                
+
             for t in element_types:
                 if not isinstance(t, dict):
                     logger.warning(f"Unexpected type format: {t}")
                     continue
-                    
+
                 code = t.get('code', '')
                 if not code:
                     continue
@@ -92,7 +159,7 @@ class FHIRProfileAnalyzer:
                     types.append(code.replace('http://hl7.org/fhirpath/System.', ''))
 
             return ' | '.join(types)
-            
+
         except Exception as e:
             logger.error(f"Error processing element type: {e}")
             logger.error(f"Element: {json.dumps(element, indent=2)}")
@@ -103,8 +170,9 @@ class FHIRProfileAnalyzer:
         return not url.startswith('http://hl7.org/')
 
     def _get_profile_names(self, urls: List[str]) -> List[str]:
-        """Extract profile names from URLs."""
-        return [url.split('/')[-1] for url in urls]
+        """Extract profile names from URLs and translate to readable names."""
+        profile_ids = [url.split('/')[-1] for url in urls]
+        return [self._get_resource_name(profile_id) for profile_id in profile_ids]
 
     def get_valueset_binding(self, element: dict) -> str:
         """Format ValueSet binding information."""
@@ -112,7 +180,6 @@ class FHIRProfileAnalyzer:
         if not binding:
             return ""
 
-        # Handle both string valueSet and object valueSet formats
         valueset = binding.get('valueSet', {})
         if isinstance(valueset, str):
             url = valueset
@@ -163,8 +230,8 @@ class FHIRProfileAnalyzer:
         if not slicing:
             return ""
 
-        discriminator = ', '.join(f"{d['type']} on {d['path']}" 
-                                for d in slicing.get('discriminator', []))
+        discriminator = ', '.join(f"{d['type']} on {d['path']}"
+                                  for d in slicing.get('discriminator', []))
         name = slicing.get('name', '')
         rules = slicing.get('rules', '')
         ordered = 'ordered' if slicing.get('ordered') else 'unordered'
@@ -180,32 +247,19 @@ class FHIRProfileAnalyzer:
             base_url = profile.get('baseDefinition', '')
             logger.debug(f"Base URL: {base_url}")
 
-            base_resource = None
-            if base_url:
-                try:
-                    base_resource = self.load_resource(base_url)
-                    logger.debug(f"Loaded base resource: {json.dumps(base_resource, indent=2)}")
-                except Exception as e:
-                    logger.warning(f"Could not load base resource {base_url}: {e}")
+            base_resource = self.get_base_resource(base_url)
 
-            # Generate markdown
             md = []
-            
-            # Extract name safely
-            profile_name = profile.get('name', 'Unknown Profile')
-            base_name = base_url.split('/')[-1] if base_url else 'Unknown Base'
-            
+
+            profile_name = self._get_resource_name(profile.get('name', 'Unknown Profile'))
+            base_name = self._get_resource_name(base_url.split('/')[-1] if base_url else 'Unknown Base')
+
             md.append(f"# {profile_name} : {base_name}\n")
-            
-            # Process elements
+
             elements = self._process_elements(profile, base_resource)
-            
-            # Generate tables
+
             md.extend(self._generate_tables(elements))
-            
-            # Add attribute codes description
-            md.extend(self._generate_attribute_codes())
-            
+
             return '\n'.join(md)
 
         except Exception as e:
@@ -217,23 +271,35 @@ class FHIRProfileAnalyzer:
         """Process all elements in the profile."""
         elements = []
         snapshot = profile.get('snapshot', {}).get('element', [])
-        
+
         if not snapshot and base_resource:
-            # Generate snapshot from differential
             differential = profile.get('differential', {}).get('element', [])
             snapshot = self._generate_snapshot(differential, base_resource)
 
         for element in snapshot:
-            if element['path'] == profile['type']:  # Skip resource element itself
+            if element['path'] == profile['type']:  # skip resource element itself
                 continue
 
-            if element.get('max') == '0':  # Skip removed elements
-                continue
+            element_id = element.get('id', '')
+            path = element['path']
 
-            # Create ElementInfo object
+            if ':' in element_id:
+                base_path, slice_name = element_id.rsplit(':', 1)
+                formatted_path = f"{self._format_path(path, profile['type'])}:{slice_name}"
+            else:
+                formatted_path = self._format_path(path, profile['type'])
+
+            binding_name = ""
+            if 'binding' in element:
+                for ext in element['binding'].get('extension', []):
+                    if ext.get('url') == 'http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName':
+                        binding_name = ext.get('valueString', '')
+                        break
+
             element_info = ElementInfo(
-                path=self._format_path(element['path'], profile['type']),
+                path=formatted_path,
                 type=self.get_element_type(element),
+                binding_name=binding_name,
                 cardinalityProfile=f"{element.get('min', '0')}..{element.get('max', '*')}",
                 cardinalityBase=self._get_base_cardinality(element, base_resource),
                 slicing=self.format_slicing(element),
@@ -244,41 +310,26 @@ class FHIRProfileAnalyzer:
 
         return self._sort_elements(elements)
 
-    # alfabetisk innenfor hver gruppe
-    # def _sort_elements(self, elements: List[ElementInfo]) -> List[ElementInfo]:
-    #     """Sort elements according to specified grouping rules."""
-    #     def get_group(element: ElementInfo) -> int:
-    #         path = element.path
-    #         if any(core in path for core in ['id', 'meta']):
-    #             return 1
-    #         if 'extension' in path:
-    #             return 3
-    #         return 2
-
-    #     return sorted(elements, key=lambda e: (get_group(e), e.path))
-
     def _sort_elements(self, elements: List[ElementInfo]) -> List[ElementInfo]:
         """Sorter elementene alfabetisk etter path."""
         return sorted(elements, key=lambda e: e.path)
 
     def _generate_tables(self, elements: List[ElementInfo]) -> List[str]:
         """Generate all required Markdown tables."""
+        kept, removed = self._split_removed_elements(elements)
+
         tables = []
-        
-        # Complex types table
+
+        top_level_kept = [e for e in kept if '.' not in e.path]
         tables.append("## Elementer")
-        tables.extend(self._generate_element_table(
-            [e for e in elements if '.' not in e.path]))
-        
-        # All elements table
+        tables.extend(self._generate_element_table(top_level_kept))
+
         tables.append("\n## All Elements\n")
-        tables.extend(self._generate_element_table(elements))
-        
-        # Removed elements table
+        tables.extend(self._generate_element_table(kept))
+
         tables.append("\n## Removed Elements\n")
-        tables.extend(self._generate_removed_elements_table(
-            [e for e in elements if e.cardinalityProfile == '0..0']))
-        
+        tables.extend(self._generate_removed_elements_table(removed))
+
         return tables
 
     def _generate_element_table(self, elements: List[ElementInfo]) -> List[str]:
@@ -287,53 +338,49 @@ class FHIRProfileAnalyzer:
             "| Element | Type | Profile | Base |",
             "|---------|------|---------|------|"
         ]
-        
+
         for element in elements:
+            if element.cardinalityProfile == '0..0':
+                continue
+
+            if element.cardinalityProfile != element.cardinalityBase:
+                cardinalityProfile = f"**{element.cardinalityProfile}**"
+            else:
+                cardinalityProfile = element.cardinalityProfile
+
+            # Escaper '|' tegnet i type-kolonnen ved å erstatte det med '\|'
+            type_column = element.type.replace('|', '\\|')
+            if element.binding_name:
+                type_column = f"{type_column}<br/> Binding: {element.binding_name}"
+
             table.append(
-                f"| {element.path} | {element.type} | {element.cardinalityProfile} | "
+                f"| {element.path} | {type_column} | {cardinalityProfile} | "
                 f"{element.cardinalityBase} | "
             )
-        
-        return table
 
+        return table
+    
     def _generate_removed_elements_table(self, elements: List[ElementInfo]) -> List[str]:
         """Generate a Markdown table for removed elements."""
         if not elements:
             return ["No removed elements."]
-            
+
         table = [
             "| Element | Description |",
             "|---------|-------------|"
         ]
-        
+
         for element in elements:
             table.append(f"| {element.path} | {element.type} |")
-            
-        return table
 
-    def _generate_attribute_codes(self) -> List[str]:
-        """Generate attribute codes description table."""
-        return [
-            "\n## Attribute Codes\n",
-            "| Code | Description |",
-            "|------|-------------|",
-            "| MS | Must Support |",
-            "| ?! | Is Modifier |",
-            "| SU | Is Summary |",
-            "| F | Fixed Value |",
-            "| E | Has Extensions |"
-        ]
+        return table
 
     def _format_path(self, path: str, resource_type: str) -> str:
         """Format element path according to specifications."""
-        # Remove resource name prefix
         if path.startswith(f"{resource_type}."):
             path = path[len(resource_type) + 1:]
-
-        # Truncate if necessary
         if len(path) > 100:
             return "..." + path[-40:]
-
         return path
 
     def _get_base_cardinality(self, element: dict, base_resource: Optional[dict]) -> str:
@@ -342,30 +389,71 @@ class FHIRProfileAnalyzer:
             return ""
 
         base_elements = base_resource.get('snapshot', {}).get('element', [])
+        element_path = element['path']
+
+        # Prøv eksakt match:
         for base_element in base_elements:
-            if base_element['path'] == element['path']:
+            if base_element['path'] == element_path:
                 return f"{base_element.get('min', '0')}..{base_element.get('max', '*')}"
 
-        return ""
+        # Hvis nested element, sjekk delvis match som en fallback:
+        if '.' in element_path:
+            base_path_parts = element_path.split('.')
+            for base_element in base_elements:
+                base_element_path = base_element['path'].split('.')
+                if all(part in base_element_path for part in base_path_parts):
+                    return f"{base_element.get('min', '0')}..{base_element.get('max', '*')}"
+
+        return "0..1"  # fallback
 
     def _generate_snapshot(self, differential: List[dict], base: dict) -> List[dict]:
-        """Generate snapshot from differential and base resource."""
-        # This is a simplified version - in practice, you'd need more complex
-        # snapshot generation logic
+        """Generate snapshot from differential and base resource (for simplicity)."""
         base_elements = {e['path']: e for e in base.get('snapshot', {}).get('element', [])}
         result = []
 
         for element in differential:
             path = element['path']
             if path in base_elements:
-                # Merge base and differential
+                # Merge base og differential
                 merged = {**base_elements[path], **element}
                 result.append(merged)
             else:
-                # New element
+                # Nytt element
                 result.append(element)
 
         return result
+
+    def _split_removed_elements(self, elements: List[ElementInfo]) -> (List[ElementInfo], List[ElementInfo]):
+        """
+        Returnerer to lister: (kept, removed).
+        - removed inneholder kun de elementene som har cardinalityProfile == '0..0' (altså "fjernede rot-elementer").
+        - barne-elementer (path som starter med "<forelder>." eller "<forelder>:") blir helt skjult (er verken i kept eller removed).
+        """
+
+        # 1) Finn alle "rot-elementer" som eksplisitt har 0..0
+        removed_explicit = [e for e in elements if e.cardinalityProfile == '0..0']
+
+        # 2) Finn alle under-elementer/slices av disse fjernede elementene
+        #    Disse vil vi utelukke fra "kept" og "removed" (helt skjult).
+        hidden_paths = set()
+        for elem in removed_explicit:
+            # Legg til selve element.path i removed-settet:
+            hidden_paths.add(elem.path)
+
+            # Søk etter barne-elementer med path som starter på "<elem.path>." eller "<elem.path>:"
+            prefix_dot = elem.path + '.'
+            prefix_slice = elem.path + ':'
+            for other in elements:
+                if other.path.startswith(prefix_dot) or other.path.startswith(prefix_slice):
+                    hidden_paths.add(other.path)
+
+        # 3) Del i "fjernet" (bare de eksplisitte 0..0-elementene), mens barne-elementer ikke listes
+        removed = [e for e in removed_explicit]
+
+        # 4) kept er alle elementer som ikke ligger i hidden_paths
+        kept = [e for e in elements if e.path not in hidden_paths]
+
+        return (kept, removed)
 
 def main():
     """Main function to handle command line operation."""
