@@ -1,16 +1,16 @@
 Lmdi : Validation Results
 =========================================
 
-err = 193, warn = 25, info = 20
-IG Publisher Version: 1.8.12
-Generated Sun Feb 16 13:25:12 UTC 2025. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.9.4 (canonical = http://hl7.no/fhir/ig/lmdi)
+err = 194, warn = 26, info = 20
+IG Publisher Version: 1.8.13
+Generated Mon Feb 17 15:44:04 UTC 2025. FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.9.4 (canonical = http://hl7.no/fhir/ig/lmdi)
  Build Errors : 275 / 4 / 0
  /github/workspace/LMDI/fsh-generated/resources/Bundle-LegemiddelregisterBundle-1 : 3 / 2 / 14
  /github/workspace/LMDI/fsh-generated/resources/CodeSystem-LokalLegemiddelkatalogCodeSystem : 2 / 0 / 2
  /github/workspace/LMDI/fsh-generated/resources/Condition-Diagnose-1-ICD10-OID : 1 / 1 / 1
  /github/workspace/LMDI/fsh-generated/resources/Condition-Diagnose-2-SNOMED-CT : 2 / 1 / 1
  /github/workspace/LMDI/fsh-generated/resources/EpisodeOfCare-EksempelInstitusjonsopphold : 0 / 0 / 1
- /github/workspace/LMDI/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi : 2 / 1 / 1
+ /github/workspace/LMDI/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi : 4 / 2 / 1
  /github/workspace/LMDI/fsh-generated/resources/Medication-Medisin-1-LegemiddelDose-Oxycodone : 0 / 0 / 2
  /github/workspace/LMDI/fsh-generated/resources/Medication-Medisin-2-Paracetamol : 0 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/Medication-Medisin-3-LegemiddelPakning-Monoket : 0 / 0 / 1
@@ -40,7 +40,7 @@ Generated Sun Feb 16 13:25:12 UTC 2025. FHIR version 4.0.1 for hl7.fhir.no.lmdi#
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-medicationadministration : 21 / 3 / 3
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-medicationrequest : 10 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-municipalitycode : 5 / 0 / 1
- /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-organization : 23 / 0 / 4
+ /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-organization : 22 / 0 / 4
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-patient : 15 / 0 / 3
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-practitioner : 4 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-practitionerrole : 5 / 0 / 1
@@ -330,11 +330,11 @@ ERROR: /github/workspace/LMDI/output/Medication-Medisin-2-Paracetamol.html: Unab
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
 == fsh-generated/resources/Bundle-LegemiddelregisterBundle-1.json ==
-WARNING: Bundle/LegemiddelregisterBundle-1: Bundle.entry[1].resource/*Medication/Medisin-10*/.code.coding[0]: A definition for CodeSystem 'http://dmp.no/fhir/NamingSystem/festLegemiddelDose' could not be found, so the code cannot be validated
+WARNING: Bundle/LegemiddelregisterBundle-1: Bundle.entry[1].resource/*Medication/Medisin-10*/.code.coding[0].system: A definition for CodeSystem 'http://dmp.no/fhir/NamingSystem/festLegemiddelDose' could not be found, so the code cannot be validated
 ERROR: Bundle/LegemiddelregisterBundle-1: Bundle.entry[4]: Bundle entry missing fullUrl
 ERROR: Bundle/LegemiddelregisterBundle-1: Bundle.entry[4].resource/*EpisodeOfCare/Institusjonsopphold-2-Sykehjem*/.patient: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/LegemiddelregisterBundle-1: Bundle.entry[4].resource/*EpisodeOfCare/Institusjonsopphold-2-Sykehjem*/.managingOrganization: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-WARNING: Bundle/LegemiddelregisterBundle-1: Bundle.entry[6].resource/*MedicationAdministration/Administrering-10*/.contained[0]/*Medication/Medisin-10*/.code.coding[0]: A definition for CodeSystem 'http://dmp.no/fhir/NamingSystem/festLegemiddelDose' could not be found, so the code cannot be validated
+WARNING: Bundle/LegemiddelregisterBundle-1: Bundle.entry[6].resource/*MedicationAdministration/Administrering-10*/.contained[0]/*Medication/Medisin-10*/.code.coding[0].system: A definition for CodeSystem 'http://dmp.no/fhir/NamingSystem/festLegemiddelDose' could not be found, so the code cannot be validated
 == fsh-generated/resources/CodeSystem-LokalLegemiddelkatalogCodeSystem.json ==
 INFORMATION: CodeSystem/LokalLegemiddelkatalogCodeSystem: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 ERROR: CodeSystem/LokalLegemiddelkatalogCodeSystem: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
@@ -351,6 +351,9 @@ WARNING: Condition/Diagnose-2-SNOMED-CT: Condition.code.coding[1]: A definition 
 WARNING: /github/workspace/LMDI/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi: Unknown Parameters: [generate-json=true, generate-xml=false, generate-turtle=false, path-assets=input/assets]
 ERROR: ImplementationGuide/hl7.fhir.no.lmdi: ImplementationGuide.definition.extension[2].extension[0].value.ofType(string): The value provided ('path-assets') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.3.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'path-assets' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.3.0'; The provided code '#path-assets' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.3.0')
 ERROR: ImplementationGuide/hl7.fhir.no.lmdi: ImplementationGuide.definition.extension[29].extension[0].value.ofType(code): The value provided ('path-assets') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.3.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'path-assets' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.3.0'; The provided code '#path-assets' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.3.0')
+ERROR: ImplementationGuide/hl7.fhir.no.lmdi: ImplementationGuide: HL7 Implementation Guides must state their status explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+ERROR: ImplementationGuide/hl7.fhir.no.lmdi: ImplementationGuide: HL7 Implementation Guides must state their owning workgroup explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
+WARNING: ImplementationGuide/hl7.fhir.no.lmdi: ImplementationGuide: HL7 Implementation Guides should state their maturity explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
 == fsh-generated/resources/Medication-Medisin-1-LegemiddelDose-Oxycodone.json ==
 INFORMATION: Medication/Medisin-1-LegemiddelDose-Oxycodone: Medication.code.coding[0]: This element does not match any known slice defined in the profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medication|0.9.4 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Medication-Medisin-2-Paracetamol.json ==
@@ -366,7 +369,7 @@ ERROR: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration
 ERROR: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.dosage.dose.code: Unknown code 'tsp_us' in the CodeSystem 'http://unitsofmeasure.org' version '2.2'
 INFORMATION: MedicationAdministration/Administrering-1-Oralt: MedicationAdministration.dosage.dose.code: Error processing Unit: 'tsp_us': The unit "tsp_us" is unknown at character 1
 == fsh-generated/resources/MedicationAdministration-Administrering-10.json ==
-WARNING: MedicationAdministration/Administrering-10: MedicationAdministration.contained[0]/*Medication/Medisin-10*/.code.coding[0]: A definition for CodeSystem 'http://dmp.no/fhir/NamingSystem/festLegemiddelDose' could not be found, so the code cannot be validated
+WARNING: MedicationAdministration/Administrering-10: MedicationAdministration.contained[0]/*Medication/Medisin-10*/.code.coding[0].system: A definition for CodeSystem 'http://dmp.no/fhir/NamingSystem/festLegemiddelDose' could not be found, so the code cannot be validated
 == fsh-generated/resources/MedicationAdministration-Administrering-2-Infusjon.json ==
 ERROR: MedicationAdministration/Administrering-2-Infusjon: MedicationAdministration.effective.ofType(Period): This element does not match any known slice defined in the profile http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationadministration|0.9.4 and slicing is CLOSED: MedicationAdministration.effective.ofType(Period): Does not match slice 'effectiveDateTime' (discriminator: ($this is dateTime))
 ERROR: MedicationAdministration/Administrering-2-Infusjon: MedicationAdministration: MedicationAdministration.text: max allowed = 0, but found 1 (from http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationadministration|0.9.4)
@@ -547,7 +550,6 @@ ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-lmdi-organiz
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-lmdi-organization-definitions.html#Organization.identifier:RESH.system' at 'div/table/tr/td/a' for 'system' does not resolve
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-lmdi-organization-definitions.html#Organization.identifier:RESH.value' at 'div/table/tr/td/a' for 'value' does not resolve
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-lmdi-organization-definitions.html#Organization.type' at 'div/table/tr/td/a' for 'type' does not resolve
-ERROR: StructureDefinition.text.div: Hyperlink 'http%3A%2F%2Fterminology.hl7.org%2FCodeSystem%2Forganization-type' at 'div/table/tr/td/a' for 'http://terminology.hl7.org/CodeSystem/organization-type' does not resolve
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-lmdi-organization-definitions.html#Organization.name' at 'div/table/tr/td/a' for 'name' does not resolve
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-lmdi-organization-definitions.html#Organization.address' at 'div/table/tr/td/a' for 'address' does not resolve
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-lmdi-organization-definitions.html#Organization.address.extension:urbanDistrict' at 'div/table/tr/td/a' for 'urbanDistrict' does not resolve

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="d019640d-56eb-4115-9479-22092218b508"/>
+  <id value="17feedbb-5a59-4f69-98db-a65f1044c27c"/>
   <meta>
-    <lastUpdated value="2025-02-16T13:24:38.772+00:00"/>
+    <lastUpdated value="2025-02-17T15:43:13.241+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -16,7 +16,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-LokalLegemiddelkatalogCodeSystem.html">codesystem Lokal Legemiddelkatalog Codes v0.9.4 (CodeSystem)</a>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -29,7 +29,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (no)</b>
                 </td>
                 <td>
                   <b>Definition</b>
@@ -41,7 +41,7 @@
                   <a href="CodeSystem-LokalLegemiddelkatalogCodeSystem.html#LokalLegemiddelkatalogCodeSystem-metavisionkatalogFraHso">metavisionkatalogFraHso</a>
                 </td>
                 <td>http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem</td>
-                <td>MetavisionkatalogFraHso</td>
+                <td/>
                 <td>
                   <div>
                     <p>Metavisionkatalog fra Helse Sør-Øst</p>
@@ -55,7 +55,7 @@
                   <a href="CodeSystem-LokalLegemiddelkatalogCodeSystem.html#LokalLegemiddelkatalogCodeSystem-metavisionkatalogFraHN">metavisionkatalogFraHN</a>
                 </td>
                 <td>http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem</td>
-                <td>MetavisionkatalogFraHN</td>
+                <td/>
                 <td>
                   <div>
                     <p>Metavisionkatalog fra Helse Nord</p>
@@ -71,7 +71,7 @@
         <name value="LokalLegemiddelkatalogValues"/>
         <title value="Lokal Legemiddelkatalog Values"/>
         <status value="draft"/>
-        <date value="2025-02-16T13:24:00+00:00"/>
+        <date value="2025-02-17T15:42:31+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -80,10 +80,14 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:997ff64f-8cb9-4298-a657-04b8eb66de02"/>
-          <timestamp value="2025-02-16T13:25:00+00:00"/>
+          <identifier value="urn:uuid:832708b7-bb80-480d-827f-c77589d5aa28"/>
+          <timestamp value="2025-02-17T15:43:42+00:00"/>
           <total value="2"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="no"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -103,12 +107,10 @@
           <contains>
             <system value="http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem"/>
             <code value="metavisionkatalogFraHso"/>
-            <display value="MetavisionkatalogFraHso"/>
           </contains>
           <contains>
             <system value="http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem"/>
             <code value="metavisionkatalogFraHN"/>
-            <display value="MetavisionkatalogFraHN"/>
           </contains>
         </expansion>
       </ValueSet>
