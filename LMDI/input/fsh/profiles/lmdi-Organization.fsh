@@ -3,7 +3,13 @@ Profile: Organisasjon
 Parent: Organization
 Id: lmdi-organization
 Title: "Organisasjon"
-Description: "Organisasjoner i norsk helse- og omsorgstjeneste, som sykehus og sykehjem, og avdelinger/poster under disse."
+Description: """
+Organisasjoner i norsk helse- og omsorgstjeneste, som post, avdeling, klinikk, sykehus og sykehjem. 
+
+Denne profilen av Organization benyttes for å beskrive helseinstitusjoner og skal representere organisasjonen på lavest mulig nivå i organisasjonshierarkiet (f.eks. en avdeling eller klinikk eller post).
+
+For organisasjonen som er del av en større organisasjon, skal dette angis ved hjelp av partOf-relasjonen. Alle “organisasjonshierarki” skal inkludere minst et organisasjonsnummer fra Enhetsregisteret (identifier:ENH) 
+"""
 * ^version = "0.9.3"
 * ^status = #draft
 * ^date = "2025-02-27"
@@ -24,21 +30,21 @@ Description: "Organisasjoner i norsk helse- og omsorgstjeneste, som sykehus og s
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #closed
-* identifier ^short = "Organisasjonsidentifikatorer (ENH/RESH)"
-* identifier ^comment = "Identifikatorer skal angis på laveste mulige organisatoriske nivå. For eksempel organisasjonsnummer for sykehjemmet fremfor kommunen der det finnes."
+* identifier ^short = "ID fra Nasjonalt register for enheter i spesialisthelsetjenesten (RESH) eller Organisasjonsnummeret i Enhetsregister"
+* identifier ^comment = "Der aktiviteten har skjedd."
 
 // Identifikatorer - ENH og RESH
 * identifier contains
     ENH 0..1 and
     RESH 0..1
 
-* identifier[ENH] ^short = "Organisasjonsnummer fra Enhetsregisteret"
+* identifier[ENH] ^short = "Organisasjonsnummer fra Enhetsregisteret (ENH)"
 * identifier[ENH] ^comment = "Identifikatorer skal angis på laveste relevante virksomhetsnivå i henhold til SSBs retningslinjer. For kommunale tjenester betyr dette på institusjonsnivå (f.eks sykehjem) der egen organisatorisk enhet er etablert, ikke på overordnet kommunenivå."
 * identifier[ENH].system = "urn:oid:2.16.578.1.12.4.1.4.101" (exactly)
 * identifier[ENH].value 1..1
 * identifier[ENH].value ^short = "Organisasjonsnummer"
 
-* identifier[RESH] ^short = "ID fra Register for enheter i spesialisthelsetjenesten"
+* identifier[RESH] ^short = "ID fra Register for enheter i spesialisthelsetjenesten (RESH)"
 * identifier[RESH] ^comment = "Det nivået aktiviteten har skjedd på."
 * identifier[RESH].system = "urn:oid:2.16.578.1.12.4.1.4.102" (exactly)
 * identifier[RESH].value 1..1
@@ -53,6 +59,7 @@ Description: "Organisasjoner i norsk helse- og omsorgstjeneste, som sykehus og s
 * name 1..1 MS 
 * name ^short = "Organisasjonsnavn"
 * name ^definition = "Offisielt navn på organisasjonen"
+* name ^comment = "Kan være navn på post, avdelingsnavn, klinikknavn, sykehusnavn eller sykehjemsnavn"
 
 // Hierarkisk struktur
 * partOf MS
