@@ -13,7 +13,7 @@ function setCollapsed(store, row, value) {
     }
   }
 }
-  
+
 function fhirTableRowExpand(table, id) {
   var rows = table.getElementsByTagName('tr');
   var row, i;
@@ -55,11 +55,11 @@ function findElementFromFocus(src, name) {
   return e;
 }
 
-// src - a handle to an element in a row in the table 
+// src - a handle to an element in a row in the table
 function tableRowAction(src) {
   let table = findElementFromFocus(src, "TABLE");
   let row = findElementFromFocus(src, "TR");
-  let td = row.firstElementChild;
+  let td = row?.firstElementChild;
   let state = row.className;
   if (state == "closed") {
     fhirTableRowExpand(table, row.id);
@@ -76,7 +76,7 @@ function tableRowAction(src) {
   }
 }
 
-// src - a handle to an element in a row in the table 
+// src - a handle to an element in a row in the table
 function fhirTableInit(src) {
   let table = findElementFromFocus(src, "TABLE");
   var rows = table.getElementsByTagName('tr');
@@ -86,8 +86,8 @@ function fhirTableInit(src) {
     row = rows[i];
     var id = row.id;
     if (getCollapsed(table.id, id) == 'collapsed') {
-      let td = row.firstElementChild;
-      let e = td.firstElementChild;
+      let td = row?.firstElementChild;
+      let e = td?.firstElementChild;
       while (e.tagName != "IMG" || !(e.src.includes("join"))) {
         e = e.nextSibling;
       }
@@ -96,4 +96,3 @@ function fhirTableInit(src) {
   }
   fhirTableLoading = false;
 }
-
