@@ -1,12 +1,10 @@
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="nb" xmlns="http://www.w3.org/1999/xhtml" lang="nb">
 
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
-    <title>Medisin-3-LegemiddelPakning-Monoket - JSON Representation - Legemiddeldata fra institusjon til Legemiddelregisteret
+    <title>FHIR-profiler - Legemiddeldata fra institusjon til Legemiddelregisteret
         v0.9.4</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -114,7 +112,7 @@
     <div id="segment-breadcrumb" class="segment"> <!-- segment-breadcrumb -->
         <div class="container p-0"> <!-- container -->
             <ul class="breadcrumb p-2 mb-1">
-                <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Medisin-3-LegemiddelPakning-Monoket</b></li>
+                <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>FHIR-profiler</b></li>
                 
             </ul>
         </div> <!-- /container -->
@@ -126,8 +124,15 @@
             <div class="row">
                 <div class="inner-wrapper">
 
-<div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  
 
 
 
@@ -136,96 +141,93 @@
 
 
 
-<div class="fhi-nav-tabs border-bottom">
-    <ul class="nav nav-tabs undermeny mb-0">
-        
-        <li class="nav-item ">
-    <a class="nav-link "
-        href="Medication-Medisin-3-LegemiddelPakning-Monoket.html">
-        Narrative Content
-    </a>
-</li>
 
 
-        
 
-        
-        
-        <li class="nav-item ">
-    <a class="nav-link "
-        href="Medication-Medisin-3-LegemiddelPakning-Monoket.xml.html">
-        XML
-    </a>
-</li>
 
-        
-
-        
-        
-        <li class="nav-item active">
-    <a class="nav-link active"
-        href="#">
-        JSON
-    </a>
-</li>
-
-        
-
-        
-        
-        <li class="nav-item ">
-    <a class="nav-link "
-        href="Medication-Medisin-3-LegemiddelPakning-Monoket.ttl.html">
-        TTL
-    </a>
-</li>
-
-        
-
-        
-    </ul>
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
+<h3 id="fhir-profiler">FHIR-profiler</h3>
 
+<div xmlns="http://www.w3.org/1999/xhtml">
+  <table class="grid">
+    <thead>
+      <tr>
+        <th>Navn</th>
+        <th>Beskrivelse</th>
+      </tr>
+    </thead>
+    <tbody>
+    
+    
+      <tr>
+        <td><a href="StructureDefinition-lmdi-condition.html">Diagnose</a></td>
+        <td>Diagnosen som pasienten har fått rekvirert og administrert legemiddelet for.</td>
+      </tr>
+    
+      <tr>
+        <td><a href="StructureDefinition-lmdi-practitioner.html">Helsepersonell</a></td>
+        <td>Profil for å dokumentere helsepersonell som har foreskrevet eller administrert legemidler i Norge. 
 
-<a name="root"> </a>
+Profilen er basert på den norske basisprofilen NoBasisPractitioner, men er begrenset til kun å inkludere:
+- Helsepersonellnummer som unik identifikator
 
+I denne profilen er personopplysninger som navn, kontaktinformasjon, fødselsdato og kjønn eksplisitt utelatt. Dette er gjort for å begrense behandling av personopplysninger til det som er nødvendig for formålet.
 
-<h2 id="root">: Medisin-3-LegemiddelPakning-Monoket - JSON Representation</h2>
+Profilen brukes i sammenheng med legemiddeladministrering og -rekvirering, der det er behov for å dokumentere hvilket helsepersonell som har vært involvert.</td>
+      </tr>
+    
+      <tr>
+        <td><a href="StructureDefinition-lmdi-practitionerrole.html">Helsepersonellrolle</a></td>
+        <td>Rollen til helsepersonellet eller personen som har foreskrevet eller administrert legemiddelet</td>
+      </tr>
+    
+      <tr>
+        <td><a href="StructureDefinition-lmdi-episodeofcare.html">Institusjonsopphold</a></td>
+        <td>Beskrivelse av pasientens opphold i institusjon. Dette kan være både av kortere og lengre karakter, slik som døgnopphold, innleggelse hos spesialist, sykehjem og aldershjem.</td>
+      </tr>
+    
+      <tr>
+        <td><a href="StructureDefinition-lmdi-medication.html">Legemiddel</a></td>
+        <td>Beskrivelse av legemiddel.</td>
+      </tr>
+    
+      <tr>
+        <td><a href="StructureDefinition-lmdi-medicationadministration.html">Legemiddeladministrering</a></td>
+        <td>Beskriver administrering av legemiddel til pasient på institusjon.
 
+Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei.</td>
+      </tr>
+    
+      <tr>
+        <td><a href="StructureDefinition-lmdi-bundle.html">LegemiddelregisterBundle</a></td>
+        <td>Profil av Bundle for Legemiddelregisteret. Støtter bare batch-type og POST-operasjoner, med begrensninger på tillatte ressurstyper.</td>
+      </tr>
+    
+      <tr>
+        <td><a href="StructureDefinition-lmdi-medicationrequest.html">Legemiddelrekvirering</a></td>
+        <td>Legemiddelrekvirering - ordinering eller annen rekvirering av legemiddel</td>
+      </tr>
+    
+      <tr>
+        <td><a href="StructureDefinition-lmdi-organization.html">Organisasjon</a></td>
+        <td>Organisasjoner i norsk helse- og omsorgstjeneste, som post, avdeling, klinikk, sykehus og sykehjem. 
 
-<p><a href="Medication-Medisin-3-LegemiddelPakning-Monoket.json" no-download="true">Raw json</a> | <a href="Medication-Medisin-3-LegemiddelPakning-Monoket.json" download>Download</a></p>
+Denne profilen av Organization benyttes for å beskrive helseinstitusjoner og skal representere organisasjonen på lavest mulig nivå i organisasjonshierarkiet (f.eks. en avdeling eller klinikk eller post).
 
-  <!-- insert intro if present -->
-  
-
-
-
-  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
-  "<a href="http://hl7.org/fhir/R4/medication.html#Medication">resourceType</a>" : "Medication",
-  "<a href="http://hl7.org/fhir/R4/medication.html#Medication.id">id</a>" : "Medisin-3-LegemiddelPakning-Monoket",
-  "<a href="http://hl7.org/fhir/R4/medication.html#Medication.meta">meta</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-      <a href="StructureDefinition-lmdi-medication.html" style="color: Maroon">&#x1F517;</a> "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medication"
-    ]
-  },
-  "<a href="http://hl7.org/fhir/R4/medication.html#Medication.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Medication Medisin-3-LegemiddelPakning-Monoket&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;Medisin-3-LegemiddelPakning-Monoket\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcMedisin-3-LegemiddelPakning-Monoket\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;Medisin-3-LegemiddelPakning-Monoket-no\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;a href=\&quot;NamingSystem-no-basis-fest-legemiddelpakning.html\&quot; title=\&quot;FEST-id for legemiddelpakninger. Rekvirering av en bestemt pakning av en merkevare (varenummer)\&quot;&gt;festLegemiddelPakning&lt;/a&gt;/ID_0003602E-315E-4CDE-9EB0-6756BE9CD120&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:\&quot;&gt;Monoket OD SySk depotkaps, hard 50 mg&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
-  },
-  "<a href="http://hl7.org/fhir/R4/medication.html#Medication.identifier">identifier</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://dmp.no/fhir/NamingSystem/festLegemiddelPakning",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "ID_0003602E-315E-4CDE-9EB0-6756BE9CD120"
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/medication.html#Medication.code">code</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Monoket OD SySk depotkaps, hard 50 mg"
-  }
-}</code></pre>
-
-
-  <!-- insert notes if present -->
-  
+For organisasjonen som er del av en større organisasjon, skal dette angis ved hjelp av partOf-relasjonen. Alle “organisasjonshierarki” skal inkludere minst et organisasjonsnummer fra Enhetsregisteret (identifier:ENH)</td>
+      </tr>
+    
+      <tr>
+        <td><a href="StructureDefinition-lmdi-patient.html">Pasient</a></td>
+        <td>Informasjon om pasienten</td>
+      </tr>
+    
+    </tbody>
+  </table>
+</div>
 
 
 
@@ -282,7 +284,7 @@
 <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
 <script id="page-data" type="application/json">
   {
-    "breadcrumb": "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Medisin-3-LegemiddelPakning-Monoket</b></li>"
+    "breadcrumb": "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>FHIR-profiler</b></li>"
   }
 </script>
 <script type="text/javascript">

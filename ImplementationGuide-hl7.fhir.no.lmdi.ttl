@@ -961,7 +961,7 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "StructureDefinition"
+           fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
@@ -1073,7 +1073,7 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "StructureDefinition"
+           fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
@@ -1110,7 +1110,7 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "StructureDefinition"
+           fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
@@ -1128,7 +1128,7 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "StructureDefinition"
+           fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
@@ -1146,7 +1146,7 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "StructureDefinition"
+           fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
@@ -1164,7 +1164,7 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "StructureDefinition"
+           fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
@@ -1182,7 +1182,7 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "StructureDefinition"
+           fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
@@ -1200,7 +1200,7 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "StructureDefinition"
+           fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
@@ -1236,7 +1236,7 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "StructureDefinition"
+           fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
        fhir:reference [
@@ -1254,7 +1254,7 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "StructureDefinition"
+           fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
        fhir:reference [
@@ -1272,7 +1272,7 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "StructureDefinition"
+           fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
        fhir:reference [
@@ -1455,7 +1455,7 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "StructureDefinition"
+           fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
@@ -1463,7 +1463,7 @@
          fhir:reference [ fhir:v "StructureDefinition/lmdi-organization" ]
        ] ;
        fhir:name [ fhir:v "Organisasjon" ] ;
-       fhir:description [ fhir:v "Organisasjoner i norsk helse- og omsorgstjeneste, som sykehus og sykehjem, og avdelinger/poster under disse." ] ;
+       fhir:description [ fhir:v "Organisasjoner i norsk helse- og omsorgstjeneste, som post, avdeling, klinikk, sykehus og sykehjem. \n\nDenne profilen av Organization benyttes for å beskrive helseinstitusjoner og skal representere organisasjonen på lavest mulig nivå i organisasjonshierarkiet (f.eks. en avdeling eller klinikk eller post).\n\nFor organisasjonen som er del av en større organisasjon, skal dette angis ved hjelp av partOf-relasjonen. Alle “organisasjonshierarki” skal inkludere minst et organisasjonsnummer fra Enhetsregisteret (identifier:ENH)" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v "false"^^xsd:boolean
@@ -1530,7 +1530,7 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "StructureDefinition"
+           fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
@@ -1736,6 +1736,20 @@
            fhir:v "nedlastinger.html"^^xsd:anyURI
          ] ;
          fhir:title [ fhir:v "Nedlastinger" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "profiler.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "profiler.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "FHIR-profiler" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

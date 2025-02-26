@@ -371,13 +371,13 @@
       "StructureDefinition-lmdi-medicationrequest.html" : "Legemiddelrekvirering",
       "StructureDefinition-lmdi-medication.html" : "Legemiddel",
       "StructureDefinition-lmdi-organization.html" : "Organisasjon",
-      "StructureDefinition-lmdi-condition.html" : "Diagnose",
+      "StructureDefinition-lmdi-patient.html" : "Pasient",
       "StructureDefinition-lmdi-practitionerrole.html" : "Helsepersonellrolle",
+      "StructureDefinition-lmdi-bundle.html" : "LegemiddelregisterBundle",
+      "StructureDefinition-lmdi-condition.html" : "Diagnose",
       "StructureDefinition-lmdi-medicationadministration.html" : "Legemiddeladministrering",
       "StructureDefinition-lmdi-episodeofcare.html" : "Institusjonsopphold",
-      "StructureDefinition-lmdi-patient.html" : "Pasient",
-      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell",
-      "StructureDefinition-lmdi-bundle.html" : "LegemiddelregisterBundle"
+      "StructureDefinition-lmdi-practitioner.html" : "Helsepersonell"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
