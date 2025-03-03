@@ -1,27 +1,23 @@
-
 ### Informasjonsmodell - Oversikt
 
 Klikk på klassene for å bli lenket til ressursene
 
-<img src="informasjonsmodell-enkel.svg" width="75%" />
+<object data="informasjonsmodell-enkel.svg" type="image/svg+xml" width="75%"></object>
 <br clear="all"/>
-
 
 ### Informasjonsmodell
 
 Klikk på klassene for å bli lenket til ressursene
 
-<img src="informasjonsmodell.svg" width="75%" />
+<object data="informasjonsmodell.svg" type="image/svg+xml" width="75%"></object>
 <br clear="all"/>
-
-
 
 ### Flyt enkel 1 - eksempel
 
-<img src="flyt-enkel-1.svg" width="50%" />
+<object data="flyt-enkel-1.svg" type="image/svg+xml" width="50%"></object>
 <br clear="all"/>
 
 ### Flyt enkel 2 - eksempel
 
-<img src="flyt-enkel-2.svg" width="50%" />
+<object data="flyt-enkel-2.svg" type="image/svg+xml" width="50%"></object>
 <br clear="all"/>
