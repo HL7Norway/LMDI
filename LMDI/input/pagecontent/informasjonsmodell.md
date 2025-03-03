@@ -1,10 +1,19 @@
 
-### Informasjonsmodell
+### Informasjonsmodell - Oversikt
 
-De grønne klassene/ressursene er foreslått å implementeres først.
+Klikk på klassene for å bli lenket til ressursene
 
 <img src="informasjonsmodell-enkel.svg" width="75%" />
 <br clear="all"/>
+
+
+### Informasjonsmodell
+
+Klikk på klassene for å bli lenket til ressursene
+
+<img src="informasjonsmodell.svg" width="75%" />
+<br clear="all"/>
+
 
 
 ### Flyt enkel 1 - eksempel
