@@ -45,8 +45,9 @@ class ElementCardinality:
     max: str  # Can be a number or "*"
 
 class FHIRStructure:
-    def __init__(self, name: str):
-        self.name = name
+    def __init__(self, resource_id: str, display_name: str):
+        self.resource_id = resource_id  # Original ID (e.g., lmdi-condition)
+        self.display_name = display_name  # Display name (e.g., Diagnose)
         self.references: Dict[str, FHIRReference] = {}
         # Keep track of zero cardinality paths
         self.zero_cardinality_paths: Set[str] = set()
@@ -231,28 +232,22 @@ def parse_structure_definition(profile_json: dict, filename: str) -> Optional[FH
         print(f"Skipping {filename} - not a resource or complex-type")
         return None
         
-    # Prioritize name > id > type for the structure name
-    resource_name = None
-    for field in ['name', 'id', 'type']:
-        if profile_json.get(field):
-            value = profile_json.get(field)
-            # Check if we have a mapping for this value
-            if value in RESOURCE_NAME_MAPPING:
-                resource_name = RESOURCE_NAME_MAPPING[value]
-                break
-            else:
-                resource_name = value
-                break
+    # Get the resource ID - prioritize the 'id' field
+    resource_id = profile_json.get('id')
+    if not resource_id:
+        # Fallback to the basename of file without extension
+        resource_id = os.path.splitext(os.path.basename(filename))[0]
+        if resource_id.startswith('StructureDefinition-'):
+            resource_id = resource_id[len('StructureDefinition-'):]
     
-    if not resource_name:
-        # Fallback to the basename of file without extension if no name/id/type
-        resource_name = os.path.splitext(os.path.basename(filename))[0]
-        if resource_name.startswith('StructureDefinition-'):
-            resource_name = resource_name[len('StructureDefinition-'):]
-            
-    print(f"Using structure name: {resource_name}")
+    # Get the display name using the resource ID
+    display_name = get_resource_name(resource_id)
     
-    structure = FHIRStructure(resource_name)
+    print(f"Using resource ID: {resource_id}")
+    print(f"Using display name: {display_name}")
+    
+    # Create structure with both resource_id and display_name
+    structure = FHIRStructure(resource_id, display_name)
     
     # Store the base type
     structure.base_type = profile_json.get('baseDefinition', '').split('/')[-1]
@@ -302,22 +297,22 @@ def generate_plantuml(structures: List[FHIRStructure]) -> str:
     # Track classes with relationships
     classes_with_relationships = set()
     
-    # Create a mapping from display name to original ID
-    name_to_id_map = {}
+    # Create mappings between display names and resource IDs
+    display_to_resource_map = {}  # Maps display name to resource ID
+    
+    # Build a map of display names to resource IDs and to structure objects
     for structure in structures:
-        display_name = get_resource_name(structure.name)
-        name_to_id_map[display_name] = structure.name
+        display_to_resource_map[structure.display_name] = structure.resource_id
     
     # First collect all classes involved in relationships
     for structure in structures:
-        source_name = get_resource_name(structure.name)
         if structure.references:  # If this structure has outgoing references
-            classes_with_relationships.add(source_name)
+            classes_with_relationships.add(structure.display_name)
             
         # Mark all target classes as having relationships
         for ref in structure.references.values():
-            target_name = get_resource_name(ref.target)
-            classes_with_relationships.add(target_name)
+            target_display = get_resource_name(ref.target)
+            classes_with_relationships.add(target_display)
     
     # Add classes that have relationships
     defined_classes = set()
@@ -325,27 +320,27 @@ def generate_plantuml(structures: List[FHIRStructure]) -> str:
     
     # Extract base types from structures
     for structure in structures:
-        structure_name = get_resource_name(structure.name)
-        if structure_name in classes_with_relationships:
+        if structure.display_name in classes_with_relationships:
             # Get base type from the structure
             if hasattr(structure, 'base_type') and structure.base_type:
                 base_type = structure.base_type.split('/')[-1]  # Extract last part if it's a URL
-                base_types[structure_name] = get_resource_name(base_type)
+                base_types[structure.display_name] = get_resource_name(base_type)
             else:
                 # Default to Resource if no base type is specified
-                base_types[structure_name] = "Resource"
+                base_types[structure.display_name] = "Resource"
     
     # Add classes with stereotypes and links
     for class_name in sorted(classes_with_relationships):
         base_type = base_types.get(class_name, "")
         
-        # Check if we have the original ID for this class (profile)
-        original_id = name_to_id_map.get(class_name)
+        # Find the resource ID for this class name
+        resource_id = display_to_resource_map.get(class_name)
         
         # Generate link based on whether it's a profile or FHIR base resource
-        if original_id:
+        if resource_id:
             # This is a profile class with a StructureDefinition file
-            link = f"https://hl7norway.github.io/LMDI/currentbuild/StructureDefinition-{original_id}.html"
+            # Use the original resource ID for the link, not the display name
+            link = f"https://hl7norway.github.io/LMDI/currentbuild/StructureDefinition-{resource_id}.html"
         else:
             # This is a FHIR base resource
             # Convert to lowercase for FHIR base resource URLs
@@ -363,10 +358,10 @@ def generate_plantuml(structures: List[FHIRStructure]) -> str:
     
     # Add all relationships
     for structure in structures:
-        source_name = get_resource_name(structure.name)
         for ref in structure.references.values():
-            target_name = get_resource_name(ref.target)
-            uml.append(f'{source_name} "{ref.cardinality}" --> {target_name} : "{ref.name}"')
+            source_display = structure.display_name
+            target_display = get_resource_name(ref.target)
+            uml.append(f'{source_display} "{ref.cardinality}" --> {target_display} : "{ref.name}"')
     
     uml.extend(["", "@enduml"])
     return "\n".join(uml)
