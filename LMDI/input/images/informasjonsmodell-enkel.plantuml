@@ -7,37 +7,30 @@ skinparam class {
     BorderColor Black
 }
 
-class LegemiddelregisterBundle
-class Diagnose
-class Pasient
-class Episode
-class Organisasjon
-class Legemiddel
+class Diagnose <<Condition>>
+class Episode <<Encounter>>
+class Helsepersonell <<Practitioner>>
+class Legemiddel <<Medication>>
+class Legemiddeladministrering <<MedicationAdministration>>
+class Legemiddelrekvirering <<MedicationRequest>>
+class Organisasjon <<Organization>>
+class Pasient <<Patient>>
 class Substance
-class Legemiddeladministrering
-class Legemiddelrekvirering
-class Helsepersonell
-class LmdiMunicipalitycode
-class Organization
-class LmdiUrbanDistrict
-class LokalLegemiddelkatalogExtension
 
 Diagnose "1..1" --> Pasient : "subject"
 Episode "0..1" --> Organisasjon : "serviceProvider"
-Legemiddel "1..1" --> Substance : "ingredient.item[x]"
-Legemiddeladministrering "1..1" --> Legemiddel : "medication[x]"
+Legemiddel "0..*" --> Substance : "ingredient.item"
+Legemiddel "0..*" --> Legemiddel : "ingredient.item"
+Legemiddeladministrering "1..1" --> Legemiddel : "medication"
 Legemiddeladministrering "1..1" --> Pasient : "subject"
 Legemiddeladministrering "0..1" --> Episode : "context"
 Legemiddeladministrering "0..*" --> Diagnose : "reasonReference"
 Legemiddeladministrering "0..1" --> Legemiddelrekvirering : "request"
-Legemiddelrekvirering "1..1" --> Legemiddel : "medication[x]"
+Legemiddelrekvirering "1..1" --> Legemiddel : "medication"
 Legemiddelrekvirering "1..1" --> Pasient : "subject"
 Legemiddelrekvirering "1..1" --> Helsepersonell : "requester"
 Legemiddelrekvirering "0..*" --> Diagnose : "reasonReference"
 Legemiddelrekvirering "0..1" --> Legemiddelrekvirering : "priorPrescription"
-Organisasjon "0..1" --> Organization : "identifier.assigner"
 Organisasjon "0..1" --> Organisasjon : "partOf"
-Pasient "0..1" --> Organization : "identifier.assigner"
-Helsepersonell "0..1" --> Organization : "identifier.assigner"
 
 @enduml
