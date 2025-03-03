@@ -185,7 +185,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Institusjoner som skal overføre data til Legemiddelregisteret, må følge den definerte protokollen. Protokollen beskriver krav til overføringsfrekvens, datastruktur og sikkerhet. Du finner mer informasjon her: <a href="protokoll.html">Protokoll for overføring av data</a>.</p>
 
-<p>For å bygge en samling med data som skal overføres må det lages en <a href="StructureDefinition-lmdi-bundle.html">LegemiddelregisterBundle</a>. Dette er en spesialisert FHIR Bundle-profil utviklet for innsending av data til Legemiddelregisteret. Den er begrenset til batch-type bundles og tillater kun POST-operasjoner, noe som sikrer konsistent datahåndtering og sporbarhet. Bundlen kan kun inneholde spesifikke ressurstyper som er relevante for legemiddelregistrering: Pasient, Helsepersonell, Legemiddel, LegemiddelAdministrasjon, Diagnose, Institusjonsopphold, Legemiddelrekvirering, Organisasjon og Helsepersonellrolle.</p>
+<p>For å bygge en samling med data som skal overføres må det lages en <a href="StructureDefinition-lmdi-bundle.html">LegemiddelregisterBundle</a>. Dette er en spesialisert FHIR Bundle-profil utviklet for innsending av data til Legemiddelregisteret. Den er begrenset til batch-type bundles og tillater kun POST-operasjoner, noe som sikrer konsistent datahåndtering og sporbarhet. Bundlen kan kun inneholde spesifikke ressurstyper som er relevante for legemiddelregistrering: Pasient, Helsepersonell, Legemiddel, LegemiddelAdministrasjon, Diagnose, Institusjonsopphold, Legemiddelrekvirering, Organisasjon.</p>
 
 <p>Vet overføring av data skal det lages en <code class="language-plaintext highlighter-rouge">SignertKryptertBundle</code>, som sikrer både kryptering og signering av innholdet. Denne prosessen innebærer å komprimere, kryptere og signere en FHIR-basert <code class="language-plaintext highlighter-rouge">LegemiddelregisterBundle</code> før den sendes til API-et. Les mer om hvordan du oppretter en <code class="language-plaintext highlighter-rouge">SignertKryptertBundle</code> i <a href="SignertKryptertBundle.html">denne veiledningen</a>.</p>
 
@@ -233,7 +233,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                     Package hl7.fhir.no.lmdi#0.9.4 based on <a
                         style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR
                         4.0.1</a>. Generated <span
-                        title="Wed, Feb 26, 2025 09:40+0000">2025-02-26</span>
+                        title="Mon, Mar 3, 2025 07:55+0000">2025-03-03</span>
                     <br />
                     <span style="color: var(--footer-highlight-text-color)">
                                   Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -222,7 +222,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Simple summary (disease specific)","A simple summary of the stage such as ""Stage 3"". The determination of the stage is disease-specific.","","","","","","","","","",,"example","Codes describing condition stages (e.g. Cancer stages).","http://hl7.org/fhir/ValueSet/condition-stage","",,,,"Condition.stage.summary",0,1,"con-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","< 254291000 |Staging and scales|","PRB-14",".value"
-"Condition.stage.assessment","Condition.stage.assessment","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/ClinicalImpression], CanonicalType[http://hl7.org/fhir/StructureDefinition/DiagnosticReport], CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation]]}
+"Condition.stage.assessment","Condition.stage.assessment","","","",0,0,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/ClinicalImpression], CanonicalType[http://hl7.org/fhir/StructureDefinition/DiagnosticReport], CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation]]}
 ","Formal record of assessment","Reference to a formal record of the evidence on which the staging assessment is based.","","","","","","","","","",,,,,"",,,,"Condition.stage.assessment",0,*,"con-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".self"

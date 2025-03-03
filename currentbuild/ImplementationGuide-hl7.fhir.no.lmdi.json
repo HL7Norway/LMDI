@@ -758,14 +758,14 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "EpisodeOfCare"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "EpisodeOfCare/EksempelInstitusjonsopphold"
+        "reference" : "StructureDefinition/lmdi-encounter"
       },
-      "name" : "EksempelInstitusjonsopphold",
-      "description" : "Eksempel på Institusjonsopphold",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-episodeofcare"
+      "name" : "Episode",
+      "description" : "Profil for en behandlingsepisode basert på Encounter-ressursen i FHIR. Denne profilen representerer et klinisk møte eller en behandling i helsevesenet, med fokus på organisatorisk tilhørighet.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -790,30 +790,6 @@
       "name" : "Helsepersonell-1-HPR-nummer",
       "description" : "Eksempel på helsepersonell med HPR-nummer",
       "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/lmdi-practitionerrole"
-      },
-      "name" : "Helsepersonellrolle",
-      "description" : "Rollen til helsepersonellet eller personen som har foreskrevet eller administrert legemiddelet",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/lmdi-episodeofcare"
-      },
-      "name" : "Institusjonsopphold",
-      "description" : "Beskrivelse av pasientens opphold i institusjon. Dette kan være både av kortere og lengre karakter, slik som døgnopphold, innleggelse hos spesialist, sykehjem og aldershjem.",
-      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1114,18 +1090,6 @@
       "name" : "Rekvirering-1",
       "description" : "Eksempel på legemiddelrekvirering av Paracet",
       "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationrequest"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "PractitionerRole"
-      }],
-      "reference" : {
-        "reference" : "PractitionerRole/RolleHelsepersonell-1-Hjemmehjelp"
-      },
-      "name" : "RolleHelsepersonell-1-Hjemmehjelp",
-      "description" : "Eksempel på rolle (Hjemmehjelp), ikke komplett kodeverk",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole"
     },
     {
       "extension" : [{

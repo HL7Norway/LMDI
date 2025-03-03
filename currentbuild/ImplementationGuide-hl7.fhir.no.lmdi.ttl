@@ -1054,19 +1054,18 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "EpisodeOfCare"
+           fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.no/fhir/ig/lmdi/EpisodeOfCare/EksempelInstitusjonsopphold> ;
-         fhir:reference [ fhir:v "EpisodeOfCare/EksempelInstitusjonsopphold" ]
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter> ;
+         fhir:reference [ fhir:v "StructureDefinition/lmdi-encounter" ]
        ] ;
-       fhir:name [ fhir:v "EksempelInstitusjonsopphold" ] ;
-       fhir:description [ fhir:v "Eksempel på Institusjonsopphold" ] ;
+       fhir:name [ fhir:v "Episode" ] ;
+       fhir:description [ fhir:v "Profil for en behandlingsepisode basert på Encounter-ressursen i FHIR. Denne profilen representerer et klinisk møte eller en behandling i helsevesenet, med fokus på organisatorisk tilhørighet." ] ;
        fhir:example [
-         a fhir:canonical ;
-         fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-episodeofcare"^^xsd:anyURI ;
-         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-episodeofcare>
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
        ]
      ] [
        fhir:extension ( [
@@ -1104,42 +1103,6 @@
          a fhir:canonical ;
          fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner"^^xsd:anyURI ;
          fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole> ;
-         fhir:reference [ fhir:v "StructureDefinition/lmdi-practitionerrole" ]
-       ] ;
-       fhir:name [ fhir:v "Helsepersonellrolle" ] ;
-       fhir:description [ fhir:v "Rollen til helsepersonellet eller personen som har foreskrevet eller administrert legemiddelet" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-episodeofcare> ;
-         fhir:reference [ fhir:v "StructureDefinition/lmdi-episodeofcare" ]
-       ] ;
-       fhir:name [ fhir:v "Institusjonsopphold" ] ;
-       fhir:description [ fhir:v "Beskrivelse av pasientens opphold i institusjon. Dette kan være både av kortere og lengre karakter, slik som døgnopphold, innleggelse hos spesialist, sykehjem og aldershjem." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
        ]
      ] [
        fhir:extension ( [
@@ -1599,25 +1562,6 @@
          a fhir:canonical ;
          fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationrequest"^^xsd:anyURI ;
          fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationrequest>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "PractitionerRole"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.no/fhir/ig/lmdi/PractitionerRole/RolleHelsepersonell-1-Hjemmehjelp> ;
-         fhir:reference [ fhir:v "PractitionerRole/RolleHelsepersonell-1-Hjemmehjelp" ]
-       ] ;
-       fhir:name [ fhir:v "RolleHelsepersonell-1-Hjemmehjelp" ] ;
-       fhir:description [ fhir:v "Eksempel på rolle (Hjemmehjelp), ikke komplett kodeverk" ] ;
-       fhir:example [
-         a fhir:canonical ;
-         fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole"^^xsd:anyURI ;
-         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole>
        ]
      ] [
        fhir:extension ( [

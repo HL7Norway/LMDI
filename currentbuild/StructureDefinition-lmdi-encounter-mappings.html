@@ -1,3 +1,5 @@
+<!-- get modelType -->
+
 
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -6,7 +8,7 @@
 
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
-    <title>RolleHelsepersonell-1-Hjemmehjelp - TTL Representation - Legemiddeldata fra institusjon til Legemiddelregisteret
+    <title>Episode - Mappings - Legemiddeldata fra institusjon til Legemiddelregisteret
         v0.9.4</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -114,7 +116,7 @@
     <div id="segment-breadcrumb" class="segment"> <!-- segment-breadcrumb -->
         <div class="container p-0"> <!-- container -->
             <ul class="breadcrumb p-2 mb-1">
-                <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>RolleHelsepersonell-1-Hjemmehjelp</b></li>
+                <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Episode</b></li>
                 
             </ul>
         </div> <!-- /container -->
@@ -126,8 +128,12 @@
             <div class="row">
                 <div class="inner-wrapper">
 
-<div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+<div style="counter-reset: section 5" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  
+
+
+
 
 
 
@@ -141,11 +147,33 @@
         
         <li class="nav-item ">
     <a class="nav-link "
-        href="PractitionerRole-RolleHelsepersonell-1-Hjemmehjelp.html">
-        Narrative Content
+        href="StructureDefinition-lmdi-encounter.html">
+        Content
     </a>
 </li>
 
+
+        
+        <li class="nav-item ">
+    <a class="nav-link "
+        href="StructureDefinition-lmdi-encounter-definitions.html">
+        Detailed Descriptions
+    </a>
+</li>
+
+
+        
+        
+        <li class="nav-item active">
+    <a class="nav-link active"
+        href="#">
+        Mappings
+    </a>
+</li>
+
+        
+
+        
 
         
 
@@ -153,7 +181,7 @@
         
         <li class="nav-item ">
     <a class="nav-link "
-        href="PractitionerRole-RolleHelsepersonell-1-Hjemmehjelp.xml.html">
+        href="StructureDefinition-lmdi-encounter.profile.xml.html">
         XML
     </a>
 </li>
@@ -164,7 +192,7 @@
         
         <li class="nav-item ">
     <a class="nav-link "
-        href="PractitionerRole-RolleHelsepersonell-1-Hjemmehjelp.json.html">
+        href="StructureDefinition-lmdi-encounter.profile.json.html">
         JSON
     </a>
 </li>
@@ -173,9 +201,9 @@
 
         
         
-        <li class="nav-item active">
-    <a class="nav-link active"
-        href="#">
+        <li class="nav-item ">
+    <a class="nav-link "
+        href="StructureDefinition-lmdi-encounter.profile.ttl.html">
         TTL
     </a>
 </li>
@@ -188,51 +216,64 @@
 
 
 <a name="root"> </a>
+<h2 id="root">Resource Profile: Episode - Mappings</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2025-03-03
+          
+        
+      </td>
+
+    </tr>
+  </table>
 
 
-<h2 id="root">: RolleHelsepersonell-1-Hjemmehjelp - TTL Representation</h2>
-
-
-<p><a href="PractitionerRole-RolleHelsepersonell-1-Hjemmehjelp.ttl" no-download="true">Raw ttl</a> | <a href="PractitionerRole-RolleHelsepersonell-1-Hjemmehjelp.ttl" download>Download</a></p>
+<p>Mappings for the lmdi-encounter resource profile.</p>
 
   <!-- insert intro if present -->
   
 
 
 
-  <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
-@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
-@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix sct: &lt;http://snomed.info/id/&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
-
-# - resource -------------------------------------------------------------------
-
- a fhir:PractitionerRole ;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;RolleHelsepersonell-1-Hjemmehjelp&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.meta">fhir:meta</a> [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole&gt;     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: PractitionerRole RolleHelsepersonell-1-Hjemmehjelp&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;RolleHelsepersonell-1-Hjemmehjelp\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcRolleHelsepersonell-1-Hjemmehjelp\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;RolleHelsepersonell-1-Hjemmehjelp-no\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 5275007}\&quot;&gt;Hjemmehjelp (Helsefagarbeider)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.code">fhir:code</a> ( [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-a sct:5275007 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;5275007&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Auxiliary nurse (occupation)&quot; ]     ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Hjemmehjelp (Helsefagarbeider)&quot; ]
-  ] ) . # 
-
-</code></pre>
-
+  <a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
+ <tr><td colspan="3"><b>Episode</b></td></tr>
+ <tr><td>Encounter</td><td>Event</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Event.identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>Event.status</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;serviceProvider</td><td>Event.performer.actor</td> </tr>
+</table>
+<a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
+ <tr><td colspan="3"><b>Episode</b></td></tr>
+ <tr><td>Encounter</td><td>Entity. Role, or Act, Encounter[@moodCode='EVN']</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>.id</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>.statusCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;class</td><td>.inboundRelationship[typeCode=SUBJ].source[classCode=LIST].code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;serviceProvider</td><td>.particiaption[typeCode=PFM].role</td> </tr>
+</table>
+<a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
+ <tr><td colspan="3"><b>Episode</b></td></tr>
+ <tr><td>Encounter</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>FiveWs.status</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;class</td><td>FiveWs.class</td> </tr>
+</table>
+<a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
+ <tr><td colspan="3"><b>Episode</b></td></tr>
+ <tr><td>Encounter</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>PV1-19</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>No clear equivalent in HL7 v2; active/finished could be inferred from PV1-44, PV1-45, PV2-24; inactive could be inferred from PV2-16</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;class</td><td>PV1-2</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;serviceProvider</td><td>PL.6  &amp; PL.1</td> </tr>
+</table>
 
 
   <!-- insert notes if present -->
@@ -241,6 +282,7 @@ a sct:5275007 ;
 
 
 </div>
+
 </div> <!-- /inner-wrapper -->
 </div> <!-- /row -->
 </div> <!-- /container -->
@@ -249,6 +291,8 @@ a sct:5275007 ;
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/HL7/ig-template-base@master/content/assets/js/jquery.js"> </script>
 <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/HL7/ig-template-base@master/content/assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/HL7/ig-template-base@master/content/assets/js/tabs.js"> </script>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/HL7/ig-template-base@master/content/assets/js/window-hash.js"> </script>
 <a name="bottom"> </a>
@@ -263,7 +307,7 @@ a sct:5275007 ;
                     Package hl7.fhir.no.lmdi#0.9.4 based on <a
                         style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR
                         4.0.1</a>. Generated <span
-                        title="Wed, Feb 26, 2025 09:40+0000">2025-02-26</span>
+                        title="Mon, Mar 3, 2025 07:55+0000">2025-03-03</span>
                     <br />
                     <span style="color: var(--footer-highlight-text-color)">
                                   Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -293,7 +337,7 @@ a sct:5275007 ;
 <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
 <script id="page-data" type="application/json">
   {
-    "breadcrumb": "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>RolleHelsepersonell-1-Hjemmehjelp</b></li>"
+    "breadcrumb": "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Episode</b></li>"
   }
 </script>
 <script type="text/javascript">

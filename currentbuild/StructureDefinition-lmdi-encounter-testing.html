@@ -1,10 +1,14 @@
+<!-- get modelType -->
+
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="nb" xmlns="http://www.w3.org/1999/xhtml" lang="nb">
 
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
-    <title>RolleHelsepersonell-1-Hjemmehjelp - Legemiddeldata fra institusjon til Legemiddelregisteret
+    <title>Episode - Testing - Legemiddeldata fra institusjon til Legemiddelregisteret
         v0.9.4</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -112,7 +116,7 @@
     <div id="segment-breadcrumb" class="segment"> <!-- segment-breadcrumb -->
         <div class="container p-0"> <!-- container -->
             <ul class="breadcrumb p-2 mb-1">
-                <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>RolleHelsepersonell-1-Hjemmehjelp</b></li>
+                <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Episode</b></li>
                 
             </ul>
         </div> <!-- /container -->
@@ -124,10 +128,13 @@
             <div class="row">
                 <div class="inner-wrapper">
 
-<div class="col-12">
+<div style="counter-reset: section 6" class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
-
   
+
+
+
+
 
 
 
@@ -138,13 +145,35 @@
 <div class="fhi-nav-tabs border-bottom">
     <ul class="nav nav-tabs undermeny mb-0">
         
-        <li class="nav-item active">
-    <a class="nav-link active"
-        href="#">
-        Narrative Content
+        <li class="nav-item ">
+    <a class="nav-link "
+        href="StructureDefinition-lmdi-encounter.html">
+        Content
     </a>
 </li>
 
+
+        
+        <li class="nav-item ">
+    <a class="nav-link "
+        href="StructureDefinition-lmdi-encounter-definitions.html">
+        Detailed Descriptions
+    </a>
+</li>
+
+
+        
+        
+        <li class="nav-item ">
+    <a class="nav-link "
+        href="StructureDefinition-lmdi-encounter-mappings.html">
+        Mappings
+    </a>
+</li>
+
+        
+
+        
 
         
 
@@ -152,7 +181,7 @@
         
         <li class="nav-item ">
     <a class="nav-link "
-        href="PractitionerRole-RolleHelsepersonell-1-Hjemmehjelp.xml.html">
+        href="StructureDefinition-lmdi-encounter.profile.xml.html">
         XML
     </a>
 </li>
@@ -163,7 +192,7 @@
         
         <li class="nav-item ">
     <a class="nav-link "
-        href="PractitionerRole-RolleHelsepersonell-1-Hjemmehjelp.json.html">
+        href="StructureDefinition-lmdi-encounter.profile.json.html">
         JSON
     </a>
 </li>
@@ -174,7 +203,7 @@
         
         <li class="nav-item ">
     <a class="nav-link "
-        href="PractitionerRole-RolleHelsepersonell-1-Hjemmehjelp.ttl.html">
+        href="StructureDefinition-lmdi-encounter.profile.ttl.html">
         TTL
     </a>
 </li>
@@ -187,28 +216,48 @@
 
 
   <a name="root"> </a>
+  <h2 id="root">Resource Profile: Episode - Testing</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2025-03-03
+          
+        
+      </td>
+
+    </tr>
+  </table>
 
 
-  <h2 id="root">Example PractitionerRole: RolleHelsepersonell-1-Hjemmehjelp</h2>
+
+
+<!-- insert intro if present -->
 
 
 
 
-  <!-- insert intro if present -->
-  
+<h3>Test Plans</h3>
+
+  <p><b>No test plans are currently available for the  Profile.</b></p>
 
 
+<h3>Test Scripts</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PractitionerRole RolleHelsepersonell-1-Hjemmehjelp</b></p><a name="RolleHelsepersonell-1-Hjemmehjelp"> </a><a name="hcRolleHelsepersonell-1-Hjemmehjelp"> </a><a name="RolleHelsepersonell-1-Hjemmehjelp-no"> </a><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 5275007}">Hjemmehjelp (Helsefagarbeider)</span></p></div>
+  <p><b>No test scripts are currently available for the  Profile.</b></p>
 
-  
 
-  <!-- insert notes if present -->
-  
+<!-- insert notes if present -->
+
 
 
 
 </div>
+
 </div> <!-- /inner-wrapper -->
 </div> <!-- /row -->
 </div> <!-- /container -->
@@ -217,6 +266,8 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/HL7/ig-template-base@master/content/assets/js/jquery.js"> </script>
 <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/HL7/ig-template-base@master/content/assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/HL7/ig-template-base@master/content/assets/js/tabs.js"> </script>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/HL7/ig-template-base@master/content/assets/js/window-hash.js"> </script>
 <a name="bottom"> </a>
@@ -231,7 +282,7 @@
                     Package hl7.fhir.no.lmdi#0.9.4 based on <a
                         style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR
                         4.0.1</a>. Generated <span
-                        title="Wed, Feb 26, 2025 09:40+0000">2025-02-26</span>
+                        title="Mon, Mar 3, 2025 07:55+0000">2025-03-03</span>
                     <br />
                     <span style="color: var(--footer-highlight-text-color)">
                                   Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -261,7 +312,7 @@
 <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
 <script id="page-data" type="application/json">
   {
-    "breadcrumb": "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>RolleHelsepersonell-1-Hjemmehjelp</b></li>"
+    "breadcrumb": "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Episode</b></li>"
   }
 </script>
 <script type="text/javascript">

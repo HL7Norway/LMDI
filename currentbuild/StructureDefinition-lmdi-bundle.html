@@ -274,7 +274,7 @@
             
             Draft
             
-            as of 2025-02-26
+            as of 2025-03-03
             
             
         </td>
@@ -359,7 +359,7 @@
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( lr-allowed-resources )">C</a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Contains a collection of resources</span><br/><span style="font-weight:bold">lr-allowed-resources: </span>Bundle kan bare inneholde følgende ressurstyper: Pasient, Helsepersonell, Legemiddel, LegemiddelAdministrasjon, Diagnose, Institusjonsopphold, Legemiddelrekvirering, Organisasjon, Helsepersonellrolle</td></tr>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Contains a collection of resources</span><br/><span style="font-weight:bold">lr-allowed-resources: </span>Bundle kan bare inneholde følgende profilerte ressurstyper: Diagnose, Helsepersonell, Episode, Legemiddel, LegemiddelAdministrasjon, Legemiddelrekvirering, Organisasjon, Pasient</td></tr>
 
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-lmdi-bundle-definitions.html#Bundle.identifier">identifier</a><a name="d-Bundle.identifier"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td>
@@ -428,16 +428,15 @@
             <h4>Constraints</h4>
 <table class="list">
 <tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>lr-allowed-resources</td><td>error</td><td>Bundle</td><td>Bundle kan bare inneholde følgende ressurstyper: Pasient, Helsepersonell, Legemiddel, LegemiddelAdministrasjon, Diagnose, Institusjonsopphold, Legemiddelrekvirering, Organisasjon, Helsepersonellrolle<br/>: entry.all(
-  resource.ofType(Patient) or 
-  resource.ofType(Practitioner) or 
-  resource.ofType(Medication) or 
-  resource.ofType(MedicationAdministration) or 
-  resource.ofType(Condition) or 
-  resource.ofType(EpisodeOfCare) or 
-  resource.ofType(MedicationRequest) or 
-  resource.ofType(Organization) or 
-  resource.ofType(PractitionerRole)
+<tr><td>lr-allowed-resources</td><td>error</td><td>Bundle</td><td>Bundle kan bare inneholde følgende profilerte ressurstyper: Diagnose, Helsepersonell, Episode, Legemiddel, LegemiddelAdministrasjon, Legemiddelrekvirering, Organisasjon, Pasient<br/>: entry.all(
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medication').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationadministration').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationrequest').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient').exists()
 )</td><td></td></tr>
 </table>
 
@@ -454,7 +453,7 @@
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( bdl-1, bdl-2, bdl-3, bdl-4, bdl-7, bdl-9, bdl-10, bdl-11, bdl-12, lr-allowed-resources )">C</a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Contains a collection of resources<br/><span style="font-weight:bold">bdl-1: </span>total only when a search or history<br/><span style="font-weight:bold">bdl-2: </span>entry.search only when a search<br/><span style="font-weight:bold">bdl-3: </span>entry.request mandatory for batch/transaction/history, otherwise prohibited<br/><span style="font-weight:bold">bdl-4: </span>entry.response mandatory for batch-response/transaction-response/history, otherwise prohibited<br/><span style="font-weight:bold">bdl-7: </span>FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)<br/><span style="font-weight:bold">bdl-9: </span>A document must have an identifier with a system and a value<br/><span style="font-weight:bold">bdl-10: </span>A document must have a date<br/><span style="font-weight:bold">bdl-11: </span>A document must have a Composition as the first resource<br/><span style="font-weight:bold">bdl-12: </span>A message must have a MessageHeader as the first resource<br/><span style="font-weight:bold">lr-allowed-resources: </span>Bundle kan bare inneholde følgende ressurstyper: Pasient, Helsepersonell, Legemiddel, LegemiddelAdministrasjon, Diagnose, Institusjonsopphold, Legemiddelrekvirering, Organisasjon, Helsepersonellrolle<br/></td></tr>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Contains a collection of resources<br/><span style="font-weight:bold">bdl-1: </span>total only when a search or history<br/><span style="font-weight:bold">bdl-2: </span>entry.search only when a search<br/><span style="font-weight:bold">bdl-3: </span>entry.request mandatory for batch/transaction/history, otherwise prohibited<br/><span style="font-weight:bold">bdl-4: </span>entry.response mandatory for batch-response/transaction-response/history, otherwise prohibited<br/><span style="font-weight:bold">bdl-7: </span>FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)<br/><span style="font-weight:bold">bdl-9: </span>A document must have an identifier with a system and a value<br/><span style="font-weight:bold">bdl-10: </span>A document must have a date<br/><span style="font-weight:bold">bdl-11: </span>A document must have a Composition as the first resource<br/><span style="font-weight:bold">bdl-12: </span>A message must have a MessageHeader as the first resource<br/><span style="font-weight:bold">lr-allowed-resources: </span>Bundle kan bare inneholde følgende profilerte ressurstyper: Diagnose, Helsepersonell, Episode, Legemiddel, LegemiddelAdministrasjon, Legemiddelrekvirering, Organisasjon, Pasient<br/></td></tr>
 
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-lmdi-bundle-definitions.html#Bundle.implicitRules" title="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc.">implicitRules</a><a name="k-Bundle.implicitRules"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is a modifier element">?!</span><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
@@ -557,16 +556,15 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>bdl-12</td><td>error</td><td>Bundle</td><td>A message must have a MessageHeader as the first resource<br/>: type = 'message' implies entry.first().resource.is(MessageHeader)</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>ext-1</td><td>error</td><td>**ALL** extensions</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>lr-allowed-resources</td><td>error</td><td>Bundle</td><td>Bundle kan bare inneholde følgende ressurstyper: Pasient, Helsepersonell, Legemiddel, LegemiddelAdministrasjon, Diagnose, Institusjonsopphold, Legemiddelrekvirering, Organisasjon, Helsepersonellrolle<br/>: entry.all(
-  resource.ofType(Patient) or 
-  resource.ofType(Practitioner) or 
-  resource.ofType(Medication) or 
-  resource.ofType(MedicationAdministration) or 
-  resource.ofType(Condition) or 
-  resource.ofType(EpisodeOfCare) or 
-  resource.ofType(MedicationRequest) or 
-  resource.ofType(Organization) or 
-  resource.ofType(PractitionerRole)
+<tr><td>lr-allowed-resources</td><td>error</td><td>Bundle</td><td>Bundle kan bare inneholde følgende profilerte ressurstyper: Diagnose, Helsepersonell, Episode, Legemiddel, LegemiddelAdministrasjon, Legemiddelrekvirering, Organisasjon, Pasient<br/>: entry.all(
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medication').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationadministration').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationrequest').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient').exists()
 )</td><td></td></tr>
 </table>
 
@@ -583,7 +581,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( bdl-1, bdl-2, bdl-3, bdl-4, bdl-7, bdl-9, bdl-10, bdl-11, bdl-12, lr-allowed-resources )">C</a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Contains a collection of resources<br/><span style="font-weight:bold">bdl-1: </span>total only when a search or history<br/><span style="font-weight:bold">bdl-2: </span>entry.search only when a search<br/><span style="font-weight:bold">bdl-3: </span>entry.request mandatory for batch/transaction/history, otherwise prohibited<br/><span style="font-weight:bold">bdl-4: </span>entry.response mandatory for batch-response/transaction-response/history, otherwise prohibited<br/><span style="font-weight:bold">bdl-7: </span>FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)<br/><span style="font-weight:bold">bdl-9: </span>A document must have an identifier with a system and a value<br/><span style="font-weight:bold">bdl-10: </span>A document must have a date<br/><span style="font-weight:bold">bdl-11: </span>A document must have a Composition as the first resource<br/><span style="font-weight:bold">bdl-12: </span>A message must have a MessageHeader as the first resource<br/><span style="font-weight:bold">lr-allowed-resources: </span>Bundle kan bare inneholde følgende ressurstyper: Pasient, Helsepersonell, Legemiddel, LegemiddelAdministrasjon, Diagnose, Institusjonsopphold, Legemiddelrekvirering, Organisasjon, Helsepersonellrolle<br/></td></tr>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Contains a collection of resources<br/><span style="font-weight:bold">bdl-1: </span>total only when a search or history<br/><span style="font-weight:bold">bdl-2: </span>entry.search only when a search<br/><span style="font-weight:bold">bdl-3: </span>entry.request mandatory for batch/transaction/history, otherwise prohibited<br/><span style="font-weight:bold">bdl-4: </span>entry.response mandatory for batch-response/transaction-response/history, otherwise prohibited<br/><span style="font-weight:bold">bdl-7: </span>FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)<br/><span style="font-weight:bold">bdl-9: </span>A document must have an identifier with a system and a value<br/><span style="font-weight:bold">bdl-10: </span>A document must have a date<br/><span style="font-weight:bold">bdl-11: </span>A document must have a Composition as the first resource<br/><span style="font-weight:bold">bdl-12: </span>A message must have a MessageHeader as the first resource<br/><span style="font-weight:bold">lr-allowed-resources: </span>Bundle kan bare inneholde følgende profilerte ressurstyper: Diagnose, Helsepersonell, Episode, Legemiddel, LegemiddelAdministrasjon, Legemiddelrekvirering, Organisasjon, Pasient<br/></td></tr>
 
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-lmdi-bundle-definitions.html#Bundle.id" title="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.">id</a><a name="Bundle.id"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
@@ -887,16 +885,15 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>bdl-12</td><td>error</td><td>Bundle</td><td>A message must have a MessageHeader as the first resource<br/>: type = 'message' implies entry.first().resource.is(MessageHeader)</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>ext-1</td><td>error</td><td>**ALL** extensions</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>lr-allowed-resources</td><td>error</td><td>Bundle</td><td>Bundle kan bare inneholde følgende ressurstyper: Pasient, Helsepersonell, Legemiddel, LegemiddelAdministrasjon, Diagnose, Institusjonsopphold, Legemiddelrekvirering, Organisasjon, Helsepersonellrolle<br/>: entry.all(
-  resource.ofType(Patient) or 
-  resource.ofType(Practitioner) or 
-  resource.ofType(Medication) or 
-  resource.ofType(MedicationAdministration) or 
-  resource.ofType(Condition) or 
-  resource.ofType(EpisodeOfCare) or 
-  resource.ofType(MedicationRequest) or 
-  resource.ofType(Organization) or 
-  resource.ofType(PractitionerRole)
+<tr><td>lr-allowed-resources</td><td>error</td><td>Bundle</td><td>Bundle kan bare inneholde følgende profilerte ressurstyper: Diagnose, Helsepersonell, Episode, Legemiddel, LegemiddelAdministrasjon, Legemiddelrekvirering, Organisasjon, Pasient<br/>: entry.all(
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medication').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationadministration').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationrequest').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient').exists()
 )</td><td></td></tr>
 </table>
 
@@ -1012,7 +1009,7 @@ Summary
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( lr-allowed-resources )">C</a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Contains a collection of resources</span><br/><span style="font-weight:bold">lr-allowed-resources: </span>Bundle kan bare inneholde følgende ressurstyper: Pasient, Helsepersonell, Legemiddel, LegemiddelAdministrasjon, Diagnose, Institusjonsopphold, Legemiddelrekvirering, Organisasjon, Helsepersonellrolle</td></tr>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Contains a collection of resources</span><br/><span style="font-weight:bold">lr-allowed-resources: </span>Bundle kan bare inneholde følgende profilerte ressurstyper: Diagnose, Helsepersonell, Episode, Legemiddel, LegemiddelAdministrasjon, Legemiddelrekvirering, Organisasjon, Pasient</td></tr>
 
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-lmdi-bundle-definitions.html#Bundle.identifier">identifier</a><a name="da-Bundle.identifier"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td>
@@ -1080,16 +1077,15 @@ Summary
             <h4>Constraints</h4>
 <table class="list">
 <tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>lr-allowed-resources</td><td>error</td><td>Bundle</td><td>Bundle kan bare inneholde følgende ressurstyper: Pasient, Helsepersonell, Legemiddel, LegemiddelAdministrasjon, Diagnose, Institusjonsopphold, Legemiddelrekvirering, Organisasjon, Helsepersonellrolle<br/>: entry.all(
-  resource.ofType(Patient) or 
-  resource.ofType(Practitioner) or 
-  resource.ofType(Medication) or 
-  resource.ofType(MedicationAdministration) or 
-  resource.ofType(Condition) or 
-  resource.ofType(EpisodeOfCare) or 
-  resource.ofType(MedicationRequest) or 
-  resource.ofType(Organization) or 
-  resource.ofType(PractitionerRole)
+<tr><td>lr-allowed-resources</td><td>error</td><td>Bundle</td><td>Bundle kan bare inneholde følgende profilerte ressurstyper: Diagnose, Helsepersonell, Episode, Legemiddel, LegemiddelAdministrasjon, Legemiddelrekvirering, Organisasjon, Pasient<br/>: entry.all(
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medication').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationadministration').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationrequest').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient').exists()
 )</td><td></td></tr>
 </table>
 
@@ -1106,7 +1102,7 @@ Summary
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( bdl-1, bdl-2, bdl-3, bdl-4, bdl-7, bdl-9, bdl-10, bdl-11, bdl-12, lr-allowed-resources )">C</a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Contains a collection of resources<br/><span style="font-weight:bold">bdl-1: </span>total only when a search or history<br/><span style="font-weight:bold">bdl-2: </span>entry.search only when a search<br/><span style="font-weight:bold">bdl-3: </span>entry.request mandatory for batch/transaction/history, otherwise prohibited<br/><span style="font-weight:bold">bdl-4: </span>entry.response mandatory for batch-response/transaction-response/history, otherwise prohibited<br/><span style="font-weight:bold">bdl-7: </span>FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)<br/><span style="font-weight:bold">bdl-9: </span>A document must have an identifier with a system and a value<br/><span style="font-weight:bold">bdl-10: </span>A document must have a date<br/><span style="font-weight:bold">bdl-11: </span>A document must have a Composition as the first resource<br/><span style="font-weight:bold">bdl-12: </span>A message must have a MessageHeader as the first resource<br/><span style="font-weight:bold">lr-allowed-resources: </span>Bundle kan bare inneholde følgende ressurstyper: Pasient, Helsepersonell, Legemiddel, LegemiddelAdministrasjon, Diagnose, Institusjonsopphold, Legemiddelrekvirering, Organisasjon, Helsepersonellrolle<br/></td></tr>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Contains a collection of resources<br/><span style="font-weight:bold">bdl-1: </span>total only when a search or history<br/><span style="font-weight:bold">bdl-2: </span>entry.search only when a search<br/><span style="font-weight:bold">bdl-3: </span>entry.request mandatory for batch/transaction/history, otherwise prohibited<br/><span style="font-weight:bold">bdl-4: </span>entry.response mandatory for batch-response/transaction-response/history, otherwise prohibited<br/><span style="font-weight:bold">bdl-7: </span>FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)<br/><span style="font-weight:bold">bdl-9: </span>A document must have an identifier with a system and a value<br/><span style="font-weight:bold">bdl-10: </span>A document must have a date<br/><span style="font-weight:bold">bdl-11: </span>A document must have a Composition as the first resource<br/><span style="font-weight:bold">bdl-12: </span>A message must have a MessageHeader as the first resource<br/><span style="font-weight:bold">lr-allowed-resources: </span>Bundle kan bare inneholde følgende profilerte ressurstyper: Diagnose, Helsepersonell, Episode, Legemiddel, LegemiddelAdministrasjon, Legemiddelrekvirering, Organisasjon, Pasient<br/></td></tr>
 
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-lmdi-bundle-definitions.html#Bundle.implicitRules" title="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc.">implicitRules</a><a name="ka-Bundle.implicitRules"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is a modifier element">?!</span><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
@@ -1209,16 +1205,15 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>bdl-12</td><td>error</td><td>Bundle</td><td>A message must have a MessageHeader as the first resource<br/>: type = 'message' implies entry.first().resource.is(MessageHeader)</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>ext-1</td><td>error</td><td>**ALL** extensions</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>lr-allowed-resources</td><td>error</td><td>Bundle</td><td>Bundle kan bare inneholde følgende ressurstyper: Pasient, Helsepersonell, Legemiddel, LegemiddelAdministrasjon, Diagnose, Institusjonsopphold, Legemiddelrekvirering, Organisasjon, Helsepersonellrolle<br/>: entry.all(
-  resource.ofType(Patient) or 
-  resource.ofType(Practitioner) or 
-  resource.ofType(Medication) or 
-  resource.ofType(MedicationAdministration) or 
-  resource.ofType(Condition) or 
-  resource.ofType(EpisodeOfCare) or 
-  resource.ofType(MedicationRequest) or 
-  resource.ofType(Organization) or 
-  resource.ofType(PractitionerRole)
+<tr><td>lr-allowed-resources</td><td>error</td><td>Bundle</td><td>Bundle kan bare inneholde følgende profilerte ressurstyper: Diagnose, Helsepersonell, Episode, Legemiddel, LegemiddelAdministrasjon, Legemiddelrekvirering, Organisasjon, Pasient<br/>: entry.all(
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medication').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationadministration').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationrequest').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient').exists()
 )</td><td></td></tr>
 </table>
 
@@ -1235,7 +1230,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( bdl-1, bdl-2, bdl-3, bdl-4, bdl-7, bdl-9, bdl-10, bdl-11, bdl-12, lr-allowed-resources )">C</a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Contains a collection of resources<br/><span style="font-weight:bold">bdl-1: </span>total only when a search or history<br/><span style="font-weight:bold">bdl-2: </span>entry.search only when a search<br/><span style="font-weight:bold">bdl-3: </span>entry.request mandatory for batch/transaction/history, otherwise prohibited<br/><span style="font-weight:bold">bdl-4: </span>entry.response mandatory for batch-response/transaction-response/history, otherwise prohibited<br/><span style="font-weight:bold">bdl-7: </span>FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)<br/><span style="font-weight:bold">bdl-9: </span>A document must have an identifier with a system and a value<br/><span style="font-weight:bold">bdl-10: </span>A document must have a date<br/><span style="font-weight:bold">bdl-11: </span>A document must have a Composition as the first resource<br/><span style="font-weight:bold">bdl-12: </span>A message must have a MessageHeader as the first resource<br/><span style="font-weight:bold">lr-allowed-resources: </span>Bundle kan bare inneholde følgende ressurstyper: Pasient, Helsepersonell, Legemiddel, LegemiddelAdministrasjon, Diagnose, Institusjonsopphold, Legemiddelrekvirering, Organisasjon, Helsepersonellrolle<br/></td></tr>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Contains a collection of resources<br/><span style="font-weight:bold">bdl-1: </span>total only when a search or history<br/><span style="font-weight:bold">bdl-2: </span>entry.search only when a search<br/><span style="font-weight:bold">bdl-3: </span>entry.request mandatory for batch/transaction/history, otherwise prohibited<br/><span style="font-weight:bold">bdl-4: </span>entry.response mandatory for batch-response/transaction-response/history, otherwise prohibited<br/><span style="font-weight:bold">bdl-7: </span>FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)<br/><span style="font-weight:bold">bdl-9: </span>A document must have an identifier with a system and a value<br/><span style="font-weight:bold">bdl-10: </span>A document must have a date<br/><span style="font-weight:bold">bdl-11: </span>A document must have a Composition as the first resource<br/><span style="font-weight:bold">bdl-12: </span>A message must have a MessageHeader as the first resource<br/><span style="font-weight:bold">lr-allowed-resources: </span>Bundle kan bare inneholde følgende profilerte ressurstyper: Diagnose, Helsepersonell, Episode, Legemiddel, LegemiddelAdministrasjon, Legemiddelrekvirering, Organisasjon, Pasient<br/></td></tr>
 
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-lmdi-bundle-definitions.html#Bundle.id" title="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.">id</a><a name="sa-Bundle.id"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
@@ -1539,16 +1534,15 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>bdl-12</td><td>error</td><td>Bundle</td><td>A message must have a MessageHeader as the first resource<br/>: type = 'message' implies entry.first().resource.is(MessageHeader)</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>ext-1</td><td>error</td><td>**ALL** extensions</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>lr-allowed-resources</td><td>error</td><td>Bundle</td><td>Bundle kan bare inneholde følgende ressurstyper: Pasient, Helsepersonell, Legemiddel, LegemiddelAdministrasjon, Diagnose, Institusjonsopphold, Legemiddelrekvirering, Organisasjon, Helsepersonellrolle<br/>: entry.all(
-  resource.ofType(Patient) or 
-  resource.ofType(Practitioner) or 
-  resource.ofType(Medication) or 
-  resource.ofType(MedicationAdministration) or 
-  resource.ofType(Condition) or 
-  resource.ofType(EpisodeOfCare) or 
-  resource.ofType(MedicationRequest) or 
-  resource.ofType(Organization) or 
-  resource.ofType(PractitionerRole)
+<tr><td>lr-allowed-resources</td><td>error</td><td>Bundle</td><td>Bundle kan bare inneholde følgende profilerte ressurstyper: Diagnose, Helsepersonell, Episode, Legemiddel, LegemiddelAdministrasjon, Legemiddelrekvirering, Organisasjon, Pasient<br/>: entry.all(
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-condition').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medication').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationadministration').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationrequest').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-organization').exists() or 
+  resource.meta.profile.where($this = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-patient').exists()
 )</td><td></td></tr>
 </table>
 
@@ -1685,7 +1679,7 @@ Summary
                     Package hl7.fhir.no.lmdi#0.9.4 based on <a
                         style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR
                         4.0.1</a>. Generated <span
-                        title="Wed, Feb 26, 2025 09:40+0000">2025-02-26</span>
+                        title="Mon, Mar 3, 2025 07:55+0000">2025-03-03</span>
                     <br />
                     <span style="color: var(--footer-highlight-text-color)">
                                   Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

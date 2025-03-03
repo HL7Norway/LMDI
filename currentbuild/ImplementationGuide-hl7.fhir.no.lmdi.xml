@@ -587,14 +587,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="EpisodeOfCare"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="EpisodeOfCare/EksempelInstitusjonsopphold"/>
+        <reference value="StructureDefinition/lmdi-encounter"/>
       </reference>
-      <name value="EksempelInstitusjonsopphold"/>
-      <description value="Eksempel på Institusjonsopphold"/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-episodeofcare"/>
+      <name value="Episode"/>
+      <description value="Profil for en behandlingsepisode basert på Encounter-ressursen i FHIR. Denne profilen representerer et klinisk møte eller en behandling i helsevesenet, med fokus på organisatorisk tilhørighet."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -617,28 +617,6 @@
       <name value="Helsepersonell-1-HPR-nummer"/>
       <description value="Eksempel på helsepersonell med HPR-nummer"/>
       <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/lmdi-practitionerrole"/>
-      </reference>
-      <name value="Helsepersonellrolle"/>
-      <description value="Rollen til helsepersonellet eller personen som har foreskrevet eller administrert legemiddelet"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/lmdi-episodeofcare"/>
-      </reference>
-      <name value="Institusjonsopphold"/>
-      <description value="Beskrivelse av pasientens opphold i institusjon. Dette kan være både av kortere og lengre karakter, slik som døgnopphold, innleggelse hos spesialist, sykehjem og aldershjem."/>
-      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -914,17 +892,6 @@
       <name value="Rekvirering-1"/>
       <description value="Eksempel på legemiddelrekvirering av Paracet"/>
       <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationrequest"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="PractitionerRole"/>
-      </extension>
-      <reference>
-        <reference value="PractitionerRole/RolleHelsepersonell-1-Hjemmehjelp"/>
-      </reference>
-      <name value="RolleHelsepersonell-1-Hjemmehjelp"/>
-      <description value="Eksempel på rolle (Hjemmehjelp), ikke komplett kodeverk"/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -70,11 +70,11 @@
     "name" : "Diagnose"
   },
   {
-    "id" : "lmdi-episodeofcare",
+    "id" : "lmdi-encounter",
     "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-episodeofcare",
+    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter",
     "version" : "0.9.4",
-    "name" : "Institusjonsopphold"
+    "name" : "Episode"
   },
   {
     "id" : "lmdi-medication",
@@ -124,13 +124,6 @@
     "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner",
     "version" : "0.9.4",
     "name" : "Helsepersonell"
-  },
-  {
-    "id" : "lmdi-practitionerrole",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole",
-    "version" : "0.9.4",
-    "name" : "Helsepersonellrolle"
   },
   {
     "id" : "lmdi-urban-district",

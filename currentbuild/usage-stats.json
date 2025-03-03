@@ -53,10 +53,10 @@
         "title": "Diagnose"
       }
     ],
-    "EpisodeOfCare": [
+    "Encounter": [
       {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-episodeofcare",
-        "title": "Institusjonsopphold"
+        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter",
+        "title": "Episode"
       }
     ],
     "Medication": [
@@ -93,12 +93,6 @@
       {
         "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitioner",
         "title": "Helsepersonell"
-      }
-    ],
-    "PractitionerRole": [
-      {
-        "url": "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole",
-        "title": "Helsepersonellrolle"
       }
     ]
   },
