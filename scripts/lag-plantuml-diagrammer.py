@@ -286,7 +286,7 @@ def find_structure_definitions(path: str) -> List[str]:
     return structure_files
 
 def generate_plantuml(structures: List[FHIRStructure]) -> str:
-    """Generate PlantUML for multiple structures."""
+    """Generate PlantUML for multiple structures with links to documentation."""
     uml = [
         "@startuml",
         "",
@@ -301,6 +301,12 @@ def generate_plantuml(structures: List[FHIRStructure]) -> str:
     
     # Track classes with relationships
     classes_with_relationships = set()
+    
+    # Create a mapping from display name to original ID
+    name_to_id_map = {}
+    for structure in structures:
+        display_name = get_resource_name(structure.name)
+        name_to_id_map[display_name] = structure.name
     
     # First collect all classes involved in relationships
     for structure in structures:
@@ -329,13 +335,28 @@ def generate_plantuml(structures: List[FHIRStructure]) -> str:
                 # Default to Resource if no base type is specified
                 base_types[structure_name] = "Resource"
     
-    # Add classes with stereotypes
+    # Add classes with stereotypes and links
     for class_name in sorted(classes_with_relationships):
         base_type = base_types.get(class_name, "")
-        if base_type:
-            uml.append(f'class {class_name} <<{base_type}>>')
+        
+        # Check if we have the original ID for this class (profile)
+        original_id = name_to_id_map.get(class_name)
+        
+        # Generate link based on whether it's a profile or FHIR base resource
+        if original_id:
+            # This is a profile class with a StructureDefinition file
+            link = f"https://hl7norway.github.io/LMDI/currentbuild/StructureDefinition-{original_id}.html"
         else:
-            uml.append(f'class {class_name}')
+            # This is a FHIR base resource
+            # Convert to lowercase for FHIR base resource URLs
+            link = f"https://hl7.org/fhir/R4/{class_name.lower()}.html"
+        
+        # Add class with stereotype and link
+        if base_type:
+            uml.append(f'class {class_name} <<{base_type}>> [[{link} {class_name} _blank]]')
+        else:
+            uml.append(f'class {class_name} [[{link} {class_name} _blank]]')
+        
         defined_classes.add(class_name)
     
     uml.append("")  # Empty line after classes
