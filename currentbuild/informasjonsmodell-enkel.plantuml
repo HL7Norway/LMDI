@@ -7,15 +7,15 @@ skinparam class {
     BorderColor Black
 }
 
-class Diagnose <<Condition>>
-class Episode <<Encounter>>
-class Helsepersonell <<Practitioner>>
-class Legemiddel <<Medication>>
-class Legemiddeladministrering <<MedicationAdministration>>
-class Legemiddelrekvirering <<MedicationRequest>>
-class Organisasjon <<Organization>>
-class Pasient <<Patient>>
-class Substance
+class Diagnose <<Condition>> [[https://hl7norway.github.io/LMDI/currentbuild/StructureDefinition-Diagnose.html Diagnose _blank]]
+class Episode <<Encounter>> [[https://hl7norway.github.io/LMDI/currentbuild/StructureDefinition-Episode.html Episode _blank]]
+class Helsepersonell <<Practitioner>> [[https://hl7norway.github.io/LMDI/currentbuild/StructureDefinition-Helsepersonell.html Helsepersonell _blank]]
+class Legemiddel <<Medication>> [[https://hl7norway.github.io/LMDI/currentbuild/StructureDefinition-Legemiddel.html Legemiddel _blank]]
+class Legemiddeladministrering <<MedicationAdministration>> [[https://hl7norway.github.io/LMDI/currentbuild/StructureDefinition-Legemiddeladministrering.html Legemiddeladministrering _blank]]
+class Legemiddelrekvirering <<MedicationRequest>> [[https://hl7norway.github.io/LMDI/currentbuild/StructureDefinition-Legemiddelrekvirering.html Legemiddelrekvirering _blank]]
+class Organisasjon <<Organization>> [[https://hl7norway.github.io/LMDI/currentbuild/StructureDefinition-Organisasjon.html Organisasjon _blank]]
+class Pasient <<Patient>> [[https://hl7norway.github.io/LMDI/currentbuild/StructureDefinition-Pasient.html Pasient _blank]]
+class Substance [[https://hl7.org/fhir/R4/substance.html Substance _blank]]
 
 Diagnose "1..1" --> Pasient : "subject"
 Episode "0..1" --> Organisasjon : "serviceProvider"
