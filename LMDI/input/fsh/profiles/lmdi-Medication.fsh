@@ -7,6 +7,8 @@ Description: "Beskrivelse av legemiddel."
 * ^date = "2024-06-26"
 * ^publisher = "Folkehelseinstituttet"
 
+* manufacturer 0..0
+
 * code 1..1
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "system"
@@ -53,6 +55,11 @@ Description: "Beskrivelse av legemiddel."
 
 * batch MS
 * batch ^short = "Batch-nummer for legemiddelet"
+
+* ingredient.item[x] only Reference(Substance or Legemiddel)
+* ingredient.item[x] ^type.profile = "http://hl7.org/fhir/StructureDefinition/Substance"
+* ingredient.item[x] ^type.targetProfile[0] = "http://hl7.org/fhir/StructureDefinition/Substance"
+* ingredient.item[x] ^type.targetProfile[1] = "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medication"
 
 
 // EKSEMPLER

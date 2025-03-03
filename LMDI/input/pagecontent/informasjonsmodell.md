@@ -6,12 +6,6 @@ De grønne klassene/ressursene er foreslått å implementeres først.
 <img src="informasjonsmodell-enkel.svg" width="75%" />
 <br clear="all"/>
 
-### Arbeidsmodell
-
-Diskusjonsunderlagsmodell, under stadig forandring! Stereotypen sier hvilken FHIR-ressurs som benyttes, f.eks. ```<<Patient>>```
-
-<img src="informasjonsmodell-test.svg" width="100%" />
-<br clear="all"/>
 
 ### Flyt enkel 1 - eksempel
 

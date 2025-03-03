@@ -5,6 +5,7 @@ from typing import Dict, Optional
 RESOURCE_NAME_MAPPING = {
     'lmdi-bundle': 'LegemiddelregisterBundle',
     'lmdi-condition': 'Diagnose',
+    'lmdi-encounter': 'Episode',
     'lmdi-episodeofcare': 'Institusjonsopphold',
     'lmdi-medication': 'Legemiddel',
     'lmdi-medicationadministration': 'Legemiddeladministrering',
