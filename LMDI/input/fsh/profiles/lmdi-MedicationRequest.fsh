@@ -22,6 +22,7 @@ Description: "Legemiddelrekvirering - ordinering eller annen rekvirering av lege
 * dispenseRequest 0..0
 * detectedIssue 0..0
 * eventHistory 0..0
+* dosageInstruction.text 0..0
 
 // Identifikator
 * identifier 0..* MS
@@ -72,4 +73,3 @@ Description: "Eksempel på legemiddelrekvirering av Paracet"
 * subject = Reference(Pasient-2-FNR)
 * requester = Reference(Helsepersonell-1-HPR-nummer)
 * authoredOn = "2025-01-27"
-* dosageInstruction.text = "1-2 tabletter ved behov mot smerter, maksimalt 8 tabletter per døgn"

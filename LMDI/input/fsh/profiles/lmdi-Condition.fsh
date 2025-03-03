@@ -22,6 +22,7 @@ Description: "Diagnosen som pasienten har fått rekvirert og administrert legemi
 * asserter 0..0
 * evidence 0..0
 * note 0..0
+* stage.assessment 0..0
 
 // Grunnleggende elementer
 * subject 1..1

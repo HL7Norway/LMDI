@@ -1,11 +1,12 @@
 import json
 import os
 from dataclasses import dataclass
-from typing import Dict, Optional, List, Set
+from typing import Dict, Optional, List, Set, Tuple
 
 RESOURCE_NAME_MAPPING = {
     'lmdi-bundle': 'LegemiddelregisterBundle',
     'lmdi-condition': 'Diagnose',
+    'lmdi-encounter': 'Episode',
     'lmdi-episodeofcare': 'Institusjonsopphold',
     'lmdi-medication': 'Legemiddel',
     'lmdi-medicationadministration': 'Legemiddeladministrering',
@@ -20,7 +21,8 @@ RESOURCE_NAME_MAPPING = {
     'lmdi-institusjonsopphold': 'Institusjonsopphold',
     'lmdi-legemiddel': 'Legemiddel',
     'lmdiLegemiddelrekvirering': 'Legemiddelrekvirering',
-    'lmdLegemiddeladministrering': 'Legemiddeladministrering'
+    'lmdLegemiddeladministrering': 'Legemiddeladministrering',
+    'episode': 'Episode'  # Lagt til denne mappingen
 }
 
 def get_resource_name(resource_id: str) -> str:
@@ -37,61 +39,183 @@ class FHIRReference:
     name: str
     cardinality: str
 
+@dataclass
+class ElementCardinality:
+    min: int
+    max: str  # Can be a number or "*"
+
 class FHIRStructure:
     def __init__(self, name: str):
         self.name = name
         self.references: Dict[str, FHIRReference] = {}
+        # Keep track of zero cardinality paths
+        self.zero_cardinality_paths: Set[str] = set()
+        # Store the base type for stereotypes
+        self.base_type: str = ""
+        # Store cardinality for each path
+        self.element_cardinalities: Dict[str, ElementCardinality] = {}
 
-def parse_element_definition(element: dict) -> Optional[FHIRReference]:
-    """Parse a FHIR element definition for references only."""
-    path = element.get('path', '')
+def combine_cardinality(parent: ElementCardinality, child: ElementCardinality) -> ElementCardinality:
+    """Combine parent and child cardinality to get effective cardinality."""
+    # For minimum cardinality:
+    # - If parent is 0, child can occur 0 times (regardless of child's min)
+    # - If parent min > 0, then we need at least parent_min * child_min instances
+    combined_min = 0 if parent.min == 0 else parent.min * child.min
     
-    # Skip hvis path ikke er direkte under roten
-    if path.count('.') != 1:
-        return None
-        
-    # Skip hvis kardinalitet er 0..0
-    max_value = element.get('max', '*')
-    if max_value == '0':
-        print(f"Skipping {path} - max cardinality is 0")
-        return None
-        
-    # Skip Extension fields
-    if path.endswith('extension') or path.endswith('modifierExtension'):
-        print(f"Skipping {path} - extension field")
-        return None
-        
-    type_info = element.get('type', [])
-    if not type_info or type_info[0].get('code') != 'Reference':
-        return None
-        
-    target_profiles = type_info[0].get('targetProfile', [])
-    if not target_profiles:
-        return None
-        
-    # Skip hvis target er en Extension
-    target_profile = target_profiles[0]
-    if 'Extension' in target_profile:
-        print(f"Skipping {path} - references Extension")
-        return None
-        
-    # Get the first target profile
-    target_profile = target_profiles[0]
-    name = path.split('.')[-1]
+    # For maximum cardinality:
+    # - If either is unlimited (*), the result depends on the other
+    # - If parent is 0, the result is 0 (impossible path)
+    # - Otherwise, multiply the max values
+    if parent.min == 0 and parent.max == "0":
+        combined_max = "0"
+    elif parent.max == "*" and child.max == "*":
+        combined_max = "*"
+    elif parent.max == "*":
+        combined_max = "*"  # parent allows unlimited, child limits each parent
+    elif child.max == "*":
+        combined_max = "*"  # unlimited instances of child per each parent
+    else:
+        # Numeric multiplication of maximums
+        try:
+            p_max = int(parent.max)
+            c_max = int(child.max)
+            combined_max = str(p_max * c_max)
+        except ValueError:
+            # Fallback for any parsing issues
+            combined_max = "*"
     
-    # Extract the target type from the profile URL
-    target_type = target_profile.split('/')[-1]
-    if target_type.startswith('StructureDefinition-'):
-        target_type = target_type[len('StructureDefinition-'):]
-        
-    cardinality = f"{element.get('min', 0)}..{element.get('max', '*')}"
+    return ElementCardinality(min=combined_min, max=combined_max)
+
+def calculate_path_cardinality(path: str, element_cardinalities: Dict[str, ElementCardinality]) -> ElementCardinality:
+    """Calculate the effective cardinality for a path by combining all parent cardinalities."""
+    # Start with a default of exactly 1
+    result = ElementCardinality(min=1, max="1")
     
-    return FHIRReference(
-        source=path.split('.')[0],
-        target=target_type,
-        name=name,
-        cardinality=cardinality
-    )
+    # Split the path and build up each segment
+    parts = path.split('.')
+    current_path = ""
+    
+    for i, part in enumerate(parts):
+        # Skip the first part as it's the resource itself
+        if i == 0:
+            current_path = part
+            continue
+            
+        # Build the path for this segment
+        if current_path:
+            current_path = f"{current_path}.{part}"
+        else:
+            current_path = part
+            
+        # If we have cardinality for this path, combine it
+        if current_path in element_cardinalities:
+            result = combine_cardinality(result, element_cardinalities[current_path])
+    
+    return result
+
+def parse_element_definition(elements: List[dict], structure: FHIRStructure) -> None:
+    """Parse FHIR element definitions for references and cardinalities."""
+    # First pass - collect all path cardinalities
+    for element in elements:
+        path = element.get('path', '')
+        
+        # Skip if path doesn't have minimum segments
+        if not path or path.count('.') < 0:
+            continue
+            
+        # Extract cardinality
+        min_value = element.get('min', 0)
+        max_value = element.get('max', '*')
+        
+        # Store the cardinality for this path
+        structure.element_cardinalities[path] = ElementCardinality(
+            min=int(min_value), 
+            max=max_value
+        )
+        
+        # If this is a zero cardinality element, mark it
+        if max_value == '0':
+            structure.zero_cardinality_paths.add(path)
+            print(f"Identified zero cardinality path: {path}")
+    
+    # Second pass - process references with correct combined cardinality
+    for element in elements:
+        path = element.get('path', '')
+        
+        # Skip if path doesn't have minimum segments (resource.element)
+        if not path or path.count('.') < 1:
+            continue
+            
+        # Check if this path or any parent has zero cardinality
+        skip_element = False
+        for zero_path in structure.zero_cardinality_paths:
+            if path == zero_path or path.startswith(zero_path + '.'):
+                skip_element = True
+                print(f"Skipping {path} - path or parent has zero cardinality")
+                break
+                
+        if skip_element:
+            continue
+            
+        # Skip Extension fields
+        if path.endswith('extension') or path.endswith('modifierExtension'):
+            print(f"Skipping {path} - extension field")
+            continue
+        
+        # Process different type structures
+        type_info = element.get('type', [])
+        
+        for type_def in type_info:
+            code = type_def.get('code')
+            
+            # Handle direct references
+            if code == 'Reference':
+                target_profiles = type_def.get('targetProfile', [])
+                if not target_profiles:
+                    continue
+                
+                # Calculate the effective cardinality for this path
+                effective_cardinality = calculate_path_cardinality(path, structure.element_cardinalities)
+                cardinality_str = f"{effective_cardinality.min}..{effective_cardinality.max}"
+                
+                # Process all target profiles in the list
+                for target_profile in target_profiles:
+                    # Skip if target is an Extension
+                    if 'Extension' in target_profile:
+                        print(f"Skipping {path} - references Extension")
+                        continue
+                        
+                    # Extract the target type from the profile URL
+                    target_type = target_profile.split('/')[-1]
+                    if target_type.startswith('StructureDefinition-'):
+                        target_type = target_type[len('StructureDefinition-'):]
+                        
+                    # For nested paths, use the full path in the reference name
+                    source_part = path.split('.')[0]
+                    
+                    # Get the full path without the resource name for the reference name
+                    # This keeps all the path elements for the relationship name
+                    if '.' in path:
+                        # Get everything after the resource name (the first segment)
+                        friendly_name = path[len(source_part)+1:]
+                        # Remove any [x] from the path segments
+                        friendly_name = friendly_name.replace('[x]', '')
+                    else:
+                        friendly_name = path
+                        # Remove any [x] if present in the resource name itself
+                        friendly_name = friendly_name.replace('[x]', '')
+                    
+                    # Create unique reference key when there are multiple targets
+                    ref_key = f"{friendly_name}_to_{target_type}" if len(target_profiles) > 1 else friendly_name
+                    
+                    reference = FHIRReference(
+                        source=source_part,
+                        target=target_type,
+                        name=friendly_name,
+                        cardinality=cardinality_str
+                    )
+                    structure.references[ref_key] = reference
+                    print(f"Found reference: {source_part} -- {friendly_name} --> {target_type} [{cardinality_str}]")
 
 def parse_structure_definition(profile_json: dict, filename: str) -> Optional[FHIRStructure]:
     """Parse a FHIR StructureDefinition for resource references."""
@@ -100,35 +224,48 @@ def parse_structure_definition(profile_json: dict, filename: str) -> Optional[FH
     print(f"Resource kind: {profile_json.get('kind')}")
     print(f"Resource type: {profile_json.get('type')}")
     print(f"Resource id: {profile_json.get('id')}")
+    print(f"Resource name: {profile_json.get('name')}")
     
     # Check if this is a profile or resource
     if profile_json.get('kind') not in ['resource', 'complex-type']:
         print(f"Skipping {filename} - not a resource or complex-type")
         return None
         
-    resource_type = profile_json.get('type', '')
-    profile_id = profile_json.get('id', '')
+    # Prioritize name > id > type for the structure name
+    resource_name = None
+    for field in ['name', 'id', 'type']:
+        if profile_json.get(field):
+            value = profile_json.get(field)
+            # Check if we have a mapping for this value
+            if value in RESOURCE_NAME_MAPPING:
+                resource_name = RESOURCE_NAME_MAPPING[value]
+                break
+            else:
+                resource_name = value
+                break
     
-    # Use basename of file without extension if no id
-    if not profile_id:
-        profile_id = os.path.splitext(os.path.basename(filename))[0]
-        if profile_id.startswith('StructureDefinition-'):
-            profile_id = profile_id[len('StructureDefinition-'):]
+    if not resource_name:
+        # Fallback to the basename of file without extension if no name/id/type
+        resource_name = os.path.splitext(os.path.basename(filename))[0]
+        if resource_name.startswith('StructureDefinition-'):
+            resource_name = resource_name[len('StructureDefinition-'):]
+            
+    print(f"Using structure name: {resource_name}")
     
-    structure_name = profile_id if profile_id in RESOURCE_NAME_MAPPING else resource_type
-    print(f"Using structure name: {structure_name}")
+    structure = FHIRStructure(resource_name)
     
-    structure = FHIRStructure(structure_name)
+    # Store the base type
+    structure.base_type = profile_json.get('baseDefinition', '').split('/')[-1]
+    if structure.base_type.startswith('StructureDefinition-'):
+        structure.base_type = structure.base_type[len('StructureDefinition-'):]
+    print(f"Base type: {structure.base_type}")
     
     # Check both snapshot and differential
     elements = (profile_json.get('snapshot', {}).get('element', []) or 
                profile_json.get('differential', {}).get('element', []))
     
-    for element in elements:
-        reference = parse_element_definition(element)
-        if reference:
-            print(f"Found reference: {reference}")
-            structure.references[reference.name] = reference
+    # Process all elements
+    parse_element_definition(elements, structure)
     
     return structure
 
@@ -162,20 +299,44 @@ def generate_plantuml(structures: List[FHIRStructure]) -> str:
         ""
     ]
     
-    # Add all classes first
-    defined_classes = set()
+    # Track classes with relationships
+    classes_with_relationships = set()
+    
+    # First collect all classes involved in relationships
     for structure in structures:
-        structure_name = get_resource_name(structure.name)
-        if structure_name not in defined_classes:
-            uml.append(f"class {structure_name}")
-            defined_classes.add(structure_name)
+        source_name = get_resource_name(structure.name)
+        if structure.references:  # If this structure has outgoing references
+            classes_with_relationships.add(source_name)
             
-        # Add referenced classes that aren't already defined
+        # Mark all target classes as having relationships
         for ref in structure.references.values():
             target_name = get_resource_name(ref.target)
-            if target_name not in defined_classes:
-                uml.append(f"class {target_name}")
-                defined_classes.add(target_name)
+            classes_with_relationships.add(target_name)
+    
+    # Add classes that have relationships
+    defined_classes = set()
+    base_types = {}  # Store base types for stereotypes
+    
+    # Extract base types from structures
+    for structure in structures:
+        structure_name = get_resource_name(structure.name)
+        if structure_name in classes_with_relationships:
+            # Get base type from the structure
+            if hasattr(structure, 'base_type') and structure.base_type:
+                base_type = structure.base_type.split('/')[-1]  # Extract last part if it's a URL
+                base_types[structure_name] = get_resource_name(base_type)
+            else:
+                # Default to Resource if no base type is specified
+                base_types[structure_name] = "Resource"
+    
+    # Add classes with stereotypes
+    for class_name in sorted(classes_with_relationships):
+        base_type = base_types.get(class_name, "")
+        if base_type:
+            uml.append(f'class {class_name} <<{base_type}>>')
+        else:
+            uml.append(f'class {class_name}')
+        defined_classes.add(class_name)
     
     uml.append("")  # Empty line after classes
     
@@ -184,7 +345,7 @@ def generate_plantuml(structures: List[FHIRStructure]) -> str:
         source_name = get_resource_name(structure.name)
         for ref in structure.references.values():
             target_name = get_resource_name(ref.target)
-            uml.append(f'{source_name} "{ref.cardinality}" -- {target_name} : "{ref.name}"')
+            uml.append(f'{source_name} "{ref.cardinality}" --> {target_name} : "{ref.name}"')
     
     uml.extend(["", "@enduml"])
     return "\n".join(uml)
