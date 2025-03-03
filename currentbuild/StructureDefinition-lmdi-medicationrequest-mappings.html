@@ -264,6 +264,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;priority</td><td>Request.priority</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;medication[x]</td><td>Request.code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>Request.subject</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>Request.context</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;authoredOn</td><td>Request.authoredOn</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;requester</td><td>Request.requester</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>Request.reasonCode</td> </tr>
@@ -281,6 +282,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>Message/Body/NewRx/MedicationPrescribed/Directionsor Message/Body/NewRx/MedicationPrescribed/StructuredSIG</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;medication[x]</td><td>Message/Body/NewRx/MedicationPrescribedMedication.code.coding.code = Message/Body/NewRx/MedicationPrescribed/DrugCoded/ProductCodeMedication.code.coding.system = Message/Body/NewRx/MedicationPrescribed/DrugCoded/ProductCodeQualifierMedication.code.coding.display = Message/Body/NewRx/MedicationPrescribed/DrugDescription</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>Message/Body/NewRx/Patient(need detail to link to specific patient … Patient.Identification in SCRIPT)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>no mapping</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;authoredOn</td><td>Message/Body/NewRx/MedicationPrescribed/WrittenDate</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>Message/Body/NewRx/MedicationPrescribed/Diagnosis/Primary/Value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>no mapping</td> </tr>
@@ -305,6 +307,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;reported[x]</td><td>.participation[typeCode=INF].role</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;medication[x]</td><td>consumable.administrableMedication</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>.participation[typeCode=AUT].role</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>.inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN, code=&quot;type of encounter or episode&quot;]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;authoredOn</td><td>author.time</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;requester</td><td>.participation[typeCode=AUT].role</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>reason.observation.reasonCode</td> </tr>
@@ -351,6 +354,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;priority</td><td>FiveWs.grade</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;medication[x]</td><td>FiveWs.what[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>FiveWs.subject[x], FiveWs.subject</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>FiveWs.context</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;authoredOn</td><td>FiveWs.recorded</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;requester</td><td>FiveWs.author</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>FiveWs.why[x]</td> </tr>
@@ -362,6 +366,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>ORC-2-Placer Order Number / ORC-3-Filler Order Number</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;medication[x]</td><td>RXE-2-Give Code / RXO-1-Requested Give Code / RXC-2-Component Code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>PID-3-Patient ID List</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>PV1-19-Visit Number</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;authoredOn</td><td>RXE-32-Original Order Date/Time / ORC-9-Date/Time of Transaction</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>ORC-16-Order Control Code Reason /RXE-27-Give Indication/RXO-20-Indication / RXD-21-Indication / RXG-22-Indication / RXA-19-Indication</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;dosageInstruction</td><td></td> </tr>
@@ -414,7 +419,7 @@
                     Package hl7.fhir.no.lmdi#0.9.4 based on <a
                         style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR
                         4.0.1</a>. Generated <span
-                        title="Mon, Mar 3, 2025 07:55+0000">2025-03-03</span>
+                        title="Mon, Mar 3, 2025 11:20+0000">2025-03-03</span>
                     <br />
                     <span style="color: var(--footer-highlight-text-color)">
                                   Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

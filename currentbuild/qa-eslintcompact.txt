@@ -435,6 +435,7 @@ Generic: line 0, col 0, Warning - The IG is not for the international realm, and
 /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-medicationrequest.json: line 0, col 0, Error - Hyperlink 'StructureDefinition-lmdi-medicationrequest-definitions.html#MedicationRequest.reported[x]' at 'div/table/tr/td/a' for 'reported[x]' does not resolve (INVALID)
 /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-medicationrequest.json: line 0, col 0, Error - Hyperlink 'StructureDefinition-lmdi-medicationrequest-definitions.html#MedicationRequest.medication[x]' at 'div/table/tr/td/a' for 'medication[x]' does not resolve (INVALID)
 /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-medicationrequest.json: line 0, col 0, Error - Hyperlink 'StructureDefinition-lmdi-medicationrequest-definitions.html#MedicationRequest.subject' at 'div/table/tr/td/a' for 'subject' does not resolve (INVALID)
+/github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-medicationrequest.json: line 0, col 0, Error - Hyperlink 'StructureDefinition-lmdi-medicationrequest-definitions.html#MedicationRequest.encounter' at 'div/table/tr/td/a' for 'encounter' does not resolve (INVALID)
 /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-medicationrequest.json: line 0, col 0, Error - Hyperlink 'StructureDefinition-lmdi-medicationrequest-definitions.html#MedicationRequest.requester' at 'div/table/tr/td/a' for 'requester' does not resolve (INVALID)
 /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-medicationrequest.json: line 0, col 0, Error - Hyperlink 'StructureDefinition-lmdi-medicationrequest-definitions.html#MedicationRequest.reasonReference' at 'div/table/tr/td/a' for 'reasonReference' does not resolve (INVALID)
 /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-medicationrequest.json: line 0, col 0, Error - Hyperlink 'StructureDefinition-lmdi-medicationrequest-definitions.html#MedicationRequest.dosageInstruction' at 'div/table/tr/td/a' for 'dosageInstruction' does not resolve (INVALID)
@@ -507,5 +508,5 @@ Generic: line 0, col 0, Warning - The IG is not for the international realm, and
 /github/workspace/LMDI/fsh-generated/resources/ValueSet-lmdi-medicationadministrationstatus.json: line 1, col 1664, Error - The system 'http://hl7.org/fhir/ValueSet/medication-admin-status' is actually a value set, which itself refers to the system 'http://terminology.hl7.org/CodeSystem/medication-admin-status' so that may be what is intended here (INVALID)
 /github/workspace/LMDI/fsh-generated/resources/ValueSet-lmdi-medicationadministrationstatus.json: line 0, col 0, Warning - Error from http://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/ValueSet/medication-admin-status (EXCEPTION)
 
-err = 198, warn = 25, info = 25
+err = 199, warn = 25, info = 25
 IG Publisher Version: 1.8.15

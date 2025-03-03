@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 257, errors = 198, warn = 25, info = 25-->
+<!-- broken links = 257, errors = 199, warn = 25, info = 25-->
 <head>
   <title>Lmdi : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -46,7 +46,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for Lmdi</h1>
- <p>Generated Mon Mar 03 07:56:17 UTC 2025, FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.9.4 (canonical = <a href="http://hl7.no/fhir/ig/lmdi">http://hl7.no/fhir/ig/lmdi</a> (<a href="http://hl7.no/fhir/ig/lmdi/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Mon Mar 03 11:21:06 UTC 2025, FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.9.4 (canonical = <a href="http://hl7.no/fhir/ig/lmdi">http://hl7.no/fhir/ig/lmdi</a> (<a href="http://hl7.no/fhir/ig/lmdi/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.8.15</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.no.lmdi, Canonical = http://hl7.no/fhir/ig/lmdi</td></tr>
@@ -81,7 +81,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-code.html">Condition/Problem/DiagnosisCodes</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
- (4 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
  (8 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
  (7 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
  (6 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-stage.html">ConditionStage</a>
@@ -158,7 +158,7 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
  <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
- <tr><td>Summary:</td><td> errors = 198, warn = 25, info = 25, broken links = 257.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+ <tr><td>Summary:</td><td> errors = 199, warn = 25, info = 25, broken links = 257.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -249,7 +249,7 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
      <td><a href="#_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-medicationadministration"><b>/github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-medicationadministration</b></a></td><td><b>21</b></td><td><b>3</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-medicationrequest"><b>/github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-medicationrequest</b></a></td><td><b>11</b></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-medicationrequest"><b>/github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-medicationrequest</b></a></td><td><b>12</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_LMDI_fsh-generated_resources_StructureDefinition-lmdi-municipalitycode"><b>/github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-municipalitycode</b></a></td><td><b>5</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -1859,6 +1859,9 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition.text.div</b></td><td><b>error</b></td><td><b>Hyperlink 'StructureDefinition-lmdi-medicationrequest-definitions.html#MedicationRequest.subject' at 'div/table/tr/td/a' for 'subject' does not resolve</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.text.div</b></td><td><b>error</b></td><td><b>Hyperlink 'StructureDefinition-lmdi-medicationrequest-definitions.html#MedicationRequest.encounter' at 'div/table/tr/td/a' for 'encounter' does not resolve</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition.text.div</b></td><td><b>error</b></td><td><b>Hyperlink 'StructureDefinition-lmdi-medicationrequest-definitions.html#MedicationRequest.requester' at 'div/table/tr/td/a' for 'requester' does not resolve</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>

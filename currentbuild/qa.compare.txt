@@ -1,7 +1,7 @@
 Lmdi : Validation Results
 =========================================
 
-err = 198, warn = 25, info = 25
+err = 199, warn = 25, info = 25
 $--
 Generated $--. FHIR version $-- for hl7.fhir.no.lmdi#$-- (canonical = http://hl7.no/fhir/ig/lmdi)
  Build Errors : 258 / 4 / 0
@@ -36,7 +36,7 @@ Generated $--. FHIR version $-- for hl7.fhir.no.lmdi#$-- (canonical = http://hl7
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-encounter : 2 / 0 / 2
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-medication : 29 / 0 / 5
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-medicationadministration : 21 / 3 / 3
- /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-medicationrequest : 11 / 0 / 1
+ /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-medicationrequest : 12 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-municipalitycode : 5 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-organization : 22 / 0 / 4
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-patient : 15 / 0 / 3
@@ -513,6 +513,7 @@ ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-lmdi-medicat
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-lmdi-medicationrequest-definitions.html#MedicationRequest.reported[x]' at 'div/table/tr/td/a' for 'reported[x]' does not resolve
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-lmdi-medicationrequest-definitions.html#MedicationRequest.medication[x]' at 'div/table/tr/td/a' for 'medication[x]' does not resolve
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-lmdi-medicationrequest-definitions.html#MedicationRequest.subject' at 'div/table/tr/td/a' for 'subject' does not resolve
+ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-lmdi-medicationrequest-definitions.html#MedicationRequest.encounter' at 'div/table/tr/td/a' for 'encounter' does not resolve
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-lmdi-medicationrequest-definitions.html#MedicationRequest.requester' at 'div/table/tr/td/a' for 'requester' does not resolve
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-lmdi-medicationrequest-definitions.html#MedicationRequest.reasonReference' at 'div/table/tr/td/a' for 'reasonReference' does not resolve
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-lmdi-medicationrequest-definitions.html#MedicationRequest.dosageInstruction' at 'div/table/tr/td/a' for 'dosageInstruction' does not resolve
