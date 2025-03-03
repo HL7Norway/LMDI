@@ -13,7 +13,6 @@ Description: "Legemiddelrekvirering - ordinering eller annen rekvirering av lege
 * text 0..0
 * recorder 0..0
 * insurance 0..0
-* encounter 0..0
 * supportingInformation 0..0
 * performer 0..0
 * performerType 0..0
@@ -54,6 +53,10 @@ Description: "Legemiddelrekvirering - ordinering eller annen rekvirering av lege
 
 * reasonReference only Reference(Diagnose)
 * priorPrescription only Reference(Legemiddelrekvirering)
+
+* encounter only Reference(Episode)
+* encounter ^short = "Referanse til episode"
+* encounter ^definition = "Referanse til behandlingsepisoden hvor legemiddelet ble rekvirert"
 
 // Andre elementer
 * reported[x] only boolean
