@@ -26,4 +26,4 @@ Description: "Profil for en behandlingsepisode basert på Encounter-ressursen i 
 * text 0..0
 
 * serviceProvider only Reference(Organisasjon)
-* serviceProvider ^short = "Organisasjon ansvarlig for episoden"
+* serviceProvider ^short = "Sted for episoden"

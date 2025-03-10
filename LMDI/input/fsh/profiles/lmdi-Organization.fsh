@@ -12,7 +12,7 @@ For organisasjonen som er del av en større organisasjon, skal dette angis ved h
 """
 * ^version = "0.9.3"
 * ^status = #draft
-* ^date = "2025-02-27"
+* ^date = "2025-03-10"
 * ^publisher = "Folkehelseinstituttet"
 
 // Deaktiverte felter
@@ -63,8 +63,8 @@ For organisasjonen som er del av en større organisasjon, skal dette angis ved h
 
 // Hierarkisk struktur
 * partOf MS
-* partOf ^short = "Overordnet organisasjon"
-* partOf ^definition = "Organisasjonen som denne organisasjonen er en del av"
+* partOf ^short = "Organisasjonen er del av (overordnet organisasjon)"
+* partOf ^definition = "Organisasjonen er del av (overordnet organisasjon)"
 * partOf only Reference(Organisasjon)
 
 // Adresse
@@ -72,19 +72,21 @@ For organisasjonen som er del av en større organisasjon, skal dette angis ved h
 * address ^short = "Gjeldende fysisk adresse"
 * address.type = #physical
 
+* address.district ^short = "Kommune"
 * address.district.extension ^slicing.discriminator.type = #value
 * address.district.extension ^slicing.discriminator.path = "url"
 * address.district.extension ^slicing.rules = #open
 * address.district.extension contains LmdiMunicipalitycode named municipalitycode 0..1
 
-* address.district.extension[municipalitycode] ^short = "Coded value for municipality/county Norwegian kommune"
-* address.district.extension[municipalitycode] ^definition = "Coded value for municipality/county Norwegian kommune"
+* address.district.extension[municipalitycode] ^short = "Kodet verdi for kommune"
+* address.district.extension[municipalitycode] ^definition = "Kodet verdi for kommune"
 * address.district.extension[municipalitycode] only LmdiMunicipalitycode
+* address.district.value 0..0
 
 * address.state ^short = "Fylkesnavn"
 
 * address.extension contains LmdiUrbanDistrict named urbanDistrict 0..1
-* address.extension[urbanDistrict] ^short = "Bydel"
+* address.extension[urbanDistrict] ^short = "Kodet verdi for bydel"
 
 // EKSEMPLER
 Instance: Organisasjon-1-Sykehjem

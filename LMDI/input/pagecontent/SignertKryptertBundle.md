@@ -80,6 +80,7 @@ Alle felter skal samles i et JSON-objekt med nøyaktig rekkefølge som nedenfor.
 | **rapporteringTil**| string | Angir sluttidspunkt for tidsperioden som dataene er hentet fra. Tidspunktet skal være i norsk lokaltid formattert etter ISO 8601  |
 | **encryptedContent**| string | AES-GCM-kryptert innhold (FHIR-ressursen komprimert og kryptert). Angis som Base64-encodet string. |
 | **encryptionCertificateThumbprint**| string | Thumbprint for sertifikatet som ble brukt til kryptering. |
+| **encryptedKey**| string | AES-nøkkelen kryptert med Legemiddelregisterets offentlige RSA-nøkkel. Angis som Base64-encodet string. |
 | **nonce**| string | 96-bits nonce (12 bytes) brukt ved AES-GCM-krypteringen. Angis som Base64-encodet string. |
 | **authenticationTag**| string | 128-bits (16 bytes) autentiseringstag fra AES-GCM. Angis som Base64-encodet string. |
 | **signatureCertificateThumbprint**| string | Thumbprint for avsenders sertifikat (med tilhørende privat nøkkel som ble brukt for signering). |

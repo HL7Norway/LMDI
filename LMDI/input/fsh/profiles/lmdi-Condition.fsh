@@ -2,11 +2,11 @@ Profile: Diagnose
 Parent: Condition
 Id: lmdi-condition
 Title: "Diagnose"
-Description: "Diagnosen som pasienten har fått rekvirert og administrert legemiddelet for."
+Description: "Diagnosen som pasienten har fått rekvirert eller administrert legemiddelet for."
 
 // Metadata
 * ^status = #draft
-* ^date = "2024-06-12"
+* ^date = "2025-03-10"
 * ^publisher = "Folkehelseinstituttet"
 
 // Deaktiverte elementer
@@ -56,6 +56,8 @@ Description: "Diagnosen som pasienten har fått rekvirert og administrert legemi
 * code.coding[ICD10] ^definition = "ICD-10: Den internasjonale statistiske klassifikasjonen av sykdommer og beslektede helseproblemer."
 * code.coding[ICD10].system = "urn:oid:2.16.578.1.12.4.1.1.7110"
 * code.coding[ICD10].code 1..1
+* code.coding[ICD10].code ^short = "Diagnosekode fra kodeverket"
+* code.coding[ICD10].display ^short = "Beskrivelse av diagnosekode (fra kodeverket)"
 
 // ICD-11
 * code.coding[ICD11] ^short = "ICD-11"
@@ -64,12 +66,19 @@ Description: "Diagnosen som pasienten har fått rekvirert og administrert legemi
 * code.coding[ICD11].system = "http://id.who.int/icd/release/11/mms"
 * code.coding[ICD11].system ^comment = "Kilde for URI: https://build.fhir.org/ig/HL7/UTG/CodeSystem-ICD11MMS.html"
 * code.coding[ICD11].code 1..1
+* code.coding[ICD11].code ^short = "Diagnosekode fra kodeverket"
+* code.coding[ICD11].display ^short = "Beskrivelse av diagnosekode (fra kodeverket)"
 
 // ICPC-2
 * code.coding[ICPC2] ^short = "ICPC-2"
 * code.coding[ICPC2] ^definition = "ICPC-2 er den internasjonale klassifikasjonen for helseproblemer, diagnoser og andre årsaker til kontakt med primærhelsetjenesten."
 * code.coding[ICPC2].system = "urn:oid:2.16.578.1.12.4.1.1.7170"
 * code.coding[ICPC2].code 1..1
+* code.coding[ICPC2].code ^short = "Diagnosekode fra kodeverket"
+* code.coding[ICPC2].display ^short = "Beskrivelse av diagnosekode (fra kodeverket)"
+
+* stage ^constraint[0].expression = ""
+* stage ^constraint[0].severity = #warning
 
 // EKSEMPLER
 Instance: Diagnose-1-ICD10-OID
