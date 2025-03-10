@@ -2,9 +2,9 @@
 Extension: LmdiMunicipalitycode
 Id: lmdi-municipalitycode
 Title: "lmdi-municipalitycode"
-Description: "Coded value for municipality/county Norwegian kommune"
+Description: "Kodet verdi for kommune"
 * ^version = "2.0.16"
-* ^date = "2021-04-09"
+* ^date = "2025-03-10"
 * ^context.type = #element
 * ^context.expression = "Address.district"
 * value[x] only Coding

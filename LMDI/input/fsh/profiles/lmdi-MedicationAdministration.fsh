@@ -7,39 +7,46 @@ Description: """Beskriver administrering av legemiddel til pasient på institusj
 Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei."""
 
 * ^status = #draft
-* ^date = "2025-01-16"
+* ^date = "2025-03-10"
 * ^publisher = "Folkehelseinstituttet"
 
 // Core Elements
 * subject only Reference(Pasient)
-* subject ^short = "Referanse til pasient"
+* subject ^short = "Hvem fikk legemidlet (pasient)"
 * subject ^definition = "Det skal alltid være en referanse til pasienten som har blitt administrert legemiddel."
 
 * medication[x] only Reference(Legemiddel)
 * medication[x] ^short = "Legemiddel"
 
 * status from LegemiddeladministreringStatus
-* status ^short = "Status administrering."
+* status ^short = "Status administrering (completed | entered-in-error)"
 * status ^definition = "Status administrering. Skal vanligvis settes til 'Gjennomført' (completed), men 'Feilregistrert' (entered-in-error) MÅ benyttes hvis registreringen inneholder en alvorlig feil og skal slettes."
 
 // Timing Elements
-* effective[x] ^short = "Tidspunkt eller periode for administrering"
-* effectiveDateTime 1..1
+* effective[x] ^short = "Tidspunktet eller periode legemidlet ble administrert"
+* effective[x] only Period or dateTime
+* effective[x] 1..1
 * effectiveDateTime obeys time-required
+* effectivePeriod.start 1..1
+* effectivePeriod.end 1..1
+* effectivePeriod.start obeys time-required
+* effectivePeriod.end obeys time-required
 
 // Context and References
 * context MS
 * context only Reference(Episode)
-* context ^short = "Referanse til aktuell episode"
+* context ^short = "Episoden (f.eks. konsultasjonen/innleggelsen) som legemidlet ble administrert i forbindelse med."
 * context ^definition = "Referanse til hvilket institusjonsopphold eller avtale pasienten var på da legemiddelet ble administrert."
-* context ^comment = "Encounter må vurderes om nødvendig, f.eks. hos spesialist."
+
+* reasonCode ^short = "Årsak til utført administrering (Given as Ordered, Emergency, None)"
 
 * request MS
 * request only Reference(Legemiddelrekvirering)
-* request ^short = "Referanse til rekvisisjon"
-* request ^definition = "Referanse til rekvisisjonen som denne administreringen er basert på."
+* request ^short = "Referanse til rekivreringen"
+* request ^definition = "Referanse til rekivreringen som denne administreringen er basert på."
 
 * reasonReference only Reference(Diagnose)
+* reasonReference ^short = "Indikasjon (diagnose) for legemiddeladministreringen"
 
 // Dosage Information
 * dosage.route MS
@@ -60,12 +67,13 @@ Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legem
 * dosage.route.coding[7477] ^short = "Administrasjonsvei (OID=7477)"
 * dosage.route.coding[7477] ^definition = "Administrasjonsvei (OID=7477) fra kodeverkssamling Resept."
 * dosage.route.coding[7477].system = "urn:oid:2.16.578.1.12.4.1.1.7477"
+* dosage.route.coding[7477].code ^short = "Verdi fra kodeverket"
+* dosage.route.coding[7477].display ^short = "Beskrivelse av koden (navn) fra kodeverket"
 
 * dosage.dose 1..1
 * dosage.dose ^short = "Administrert mengde virkestoff"
 * dosage.dose ^definition = "Mengde (dosering) av legemiddelets primære virkestoff."
 
-* dosage.text 0..1
 * dosage.rateRatio MS
 
 // Disabled Elements
@@ -76,6 +84,8 @@ Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legem
 * supportingInformation 0..0
 * text 0..0
 * eventHistory 0..0
+* dosage.text 0..0
+* dosage.route.text 0..0
 
 // =========================================
 // Invariant Definition
@@ -95,7 +105,7 @@ Description: "Verdisett som begrenses status til Legemiddeladministrering til he
 * ^version = "0.1.0"
 * ^status = #draft
 * ^experimental = true
-* ^date = "2024-06-05"
+* ^date = "2025-03-10"
 * ^publisher = "Folkehelseinstituttet"
 * http://hl7.org/fhir/ValueSet/medication-admin-status#completed "Gjennomført"
 * http://hl7.org/fhir/ValueSet/medication-admin-status#entered-in-error "Feilregistrert"
@@ -114,7 +124,6 @@ Description: "Eksempel på administrering av legemiddel"
 * dosage.route.coding[SCT].system = "http://snomed.info/sct"
 * dosage.route.coding[SCT].code = #421521009
 * dosage.route.coding[SCT].display = "Swallow"
-* dosage.route.text = "oralt"
 * dosage.dose.value = 2.0
 * dosage.dose.unit = "metric tablespoon"
 * dosage.dose.system = "http://unitsofmeasure.org"
@@ -132,7 +141,6 @@ Description: "Eksempel på administrering av legemiddel - infusjon"
 * dosage.route.coding[SCT].system = "http://snomed.info/sct"
 * dosage.route.coding[SCT].code = #47625008
 * dosage.route.coding[SCT].display = "Intravenous route (qualifier value)"
-* dosage.route.text = "Intravenøst"
 * dosage.dose.value = 4500
 * dosage.dose.unit = "mg"
 * dosage.dose.system = "http://unitsofmeasure.org"

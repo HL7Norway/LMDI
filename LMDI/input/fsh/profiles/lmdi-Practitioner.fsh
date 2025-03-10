@@ -2,19 +2,10 @@ Profile: Helsepersonell
 Id: lmdi-practitioner
 Parent: Practitioner
 Title: "Helsepersonell"
-Description: """
-Profil for å dokumentere helsepersonell som har foreskrevet eller administrert legemidler i Norge. 
-
-Profilen er basert på den norske basisprofilen NoBasisPractitioner, men er begrenset til kun å inkludere:
-- Helsepersonellnummer som unik identifikator
-
-I denne profilen er personopplysninger som navn, kontaktinformasjon, fødselsdato og kjønn eksplisitt utelatt. Dette er gjort for å begrense behandling av personopplysninger til det som er nødvendig for formålet.
-
-Profilen brukes i sammenheng med legemiddeladministrering og -rekvirering, der det er behov for å dokumentere hvilket helsepersonell som har vært involvert.
-"""
+Description: "Helsepersonell som har rekvirert legemidlet"
 
 * ^status = #draft
-* ^date = "2024-06-12"
+* ^date = "2025-03-10"
 * ^publisher = "Folkehelseinstituttet"
 * ^version = "0.1.0"
 * ^experimental = true
@@ -34,11 +25,14 @@ Andre identifikatorer som FNR/DNR støttes ikke i denne profilen da den er begre
 * identifier.system ^comment = "Skal være helsepersonellnummer (2.16.578.1.12.4.1.4.4)"
 
 * identifier.value 1..1 
-* identifier.value ^short = "Selve helsepersonellnummeret"
+* identifier.value ^short = "Helsepersonellnummeret"
 * identifier.value ^definition = """
 Det faktiske helsepersonellnummeret som er tildelt helsepersonellet. 
 Dette er et unikt nummer som tildeles ved autorisasjon."""
 * identifier.value ^comment = "Helsepersonellnummer er et heltall"
+* identifier.value ^example.label = ""
+* identifier.value ^example.valueString = ""
+
 
 // Spesialitet
 // * qualification ^short = "Spesialitet"
@@ -58,6 +52,7 @@ Dette er et unikt nummer som tildeles ved autorisasjon."""
 * photo 0..0
 * qualification 0..0
 * communication 0..0
+* active 0..0
 
 Instance: Helsepersonell-1-HPR-nummer
 InstanceOf: Helsepersonell

@@ -6,7 +6,7 @@ Description: "Legemiddelrekvirering - ordinering eller annen rekvirering av lege
 
 // Metadata
 * ^status = #draft
-* ^date = "2025-01-16"
+* ^date = "2025-03-10"
 * ^publisher = "Folkehelseinstituttet"
 
 // Deaktiverte elementer
@@ -36,27 +36,30 @@ Description: "Legemiddelrekvirering - ordinering eller annen rekvirering av lege
 * status ^comment = "Gyldige verdier: active | on-hold | cancelled | completed | entered-in-error | stopped | draft"
 
 * intent 1..1 MS
-* intent ^short = "Intensjonen eller hensikten med rekvireringen: : proposal | plan | order | original-order | reflex-order | filler-order | instance-order | option"
+* intent ^short = "Intensjonen eller hensikten med rekvireringen: proposal | plan | order | original-order | reflex-order | filler-order | instance-order | option"
 
 // Referanser til andre ressurser
 * medication[x] only Reference(Legemiddel)
 * medication[x] 1..1 MS
-* medication[x] ^short = "Referanse til legemiddel"
+* medication[x] ^short = "Legemidlet som er rekvirert"
 
 * subject 1..1 MS
 * subject only Reference(Pasient)
-* subject ^short = "Referanse til pasient"
+* subject ^short = "Pasienten legemidlet er rekvirert til"
 
 * requester 1..1 MS
 * requester only Reference(Helsepersonell)
-* requester ^short = "Referanse til rekvirent"
+* requester ^short = "Helsepersonellet som rekvirerte legemidlet"
 
 * reasonReference only Reference(Diagnose)
+* reasonReference ^short = "Indikasjon (diagnose) for legemiddelrekvireringen"
+
 * priorPrescription only Reference(Legemiddelrekvirering)
 
 * encounter only Reference(Episode)
-* encounter ^short = "Referanse til episode"
-* encounter ^definition = "Referanse til behandlingsepisoden hvor legemiddelet ble rekvirert"
+* encounter ^short = "Episoden (f.eks. konsultasjonen/innleggelsen) som legemidlet ble rekvirert i forbindelse med."
+
+* courseOfTherapyType ^short = "continuous | acute | seasonal"
 
 // Andre elementer
 * reported[x] only boolean
