@@ -5,7 +5,7 @@
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
     <title>Integrasjon - Legemiddeldata fra institusjon til Legemiddelregisteret
-        v0.9.4</title>
+        v1.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="http://hl7.org/fhir" />
@@ -60,7 +60,7 @@
                     <span class="visually-hidden">FHI Produktnavn</span>
                 </a>
                 <div class="fhi-header__project">
-                    <span class="fhi-header__project-name d-inline">Legemiddeldata fra institusjon til Legemiddelregisteret<span style="display:inline;" class="tagline"> &mdash; 0.9.4 - ci-build
+                    <span class="fhi-header__project-name d-inline">Legemiddeldata fra institusjon til Legemiddelregisteret<span style="display:inline;" class="tagline"> &mdash; 1.0.0 - ci-build
                             
                             
                             
@@ -191,22 +191,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>URL til Legemiddelregisterets API:</p>
 <ul>
-  <li>TEST-miljø<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>: <a href="https://test-fhirmottak.legemiddelregisteret.fhi.no/api/v1">https://test-fhirmottak.legemiddelregisteret.fhi.no/api/v1</a></li>
-  <li>PROD-miljø<sup id="fnref:1:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>: <a href="https://fhirmottak.legemiddelregisteret.fhi.no/api/v1">https://fhirmottak.legemiddelregisteret.fhi.no/api/v1</a></li>
+  <li>TEST-miljø: <a href="https://test-fhirmottak.lmr.fhi.no/api/v1">https://test-fhirmottak.lmr.fhi.no/api/v1</a></li>
+  <li>PROD-miljø: <a href="https://fhirmottak.lmr.fhi.no/api/v1">https://fhirmottak.lmr.fhi.no/api/v1</a></li>
 </ul>
 
 <p>Responskoder
-200 OK: LegemiddelregisterBundleResponse</p>
+200 OK
+400 BadRequest</p>
 
 <h4 id="håndter-respons-fra-api-et">Håndter respons fra API-et</h4>
 
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:1" role="doc-endnote">
-      <p>Foreløpig adresse - denne adressen vil endres <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:1:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
-    </li>
-  </ol>
-</div>
 
 
 
@@ -230,10 +224,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                 <p class="m-0">
                     IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)"
                         href="https://www.fhi.no">Folkehelseinstituttet</a>.
-                    Package hl7.fhir.no.lmdi#0.9.4 based on <a
+                    Package hl7.fhir.no.lmdi#1.0.0 based on <a
                         style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR
                         4.0.1</a>. Generated <span
-                        title="Mon, Mar 3, 2025 14:46+0000">2025-03-03</span>
+                        title="Tue, Mar 11, 2025 13:52+0000">2025-03-11</span>
                     <br />
                     <span style="color: var(--footer-highlight-text-color)">
                                   Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

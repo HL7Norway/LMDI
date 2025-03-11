@@ -66,7 +66,7 @@
     <sch:rule context="f:Organization/f:address/f:district">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-municipalitycode']) &lt;= 1">extension with URL = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-municipalitycode': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
+      <sch:assert test="count(f:value) &lt;= 0">value: maximum cardinality of 'value' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

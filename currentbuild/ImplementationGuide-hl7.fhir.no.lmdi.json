@@ -7,7 +7,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"no\" lang=\"no\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.lmdi</b></p><a name=\"hl7.fhir.no.lmdi\"> </a><a name=\"hchl7.fhir.no.lmdi\"> </a><a name=\"hl7.fhir.no.lmdi-no\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: no</p></div><h2>Lmdi</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi</pre><div><p>Denne implementasjongguiden beskriver hvordan institusjoner skal overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret</p>\n</div></div>"
   },
   "url" : "http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi",
-  "version" : "0.9.4",
+  "version" : "1.0.0",
   "name" : "Lmdi",
   "title" : "Legemiddeldata fra institusjon til Legemiddelregisteret",
   "status" : "draft",
@@ -704,7 +704,7 @@
         "reference" : "StructureDefinition/lmdi-condition"
       },
       "name" : "Diagnose",
-      "description" : "Diagnosen som pasienten har fått rekvirert og administrert legemiddelet for.",
+      "description" : "Diagnosen som pasienten har fått rekvirert eller administrert legemiddelet for.",
       "exampleBoolean" : false
     },
     {
@@ -776,7 +776,7 @@
         "reference" : "StructureDefinition/lmdi-practitioner"
       },
       "name" : "Helsepersonell",
-      "description" : "Profil for å dokumentere helsepersonell som har foreskrevet eller administrert legemidler i Norge. \n\nProfilen er basert på den norske basisprofilen NoBasisPractitioner, men er begrenset til kun å inkludere:\n- Helsepersonellnummer som unik identifikator\n\nI denne profilen er personopplysninger som navn, kontaktinformasjon, fødselsdato og kjønn eksplisitt utelatt. Dette er gjort for å begrense behandling av personopplysninger til det som er nødvendig for formålet.\n\nProfilen brukes i sammenheng med legemiddeladministrering og -rekvirering, der det er behov for å dokumentere hvilket helsepersonell som har vært involvert.",
+      "description" : "Helsepersonell som har rekvirert legemidlet",
       "exampleBoolean" : false
     },
     {
@@ -860,7 +860,7 @@
         "reference" : "StructureDefinition/lmdi-municipalitycode"
       },
       "name" : "lmdi-municipalitycode",
-      "description" : "Coded value for municipality/county Norwegian kommune",
+      "description" : "Kodet verdi for kommune",
       "exampleBoolean" : false
     },
     {
@@ -1052,7 +1052,7 @@
         "reference" : "StructureDefinition/lmdi-patient"
       },
       "name" : "Pasient",
-      "description" : "Informasjon om pasienten",
+      "description" : "Pasienten som har fått rekvirert eller administrert legemiddel",
       "exampleBoolean" : false
     },
     {

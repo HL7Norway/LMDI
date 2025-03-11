@@ -8,7 +8,7 @@
 </div></div>
   </text>
   <url value="http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi"/>
-  <version value="0.9.4"/>
+  <version value="1.0.0"/>
   <name value="Lmdi"/>
   <title value="Legemiddeldata fra institusjon til Legemiddelregisteret"/>
   <status value="draft"/>
@@ -538,7 +538,7 @@
         <reference value="StructureDefinition/lmdi-condition"/>
       </reference>
       <name value="Diagnose"/>
-      <description value="Diagnosen som pasienten har fått rekvirert og administrert legemiddelet for."/>
+      <description value="Diagnosen som pasienten har fått rekvirert eller administrert legemiddelet for."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -604,7 +604,7 @@
         <reference value="StructureDefinition/lmdi-practitioner"/>
       </reference>
       <name value="Helsepersonell"/>
-      <description value="Profil for å dokumentere helsepersonell som har foreskrevet eller administrert legemidler i Norge. &#xA;&#xA;Profilen er basert på den norske basisprofilen NoBasisPractitioner, men er begrenset til kun å inkludere:&#xA;- Helsepersonellnummer som unik identifikator&#xA;&#xA;I denne profilen er personopplysninger som navn, kontaktinformasjon, fødselsdato og kjønn eksplisitt utelatt. Dette er gjort for å begrense behandling av personopplysninger til det som er nødvendig for formålet.&#xA;&#xA;Profilen brukes i sammenheng med legemiddeladministrering og -rekvirering, der det er behov for å dokumentere hvilket helsepersonell som har vært involvert."/>
+      <description value="Helsepersonell som har rekvirert legemidlet"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -681,7 +681,7 @@
         <reference value="StructureDefinition/lmdi-municipalitycode"/>
       </reference>
       <name value="lmdi-municipalitycode"/>
-      <description value="Coded value for municipality/county Norwegian kommune"/>
+      <description value="Kodet verdi for kommune"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -857,7 +857,7 @@
         <reference value="StructureDefinition/lmdi-patient"/>
       </reference>
       <name value="Pasient"/>
-      <description value="Informasjon om pasienten"/>
+      <description value="Pasienten som har fått rekvirert eller administrert legemiddel"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://hl7.no/fhir/ig/lmdi/ValueSet/LokalLegemiddelkatalogValues",
-      "version" : "0.9.4",
+      "version" : "1.0.0",
       "status" : "draft",
       "name" : "LokalLegemiddelkatalogValues",
       "title" : "Lokal Legemiddelkatalog Values",
@@ -16,7 +16,7 @@
     },
     {
       "url" : "http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministrationstatus",
-      "version" : "0.9.4",
+      "version" : "1.0.0",
       "status" : "draft",
       "name" : "LegemiddeladministreringStatus",
       "title" : "Status for legemiddeladministrering",
@@ -25,6 +25,20 @@
       "uses" : {
       },
       "StructureDefinition-lmdi-medicationadministration.html" : "Legemiddeladministrering"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/address-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressUse",
+      "title" : "AddressUse",
+      "description" : "The use of an address.",
+      "systems" : ["http://hl7.org/fhir/address-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.67"],
+      "sources" : ["2.16.840.1.113883.4.642.3.67"],
+      "uses" : {
+      },
+      "StructureDefinition-lmdi-patient.html" : "Pasient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status",

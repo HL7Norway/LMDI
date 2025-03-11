@@ -11,7 +11,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for Lmdi</h1>
- <p>Generated Mon Mar 03 14:47:26 UTC 2025, FHIR version 4.0.1 for hl7.fhir.no.lmdi#0.9.4 (canonical = <a href="http://hl7.no/fhir/ig/lmdi">http://hl7.no/fhir/ig/lmdi</a> (<a href="http://hl7.no/fhir/ig/lmdi/history.html">history</a>))</p>
+ <p>Generated Tue Mar 11 13:52:51 UTC 2025, FHIR version 4.0.1 for hl7.fhir.no.lmdi#1.0.0 (canonical = <a href="http://hl7.no/fhir/ig/lmdi">http://hl7.no/fhir/ig/lmdi</a> (<a href="http://hl7.no/fhir/ig/lmdi/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -45,6 +45,13 @@
     <td>
       <b>Choices</b>
     </td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministrationstatus|1.0.0</td>
+    <td>http://hl7.org/fhir/ValueSet/medication-admin-status</td>
+    <td>auth = , candidates=</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
@@ -154,7 +161,49 @@
   <tr>
     <td>System not handled by any servers. Using primary server</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministrationstatus|0.9.4</td>
+    <td>null</td>
+    <td>http://dmp.no/fhir/NamingSystem/festLegemiddelVirkestoff</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://dmp.no/fhir/NamingSystem/festLegemiddelVirkestoff</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://dmp.no/fhir/NamingSystem/festLegemiddelMerkevare</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://dmp.no/fhir/NamingSystem/festLegemiddelMerkevare</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://dmp.no/fhir/NamingSystem/festLegemiddelPakning</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://dmp.no/fhir/NamingSystem/festLegemiddelPakning</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministrationstatus|1.0.0</td>
     <td>http://hl7.org/fhir/ValueSet/medication-admin-status</td>
     <td>auth = , candidates=</td>
   </tr>
@@ -168,7 +217,7 @@
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>urn:uuid:624e694f-0814-43c1-9595-6ba94e4df988</td>
+    <td>urn:uuid:a8bf2d59-2b33-4ed8-8e8b-5aad3e20b7f7</td>
     <td>http://snomed.info/sct</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|https://smt.esante.gouv.fr/fhir|http://tx.hl7europe.eu/r4</td>
   </tr>
@@ -189,14 +238,14 @@
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>urn:uuid:9feb550d-3384-4592-a20d-951bc73ac1e0</td>
+    <td>urn:uuid:79d5655b-f17a-400b-8db1-44256510febe</td>
     <td>http://snomed.info/sct</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|https://smt.esante.gouv.fr/fhir|http://tx.hl7europe.eu/r4</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>urn:uuid:07b0863e-dcd6-4e37-aa72-87c7266a58fd</td>
+    <td>urn:uuid:ccc8bd22-0b6b-4160-a878-869b4f57140d</td>
     <td>http://snomed.info/sct</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|https://smt.esante.gouv.fr/fhir|http://tx.hl7europe.eu/r4</td>
   </tr>
@@ -231,15 +280,8 @@
   <tr>
     <td>System not handled by any servers. Using primary server</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://dmp.no/fhir/NamingSystem/festLegemiddelPakning</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://dmp.no/fhir/NamingSystem/festLegemiddelPakning</td>
+    <td>http://hl7.no/fhir/ig/lmdi/ValueSet/lmdi-medicationadministrationstatus|1.0.0</td>
+    <td>http://hl7.org/fhir/ValueSet/medication-admin-status</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
@@ -252,7 +294,7 @@
 </table>
 <h2>Primary Server: http://tx.fhir.org/r4</h2>
 <a href="http://tx.fhir.org/r4"></a>
-<p>Use Count: 25. Code Systems used: </p>
+<p>Use Count: 29. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -275,14 +317,26 @@
     <td></td>
   </tr>
   <tr>
+    <td>http://dmp.no/fhir/NamingSystem/festLegemiddelMerkevare</td>
+    <td>0</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>http://dmp.no/fhir/NamingSystem/festLegemiddelPakning</td>
     <td>0</td>
     <td>1</td>
     <td></td>
   </tr>
   <tr>
-    <td>http://hl7.org/fhir/ValueSet/medication-admin-status</td>
+    <td>http://dmp.no/fhir/NamingSystem/festLegemiddelVirkestoff</td>
     <td>0</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>http://hl7.org/fhir/ValueSet/medication-admin-status</td>
+    <td>2</td>
     <td>1</td>
     <td></td>
   </tr>

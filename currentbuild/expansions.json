@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "74443cd0-fed0-42b8-8db0-9558ed0fdc12",
+  "id" : "75d0e50a-d646-45a6-87ec-888fe891161c",
   "meta" : {
-    "lastUpdated" : "2025-03-03T14:46:49.005+00:00"
+    "lastUpdated" : "2025-03-11T13:52:18.427+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -11,14 +11,14 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-LokalLegemiddelkatalogCodeSystem.html\">codesystem Lokal Legemiddelkatalog Codes v0.9.4 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (no)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem-metavisionkatalogFraHso\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LokalLegemiddelkatalogCodeSystem.html#LokalLegemiddelkatalogCodeSystem-metavisionkatalogFraHso\">metavisionkatalogFraHso</a></td><td>http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem</td><td/><td><div><p>Metavisionkatalog fra Helse Sør-Øst</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem-metavisionkatalogFraHN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LokalLegemiddelkatalogCodeSystem.html#LokalLegemiddelkatalogCodeSystem-metavisionkatalogFraHN\">metavisionkatalogFraHN</a></td><td>http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem</td><td/><td><div><p>Metavisionkatalog fra Helse Nord</p>\n</div></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-LokalLegemiddelkatalogCodeSystem.html\">codesystem Lokal Legemiddelkatalog Codes v1.0.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (no)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem-metavisionkatalogFraHso\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LokalLegemiddelkatalogCodeSystem.html#LokalLegemiddelkatalogCodeSystem-metavisionkatalogFraHso\">metavisionkatalogFraHso</a></td><td>http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem</td><td/><td><div><p>Metavisionkatalog fra Helse Sør-Øst</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem-metavisionkatalogFraHN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LokalLegemiddelkatalogCodeSystem.html#LokalLegemiddelkatalogCodeSystem-metavisionkatalogFraHN\">metavisionkatalogFraHN</a></td><td>http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem</td><td/><td><div><p>Metavisionkatalog fra Helse Nord</p>\n</div></td></tr></table></div>"
       },
       "url" : "http://hl7.no/fhir/ig/lmdi/ValueSet/LokalLegemiddelkatalogValues",
-      "version" : "0.9.4",
+      "version" : "1.0.0",
       "name" : "LokalLegemiddelkatalogValues",
       "title" : "Lokal Legemiddelkatalog Values",
       "status" : "draft",
-      "date" : "2025-03-03T14:46:13+00:00",
+      "date" : "2025-03-11T13:51:40+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -27,8 +27,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a5d42b37-9b60-4669-af21-a45da366dd6e",
-        "timestamp" : "2025-03-03T14:47:12+00:00",
+        "identifier" : "urn:uuid:6dc8bd02-bafe-435c-8324-29f41d19b0de",
+        "timestamp" : "2025-03-11T13:52:36+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -49,7 +49,7 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem|0.9.4"
+          "valueUri" : "http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem|1.0.0"
         }],
         "contains" : [{
           "system" : "http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem",
