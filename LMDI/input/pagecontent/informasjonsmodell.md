@@ -9,8 +9,6 @@ Klikk på klassene for å bli lenket til ressursene
 
 Klikk på klassene for å bli lenket til ressursene
 
-<object data="informasjonsmodell.svg" type="image/svg+xml" width="75%"></object>
-<br clear="all"/>
 
 ### Flyt enkel 1 - eksempel
 
