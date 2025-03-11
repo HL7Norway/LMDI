@@ -8,4 +8,3 @@ ValueSet: LokalLegemiddelkatalogValues
 Title: "Lokal Legemiddelkatalog Values"
 Description: "Gyldige verdier for medlemskapsstatus"
 * include codes from system LokalLegemiddelkatalogCodeSystem
-* include codes from system LokalLegemiddelkatalogCodeSystem
