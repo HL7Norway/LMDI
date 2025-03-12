@@ -637,7 +637,7 @@
         <reference value="StructureDefinition/lmdi-medicationadministration"/>
       </reference>
       <name value="Legemiddeladministrering"/>
-      <description value="Beskriver administrering av legemiddel til pasient på institusjon.&#xA;&#xA;Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei."/>
+      <description value="Beskriver administrering av legemiddel til pasient på institusjon.&#xA;&#xA;Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte den (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

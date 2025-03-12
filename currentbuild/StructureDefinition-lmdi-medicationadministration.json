@@ -26,7 +26,7 @@
       "value" : "legemiddelregisteret@fhi.no"
     }]
   }],
-  "description" : "Beskriver administrering av legemiddel til pasient på institusjon.\n\nDette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei.",
+  "description" : "Beskriver administrering av legemiddel til pasient på institusjon.\n\nDette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte den (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
