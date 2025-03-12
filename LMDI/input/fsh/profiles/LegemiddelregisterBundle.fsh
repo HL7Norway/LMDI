@@ -71,18 +71,14 @@ Description: "Eksempel på en batch-bundle som inneholder to legemiddeladministr
 * entry[2].request.method = #POST
 * entry[2].request.url = "Practitioner"
 
-* entry[3].resource = RolleHelsepersonell-10
+* entry[3].resource = Episode-2-Sykehjem
 * entry[3].request.method = #POST
-* entry[3].request.url = "PractitionerRole"
+* entry[3].request.url = "EpisodeOfCare"
 
-* entry[4].resource = Episode-2-Sykehjem
+* entry[4].resource = Organisasjon-2-Eldrehjem
 * entry[4].request.method = #POST
-* entry[4].request.url = "EpisodeOfCare"
+* entry[4].request.url = "Organization"
 
-* entry[5].resource = Organisasjon-2-Eldrehjem
+* entry[5].resource = Administrering-10
 * entry[5].request.method = #POST
-* entry[5].request.url = "Organization"
-
-* entry[6].resource = Administrering-10
-* entry[6].request.method = #POST
-* entry[6].request.url = "MedicationAdministration"
+* entry[5].request.url = "MedicationAdministration"
