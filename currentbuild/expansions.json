@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "790d291d-ea1c-4425-b8c9-a9bd705d2f05",
+  "id" : "1a799bd8-ad4e-43e4-a97e-ba2455f235bb",
   "meta" : {
-    "lastUpdated" : "2025-03-11T14:02:16.839+00:00"
+    "lastUpdated" : "2025-03-12T08:49:55.388+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -18,7 +18,7 @@
       "name" : "LokalLegemiddelkatalogValues",
       "title" : "Lokal Legemiddelkatalog Values",
       "status" : "draft",
-      "date" : "2025-03-11T14:01:39+00:00",
+      "date" : "2025-03-12T08:49:17+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -27,8 +27,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8b3f3f22-93b0-45b3-b801-6d4e1af2c54a",
-        "timestamp" : "2025-03-11T14:02:35+00:00",
+        "identifier" : "urn:uuid:989cc11c-1ee7-484d-9f1a-82a1ddc2575a",
+        "timestamp" : "2025-03-12T08:50:22+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{

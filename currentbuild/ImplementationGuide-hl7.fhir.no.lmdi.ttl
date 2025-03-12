@@ -898,8 +898,9 @@
        fhir:name [ fhir:v "Administrering-10" ] ;
        fhir:description [ fhir:v "Utfyllende eksempel, f.eks. om alt rapporteres som én melding. Bruker contained - bundle er å foretrekke for melding." ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v true
+         a fhir:canonical ;
+         fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationadministration"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationadministration>
        ]
      ] [
        fhir:extension ( [
