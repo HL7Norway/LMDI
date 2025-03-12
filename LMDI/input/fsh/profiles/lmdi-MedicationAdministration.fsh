@@ -4,7 +4,7 @@ Id: lmdi-medicationadministration
 Title: "Legemiddeladministrering"
 Description: """Beskriver administrering av legemiddel til pasient på institusjon.
 
-Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei."""
+Dette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte den (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei."""
 
 * ^status = #draft
 * ^date = "2025-03-10"
