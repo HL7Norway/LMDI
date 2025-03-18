@@ -9,7 +9,7 @@
             <div class="fhi-header__brand-content">
                 <a class="fhi-header__logo" href="index.html">
                     <i class="icon-fhi-logo fhi-header__logo-icon"></i>
-                    <span class="visually-hidden">FHI Produktnavn</span>
+                    <span class="visually-hidden">{{site.data.fhir.ig.title | escape_once}}</span>
                 </a>
                 <div class="fhi-header__project">
                     <span class="fhi-header__project-name d-inline">{{site.data.fhir.ig.title | escape_once}}<span style="display:inline;" class="tagline"> &mdash; {{site.data.fhir.ig.version}} - {{status}}

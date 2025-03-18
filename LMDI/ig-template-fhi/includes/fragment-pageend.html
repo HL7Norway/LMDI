@@ -91,13 +91,16 @@
     };
 
     // Style FHI menu
+    const classMenuNav = 'fhi-main-menu-alt__nav',
+        classMenuNavItem = 'fhi-main-menu-alt__nav-item',
+        classMenuNavLink = 'fhi-main-menu-alt__nav-link';
     const menu = document.getElementById('menu');
     const ul = menu.querySelector('ul');
-    ul.classList.add('nav', 'nav-tabs', 'fhi-nav-tabs', 'fhi-main-menu__nav');
+    ul.classList.add('nav', 'nav-tabs', 'fhi-nav-tabs', classMenuNav);
     ul.querySelectorAll('li').forEach(li => {
-        li.classList.add('fhi-main-menu__nav-item');
+        li.classList.add(classMenuNavItem);
         li.querySelectorAll('a').forEach(a => {
-            a.classList.add('nav-link', 'fhi-main-menu__nav-link');
+            a.classList.add('nav-link', classMenuNavLink);
         });
 
         if (li.classList.contains('dropdown')) {
@@ -111,7 +114,7 @@
     // Set active class on menu item
     const path = window.location.pathname;
     const page = path.split("/").pop();
-    const menuItems = document.querySelectorAll('.fhi-main-menu__nav-item');
+    const menuItems = document.querySelectorAll(`.${classMenuNavItem}`);
     menuItems.forEach(item => {
         const menuLink = item.querySelector('a').getAttribute('href');
         if (menuLink === page) {
