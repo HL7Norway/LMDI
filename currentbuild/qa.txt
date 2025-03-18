@@ -1,9 +1,9 @@
 Lmdi : Validation Results
 =========================================
 
-err = 248, warn = 35, info = 34
-IG Publisher Version: 1.8.20
-Generated Wed Mar 12 09:17:57 UTC 2025. FHIR version 4.0.1 for hl7.fhir.no.lmdi#1.0.0 (canonical = http://hl7.no/fhir/ig/lmdi)
+err = 248, warn = 29, info = 34
+IG Publisher Version: 1.8.21
+Generated Tue Mar 18 14:33:17 UTC 2025. FHIR version 4.0.1 for hl7.fhir.no.lmdi#1.0.0 (canonical = http://hl7.no/fhir/ig/lmdi)
  Build Errors : 258 / 4 / 0
  /github/workspace/LMDI/fsh-generated/resources/Bundle-LegemiddelregisterBundle-1 : 21 / 2 / 31
  /github/workspace/LMDI/fsh-generated/resources/CodeSystem-LokalLegemiddelkatalogCodeSystem : 2 / 0 / 2
@@ -33,10 +33,10 @@ Generated Wed Mar 12 09:17:57 UTC 2025. FHIR version 4.0.1 for hl7.fhir.no.lmdi#
  /github/workspace/LMDI/fsh-generated/resources/Practitioner-Helsepersonell-1-HPR-nummer : 1 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-bundle : 8 / 0 / 2
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-condition : 20 / 1 / 4
- /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-encounter : 2 / 4 / 2
+ /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-encounter : 2 / 0 / 2
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-medication : 40 / 0 / 5
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-medicationadministration : 29 / 3 / 3
- /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-medicationrequest : 13 / 2 / 1
+ /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-medicationrequest : 13 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-municipalitycode : 5 / 0 / 1
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-organization : 22 / 0 / 4
  /github/workspace/LMDI/fsh-generated/resources/StructureDefinition-lmdi-patient : 18 / 0 / 3
@@ -354,8 +354,8 @@ ERROR: Condition/Diagnose-2-SNOMED-CT: Condition.code.coding[0].display: Wrong D
 WARNING: Condition/Diagnose-2-SNOMED-CT: Condition.code.coding[1]: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.7110' could not be found, so the code cannot be validated
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi.json ==
 WARNING: /github/workspace/LMDI/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.lmdi: Unknown Parameters: [generate-json=true, generate-xml=false, generate-turtle=false, path-assets=input/assets]
-ERROR: ImplementationGuide/hl7.fhir.no.lmdi: ImplementationGuide.definition.extension[2].extension[0].value.ofType(string): The value provided ('path-assets') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.3.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'path-assets' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.3.0'; The provided code '#path-assets' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.3.0')
-ERROR: ImplementationGuide/hl7.fhir.no.lmdi: ImplementationGuide.definition.extension[29].extension[0].value.ofType(code): The value provided ('path-assets') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.3.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'path-assets' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.3.0'; The provided code '#path-assets' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.3.0')
+ERROR: ImplementationGuide/hl7.fhir.no.lmdi: ImplementationGuide.definition.extension[2].extension[0].value.ofType(string): The value provided ('path-assets') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.4.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'path-assets' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.4.1'; The provided code '#path-assets' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.4.1')
+ERROR: ImplementationGuide/hl7.fhir.no.lmdi: ImplementationGuide.definition.extension[29].extension[0].value.ofType(code): The value provided ('path-assets') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.4.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'path-assets' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.4.1'; The provided code '#path-assets' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.4.1')
 == fsh-generated/resources/Medication-Medisin-1-LegemiddelDose-Oxycodone.json ==
 WARNING: Medication/Medisin-1-LegemiddelDose-Oxycodone: Medication.code.coding[0].system: A definition for CodeSystem 'http://dmp.no/fhir/NamingSystem/festLegemiddelVirkestoff' could not be found, so the code cannot be validated
 == fsh-generated/resources/Medication-Medisin-2-Paracetamol.json ==
@@ -477,10 +477,6 @@ ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-lmdi-conditi
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-lmdi-condition-definitions.html#Condition.subject' at 'div/table/tr/td/a' for 'subject' does not resolve
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-lmdi-condition-definitions.html#Condition.stage' at 'div/table/tr/td/a' for 'stage' does not resolve
 == fsh-generated/resources/StructureDefinition-lmdi-encounter.json ==
-WARNING: StructureDefinition/lmdi-encounter: StructureDefinition.snapshot.element[17].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '3.0.0', found versions: 2014-03-26, 3.0.0
-WARNING: StructureDefinition/lmdi-encounter: StructureDefinition.snapshot.element[22].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '3.0.0', found versions: 2014-03-26, 3.0.0
-WARNING: StructureDefinition/lmdi-encounter: StructureDefinition.snapshot.element[26].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActPriority'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '3.0.0', found versions: 2018-08-12, 3.0.0
-WARNING: StructureDefinition/lmdi-encounter: StructureDefinition.snapshot.element[57].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v2-0092'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '2.0.0', found versions: 2.0.0, 2.9
 INFORMATION: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter'): The Implementation Guide contains no explicitly linked examples for this profile
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-lmdi-encounter-definitions.html#Encounter' at 'div/table/tr/td/a' for 'Encounter' does not resolve
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-lmdi-encounter-definitions.html#Encounter.serviceProvider' at 'div/table/tr/td/a' for 'serviceProvider' does not resolve
@@ -565,8 +561,6 @@ ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-lmdi-medicat
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-lmdi-medicationadministration-definitions.html#MedicationAdministration.dosage.rate[x]' at 'div/table/tr/td/a' for 'Slices for rate[x]' does not resolve
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-lmdi-medicationadministration-definitions.html#MedicationAdministration.dosage.rate[x]:rateRatio' at 'div/table/tr/td/a' for 'rate[x]:rateRatio' does not resolve
 == fsh-generated/resources/StructureDefinition-lmdi-medicationrequest.json ==
-WARNING: StructureDefinition/lmdi-medicationrequest: StructureDefinition.snapshot.element[77].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '3.0.0', found versions: 2014-03-26, 3.0.0
-WARNING: StructureDefinition/lmdi-medicationrequest: StructureDefinition.snapshot.element[78].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '3.0.0', found versions: 2014-03-26, 3.0.0
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-lmdi-medicationrequest-definitions.html#MedicationRequest' at 'div/table/tr/td/a' for 'MedicationRequest' does not resolve
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-lmdi-medicationrequest-definitions.html#MedicationRequest.identifier' at 'div/table/tr/td/a' for 'identifier' does not resolve
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-lmdi-medicationrequest-definitions.html#MedicationRequest.status' at 'div/table/tr/td/a' for 'status' does not resolve
