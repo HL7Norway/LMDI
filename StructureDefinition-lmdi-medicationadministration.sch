@@ -24,6 +24,7 @@
   <sch:pattern>
     <sch:title>f:MedicationAdministration/f:dosage</sch:title>
     <sch:rule context="f:MedicationAdministration/f:dosage">
+      <sch:assert test="count(f:text) &lt;= 0">text: maximum cardinality of 'text' is 0</sch:assert>
       <sch:assert test="count(f:dose) &gt;= 1">dose: minimum cardinality of 'dose' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -31,7 +32,7 @@
     <sch:title>f:MedicationAdministration/f:dosage/f:route</sch:title>
     <sch:rule context="f:MedicationAdministration/f:dosage/f:route">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>
+      <sch:assert test="count(f:text) &lt;= 0">text: maximum cardinality of 'text' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

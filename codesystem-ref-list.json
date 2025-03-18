@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://hl7.no/fhir/ig/lmdi/CodeSystem/LokalLegemiddelkatalogCodeSystem",
-      "version" : "0.9.4",
+      "version" : "1.0.0",
       "status" : "draft",
       "name" : "LokalLegemiddelkatalogCodeSystem",
       "title" : "Lokal Legemiddelkatalog Codes",
@@ -24,6 +24,18 @@
       "http://hl7.org/fhir/R4/valueset-medicationrequest-status.html" : "Medicationrequest  status"
     },
     {
+      "url" : "http://hl7.org/fhir/address-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressUse",
+      "title" : "AddressUse",
+      "description" : "The use of an address.",
+      "oids" : ["2.16.840.1.113883.4.642.4.68"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-address-use.html" : "AddressUse"
+    },
+    {
       "url" : "http://snomed.info/sct",
       "version" : null,
       "status" : "active",
@@ -33,20 +45,7 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
-      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/practitioner-role",
-      "version" : "1.0.1",
-      "status" : "active",
-      "name" : "PractitionerRole",
-      "title" : "Practitioner role",
-      "description" : "This example value set defines a set of codes that can be used to indicate the role of a Practitioner.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1132"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role"
+      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes"
     }
   ]
 }

@@ -2,7 +2,6 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
@@ -18,20 +17,18 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication Medisin-1-LegemiddelDose-Oxycodone</b></p><a name=\"Medisin-1-LegemiddelDose-Oxycodone\"> </a><a name=\"hcMedisin-1-LegemiddelDose-Oxycodone\"> </a><a name=\"Medisin-1-LegemiddelDose-Oxycodone-no\"> </a><p><b>identifier</b>: <a href=\"NamingSystem-no-basis-fest-legemiddeldose.html\" title=\"FEST-id for dose. Rekvirering av en bestemt merkevare med ID (LMR-nummer) som representerer minste plukkbare enhet, f.eks. 1 ampulle eller 1 tablett.\">festLegemiddelDose</a>/ID_48BD33D2-2838-4B81-8225-02391B7A4516</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 414984009}\">Oxycodone</span></p></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication Medisin-1-LegemiddelDose-Oxycodone</b></p><a name=\"Medisin-1-LegemiddelDose-Oxycodone\"> </a><a name=\"hcMedisin-1-LegemiddelDose-Oxycodone\"> </a><a name=\"Medisin-1-LegemiddelDose-Oxycodone-no\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-lmdi-medication.html\">Legemiddel</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-no-basis-fest-legemiddelvirkestoff.html\" title=\"FEST-id for virkestoff. Benyttes ved virkestoffrekvirering\">festLegemiddelVirkestoff</a>/C31AF94A-5D5A-4C91-9B99-BB221E26E4C9</p><p><b>code</b>: <span title=\"Codes:{http://dmp.no/fhir/NamingSystem/festLegemiddelVirkestoff C31AF94A-5D5A-4C91-9B99-BB221E26E4C9}\">Oksykodon</span></p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://dmp.no/fhir/NamingSystem/festLegemiddelDose"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "ID_48BD33D2-2838-4B81-8225-02391B7A4516" ]
+     fhir:system [ fhir:v "http://dmp.no/fhir/NamingSystem/festLegemiddelVirkestoff"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "C31AF94A-5D5A-4C91-9B99-BB221E26E4C9" ]
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
-       a sct:414984009 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "414984009" ] ;
-       fhir:display [ fhir:v "Product containing oxycodone (medicinal product)" ]
-     ] ) ;
-     fhir:text [ fhir:v "Oxycodone" ]
+       fhir:system [ fhir:v "http://dmp.no/fhir/NamingSystem/festLegemiddelVirkestoff"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "C31AF94A-5D5A-4C91-9B99-BB221E26E4C9" ] ;
+       fhir:display [ fhir:v "Oksykodon" ]
+     ] )
   ] . # 
 
 # -------------------------------------------------------------------------------------

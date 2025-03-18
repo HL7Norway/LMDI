@@ -48,6 +48,13 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#segment-content {
+  flex: 1;
 }
 
 /* Overrides */

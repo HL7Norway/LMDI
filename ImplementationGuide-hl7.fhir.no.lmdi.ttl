@@ -15,7 +15,7 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"no\" lang=\"no\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.lmdi</b></p><a name=\"hl7.fhir.no.lmdi\"> </a><a name=\"hchl7.fhir.no.lmdi\"> </a><a name=\"hl7.fhir.no.lmdi-no\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: no</p></div><h2>Lmdi</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi</pre><div><p>Denne implementasjongguiden beskriver hvordan institusjoner skal overføre data om legemiddelbruk i institusjoner til Legemiddelregisteret</p>\n</div></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://hl7.no/fhir/ig/lmdi/ImplementationGuide/hl7.fhir.no.lmdi"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.9.4"] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "Lmdi"] ; # 
   fhir:title [ fhir:v "Legemiddeldata fra institusjon til Legemiddelregisteret"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
@@ -471,7 +471,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:code ;
-         fhir:v "hl7.fhir.uv.tools.r4#0.3.0"
+         fhir:v "hl7.fhir.uv.tools.r4#0.4.1"
        ]
      ] [
        fhir:extension ( [
@@ -898,8 +898,9 @@
        fhir:name [ fhir:v "Administrering-10" ] ;
        fhir:description [ fhir:v "Utfyllende eksempel, f.eks. om alt rapporteres som én melding. Bruker contained - bundle er å foretrekke for melding." ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v "true"^^xsd:boolean
+         a fhir:canonical ;
+         fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationadministration"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medicationadministration>
        ]
      ] [
        fhir:extension ( [
@@ -936,7 +937,7 @@
        fhir:description [ fhir:v "Utfyllende eksempel - andre referanser" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "true"^^xsd:boolean
+         fhir:v true
        ]
      ] [
        fhir:extension ( [
@@ -954,7 +955,7 @@
        fhir:description [ fhir:v "Utfyllende eksempel - minimalt, logiske referanser" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "true"^^xsd:boolean
+         fhir:v true
        ]
      ] [
        fhir:extension ( [
@@ -969,10 +970,10 @@
          fhir:reference [ fhir:v "StructureDefinition/lmdi-condition" ]
        ] ;
        fhir:name [ fhir:v "Diagnose" ] ;
-       fhir:description [ fhir:v "Diagnosen som pasienten har fått rekvirert og administrert legemiddelet for." ] ;
+       fhir:description [ fhir:v "Diagnosen som pasienten har fått rekvirert eller administrert legemiddelet for." ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1047,26 +1048,25 @@
        fhir:description [ fhir:v "Eksempel på en pasient" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "true"^^xsd:boolean
+         fhir:v true
        ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "EpisodeOfCare"
+           fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.no/fhir/ig/lmdi/EpisodeOfCare/EksempelInstitusjonsopphold> ;
-         fhir:reference [ fhir:v "EpisodeOfCare/EksempelInstitusjonsopphold" ]
+         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-encounter> ;
+         fhir:reference [ fhir:v "StructureDefinition/lmdi-encounter" ]
        ] ;
-       fhir:name [ fhir:v "EksempelInstitusjonsopphold" ] ;
-       fhir:description [ fhir:v "Eksempel på Institusjonsopphold" ] ;
+       fhir:name [ fhir:v "Episode" ] ;
+       fhir:description [ fhir:v "Profil for en behandlingsepisode basert på Encounter-ressursen i FHIR. Denne profilen representerer et klinisk møte eller en behandling i helsevesenet, med fokus på organisatorisk tilhørighet." ] ;
        fhir:example [
-         a fhir:canonical ;
-         fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-episodeofcare"^^xsd:anyURI ;
-         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-episodeofcare>
+         a fhir:boolean ;
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1081,10 +1081,10 @@
          fhir:reference [ fhir:v "StructureDefinition/lmdi-practitioner" ]
        ] ;
        fhir:name [ fhir:v "Helsepersonell" ] ;
-       fhir:description [ fhir:v "Profil for å dokumentere helsepersonell som har foreskrevet eller administrert legemidler i Norge. \n\nProfilen er basert på den norske basisprofilen NoBasisPractitioner, men er begrenset til kun å inkludere:\n- Helsepersonellnummer som unik identifikator\n\nI denne profilen er personopplysninger som navn, kontaktinformasjon, fødselsdato og kjønn eksplisitt utelatt. Dette er gjort for å begrense behandling av personopplysninger til det som er nødvendig for formålet.\n\nProfilen brukes i sammenheng med legemiddeladministrering og -rekvirering, der det er behov for å dokumentere hvilket helsepersonell som har vært involvert." ] ;
+       fhir:description [ fhir:v "Helsepersonell som har rekvirert legemidlet" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1114,42 +1114,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole> ;
-         fhir:reference [ fhir:v "StructureDefinition/lmdi-practitionerrole" ]
-       ] ;
-       fhir:name [ fhir:v "Helsepersonellrolle" ] ;
-       fhir:description [ fhir:v "Rollen til helsepersonellet eller personen som har foreskrevet eller administrert legemiddelet" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-episodeofcare> ;
-         fhir:reference [ fhir:v "StructureDefinition/lmdi-episodeofcare" ]
-       ] ;
-       fhir:name [ fhir:v "Institusjonsopphold" ] ;
-       fhir:description [ fhir:v "Beskrivelse av pasientens opphold i institusjon. Dette kan være både av kortere og lengre karakter, slik som døgnopphold, innleggelse hos spesialist, sykehjem og aldershjem." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-medication> ;
          fhir:reference [ fhir:v "StructureDefinition/lmdi-medication" ]
        ] ;
@@ -1157,7 +1121,7 @@
        fhir:description [ fhir:v "Beskrivelse av legemiddel." ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1172,10 +1136,10 @@
          fhir:reference [ fhir:v "StructureDefinition/lmdi-medicationadministration" ]
        ] ;
        fhir:name [ fhir:v "Legemiddeladministrering" ] ;
-       fhir:description [ fhir:v "Beskriver administrering av legemiddel til pasient på institusjon.\n\nDette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei." ] ;
+       fhir:description [ fhir:v "Beskriver administrering av legemiddel til pasient på institusjon.\n\nDette er kjerneressursen for denne implementasjonsguiden. Den peker videre legemiddelet som ble gitt, pasienten som har fått administrert legemiddel, på hvilken institusjon det skjedde, tidspunkt for administrering, hvem som utførte den (helsepersonell eller rolle ved institusjon) og dose med eventuell administrasjonsvei." ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1193,7 +1157,7 @@
        fhir:description [ fhir:v "Profil av Bundle for Legemiddelregisteret. Støtter bare batch-type og POST-operasjoner, med begrensninger på tillatte ressurstyper." ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1211,7 +1175,7 @@
        fhir:description [ fhir:v "Legemiddelrekvirering - ordinering eller annen rekvirering av legemiddel" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1229,7 +1193,7 @@
        fhir:description [ fhir:v "Id for angivelse av legemiddel fra lokal legemiddelkatalog" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1244,10 +1208,10 @@
          fhir:reference [ fhir:v "StructureDefinition/lmdi-municipalitycode" ]
        ] ;
        fhir:name [ fhir:v "lmdi-municipalitycode" ] ;
-       fhir:description [ fhir:v "Coded value for municipality/county Norwegian kommune" ] ;
+       fhir:description [ fhir:v "Kodet verdi for kommune" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1265,7 +1229,7 @@
        fhir:description [ fhir:v "Information about Norwegian urban district (bydel)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1283,7 +1247,7 @@
        fhir:description [ fhir:v "Informasjon om hvilken lokal legemiddelkatalog koden kommer fra." ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1301,7 +1265,7 @@
        fhir:description [ fhir:v "Kodesystem for lokal legemiddelkatalog" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1319,7 +1283,7 @@
        fhir:description [ fhir:v "Gyldige verdier for medlemskapsstatus" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1394,7 +1358,7 @@
        fhir:description [ fhir:v "FEST-id for dose. Rekvirering av en bestemt merkevare med ID (LMR-nummer) som representerer minste plukkbare enhet, f.eks. 1 ampulle eller 1 tablett." ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1412,7 +1376,7 @@
        fhir:description [ fhir:v "FEST-id for legemiddel merkevare. Rekvirering av en styrke og form av en bestemt merkevare. Pr. 2024 er det ikke lenger ønskelig at det rekvireres på LegemiddelMerkevare." ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1430,7 +1394,7 @@
        fhir:description [ fhir:v "FEST-id for legemiddelpakninger. Rekvirering av en bestemt pakning av en merkevare (varenummer)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1448,7 +1412,7 @@
        fhir:description [ fhir:v "FEST-id for virkestoff. Benyttes ved virkestoffrekvirering" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1466,7 +1430,7 @@
        fhir:description [ fhir:v "Organisasjoner i norsk helse- og omsorgstjeneste, som post, avdeling, klinikk, sykehus og sykehjem. \n\nDenne profilen av Organization benyttes for å beskrive helseinstitusjoner og skal representere organisasjonen på lavest mulig nivå i organisasjonshierarkiet (f.eks. en avdeling eller klinikk eller post).\n\nFor organisasjonen som er del av en større organisasjon, skal dette angis ved hjelp av partOf-relasjonen. Alle “organisasjonshierarki” skal inkludere minst et organisasjonsnummer fra Enhetsregisteret (identifier:ENH)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1538,10 +1502,10 @@
          fhir:reference [ fhir:v "StructureDefinition/lmdi-patient" ]
        ] ;
        fhir:name [ fhir:v "Pasient" ] ;
-       fhir:description [ fhir:v "Informasjon om pasienten" ] ;
+       fhir:description [ fhir:v "Pasienten som har fått rekvirert eller administrert legemiddel" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1605,25 +1569,6 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "PractitionerRole"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.no/fhir/ig/lmdi/PractitionerRole/RolleHelsepersonell-1-Hjemmehjelp> ;
-         fhir:reference [ fhir:v "PractitionerRole/RolleHelsepersonell-1-Hjemmehjelp" ]
-       ] ;
-       fhir:name [ fhir:v "RolleHelsepersonell-1-Hjemmehjelp" ] ;
-       fhir:description [ fhir:v "Eksempel på rolle (Hjemmehjelp), ikke komplett kodeverk" ] ;
-       fhir:example [
-         a fhir:canonical ;
-         fhir:v "http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole"^^xsd:anyURI ;
-         fhir:link <http://hl7.no/fhir/ig/lmdi/StructureDefinition/lmdi-practitionerrole>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
@@ -1635,7 +1580,7 @@
        fhir:description [ fhir:v "Verdisett som begrenses status til Legemiddeladministrering til henholdsvis 'Gjennomført' eller 'Feilregistrert'." ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] ) ;
      fhir:page [

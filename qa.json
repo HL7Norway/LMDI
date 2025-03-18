@@ -6,15 +6,15 @@
   "ig-date" : "2025-02-04",
   "status" : "draft",
   "package-id" : "hl7.fhir.no.lmdi",
-  "ig-ver" : "0.9.4",
-  "date" : "Wed, 26 Feb, 2025 09:37:26 +0000",
-  "dateISO8601" : "2025-02-26T09:37:26+00:00",
-  "errs" : 192,
-  "warnings" : 25,
-  "hints" : 20,
+  "ig-ver" : "1.0.0",
+  "date" : "Tue, 18 Mar, 2025 14:32:57 +0000",
+  "dateISO8601" : "2025-03-18T14:32:57+00:00",
+  "errs" : 248,
+  "warnings" : 29,
+  "hints" : 34,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 3,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1359748208
+  "maxMemory" : 886317584
 }
