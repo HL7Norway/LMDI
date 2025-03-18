@@ -148,3 +148,75 @@ table {
  .table-striped td {
 	 border-color: var(--fhi-white);
 }
+
+/* menu */
+.fhi-header__main-menu-alt-container {
+    border-bottom: 1px solid #cfd0cb;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.fhi-main-menu-alt__nav-link.nav-link {
+    border-top: 0;
+    border-bottom: 0.125rem solid transparent;
+    line-height: normal;
+    min-width: 3.375rem;
+    position: relative;
+    text-align: center;
+}
+
+.fhi-main-menu-alt__collapse:not(.show) {
+    display: block;
+}
+
+.fhi-main-menu-alt__nav-link.nav-link {
+    border: 0;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.fhi-main-menu-alt__nav-link.nav-link.active {
+    background-color: white;
+}
+
+.fhi-main-menu-alt__nav-link.nav-link.active::before {
+    top: auto;
+    bottom: -0.0625rem;
+}
+
+.fhi-nav-tabs:not(.fhi-main-menu-alt__nav) .nav-item [class*="icon-"],
+.fhi-nav-tabs:not(.fhi-main-menu-alt__nav) .nav-item .fhi-search__btn-icon {
+    margin-right: 0.25rem;
+    position: relative;
+    vertical-align: bottom;
+}
+
+.fhi-nav-tabs:not(.fhi-main-menu-alt__nav) .nav-link.active,
+.fhi-nav-tabs:not(.fhi-main-menu-alt__nav) .tab-content {
+    background-color: #edf4f7;
+}
+
+.fhi-nav-tabs:not(.fhi-main-menu-alt__nav) .tab-content {
+    padding-top: 2rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+/* Header */
+@media (max-width: 1200px) {
+    .fhi-header__project {
+        font-size: 1rem;
+    }
+
+    .fhi-main-menu-alt__container {
+        .nav-link {
+            font-size: 0.875rem;
+        }
+    }
+
+    .fhi-header__brand-container {
+        border-bottom: 1px solid #cfd0cb;
+        padding-bottom: 1.5rem!important;
+    }
+}

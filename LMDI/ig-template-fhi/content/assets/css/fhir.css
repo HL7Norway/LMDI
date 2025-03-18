@@ -250,7 +250,7 @@ ul {
 .dense li {
 	margin: 0 0 0 0;
 }
-li:not(.fhi-main-menu__nav-item ) {
+li:not(.fhi-main-menu-alt__nav-item ) {
 	margin: 0 0 5px 0;
 }
 
